@@ -77,6 +77,37 @@ Use this table for the plain 2024-2025 league table: record, league points, scor
 </details>
 
 <details>
+<summary><h2>Winning And Losing Streaks</h2></summary>
+
+Use this table to see each manager's longest winning run and longest losing run.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- A winning streak is consecutive H2H wins. A losing streak is consecutive H2H losses.
+- Draws break both streak types.
+- **Longest Win Streak** is the manager's longest consecutive-win run.
+- **Longest Loss Streak** is the manager's longest consecutive-loss run.
+- **Weeks** shows up to the first three matching streak ranges; `+N more` means there were additional matching streaks.
+
+</details>
+
+| Manager | Longest Win Streak | Win Weeks | Longest Loss Streak | Loss Weeks |
+|---|---|---|---|---|
+| Justin Miller | 8 | GW24-GW31 | 3 | GW5-GW7 |
+| Ryan Donlan | 7 | GW14-GW20 | 4 | GW34-GW37 |
+| Levi Morant | 7 | GW1-GW7 | 5 | GW8-GW12 |
+| Luke Lockwood | 7 | GW27-GW33 | 5 | GW1-GW5 |
+| Ryan Houseman | 4 | GW33-GW36 | 3 | GW28-GW30 |
+| Julius Long | 4 | GW4-GW7 | 4 | GW33-GW36 |
+| Ethan Ellsworth | 4 | GW10-GW13 | 7 | GW29-GW35 |
+| Drake Byrd | 3 | GW15-GW17, GW20-GW22 | 4 | GW11-GW14 |
+| Dylan Reid | 3 | GW10-GW12 | 8 | GW24-GW31 |
+| Alexander Chaban | 2 | GW19-GW20, GW23-GW24, GW29-GW30 | 4 | GW25-GW28 |
+
+</details>
+
+<details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
 This ranks teams by how their weekly scores performed against the whole league, independent of their actual opponent draw.
@@ -473,7 +504,7 @@ Current holder after GW38: Levi Morant.
 ### Week-By-Week Belt Path
 
 | GW | Holder Entering | Challenger | Score | Belt After GW |
-|---:|---|---|---:|---|
+|---|---|---|---|---|
 | 1 | Ryan Donlan | Drake Byrd | 49-32 | Ryan Donlan |
 | 2 | Ryan Donlan | Luke Lockwood | 66-34 | Ryan Donlan |
 | 3 | Ryan Donlan | Julius Long | 59-50 | Ryan Donlan |

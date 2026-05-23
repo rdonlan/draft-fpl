@@ -288,6 +288,7 @@
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/league_report.md">Raw Markdown</a>
 <a href="../data/analysis/standings_metrics.csv">Standings CSV</a>
+<a href="../data/analysis/win_streaks.csv">Win/Loss Streaks CSV</a>
 <a href="../data/analysis/matchup_luck.csv">Matchup Luck CSV</a>
 <a href="../data/analysis/timing_summary.csv">Timing CSV</a>
 <a href="../data/analysis/position_points.csv">Position CSV</a>
@@ -336,6 +337,34 @@
 <tr><td>8</td><td><code>ChabosSpurs@Law</code></td><td>14-0-23</td><td>42</td><td>1450</td><td>1648</td><td>39.2</td><td>3</td><td>5</td></tr>
 <tr><td>9</td><td><code>Santa’s reijnders</code></td><td>13-2-22</td><td>41</td><td>1477</td><td>1529</td><td>39.9</td><td>3</td><td>3</td></tr>
 <tr><td>10</td><td><code>Amorim de mi vida</code></td><td>13-1-23</td><td>40</td><td>1430</td><td>1621</td><td>38.6</td><td>3</td><td>8</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Winning And Losing Streaks</h2></summary>
+<p>Use this table to see each team&#x27;s longest winning run and longest losing run.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li>A winning streak is consecutive H2H wins. A losing streak is consecutive H2H losses.</li>
+<li>Draws break both streak types.</li>
+<li><strong>Longest Win Streak</strong> is the team&#x27;s longest consecutive-win run.</li>
+<li><strong>Longest Loss Streak</strong> is the team&#x27;s longest consecutive-loss run.</li>
+<li><strong>Weeks</strong> shows up to the first three matching streak ranges; <code>+N more</code> means there were additional matching streaks.</li>
+</ul>
+</details>
+<div class="table-wrap"><table>
+<thead><tr><th>Team</th><th>Longest Win Streak</th><th>Win Weeks</th><th>Longest Loss Streak</th><th>Loss Weeks</th></tr></thead>
+<tbody>
+<tr><td><code>**Cunha Believe it?!</code></td><td>10</td><td>GW28-GW37</td><td>3</td><td>GW1-GW3</td></tr>
+<tr><td><code>Sue-nited FC*</code></td><td>7</td><td>GW28-GW34</td><td>4</td><td>GW5-GW8</td></tr>
+<tr><td><code>ChabosSpurs@Law</code></td><td>6</td><td>GW20-GW25</td><td>12</td><td>GW26-GW37</td></tr>
+<tr><td><code>eze as u like b*%chs</code></td><td>4</td><td>GW7-GW10, GW24-GW27</td><td>4</td><td>GW13-GW16, GW31-GW34</td></tr>
+<tr><td><code>Into the WOODwork*</code></td><td>4</td><td>GW31-GW34</td><td>4</td><td>GW19-GW22</td></tr>
+<tr><td><code>Grand-Larseny</code></td><td>4</td><td>GW28-GW31</td><td>5</td><td>GW17-GW21</td></tr>
+<tr><td><code>Amorim de mi vida</code></td><td>4</td><td>GW18-GW21</td><td>6</td><td>GW12-GW17, GW29-GW34</td></tr>
+<tr><td><code>Bowen Arrows</code></td><td>3</td><td>GW13-GW15</td><td>4</td><td>GW34-GW37</td></tr>
+<tr><td><code>*Saka It To Me Baby</code></td><td>3</td><td>GW25-GW27</td><td>4</td><td>GW33-GW36</td></tr>
+<tr><td><code>Santa’s reijnders</code></td><td>3</td><td>GW1-GW3, GW33-GW35</td><td>5</td><td>GW8-GW12</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -903,6 +932,7 @@
 <p>These are the supporting CSVs exposed for the report.</p>
 <ul>
 <li><code>standings_metrics.csv</code></li>
+<li><code>win_streaks.csv</code></li>
 <li><code>team_event_scores.csv</code></li>
 <li><code>lineups.csv</code></li>
 <li><code>waiver_inspired_wins.csv</code></li>

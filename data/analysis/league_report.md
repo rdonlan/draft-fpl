@@ -45,6 +45,37 @@ Use this table for the plain league table: record, league points, scoring totals
 </details>
 
 <details>
+<summary><h2>Winning And Losing Streaks</h2></summary>
+
+Use this table to see each team's longest winning run and longest losing run.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- A winning streak is consecutive H2H wins. A losing streak is consecutive H2H losses.
+- Draws break both streak types.
+- **Longest Win Streak** is the team's longest consecutive-win run.
+- **Longest Loss Streak** is the team's longest consecutive-loss run.
+- **Weeks** shows up to the first three matching streak ranges; `+N more` means there were additional matching streaks.
+
+</details>
+
+| Team | Longest Win Streak | Win Weeks | Longest Loss Streak | Loss Weeks |
+|---|---:|---|---:|---|
+| `**Cunha Believe it?!` | 10 | GW28-GW37 | 3 | GW1-GW3 |
+| `Sue-nited FC*` | 7 | GW28-GW34 | 4 | GW5-GW8 |
+| `ChabosSpurs@Law` | 6 | GW20-GW25 | 12 | GW26-GW37 |
+| `eze as u like b*%chs` | 4 | GW7-GW10, GW24-GW27 | 4 | GW13-GW16, GW31-GW34 |
+| `Into the WOODwork*` | 4 | GW31-GW34 | 4 | GW19-GW22 |
+| `Grand-Larseny` | 4 | GW28-GW31 | 5 | GW17-GW21 |
+| `Amorim de mi vida` | 4 | GW18-GW21 | 6 | GW12-GW17, GW29-GW34 |
+| `Bowen Arrows` | 3 | GW13-GW15 | 4 | GW34-GW37 |
+| `*Saka It To Me Baby` | 3 | GW25-GW27 | 4 | GW33-GW36 |
+| `Santa’s reijnders` | 3 | GW1-GW3, GW33-GW35 | 5 | GW8-GW12 |
+
+</details>
+
+<details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
 Use this table to strip out the weekly opponent draw and rank teams by how their scores compared with the whole league each gameweek.
@@ -566,6 +597,7 @@ Use these position dropdowns for the full manager-by-position breakdown without 
 
 </details>
 
+
 </details>
 
 <details>
@@ -666,6 +698,7 @@ Use this table as a source audit: it shows which Draft/FPL endpoints fed the rep
 These are the supporting CSVs exposed for the report.
 
 - `standings_metrics.csv`
+- `win_streaks.csv`
 - `team_event_scores.csv`
 - `lineups.csv`
 - `waiver_inspired_wins.csv`
