@@ -122,6 +122,7 @@ Use this section to follow the imaginary boxing-style belt as it moves only when
 - **Avg Score in Belt Fights** is that manager's average score in matchups where the lineal belt was on the line.
 - **Diff vs Non-Belt Avg** is Avg Score in Belt Fights minus that manager's average score in all other league matchups. Positive means they scored better in belt fights than in non-belt weeks.
 - In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
+- **Score** is shown in holder-entering to challenger order. If Belt After GW matches Holder Entering, the holder defended; if it changes, the challenger won the belt.
 
 </details>
 
@@ -161,45 +162,45 @@ Use this table to see each manager's W-L record in all lineal belt matchups and 
 
 ### Week-By-Week Belt Path
 
-| GW | Holder Entering | Challenger | Holder Score | Challenger Score | Holder Result | Belt After GW |
-|---:|---|---|---:|---:|---|---|
-| 1 | Levi Morant (`*Saka It To Me Baby`) | Luke Lockwood (`Into the WOODwork*`) | 36 | 42 | Lost by 6; Challenger won belt | Luke Lockwood (`Into the WOODwork*`) |
-| 2 | Luke Lockwood (`Into the WOODwork*`) | Justin Miller (`Sue-nited FC*`) | 24 | 42 | Lost by 18; Challenger won belt | Justin Miller (`Sue-nited FC*`) |
-| 3 | Justin Miller (`Sue-nited FC*`) | Ethan Ellsworth (`Santa’s reijnders`) | 30 | 49 | Lost by 19; Challenger won belt | Ethan Ellsworth (`Santa’s reijnders`) |
-| 4 | Ethan Ellsworth (`Santa’s reijnders`) | Drake Byrd (`Grand-Larseny`) | 39 | 41 | Lost by 2; Challenger won belt | Drake Byrd (`Grand-Larseny`) |
-| 5 | Drake Byrd (`Grand-Larseny`) | Justin Miller (`Sue-nited FC*`) | 47 | 46 | Won by 1; Holder retained | Drake Byrd (`Grand-Larseny`) |
-| 6 | Drake Byrd (`Grand-Larseny`) | Ryan Donlan (`**Cunha Believe it?!`) | 18 | 47 | Lost by 29; Challenger won belt | Ryan Donlan (`**Cunha Believe it?!`) |
-| 7 | Ryan Donlan (`**Cunha Believe it?!`) | Ryan Houseman (`eze as u like b*%chs`) | 34 | 45 | Lost by 11; Challenger won belt | Ryan Houseman (`eze as u like b*%chs`) |
-| 8 | Ryan Houseman (`eze as u like b*%chs`) | Alexander Chaban (`ChabosSpurs@Law`) | 79 | 32 | Won by 47; Holder retained | Ryan Houseman (`eze as u like b*%chs`) |
-| 9 | Ryan Houseman (`eze as u like b*%chs`) | Ethan Ellsworth (`Santa’s reijnders`) | 69 | 45 | Won by 24; Holder retained | Ryan Houseman (`eze as u like b*%chs`) |
-| 10 | Ryan Houseman (`eze as u like b*%chs`) | Drake Byrd (`Grand-Larseny`) | 61 | 51 | Won by 10; Holder retained | Ryan Houseman (`eze as u like b*%chs`) |
-| 11 | Ryan Houseman (`eze as u like b*%chs`) | Julius Long (`Amorim de mi vida`) | 31 | 36 | Lost by 5; Challenger won belt | Julius Long (`Amorim de mi vida`) |
-| 12 | Julius Long (`Amorim de mi vida`) | Drake Byrd (`Grand-Larseny`) | 43 | 59 | Lost by 16; Challenger won belt | Drake Byrd (`Grand-Larseny`) |
-| 13 | Drake Byrd (`Grand-Larseny`) | Ethan Ellsworth (`Santa’s reijnders`) | 39 | 41 | Lost by 2; Challenger won belt | Ethan Ellsworth (`Santa’s reijnders`) |
-| 14 | Ethan Ellsworth (`Santa’s reijnders`) | Dylan Reid (`Bowen Arrows`) | 28 | 30 | Lost by 2; Challenger won belt | Dylan Reid (`Bowen Arrows`) |
-| 15 | Dylan Reid (`Bowen Arrows`) | Ryan Houseman (`eze as u like b*%chs`) | 50 | 42 | Won by 8; Holder retained | Dylan Reid (`Bowen Arrows`) |
-| 16 | Dylan Reid (`Bowen Arrows`) | Drake Byrd (`Grand-Larseny`) | 37 | 40 | Lost by 3; Challenger won belt | Drake Byrd (`Grand-Larseny`) |
-| 17 | Drake Byrd (`Grand-Larseny`) | Levi Morant (`*Saka It To Me Baby`) | 23 | 45 | Lost by 22; Challenger won belt | Levi Morant (`*Saka It To Me Baby`) |
-| 18 | Levi Morant (`*Saka It To Me Baby`) | Ryan Donlan (`**Cunha Believe it?!`) | 36 | 45 | Lost by 9; Challenger won belt | Ryan Donlan (`**Cunha Believe it?!`) |
-| 19 | Ryan Donlan (`**Cunha Believe it?!`) | Dylan Reid (`Bowen Arrows`) | 34 | 29 | Won by 5; Holder retained | Ryan Donlan (`**Cunha Believe it?!`) |
-| 20 | Ryan Donlan (`**Cunha Believe it?!`) | Ethan Ellsworth (`Santa’s reijnders`) | 44 | 37 | Won by 7; Holder retained | Ryan Donlan (`**Cunha Believe it?!`) |
-| 21 | Ryan Donlan (`**Cunha Believe it?!`) | Luke Lockwood (`Into the WOODwork*`) | 46 | 38 | Won by 8; Holder retained | Ryan Donlan (`**Cunha Believe it?!`) |
-| 22 | Ryan Donlan (`**Cunha Believe it?!`) | Julius Long (`Amorim de mi vida`) | 28 | 26 | Won by 2; Holder retained | Ryan Donlan (`**Cunha Believe it?!`) |
-| 23 | Ryan Donlan (`**Cunha Believe it?!`) | Alexander Chaban (`ChabosSpurs@Law`) | 34 | 36 | Lost by 2; Challenger won belt | Alexander Chaban (`ChabosSpurs@Law`) |
-| 24 | Alexander Chaban (`ChabosSpurs@Law`) | Luke Lockwood (`Into the WOODwork*`) | 37 | 25 | Won by 12; Holder retained | Alexander Chaban (`ChabosSpurs@Law`) |
-| 25 | Alexander Chaban (`ChabosSpurs@Law`) | Ethan Ellsworth (`Santa’s reijnders`) | 41 | 40 | Won by 1; Holder retained | Alexander Chaban (`ChabosSpurs@Law`) |
-| 26 | Alexander Chaban (`ChabosSpurs@Law`) | Ryan Houseman (`eze as u like b*%chs`) | 30 | 44 | Lost by 14; Challenger won belt | Ryan Houseman (`eze as u like b*%chs`) |
-| 27 | Ryan Houseman (`eze as u like b*%chs`) | Ethan Ellsworth (`Santa’s reijnders`) | 46 | 40 | Won by 6; Holder retained | Ryan Houseman (`eze as u like b*%chs`) |
-| 28 | Ryan Houseman (`eze as u like b*%chs`) | Drake Byrd (`Grand-Larseny`) | 47 | 55 | Lost by 8; Challenger won belt | Drake Byrd (`Grand-Larseny`) |
-| 29 | Drake Byrd (`Grand-Larseny`) | Alexander Chaban (`ChabosSpurs@Law`) | 39 | 24 | Won by 15; Holder retained | Drake Byrd (`Grand-Larseny`) |
-| 30 | Drake Byrd (`Grand-Larseny`) | Julius Long (`Amorim de mi vida`) | 64 | 52 | Won by 12; Holder retained | Drake Byrd (`Grand-Larseny`) |
-| 31 | Drake Byrd (`Grand-Larseny`) | Ethan Ellsworth (`Santa’s reijnders`) | 35 | 29 | Won by 6; Holder retained | Drake Byrd (`Grand-Larseny`) |
-| 32 | Drake Byrd (`Grand-Larseny`) | Justin Miller (`Sue-nited FC*`) | 37 | 50 | Lost by 13; Challenger won belt | Justin Miller (`Sue-nited FC*`) |
-| 33 | Justin Miller (`Sue-nited FC*`) | Julius Long (`Amorim de mi vida`) | 68 | 54 | Won by 14; Holder retained | Justin Miller (`Sue-nited FC*`) |
-| 34 | Justin Miller (`Sue-nited FC*`) | Levi Morant (`*Saka It To Me Baby`) | 38 | 35 | Won by 3; Holder retained | Justin Miller (`Sue-nited FC*`) |
-| 35 | Justin Miller (`Sue-nited FC*`) | Ryan Donlan (`**Cunha Believe it?!`) | 30 | 38 | Lost by 8; Challenger won belt | Ryan Donlan (`**Cunha Believe it?!`) |
-| 36 | Ryan Donlan (`**Cunha Believe it?!`) | Levi Morant (`*Saka It To Me Baby`) | 49 | 28 | Won by 21; Holder retained | Ryan Donlan (`**Cunha Believe it?!`) |
-| 37 | Ryan Donlan (`**Cunha Believe it?!`) | Dylan Reid (`Bowen Arrows`) | 61 | 22 | Won by 39; Holder retained | Ryan Donlan (`**Cunha Believe it?!`) |
+| GW | Holder Entering | Challenger | Score | Belt After GW |
+|---:|---|---|---:|---|
+| 1 | Levi Morant | Luke Lockwood | 36-42 | Luke Lockwood |
+| 2 | Luke Lockwood | Justin Miller | 24-42 | Justin Miller |
+| 3 | Justin Miller | Ethan Ellsworth | 30-49 | Ethan Ellsworth |
+| 4 | Ethan Ellsworth | Drake Byrd | 39-41 | Drake Byrd |
+| 5 | Drake Byrd | Justin Miller | 47-46 | Drake Byrd |
+| 6 | Drake Byrd | Ryan Donlan | 18-47 | Ryan Donlan |
+| 7 | Ryan Donlan | Ryan Houseman | 34-45 | Ryan Houseman |
+| 8 | Ryan Houseman | Alexander Chaban | 79-32 | Ryan Houseman |
+| 9 | Ryan Houseman | Ethan Ellsworth | 69-45 | Ryan Houseman |
+| 10 | Ryan Houseman | Drake Byrd | 61-51 | Ryan Houseman |
+| 11 | Ryan Houseman | Julius Long | 31-36 | Julius Long |
+| 12 | Julius Long | Drake Byrd | 43-59 | Drake Byrd |
+| 13 | Drake Byrd | Ethan Ellsworth | 39-41 | Ethan Ellsworth |
+| 14 | Ethan Ellsworth | Dylan Reid | 28-30 | Dylan Reid |
+| 15 | Dylan Reid | Ryan Houseman | 50-42 | Dylan Reid |
+| 16 | Dylan Reid | Drake Byrd | 37-40 | Drake Byrd |
+| 17 | Drake Byrd | Levi Morant | 23-45 | Levi Morant |
+| 18 | Levi Morant | Ryan Donlan | 36-45 | Ryan Donlan |
+| 19 | Ryan Donlan | Dylan Reid | 34-29 | Ryan Donlan |
+| 20 | Ryan Donlan | Ethan Ellsworth | 44-37 | Ryan Donlan |
+| 21 | Ryan Donlan | Luke Lockwood | 46-38 | Ryan Donlan |
+| 22 | Ryan Donlan | Julius Long | 28-26 | Ryan Donlan |
+| 23 | Ryan Donlan | Alexander Chaban | 34-36 | Alexander Chaban |
+| 24 | Alexander Chaban | Luke Lockwood | 37-25 | Alexander Chaban |
+| 25 | Alexander Chaban | Ethan Ellsworth | 41-40 | Alexander Chaban |
+| 26 | Alexander Chaban | Ryan Houseman | 30-44 | Ryan Houseman |
+| 27 | Ryan Houseman | Ethan Ellsworth | 46-40 | Ryan Houseman |
+| 28 | Ryan Houseman | Drake Byrd | 47-55 | Drake Byrd |
+| 29 | Drake Byrd | Alexander Chaban | 39-24 | Drake Byrd |
+| 30 | Drake Byrd | Julius Long | 64-52 | Drake Byrd |
+| 31 | Drake Byrd | Ethan Ellsworth | 35-29 | Drake Byrd |
+| 32 | Drake Byrd | Justin Miller | 37-50 | Justin Miller |
+| 33 | Justin Miller | Julius Long | 68-54 | Justin Miller |
+| 34 | Justin Miller | Levi Morant | 38-35 | Justin Miller |
+| 35 | Justin Miller | Ryan Donlan | 30-38 | Ryan Donlan |
+| 36 | Ryan Donlan | Levi Morant | 49-28 | Ryan Donlan |
+| 37 | Ryan Donlan | Dylan Reid | 61-22 | Ryan Donlan |
 
 </details>
 

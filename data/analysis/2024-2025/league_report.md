@@ -434,6 +434,7 @@ Ryan Donlan started with the belt going into GW1. The belt changes hands only wh
 - **Belt Fight Record** is wins-losses across every belt matchup, whether the manager entered as holder or challenger.
 - The weekly path uses the inferred 2024-2025 matchup schedule described above.
 - In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
+- **Score** is shown in holder-entering to challenger order. If Belt After GW matches Holder Entering, the holder defended; if it changes, the challenger won the belt.
 
 </details>
 
@@ -471,46 +472,46 @@ Current holder after GW38: Levi Morant.
 
 ### Week-By-Week Belt Path
 
-| GW | Holder Entering | Challenger | Score | Holder Result | Title Change | Holder After |
-|---|---|---|---|---|---|---|
-| 1 | Ryan Donlan | Drake Byrd | 49-32 | W |  | Ryan Donlan |
-| 2 | Ryan Donlan | Luke Lockwood | 66-34 | W |  | Ryan Donlan |
-| 3 | Ryan Donlan | Julius Long | 59-50 | W |  | Ryan Donlan |
-| 4 | Ryan Donlan | Dylan Reid | 44-35 | W |  | Ryan Donlan |
-| 5 | Ryan Donlan | Justin Miller | 63-58 | W |  | Ryan Donlan |
-| 6 | Ryan Donlan | Levi Morant | 27-47 | L | Yes | Levi Morant |
-| 7 | Levi Morant | Drake Byrd | 38-33 | W |  | Levi Morant |
-| 8 | Levi Morant | Ethan Ellsworth | 34-40 | L | Yes | Ethan Ellsworth |
-| 9 | Ethan Ellsworth | Ryan Donlan | 32-50 | L | Yes | Ryan Donlan |
-| 10 | Ryan Donlan | Drake Byrd | 30-32 | L | Yes | Drake Byrd |
-| 11 | Drake Byrd | Ethan Ellsworth | 43-51 | L | Yes | Ethan Ellsworth |
-| 12 | Ethan Ellsworth | Alexander Chaban | 47-29 | W |  | Ethan Ellsworth |
-| 13 | Ethan Ellsworth | Justin Miller | 45-31 | W |  | Ethan Ellsworth |
-| 14 | Ethan Ellsworth | Dylan Reid | 36-41 | L | Yes | Dylan Reid |
-| 15 | Dylan Reid | Ryan Houseman | 27-31 | L | Yes | Ryan Houseman |
-| 16 | Ryan Houseman | Ethan Ellsworth | 42-36 | W |  | Ryan Houseman |
-| 17 | Ryan Houseman | Ryan Donlan | 29-53 | L | Yes | Ryan Donlan |
-| 18 | Ryan Donlan | Ethan Ellsworth | 39-28 | W |  | Ryan Donlan |
-| 19 | Ryan Donlan | Drake Byrd | 65-31 | W |  | Ryan Donlan |
-| 20 | Ryan Donlan | Luke Lockwood | 52-33 | W |  | Ryan Donlan |
-| 21 | Ryan Donlan | Julius Long | 32-46 | L | Yes | Julius Long |
-| 22 | Julius Long | Drake Byrd | 35-37 | L | Yes | Drake Byrd |
-| 23 | Drake Byrd | Luke Lockwood | 36-43 | L | Yes | Luke Lockwood |
-| 24 | Luke Lockwood | Ethan Ellsworth | 39-26 | W |  | Luke Lockwood |
-| 25 | Luke Lockwood | Justin Miller | 61-66 | L | Yes | Justin Miller |
-| 26 | Justin Miller | Alexander Chaban | 53-39 | W |  | Justin Miller |
-| 27 | Justin Miller | Dylan Reid | 71-45 | W |  | Justin Miller |
-| 28 | Justin Miller | Ryan Houseman | 57-51 | W |  | Justin Miller |
-| 29 | Justin Miller | Levi Morant | 24-23 | W |  | Justin Miller |
-| 30 | Justin Miller | Drake Byrd | 54-44 | W |  | Justin Miller |
-| 31 | Justin Miller | Ethan Ellsworth | 52-46 | W |  | Justin Miller |
-| 32 | Justin Miller | Ryan Donlan | 58-65 | L | Yes | Ryan Donlan |
-| 33 | Ryan Donlan | Levi Morant | 63-53 | W |  | Ryan Donlan |
-| 34 | Ryan Donlan | Alexander Chaban | 54-58 | L | Yes | Alexander Chaban |
-| 35 | Alexander Chaban | Justin Miller | 41-45 | L | Yes | Justin Miller |
-| 36 | Justin Miller | Dylan Reid | 58-30 | W |  | Justin Miller |
-| 37 | Justin Miller | Ryan Houseman | 55-40 | W |  | Justin Miller |
-| 38 | Justin Miller | Levi Morant | 37-39 | L | Yes | Levi Morant |
+| GW | Holder Entering | Challenger | Score | Belt After GW |
+|---:|---|---|---:|---|
+| 1 | Ryan Donlan | Drake Byrd | 49-32 | Ryan Donlan |
+| 2 | Ryan Donlan | Luke Lockwood | 66-34 | Ryan Donlan |
+| 3 | Ryan Donlan | Julius Long | 59-50 | Ryan Donlan |
+| 4 | Ryan Donlan | Dylan Reid | 44-35 | Ryan Donlan |
+| 5 | Ryan Donlan | Justin Miller | 63-58 | Ryan Donlan |
+| 6 | Ryan Donlan | Levi Morant | 27-47 | Levi Morant |
+| 7 | Levi Morant | Drake Byrd | 38-33 | Levi Morant |
+| 8 | Levi Morant | Ethan Ellsworth | 34-40 | Ethan Ellsworth |
+| 9 | Ethan Ellsworth | Ryan Donlan | 32-50 | Ryan Donlan |
+| 10 | Ryan Donlan | Drake Byrd | 30-32 | Drake Byrd |
+| 11 | Drake Byrd | Ethan Ellsworth | 43-51 | Ethan Ellsworth |
+| 12 | Ethan Ellsworth | Alexander Chaban | 47-29 | Ethan Ellsworth |
+| 13 | Ethan Ellsworth | Justin Miller | 45-31 | Ethan Ellsworth |
+| 14 | Ethan Ellsworth | Dylan Reid | 36-41 | Dylan Reid |
+| 15 | Dylan Reid | Ryan Houseman | 27-31 | Ryan Houseman |
+| 16 | Ryan Houseman | Ethan Ellsworth | 42-36 | Ryan Houseman |
+| 17 | Ryan Houseman | Ryan Donlan | 29-53 | Ryan Donlan |
+| 18 | Ryan Donlan | Ethan Ellsworth | 39-28 | Ryan Donlan |
+| 19 | Ryan Donlan | Drake Byrd | 65-31 | Ryan Donlan |
+| 20 | Ryan Donlan | Luke Lockwood | 52-33 | Ryan Donlan |
+| 21 | Ryan Donlan | Julius Long | 32-46 | Julius Long |
+| 22 | Julius Long | Drake Byrd | 35-37 | Drake Byrd |
+| 23 | Drake Byrd | Luke Lockwood | 36-43 | Luke Lockwood |
+| 24 | Luke Lockwood | Ethan Ellsworth | 39-26 | Luke Lockwood |
+| 25 | Luke Lockwood | Justin Miller | 61-66 | Justin Miller |
+| 26 | Justin Miller | Alexander Chaban | 53-39 | Justin Miller |
+| 27 | Justin Miller | Dylan Reid | 71-45 | Justin Miller |
+| 28 | Justin Miller | Ryan Houseman | 57-51 | Justin Miller |
+| 29 | Justin Miller | Levi Morant | 24-23 | Justin Miller |
+| 30 | Justin Miller | Drake Byrd | 54-44 | Justin Miller |
+| 31 | Justin Miller | Ethan Ellsworth | 52-46 | Justin Miller |
+| 32 | Justin Miller | Ryan Donlan | 58-65 | Ryan Donlan |
+| 33 | Ryan Donlan | Levi Morant | 63-53 | Ryan Donlan |
+| 34 | Ryan Donlan | Alexander Chaban | 54-58 | Alexander Chaban |
+| 35 | Alexander Chaban | Justin Miller | 41-45 | Justin Miller |
+| 36 | Justin Miller | Dylan Reid | 58-30 | Justin Miller |
+| 37 | Justin Miller | Ryan Houseman | 55-40 | Justin Miller |
+| 38 | Justin Miller | Levi Morant | 37-39 | Levi Morant |
 
 </details>
 
