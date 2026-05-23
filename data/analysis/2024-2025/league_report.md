@@ -57,22 +57,22 @@ Use this table for the plain 2024-2025 league table: record, league points, scor
 - **Avg**: PF divided by 38 gameweeks.
 - **Top Scores**: weeks where that manager tied or held the league's highest weekly score.
 - **Bottom Scores**: weeks where that manager tied or held the league's lowest weekly score.
-- **Best Week** and **Worst Week**: that manager's highest and lowest scoring gameweeks.
+- **Best GW (Score)** and **Worst GW (Score)**: that manager's highest and lowest scoring gameweeks.
 
 </details>
 
-| Final Rank | Manager | Record | H2H Pts | PF | PA | Avg | Top Scores | Bottom Scores | Best Week | Worst Week |
+| Final Rank | Manager | Record | H2H Pts | PF | PA | Avg | Top Scores | Bottom Scores | Best GW (Score) | Worst GW (Score) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Ryan Donlan | 27-1-10 | 82 | 1757 | 1452 | 46.2 | 5 | 2 | GW24 (83) | GW8 (19) |
-| 2 | Justin Miller | 26-1-11 | 79 | 1800 | 1557 | 47.4 | 11 | 2 | GW24 (80) | GW29 (24) |
-| 3 | Ryan Houseman | 21-0-17 | 63 | 1478 | 1445 | 38.9 | 2 | 5 | GW22 (81) | GW6 (22) |
-| 4 | Levi Morant | 19-0-19 | 57 | 1557 | 1586 | 41.0 | 6 | 4 | GW32 (75) | GW29 (23) |
-| 5 | Luke Lockwood | 18-2-18 | 56 | 1534 | 1518 | 40.4 | 2 | 5 | GW33 (76) | GW15 (22) |
-| 6 | Julius Long | 18-1-19 | 55 | 1533 | 1522 | 40.3 | 5 | 1 | GW7 (73) | GW35 (24) |
-| 7 | Drake Byrd | 16-1-21 | 49 | 1467 | 1525 | 38.6 | 3 | 1 | GW29 (69) | GW32 (18) |
-| 8 | Ethan Ellsworth | 15-0-23 | 45 | 1450 | 1570 | 38.2 | 3 | 7 | GW26 (76) | GW29 (13) |
-| 9 | Alexander Chaban | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 | GW2 (69) | GW15 (17) |
-| 10 | Dylan Reid | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 | GW2 (53) | GW3 (20) |
+| 1 | Ryan Donlan | 27-1-10 | 82 | 1757 | 1452 | 46.2 | 5 | 2 | 24 (83) | 8 (19) |
+| 2 | Justin Miller | 26-1-11 | 79 | 1800 | 1557 | 47.4 | 11 | 2 | 24 (80) | 29 (24) |
+| 3 | Ryan Houseman | 21-0-17 | 63 | 1478 | 1445 | 38.9 | 2 | 5 | 22 (81) | 6 (22) |
+| 4 | Levi Morant | 19-0-19 | 57 | 1557 | 1586 | 41.0 | 6 | 4 | 32 (75) | 29 (23) |
+| 5 | Luke Lockwood | 18-2-18 | 56 | 1534 | 1518 | 40.4 | 2 | 5 | 33 (76) | 15 (22) |
+| 6 | Julius Long | 18-1-19 | 55 | 1533 | 1522 | 40.3 | 5 | 1 | 7 (73) | 35 (24) |
+| 7 | Drake Byrd | 16-1-21 | 49 | 1467 | 1525 | 38.6 | 3 | 1 | 29 (69) | 32 (18) |
+| 8 | Ethan Ellsworth | 15-0-23 | 45 | 1450 | 1570 | 38.2 | 3 | 7 | 26 (76) | 29 (13) |
+| 9 | Alexander Chaban | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 | 2 (69) | 15 (17) |
+| 10 | Dylan Reid | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 | 2 (53) | 3 (20) |
 
 </details>
 
@@ -88,22 +88,22 @@ Use this table to see each manager's longest winning run and longest losing run.
 - Draws break both streak types.
 - **Longest Win Streak** is the manager's longest consecutive-win run.
 - **Longest Loss Streak** is the manager's longest consecutive-loss run.
-- **Weeks** shows up to the first three matching streak ranges; `+N more` means there were additional matching streaks.
+- **Win GW(s)** and **Loss GW(s)** show up to the first three matching streak ranges; `+N more` means there were additional matching streaks.
 
 </details>
 
-| Manager | Longest Win Streak | Win Weeks | Longest Loss Streak | Loss Weeks |
+| Manager | Longest Win Streak | Win GW(s) | Longest Loss Streak | Loss GW(s) |
 |---|---|---|---|---|
-| Justin Miller | 8 | GW24-GW31 | 3 | GW5-GW7 |
-| Ryan Donlan | 7 | GW14-GW20 | 4 | GW34-GW37 |
-| Levi Morant | 7 | GW1-GW7 | 5 | GW8-GW12 |
-| Luke Lockwood | 7 | GW27-GW33 | 5 | GW1-GW5 |
-| Ryan Houseman | 4 | GW33-GW36 | 3 | GW28-GW30 |
-| Julius Long | 4 | GW4-GW7 | 4 | GW33-GW36 |
-| Ethan Ellsworth | 4 | GW10-GW13 | 7 | GW29-GW35 |
-| Drake Byrd | 3 | GW15-GW17, GW20-GW22 | 4 | GW11-GW14 |
-| Dylan Reid | 3 | GW10-GW12 | 8 | GW24-GW31 |
-| Alexander Chaban | 2 | GW19-GW20, GW23-GW24, GW29-GW30 | 4 | GW25-GW28 |
+| Justin Miller | 8 | 24-31 | 3 | 5-7 |
+| Ryan Donlan | 7 | 14-20 | 4 | 34-37 |
+| Levi Morant | 7 | 1-7 | 5 | 8-12 |
+| Luke Lockwood | 7 | 27-33 | 5 | 1-5 |
+| Ryan Houseman | 4 | 33-36 | 3 | 28-30 |
+| Julius Long | 4 | 4-7 | 4 | 33-36 |
+| Ethan Ellsworth | 4 | 10-13 | 7 | 29-35 |
+| Drake Byrd | 3 | 15-17, 20-22 | 4 | 11-14 |
+| Dylan Reid | 3 | 10-12 | 8 | 24-31 |
+| Alexander Chaban | 2 | 19-20, 23-24, 29-30 | 4 | 25-28 |
 
 </details>
 

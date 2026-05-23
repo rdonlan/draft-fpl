@@ -56,22 +56,22 @@ Use this table to see each team's longest winning run and longest losing run.
 - Draws break both streak types.
 - **Longest Win Streak** is the team's longest consecutive-win run.
 - **Longest Loss Streak** is the team's longest consecutive-loss run.
-- **Weeks** shows up to the first three matching streak ranges; `+N more` means there were additional matching streaks.
+- **Win GW(s)** and **Loss GW(s)** show up to the first three matching streak ranges; `+N more` means there were additional matching streaks.
 
 </details>
 
-| Team | Longest Win Streak | Win Weeks | Longest Loss Streak | Loss Weeks |
+| Team | Longest Win Streak | Win GW(s) | Longest Loss Streak | Loss GW(s) |
 |---|---:|---|---:|---|
-| `**Cunha Believe it?!` | 10 | GW28-GW37 | 3 | GW1-GW3 |
-| `Sue-nited FC*` | 7 | GW28-GW34 | 4 | GW5-GW8 |
-| `ChabosSpurs@Law` | 6 | GW20-GW25 | 12 | GW26-GW37 |
-| `eze as u like b*%chs` | 4 | GW7-GW10, GW24-GW27 | 4 | GW13-GW16, GW31-GW34 |
-| `Into the WOODwork*` | 4 | GW31-GW34 | 4 | GW19-GW22 |
-| `Grand-Larseny` | 4 | GW28-GW31 | 5 | GW17-GW21 |
-| `Amorim de mi vida` | 4 | GW18-GW21 | 6 | GW12-GW17, GW29-GW34 |
-| `Bowen Arrows` | 3 | GW13-GW15 | 4 | GW34-GW37 |
-| `*Saka It To Me Baby` | 3 | GW25-GW27 | 4 | GW33-GW36 |
-| `Santa’s reijnders` | 3 | GW1-GW3, GW33-GW35 | 5 | GW8-GW12 |
+| `**Cunha Believe it?!` | 10 | 28-37 | 3 | 1-3 |
+| `Sue-nited FC*` | 7 | 28-34 | 4 | 5-8 |
+| `ChabosSpurs@Law` | 6 | 20-25 | 12 | 26-37 |
+| `eze as u like b*%chs` | 4 | 7-10, 24-27 | 4 | 13-16, 31-34 |
+| `Into the WOODwork*` | 4 | 31-34 | 4 | 19-22 |
+| `Grand-Larseny` | 4 | 28-31 | 5 | 17-21 |
+| `Amorim de mi vida` | 4 | 18-21 | 6 | 12-17, 29-34 |
+| `Bowen Arrows` | 3 | 13-15 | 4 | 34-37 |
+| `*Saka It To Me Baby` | 3 | 25-27 | 4 | 33-36 |
+| `Santa’s reijnders` | 3 | 1-3, 33-35 | 5 | 8-12 |
 
 </details>
 
