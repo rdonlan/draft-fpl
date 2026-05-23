@@ -76,6 +76,36 @@ Use this table to see each team's longest winning run and longest losing run.
 </details>
 
 <details>
+<summary><h2>Score Bands</h2></summary>
+
+Use this table to see how often each team landed in the top, middle, or bottom scoring bands for a gameweek.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- Percentages are based on completed gameweeks.
+- **Top 1** is the share of gameweeks where the team tied or held the highest score.
+- **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included.
+- **Bottom 5**, **Bottom 3**, and **Bottom 1** work the same way from the bottom of that week's scores.
+
+</details>
+
+| Team | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
+|---|---:|---:|---:|---:|---:|---:|
+| `Sue-nited FC*` | 18.9% | 45.9% | 67.6% | 35.1% | 24.3% | 8.1% |
+| `eze as u like b*%chs` | 16.2% | 40.5% | 64.9% | 35.1% | 21.6% | 10.8% |
+| `Grand-Larseny` | 16.2% | 37.8% | 62.2% | 40.5% | 18.9% | 8.1% |
+| `**Cunha Believe it?!` | 10.8% | 32.4% | 62.2% | 37.8% | 21.6% | 5.4% |
+| `*Saka It To Me Baby` | 10.8% | 18.9% | 37.8% | 64.9% | 40.5% | 21.6% |
+| `Bowen Arrows` | 8.1% | 40.5% | 45.9% | 54.1% | 29.7% | 8.1% |
+| `Into the WOODwork*` | 8.1% | 29.7% | 48.6% | 56.8% | 35.1% | 5.4% |
+| `ChabosSpurs@Law` | 8.1% | 24.3% | 43.2% | 59.5% | 37.8% | 13.5% |
+| `Amorim de mi vida` | 8.1% | 21.6% | 32.4% | 70.3% | 45.9% | 21.6% |
+| `Santa’s reijnders` | 8.1% | 18.9% | 48.6% | 59.5% | 32.4% | 8.1% |
+
+</details>
+
+<details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
 Use this table to strip out the weekly opponent draw and rank teams by how their scores compared with the whole league each gameweek.
@@ -699,6 +729,7 @@ These are the supporting CSVs exposed for the report.
 
 - `standings_metrics.csv`
 - `win_streaks.csv`
+- `score_bands.csv`
 - `team_event_scores.csv`
 - `lineups.csv`
 - `waiver_inspired_wins.csv`

@@ -108,6 +108,36 @@ Use this table to see each manager's longest winning run and longest losing run.
 </details>
 
 <details>
+<summary><h2>Score Bands</h2></summary>
+
+Use this table to see how often each manager landed in the top, middle, or bottom scoring bands for a gameweek.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- Percentages are based on completed gameweeks.
+- **Top 1** is the share of gameweeks where the manager tied or held the highest score.
+- **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included.
+- **Bottom 5**, **Bottom 3**, and **Bottom 1** work the same way from the bottom of that week's scores.
+
+</details>
+
+| Manager | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
+|---|---|---|---|---|---|---|
+| Justin Miller | 28.9% | 44.7% | 78.9% | 26.3% | 10.5% | 5.3% |
+| Levi Morant | 15.8% | 28.9% | 57.9% | 44.7% | 18.4% | 10.5% |
+| Ryan Donlan | 13.2% | 57.9% | 76.3% | 28.9% | 15.8% | 5.3% |
+| Julius Long | 13.2% | 18.4% | 50.0% | 57.9% | 31.6% | 2.6% |
+| Alexander Chaban | 10.5% | 31.6% | 47.4% | 52.6% | 34.2% | 21.1% |
+| Ethan Ellsworth | 7.9% | 28.9% | 47.4% | 57.9% | 39.5% | 18.4% |
+| Drake Byrd | 7.9% | 21.1% | 42.1% | 60.5% | 31.6% | 2.6% |
+| Luke Lockwood | 5.3% | 36.8% | 50.0% | 55.3% | 34.2% | 13.2% |
+| Ryan Houseman | 5.3% | 26.3% | 47.4% | 57.9% | 39.5% | 13.2% |
+| Dylan Reid | 2.6% | 13.2% | 23.7% | 81.6% | 60.5% | 13.2% |
+
+</details>
+
+<details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
 This ranks teams by how their weekly scores performed against the whole league, independent of their actual opponent draw.
