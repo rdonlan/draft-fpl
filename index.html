@@ -96,6 +96,28 @@
       font-size: 0.92rem;
       font-weight: 750;
     }
+    details.position-group {
+      margin: 12px 18px;
+      border-color: #d6dee8;
+      background: #ffffff;
+      box-shadow: none;
+    }
+    details.position-group[open] {
+      box-shadow: none;
+    }
+    details.position-group > summary {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 11px 14px;
+      background: #f3f6fb;
+      color: #263244;
+      font-weight: 800;
+    }
+    details.position-group > .table-wrap {
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
     details > p,
     details > ul,
     details > h3,
@@ -699,7 +721,7 @@
 <li><strong>Starter Weekly Avg</strong>: average weekly score for starting lineup players at that position.</li>
 <li><strong>Rostered Weekly Avg</strong>: average weekly score for every rostered player slot at that position, including starters and bench players.</li>
 <li><strong>4+ Week Pool Weekly Avg</strong>: average weekly score for players at that position who appeared on a league roster in at least 4 distinct gameweeks. Four weeks is roughly 10% of the 38-gameweek season, so it filters out one-week punts without requiring a player to be a long-term hold. Zeroes still count for qualified players.</li>
-<li>The full team-by-position table is grouped by position and sorted from highest Points/Start to lowest inside each position.</li>
+<li>The full team-by-position breakdown is split into one collapsible block per position, sorted from highest Points/Start to lowest inside each position.</li>
 </ul>
 </details>
 <h3>League-Wide Position Averages</h3>
@@ -723,51 +745,75 @@
 <tr><td>FWD</td><td><code>**Cunha Believe it?!</code></td><td>390</td><td>78</td><td>5.00</td></tr>
 </tbody></table></div>
 <h3>Team-By-Position Starter Scoring</h3>
-<p>Use this table for the full manager-by-position breakdown, grouped by position and sorted by Points/Start.</p>
+<p>Use these position dropdowns for the full manager-by-position breakdown without scrolling through one long combined table.</p>
+<details class="position-group">
+<summary>GKP - Goalkeepers</summary>
 <div class="table-wrap"><table>
-<thead><tr><th>Team</th><th>Position</th><th>Starter Points</th><th>Starts</th><th>Points/Start</th></tr></thead>
+<thead><tr><th>Team</th><th>Starter Points</th><th>Starts</th><th>Points/Start</th></tr></thead>
 <tbody>
-<tr><td><code>**Cunha Believe it?!</code></td><td>GKP</td><td>164</td><td>37</td><td>4.43</td></tr>
-<tr><td><code>eze as u like b*%chs</code></td><td>GKP</td><td>153</td><td>37</td><td>4.14</td></tr>
-<tr><td><code>Sue-nited FC*</code></td><td>GKP</td><td>152</td><td>37</td><td>4.11</td></tr>
-<tr><td><code>ChabosSpurs@Law</code></td><td>GKP</td><td>138</td><td>37</td><td>3.73</td></tr>
-<tr><td><code>Amorim de mi vida</code></td><td>GKP</td><td>134</td><td>37</td><td>3.62</td></tr>
-<tr><td><code>*Saka It To Me Baby</code></td><td>GKP</td><td>133</td><td>37</td><td>3.59</td></tr>
-<tr><td><code>Bowen Arrows</code></td><td>GKP</td><td>133</td><td>37</td><td>3.59</td></tr>
-<tr><td><code>Santa’s reijnders</code></td><td>GKP</td><td>132</td><td>37</td><td>3.57</td></tr>
-<tr><td><code>Grand-Larseny</code></td><td>GKP</td><td>119</td><td>37</td><td>3.22</td></tr>
-<tr><td><code>Into the WOODwork*</code></td><td>GKP</td><td>112</td><td>37</td><td>3.03</td></tr>
-<tr><td><code>eze as u like b*%chs</code></td><td>DEF</td><td>574</td><td>126</td><td>4.56</td></tr>
-<tr><td><code>**Cunha Believe it?!</code></td><td>DEF</td><td>596</td><td>140</td><td>4.26</td></tr>
-<tr><td><code>Sue-nited FC*</code></td><td>DEF</td><td>644</td><td>153</td><td>4.21</td></tr>
-<tr><td><code>Grand-Larseny</code></td><td>DEF</td><td>564</td><td>139</td><td>4.06</td></tr>
-<tr><td><code>Into the WOODwork*</code></td><td>DEF</td><td>595</td><td>151</td><td>3.94</td></tr>
-<tr><td><code>Amorim de mi vida</code></td><td>DEF</td><td>500</td><td>131</td><td>3.82</td></tr>
-<tr><td><code>*Saka It To Me Baby</code></td><td>DEF</td><td>531</td><td>146</td><td>3.64</td></tr>
-<tr><td><code>Santa’s reijnders</code></td><td>DEF</td><td>526</td><td>148</td><td>3.55</td></tr>
-<tr><td><code>ChabosSpurs@Law</code></td><td>DEF</td><td>461</td><td>139</td><td>3.32</td></tr>
-<tr><td><code>Bowen Arrows</code></td><td>DEF</td><td>368</td><td>118</td><td>3.12</td></tr>
-<tr><td><code>Grand-Larseny</code></td><td>MID</td><td>698</td><td>143</td><td>4.88</td></tr>
-<tr><td><code>Sue-nited FC*</code></td><td>MID</td><td>621</td><td>152</td><td>4.09</td></tr>
-<tr><td><code>eze as u like b*%chs</code></td><td>MID</td><td>640</td><td>159</td><td>4.03</td></tr>
-<tr><td><code>Santa’s reijnders</code></td><td>MID</td><td>565</td><td>144</td><td>3.92</td></tr>
-<tr><td><code>ChabosSpurs@Law</code></td><td>MID</td><td>637</td><td>167</td><td>3.81</td></tr>
-<tr><td><code>**Cunha Believe it?!</code></td><td>MID</td><td>577</td><td>152</td><td>3.80</td></tr>
-<tr><td><code>*Saka It To Me Baby</code></td><td>MID</td><td>561</td><td>148</td><td>3.79</td></tr>
-<tr><td><code>Into the WOODwork*</code></td><td>MID</td><td>541</td><td>147</td><td>3.68</td></tr>
-<tr><td><code>Bowen Arrows</code></td><td>MID</td><td>515</td><td>144</td><td>3.58</td></tr>
-<tr><td><code>Amorim de mi vida</code></td><td>MID</td><td>533</td><td>159</td><td>3.35</td></tr>
-<tr><td><code>**Cunha Believe it?!</code></td><td>FWD</td><td>390</td><td>78</td><td>5.00</td></tr>
-<tr><td><code>Bowen Arrows</code></td><td>FWD</td><td>524</td><td>108</td><td>4.85</td></tr>
-<tr><td><code>Into the WOODwork*</code></td><td>FWD</td><td>246</td><td>72</td><td>3.42</td></tr>
-<tr><td><code>ChabosSpurs@Law</code></td><td>FWD</td><td>214</td><td>64</td><td>3.34</td></tr>
-<tr><td><code>Sue-nited FC*</code></td><td>FWD</td><td>216</td><td>65</td><td>3.32</td></tr>
-<tr><td><code>Amorim de mi vida</code></td><td>FWD</td><td>263</td><td>80</td><td>3.29</td></tr>
-<tr><td><code>Santa’s reijnders</code></td><td>FWD</td><td>254</td><td>78</td><td>3.26</td></tr>
-<tr><td><code>eze as u like b*%chs</code></td><td>FWD</td><td>268</td><td>85</td><td>3.15</td></tr>
-<tr><td><code>*Saka It To Me Baby</code></td><td>FWD</td><td>224</td><td>76</td><td>2.95</td></tr>
-<tr><td><code>Grand-Larseny</code></td><td>FWD</td><td>231</td><td>88</td><td>2.62</td></tr>
+<tr><td><code>**Cunha Believe it?!</code></td><td>164</td><td>37</td><td>4.43</td></tr>
+<tr><td><code>eze as u like b*%chs</code></td><td>153</td><td>37</td><td>4.14</td></tr>
+<tr><td><code>Sue-nited FC*</code></td><td>152</td><td>37</td><td>4.11</td></tr>
+<tr><td><code>ChabosSpurs@Law</code></td><td>138</td><td>37</td><td>3.73</td></tr>
+<tr><td><code>Amorim de mi vida</code></td><td>134</td><td>37</td><td>3.62</td></tr>
+<tr><td><code>*Saka It To Me Baby</code></td><td>133</td><td>37</td><td>3.59</td></tr>
+<tr><td><code>Bowen Arrows</code></td><td>133</td><td>37</td><td>3.59</td></tr>
+<tr><td><code>Santa’s reijnders</code></td><td>132</td><td>37</td><td>3.57</td></tr>
+<tr><td><code>Grand-Larseny</code></td><td>119</td><td>37</td><td>3.22</td></tr>
+<tr><td><code>Into the WOODwork*</code></td><td>112</td><td>37</td><td>3.03</td></tr>
 </tbody></table></div>
+</details>
+<details class="position-group">
+<summary>DEF - Defenders</summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Team</th><th>Starter Points</th><th>Starts</th><th>Points/Start</th></tr></thead>
+<tbody>
+<tr><td><code>eze as u like b*%chs</code></td><td>574</td><td>126</td><td>4.56</td></tr>
+<tr><td><code>**Cunha Believe it?!</code></td><td>596</td><td>140</td><td>4.26</td></tr>
+<tr><td><code>Sue-nited FC*</code></td><td>644</td><td>153</td><td>4.21</td></tr>
+<tr><td><code>Grand-Larseny</code></td><td>564</td><td>139</td><td>4.06</td></tr>
+<tr><td><code>Into the WOODwork*</code></td><td>595</td><td>151</td><td>3.94</td></tr>
+<tr><td><code>Amorim de mi vida</code></td><td>500</td><td>131</td><td>3.82</td></tr>
+<tr><td><code>*Saka It To Me Baby</code></td><td>531</td><td>146</td><td>3.64</td></tr>
+<tr><td><code>Santa’s reijnders</code></td><td>526</td><td>148</td><td>3.55</td></tr>
+<tr><td><code>ChabosSpurs@Law</code></td><td>461</td><td>139</td><td>3.32</td></tr>
+<tr><td><code>Bowen Arrows</code></td><td>368</td><td>118</td><td>3.12</td></tr>
+</tbody></table></div>
+</details>
+<details class="position-group">
+<summary>MID - Midfielders</summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Team</th><th>Starter Points</th><th>Starts</th><th>Points/Start</th></tr></thead>
+<tbody>
+<tr><td><code>Grand-Larseny</code></td><td>698</td><td>143</td><td>4.88</td></tr>
+<tr><td><code>Sue-nited FC*</code></td><td>621</td><td>152</td><td>4.09</td></tr>
+<tr><td><code>eze as u like b*%chs</code></td><td>640</td><td>159</td><td>4.03</td></tr>
+<tr><td><code>Santa’s reijnders</code></td><td>565</td><td>144</td><td>3.92</td></tr>
+<tr><td><code>ChabosSpurs@Law</code></td><td>637</td><td>167</td><td>3.81</td></tr>
+<tr><td><code>**Cunha Believe it?!</code></td><td>577</td><td>152</td><td>3.80</td></tr>
+<tr><td><code>*Saka It To Me Baby</code></td><td>561</td><td>148</td><td>3.79</td></tr>
+<tr><td><code>Into the WOODwork*</code></td><td>541</td><td>147</td><td>3.68</td></tr>
+<tr><td><code>Bowen Arrows</code></td><td>515</td><td>144</td><td>3.58</td></tr>
+<tr><td><code>Amorim de mi vida</code></td><td>533</td><td>159</td><td>3.35</td></tr>
+</tbody></table></div>
+</details>
+<details class="position-group">
+<summary>FWD - Forwards</summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Team</th><th>Starter Points</th><th>Starts</th><th>Points/Start</th></tr></thead>
+<tbody>
+<tr><td><code>**Cunha Believe it?!</code></td><td>390</td><td>78</td><td>5.00</td></tr>
+<tr><td><code>Bowen Arrows</code></td><td>524</td><td>108</td><td>4.85</td></tr>
+<tr><td><code>Into the WOODwork*</code></td><td>246</td><td>72</td><td>3.42</td></tr>
+<tr><td><code>ChabosSpurs@Law</code></td><td>214</td><td>64</td><td>3.34</td></tr>
+<tr><td><code>Sue-nited FC*</code></td><td>216</td><td>65</td><td>3.32</td></tr>
+<tr><td><code>Amorim de mi vida</code></td><td>263</td><td>80</td><td>3.29</td></tr>
+<tr><td><code>Santa’s reijnders</code></td><td>254</td><td>78</td><td>3.26</td></tr>
+<tr><td><code>eze as u like b*%chs</code></td><td>268</td><td>85</td><td>3.15</td></tr>
+<tr><td><code>*Saka It To Me Baby</code></td><td>224</td><td>76</td><td>2.95</td></tr>
+<tr><td><code>Grand-Larseny</code></td><td>231</td><td>88</td><td>2.62</td></tr>
+</tbody></table></div>
+</details>
 </details>
 <details>
 <summary><h2>Waiver-Inspired Wins</h2></summary>

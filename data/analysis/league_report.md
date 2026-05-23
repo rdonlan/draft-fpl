@@ -463,7 +463,7 @@ Use this section to compare positional value: where managers got efficient start
 - **Starter Weekly Avg**: average weekly score for starting lineup players at that position.
 - **Rostered Weekly Avg**: average weekly score for every rostered player slot at that position, including starters and bench players.
 - **4+ Week Pool Weekly Avg**: average weekly score for players at that position who appeared on a league roster in at least 4 distinct gameweeks. Four weeks is roughly 10% of the 38-gameweek season, so it filters out one-week punts without requiring a player to be a long-term hold. Zeroes still count for qualified players.
-- The full team-by-position table is grouped by position and sorted from highest Points/Start to lowest inside each position.
+- The full team-by-position breakdown is split into one collapsible block per position, sorted from highest Points/Start to lowest inside each position.
 
 </details>
 
@@ -492,50 +492,79 @@ Use this table as the quick leaderboard for which manager got the best per-start
 
 ### Team-By-Position Starter Scoring
 
-Use this table for the full manager-by-position breakdown, grouped by position and sorted by Points/Start.
+Use these position dropdowns for the full manager-by-position breakdown without scrolling through one long combined table.
 
-| Team | Position | Starter Points | Starts | Points/Start |
-|---|---|---:|---:|---:|
-| `**Cunha Believe it?!` | GKP | 164 | 37 | 4.43 |
-| `eze as u like b*%chs` | GKP | 153 | 37 | 4.14 |
-| `Sue-nited FC*` | GKP | 152 | 37 | 4.11 |
-| `ChabosSpurs@Law` | GKP | 138 | 37 | 3.73 |
-| `Amorim de mi vida` | GKP | 134 | 37 | 3.62 |
-| `*Saka It To Me Baby` | GKP | 133 | 37 | 3.59 |
-| `Bowen Arrows` | GKP | 133 | 37 | 3.59 |
-| `Santa’s reijnders` | GKP | 132 | 37 | 3.57 |
-| `Grand-Larseny` | GKP | 119 | 37 | 3.22 |
-| `Into the WOODwork*` | GKP | 112 | 37 | 3.03 |
-| `eze as u like b*%chs` | DEF | 574 | 126 | 4.56 |
-| `**Cunha Believe it?!` | DEF | 596 | 140 | 4.26 |
-| `Sue-nited FC*` | DEF | 644 | 153 | 4.21 |
-| `Grand-Larseny` | DEF | 564 | 139 | 4.06 |
-| `Into the WOODwork*` | DEF | 595 | 151 | 3.94 |
-| `Amorim de mi vida` | DEF | 500 | 131 | 3.82 |
-| `*Saka It To Me Baby` | DEF | 531 | 146 | 3.64 |
-| `Santa’s reijnders` | DEF | 526 | 148 | 3.55 |
-| `ChabosSpurs@Law` | DEF | 461 | 139 | 3.32 |
-| `Bowen Arrows` | DEF | 368 | 118 | 3.12 |
-| `Grand-Larseny` | MID | 698 | 143 | 4.88 |
-| `Sue-nited FC*` | MID | 621 | 152 | 4.09 |
-| `eze as u like b*%chs` | MID | 640 | 159 | 4.03 |
-| `Santa’s reijnders` | MID | 565 | 144 | 3.92 |
-| `ChabosSpurs@Law` | MID | 637 | 167 | 3.81 |
-| `**Cunha Believe it?!` | MID | 577 | 152 | 3.80 |
-| `*Saka It To Me Baby` | MID | 561 | 148 | 3.79 |
-| `Into the WOODwork*` | MID | 541 | 147 | 3.68 |
-| `Bowen Arrows` | MID | 515 | 144 | 3.58 |
-| `Amorim de mi vida` | MID | 533 | 159 | 3.35 |
-| `**Cunha Believe it?!` | FWD | 390 | 78 | 5.00 |
-| `Bowen Arrows` | FWD | 524 | 108 | 4.85 |
-| `Into the WOODwork*` | FWD | 246 | 72 | 3.42 |
-| `ChabosSpurs@Law` | FWD | 214 | 64 | 3.34 |
-| `Sue-nited FC*` | FWD | 216 | 65 | 3.32 |
-| `Amorim de mi vida` | FWD | 263 | 80 | 3.29 |
-| `Santa’s reijnders` | FWD | 254 | 78 | 3.26 |
-| `eze as u like b*%chs` | FWD | 268 | 85 | 3.15 |
-| `*Saka It To Me Baby` | FWD | 224 | 76 | 2.95 |
-| `Grand-Larseny` | FWD | 231 | 88 | 2.62 |
+<details class="position-group">
+<summary>GKP - Goalkeepers</summary>
+
+| Team | Starter Points | Starts | Points/Start |
+|---|---:|---:|---:|
+| `**Cunha Believe it?!` | 164 | 37 | 4.43 |
+| `eze as u like b*%chs` | 153 | 37 | 4.14 |
+| `Sue-nited FC*` | 152 | 37 | 4.11 |
+| `ChabosSpurs@Law` | 138 | 37 | 3.73 |
+| `Amorim de mi vida` | 134 | 37 | 3.62 |
+| `*Saka It To Me Baby` | 133 | 37 | 3.59 |
+| `Bowen Arrows` | 133 | 37 | 3.59 |
+| `Santa’s reijnders` | 132 | 37 | 3.57 |
+| `Grand-Larseny` | 119 | 37 | 3.22 |
+| `Into the WOODwork*` | 112 | 37 | 3.03 |
+
+</details>
+
+<details class="position-group">
+<summary>DEF - Defenders</summary>
+
+| Team | Starter Points | Starts | Points/Start |
+|---|---:|---:|---:|
+| `eze as u like b*%chs` | 574 | 126 | 4.56 |
+| `**Cunha Believe it?!` | 596 | 140 | 4.26 |
+| `Sue-nited FC*` | 644 | 153 | 4.21 |
+| `Grand-Larseny` | 564 | 139 | 4.06 |
+| `Into the WOODwork*` | 595 | 151 | 3.94 |
+| `Amorim de mi vida` | 500 | 131 | 3.82 |
+| `*Saka It To Me Baby` | 531 | 146 | 3.64 |
+| `Santa’s reijnders` | 526 | 148 | 3.55 |
+| `ChabosSpurs@Law` | 461 | 139 | 3.32 |
+| `Bowen Arrows` | 368 | 118 | 3.12 |
+
+</details>
+
+<details class="position-group">
+<summary>MID - Midfielders</summary>
+
+| Team | Starter Points | Starts | Points/Start |
+|---|---:|---:|---:|
+| `Grand-Larseny` | 698 | 143 | 4.88 |
+| `Sue-nited FC*` | 621 | 152 | 4.09 |
+| `eze as u like b*%chs` | 640 | 159 | 4.03 |
+| `Santa’s reijnders` | 565 | 144 | 3.92 |
+| `ChabosSpurs@Law` | 637 | 167 | 3.81 |
+| `**Cunha Believe it?!` | 577 | 152 | 3.80 |
+| `*Saka It To Me Baby` | 561 | 148 | 3.79 |
+| `Into the WOODwork*` | 541 | 147 | 3.68 |
+| `Bowen Arrows` | 515 | 144 | 3.58 |
+| `Amorim de mi vida` | 533 | 159 | 3.35 |
+
+</details>
+
+<details class="position-group">
+<summary>FWD - Forwards</summary>
+
+| Team | Starter Points | Starts | Points/Start |
+|---|---:|---:|---:|
+| `**Cunha Believe it?!` | 390 | 78 | 5.00 |
+| `Bowen Arrows` | 524 | 108 | 4.85 |
+| `Into the WOODwork*` | 246 | 72 | 3.42 |
+| `ChabosSpurs@Law` | 214 | 64 | 3.34 |
+| `Sue-nited FC*` | 216 | 65 | 3.32 |
+| `Amorim de mi vida` | 263 | 80 | 3.29 |
+| `Santa’s reijnders` | 254 | 78 | 3.26 |
+| `eze as u like b*%chs` | 268 | 85 | 3.15 |
+| `*Saka It To Me Baby` | 224 | 76 | 2.95 |
+| `Grand-Larseny` | 231 | 88 | 2.62 |
+
+</details>
 
 </details>
 
