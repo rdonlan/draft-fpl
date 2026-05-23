@@ -1,0 +1,183 @@
+event,winner,winner_points,winner_week_rank,loser,loser_points,loser_week_rank,margin,rank_gap,event_median,bad_beat,soft_win
+1,Bowen Arrows,51,2,**Cunha Believe it?!,43,4,8,2,42.0,True,False
+1,Into the WOODwork*,42,5,*Saka It To Me Baby,36,8,6,3,42.0,False,False
+1,ChabosSpurs@Law,59,1,Sue-nited FC*,39,7,20,6,42.0,False,False
+1,Grand-Larseny,46,3,eze as u like b*%chs,34,9,12,6,42.0,False,False
+1,Santa’s reijnders,42,5,Amorim de mi vida,34,9,8,4,42.0,False,False
+2,Santa’s reijnders,57,1,**Cunha Believe it?!,20,10,37,9,41.5,False,False
+2,Amorim de mi vida,51,3,eze as u like b*%chs,45,4,6,1,41.5,True,False
+2,ChabosSpurs@Law,55,2,Grand-Larseny,39,7,16,5,41.5,False,False
+2,Sue-nited FC*,42,5,Into the WOODwork*,24,9,18,4,41.5,False,False
+2,Bowen Arrows,41,6,*Saka It To Me Baby,35,8,6,2,41.5,False,True
+3,Into the WOODwork*,40,6,**Cunha Believe it?!,39,8,1,2,41.0,False,True
+3,ChabosSpurs@Law,48,3,Bowen Arrows,40,6,8,3,41.0,False,False
+3,eze as u like b*%chs,42,5,*Saka It To Me Baby,23,10,19,5,41.0,False,False
+3,Santa’s reijnders,49,2,Sue-nited FC*,30,9,19,7,41.0,False,False
+3,Grand-Larseny,56,1,Amorim de mi vida,43,4,13,3,41.0,True,False
+4,**Cunha Believe it?!,55,4,Amorim de mi vida,44,6,11,2,45.5,False,False
+4,Grand-Larseny,41,8,Santa’s reijnders,39,10,2,2,45.5,False,True
+4,Sue-nited FC*,56,3,eze as u like b*%chs,47,5,9,2,45.5,True,False
+4,*Saka It To Me Baby,62,1,ChabosSpurs@Law,59,2,3,1,45.5,True,False
+4,Into the WOODwork*,42,7,Bowen Arrows,41,8,1,1,45.5,False,True
+5,**Cunha Believe it?!,55,1,ChabosSpurs@Law,34,5,21,4,33.5,True,False
+5,eze as u like b*%chs,31,7,Into the WOODwork*,21,9,10,2,33.5,False,True
+5,Bowen Arrows,47,2,Santa’s reijnders,33,6,14,4,33.5,False,False
+5,Amorim de mi vida,22,8,*Saka It To Me Baby,20,10,2,2,33.5,False,True
+5,Grand-Larseny,47,2,Sue-nited FC*,46,4,1,2,33.5,True,False
+6,**Cunha Believe it?!,47,4,Grand-Larseny,18,10,29,6,41.0,False,False
+6,Amorim de mi vida,46,5,Sue-nited FC*,28,7,18,2,41.0,False,False
+6,*Saka It To Me Baby,36,6,Santa’s reijnders,26,8,10,2,41.0,False,True
+6,Bowen Arrows,56,1,eze as u like b*%chs,51,3,5,2,41.0,True,False
+6,Into the WOODwork*,55,2,ChabosSpurs@Law,20,9,35,7,41.0,False,False
+7,eze as u like b*%chs,45,2,**Cunha Believe it?!,34,9,11,7,40.0,False,False
+7,Santa’s reijnders,53,1,ChabosSpurs@Law,34,9,19,8,40.0,False,False
+7,Into the WOODwork*,40,5,Amorim de mi vida,38,8,2,3,40.0,False,False
+7,Grand-Larseny,44,3,Bowen Arrows,39,7,5,4,40.0,False,False
+7,*Saka It To Me Baby,41,4,Sue-nited FC*,40,5,1,1,40.0,False,False
+8,**Cunha Believe it?!,72,2,Sue-nited FC*,29,8,43,6,35.5,False,False
+8,Grand-Larseny,44,4,*Saka It To Me Baby,29,8,15,4,35.5,False,False
+8,Bowen Arrows,34,6,Amorim de mi vida,22,10,12,4,35.5,False,True
+8,Into the WOODwork*,54,3,Santa’s reijnders,37,5,17,2,35.5,True,False
+8,eze as u like b*%chs,79,1,ChabosSpurs@Law,32,7,47,6,35.5,False,False
+9,*Saka It To Me Baby,46,4,**Cunha Believe it?!,40,6,6,2,42.5,False,False
+9,Sue-nited FC*,31,8,Bowen Arrows,23,10,8,2,42.5,False,True
+9,Grand-Larseny,50,3,Into the WOODwork*,27,9,23,6,42.5,False,False
+9,ChabosSpurs@Law,55,2,Amorim de mi vida,40,6,15,4,42.5,False,False
+9,eze as u like b*%chs,69,1,Santa’s reijnders,45,5,24,4,42.5,True,False
+10,**Cunha Believe it?!,47,6,Bowen Arrows,32,8,15,2,48.0,False,True
+10,Into the WOODwork*,55,2,*Saka It To Me Baby,40,7,15,5,48.0,False,False
+10,Sue-nited FC*,49,5,ChabosSpurs@Law,26,10,23,5,48.0,False,False
+10,eze as u like b*%chs,61,1,Grand-Larseny,51,4,10,3,48.0,True,False
+10,Amorim de mi vida,52,3,Santa’s reijnders,32,8,20,5,48.0,False,False
+11,**Cunha Believe it?!,44,4,Santa’s reijnders,32,8,12,4,40.5,False,False
+11,Amorim de mi vida,36,7,eze as u like b*%chs,31,10,5,3,40.5,False,True
+11,ChabosSpurs@Law,42,5,Grand-Larseny,39,6,3,1,40.5,False,False
+11,Into the WOODwork*,59,1,Sue-nited FC*,53,2,6,1,40.5,True,False
+11,Bowen Arrows,52,3,*Saka It To Me Baby,32,8,20,5,40.5,False,False
+12,Into the WOODwork*,53,4,**Cunha Believe it?!,36,8,17,4,47.5,False,False
+12,ChabosSpurs@Law,52,5,Bowen Arrows,39,7,13,2,47.5,False,False
+12,eze as u like b*%chs,59,1,*Saka It To Me Baby,31,9,28,8,47.5,False,False
+12,Sue-nited FC*,54,3,Santa’s reijnders,31,9,23,6,47.5,False,False
+12,Grand-Larseny,59,1,Amorim de mi vida,43,6,16,5,47.5,False,False
+13,**Cunha Believe it?!,34,7,Amorim de mi vida,24,10,10,3,38.5,False,True
+13,Santa’s reijnders,41,4,Grand-Larseny,39,5,2,1,38.5,True,False
+13,Sue-nited FC*,45,1,eze as u like b*%chs,29,8,16,7,38.5,False,False
+13,*Saka It To Me Baby,43,3,ChabosSpurs@Law,29,8,14,5,38.5,False,False
+13,Bowen Arrows,45,1,Into the WOODwork*,38,6,7,5,38.5,False,False
+14,ChabosSpurs@Law,55,2,**Cunha Believe it?!,46,4,9,2,42.0,True,False
+14,Into the WOODwork*,44,5,eze as u like b*%chs,40,6,4,1,42.0,False,False
+14,Bowen Arrows,30,8,Santa’s reijnders,28,9,2,1,42.0,False,True
+14,*Saka It To Me Baby,55,2,Amorim de mi vida,36,7,19,5,42.0,False,False
+14,Grand-Larseny,64,1,Sue-nited FC*,22,10,42,9,42.0,False,False
+15,Grand-Larseny,57,4,**Cunha Believe it?!,41,7,16,3,46.0,False,False
+15,Sue-nited FC*,60,1,Amorim de mi vida,35,9,25,8,46.0,False,False
+15,Santa’s reijnders,41,7,*Saka It To Me Baby,31,10,10,3,46.0,False,True
+15,Bowen Arrows,50,5,eze as u like b*%chs,42,6,8,1,46.0,False,False
+15,Into the WOODwork*,60,1,ChabosSpurs@Law,58,3,2,2,46.0,True,False
+16,**Cunha Believe it?!,40,6,eze as u like b*%chs,22,9,18,3,44.0,False,True
+16,ChabosSpurs@Law,57,1,Santa’s reijnders,52,3,5,2,44.0,True,False
+16,Into the WOODwork*,49,4,Amorim de mi vida,19,10,30,6,44.0,False,False
+16,Grand-Larseny,40,6,Bowen Arrows,37,8,3,2,44.0,False,True
+16,Sue-nited FC*,57,1,*Saka It To Me Baby,48,5,9,4,44.0,True,False
+17,**Cunha Believe it?!,90,1,Sue-nited FC*,43,8,47,7,46.5,False,False
+17,*Saka It To Me Baby,45,7,Grand-Larseny,23,9,22,2,46.5,False,True
+17,Bowen Arrows,57,2,Amorim de mi vida,20,10,37,8,46.5,False,False
+17,eze as u like b*%chs,47,5,ChabosSpurs@Law,46,6,1,1,46.5,False,False
+18,**Cunha Believe it?!,45,3,*Saka It To Me Baby,36,7,9,4,42.5,False,False
+18,Sue-nited FC*,45,3,Bowen Arrows,42,6,3,3,42.5,False,False
+18,Into the WOODwork*,52,2,Grand-Larseny,16,10,36,8,42.5,False,False
+18,Amorim de mi vida,43,5,ChabosSpurs@Law,32,8,11,3,42.5,False,False
+18,Santa’s reijnders,59,1,eze as u like b*%chs,30,9,29,8,42.5,False,False
+19,**Cunha Believe it?!,34,7,Bowen Arrows,29,9,5,2,43.0,False,True
+19,*Saka It To Me Baby,48,3,Into the WOODwork*,45,5,3,2,43.0,True,False
+19,Sue-nited FC*,47,4,ChabosSpurs@Law,32,8,15,4,43.0,False,False
+19,eze as u like b*%chs,54,2,Grand-Larseny,23,10,31,8,43.0,False,False
+19,Amorim de mi vida,75,1,Santa’s reijnders,41,6,34,5,43.0,False,False
+20,**Cunha Believe it?!,44,4,Santa’s reijnders,37,5,7,1,33.0,True,False
+20,Amorim de mi vida,25,9,eze as u like b*%chs,24,10,1,1,33.0,False,True
+20,ChabosSpurs@Law,48,1,Grand-Larseny,29,6,19,5,33.0,False,False
+20,Sue-nited FC*,45,3,Into the WOODwork*,26,8,19,5,33.0,False,False
+20,Bowen Arrows,47,2,*Saka It To Me Baby,27,7,20,5,33.0,False,False
+21,**Cunha Believe it?!,46,4,Into the WOODwork*,38,6,8,2,41.0,False,False
+21,ChabosSpurs@Law,36,7,Bowen Arrows,32,9,4,2,41.0,False,True
+21,eze as u like b*%chs,44,5,*Saka It To Me Baby,30,10,14,5,41.0,False,False
+21,Santa’s reijnders,51,2,Sue-nited FC*,35,8,16,6,41.0,False,False
+21,Amorim de mi vida,53,1,Grand-Larseny,49,3,4,2,41.0,True,False
+22,**Cunha Believe it?!,28,9,Amorim de mi vida,26,10,2,1,33.0,False,True
+22,Grand-Larseny,48,2,Santa’s reijnders,30,7,18,5,33.0,False,False
+22,Sue-nited FC*,50,1,eze as u like b*%chs,40,3,10,2,33.0,True,False
+22,ChabosSpurs@Law,34,5,*Saka It To Me Baby,29,8,5,3,33.0,False,False
+22,Bowen Arrows,40,3,Into the WOODwork*,32,6,8,3,33.0,False,False
+23,ChabosSpurs@Law,36,5,**Cunha Believe it?!,34,8,2,3,36.0,False,False
+23,Into the WOODwork*,47,2,eze as u like b*%chs,32,9,15,7,36.0,False,False
+23,Bowen Arrows,47,2,Santa’s reijnders,36,5,11,3,36.0,False,False
+23,*Saka It To Me Baby,43,4,Amorim de mi vida,28,10,15,6,36.0,False,False
+23,Sue-nited FC*,48,1,Grand-Larseny,35,7,13,6,36.0,False,False
+24,**Cunha Believe it?!,53,3,Grand-Larseny,51,4,2,1,45.5,True,False
+24,Sue-nited FC*,43,7,Amorim de mi vida,41,8,2,1,45.5,False,True
+24,Santa’s reijnders,47,5,*Saka It To Me Baby,44,6,3,1,45.5,False,False
+24,eze as u like b*%chs,59,1,Bowen Arrows,54,2,5,1,45.5,True,False
+24,ChabosSpurs@Law,37,9,Into the WOODwork*,25,10,12,1,45.5,False,True
+25,eze as u like b*%chs,39,6,**Cunha Believe it?!,30,9,9,3,39.5,False,True
+25,ChabosSpurs@Law,41,4,Santa’s reijnders,40,5,1,1,39.5,True,False
+25,Amorim de mi vida,49,3,Into the WOODwork*,34,8,15,5,39.5,False,False
+25,Grand-Larseny,61,2,Bowen Arrows,36,7,25,5,39.5,False,False
+25,*Saka It To Me Baby,66,1,Sue-nited FC*,28,10,38,9,39.5,False,False
+26,**Cunha Believe it?!,61,2,Sue-nited FC*,40,5,21,3,36.5,True,False
+26,*Saka It To Me Baby,71,1,Grand-Larseny,33,6,38,5,36.5,False,False
+26,Bowen Arrows,50,3,Amorim de mi vida,33,6,17,3,36.5,False,False
+26,Into the WOODwork*,26,9,Santa’s reijnders,23,10,3,1,36.5,False,True
+26,eze as u like b*%chs,44,4,ChabosSpurs@Law,30,8,14,4,36.5,False,False
+27,*Saka It To Me Baby,66,1,**Cunha Believe it?!,48,3,18,2,45.0,True,False
+27,Bowen Arrows,40,7,Sue-nited FC*,25,10,15,3,45.0,False,True
+27,Into the WOODwork*,52,2,Grand-Larseny,47,4,5,2,45.0,True,False
+27,Amorim de mi vida,44,6,ChabosSpurs@Law,37,9,7,3,45.0,False,True
+27,eze as u like b*%chs,46,5,Santa’s reijnders,40,7,6,2,45.0,False,False
+28,**Cunha Believe it?!,48,2,Bowen Arrows,43,5,5,3,40.5,True,False
+28,Into the WOODwork*,38,6,*Saka It To Me Baby,23,10,15,4,40.5,False,True
+28,Sue-nited FC*,44,4,ChabosSpurs@Law,34,9,10,5,40.5,False,False
+28,Grand-Larseny,55,1,eze as u like b*%chs,47,3,8,2,40.5,True,False
+29,**Cunha Believe it?!,47,4,Santa’s reijnders,38,8,9,4,46.0,False,False
+29,eze as u like b*%chs,57,1,Amorim de mi vida,46,5,11,4,46.0,False,False
+29,Grand-Larseny,39,7,ChabosSpurs@Law,24,10,15,3,46.0,False,True
+29,Sue-nited FC*,50,3,Into the WOODwork*,31,9,19,6,46.0,False,False
+29,Bowen Arrows,57,1,*Saka It To Me Baby,46,5,11,4,46.0,False,False
+30,**Cunha Believe it?!,42,5,Into the WOODwork*,28,9,14,4,38.0,False,False
+30,Bowen Arrows,34,6,ChabosSpurs@Law,30,7,4,1,38.0,False,True
+30,eze as u like b*%chs,50,4,*Saka It To Me Baby,24,10,26,6,38.0,False,False
+30,Sue-nited FC*,51,3,Santa’s reijnders,29,8,22,5,38.0,False,False
+30,Grand-Larseny,64,1,Amorim de mi vida,52,2,12,1,38.0,True,False
+31,**Cunha Believe it?!,47,2,Amorim de mi vida,28,8,19,6,34.0,False,False
+31,Grand-Larseny,35,5,Santa’s reijnders,29,7,6,2,34.0,False,False
+31,Sue-nited FC*,51,1,eze as u like b*%chs,39,3,12,2,34.0,True,False
+31,*Saka It To Me Baby,38,4,ChabosSpurs@Law,33,6,5,2,34.0,False,False
+31,Into the WOODwork*,24,9,Bowen Arrows,23,10,1,1,34.0,False,True
+32,**Cunha Believe it?!,43,5,ChabosSpurs@Law,22,10,21,5,42.5,False,False
+32,Into the WOODwork*,53,1,eze as u like b*%chs,47,4,6,3,42.5,True,False
+32,Bowen Arrows,48,3,Santa’s reijnders,41,7,7,4,42.5,False,False
+32,*Saka It To Me Baby,42,6,Amorim de mi vida,29,9,13,3,42.5,False,True
+32,Sue-nited FC*,50,2,Grand-Larseny,37,8,13,6,42.5,False,False
+33,**Cunha Believe it?!,103,1,Grand-Larseny,64,3,39,2,56.0,True,False
+33,Sue-nited FC*,68,2,Amorim de mi vida,54,6,14,4,56.0,False,False
+33,Santa’s reijnders,60,4,*Saka It To Me Baby,34,9,26,5,56.0,False,False
+33,Bowen Arrows,48,7,eze as u like b*%chs,24,10,24,3,56.0,False,True
+33,Into the WOODwork*,58,5,ChabosSpurs@Law,44,8,14,3,56.0,False,False
+34,**Cunha Believe it?!,43,2,eze as u like b*%chs,32,6,11,4,33.5,False,False
+34,Santa’s reijnders,30,7,ChabosSpurs@Law,18,9,12,2,33.5,False,True
+34,Into the WOODwork*,43,2,Amorim de mi vida,18,9,25,7,33.5,False,False
+34,Grand-Larseny,51,1,Bowen Arrows,28,8,23,7,33.5,False,False
+34,Sue-nited FC*,38,4,*Saka It To Me Baby,35,5,3,1,33.5,True,False
+35,**Cunha Believe it?!,38,7,Sue-nited FC*,30,8,8,1,42.0,False,True
+35,Grand-Larseny,42,5,*Saka It To Me Baby,29,9,13,4,42.0,False,False
+35,Amorim de mi vida,59,1,Bowen Arrows,52,2,7,1,42.0,True,False
+35,Santa’s reijnders,42,5,Into the WOODwork*,21,10,21,5,42.0,False,False
+35,eze as u like b*%chs,50,3,ChabosSpurs@Law,47,4,3,1,42.0,True,False
+36,**Cunha Believe it?!,49,5,*Saka It To Me Baby,28,10,21,5,46.0,False,False
+36,Sue-nited FC*,70,1,Bowen Arrows,54,3,16,2,46.0,True,False
+36,Amorim de mi vida,57,2,ChabosSpurs@Law,40,7,17,5,46.0,False,False
+36,eze as u like b*%chs,54,3,Santa’s reijnders,43,6,11,3,46.0,False,False
+37,**Cunha Believe it?!,61,1,Bowen Arrows,22,10,39,9,37.5,False,False
+37,*Saka It To Me Baby,37,6,Into the WOODwork*,32,8,5,2,37.5,False,True
+37,Sue-nited FC*,51,2,ChabosSpurs@Law,34,7,17,5,37.5,False,False
+37,eze as u like b*%chs,49,3,Grand-Larseny,38,5,11,2,37.5,True,False
+37,Santa’s reijnders,40,4,Amorim de mi vida,30,9,10,5,37.5,False,False

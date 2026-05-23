@@ -1,0 +1,160 @@
+manager,rank,club,points
+Ryan Donlan,1,Wolves,219
+Luke Lockwood,1,Arsenal,302
+Dylan Reid,1,Newcastle,313
+Levi Morant,1,Arsenal,309
+Ryan Houseman,1,Nott'm Forest,380
+Ethan Ellsworth,1,Spurs,251
+Drake Byrd,1,Man Utd,327
+Julius Long,1,Brentford,319
+Justin Miller,1,Aston Villa,376
+Alexander Chaban,1,Bournemouth,252
+Ryan Donlan,2,Liverpool,216
+Luke Lockwood,2,Fulham,270
+Dylan Reid,2,Chelsea,298
+Levi Morant,2,Everton,182
+Ryan Houseman,2,Crystal Palace,378
+Ethan Ellsworth,2,Newcastle,225
+Drake Byrd,2,Crystal Palace,248
+Julius Long,2,Liverpool,301
+Justin Miller,2,Nott'm Forest,315
+Alexander Chaban,2,Man City,208
+Ryan Donlan,3,Man City,207
+Luke Lockwood,3,Man City,138
+Dylan Reid,3,Spurs,145
+Levi Morant,3,Chelsea,148
+Ryan Houseman,3,Bournemouth,160
+Ethan Ellsworth,3,Man City,156
+Drake Byrd,3,Arsenal,172
+Julius Long,3,Chelsea,157
+Justin Miller,3,Liverpool,276
+Alexander Chaban,3,Spurs,191
+Ryan Donlan,4,Arsenal,186
+Luke Lockwood,4,Brighton,134
+Dylan Reid,4,Leicester,116
+Levi Morant,4,Newcastle,114
+Ryan Houseman,4,Man City,155
+Ethan Ellsworth,4,Brighton,147
+Drake Byrd,4,Aston Villa,162
+Julius Long,4,Crystal Palace,129
+Justin Miller,4,West Ham,184
+Alexander Chaban,4,Nott'm Forest,178
+Ryan Donlan,5,Brentford,184
+Luke Lockwood,5,Newcastle,122
+Dylan Reid,5,Liverpool,95
+Levi Morant,5,Liverpool,111
+Ryan Houseman,5,Newcastle,89
+Ethan Ellsworth,5,Arsenal,134
+Drake Byrd,5,Fulham,151
+Julius Long,5,Everton,119
+Justin Miller,5,Newcastle,119
+Alexander Chaban,5,Liverpool,175
+Ryan Donlan,6,Newcastle,151
+Luke Lockwood,6,Liverpool,114
+Dylan Reid,6,Everton,71
+Levi Morant,6,Bournemouth,104
+Ryan Houseman,6,Chelsea,81
+Ethan Ellsworth,6,Liverpool,129
+Drake Byrd,6,Liverpool,131
+Julius Long,6,West Ham,110
+Justin Miller,6,Spurs,110
+Alexander Chaban,6,Brighton,92
+Ryan Donlan,7,Chelsea,113
+Luke Lockwood,7,Chelsea,108
+Dylan Reid,7,Fulham,67
+Levi Morant,7,Brighton,93
+Ryan Houseman,7,Everton,54
+Ethan Ellsworth,7,West Ham,98
+Drake Byrd,7,Wolves,124
+Julius Long,7,Man Utd,108
+Justin Miller,7,Ipswich,105
+Alexander Chaban,7,Chelsea,90
+Ryan Donlan,8,Fulham,107
+Luke Lockwood,8,Man Utd,101
+Dylan Reid,8,Aston Villa,57
+Levi Morant,8,Brentford,87
+Ryan Houseman,8,West Ham,45
+Ethan Ellsworth,8,Bournemouth,95
+Drake Byrd,8,Brentford,107
+Julius Long,8,Arsenal,89
+Justin Miller,8,Bournemouth,92
+Alexander Chaban,8,Crystal Palace,66
+Ryan Donlan,9,Brighton,80
+Luke Lockwood,9,Brentford,91
+Dylan Reid,9,Man City,48
+Levi Morant,9,Man City,66
+Ryan Houseman,9,Fulham,38
+Ethan Ellsworth,9,Crystal Palace,86
+Drake Byrd,9,Chelsea,25
+Julius Long,9,Brighton,63
+Justin Miller,9,Man City,67
+Alexander Chaban,9,Wolves,64
+Ryan Donlan,10,Spurs,78
+Luke Lockwood,10,West Ham,38
+Dylan Reid,10,Arsenal,46
+Levi Morant,10,West Ham,59
+Ryan Houseman,10,Man Utd,38
+Ethan Ellsworth,10,Chelsea,51
+Drake Byrd,10,West Ham,16
+Julius Long,10,Aston Villa,61
+Justin Miller,10,Fulham,50
+Alexander Chaban,10,Brentford,53
+Ryan Donlan,11,Aston Villa,54
+Luke Lockwood,11,Nott'm Forest,29
+Dylan Reid,11,West Ham,37
+Levi Morant,11,Man Utd,52
+Ryan Houseman,11,Wolves,26
+Ethan Ellsworth,11,Man Utd,50
+Drake Byrd,11,Brighton,4
+Julius Long,11,Man City,38
+Justin Miller,11,Chelsea,38
+Alexander Chaban,11,Aston Villa,47
+Ryan Donlan,12,Bournemouth,54
+Luke Lockwood,12,Southampton,27
+Dylan Reid,12,Wolves,8
+Levi Morant,12,Nott'm Forest,43
+Ryan Houseman,12,Ipswich,17
+Ethan Ellsworth,12,Southampton,10
+Julius Long,12,Spurs,31
+Justin Miller,12,Arsenal,35
+Alexander Chaban,12,Man Utd,45
+Ryan Donlan,13,Everton,47
+Luke Lockwood,13,Aston Villa,20
+Dylan Reid,13,Southampton,2
+Levi Morant,13,Aston Villa,37
+Ryan Houseman,13,Arsenal,9
+Ethan Ellsworth,13,Aston Villa,9
+Julius Long,13,Newcastle,8
+Justin Miller,13,Leicester,10
+Alexander Chaban,13,Newcastle,20
+Ryan Donlan,14,Nott'm Forest,24
+Luke Lockwood,14,Leicester,12
+Levi Morant,14,Spurs,37
+Ryan Houseman,14,Aston Villa,4
+Ethan Ellsworth,14,Leicester,7
+Julius Long,14,Ipswich,0
+Justin Miller,14,Crystal Palace,7
+Alexander Chaban,14,Arsenal,7
+Ryan Donlan,15,Crystal Palace,14
+Luke Lockwood,15,Everton,11
+Levi Morant,15,Fulham,31
+Ryan Houseman,15,Brighton,4
+Ethan Ellsworth,15,Everton,2
+Justin Miller,15,Man Utd,6
+Alexander Chaban,15,Fulham,3
+Ryan Donlan,16,Man Utd,11
+Luke Lockwood,16,Spurs,10
+Levi Morant,16,Ipswich,20
+Justin Miller,16,Brentford,5
+Alexander Chaban,16,Southampton,2
+Ryan Donlan,17,Leicester,6
+Luke Lockwood,17,Wolves,7
+Levi Morant,17,Southampton,19
+Justin Miller,17,Brighton,3
+Alexander Chaban,17,Everton,1
+Ryan Donlan,18,Ipswich,4
+Levi Morant,18,Wolves,19
+Justin Miller,18,Everton,2
+Ryan Donlan,19,Southampton,2
+Levi Morant,19,Crystal Palace,13
+Levi Morant,20,Leicester,13
