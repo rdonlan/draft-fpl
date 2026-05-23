@@ -87,6 +87,7 @@ Use this table to see how often each team landed in the top, middle, or bottom s
 - **Top 1** is the share of gameweeks where the team tied or held the highest score.
 - **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included.
 - **Bottom 5**, **Bottom 3**, and **Bottom 1** work the same way from the bottom of that week's scores.
+- Because tied cutoff scores are included, **Top 5** and **Bottom 5** can add to more than 100% for a team when tied scores straddle the middle of a week.
 
 </details>
 
