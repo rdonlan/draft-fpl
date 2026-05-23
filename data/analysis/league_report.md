@@ -121,6 +121,7 @@ Use this section to follow the imaginary boxing-style belt as it moves only when
 - **Belt Fight Record** is shown as wins-losses across every lineal belt matchup a manager appeared in, whether they entered as holder or challenger.
 - **Avg Score in Belt Fights** is that manager's average score in matchups where the lineal belt was on the line.
 - **Diff vs Non-Belt Avg** is Avg Score in Belt Fights minus that manager's average score in all other league matchups. Positive means they scored better in belt fights than in non-belt weeks.
+- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
 
 </details>
 

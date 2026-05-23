@@ -433,6 +433,7 @@ Ryan Donlan started with the belt going into GW1. The belt changes hands only wh
 - **Longest Defense Run** is the most holder wins in one reign before losing the belt. Draws retain the belt but do not count as defenses.
 - **Belt Fight Record** is wins-losses across every belt matchup, whether the manager entered as holder or challenger.
 - The weekly path uses the inferred 2024-2025 matchup schedule described above.
+- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
 
 </details>
 
