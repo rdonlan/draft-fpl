@@ -327,6 +327,36 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .rating-hover-zone {
+      fill: transparent;
+      cursor: crosshair;
+      pointer-events: all;
+    }
+    .rating-hover-zone:hover {
+      fill: rgba(7, 94, 90, 0.06);
+      stroke: rgba(7, 94, 90, 0.35);
+      stroke-width: 1;
+    }
+    .rating-tooltip {
+      position: fixed;
+      z-index: 50;
+      display: none;
+      max-width: min(320px, calc(100vw - 28px));
+      padding: 10px 12px;
+      border: 1px solid #b9c5d4;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 14px 38px rgba(20, 31, 53, 0.2);
+      color: var(--ink);
+      font-size: 0.86rem;
+      line-height: 1.4;
+      white-space: pre;
+      pointer-events: none;
+      font-variant-numeric: tabular-nums;
+    }
+    .rating-tooltip.is-visible {
+      display: block;
+    }
     .power-tabs {
       margin-top: 16px;
       margin-bottom: 24px;
@@ -1120,5 +1150,39 @@
 </tbody></table></div>
 </details>
   </main>
+  <div class="rating-tooltip" aria-hidden="true"></div>
+  <script>
+(() => {
+  const tooltip = document.querySelector(".rating-tooltip");
+  if (!tooltip) return;
+
+  const moveTooltip = (event) => {
+    const offset = 14;
+    const rect = tooltip.getBoundingClientRect();
+    let left = event.clientX + offset;
+    let top = event.clientY + offset;
+    if (left + rect.width > window.innerWidth - 8) {
+      left = event.clientX - rect.width - offset;
+    }
+    if (top + rect.height > window.innerHeight - 8) {
+      top = event.clientY - rect.height - offset;
+    }
+    tooltip.style.left = `${Math.max(8, left)}px`;
+    tooltip.style.top = `${Math.max(8, top)}px`;
+  };
+
+  document.querySelectorAll(".rating-hover-zone").forEach((zone) => {
+    zone.addEventListener("mouseenter", (event) => {
+      tooltip.textContent = zone.dataset.tooltip || "";
+      tooltip.classList.add("is-visible");
+      moveTooltip(event);
+    });
+    zone.addEventListener("mousemove", moveTooltip);
+    zone.addEventListener("mouseleave", () => {
+      tooltip.classList.remove("is-visible");
+    });
+  });
+})();
+</script>
 </body>
 </html>
