@@ -1,6 +1,6 @@
 # BMS FPL Draft All-Time Stats
 
-Combines the 2024-25 season and the 2025-26 season through GW37. Because 2025-26 is still through GW37 in this dataset, per-GW averages are the fairest way to compare seasons.
+Combines the 2024-25 season and the 2025-26 season through gameweek 37. Because 2025-26 is still through gameweek 37 in this dataset, per-GW averages are the fairest way to compare seasons.
 
 Use the dropdown sections below to open or hide each metric.
 
@@ -58,18 +58,18 @@ Use this table to separate raw scoring strength from the H2H table: who scored t
 
 </details>
 
-| Manager | PF | PF/GW | Avg Weekly Rank | Top Scores | Bottom Scores | Best GW | Worst GW | Score Stdev |
+| Manager | PF | PF/GW | Avg Weekly Rank | Top Scores | Bottom Scores | Best Week | Worst Week | Score Stdev |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Donlan | 3484 | 46.45 | 4.41 | 9 | 4 | 2025-26 GW33 (103) | 2024-25 GW8 (19) | 14.43 |
-| Justin Miller | 3433 | 45.77 | 4.25 | 18 | 5 | 2024-25 GW24 (80) | 2025-26 GW14 (22) | 11.88 |
-| Ryan Houseman | 3113 | 41.51 | 5.41 | 8 | 9 | 2024-25 GW22 (81) | 2024-25 GW6 (22) | 13.34 |
-| Drake Byrd | 3079 | 41.05 | 5.33 | 9 | 4 | 2024-25 GW29 (69) | 2025-26 GW18 (16) | 11.50 |
-| Luke Lockwood | 3028 | 40.37 | 5.67 | 5 | 7 | 2024-25 GW33 (76) | 2025-26 GW5 (21) | 11.67 |
-| Levi Morant | 3006 | 40.08 | 5.73 | 10 | 12 | 2024-25 GW32 (75) | 2025-26 GW5 (20) | 12.20 |
-| Julius Long | 2963 | 39.51 | 6.09 | 8 | 9 | 2025-26 GW19 (75) | 2025-26 GW34 (18) | 11.69 |
-| Alexander Chaban | 2944 | 39.25 | 5.90 | 7 | 13 | 2024-25 GW2 (69) | 2024-25 GW15 (17) | 11.99 |
-| Ethan Ellsworth | 2927 | 39.03 | 5.90 | 6 | 10 | 2024-25 GW26 (76) | 2024-25 GW29 (13) | 10.50 |
-| Dylan Reid | 2843 | 37.91 | 6.30 | 4 | 8 | 2025-26 GW17 (57) | 2024-25 GW3 (20) | 9.94 |
+| Ryan Donlan | 3484 | 46.45 | 4.41 | 9 | 4 | 2025-26 33 (103) | 2024-25 8 (19) | 14.43 |
+| Justin Miller | 3433 | 45.77 | 4.25 | 18 | 5 | 2024-25 24 (80) | 2025-26 14 (22) | 11.88 |
+| Ryan Houseman | 3113 | 41.51 | 5.41 | 8 | 9 | 2024-25 22 (81) | 2024-25 6 (22) | 13.34 |
+| Drake Byrd | 3079 | 41.05 | 5.33 | 9 | 4 | 2024-25 29 (69) | 2025-26 18 (16) | 11.50 |
+| Luke Lockwood | 3028 | 40.37 | 5.67 | 5 | 7 | 2024-25 33 (76) | 2025-26 5 (21) | 11.67 |
+| Levi Morant | 3006 | 40.08 | 5.73 | 10 | 12 | 2024-25 32 (75) | 2025-26 5 (20) | 12.20 |
+| Julius Long | 2963 | 39.51 | 6.09 | 8 | 9 | 2025-26 19 (75) | 2025-26 34 (18) | 11.69 |
+| Alexander Chaban | 2944 | 39.25 | 5.90 | 7 | 13 | 2024-25 2 (69) | 2024-25 15 (17) | 11.99 |
+| Ethan Ellsworth | 2927 | 39.03 | 5.90 | 6 | 10 | 2024-25 26 (76) | 2024-25 29 (13) | 10.50 |
+| Dylan Reid | 2843 | 37.91 | 6.30 | 4 | 8 | 2025-26 17 (57) | 2024-25 3 (20) | 9.94 |
 
 </details>
 
@@ -118,18 +118,18 @@ Use this table to see the longest H2H winning and losing runs across the full tw
 
 </details>
 
-| Manager | Longest Win Streak | Win GW(s) | Longest Loss Streak | Loss GW(s) |
+| Manager | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) |
 |---|---:|---:|---:|---:|
-| Ryan Donlan | 10 | 2025-26 GW28-37 | 4 | 2024-25 GW34-37 |
-| Justin Miller | 8 | 2024-25 GW24-31 | 4 | 2025-26 GW5-8 |
-| Levi Morant | 7 | 2024-25 GW1-7 | 5 | 2024-25 GW8-12 |
-| Luke Lockwood | 7 | 2024-25 GW27-33 | 5 | 2024-25 GW1-5 |
-| Alexander Chaban | 6 | 2025-26 GW20-25 | 12 | 2025-26 GW26-37 |
-| Ryan Houseman | 4 | 2024-25 GW33-36, 2025-26 GW7-10, 2025-26 GW24-27 | 4 | 2024-25 GW37 to 2025-26 GW2, 2025-26 GW13-16, 2025-26 GW31-34 |
-| Drake Byrd | 4 | 2025-26 GW28-31 | 5 | 2025-26 GW17-21 |
-| Julius Long | 4 | 2024-25 GW4-7, 2025-26 GW18-21 | 6 | 2025-26 GW12-17, 2025-26 GW29-34 |
-| Ethan Ellsworth | 4 | 2024-25 GW10-13, 2024-25 GW38 to 2025-26 GW3 | 7 | 2024-25 GW29-35 |
-| Dylan Reid | 3 | 2024-25 GW10-12, 2025-26 GW13-15 | 8 | 2024-25 GW24-31 |
+| Ryan Donlan | 10 | 2025-26 28-37 | 4 | 2024-25 34-37 |
+| Justin Miller | 8 | 2024-25 24-31 | 4 | 2025-26 5-8 |
+| Levi Morant | 7 | 2024-25 1-7 | 5 | 2024-25 8-12 |
+| Luke Lockwood | 7 | 2024-25 27-33 | 5 | 2024-25 1-5 |
+| Alexander Chaban | 6 | 2025-26 20-25 | 12 | 2025-26 26-37 |
+| Ryan Houseman | 4 | 2024-25 33-36, 2025-26 7-10, 2025-26 24-27 | 4 | 2024-25 37 to 2025-26 2, 2025-26 13-16, 2025-26 31-34 |
+| Drake Byrd | 4 | 2025-26 28-31 | 5 | 2025-26 17-21 |
+| Julius Long | 4 | 2024-25 4-7, 2025-26 18-21 | 6 | 2025-26 12-17, 2025-26 29-34 |
+| Ethan Ellsworth | 4 | 2024-25 10-13, 2024-25 38 to 2025-26 3 | 7 | 2024-25 29-35 |
+| Dylan Reid | 3 | 2024-25 10-12, 2025-26 13-15 | 8 | 2024-25 24-31 |
 
 </details>
 
@@ -144,12 +144,12 @@ Use this table as the combined belt record book: total reigns, fight records, de
 - This aggregates the two separate season belt histories: Ryan Donlan started with the belt in 2024-25, and Levi Morant started with it in 2025-26.
 - **Reigns** sums each manager's number of belt reigns across the two season histories.
 - **Belt Fight Record** is wins-losses across every matchup where that manager appeared in a belt fight.
-- **GWs Holding** counts gameweeks where the manager finished the week holding the belt.
+- **Weeks Holding** counts gameweeks where the manager finished the week holding the belt.
 - **Current Holder** refers to the latest holder in the 2025-26 report.
 
 </details>
 
-| Manager | Reigns | Belt Fight Record | Win % | Longest Defense Run | GWs Holding | Avg Belt Fight Score | Current Holder |
+| Manager | Reigns | Belt Fight Record | Win % | Longest Defense Run | Weeks Holding | Avg Belt Fight Score | Current Holder |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Ryan Donlan | 7 | 21-6 | 77.8% | 5 | 21 | 47.07 | Yes |
 | Drake Byrd | 6 | 10-11 | 47.6% | 3 | 10 | 39.81 |  |
@@ -173,7 +173,7 @@ Use this table to see who moved up or down from 2024-25 to 2025-26.
 <summary>Definitions and calculation notes</summary>
 
 - **Rank Change** is positive when the manager's 2025-26 rank is better than their 2024-25 rank.
-- **PF/GW Change** compares scoring average, which is better than comparing total PF because 2025-26 is currently through GW37.
+- **PF/GW Change** compares scoring average, which is better than comparing total PF because 2025-26 is currently through gameweek 37.
 - **H2H Pts Change** compares raw league table points and is therefore affected by 2025-26 having one fewer completed gameweek in this dataset.
 
 </details>
@@ -203,7 +203,7 @@ Use this table as the quick trophy case for the combined two-season sample.
 
 - Awards are based only on data currently included in the two reports.
 - Ties are shown as multiple managers in the same row.
-- The 2025-26 season is through GW37, so rate stats are more stable than raw totals for season-to-season comparisons.
+- The 2025-26 season is through gameweek 37, so rate stats are more stable than raw totals for season-to-season comparisons.
 
 </details>
 
