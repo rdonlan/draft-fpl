@@ -44,6 +44,35 @@ Use this as the career table: total record, table points, points for, points aga
 </details>
 
 <details>
+<summary><h2>All-Time Head-To-Head Matrix</h2></summary>
+
+Use this as the career matchup grid: each cell shows the row manager's record against the column manager across both seasons.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- Records are shown as `wins-draws-losses` from the row manager's perspective.
+- The diagonal is shown as `-` because a manager cannot play themselves.
+- This combines the inferred 2024-25 matchup schedule and the live 2025-26 matchup schedule through gameweek 37.
+
+</details>
+
+| Manager | Ryan Donlan | Justin Miller | Luke Lockwood | Ryan Houseman | Drake Byrd | Levi Morant | Julius Long | Dylan Reid | Ethan Ellsworth | Alexander Chaban |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Ryan Donlan | - | 8-0-0 | 6-0-3 | 4-0-4 | 6-0-3 | 5-0-3 | 7-0-1 | 7-1-1 | 5-0-3 | 5-0-3 |
+| Justin Miller | 0-0-8 | - | 6-0-2 | 9-0-0 | 4-1-3 | 5-0-4 | 6-0-2 | 7-0-1 | 5-0-3 | 7-0-2 |
+| Luke Lockwood | 3-0-6 | 2-0-6 | - | 4-0-4 | 5-1-2 | 5-0-4 | 5-1-2 | 4-1-4 | 5-1-2 | 6-0-2 |
+| Ryan Houseman | 4-0-4 | 0-0-9 | 4-0-4 | - | 7-0-2 | 5-0-3 | 2-0-7 | 4-0-4 | 7-0-1 | 7-0-1 |
+| Drake Byrd | 3-0-6 | 3-1-4 | 2-1-5 | 2-0-7 | - | 3-0-5 | 5-0-3 | 8-0-0 | 6-0-3 | 3-0-5 |
+| Levi Morant | 3-0-5 | 4-0-5 | 4-0-5 | 3-0-5 | 5-0-3 | - | 5-0-3 | 2-0-6 | 2-0-6 | 6-0-3 |
+| Julius Long | 1-0-7 | 2-0-6 | 2-1-5 | 7-0-2 | 3-0-5 | 3-0-5 | - | 3-0-5 | 4-1-5 | 6-0-2 |
+| Dylan Reid | 1-1-7 | 1-0-7 | 4-1-4 | 4-0-4 | 0-0-8 | 6-0-2 | 5-0-3 | - | 8-0-0 | 2-0-7 |
+| Ethan Ellsworth | 3-0-5 | 3-0-5 | 2-1-5 | 1-0-7 | 3-0-6 | 6-0-2 | 5-1-4 | 0-0-8 | - | 5-0-3 |
+| Alexander Chaban | 3-0-5 | 2-0-7 | 2-0-6 | 1-0-7 | 5-0-3 | 3-0-6 | 2-0-6 | 7-0-2 | 3-0-5 | - |
+
+</details>
+
+<details>
 <summary><h2>All-Time Scoring Profile</h2></summary>
 
 Use this table to separate raw scoring strength from the H2H table: who scored the most, who scored efficiently, and who had the biggest single-week highs and lows.
@@ -233,6 +262,7 @@ These are the supporting CSVs exposed for the all-time page.
 - `all_time_score_bands.csv`
 - `all_time_streaks.csv`
 - `all_time_lineal_belt.csv`
+- `all_time_h2h_matrix.csv`
 - `season_comparison.csv`
 - `two_year_awards.csv`
 </details>

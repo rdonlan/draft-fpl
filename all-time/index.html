@@ -312,7 +312,7 @@
       }
       .season-tabs {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .season-tab {
         justify-content: center;
@@ -419,6 +419,7 @@
       <a class="season-tab" href="../2025-2026/">2025-2026</a>
 <a class="season-tab" href="../2024-2025/">2024-2025</a>
 <a class="season-tab active" href="../all-time/">All-Time</a>
+<a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
     </nav>
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/all-time/league_report.md">Raw Markdown</a>
@@ -427,6 +428,7 @@
 <a href="../data/analysis/all-time/all_time_score_bands.csv">Score Bands CSV</a>
 <a href="../data/analysis/all-time/all_time_streaks.csv">Streaks CSV</a>
 <a href="../data/analysis/all-time/all_time_lineal_belt.csv">Lineal Belt CSV</a>
+<a href="../data/analysis/all-time/all_time_h2h_matrix.csv">H2H Matrix CSV</a>
 <a href="../data/analysis/all-time/season_comparison.csv">Season Change CSV</a>
 <a href="../data/analysis/all-time/two_year_awards.csv">Awards CSV</a>
     </div>
@@ -467,6 +469,32 @@
 <tr><td data-label="Rank">8</td><td data-label="Manager">Dylan Reid</td><td data-label="Seasons">2</td><td data-label="Record">31-2-42</td><td data-label="H2H Pts">95</td><td data-label="Pts/GW">1.27</td><td data-label="PF">2843</td><td data-label="PA">3103</td><td data-label="PF/GW">37.91</td><td data-label="PA/GW">41.37</td><td data-label="Avg Weekly Rank">6.30</td></tr>
 <tr><td data-label="Rank">9</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Seasons">2</td><td data-label="Record">28-2-45</td><td data-label="H2H Pts">86</td><td data-label="Pts/GW">1.15</td><td data-label="PF">2927</td><td data-label="PA">3099</td><td data-label="PF/GW">39.03</td><td data-label="PA/GW">41.32</td><td data-label="Avg Weekly Rank">5.90</td></tr>
 <tr><td data-label="Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Seasons">2</td><td data-label="Record">28-0-47</td><td data-label="H2H Pts">84</td><td data-label="Pts/GW">1.12</td><td data-label="PF">2944</td><td data-label="PA">3233</td><td data-label="PF/GW">39.25</td><td data-label="PA/GW">43.11</td><td data-label="Avg Weekly Rank">5.90</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>All-Time Head-To-Head Matrix</h2></summary>
+<p>Use this as the career matchup grid: each cell shows the row manager&#x27;s record against the column manager across both seasons.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li>Records are shown as <code>wins-draws-losses</code> from the row manager&#x27;s perspective.</li>
+<li>The diagonal is shown as <code>-</code> because a manager cannot play themselves.</li>
+<li>This combines the inferred 2024-25 matchup schedule and the live 2025-26 matchup schedule through gameweek 37.</li>
+</ul>
+</details>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager</th><th>Ryan Donlan</th><th>Justin Miller</th><th>Luke Lockwood</th><th>Ryan Houseman</th><th>Drake Byrd</th><th>Levi Morant</th><th>Julius Long</th><th>Dylan Reid</th><th>Ethan Ellsworth</th><th>Alexander Chaban</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Ryan Donlan">-</td><td data-label="Justin Miller">8-0-0</td><td data-label="Luke Lockwood">6-0-3</td><td data-label="Ryan Houseman">4-0-4</td><td data-label="Drake Byrd">6-0-3</td><td data-label="Levi Morant">5-0-3</td><td data-label="Julius Long">7-0-1</td><td data-label="Dylan Reid">7-1-1</td><td data-label="Ethan Ellsworth">5-0-3</td><td data-label="Alexander Chaban">5-0-3</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Ryan Donlan">0-0-8</td><td data-label="Justin Miller">-</td><td data-label="Luke Lockwood">6-0-2</td><td data-label="Ryan Houseman">9-0-0</td><td data-label="Drake Byrd">4-1-3</td><td data-label="Levi Morant">5-0-4</td><td data-label="Julius Long">6-0-2</td><td data-label="Dylan Reid">7-0-1</td><td data-label="Ethan Ellsworth">5-0-3</td><td data-label="Alexander Chaban">7-0-2</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">2-0-6</td><td data-label="Luke Lockwood">-</td><td data-label="Ryan Houseman">4-0-4</td><td data-label="Drake Byrd">5-1-2</td><td data-label="Levi Morant">5-0-4</td><td data-label="Julius Long">5-1-2</td><td data-label="Dylan Reid">4-1-4</td><td data-label="Ethan Ellsworth">5-1-2</td><td data-label="Alexander Chaban">6-0-2</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Ryan Donlan">4-0-4</td><td data-label="Justin Miller">0-0-9</td><td data-label="Luke Lockwood">4-0-4</td><td data-label="Ryan Houseman">-</td><td data-label="Drake Byrd">7-0-2</td><td data-label="Levi Morant">5-0-3</td><td data-label="Julius Long">2-0-7</td><td data-label="Dylan Reid">4-0-4</td><td data-label="Ethan Ellsworth">7-0-1</td><td data-label="Alexander Chaban">7-0-1</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">3-1-4</td><td data-label="Luke Lockwood">2-1-5</td><td data-label="Ryan Houseman">2-0-7</td><td data-label="Drake Byrd">-</td><td data-label="Levi Morant">3-0-5</td><td data-label="Julius Long">5-0-3</td><td data-label="Dylan Reid">8-0-0</td><td data-label="Ethan Ellsworth">6-0-3</td><td data-label="Alexander Chaban">3-0-5</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Ryan Donlan">3-0-5</td><td data-label="Justin Miller">4-0-5</td><td data-label="Luke Lockwood">4-0-5</td><td data-label="Ryan Houseman">3-0-5</td><td data-label="Drake Byrd">5-0-3</td><td data-label="Levi Morant">-</td><td data-label="Julius Long">5-0-3</td><td data-label="Dylan Reid">2-0-6</td><td data-label="Ethan Ellsworth">2-0-6</td><td data-label="Alexander Chaban">6-0-3</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Ryan Donlan">1-0-7</td><td data-label="Justin Miller">2-0-6</td><td data-label="Luke Lockwood">2-1-5</td><td data-label="Ryan Houseman">7-0-2</td><td data-label="Drake Byrd">3-0-5</td><td data-label="Levi Morant">3-0-5</td><td data-label="Julius Long">-</td><td data-label="Dylan Reid">3-0-5</td><td data-label="Ethan Ellsworth">4-1-5</td><td data-label="Alexander Chaban">6-0-2</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Ryan Donlan">1-1-7</td><td data-label="Justin Miller">1-0-7</td><td data-label="Luke Lockwood">4-1-4</td><td data-label="Ryan Houseman">4-0-4</td><td data-label="Drake Byrd">0-0-8</td><td data-label="Levi Morant">6-0-2</td><td data-label="Julius Long">5-0-3</td><td data-label="Dylan Reid">-</td><td data-label="Ethan Ellsworth">8-0-0</td><td data-label="Alexander Chaban">2-0-7</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Ryan Donlan">3-0-5</td><td data-label="Justin Miller">3-0-5</td><td data-label="Luke Lockwood">2-1-5</td><td data-label="Ryan Houseman">1-0-7</td><td data-label="Drake Byrd">3-0-6</td><td data-label="Levi Morant">6-0-2</td><td data-label="Julius Long">5-1-4</td><td data-label="Dylan Reid">0-0-8</td><td data-label="Ethan Ellsworth">-</td><td data-label="Alexander Chaban">5-0-3</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Ryan Donlan">3-0-5</td><td data-label="Justin Miller">2-0-7</td><td data-label="Luke Lockwood">2-0-6</td><td data-label="Ryan Houseman">1-0-7</td><td data-label="Drake Byrd">5-0-3</td><td data-label="Levi Morant">3-0-6</td><td data-label="Julius Long">2-0-6</td><td data-label="Dylan Reid">7-0-2</td><td data-label="Ethan Ellsworth">3-0-5</td><td data-label="Alexander Chaban">-</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -640,6 +668,7 @@
 <li><code>all_time_score_bands.csv</code></li>
 <li><code>all_time_streaks.csv</code></li>
 <li><code>all_time_lineal_belt.csv</code></li>
+<li><code>all_time_h2h_matrix.csv</code></li>
 <li><code>season_comparison.csv</code></li>
 <li><code>two_year_awards.csv</code></li>
 </ul>

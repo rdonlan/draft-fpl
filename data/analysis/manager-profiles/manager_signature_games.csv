@@ -1,0 +1,81 @@
+manager,moment,week,opponent,score,opponent_score,margin
+Ryan Donlan,Highest score,2025-26 33,Drake Byrd,103,64,39
+Ryan Donlan,Lowest score,2024-25 8,Ryan Houseman,19,31,-12
+Ryan Donlan,Biggest win,2025-26 17,Justin Miller,90,43,47
+Ryan Donlan,Worst loss,2025-26 2,Ethan Ellsworth,20,57,-37
+Ryan Donlan,Closest win,2024-25 28,Drake Byrd,35,34,1
+Ryan Donlan,Closest loss,2024-25 37,Drake Byrd,34,35,-1
+Ryan Donlan,Best score in a loss,2024-25 34,Alexander Chaban,54,58,-4
+Ryan Donlan,Lowest score in a win,2025-26 22,Julius Long,28,26,2
+Justin Miller,Highest score,2024-25 24,Julius Long,80,30,50
+Justin Miller,Lowest score,2025-26 14,Drake Byrd,22,64,-42
+Justin Miller,Biggest win,2024-25 24,Julius Long,80,30,50
+Justin Miller,Worst loss,2025-26 17,Ryan Donlan,43,90,-47
+Justin Miller,Closest win,2024-25 29,Levi Morant,24,23,1
+Justin Miller,Closest loss,2024-25 7,Luke Lockwood,57,58,-1
+Justin Miller,Best score in a loss,2024-25 5,Ryan Donlan,58,63,-5
+Justin Miller,Lowest score in a win,2024-25 29,Levi Morant,24,23,1
+Luke Lockwood,Highest score,2024-25 33,Ethan Ellsworth,76,32,44
+Luke Lockwood,Lowest score,2025-26 5,Ryan Houseman,21,31,-10
+Luke Lockwood,Biggest win,2024-25 32,Drake Byrd,63,18,45
+Luke Lockwood,Worst loss,2024-25 2,Ryan Donlan,34,66,-32
+Luke Lockwood,Closest win,2024-25 6,Ethan Ellsworth,47,46,1
+Luke Lockwood,Closest loss,2024-25 10,Dylan Reid,25,26,-1
+Luke Lockwood,Best score in a loss,2024-25 25,Justin Miller,61,66,-5
+Luke Lockwood,Lowest score in a win,2025-26 31,Dylan Reid,24,23,1
+Ryan Houseman,Highest score,2024-25 22,Alexander Chaban,81,43,38
+Ryan Houseman,Lowest score,2024-25 6,Dylan Reid,22,38,-16
+Ryan Houseman,Biggest win,2025-26 8,Alexander Chaban,79,32,47
+Ryan Houseman,Worst loss,2024-25 32,Levi Morant,39,75,-36
+Ryan Houseman,Closest win,2025-26 17,Alexander Chaban,47,46,1
+Ryan Houseman,Closest loss,2025-26 20,Julius Long,24,25,-1
+Ryan Houseman,Best score in a loss,2024-25 28,Justin Miller,51,57,-6
+Ryan Houseman,Lowest score in a win,2024-25 12,Luke Lockwood,26,24,2
+Drake Byrd,Highest score,2024-25 29,Ethan Ellsworth,69,13,56
+Drake Byrd,Lowest score,2025-26 18,Luke Lockwood,16,52,-36
+Drake Byrd,Biggest win,2024-25 29,Ethan Ellsworth,69,13,56
+Drake Byrd,Worst loss,2024-25 32,Luke Lockwood,18,63,-45
+Drake Byrd,Closest win,2024-25 2,Ethan Ellsworth,40,39,1
+Drake Byrd,Closest loss,2024-25 28,Ryan Donlan,34,35,-1
+Drake Byrd,Best score in a loss,2025-26 33,Ryan Donlan,64,103,-39
+Drake Byrd,Lowest score in a win,2024-25 8,Dylan Reid,31,30,1
+Levi Morant,Highest score,2024-25 32,Ryan Houseman,75,39,36
+Levi Morant,Lowest score,2025-26 5,Julius Long,20,22,-2
+Levi Morant,Biggest win,2025-26 25,Justin Miller,66,28,38
+Levi Morant,Worst loss,2024-25 26,Ethan Ellsworth,27,76,-49
+Levi Morant,Closest win,2025-26 7,Justin Miller,41,40,1
+Levi Morant,Closest loss,2024-25 29,Justin Miller,23,24,-1
+Levi Morant,Best score in a loss,2024-25 33,Ryan Donlan,53,63,-10
+Levi Morant,Lowest score in a win,2024-25 37,Alexander Chaban,31,25,6
+Julius Long,Highest score,2025-26 19,Ethan Ellsworth,75,41,34
+Julius Long,Lowest score,2025-26 34,Luke Lockwood,18,43,-25
+Julius Long,Biggest win,2024-25 7,Dylan Reid,73,21,52
+Julius Long,Worst loss,2024-25 24,Justin Miller,30,80,-50
+Julius Long,Closest win,2025-26 20,Ryan Houseman,25,24,1
+Julius Long,Closest loss,2024-25 28,Ethan Ellsworth,33,34,-1
+Julius Long,Best score in a loss,2025-26 33,Justin Miller,54,68,-14
+Julius Long,Lowest score in a win,2025-26 5,Levi Morant,22,20,2
+Dylan Reid,Highest score,2025-26 17,Julius Long,57,20,37
+Dylan Reid,Lowest score,2024-25 3,Levi Morant,20,38,-18
+Dylan Reid,Biggest win,2025-26 17,Julius Long,57,20,37
+Dylan Reid,Worst loss,2024-25 7,Julius Long,21,73,-52
+Dylan Reid,Closest win,2024-25 10,Luke Lockwood,26,25,1
+Dylan Reid,Closest loss,2024-25 8,Drake Byrd,30,31,-1
+Dylan Reid,Best score in a loss,2025-26 24,Ryan Houseman,54,59,-5
+Dylan Reid,Lowest score in a win,2024-25 10,Luke Lockwood,26,25,1
+Ethan Ellsworth,Highest score,2024-25 26,Levi Morant,76,27,49
+Ethan Ellsworth,Lowest score,2024-25 29,Drake Byrd,13,69,-56
+Ethan Ellsworth,Biggest win,2024-25 26,Levi Morant,76,27,49
+Ethan Ellsworth,Worst loss,2024-25 29,Drake Byrd,13,69,-56
+Ethan Ellsworth,Closest win,2024-25 28,Julius Long,34,33,1
+Ethan Ellsworth,Closest loss,2024-25 2,Drake Byrd,39,40,-1
+Ethan Ellsworth,Best score in a loss,2025-26 16,Alexander Chaban,52,57,-5
+Ethan Ellsworth,Lowest score in a win,2025-26 34,Alexander Chaban,30,18,12
+Alexander Chaban,Highest score,2024-25 2,Dylan Reid,69,53,16
+Alexander Chaban,Lowest score,2024-25 15,Drake Byrd,17,41,-24
+Alexander Chaban,Biggest win,2024-25 38,Dylan Reid,62,21,41
+Alexander Chaban,Worst loss,2025-26 8,Ryan Houseman,32,79,-47
+Alexander Chaban,Closest win,2025-26 25,Ethan Ellsworth,41,40,1
+Alexander Chaban,Closest loss,2025-26 17,Ryan Houseman,46,47,-1
+Alexander Chaban,Best score in a loss,2025-26 4,Levi Morant,59,62,-3
+Alexander Chaban,Lowest score in a win,2025-26 22,Levi Morant,34,29,5
