@@ -11,7 +11,7 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 <details open>
 <summary><h2>Season Elo Tabs</h2></summary>
 
-Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, weekly path, time-at-top table, and biggest rating swings.
+Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, time-at-top table, and biggest rating swings.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -177,47 +177,6 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 | 8 | Ethan Ellsworth | 1443.2 | -56.9 | 1534.4 | 2025-26 3 | 1396.4 | 2025-26 32 | 8.19 | 0 | 4 | 28 |
 | 9 | Julius Long | 1428.0 | -72.0 | 1500.0 | 2025-26 2 | 1412.8 | 2025-26 34 | 8.62 | 0 | 0 | 33 |
 | 10 | Alexander Chaban | 1403.5 | -96.5 | 1537.5 | 2025-26 25 | 1403.5 | 2025-26 37 | 6.27 | 3 | 6 | 12 |
-
-### 2025-26 Weekly Path
-| Week | #1 | #2 | #3 | #4 | #5 | Bottom |
-|---|---:|---:|---:|---:|---:|---:|
-| 1 | Alexander Chaban (1512) | Drake Byrd (1512) | Dylan Reid (1512) | Ethan Ellsworth (1512) | Luke Lockwood (1512) | Ryan Houseman (1488) |
-| 2 | Alexander Chaban (1524) | Dylan Reid (1523) | Ethan Ellsworth (1523) | Justin Miller (1501) | Drake Byrd (1500) | Ryan Houseman (1476) |
-| 3 | Alexander Chaban (1536) | Ethan Ellsworth (1534) | Drake Byrd (1512) | Dylan Reid (1511) | Luke Lockwood (1510) | Levi Morant (1465) |
-| 4 | Drake Byrd (1525) | Luke Lockwood (1522) | Ethan Ellsworth (1522) | Alexander Chaban (1522) | Justin Miller (1502) | Julius Long (1475) |
-| 5 | Drake Byrd (1536) | Dylan Reid (1512) | Ethan Ellsworth (1509) | Luke Lockwood (1509) | Alexander Chaban (1508) | Levi Morant (1467) |
-| 6 | Dylan Reid (1523) | Drake Byrd (1522) | Luke Lockwood (1521) | Ryan Donlan (1505) | Julius Long (1499) | Justin Miller (1478) |
-| 7 | Drake Byrd (1534) | Luke Lockwood (1532) | Dylan Reid (1511) | Ethan Ellsworth (1507) | Levi Morant (1492) | Justin Miller (1466) |
-| 8 | Drake Byrd (1545) | Luke Lockwood (1543) | Dylan Reid (1522) | Ryan Donlan (1504) | Ryan Houseman (1503) | Justin Miller (1455) |
-| 9 | Drake Byrd (1557) | Luke Lockwood (1531) | Ryan Houseman (1515) | Dylan Reid (1508) | Levi Morant (1495) | Julius Long (1465) |
-| 10 | Drake Byrd (1544) | Luke Lockwood (1542) | Ryan Houseman (1528) | Ryan Donlan (1503) | Dylan Reid (1495) | Ethan Ellsworth (1472) |
-| 11 | Luke Lockwood (1552) | Drake Byrd (1529) | Ryan Houseman (1515) | Ryan Donlan (1514) | Dylan Reid (1507) | Ethan Ellsworth (1461) |
-| 12 | Luke Lockwood (1563) | Drake Byrd (1540) | Ryan Houseman (1525) | Ryan Donlan (1504) | Alexander Chaban (1499) | Ethan Ellsworth (1449) |
-| 13 | Luke Lockwood (1548) | Drake Byrd (1525) | Ryan Donlan (1515) | Ryan Houseman (1512) | Dylan Reid (1509) | Ethan Ellsworth (1464) |
-| 14 | Luke Lockwood (1559) | Drake Byrd (1536) | Dylan Reid (1519) | Ryan Donlan (1502) | Ryan Houseman (1501) | Ethan Ellsworth (1454) |
-| 15 | Luke Lockwood (1569) | Drake Byrd (1547) | Dylan Reid (1531) | Justin Miller (1497) | Ryan Donlan (1491) | Julius Long (1447) |
-| 16 | Luke Lockwood (1577) | Drake Byrd (1558) | Dylan Reid (1519) | Justin Miller (1508) | Ryan Donlan (1503) | Julius Long (1439) |
-| 17 | Luke Lockwood (1573) | Drake Byrd (1543) | Dylan Reid (1528) | Ryan Donlan (1515) | Justin Miller (1496) | Julius Long (1429) |
-| 18 | Luke Lockwood (1584) | Drake Byrd (1532) | Ryan Donlan (1526) | Dylan Reid (1515) | Justin Miller (1509) | Julius Long (1443) |
-| 19 | Luke Lockwood (1568) | Ryan Donlan (1537) | Justin Miller (1520) | Drake Byrd (1518) | Dylan Reid (1504) | Julius Long (1456) |
-| 20 | Luke Lockwood (1554) | Ryan Donlan (1547) | Justin Miller (1534) | Dylan Reid (1515) | Drake Byrd (1504) | Ethan Ellsworth (1450) |
-| 21 | Ryan Donlan (1559) | Luke Lockwood (1542) | Justin Miller (1519) | Dylan Reid (1502) | Drake Byrd (1491) | Levi Morant (1460) |
-| 22 | Ryan Donlan (1568) | Justin Miller (1530) | Luke Lockwood (1529) | Dylan Reid (1515) | Drake Byrd (1502) | Levi Morant (1449) |
-| 23 | Ryan Donlan (1554) | Justin Miller (1541) | Luke Lockwood (1539) | Dylan Reid (1525) | Alexander Chaban (1515) | Ethan Ellsworth (1444) |
-| 24 | Ryan Donlan (1564) | Justin Miller (1550) | Alexander Chaban (1528) | Luke Lockwood (1526) | Dylan Reid (1511) | Levi Morant (1449) |
-| 25 | Ryan Donlan (1549) | Alexander Chaban (1538) | Justin Miller (1535) | Luke Lockwood (1512) | Dylan Reid (1498) | Ethan Ellsworth (1447) |
-| 26 | Ryan Donlan (1561) | Alexander Chaban (1524) | Justin Miller (1523) | Luke Lockwood (1521) | Ryan Houseman (1511) | Ethan Ellsworth (1437) |
-| 27 | Ryan Donlan (1546) | Luke Lockwood (1532) | Dylan Reid (1521) | Ryan Houseman (1520) | Justin Miller (1511) | Ethan Ellsworth (1428) |
-| 28 | Ryan Donlan (1557) | Luke Lockwood (1543) | Justin Miller (1523) | Dylan Reid (1510) | Ryan Houseman (1506) | Ethan Ellsworth (1429) |
-| 29 | Ryan Donlan (1565) | Justin Miller (1535) | Luke Lockwood (1530) | Dylan Reid (1521) | Ryan Houseman (1517) | Ethan Ellsworth (1422) |
-| 30 | Ryan Donlan (1576) | Justin Miller (1544) | Dylan Reid (1532) | Ryan Houseman (1527) | Luke Lockwood (1519) | Ethan Ellsworth (1413) |
-| 31 | Ryan Donlan (1583) | Justin Miller (1555) | Luke Lockwood (1532) | Dylan Reid (1520) | Drake Byrd (1516) | Ethan Ellsworth (1405) |
-| 32 | Ryan Donlan (1591) | Justin Miller (1566) | Luke Lockwood (1543) | Dylan Reid (1528) | Drake Byrd (1506) | Ethan Ellsworth (1396) |
-| 33 | Ryan Donlan (1600) | Justin Miller (1573) | Luke Lockwood (1552) | Dylan Reid (1539) | Drake Byrd (1496) | Ethan Ellsworth (1411) |
-| 34 | Ryan Donlan (1609) | Justin Miller (1582) | Luke Lockwood (1560) | Dylan Reid (1525) | Drake Byrd (1510) | Julius Long (1413) |
-| 35 | Ryan Donlan (1620) | Justin Miller (1571) | Luke Lockwood (1543) | Drake Byrd (1520) | Dylan Reid (1510) | Alexander Chaban (1422) |
-| 36 | Ryan Donlan (1626) | Justin Miller (1581) | Luke Lockwood (1542) | Drake Byrd (1521) | Ryan Houseman (1505) | Alexander Chaban (1410) |
-| 37 | Ryan Donlan (1634) | Justin Miller (1587) | Luke Lockwood (1527) | Ryan Houseman (1518) | Drake Byrd (1508) | Alexander Chaban (1403) |
 
 ### 2025-26 Time At The Top And Bottom
 | Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
@@ -407,48 +366,6 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 | 9 | Ethan Ellsworth | 1441.3 | -58.6 | 1505.3 | 2024-25 19 | 1421.2 | 2024-25 35 | 7.39 | 0 | 0 | 19 |
 | 10 | Dylan Reid | 1393.1 | -106.9 | 1518.6 | 2024-25 16 | 1393.1 | 2024-25 38 | 7.00 | 1 | 2 | 17 |
 
-### 2024-25 Weekly Path
-| Week | #1 | #2 | #3 | #4 | #5 | Bottom |
-|---|---:|---:|---:|---:|---:|---:|
-| 1 | Dylan Reid (1512) | Julius Long (1512) | Justin Miller (1512) | Levi Morant (1512) | Ryan Donlan (1512) | Ryan Houseman (1488) |
-| 2 | Levi Morant (1524) | Julius Long (1523) | Ryan Donlan (1523) | Alexander Chaban (1501) | Drake Byrd (1500) | Ethan Ellsworth (1476) |
-| 3 | Ryan Donlan (1535) | Levi Morant (1535) | Julius Long (1511) | Drake Byrd (1500) | Justin Miller (1500) | Luke Lockwood (1465) |
-| 4 | Ryan Donlan (1546) | Levi Morant (1545) | Julius Long (1523) | Justin Miller (1512) | Ryan Houseman (1501) | Luke Lockwood (1455) |
-| 5 | Ryan Donlan (1556) | Levi Morant (1555) | Julius Long (1533) | Justin Miller (1501) | Drake Byrd (1499) | Luke Lockwood (1444) |
-| 6 | Levi Morant (1567) | Ryan Donlan (1544) | Julius Long (1544) | Dylan Reid (1502) | Justin Miller (1490) | Ethan Ellsworth (1453) |
-| 7 | Levi Morant (1577) | Julius Long (1555) | Ryan Donlan (1554) | Dylan Reid (1491) | Ryan Houseman (1489) | Ethan Ellsworth (1441) |
-| 8 | Levi Morant (1560) | Ryan Donlan (1540) | Julius Long (1540) | Ryan Houseman (1504) | Drake Byrd (1489) | Alexander Chaban (1457) |
-| 9 | Julius Long (1552) | Ryan Donlan (1549) | Levi Morant (1547) | Ryan Houseman (1515) | Justin Miller (1500) | Alexander Chaban (1446) |
-| 10 | Julius Long (1537) | Ryan Donlan (1535) | Levi Morant (1532) | Justin Miller (1513) | Ryan Houseman (1503) | Alexander Chaban (1462) |
-| 11 | Julius Long (1548) | Ryan Donlan (1545) | Justin Miller (1525) | Levi Morant (1519) | Ryan Houseman (1492) | Alexander Chaban (1450) |
-| 12 | Ryan Donlan (1557) | Justin Miller (1536) | Julius Long (1536) | Levi Morant (1506) | Dylan Reid (1504) | Alexander Chaban (1439) |
-| 13 | Ryan Donlan (1555) | Julius Long (1545) | Justin Miller (1522) | Levi Morant (1517) | Dylan Reid (1506) | Luke Lockwood (1451) |
-| 14 | Ryan Donlan (1566) | Julius Long (1554) | Dylan Reid (1518) | Justin Miller (1511) | Levi Morant (1504) | Alexander Chaban (1444) |
-| 15 | Ryan Donlan (1576) | Julius Long (1541) | Justin Miller (1525) | Ryan Houseman (1514) | Dylan Reid (1505) | Alexander Chaban (1433) |
-| 16 | Ryan Donlan (1583) | Justin Miller (1534) | Julius Long (1528) | Ryan Houseman (1526) | Dylan Reid (1519) | Alexander Chaban (1425) |
-| 17 | Ryan Donlan (1593) | Julius Long (1537) | Justin Miller (1519) | Ryan Houseman (1516) | Dylan Reid (1505) | Luke Lockwood (1434) |
-| 18 | Ryan Donlan (1602) | Justin Miller (1530) | Ryan Houseman (1527) | Julius Long (1522) | Dylan Reid (1493) | Alexander Chaban (1429) |
-| 19 | Ryan Donlan (1610) | Justin Miller (1542) | Ryan Houseman (1515) | Julius Long (1509) | Ethan Ellsworth (1505) | Alexander Chaban (1443) |
-| 20 | Ryan Donlan (1617) | Justin Miller (1552) | Ryan Houseman (1527) | Julius Long (1498) | Ethan Ellsworth (1492) | Luke Lockwood (1441) |
-| 21 | Ryan Donlan (1601) | Justin Miller (1537) | Ryan Houseman (1536) | Julius Long (1514) | Ethan Ellsworth (1503) | Luke Lockwood (1432) |
-| 22 | Ryan Donlan (1609) | Justin Miller (1548) | Ryan Houseman (1545) | Drake Byrd (1507) | Julius Long (1501) | Levi Morant (1436) |
-| 23 | Ryan Donlan (1619) | Justin Miller (1538) | Ryan Houseman (1529) | Dylan Reid (1494) | Drake Byrd (1493) | Alexander Chaban (1451) |
-| 24 | Ryan Donlan (1626) | Justin Miller (1548) | Ryan Houseman (1540) | Dylan Reid (1483) | Drake Byrd (1480) | Levi Morant (1445) |
-| 25 | Ryan Donlan (1632) | Justin Miller (1558) | Ryan Houseman (1550) | Julius Long (1489) | Dylan Reid (1471) | Ethan Ellsworth (1457) |
-| 26 | Ryan Donlan (1642) | Justin Miller (1566) | Ryan Houseman (1540) | Julius Long (1488) | Drake Byrd (1479) | Levi Morant (1446) |
-| 27 | Ryan Donlan (1624) | Justin Miller (1575) | Ryan Houseman (1550) | Julius Long (1498) | Ethan Ellsworth (1487) | Levi Morant (1436) |
-| 28 | Ryan Donlan (1631) | Justin Miller (1586) | Ryan Houseman (1539) | Ethan Ellsworth (1499) | Julius Long (1486) | Alexander Chaban (1425) |
-| 29 | Ryan Donlan (1614) | Justin Miller (1593) | Ryan Houseman (1525) | Luke Lockwood (1502) | Julius Long (1500) | Dylan Reid (1426) |
-| 30 | Ryan Donlan (1622) | Justin Miller (1601) | Luke Lockwood (1515) | Ryan Houseman (1512) | Julius Long (1492) | Dylan Reid (1415) |
-| 31 | Ryan Donlan (1628) | Justin Miller (1609) | Luke Lockwood (1525) | Ryan Houseman (1522) | Drake Byrd (1480) | Dylan Reid (1409) |
-| 32 | Ryan Donlan (1639) | Justin Miller (1598) | Luke Lockwood (1535) | Ryan Houseman (1508) | Julius Long (1489) | Dylan Reid (1423) |
-| 33 | Ryan Donlan (1646) | Justin Miller (1606) | Luke Lockwood (1544) | Ryan Houseman (1517) | Julius Long (1481) | Dylan Reid (1414) |
-| 34 | Ryan Donlan (1627) | Justin Miller (1616) | Luke Lockwood (1534) | Ryan Houseman (1526) | Drake Byrd (1467) | Dylan Reid (1428) |
-| 35 | Justin Miller (1622) | Ryan Donlan (1611) | Luke Lockwood (1544) | Ryan Houseman (1542) | Drake Byrd (1478) | Dylan Reid (1418) |
-| 36 | Justin Miller (1628) | Ryan Donlan (1593) | Ryan Houseman (1551) | Luke Lockwood (1528) | Levi Morant (1486) | Dylan Reid (1412) |
-| 37 | Justin Miller (1637) | Ryan Donlan (1577) | Ryan Houseman (1542) | Luke Lockwood (1537) | Levi Morant (1496) | Dylan Reid (1404) |
-| 38 | Justin Miller (1621) | Ryan Donlan (1588) | Ryan Houseman (1527) | Luke Lockwood (1526) | Levi Morant (1513) | Dylan Reid (1393) |
-
 ### 2024-25 Time At The Top And Bottom
 | Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
 |---|---:|---:|---:|---:|---:|
@@ -498,6 +415,5 @@ These are the supporting CSVs exposed for the power rankings page.
 
 - `power_ranking_summary.csv`
 - `power_ranking_weekly.csv`
-- `power_ranking_path.csv`
 - `power_ranking_swings.csv`
 </details>
