@@ -213,6 +213,17 @@
       border: 1px solid var(--line);
       border-radius: 8px;
     }
+    @supports (content-visibility: auto) {
+      .table-wrap,
+      .rating-chart-wrap,
+      details {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 360px;
+      }
+      details[open] {
+        contain-intrinsic-size: auto 720px;
+      }
+    }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -533,6 +544,12 @@
         border-radius: 8px;
         background: #ffffff;
         overflow: hidden;
+      }
+      @supports (content-visibility: auto) {
+        tbody > tr {
+          content-visibility: auto;
+          contain-intrinsic-size: auto 96px;
+        }
       }
       tr:nth-child(even) td {
         background: transparent;
