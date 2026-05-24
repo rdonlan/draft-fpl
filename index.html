@@ -4,15 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BMS FPL Draft League Analysis</title>
+  <script>
+(() => {
+  const saved = localStorage.getItem("bms-theme");
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+})();
+</script>
   <style>
     :root {
-      color-scheme: light;
+      color-scheme: light dark;
       --bg: #f7f8fb;
       --paper: #ffffff;
       --ink: #18202f;
       --muted: #667085;
       --line: #d9deea;
       --accent: #0b7a75;
+      --shadow: rgba(24, 32, 47, 0.06);
+    }
+    html[data-theme="dark"] {
+      --bg: #0c1117;
+      --paper: #141b23;
+      --ink: #e6edf3;
+      --muted: #9aa7b4;
+      --line: #2b3643;
+      --accent: #2dd4bf;
+      --shadow: rgba(0, 0, 0, 0.28);
     }
     * { box-sizing: border-box; }
     body {
@@ -27,8 +44,15 @@
       width: min(920px, calc(100% - 32px));
       margin: 48px auto;
     }
+    .home-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
     h1 {
-      margin: 0 0 10px;
+      margin: 0;
       font-size: clamp(2rem, 6vw, 4.2rem);
       line-height: 1;
       letter-spacing: 0;
@@ -38,6 +62,22 @@
       max-width: 680px;
       color: var(--muted);
       font-size: 1.05rem;
+    }
+    .theme-toggle {
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
     }
     .home-grid {
       display: grid;
@@ -56,7 +96,7 @@
       background: var(--paper);
       color: inherit;
       text-decoration: none;
-      box-shadow: 0 14px 28px rgba(24, 32, 47, 0.06);
+      box-shadow: 0 14px 28px var(--shadow);
     }
     .home-card:hover {
       border-color: var(--accent);
@@ -69,11 +109,23 @@
       color: var(--muted);
       font-size: 0.94rem;
     }
+    @media (max-width: 560px) {
+      main {
+        margin-top: 28px;
+      }
+      .home-top {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>BMS FPL Draft</h1>
+    <div class="home-top">
+      <h1>BMS FPL Draft</h1>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
     <p>League reports, all-time tables, manager profiles, and Elo power rankings.</p>
     <div class="home-grid">
       <a class="home-card" href="2025-2026/"><strong>2025-2026</strong><span>Current season report</span></a>
@@ -83,5 +135,26 @@
 <a class="home-card" href="power-rankings/"><strong>Power Rankings</strong><span>Season-reset Elo tables and hoverable movement charts.</span></a>
     </div>
   </main>
+  <script>
+(() => {
+  const button = document.querySelector(".theme-toggle");
+  if (!button) return;
+
+  const label = () => {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    button.textContent = isDark ? "Light mode" : "Dark mode";
+    button.setAttribute("aria-pressed", String(isDark));
+  };
+
+  button.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("bms-theme", next);
+    label();
+  });
+
+  label();
+})();
+</script>
 </body>
 </html>

@@ -4,9 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BMS FPL Draft Power Rankings</title>
+  <script>
+(() => {
+  const saved = localStorage.getItem("bms-theme");
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+})();
+</script>
   <style>
     :root {
-      color-scheme: light;
+      color-scheme: light dark;
       --bg: #f7f8fb;
       --paper: #ffffff;
       --ink: #18202f;
@@ -15,6 +22,52 @@
       --accent: #0b7a75;
       --accent-2: #b54708;
       --code: #f0f4f8;
+      --soft: #f8fafc;
+      --soft-2: #eef6f5;
+      --soft-3: #eef2f7;
+      --row-alt: #fbfcfe;
+      --table-head: #f1f5f9;
+      --table-head-ink: #344054;
+      --tab-ink: #344054;
+      --active: #075e5a;
+      --note-bg: #fbfefd;
+      --note-head: #eef6f5;
+      --note-border: #d9e6e4;
+      --note-ink: #075e5a;
+      --chart-grid: #dfe5ee;
+      --chart-axis: #526071;
+      --shadow: rgba(20, 31, 53, 0.08);
+      --shadow-soft: rgba(20, 31, 53, 0.06);
+      --tooltip-bg: rgba(255, 255, 255, 0.97);
+      --tooltip-border: #b9c5d4;
+    }
+    html[data-theme="dark"] {
+      --bg: #0c1117;
+      --paper: #141b23;
+      --ink: #e6edf3;
+      --muted: #9aa7b4;
+      --line: #2b3643;
+      --accent: #2dd4bf;
+      --accent-2: #f6ad55;
+      --code: #111923;
+      --soft: #101820;
+      --soft-2: #102320;
+      --soft-3: #101824;
+      --row-alt: #101820;
+      --table-head: #101a24;
+      --table-head-ink: #d7e2ed;
+      --tab-ink: #d7e2ed;
+      --active: #0f766e;
+      --note-bg: #0f211f;
+      --note-head: #12302d;
+      --note-border: #1e4f4a;
+      --note-ink: #99f6e4;
+      --chart-grid: #273241;
+      --chart-axis: #8795a8;
+      --shadow: rgba(0, 0, 0, 0.32);
+      --shadow-soft: rgba(0, 0, 0, 0.24);
+      --tooltip-bg: rgba(20, 27, 35, 0.98);
+      --tooltip-border: #3c4a5c;
     }
     * { box-sizing: border-box; }
     body {
@@ -30,7 +83,7 @@
       background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: 0 18px 55px rgba(20, 31, 53, 0.08);
+      box-shadow: 0 18px 55px var(--shadow);
       padding: clamp(24px, 4vw, 48px);
     }
     h1 {
@@ -50,16 +103,16 @@
       margin: 16px 0;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #ffffff;
+      background: var(--paper);
       overflow: hidden;
     }
     details[open] {
-      box-shadow: 0 10px 28px rgba(20, 31, 53, 0.06);
+      box-shadow: 0 10px 28px var(--shadow-soft);
     }
     summary {
       cursor: pointer;
       padding: 15px 18px;
-      background: #f8fafc;
+      background: var(--soft);
       border-bottom: 1px solid transparent;
       color: var(--ink);
       user-select: none;
@@ -82,8 +135,8 @@
     details.notes {
       margin-top: 10px;
       margin-bottom: 18px;
-      border-color: #d9e6e4;
-      background: #fbfefd;
+      border-color: var(--note-border);
+      background: var(--note-bg);
       box-shadow: none;
     }
     details.notes[open] {
@@ -91,15 +144,15 @@
     }
     details.notes > summary {
       padding: 10px 12px;
-      background: #eef6f5;
-      color: #075e5a;
+      background: var(--note-head);
+      color: var(--note-ink);
       font-size: 0.92rem;
       font-weight: 750;
     }
     details.position-group {
       margin: 12px 18px;
-      border-color: #d6dee8;
-      background: #ffffff;
+      border-color: var(--line);
+      background: var(--paper);
       box-shadow: none;
     }
     details.position-group[open] {
@@ -110,8 +163,8 @@
       align-items: center;
       min-height: 44px;
       padding: 11px 14px;
-      background: #f3f6fb;
-      color: #263244;
+      background: var(--soft-3);
+      color: var(--ink);
       font-weight: 800;
     }
     details.position-group > .table-wrap {
@@ -148,7 +201,7 @@
     }
     code {
       background: var(--code);
-      border: 1px solid #d6dee8;
+      border: 1px solid var(--line);
       border-radius: 5px;
       padding: 0.08rem 0.35rem;
       font-size: 0.92em;
@@ -166,8 +219,8 @@
       align-items: center;
       margin: 18px 0 28px;
       padding: 12px;
-      background: #eef6f5;
-      border: 1px solid #c8e5e0;
+      background: var(--soft-2);
+      border: 1px solid var(--note-border);
       border-radius: 8px;
     }
     .season-tabs {
@@ -183,15 +236,33 @@
       padding: 7px 12px;
       border: 1px solid var(--line);
       border-radius: 6px;
-      background: #ffffff;
-      color: #344054;
+      background: var(--paper);
+      color: var(--tab-ink);
       font-size: 0.95rem;
       font-weight: 750;
       text-decoration: none;
     }
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.95rem;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
     .season-tab.active {
-      background: #075e5a;
-      border-color: #075e5a;
+      background: var(--active);
+      border-color: var(--active);
       color: #ffffff;
     }
     .toolbar a {
@@ -199,10 +270,10 @@
       align-items: center;
       min-height: 34px;
       padding: 6px 10px;
-      border: 1px solid #a8d7d0;
+      border: 1px solid var(--note-border);
       border-radius: 6px;
-      background: #ffffff;
-      color: #075e5a;
+      background: var(--paper);
+      color: var(--note-ink);
       font-size: 0.9rem;
       font-weight: 650;
       text-decoration: none;
@@ -226,18 +297,22 @@
       vertical-align: top;
     }
     th {
-      background: #f1f5f9;
-      color: #344054;
+      background: var(--table-head);
+      color: var(--table-head-ink);
       font-weight: 750;
       position: sticky;
       top: 0;
     }
     tr:nth-child(even) td {
-      background: #fbfcfe;
+      background: var(--row-alt);
     }
     tr.belt-winner-row td,
     tr:nth-child(even).belt-winner-row td {
       background: var(--belt-bg);
+    }
+    html[data-theme="dark"] tr.belt-winner-row td,
+    html[data-theme="dark"] tr:nth-child(even).belt-winner-row td {
+      background: var(--belt-bg-dark);
     }
     tr.belt-winner-row td:first-child {
       border-left: 6px solid var(--belt-accent);
@@ -271,14 +346,14 @@
       margin: 16px 0 26px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #ffffff;
+      background: var(--paper);
     }
     .rating-chart {
       display: block;
       width: 100%;
       min-width: 980px;
       height: auto;
-      background: #ffffff;
+      background: var(--paper);
     }
     .chart-title {
       fill: var(--ink);
@@ -286,15 +361,15 @@
       font-weight: 800;
     }
     .axis-line {
-      stroke: #526071;
+      stroke: var(--chart-axis);
       stroke-width: 1.2;
     }
     .grid-line {
-      stroke: #dfe5ee;
+      stroke: var(--chart-grid);
       stroke-width: 1;
     }
     .tick-line {
-      stroke: #526071;
+      stroke: var(--chart-axis);
       stroke-width: 1;
     }
     .axis-label {
@@ -303,7 +378,7 @@
       font-variant-numeric: tabular-nums;
     }
     .axis-caption {
-      fill: #344054;
+      fill: var(--table-head-ink);
       font-size: 13px;
       font-weight: 750;
     }
@@ -315,7 +390,7 @@
       opacity: 0.9;
     }
     .rating-endpoint {
-      stroke: #ffffff;
+      stroke: var(--paper);
       stroke-width: 1.5;
     }
     .legend-swatch {
@@ -323,7 +398,7 @@
       stroke-linecap: round;
     }
     .legend-label {
-      fill: #263244;
+      fill: var(--ink);
       font-size: 12px;
       font-weight: 700;
     }
@@ -333,8 +408,8 @@
       pointer-events: all;
     }
     .rating-hover-zone:hover {
-      fill: rgba(7, 94, 90, 0.06);
-      stroke: rgba(7, 94, 90, 0.35);
+      fill: color-mix(in srgb, var(--accent) 10%, transparent);
+      stroke: color-mix(in srgb, var(--accent) 45%, transparent);
       stroke-width: 1;
     }
     .rating-tooltip {
@@ -343,10 +418,10 @@
       display: none;
       max-width: min(320px, calc(100vw - 28px));
       padding: 10px 12px;
-      border: 1px solid #b9c5d4;
+      border: 1px solid var(--tooltip-border);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.97);
-      box-shadow: 0 14px 38px rgba(20, 31, 53, 0.2);
+      background: var(--tooltip-bg);
+      box-shadow: 0 14px 38px var(--shadow);
       color: var(--ink);
       font-size: 0.86rem;
       line-height: 1.4;
@@ -376,7 +451,7 @@
       padding: 6px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #eef2f7;
+      background: var(--soft-3);
     }
     .power-tab-label {
       display: inline-flex;
@@ -386,7 +461,7 @@
       padding: 8px 14px;
       border: 1px solid transparent;
       border-radius: 6px;
-      color: #344054;
+      color: var(--tab-ink);
       font-weight: 800;
       cursor: pointer;
       user-select: none;
@@ -396,7 +471,7 @@
       padding: 2px 0 4px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #ffffff;
+      background: var(--paper);
     }
     .power-tab-panel > h3,
     .power-tab-panel > p,
@@ -410,8 +485,8 @@
     }
     #power-season-2025-26:checked ~ .power-tab-list label[for="power-season-2025-26"],
     #power-season-2024-25:checked ~ .power-tab-list label[for="power-season-2024-25"] {
-      background: #075e5a;
-      border-color: #075e5a;
+      background: var(--active);
+      border-color: var(--active);
       color: #ffffff;
     }
     #power-season-2025-26:checked ~ #power-panel-2025-26,
@@ -423,7 +498,7 @@
     }
     @media (max-width: 760px) {
       body {
-        background: #ffffff;
+        background: var(--paper);
       }
       main {
         width: 100%;
@@ -531,7 +606,7 @@
       tr {
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: #ffffff;
+        background: var(--paper);
         overflow: hidden;
       }
       tr:nth-child(even) td {
@@ -540,6 +615,9 @@
       tr.belt-winner-row {
         background: var(--belt-bg);
         border-left: 6px solid var(--belt-accent);
+      }
+      html[data-theme="dark"] tr.belt-winner-row {
+        background: var(--belt-bg-dark);
       }
       tr.belt-winner-row td,
       tr:nth-child(even).belt-winner-row td {
@@ -562,7 +640,7 @@
         align-items: start;
         padding: 9px 10px;
         text-align: right;
-        border-bottom: 1px solid #e6ebf2;
+        border-bottom: 1px solid var(--line);
         font-variant-numeric: tabular-nums;
       }
       td:last-child {
@@ -588,6 +666,7 @@
 <a class="season-tab" href="../all-time/">All-Time</a>
 <a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
 <a class="season-tab active" href="../power-rankings/">Power Rankings</a>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
     </nav>
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/power-rankings/league_report.md">Raw Markdown</a>
@@ -1016,6 +1095,27 @@
 </details>
   </main>
   <div class="rating-tooltip" aria-hidden="true"></div>
+  <script>
+(() => {
+  const button = document.querySelector(".theme-toggle");
+  if (!button) return;
+
+  const label = () => {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    button.textContent = isDark ? "Light mode" : "Dark mode";
+    button.setAttribute("aria-pressed", String(isDark));
+  };
+
+  button.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("bms-theme", next);
+    label();
+  });
+
+  label();
+})();
+</script>
   <script>
 (() => {
   const tooltip = document.querySelector(".rating-tooltip");
