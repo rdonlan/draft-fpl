@@ -1,6 +1,6 @@
 # BMS FPL Draft Manager Profiles
 
-Each dropdown collects that manager's two-year record, scoring profile, streaks, belt history, opponent records, and signature games.
+Each dropdown collects that manager's two-year record, scoring profile, Elo power history, streaks, belt history, opponent records, and signature games.
 
 Use this page when you want the story of one manager instead of another league-wide leaderboard.
 
@@ -27,6 +27,14 @@ All-time rank #1 with a 53-1-21 record across the 2024-25 and 2025-26 datasets.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 1 | 27-1-10 | 82 | 1757 | 1452 | 46.2 | 5 | 2 |
 | 2025-26 | 1 | 26-0-11 | 78 | 1727 | 1415 | 46.7 | 4 | 2 |
+
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 2 | 1587.8 | +87.8 | 1645.6 | 33 | 1512.0 | 1 | 1.45 | 26 | 37 | 0 |
+| 2025-26 | 1 | 1634.3 | +134.3 | 1634.3 | 37 | 1465.6 | 3 | 3.19 | 17 | 21 | 4 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
@@ -89,6 +97,14 @@ All-time rank #2 with a 49-1-25 record across the 2024-25 and 2025-26 datasets.
 | 2024-25 | 2 | 26-1-11 | 79 | 1800 | 1557 | 47.4 | 11 | 2 |
 | 2025-26 | 2 | 23-0-14 | 69 | 1633 | 1609 | 44.1 | 7 | 3 |
 
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 1 | 1620.8 | +120.8 | 1637.4 | 37 | 1476.8 | 7 | 2.82 | 4 | 28 | 0 |
+| 2025-26 | 2 | 1587.1 | +87.1 | 1587.1 | 37 | 1455.2 | 8 | 4.59 | 0 | 18 | 6 |
+
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -149,6 +165,14 @@ All-time rank #3 with a 39-4-32 record across the 2024-25 and 2025-26 datasets.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 5 | 18-2-18 | 56 | 1534 | 1518 | 40.4 | 2 | 5 |
 | 2025-26 | 3 | 21-2-14 | 65 | 1494 | 1420 | 40.4 | 3 | 2 |
+
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 4 | 1525.9 | +25.9 | 1544.3 | 33 | 1431.7 | 21 | 7.08 | 0 | 6 | 20 |
+| 2025-26 | 3 | 1527.2 | +27.2 | 1583.9 | 18 | 1499.2 | 2 | 2.62 | 10 | 29 | 0 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
@@ -211,6 +235,14 @@ All-time rank #4 with a 40-0-35 record across the 2024-25 and 2025-26 datasets.
 | 2024-25 | 3 | 21-0-17 | 63 | 1478 | 1445 | 38.9 | 2 | 5 |
 | 2025-26 | 5 | 19-0-18 | 57 | 1635 | 1543 | 44.2 | 6 | 4 |
 
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 3 | 1527.1 | +27.1 | 1551.4 | 36 | 1476.8 | 2 | 4.42 | 0 | 15 | 3 |
+| 2025-26 | 4 | 1517.8 | +17.8 | 1528.3 | 10 | 1468.5 | 23 | 5.89 | 0 | 4 | 5 |
+
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -271,6 +303,14 @@ All-time rank #5 with a 35-2-38 record across the 2024-25 and 2025-26 datasets.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 7 | 16-1-21 | 49 | 1467 | 1525 | 38.6 | 3 | 1 |
 | 2025-26 | 4 | 19-1-17 | 58 | 1612 | 1637 | 43.6 | 6 | 3 |
+
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 7 | 1470.1 | -29.9 | 1507.3 | 22 | 1446.9 | 14 | 6.29 | 0 | 0 | 7 |
+| 2025-26 | 5 | 1508.4 | +8.4 | 1558.1 | 16 | 1470.5 | 27 | 3.78 | 6 | 17 | 1 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
@@ -333,6 +373,14 @@ All-time rank #6 with a 34-0-41 record across the 2024-25 and 2025-26 datasets.
 | 2024-25 | 4 | 19-0-19 | 57 | 1557 | 1586 | 41.0 | 6 | 4 |
 | 2025-26 | 7 | 15-0-22 | 45 | 1449 | 1535 | 39.2 | 4 | 8 |
 
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 5 | 1513.1 | +13.1 | 1576.5 | 7 | 1435.6 | 27 | 5.79 | 4 | 9 | 13 |
+| 2025-26 | 7 | 1458.7 | -41.4 | 1494.6 | 9 | 1443.3 | 36 | 7.81 | 0 | 0 | 22 |
+
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -393,6 +441,14 @@ All-time rank #7 with a 31-2-42 record across the 2024-25 and 2025-26 datasets.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 6 | 18-1-19 | 55 | 1533 | 1522 | 40.3 | 5 | 1 |
 | 2025-26 | 10 | 13-1-23 | 40 | 1430 | 1621 | 38.6 | 3 | 8 |
+
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 6 | 1472.3 | -27.7 | 1554.6 | 7 | 1445.7 | 36 | 3.89 | 3 | 17 | 1 |
+| 2025-26 | 9 | 1428.0 | -72.0 | 1500.0 | 2 | 1412.8 | 34 | 8.62 | 0 | 0 | 33 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
@@ -455,6 +511,14 @@ All-time rank #8 with a 31-2-42 record across the 2024-25 and 2025-26 datasets.
 | 2024-25 | 10 | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 |
 | 2025-26 | 6 | 19-0-18 | 57 | 1540 | 1490 | 41.6 | 3 | 3 |
 
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 10 | 1393.1 | -106.9 | 1518.6 | 16 | 1393.1 | 38 | 7.00 | 1 | 2 | 17 |
+| 2025-26 | 6 | 1492.0 | -8.1 | 1538.9 | 33 | 1492.0 | 37 | 4.03 | 1 | 12 | 0 |
+
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -515,6 +579,14 @@ All-time rank #9 with a 28-2-45 record across the 2024-25 and 2025-26 datasets.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 8 | 15-0-23 | 45 | 1450 | 1570 | 38.2 | 3 | 7 |
 | 2025-26 | 9 | 13-2-22 | 41 | 1477 | 1529 | 39.9 | 3 | 3 |
+
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 9 | 1441.3 | -58.6 | 1505.3 | 19 | 1421.2 | 35 | 7.39 | 0 | 0 | 19 |
+| 2025-26 | 8 | 1443.2 | -56.9 | 1534.4 | 3 | 1396.4 | 32 | 8.19 | 0 | 4 | 28 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
@@ -577,6 +649,14 @@ All-time rank #10 with a 28-0-47 record across the 2024-25 and 2025-26 datasets.
 | 2024-25 | 9 | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 |
 | 2025-26 | 8 | 14-0-23 | 42 | 1450 | 1648 | 39.2 | 3 | 5 |
 
+### Elo Power History
+Elo resets to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Elo | Net | Peak | Peak Week | Low | Low Week | Avg Elo Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 8 | 1448.4 | -51.6 | 1500.8 | 2 | 1420.0 | 33 | 8.87 | 0 | 0 | 34 |
+| 2025-26 | 10 | 1403.5 | -96.5 | 1537.5 | 25 | 1403.5 | 37 | 6.27 | 3 | 6 | 12 |
+
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -620,6 +700,7 @@ All-time rank #10 with a 28-0-47 record across the 2024-25 and 2025-26 datasets.
 These are the supporting CSVs exposed for the manager profiles page.
 
 - `manager_profile_summary.csv`
+- `manager_power_summary.csv`
 - `manager_h2h_records.csv`
 - `manager_signature_games.csv`
 </details>

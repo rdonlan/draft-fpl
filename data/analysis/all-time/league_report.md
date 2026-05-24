@@ -44,6 +44,38 @@ Use this as the career table: total record, table points, points for, points aga
 </details>
 
 <details>
+<summary><h2>All-Time Elo Power</h2></summary>
+
+Use this table as the career power-rankings view: it aggregates the season-reset Elo ratings from the Power Rankings page.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- Every manager starts at `1500` before week 1 of each season, so this table aggregates separate season Elo runs instead of carrying one rating across years.
+- **Avg Final Elo** averages each manager's end-of-season Elo across the seasons in this dataset.
+- **Latest Elo** and **Latest Rank** are from the newest season currently loaded.
+- **Best Peak** is the highest single-season Elo reached, with the season and gameweek shown because this table spans multiple years.
+- **Avg Elo Rank** is the manager's average weekly Elo rank, weighted by gameweeks played; lower is better.
+- **Total Net** sums each manager's season-level Elo change from the 1500 starting point.
+
+</details>
+
+| Power Rank | Manager | Avg Final Elo | Latest Elo | Latest Rank | Best Peak | Best Peak Week | Avg Elo Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Total Net |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | Ryan Donlan | 1611.1 | 1634.3 | 1 | 1645.6 | 2024-25 33 | 2.31 | 43 | 58 | 4 | +222.1 |
+| 2 | Justin Miller | 1603.9 | 1587.1 | 2 | 1637.4 | 2024-25 37 | 3.69 | 4 | 46 | 6 | +207.9 |
+| 3 | Luke Lockwood | 1526.5 | 1527.2 | 3 | 1583.9 | 2025-26 18 | 4.88 | 10 | 35 | 20 | +53.1 |
+| 4 | Ryan Houseman | 1522.5 | 1517.8 | 4 | 1551.4 | 2024-25 36 | 5.15 | 0 | 19 | 8 | +45.0 |
+| 5 | Drake Byrd | 1489.3 | 1508.4 | 5 | 1558.1 | 2025-26 16 | 5.05 | 6 | 17 | 8 | -21.5 |
+| 6 | Levi Morant | 1485.9 | 1458.7 | 7 | 1576.5 | 2024-25 7 | 6.79 | 4 | 9 | 35 | -28.3 |
+| 7 | Julius Long | 1450.2 | 1428.0 | 9 | 1554.6 | 2024-25 7 | 6.22 | 3 | 17 | 34 | -99.7 |
+| 8 | Dylan Reid | 1442.5 | 1492.0 | 6 | 1538.9 | 2025-26 33 | 5.53 | 2 | 14 | 17 | -115.0 |
+| 9 | Ethan Ellsworth | 1442.2 | 1443.2 | 8 | 1534.4 | 2025-26 3 | 7.78 | 0 | 4 | 47 | -115.5 |
+| 10 | Alexander Chaban | 1425.9 | 1403.5 | 10 | 1537.5 | 2025-26 25 | 7.59 | 3 | 6 | 46 | -148.2 |
+
+</details>
+
+<details>
 <summary><h2>All-Time Head-To-Head Matrix</h2></summary>
 
 Use this as the career matchup grid: each cell shows the row manager's record against the column manager across both seasons.
@@ -258,6 +290,7 @@ Use this table as the quick trophy case for the combined two-season sample.
 These are the supporting CSVs exposed for the all-time page.
 
 - `all_time_standings.csv`
+- `all_time_power.csv`
 - `all_time_scoring.csv`
 - `all_time_score_bands.csv`
 - `all_time_streaks.csv`
