@@ -1,0 +1,376 @@
+season,week,week_label,favorite,underdog,favorite_rating,underdog_rating,rating_gap,favorite_result,favorite_score,underdog_score,winner,outcome
+2025-26,37,2025-26 37,Justin Miller,Alexander Chaban,1580.53,1409.99,170.53,W,51,34,Justin Miller,Favorite won
+2025-26,36,2025-26 36,Ryan Donlan,Levi Morant,1619.94,1449.87,170.07,W,49,28,Ryan Donlan,Favorite won
+2025-26,33,2025-26 33,Justin Miller,Julius Long,1565.7,1427.93,137.77,W,68,54,Justin Miller,Favorite won
+2025-26,35,2025-26 35,Luke Lockwood,Ethan Ellsworth,1559.74,1424.52,135.22,L,21,42,Ethan Ellsworth,Upset
+2025-26,34,2025-26 34,Luke Lockwood,Julius Long,1552.08,1420.46,131.63,W,43,18,Luke Lockwood,Favorite won
+2025-26,31,2025-26 31,Ryan Donlan,Julius Long,1575.66,1446.49,129.17,W,47,28,Ryan Donlan,Favorite won
+2025-26,29,2025-26 29,Ryan Donlan,Ethan Ellsworth,1557.09,1429.39,127.7,W,47,38,Ryan Donlan,Favorite won
+2025-26,37,2025-26 37,Ryan Donlan,Dylan Reid,1626.49,1499.76,126.74,W,61,22,Ryan Donlan,Favorite won
+2025-26,16,2025-26 16,Luke Lockwood,Julius Long,1569.03,1446.53,122.5,W,49,19,Luke Lockwood,Favorite won
+2025-26,32,2025-26 32,Ryan Donlan,Alexander Chaban,1583.4,1462.07,121.33,W,43,22,Ryan Donlan,Favorite won
+2025-26,17,2025-26 17,Luke Lockwood,Ethan Ellsworth,1576.96,1455.79,121.18,D,48,48,Draw,Draw
+2025-26,19,2025-26 19,Luke Lockwood,Levi Morant,1583.9,1467.02,116.89,L,45,48,Levi Morant,Upset
+2025-26,32,2025-26 32,Dylan Reid,Ethan Ellsworth,1519.52,1404.57,114.95,W,48,41,Dylan Reid,Favorite won
+2025-26,30,2025-26 30,Justin Miller,Ethan Ellsworth,1535.39,1421.61,113.78,W,51,29,Justin Miller,Favorite won
+2025-26,35,2025-26 35,Dylan Reid,Julius Long,1525.43,1412.8,112.64,L,52,59,Julius Long,Upset
+2025-26,34,2025-26 34,Ryan Donlan,Ryan Houseman,1600.46,1493.38,107.08,W,43,32,Ryan Donlan,Favorite won
+2025-26,34,2025-26 34,Justin Miller,Levi Morant,1573.18,1468.66,104.52,W,38,35,Justin Miller,Favorite won
+2025-26,25,2025-26 25,Justin Miller,Levi Morant,1550.12,1449.12,101.01,L,28,66,Levi Morant,Upset
+2025-26,37,2025-26 37,Luke Lockwood,Levi Morant,1542.5,1443.32,99.18,L,32,37,Levi Morant,Upset
+2025-26,17,2025-26 17,Drake Byrd,Levi Morant,1558.06,1462.51,95.55,L,23,45,Levi Morant,Upset
+2025-26,31,2025-26 31,Drake Byrd,Ethan Ellsworth,1507.35,1413.41,93.94,W,35,29,Drake Byrd,Favorite won
+2025-26,13,2025-26 13,Drake Byrd,Ethan Ellsworth,1539.79,1449.32,90.47,L,39,41,Ethan Ellsworth,Upset
+2025-26,33,2025-26 33,Luke Lockwood,Alexander Chaban,1543.09,1454.09,89.0,W,58,44,Luke Lockwood,Favorite won
+2025-26,33,2025-26 33,Levi Morant,Ethan Ellsworth,1483.61,1396.41,87.21,L,34,60,Ethan Ellsworth,Upset
+2025-26,33,2025-26 33,Ryan Donlan,Drake Byrd,1591.37,1505.52,85.85,W,103,64,Ryan Donlan,Favorite won
+2025-26,27,2025-26 27,Ryan Donlan,Levi Morant,1560.75,1477.53,83.22,L,48,66,Levi Morant,Upset
+2025-26,21,2025-26 21,Justin Miller,Ethan Ellsworth,1533.62,1450.48,83.14,L,35,51,Ethan Ellsworth,Upset
+2025-26,25,2025-26 25,Ryan Donlan,Ryan Houseman,1564.02,1482.45,81.57,L,30,39,Ryan Houseman,Upset
+2025-26,17,2025-26 17,Dylan Reid,Julius Long,1519.1,1438.6,80.5,W,57,20,Dylan Reid,Favorite won
+2025-26,24,2025-26 24,Justin Miller,Julius Long,1540.85,1460.48,80.37,W,43,41,Justin Miller,Favorite won
+2025-26,20,2025-26 20,Ryan Donlan,Ethan Ellsworth,1537.46,1459.85,77.62,W,44,37,Ryan Donlan,Favorite won
+2025-26,22,2025-26 22,Ryan Donlan,Julius Long,1559.09,1482.72,76.36,W,28,26,Ryan Donlan,Favorite won
+2025-26,25,2025-26 25,Luke Lockwood,Julius Long,1526.17,1451.2,74.97,L,34,49,Julius Long,Upset
+2025-26,27,2025-26 27,Ryan Houseman,Ethan Ellsworth,1510.6,1437.48,73.12,W,46,40,Ryan Houseman,Favorite won
+2025-26,11,2025-26 11,Drake Byrd,Alexander Chaban,1543.53,1471.96,71.56,L,39,42,Alexander Chaban,Upset
+2025-26,4,2025-26 4,Alexander Chaban,Levi Morant,1535.97,1464.8,71.17,L,59,62,Levi Morant,Upset
+2025-26,25,2025-26 25,Alexander Chaban,Ethan Ellsworth,1527.92,1456.86,71.06,W,41,40,Alexander Chaban,Favorite won
+2025-26,27,2025-26 27,Alexander Chaban,Julius Long,1524.12,1454.86,69.26,L,37,44,Julius Long,Upset
+2025-26,13,2025-26 13,Luke Lockwood,Dylan Reid,1562.68,1494.36,68.32,L,38,45,Dylan Reid,Upset
+2025-26,23,2025-26 23,Ryan Donlan,Alexander Chaban,1568.49,1500.79,67.7,L,34,36,Alexander Chaban,Upset
+2025-26,9,2025-26 9,Dylan Reid,Justin Miller,1522.36,1455.22,67.14,L,23,31,Justin Miller,Upset
+2025-26,26,2025-26 26,Luke Lockwood,Ethan Ellsworth,1511.62,1447.29,64.34,W,26,23,Luke Lockwood,Favorite won
+2025-26,24,2025-26 24,Ryan Donlan,Drake Byrd,1554.18,1490.99,63.19,W,53,51,Ryan Donlan,Favorite won
+2025-26,36,2025-26 36,Justin Miller,Dylan Reid,1570.61,1509.67,60.94,W,70,54,Justin Miller,Favorite won
+2025-26,23,2025-26 23,Dylan Reid,Ethan Ellsworth,1514.98,1454.18,60.79,W,47,36,Dylan Reid,Favorite won
+2025-26,15,2025-26 15,Luke Lockwood,Alexander Chaban,1559.09,1498.83,60.26,W,60,58,Luke Lockwood,Favorite won
+2025-26,11,2025-26 11,Luke Lockwood,Justin Miller,1542.03,1482.03,60.0,W,59,53,Luke Lockwood,Favorite won
+2025-26,18,2025-26 18,Alexander Chaban,Julius Long,1487.36,1429.33,58.03,L,32,43,Julius Long,Upset
+2025-26,24,2025-26 24,Dylan Reid,Ryan Houseman,1524.9,1468.52,56.38,L,54,59,Ryan Houseman,Upset
+2025-26,20,2025-26 20,Drake Byrd,Alexander Chaban,1518.01,1462.61,55.4,L,29,48,Alexander Chaban,Upset
+2025-26,19,2025-26 19,Drake Byrd,Ryan Houseman,1531.87,1477.37,54.51,L,23,54,Ryan Houseman,Upset
+2025-26,36,2025-26 36,Ryan Houseman,Ethan Ellsworth,1495.15,1440.97,54.19,W,54,43,Ryan Houseman,Favorite won
+2025-26,35,2025-26 35,Ryan Houseman,Alexander Chaban,1484.97,1431.94,53.03,W,50,47,Ryan Houseman,Favorite won
+2025-26,11,2025-26 11,Ryan Houseman,Julius Long,1528.33,1477.51,50.82,L,31,36,Julius Long,Upset
+2025-26,23,2025-26 23,Luke Lockwood,Ryan Houseman,1528.71,1478.81,49.9,W,47,32,Luke Lockwood,Favorite won
+2025-26,35,2025-26 35,Drake Byrd,Levi Morant,1509.88,1460.17,49.72,W,42,29,Drake Byrd,Favorite won
+2025-26,28,2025-26 28,Ryan Houseman,Drake Byrd,1520.11,1470.54,49.57,L,47,55,Drake Byrd,Upset
+2025-26,20,2025-26 20,Luke Lockwood,Justin Miller,1568.01,1519.98,48.04,L,26,45,Justin Miller,Upset
+2025-26,30,2025-26 30,Ryan Houseman,Levi Morant,1517.09,1470.7,46.39,W,50,24,Ryan Houseman,Favorite won
+2025-26,5,2025-26 5,Luke Lockwood,Ryan Houseman,1522.43,1476.08,46.35,L,21,31,Ryan Houseman,Upset
+2025-26,14,2025-26 14,Dylan Reid,Ethan Ellsworth,1508.69,1464.37,44.32,W,30,28,Dylan Reid,Favorite won
+2025-26,6,2025-26 6,Drake Byrd,Ryan Donlan,1535.97,1491.85,44.12,L,18,47,Ryan Donlan,Upset
+2025-26,5,2025-26 5,Alexander Chaban,Ryan Donlan,1521.55,1478.37,43.18,L,34,55,Ryan Donlan,Upset
+2025-26,34,2025-26 34,Dylan Reid,Drake Byrd,1538.89,1496.42,42.47,L,28,51,Drake Byrd,Upset
+2025-26,12,2025-26 12,Ryan Houseman,Levi Morant,1514.59,1472.3,42.29,W,59,31,Ryan Houseman,Favorite won
+2025-26,10,2025-26 10,Drake Byrd,Ryan Houseman,1556.97,1514.88,42.09,L,51,61,Ryan Houseman,Upset
+2025-26,8,2025-26 8,Drake Byrd,Levi Morant,1534.48,1492.44,42.04,W,44,29,Drake Byrd,Favorite won
+2025-26,6,2025-26 6,Ethan Ellsworth,Levi Morant,1508.85,1467.09,41.77,L,26,36,Levi Morant,Upset
+2025-26,13,2025-26 13,Ryan Houseman,Justin Miller,1525.13,1483.7,41.44,L,29,45,Justin Miller,Upset
+2025-26,28,2025-26 28,Julius Long,Ethan Ellsworth,1469.22,1427.97,41.25,D,35,35,Draw,Draw
+2025-26,22,2025-26 22,Luke Lockwood,Dylan Reid,1542.1,1501.58,40.52,L,32,40,Dylan Reid,Upset
+2025-26,26,2025-26 26,Alexander Chaban,Ryan Houseman,1537.5,1497.22,40.29,L,30,44,Ryan Houseman,Upset
+2025-26,27,2025-26 27,Luke Lockwood,Drake Byrd,1521.43,1481.16,40.27,W,52,47,Luke Lockwood,Favorite won
+2025-26,28,2025-26 28,Luke Lockwood,Levi Morant,1532.04,1492.35,39.69,W,38,23,Luke Lockwood,Favorite won
+2025-26,30,2025-26 30,Drake Byrd,Julius Long,1496.71,1457.13,39.58,W,64,52,Drake Byrd,Favorite won
+2025-26,32,2025-26 32,Justin Miller,Drake Byrd,1555.04,1516.18,38.86,W,50,37,Justin Miller,Favorite won
+2025-26,29,2025-26 29,Ryan Houseman,Julius Long,1506.41,1467.81,38.61,W,57,46,Ryan Houseman,Favorite won
+2025-26,21,2025-26 21,Dylan Reid,Alexander Chaban,1514.9,1476.5,38.4,L,32,36,Alexander Chaban,Upset
+2025-26,12,2025-26 12,Drake Byrd,Julius Long,1529.09,1491.26,37.83,W,59,43,Drake Byrd,Favorite won
+2025-26,12,2025-26 12,Luke Lockwood,Ryan Donlan,1551.97,1514.3,37.67,W,53,36,Luke Lockwood,Favorite won
+2025-26,18,2025-26 18,Ryan Donlan,Levi Morant,1515.11,1477.73,37.38,W,45,36,Ryan Donlan,Favorite won
+2025-26,13,2025-26 13,Alexander Chaban,Levi Morant,1499.11,1461.75,37.37,L,29,43,Levi Morant,Upset
+2025-26,10,2025-26 10,Luke Lockwood,Levi Morant,1531.29,1494.63,36.65,W,55,40,Luke Lockwood,Favorite won
+2025-26,14,2025-26 14,Luke Lockwood,Ryan Houseman,1548.35,1511.71,36.64,W,44,40,Luke Lockwood,Favorite won
+2025-26,30,2025-26 30,Dylan Reid,Alexander Chaban,1521.2,1485.32,35.87,W,34,30,Dylan Reid,Favorite won
+2025-26,19,2025-26 19,Justin Miller,Alexander Chaban,1509.21,1473.37,35.84,W,47,32,Justin Miller,Favorite won
+2025-26,20,2025-26 20,Ryan Houseman,Julius Long,1491.23,1456.33,34.9,L,24,25,Julius Long,Upset
+2025-26,30,2025-26 30,Ryan Donlan,Luke Lockwood,1564.86,1529.99,34.88,W,42,28,Ryan Donlan,Favorite won
+2025-26,21,2025-26 21,Drake Byrd,Julius Long,1504.11,1469.53,34.58,L,49,53,Julius Long,Upset
+2025-26,32,2025-26 32,Levi Morant,Julius Long,1472.78,1438.76,34.02,W,42,29,Levi Morant,Favorite won
+2025-26,15,2025-26 15,Drake Byrd,Ryan Donlan,1535.78,1501.81,33.97,W,57,41,Drake Byrd,Favorite won
+2025-26,34,2025-26 34,Alexander Chaban,Ethan Ellsworth,1445.1,1411.36,33.75,L,18,30,Ethan Ellsworth,Upset
+2025-26,15,2025-26 15,Levi Morant,Ethan Ellsworth,1486.84,1453.9,32.94,L,31,41,Ethan Ellsworth,Upset
+2025-26,18,2025-26 18,Dylan Reid,Justin Miller,1528.37,1496.1,32.27,L,42,45,Justin Miller,Upset
+2025-26,26,2025-26 26,Dylan Reid,Julius Long,1497.94,1465.75,32.19,W,50,33,Dylan Reid,Favorite won
+2025-26,11,2025-26 11,Ryan Donlan,Ethan Ellsworth,1503.39,1471.85,31.54,W,44,32,Ryan Donlan,Favorite won
+2025-26,18,2025-26 18,Ryan Houseman,Ethan Ellsworth,1490.42,1459.81,30.61,L,30,59,Ethan Ellsworth,Upset
+2025-26,18,2025-26 18,Luke Lockwood,Drake Byrd,1572.94,1542.84,30.1,W,52,16,Luke Lockwood,Favorite won
+2025-26,22,2025-26 22,Alexander Chaban,Levi Morant,1489.82,1459.84,29.98,W,34,29,Alexander Chaban,Favorite won
+2025-26,25,2025-26 25,Dylan Reid,Drake Byrd,1510.97,1481.15,29.82,L,36,61,Drake Byrd,Upset
+2025-26,26,2025-26 26,Drake Byrd,Levi Morant,1494.18,1464.51,29.67,L,33,71,Levi Morant,Upset
+2025-26,19,2025-26 19,Ethan Ellsworth,Julius Long,1472.86,1443.31,29.55,L,41,75,Julius Long,Upset
+2025-26,22,2025-26 22,Justin Miller,Ryan Houseman,1518.81,1489.81,29.0,W,50,40,Justin Miller,Favorite won
+2025-26,14,2025-26 14,Ryan Donlan,Alexander Chaban,1514.81,1485.83,28.98,L,46,55,Alexander Chaban,Upset
+2025-26,15,2025-26 15,Justin Miller,Julius Long,1486.07,1457.55,28.52,W,60,35,Justin Miller,Favorite won
+2025-26,29,2025-26 29,Dylan Reid,Levi Morant,1510.18,1481.72,28.46,W,57,46,Dylan Reid,Favorite won
+2025-26,23,2025-26 23,Justin Miller,Drake Byrd,1529.81,1502.04,27.77,W,48,35,Justin Miller,Favorite won
+2025-26,14,2025-26 14,Drake Byrd,Justin Miller,1524.73,1497.12,27.61,W,64,22,Drake Byrd,Favorite won
+2025-26,35,2025-26 35,Ryan Donlan,Justin Miller,1608.88,1581.67,27.2,W,38,30,Ryan Donlan,Favorite won
+2025-26,7,2025-26 7,Ryan Donlan,Ryan Houseman,1505.37,1478.44,26.93,L,34,45,Ryan Houseman,Upset
+2025-26,8,2025-26 8,Ryan Donlan,Justin Miller,1492.44,1466.32,26.12,W,72,29,Ryan Donlan,Favorite won
+2025-26,22,2025-26 22,Drake Byrd,Ethan Ellsworth,1490.92,1465.3,25.62,W,48,30,Drake Byrd,Favorite won
+2025-26,8,2025-26 8,Luke Lockwood,Ethan Ellsworth,1532.07,1507.44,24.63,W,54,37,Luke Lockwood,Favorite won
+2025-26,28,2025-26 28,Ryan Donlan,Dylan Reid,1545.93,1521.33,24.6,W,48,43,Ryan Donlan,Favorite won
+2025-26,23,2025-26 23,Julius Long,Levi Morant,1473.32,1448.88,24.44,L,28,43,Levi Morant,Upset
+2025-26,2,2025-26 2,Dylan Reid,Levi Morant,1512.0,1488.0,24.0,W,41,35,Dylan Reid,Favorite won
+2025-26,2,2025-26 2,Ethan Ellsworth,Ryan Donlan,1512.0,1488.0,24.0,W,57,20,Ethan Ellsworth,Favorite won
+2025-26,2,2025-26 2,Luke Lockwood,Justin Miller,1512.0,1488.0,24.0,L,24,42,Justin Miller,Upset
+2025-26,24,2025-26 24,Luke Lockwood,Alexander Chaban,1539.0,1515.1,23.9,L,25,37,Alexander Chaban,Upset
+2025-26,16,2025-26 16,Justin Miller,Levi Morant,1497.09,1473.7,23.38,W,57,48,Justin Miller,Favorite won
+2025-26,5,2025-26 5,Drake Byrd,Justin Miller,1524.77,1501.54,23.23,W,47,46,Drake Byrd,Favorite won
+2025-26,36,2025-26 36,Luke Lockwood,Drake Byrd,1543.29,1520.18,23.12,D,38,38,Draw,Draw
+2025-26,33,2025-26 33,Dylan Reid,Ryan Houseman,1527.69,1504.59,23.1,W,48,24,Dylan Reid,Favorite won
+2025-26,13,2025-26 13,Ryan Donlan,Julius Long,1503.6,1480.56,23.04,W,34,24,Ryan Donlan,Favorite won
+2025-26,8,2025-26 8,Dylan Reid,Julius Long,1511.15,1488.2,22.95,W,34,22,Dylan Reid,Favorite won
+2025-26,17,2025-26 17,Alexander Chaban,Ryan Houseman,1500.13,1477.65,22.49,L,46,47,Ryan Houseman,Upset
+2025-26,5,2025-26 5,Ethan Ellsworth,Dylan Reid,1521.63,1499.17,22.46,L,33,47,Dylan Reid,Upset
+2025-26,4,2025-26 4,Ethan Ellsworth,Drake Byrd,1534.4,1512.0,22.4,L,39,41,Drake Byrd,Upset
+2025-26,4,2025-26 4,Julius Long,Ryan Donlan,1488.0,1465.6,22.4,L,44,55,Ryan Donlan,Upset
+2025-26,3,2025-26 3,Ethan Ellsworth,Justin Miller,1523.17,1500.83,22.34,W,49,30,Ethan Ellsworth,Favorite won
+2025-26,3,2025-26 3,Luke Lockwood,Ryan Donlan,1499.17,1476.83,22.34,W,40,39,Luke Lockwood,Favorite won
+2025-26,6,2025-26 6,Dylan Reid,Ryan Houseman,1511.95,1489.67,22.27,W,56,51,Dylan Reid,Favorite won
+2025-26,16,2025-26 16,Alexander Chaban,Ethan Ellsworth,1488.89,1467.03,21.86,W,57,52,Alexander Chaban,Favorite won
+2025-26,9,2025-26 9,Ryan Donlan,Levi Morant,1503.54,1481.89,21.65,L,40,46,Levi Morant,Upset
+2025-26,7,2025-26 7,Luke Lockwood,Julius Long,1520.81,1499.47,21.34,W,40,38,Luke Lockwood,Favorite won
+2025-26,20,2025-26 20,Dylan Reid,Levi Morant,1503.62,1482.91,20.71,W,47,27,Dylan Reid,Favorite won
+2025-26,12,2025-26 12,Dylan Reid,Alexander Chaban,1507.08,1486.4,20.68,L,39,52,Alexander Chaban,Upset
+2025-26,29,2025-26 29,Luke Lockwood,Justin Miller,1542.68,1522.7,19.98,L,31,50,Justin Miller,Upset
+2025-26,10,2025-26 10,Ethan Ellsworth,Julius Long,1484.53,1464.83,19.69,L,32,52,Julius Long,Upset
+2025-26,15,2025-26 15,Dylan Reid,Ryan Houseman,1519.17,1500.97,18.2,W,50,42,Dylan Reid,Favorite won
+2025-26,24,2025-26 24,Levi Morant,Ethan Ellsworth,1461.72,1444.26,17.46,L,44,47,Ethan Ellsworth,Upset
+2025-26,10,2025-26 10,Dylan Reid,Ryan Donlan,1508.07,1490.79,17.28,L,32,47,Ryan Donlan,Upset
+2025-26,31,2025-26 31,Justin Miller,Ryan Houseman,1543.59,1527.49,16.1,W,51,39,Justin Miller,Favorite won
+2025-26,16,2025-26 16,Drake Byrd,Dylan Reid,1546.61,1530.54,16.07,W,40,37,Drake Byrd,Favorite won
+2025-26,37,2025-26 37,Drake Byrd,Ryan Houseman,1520.97,1505.3,15.68,L,38,49,Ryan Houseman,Upset
+2025-26,32,2025-26 32,Luke Lockwood,Ryan Houseman,1531.63,1516.05,15.58,W,53,47,Luke Lockwood,Favorite won
+2025-26,10,2025-26 10,Alexander Chaban,Justin Miller,1484.48,1469.51,14.97,L,26,49,Justin Miller,Upset
+2025-26,26,2025-26 26,Ryan Donlan,Justin Miller,1549.26,1534.73,14.53,W,61,40,Ryan Donlan,Favorite won
+2025-26,27,2025-26 27,Justin Miller,Dylan Reid,1523.23,1508.83,14.4,L,25,40,Dylan Reid,Upset
+2025-26,31,2025-26 31,Alexander Chaban,Levi Morant,1474.56,1460.29,14.27,L,33,38,Levi Morant,Upset
+2025-26,29,2025-26 29,Alexander Chaban,Drake Byrd,1497.79,1484.24,13.55,L,24,39,Drake Byrd,Upset
+2025-26,31,2025-26 31,Dylan Reid,Luke Lockwood,1531.96,1519.19,12.77,L,23,24,Luke Lockwood,Upset
+2025-26,11,2025-26 11,Dylan Reid,Levi Morant,1495.48,1483.9,11.58,W,52,32,Dylan Reid,Favorite won
+2025-26,12,2025-26 12,Justin Miller,Ethan Ellsworth,1472.08,1460.93,11.15,W,54,31,Justin Miller,Favorite won
+2025-26,19,2025-26 19,Ryan Donlan,Dylan Reid,1525.83,1515.25,10.57,W,34,29,Ryan Donlan,Favorite won
+2025-26,37,2025-26 37,Julius Long,Ethan Ellsworth,1440.32,1430.82,9.5,L,30,40,Ethan Ellsworth,Upset
+2025-26,21,2025-26 21,Luke Lockwood,Ryan Donlan,1554.36,1546.83,7.54,L,38,46,Ryan Donlan,Upset
+2025-26,8,2025-26 8,Ryan Houseman,Alexander Chaban,1491.37,1484.07,7.3,W,79,32,Ryan Houseman,Favorite won
+2025-26,9,2025-26 9,Ryan Houseman,Ethan Ellsworth,1503.12,1496.29,6.83,W,69,45,Ryan Houseman,Favorite won
+2025-26,36,2025-26 36,Julius Long,Alexander Chaban,1428.56,1421.76,6.8,W,57,40,Julius Long,Favorite won
+2025-26,21,2025-26 21,Ryan Houseman,Levi Morant,1478.03,1471.62,6.41,W,44,30,Ryan Houseman,Favorite won
+2025-26,14,2025-26 14,Levi Morant,Julius Long,1475.03,1469.35,5.68,W,55,36,Levi Morant,Favorite won
+2025-26,17,2025-26 17,Justin Miller,Ryan Donlan,1508.28,1502.93,5.35,L,43,90,Ryan Donlan,Upset
+2025-26,9,2025-26 9,Julius Long,Alexander Chaban,1477.0,1472.32,4.68,L,40,55,Alexander Chaban,Upset
+2025-26,5,2025-26 5,Levi Morant,Julius Long,1479.22,1475.23,4.0,L,20,22,Julius Long,Upset
+2025-26,6,2025-26 6,Justin Miller,Julius Long,1490.35,1487.37,2.98,L,28,46,Julius Long,Upset
+2025-26,7,2025-26 7,Levi Morant,Justin Miller,1480.52,1478.24,2.28,W,41,40,Levi Morant,Favorite won
+2025-26,9,2025-26 9,Drake Byrd,Luke Lockwood,1545.04,1543.23,1.81,W,50,27,Drake Byrd,Favorite won
+2025-26,4,2025-26 4,Justin Miller,Ryan Houseman,1489.6,1488.03,1.57,W,56,47,Justin Miller,Favorite won
+2025-26,16,2025-26 16,Ryan Donlan,Ryan Houseman,1490.98,1489.6,1.38,W,40,22,Ryan Donlan,Favorite won
+2025-26,28,2025-26 28,Justin Miller,Alexander Chaban,1510.73,1509.76,0.98,W,44,34,Justin Miller,Favorite won
+2025-26,3,2025-26 3,Alexander Chaban,Dylan Reid,1524.0,1523.17,0.83,W,48,40,Alexander Chaban,Favorite won
+2025-26,3,2025-26 3,Levi Morant,Ryan Houseman,1476.83,1476.0,0.83,L,23,42,Ryan Houseman,Upset
+2025-26,4,2025-26 4,Dylan Reid,Luke Lockwood,1511.2,1510.4,0.8,L,41,42,Luke Lockwood,Upset
+2025-26,6,2025-26 6,Luke Lockwood,Alexander Chaban,1508.84,1508.06,0.77,W,55,20,Luke Lockwood,Favorite won
+2025-26,7,2025-26 7,Dylan Reid,Drake Byrd,1523.18,1522.46,0.72,L,39,44,Drake Byrd,Upset
+2025-26,7,2025-26 7,Alexander Chaban,Ethan Ellsworth,1496.09,1495.42,0.67,L,34,53,Ethan Ellsworth,Upset
+2025-26,1,2025-26 1,Alexander Chaban,Justin Miller,1500.0,1500.0,0.0,W,59,39,Alexander Chaban,Even rating
+2025-26,1,2025-26 1,Dylan Reid,Ryan Donlan,1500.0,1500.0,0.0,W,51,43,Dylan Reid,Even rating
+2025-26,1,2025-26 1,Ethan Ellsworth,Julius Long,1500.0,1500.0,0.0,W,42,34,Ethan Ellsworth,Even rating
+2025-26,1,2025-26 1,Luke Lockwood,Levi Morant,1500.0,1500.0,0.0,W,42,36,Luke Lockwood,Even rating
+2025-26,1,2025-26 1,Ryan Houseman,Drake Byrd,1500.0,1500.0,0.0,L,34,46,Drake Byrd,Even rating
+2025-26,2,2025-26 2,Drake Byrd,Alexander Chaban,1512.0,1512.0,0.0,L,39,55,Alexander Chaban,Even rating
+2025-26,2,2025-26 2,Julius Long,Ryan Houseman,1488.0,1488.0,0.0,W,51,45,Julius Long,Even rating
+2025-26,3,2025-26 3,Julius Long,Drake Byrd,1500.0,1500.0,0.0,L,43,56,Drake Byrd,Even rating
+2024-25,34,2024-25 34,Ryan Donlan,Alexander Chaban,1645.6,1420.0,225.6,L,54,58,Alexander Chaban,Upset
+2024-25,31,2024-25 31,Ryan Donlan,Dylan Reid,1622.47,1414.92,207.55,W,47,36,Ryan Donlan,Favorite won
+2024-25,36,2024-25 36,Justin Miller,Dylan Reid,1622.39,1417.71,204.68,W,58,30,Justin Miller,Favorite won
+2024-25,36,2024-25 36,Ryan Donlan,Ethan Ellsworth,1611.37,1421.2,190.17,L,25,40,Ethan Ellsworth,Upset
+2024-25,33,2024-25 33,Ryan Donlan,Levi Morant,1639.39,1456.62,182.77,W,63,53,Ryan Donlan,Favorite won
+2024-25,35,2024-25 35,Justin Miller,Alexander Chaban,1616.03,1438.85,177.17,W,45,41,Justin Miller,Favorite won
+2024-25,27,2024-25 27,Ryan Donlan,Ethan Ellsworth,1641.58,1469.39,172.19,L,44,46,Ethan Ellsworth,Upset
+2024-25,24,2024-25 24,Ryan Donlan,Levi Morant,1618.97,1451.65,167.32,W,83,45,Ryan Donlan,Favorite won
+2024-25,20,2024-25 20,Ryan Donlan,Luke Lockwood,1609.97,1447.5,162.47,W,52,33,Ryan Donlan,Favorite won
+2024-25,25,2024-25 25,Ryan Donlan,Alexander Chaban,1625.6,1464.16,161.44,W,62,28,Ryan Donlan,Favorite won
+2024-25,28,2024-25 28,Ryan Donlan,Drake Byrd,1624.08,1468.72,155.36,W,35,34,Ryan Donlan,Favorite won
+2024-25,29,2024-25 29,Ryan Donlan,Luke Lockwood,1631.04,1485.36,145.69,L,33,47,Luke Lockwood,Upset
+2024-25,16,2024-25 16,Ryan Donlan,Alexander Chaban,1575.95,1432.56,143.39,W,44,37,Ryan Donlan,Favorite won
+2024-25,38,2024-25 38,Justin Miller,Levi Morant,1637.43,1496.46,140.97,L,37,39,Levi Morant,Upset
+2024-25,29,2024-25 29,Justin Miller,Levi Morant,1585.84,1447.67,138.18,W,24,23,Justin Miller,Favorite won
+2024-25,8,2024-25 8,Levi Morant,Ethan Ellsworth,1576.52,1441.42,135.1,L,34,40,Ethan Ellsworth,Upset
+2024-25,31,2024-25 31,Justin Miller,Ethan Ellsworth,1601.38,1472.34,129.04,W,52,46,Justin Miller,Favorite won
+2024-25,19,2024-25 19,Ryan Donlan,Drake Byrd,1602.19,1474.64,127.55,W,65,31,Ryan Donlan,Favorite won
+2024-25,37,2024-25 37,Ryan Donlan,Drake Byrd,1593.39,1467.87,125.52,L,34,35,Drake Byrd,Upset
+2024-25,21,2024-25 21,Ryan Donlan,Julius Long,1616.74,1497.58,119.16,L,32,46,Julius Long,Upset
+2024-25,30,2024-25 30,Justin Miller,Drake Byrd,1593.31,1475.04,118.27,W,54,44,Justin Miller,Favorite won
+2024-25,37,2024-25 37,Luke Lockwood,Dylan Reid,1528.42,1412.06,116.36,W,51,43,Luke Lockwood,Favorite won
+2024-25,30,2024-25 30,Ryan Donlan,Julius Long,1614.29,1499.74,114.55,W,38,28,Ryan Donlan,Favorite won
+2024-25,36,2024-25 36,Luke Lockwood,Alexander Chaban,1544.15,1432.49,111.66,L,33,41,Alexander Chaban,Upset
+2024-25,22,2024-25 22,Ryan Donlan,Dylan Reid,1600.77,1489.54,111.24,W,42,30,Ryan Donlan,Favorite won
+2024-25,17,2024-25 17,Justin Miller,Alexander Chaban,1534.28,1425.25,109.03,L,48,53,Alexander Chaban,Upset
+2024-25,23,2024-25 23,Ryan Houseman,Levi Morant,1544.86,1436.01,108.85,L,33,53,Levi Morant,Upset
+2024-25,33,2024-25 33,Justin Miller,Julius Long,1597.77,1489.43,108.34,W,60,32,Justin Miller,Favorite won
+2024-25,27,2024-25 27,Justin Miller,Dylan Reid,1566.3,1458.48,107.82,W,71,45,Justin Miller,Favorite won
+2024-25,10,2024-25 10,Julius Long,Ethan Ellsworth,1552.45,1448.65,103.8,L,28,42,Ethan Ellsworth,Upset
+2024-25,10,2024-25 10,Levi Morant,Alexander Chaban,1547.38,1446.23,101.15,L,40,66,Alexander Chaban,Upset
+2024-25,35,2024-25 35,Ryan Donlan,Ryan Houseman,1626.75,1526.19,100.56,L,28,38,Ryan Houseman,Upset
+2024-25,26,2024-25 26,Justin Miller,Alexander Chaban,1557.67,1457.36,100.31,W,53,39,Justin Miller,Favorite won
+2024-25,18,2024-25 18,Ryan Donlan,Ethan Ellsworth,1593.3,1501.2,92.1,W,39,28,Ryan Donlan,Favorite won
+2024-25,14,2024-25 14,Julius Long,Alexander Chaban,1545.41,1453.37,92.04,W,41,37,Julius Long,Favorite won
+2024-25,22,2024-25 22,Ryan Houseman,Alexander Chaban,1535.91,1445.44,90.47,W,81,43,Ryan Houseman,Favorite won
+2024-25,21,2024-25 21,Ryan Houseman,Luke Lockwood,1526.83,1440.73,86.1,W,59,53,Ryan Houseman,Favorite won
+2024-25,17,2024-25 17,Julius Long,Luke Lockwood,1527.6,1442.74,84.87,W,42,29,Julius Long,Favorite won
+2024-25,38,2024-25 38,Ryan Houseman,Julius Long,1542.0,1457.45,84.55,L,24,34,Julius Long,Upset
+2024-25,33,2024-25 33,Luke Lockwood,Ethan Ellsworth,1535.21,1450.71,84.5,W,76,32,Luke Lockwood,Favorite won
+2024-25,8,2024-25 8,Julius Long,Luke Lockwood,1554.61,1470.22,84.39,L,29,38,Luke Lockwood,Upset
+2024-25,33,2024-25 33,Ryan Houseman,Dylan Reid,1507.61,1423.24,84.37,W,64,26,Ryan Houseman,Favorite won
+2024-25,26,2024-25 26,Ryan Donlan,Ryan Houseman,1632.39,1549.5,82.89,W,57,30,Ryan Donlan,Favorite won
+2024-25,9,2024-25 9,Ryan Donlan,Ethan Ellsworth,1539.9,1457.87,82.03,W,50,32,Ryan Donlan,Favorite won
+2024-25,7,2024-25 7,Levi Morant,Drake Byrd,1567.28,1486.09,81.19,W,38,33,Levi Morant,Favorite won
+2024-25,32,2024-25 32,Ryan Houseman,Levi Morant,1522.34,1441.89,80.45,L,39,75,Levi Morant,Upset
+2024-25,25,2024-25 25,Justin Miller,Luke Lockwood,1548.29,1471.12,77.18,W,66,61,Justin Miller,Favorite won
+2024-25,37,2024-25 37,Justin Miller,Ryan Houseman,1628.04,1551.39,76.65,W,55,40,Justin Miller,Favorite won
+2024-25,34,2024-25 34,Ryan Houseman,Ethan Ellsworth,1516.75,1441.57,75.18,W,26,21,Ryan Houseman,Favorite won
+2024-25,25,2024-25 25,Ryan Houseman,Ethan Ellsworth,1539.99,1466.87,73.12,W,36,33,Ryan Houseman,Favorite won
+2024-25,20,2024-25 20,Justin Miller,Levi Morant,1542.05,1469.5,72.55,W,46,35,Justin Miller,Favorite won
+2024-25,16,2024-25 16,Justin Miller,Luke Lockwood,1524.75,1452.27,72.48,W,41,32,Justin Miller,Favorite won
+2024-25,21,2024-25 21,Justin Miller,Drake Byrd,1551.58,1480.18,71.39,L,38,60,Drake Byrd,Upset
+2024-25,10,2024-25 10,Ryan Donlan,Drake Byrd,1549.12,1477.83,71.29,L,30,32,Drake Byrd,Upset
+2024-25,4,2024-25 4,Levi Morant,Luke Lockwood,1535.14,1464.83,70.32,W,66,38,Levi Morant,Favorite won
+2024-25,35,2024-25 35,Luke Lockwood,Julius Long,1534.46,1466.77,67.69,W,28,24,Luke Lockwood,Favorite won
+2024-25,18,2024-25 18,Julius Long,Levi Morant,1536.73,1469.07,67.66,L,40,56,Levi Morant,Upset
+2024-25,34,2024-25 34,Julius Long,Dylan Reid,1481.05,1414.09,66.96,L,45,53,Dylan Reid,Upset
+2024-25,13,2024-25 13,Julius Long,Drake Byrd,1535.69,1468.87,66.82,W,58,55,Julius Long,Favorite won
+2024-25,7,2024-25 7,Ryan Donlan,Alexander Chaban,1544.35,1478.77,65.58,W,42,37,Ryan Donlan,Favorite won
+2024-25,8,2024-25 8,Ryan Donlan,Ryan Houseman,1554.11,1489.4,64.71,L,19,31,Ryan Houseman,Upset
+2024-25,23,2024-25 23,Julius Long,Alexander Chaban,1500.89,1436.5,64.39,L,33,45,Alexander Chaban,Upset
+2024-25,13,2024-25 13,Ryan Houseman,Alexander Chaban,1503.13,1439.19,63.94,L,35,47,Alexander Chaban,Upset
+2024-25,36,2024-25 36,Ryan Houseman,Drake Byrd,1541.57,1477.69,63.89,W,47,40,Ryan Houseman,Favorite won
+2024-25,31,2024-25 31,Luke Lockwood,Levi Morant,1514.91,1451.73,63.18,W,38,37,Luke Lockwood,Favorite won
+2024-25,23,2024-25 23,Drake Byrd,Luke Lockwood,1507.27,1444.23,63.04,L,36,43,Luke Lockwood,Upset
+2024-25,15,2024-25 15,Ryan Donlan,Levi Morant,1566.07,1503.85,62.22,W,49,45,Ryan Donlan,Favorite won
+2024-25,34,2024-25 34,Justin Miller,Luke Lockwood,1606.14,1544.35,61.8,W,49,36,Justin Miller,Favorite won
+2024-25,27,2024-25 27,Ryan Houseman,Drake Byrd,1540.31,1478.61,61.7,W,44,37,Ryan Houseman,Favorite won
+2024-25,31,2024-25 31,Ryan Houseman,Alexander Chaban,1512.43,1451.29,61.13,W,45,21,Ryan Houseman,Favorite won
+2024-25,23,2024-25 23,Ryan Donlan,Justin Miller,1609.06,1547.96,61.09,W,49,30,Ryan Donlan,Favorite won
+2024-25,17,2024-25 17,Ryan Donlan,Ryan Houseman,1583.26,1526.0,57.26,W,53,29,Ryan Donlan,Favorite won
+2024-25,38,2024-25 38,Drake Byrd,Ethan Ellsworth,1484.03,1427.41,56.62,L,30,43,Ethan Ellsworth,Upset
+2024-25,32,2024-25 32,Ethan Ellsworth,Dylan Reid,1464.6,1409.34,55.26,L,29,40,Dylan Reid,Upset
+2024-25,19,2024-25 19,Levi Morant,Alexander Chaban,1483.37,1428.64,54.73,L,34,36,Alexander Chaban,Upset
+2024-25,29,2024-25 29,Ryan Houseman,Julius Long,1539.05,1485.92,53.13,L,23,30,Julius Long,Upset
+2024-25,13,2024-25 13,Ryan Donlan,Dylan Reid,1557.02,1504.3,52.72,D,36,36,Draw,Draw
+2024-25,11,2024-25 11,Ryan Donlan,Luke Lockwood,1534.69,1483.11,51.58,W,52,40,Ryan Donlan,Favorite won
+2024-25,24,2024-25 24,Justin Miller,Julius Long,1538.05,1486.69,51.37,W,80,30,Justin Miller,Favorite won
+2024-25,20,2024-25 20,Dylan Reid,Alexander Chaban,1491.86,1442.52,49.34,L,34,55,Alexander Chaban,Upset
+2024-25,30,2024-25 30,Ethan Ellsworth,Alexander Chaban,1486.0,1437.63,48.36,L,43,47,Alexander Chaban,Upset
+2024-25,19,2024-25 19,Dylan Reid,Luke Lockwood,1493.49,1445.86,47.63,D,30,30,Draw,Draw
+2024-25,13,2024-25 13,Justin Miller,Ethan Ellsworth,1535.76,1488.17,47.59,L,31,45,Ethan Ellsworth,Upset
+2024-25,4,2024-25 4,Ryan Donlan,Dylan Reid,1535.17,1488.03,47.14,W,44,35,Ryan Donlan,Favorite won
+2024-25,5,2024-25 5,Julius Long,Alexander Chaban,1522.79,1476.0,46.79,W,41,32,Julius Long,Favorite won
+2024-25,17,2024-25 17,Dylan Reid,Drake Byrd,1518.62,1472.0,46.63,L,31,35,Drake Byrd,Upset
+2024-25,12,2024-25 12,Justin Miller,Drake Byrd,1525.34,1479.28,46.06,W,36,27,Justin Miller,Favorite won
+2024-25,32,2024-25 32,Luke Lockwood,Drake Byrd,1524.75,1479.83,44.93,W,63,18,Luke Lockwood,Favorite won
+2024-25,13,2024-25 13,Levi Morant,Luke Lockwood,1506.35,1461.53,44.82,W,69,42,Levi Morant,Favorite won
+2024-25,5,2024-25 5,Levi Morant,Ryan Houseman,1544.75,1500.8,43.95,W,33,28,Levi Morant,Favorite won
+2024-25,15,2024-25 15,Julius Long,Justin Miller,1554.3,1511.27,43.03,L,40,51,Justin Miller,Upset
+2024-25,24,2024-25 24,Drake Byrd,Alexander Chaban,1493.11,1450.7,42.42,L,37,46,Alexander Chaban,Upset
+2024-25,7,2024-25 7,Julius Long,Dylan Reid,1544.06,1501.66,42.41,W,73,21,Julius Long,Favorite won
+2024-25,27,2024-25 27,Julius Long,Levi Morant,1487.74,1446.19,41.55,W,43,39,Julius Long,Favorite won
+2024-25,38,2024-25 38,Ryan Donlan,Luke Lockwood,1577.23,1536.54,40.69,W,40,29,Ryan Donlan,Favorite won
+2024-25,33,2024-25 33,Drake Byrd,Alexander Chaban,1469.37,1430.67,38.7,W,51,40,Drake Byrd,Favorite won
+2024-25,35,2024-25 35,Drake Byrd,Dylan Reid,1467.02,1428.38,38.64,W,41,31,Drake Byrd,Favorite won
+2024-25,20,2024-25 20,Ethan Ellsworth,Drake Byrd,1505.35,1466.86,38.49,L,25,37,Drake Byrd,Upset
+2024-25,29,2024-25 29,Ethan Ellsworth,Drake Byrd,1499.29,1461.75,37.53,L,13,69,Drake Byrd,Upset
+2024-25,37,2024-25 37,Levi Morant,Alexander Chaban,1485.75,1448.22,37.53,W,31,25,Levi Morant,Favorite won
+2024-25,32,2024-25 32,Julius Long,Alexander Chaban,1478.71,1441.38,37.33,W,39,37,Julius Long,Favorite won
+2024-25,21,2024-25 21,Ethan Ellsworth,Alexander Chaban,1492.02,1456.21,35.81,W,52,47,Ethan Ellsworth,Favorite won
+2024-25,24,2024-25 24,Ryan Houseman,Dylan Reid,1529.22,1493.62,35.59,W,70,36,Ryan Houseman,Favorite won
+2024-25,16,2024-25 16,Julius Long,Dylan Reid,1540.82,1505.4,35.42,L,36,39,Dylan Reid,Upset
+2024-25,16,2024-25 16,Levi Morant,Drake Byrd,1493.98,1458.78,35.19,L,39,55,Drake Byrd,Upset
+2024-25,25,2024-25 25,Drake Byrd,Levi Morant,1479.66,1445.02,34.63,L,50,54,Levi Morant,Upset
+2024-25,11,2024-25 11,Julius Long,Ryan Houseman,1536.97,1502.6,34.37,W,57,30,Julius Long,Favorite won
+2024-25,22,2024-25 22,Justin Miller,Ethan Ellsworth,1537.15,1502.79,34.36,W,56,34,Justin Miller,Favorite won
+2024-25,5,2024-25 5,Ryan Donlan,Justin Miller,1545.55,1511.62,33.94,W,63,58,Ryan Donlan,Favorite won
+2024-25,6,2024-25 6,Drake Byrd,Alexander Chaban,1499.24,1465.61,33.64,L,23,47,Alexander Chaban,Upset
+2024-25,38,2024-25 38,Alexander Chaban,Dylan Reid,1437.51,1403.93,33.58,W,62,21,Alexander Chaban,Favorite won
+2024-25,5,2024-25 5,Drake Byrd,Luke Lockwood,1488.39,1455.22,33.16,W,49,46,Drake Byrd,Favorite won
+2024-25,14,2024-25 14,Ryan Donlan,Justin Miller,1555.21,1522.13,33.08,W,41,38,Ryan Donlan,Favorite won
+2024-25,7,2024-25 7,Justin Miller,Luke Lockwood,1489.9,1457.09,32.81,L,57,58,Luke Lockwood,Upset
+2024-25,6,2024-25 6,Julius Long,Justin Miller,1533.18,1500.78,32.4,W,57,37,Julius Long,Favorite won
+2024-25,35,2024-25 35,Levi Morant,Ethan Ellsworth,1463.43,1432.13,31.3,W,45,38,Levi Morant,Favorite won
+2024-25,18,2024-25 18,Ryan Houseman,Drake Byrd,1515.96,1485.6,30.36,W,37,32,Ryan Houseman,Favorite won
+2024-25,19,2024-25 19,Julius Long,Ethan Ellsworth,1522.42,1492.31,30.11,L,48,54,Ethan Ellsworth,Upset
+2024-25,34,2024-25 34,Drake Byrd,Levi Morant,1480.04,1450.41,29.63,L,27,34,Levi Morant,Upset
+2024-25,10,2024-25 10,Luke Lockwood,Dylan Reid,1496.12,1466.96,29.15,L,25,26,Dylan Reid,Upset
+2024-25,11,2024-25 11,Drake Byrd,Ethan Ellsworth,1492.25,1464.13,28.12,L,43,51,Ethan Ellsworth,Upset
+2024-25,12,2024-25 12,Levi Morant,Dylan Reid,1519.31,1491.33,27.98,L,40,53,Dylan Reid,Upset
+2024-25,14,2024-25 14,Levi Morant,Ryan Houseman,1516.81,1488.94,27.86,L,24,47,Ryan Houseman,Upset
+2024-25,9,2024-25 9,Luke Lockwood,Alexander Chaban,1485.07,1457.27,27.8,W,45,22,Luke Lockwood,Favorite won
+2024-25,26,2024-25 26,Julius Long,Luke Lockwood,1488.67,1461.74,26.93,D,42,42,Draw,Draw
+2024-25,12,2024-25 12,Ethan Ellsworth,Alexander Chaban,1477.1,1450.26,26.84,W,47,29,Ethan Ellsworth,Favorite won
+2024-25,15,2024-25 15,Ethan Ellsworth,Luke Lockwood,1489.96,1463.35,26.61,W,36,22,Ethan Ellsworth,Favorite won
+2024-25,7,2024-25 7,Ryan Houseman,Ethan Ellsworth,1478.28,1452.53,25.75,W,46,24,Ryan Houseman,Favorite won
+2024-25,3,2024-25 3,Alexander Chaban,Ethan Ellsworth,1500.83,1476.0,24.83,L,30,42,Ethan Ellsworth,Upset
+2024-25,3,2024-25 3,Levi Morant,Dylan Reid,1524.0,1499.17,24.83,W,38,20,Levi Morant,Favorite won
+2024-25,31,2024-25 31,Julius Long,Drake Byrd,1491.56,1466.98,24.58,L,34,35,Drake Byrd,Upset
+2024-25,28,2024-25 28,Justin Miller,Ryan Houseman,1574.69,1550.2,24.49,W,57,51,Justin Miller,Favorite won
+2024-25,28,2024-25 28,Luke Lockwood,Dylan Reid,1474.19,1450.09,24.1,W,37,29,Luke Lockwood,Favorite won
+2024-25,2,2024-25 2,Dylan Reid,Alexander Chaban,1512.0,1488.0,24.0,L,53,69,Alexander Chaban,Upset
+2024-25,2,2024-25 2,Julius Long,Ryan Houseman,1512.0,1488.0,24.0,W,32,25,Julius Long,Favorite won
+2024-25,2,2024-25 2,Ryan Donlan,Luke Lockwood,1512.0,1488.0,24.0,W,66,34,Ryan Donlan,Favorite won
+2024-25,30,2024-25 30,Ryan Houseman,Luke Lockwood,1525.23,1502.11,23.11,L,24,31,Luke Lockwood,Upset
+2024-25,24,2024-25 24,Ethan Ellsworth,Luke Lockwood,1479.6,1458.38,21.22,L,26,39,Luke Lockwood,Upset
+2024-25,6,2024-25 6,Ethan Ellsworth,Luke Lockwood,1465.25,1444.37,20.89,L,46,47,Luke Lockwood,Upset
+2024-25,9,2024-25 9,Levi Morant,Julius Long,1560.08,1539.75,20.33,L,24,32,Julius Long,Upset
+2024-25,11,2024-25 11,Levi Morant,Justin Miller,1531.98,1512.68,19.3,L,32,47,Justin Miller,Upset
+2024-25,32,2024-25 32,Ryan Donlan,Justin Miller,1628.05,1609.11,18.93,W,65,58,Ryan Donlan,Favorite won
+2024-25,22,2024-25 22,Julius Long,Drake Byrd,1513.54,1494.62,18.92,L,35,37,Drake Byrd,Upset
+2024-25,12,2024-25 12,Ryan Houseman,Luke Lockwood,1491.78,1472.88,18.9,W,26,24,Ryan Houseman,Favorite won
+2024-25,11,2024-25 11,Dylan Reid,Alexander Chaban,1479.97,1461.63,18.34,W,26,21,Dylan Reid,Favorite won
+2024-25,21,2024-25 21,Dylan Reid,Levi Morant,1478.16,1459.97,18.19,W,45,28,Dylan Reid,Favorite won
+2024-25,36,2024-25 36,Levi Morant,Julius Long,1474.35,1457.08,17.27,W,45,31,Levi Morant,Favorite won
+2024-25,22,2024-25 22,Levi Morant,Luke Lockwood,1448.6,1431.65,16.95,L,27,46,Luke Lockwood,Upset
+2024-25,15,2024-25 15,Dylan Reid,Ryan Houseman,1517.96,1501.91,16.05,L,27,31,Ryan Houseman,Upset
+2024-25,10,2024-25 10,Ryan Houseman,Justin Miller,1515.11,1500.16,14.95,L,30,39,Justin Miller,Upset
+2024-25,8,2024-25 8,Dylan Reid,Drake Byrd,1491.11,1476.84,14.27,L,30,31,Drake Byrd,Upset
+2024-25,9,2024-25 9,Ryan Houseman,Drake Byrd,1503.61,1489.33,14.27,W,47,33,Ryan Houseman,Favorite won
+2024-25,27,2024-25 27,Luke Lockwood,Alexander Chaban,1462.67,1448.73,13.93,W,36,24,Luke Lockwood,Favorite won
+2024-25,29,2024-25 29,Dylan Reid,Alexander Chaban,1438.92,1425.16,13.76,L,20,40,Alexander Chaban,Upset
+2024-25,30,2024-25 30,Levi Morant,Dylan Reid,1440.21,1426.45,13.76,W,40,28,Levi Morant,Favorite won
+2024-25,18,2024-25 18,Justin Miller,Dylan Reid,1518.63,1505.02,13.61,W,39,37,Justin Miller,Favorite won
+2024-25,16,2024-25 16,Ryan Houseman,Ethan Ellsworth,1514.46,1501.04,13.42,W,42,36,Ryan Houseman,Favorite won
+2024-25,28,2024-25 28,Julius Long,Ethan Ellsworth,1498.31,1486.89,11.42,L,33,34,Ethan Ellsworth,Upset
+2024-25,4,2024-25 4,Julius Long,Drake Byrd,1511.17,1500.0,11.17,W,40,35,Julius Long,Favorite won
+2024-25,4,2024-25 4,Justin Miller,Ethan Ellsworth,1500.0,1488.86,11.14,W,41,33,Justin Miller,Favorite won
+2024-25,23,2024-25 23,Ethan Ellsworth,Dylan Reid,1491.97,1481.25,10.72,L,41,45,Dylan Reid,Upset
+2024-25,9,2024-25 9,Justin Miller,Dylan Reid,1488.5,1478.62,9.88,W,35,30,Justin Miller,Favorite won
+2024-25,17,2024-25 17,Ethan Ellsworth,Levi Morant,1489.5,1480.76,8.74,W,56,37,Ethan Ellsworth,Favorite won
+2024-25,14,2024-25 14,Drake Byrd,Luke Lockwood,1459.15,1451.07,8.07,L,46,53,Luke Lockwood,Upset
+2024-25,8,2024-25 8,Justin Miller,Alexander Chaban,1476.77,1469.0,7.77,W,40,35,Justin Miller,Favorite won
+2024-25,18,2024-25 18,Alexander Chaban,Luke Lockwood,1440.9,1433.61,7.29,L,46,49,Luke Lockwood,Upset
+2024-25,37,2024-25 37,Julius Long,Ethan Ellsworth,1445.67,1439.19,6.49,W,55,21,Julius Long,Favorite won
+2024-25,25,2024-25 25,Dylan Reid,Julius Long,1482.85,1476.45,6.4,L,34,47,Julius Long,Upset
+2024-25,20,2024-25 20,Ryan Houseman,Julius Long,1515.02,1509.38,5.64,W,60,38,Ryan Houseman,Favorite won
+2024-25,14,2024-25 14,Dylan Reid,Ethan Ellsworth,1506.11,1501.81,4.3,W,41,36,Dylan Reid,Favorite won
+2024-25,26,2024-25 26,Dylan Reid,Drake Byrd,1470.63,1466.46,4.16,L,29,46,Drake Byrd,Upset
+2024-25,19,2024-25 19,Justin Miller,Ryan Houseman,1530.16,1526.91,3.25,W,65,45,Justin Miller,Favorite won
+2024-25,12,2024-25 12,Julius Long,Ryan Donlan,1547.78,1544.92,2.87,L,36,46,Ryan Donlan,Upset
+2024-25,15,2024-25 15,Drake Byrd,Alexander Chaban,1446.87,1444.48,2.39,W,41,17,Drake Byrd,Favorite won
+2024-25,28,2024-25 28,Alexander Chaban,Levi Morant,1437.21,1435.61,1.6,L,28,35,Levi Morant,Upset
+2024-25,6,2024-25 6,Ryan Donlan,Levi Morant,1556.39,1555.24,1.15,L,27,47,Levi Morant,Upset
+2024-25,4,2024-25 4,Ryan Houseman,Alexander Chaban,1488.83,1487.97,0.86,W,38,24,Ryan Houseman,Favorite won
+2024-25,26,2024-25 26,Levi Morant,Ethan Ellsworth,1458.22,1457.36,0.86,L,27,76,Ethan Ellsworth,Upset
+2024-25,6,2024-25 6,Ryan Houseman,Dylan Reid,1490.31,1489.63,0.68,L,22,38,Dylan Reid,Upset
+2024-25,5,2024-25 5,Dylan Reid,Ethan Ellsworth,1477.65,1477.24,0.41,W,39,25,Dylan Reid,Favorite won
+2024-25,1,2024-25 1,Ethan Ellsworth,Julius Long,1500.0,1500.0,0.0,L,45,54,Julius Long,Even rating
+2024-25,1,2024-25 1,Levi Morant,Alexander Chaban,1500.0,1500.0,0.0,W,51,42,Levi Morant,Even rating
+2024-25,1,2024-25 1,Luke Lockwood,Dylan Reid,1500.0,1500.0,0.0,L,33,36,Dylan Reid,Even rating
+2024-25,1,2024-25 1,Ryan Donlan,Drake Byrd,1500.0,1500.0,0.0,W,49,32,Ryan Donlan,Even rating
+2024-25,1,2024-25 1,Ryan Houseman,Justin Miller,1500.0,1500.0,0.0,L,24,43,Justin Miller,Even rating
+2024-25,2,2024-25 2,Ethan Ellsworth,Drake Byrd,1488.0,1488.0,0.0,L,39,40,Drake Byrd,Even rating
+2024-25,2,2024-25 2,Levi Morant,Justin Miller,1512.0,1512.0,0.0,W,45,35,Levi Morant,Even rating
+2024-25,3,2024-25 3,Drake Byrd,Justin Miller,1500.0,1500.0,0.0,D,30,30,Draw,Even rating
+2024-25,3,2024-25 3,Luke Lockwood,Ryan Houseman,1476.83,1476.83,0.0,L,27,31,Ryan Houseman,Even rating
+2024-25,3,2024-25 3,Ryan Donlan,Julius Long,1523.17,1523.17,0.0,W,59,50,Ryan Donlan,Even rating
