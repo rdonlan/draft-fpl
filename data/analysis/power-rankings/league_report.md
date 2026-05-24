@@ -11,7 +11,7 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 <details open>
 <summary><h2>Season Elo Tabs</h2></summary>
 
-Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, time-at-top table, and biggest pre-game Elo mismatches.
+Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, time-at-top table, and biggest underdog Elo wins.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -192,32 +192,32 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 | Levi Morant | 0 | 0 | 22 | 7.81 | 7 |
 | Julius Long | 0 | 0 | 33 | 8.62 | 9 |
 
-### 2025-26 Biggest Elo Matchup Gaps
+### 2025-26 Biggest Elo Upsets
 
-These are the largest pre-game Elo gaps in actual H2H matchups. The score is shown from the higher-rated manager's perspective, so an `Upset` means the lower-rated manager won despite the gap.
+These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
 
-| Week | Higher-Rated Manager | Opponent | Elo Gap | Higher Elo | Lower Elo | Higher-Rated Result | Score | Outcome |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 37 | Justin Miller | Alexander Chaban | 170.5 | 1580.5 | 1410.0 | W | 51-34 | Favorite won |
-| 36 | Ryan Donlan | Levi Morant | 170.1 | 1619.9 | 1449.9 | W | 49-28 | Favorite won |
-| 33 | Justin Miller | Julius Long | 137.8 | 1565.7 | 1427.9 | W | 68-54 | Favorite won |
-| 35 | Luke Lockwood | Ethan Ellsworth | 135.2 | 1559.7 | 1424.5 | L | 21-42 | Upset |
-| 34 | Luke Lockwood | Julius Long | 131.6 | 1552.1 | 1420.5 | W | 43-18 | Favorite won |
-| 31 | Ryan Donlan | Julius Long | 129.2 | 1575.7 | 1446.5 | W | 47-28 | Favorite won |
-| 29 | Ryan Donlan | Ethan Ellsworth | 127.7 | 1557.1 | 1429.4 | W | 47-38 | Favorite won |
-| 37 | Ryan Donlan | Dylan Reid | 126.7 | 1626.5 | 1499.8 | W | 61-22 | Favorite won |
-| 16 | Luke Lockwood | Julius Long | 122.5 | 1569.0 | 1446.5 | W | 49-19 | Favorite won |
-| 32 | Ryan Donlan | Alexander Chaban | 121.3 | 1583.4 | 1462.1 | W | 43-22 | Favorite won |
-| 17 | Luke Lockwood | Ethan Ellsworth | 121.2 | 1577.0 | 1455.8 | D | 48-48 | Draw |
-| 19 | Luke Lockwood | Levi Morant | 116.9 | 1583.9 | 1467.0 | L | 45-48 | Upset |
-| 32 | Dylan Reid | Ethan Ellsworth | 115.0 | 1519.5 | 1404.6 | W | 48-41 | Favorite won |
-| 30 | Justin Miller | Ethan Ellsworth | 113.8 | 1535.4 | 1421.6 | W | 51-29 | Favorite won |
-| 35 | Dylan Reid | Julius Long | 112.6 | 1525.4 | 1412.8 | L | 52-59 | Upset |
-| 34 | Ryan Donlan | Ryan Houseman | 107.1 | 1600.5 | 1493.4 | W | 43-32 | Favorite won |
-| 34 | Justin Miller | Levi Morant | 104.5 | 1573.2 | 1468.7 | W | 38-35 | Favorite won |
-| 25 | Justin Miller | Levi Morant | 101.0 | 1550.1 | 1449.1 | L | 28-66 | Upset |
-| 37 | Luke Lockwood | Levi Morant | 99.2 | 1542.5 | 1443.3 | L | 32-37 | Upset |
-| 17 | Drake Byrd | Levi Morant | 95.5 | 1558.1 | 1462.5 | L | 23-45 | Upset |
+| Week | Underdog Winner | Favorite | Elo Gap | Underdog Elo | Favorite Elo | Score |
+|---|---:|---:|---:|---:|---:|---:|
+| 35 | Ethan Ellsworth | Luke Lockwood | 135.2 | 1424.5 | 1559.7 | 42-21 |
+| 19 | Levi Morant | Luke Lockwood | 116.9 | 1467.0 | 1583.9 | 48-45 |
+| 35 | Julius Long | Dylan Reid | 112.6 | 1412.8 | 1525.4 | 59-52 |
+| 25 | Levi Morant | Justin Miller | 101.0 | 1449.1 | 1550.1 | 66-28 |
+| 37 | Levi Morant | Luke Lockwood | 99.2 | 1443.3 | 1542.5 | 37-32 |
+| 17 | Levi Morant | Drake Byrd | 95.5 | 1462.5 | 1558.1 | 45-23 |
+| 13 | Ethan Ellsworth | Drake Byrd | 90.5 | 1449.3 | 1539.8 | 41-39 |
+| 33 | Ethan Ellsworth | Levi Morant | 87.2 | 1396.4 | 1483.6 | 60-34 |
+| 27 | Levi Morant | Ryan Donlan | 83.2 | 1477.5 | 1560.8 | 66-48 |
+| 21 | Ethan Ellsworth | Justin Miller | 83.1 | 1450.5 | 1533.6 | 51-35 |
+| 25 | Ryan Houseman | Ryan Donlan | 81.6 | 1482.5 | 1564.0 | 39-30 |
+| 25 | Julius Long | Luke Lockwood | 75.0 | 1451.2 | 1526.2 | 49-34 |
+| 11 | Alexander Chaban | Drake Byrd | 71.6 | 1472.0 | 1543.5 | 42-39 |
+| 4 | Levi Morant | Alexander Chaban | 71.2 | 1464.8 | 1536.0 | 62-59 |
+| 27 | Julius Long | Alexander Chaban | 69.3 | 1454.9 | 1524.1 | 44-37 |
+| 13 | Dylan Reid | Luke Lockwood | 68.3 | 1494.4 | 1562.7 | 45-38 |
+| 23 | Alexander Chaban | Ryan Donlan | 67.7 | 1500.8 | 1568.5 | 36-34 |
+| 9 | Justin Miller | Dylan Reid | 67.1 | 1455.2 | 1522.4 | 31-23 |
+| 18 | Julius Long | Alexander Chaban | 58.0 | 1429.3 | 1487.4 | 43-32 |
+| 24 | Ryan Houseman | Dylan Reid | 56.4 | 1468.5 | 1524.9 | 59-54 |
 
 </section>
 <section class="power-tab-panel" id="power-panel-2024-25" role="tabpanel" aria-labelledby="power-season-2024-25-label">
@@ -383,32 +383,32 @@ These are the largest pre-game Elo gaps in actual H2H matchups. The score is sho
 | Ethan Ellsworth | 0 | 0 | 19 | 7.39 | 9 |
 | Alexander Chaban | 0 | 0 | 34 | 8.87 | 8 |
 
-### 2024-25 Biggest Elo Matchup Gaps
+### 2024-25 Biggest Elo Upsets
 
-These are the largest pre-game Elo gaps in actual H2H matchups. The score is shown from the higher-rated manager's perspective, so an `Upset` means the lower-rated manager won despite the gap.
+These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
 
-| Week | Higher-Rated Manager | Opponent | Elo Gap | Higher Elo | Lower Elo | Higher-Rated Result | Score | Outcome |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 34 | Ryan Donlan | Alexander Chaban | 225.6 | 1645.6 | 1420.0 | L | 54-58 | Upset |
-| 31 | Ryan Donlan | Dylan Reid | 207.6 | 1622.5 | 1414.9 | W | 47-36 | Favorite won |
-| 36 | Justin Miller | Dylan Reid | 204.7 | 1622.4 | 1417.7 | W | 58-30 | Favorite won |
-| 36 | Ryan Donlan | Ethan Ellsworth | 190.2 | 1611.4 | 1421.2 | L | 25-40 | Upset |
-| 33 | Ryan Donlan | Levi Morant | 182.8 | 1639.4 | 1456.6 | W | 63-53 | Favorite won |
-| 35 | Justin Miller | Alexander Chaban | 177.2 | 1616.0 | 1438.8 | W | 45-41 | Favorite won |
-| 27 | Ryan Donlan | Ethan Ellsworth | 172.2 | 1641.6 | 1469.4 | L | 44-46 | Upset |
-| 24 | Ryan Donlan | Levi Morant | 167.3 | 1619.0 | 1451.7 | W | 83-45 | Favorite won |
-| 20 | Ryan Donlan | Luke Lockwood | 162.5 | 1610.0 | 1447.5 | W | 52-33 | Favorite won |
-| 25 | Ryan Donlan | Alexander Chaban | 161.4 | 1625.6 | 1464.2 | W | 62-28 | Favorite won |
-| 28 | Ryan Donlan | Drake Byrd | 155.4 | 1624.1 | 1468.7 | W | 35-34 | Favorite won |
-| 29 | Ryan Donlan | Luke Lockwood | 145.7 | 1631.0 | 1485.4 | L | 33-47 | Upset |
-| 16 | Ryan Donlan | Alexander Chaban | 143.4 | 1576.0 | 1432.6 | W | 44-37 | Favorite won |
-| 38 | Justin Miller | Levi Morant | 141.0 | 1637.4 | 1496.5 | L | 37-39 | Upset |
-| 29 | Justin Miller | Levi Morant | 138.2 | 1585.8 | 1447.7 | W | 24-23 | Favorite won |
-| 8 | Levi Morant | Ethan Ellsworth | 135.1 | 1576.5 | 1441.4 | L | 34-40 | Upset |
-| 31 | Justin Miller | Ethan Ellsworth | 129.0 | 1601.4 | 1472.3 | W | 52-46 | Favorite won |
-| 19 | Ryan Donlan | Drake Byrd | 127.5 | 1602.2 | 1474.6 | W | 65-31 | Favorite won |
-| 37 | Ryan Donlan | Drake Byrd | 125.5 | 1593.4 | 1467.9 | L | 34-35 | Upset |
-| 21 | Ryan Donlan | Julius Long | 119.2 | 1616.7 | 1497.6 | L | 32-46 | Upset |
+| Week | Underdog Winner | Favorite | Elo Gap | Underdog Elo | Favorite Elo | Score |
+|---|---:|---:|---:|---:|---:|---:|
+| 34 | Alexander Chaban | Ryan Donlan | 225.6 | 1420.0 | 1645.6 | 58-54 |
+| 36 | Ethan Ellsworth | Ryan Donlan | 190.2 | 1421.2 | 1611.4 | 40-25 |
+| 27 | Ethan Ellsworth | Ryan Donlan | 172.2 | 1469.4 | 1641.6 | 46-44 |
+| 29 | Luke Lockwood | Ryan Donlan | 145.7 | 1485.4 | 1631.0 | 47-33 |
+| 38 | Levi Morant | Justin Miller | 141.0 | 1496.5 | 1637.4 | 39-37 |
+| 8 | Ethan Ellsworth | Levi Morant | 135.1 | 1441.4 | 1576.5 | 40-34 |
+| 37 | Drake Byrd | Ryan Donlan | 125.5 | 1467.9 | 1593.4 | 35-34 |
+| 21 | Julius Long | Ryan Donlan | 119.2 | 1497.6 | 1616.7 | 46-32 |
+| 36 | Alexander Chaban | Luke Lockwood | 111.7 | 1432.5 | 1544.2 | 41-33 |
+| 17 | Alexander Chaban | Justin Miller | 109.0 | 1425.2 | 1534.3 | 53-48 |
+| 23 | Levi Morant | Ryan Houseman | 108.8 | 1436.0 | 1544.9 | 53-33 |
+| 10 | Ethan Ellsworth | Julius Long | 103.8 | 1448.7 | 1552.5 | 42-28 |
+| 10 | Alexander Chaban | Levi Morant | 101.2 | 1446.2 | 1547.4 | 66-40 |
+| 35 | Ryan Houseman | Ryan Donlan | 100.6 | 1526.2 | 1626.8 | 38-28 |
+| 38 | Julius Long | Ryan Houseman | 84.5 | 1457.5 | 1542.0 | 34-24 |
+| 8 | Luke Lockwood | Julius Long | 84.4 | 1470.2 | 1554.6 | 38-29 |
+| 32 | Levi Morant | Ryan Houseman | 80.5 | 1441.9 | 1522.3 | 75-39 |
+| 21 | Drake Byrd | Justin Miller | 71.4 | 1480.2 | 1551.6 | 60-38 |
+| 10 | Drake Byrd | Ryan Donlan | 71.3 | 1477.8 | 1549.1 | 32-30 |
+| 18 | Levi Morant | Julius Long | 67.7 | 1469.1 | 1536.7 | 56-40 |
 
 </section>
 </div>
@@ -421,5 +421,5 @@ These are the supporting CSVs exposed for the power rankings page.
 
 - `power_ranking_summary.csv`
 - `power_ranking_weekly.csv`
-- `power_ranking_matchup_gaps.csv`
+- `power_ranking_upsets.csv`
 </details>
