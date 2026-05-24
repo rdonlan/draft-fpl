@@ -40,6 +40,9 @@
       --shadow-soft: rgba(20, 31, 53, 0.06);
       --tooltip-bg: rgba(255, 255, 255, 0.97);
       --tooltip-border: #b9c5d4;
+      --switch-bg: #e9eef5;
+      --switch-active: #0b7a75;
+      --switch-thumb: #ffffff;
     }
     html[data-theme="dark"] {
       --bg: #0c1117;
@@ -68,6 +71,9 @@
       --shadow-soft: rgba(0, 0, 0, 0.24);
       --tooltip-bg: rgba(20, 27, 35, 0.98);
       --tooltip-border: #3c4a5c;
+      --switch-bg: #263241;
+      --switch-active: #2dd4bf;
+      --switch-thumb: #ffffff;
     }
     * { box-sizing: border-box; }
     body {
@@ -242,23 +248,62 @@
       font-weight: 750;
       text-decoration: none;
     }
-    .theme-toggle {
+    .theme-switch {
       display: inline-flex;
       align-items: center;
+      gap: 9px;
       min-height: 36px;
-      padding: 7px 12px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: var(--paper);
       color: var(--tab-ink);
-      font: inherit;
       font-size: 0.95rem;
       font-weight: 750;
       cursor: pointer;
+      user-select: none;
     }
-    .theme-toggle:hover {
-      border-color: var(--accent);
+    .theme-switch-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .theme-switch-track {
+      position: relative;
+      display: inline-flex;
+      flex: 0 0 auto;
+      width: 48px;
+      height: 26px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--switch-bg);
+      transition: background 160ms ease, border-color 160ms ease;
+    }
+    .theme-switch-thumb {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--switch-thumb);
+      box-shadow: 0 2px 7px var(--shadow);
+      transition: transform 160ms ease;
+    }
+    .theme-switch-input:checked + .theme-switch-track {
+      border-color: var(--switch-active);
+      background: var(--switch-active);
+    }
+    .theme-switch-input:checked + .theme-switch-track .theme-switch-thumb {
+      transform: translateX(22px);
+    }
+    .theme-switch-input:focus-visible + .theme-switch-track {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .theme-switch:hover .theme-switch-label {
       color: var(--accent);
+    }
+    .theme-switch-label {
+      white-space: nowrap;
     }
     .season-tab.active {
       background: var(--active);
@@ -666,7 +711,11 @@
 <a class="season-tab" href="../all-time/">All-Time</a>
 <a class="season-tab active" href="../manager-profiles/">Manager Profiles</a>
 <a class="season-tab" href="../power-rankings/">Power Rankings</a>
-      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+      <label class="theme-switch">
+        <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
+        <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
+        <span class="theme-switch-label">Dark mode</span>
+      </label>
     </nav>
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/manager-profiles/league_report.md">Raw Markdown</a>
@@ -1412,23 +1461,28 @@
   <div class="rating-tooltip" aria-hidden="true"></div>
   <script>
 (() => {
-  const button = document.querySelector(".theme-toggle");
-  if (!button) return;
+  const inputs = document.querySelectorAll(".theme-switch-input");
+  if (!inputs.length) return;
 
-  const label = () => {
+  const sync = () => {
     const isDark = document.documentElement.dataset.theme === "dark";
-    button.textContent = isDark ? "Light mode" : "Dark mode";
-    button.setAttribute("aria-pressed", String(isDark));
+    inputs.forEach((input) => {
+      input.checked = isDark;
+      input.setAttribute("aria-checked", String(isDark));
+      input.setAttribute("aria-label", isDark ? "Dark mode on" : "Dark mode off");
+    });
   };
 
-  button.addEventListener("click", () => {
-    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem("bms-theme", next);
-    label();
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+      const next = input.checked ? "dark" : "light";
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem("bms-theme", next);
+      sync();
+    });
   });
 
-  label();
+  sync();
 })();
 </script>
   <script>
