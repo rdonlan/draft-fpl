@@ -7,7 +7,7 @@ Use this page when you want the story of one manager instead of another league-w
 <details open>
 <summary><h2>Ryan Donlan</h2></summary>
 
-All-time rank #1 with a 53-1-21 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `**Cunha Believe it?!`.
+All-time rank #1 with a 53-1-21 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -68,7 +68,7 @@ All-time rank #1 with a 53-1-21 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Justin Miller</h2></summary>
 
-All-time rank #2 with a 49-1-25 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `Sue-nited FC*`.
+All-time rank #2 with a 49-1-25 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -129,7 +129,7 @@ All-time rank #2 with a 49-1-25 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Luke Lockwood</h2></summary>
 
-All-time rank #3 with a 39-4-32 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `Into the WOODwork*`.
+All-time rank #3 with a 39-4-32 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -190,7 +190,7 @@ All-time rank #3 with a 39-4-32 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Ryan Houseman</h2></summary>
 
-All-time rank #4 with a 40-0-35 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `eze as u like b*%chs`.
+All-time rank #4 with a 40-0-35 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -251,7 +251,7 @@ All-time rank #4 with a 40-0-35 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Drake Byrd</h2></summary>
 
-All-time rank #5 with a 35-2-38 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `Grand-Larseny`.
+All-time rank #5 with a 35-2-38 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -312,7 +312,7 @@ All-time rank #5 with a 35-2-38 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Levi Morant</h2></summary>
 
-All-time rank #6 with a 34-0-41 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `*Saka It To Me Baby`.
+All-time rank #6 with a 34-0-41 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -373,7 +373,7 @@ All-time rank #6 with a 34-0-41 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Julius Long</h2></summary>
 
-All-time rank #7 with a 31-2-42 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `Amorim de mi vida`.
+All-time rank #7 with a 31-2-42 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -434,7 +434,7 @@ All-time rank #7 with a 31-2-42 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Dylan Reid</h2></summary>
 
-All-time rank #8 with a 31-2-42 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `Bowen Arrows`.
+All-time rank #8 with a 31-2-42 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -495,7 +495,7 @@ All-time rank #8 with a 31-2-42 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Ethan Ellsworth</h2></summary>
 
-All-time rank #9 with a 28-2-45 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `Santa’s reijnders`.
+All-time rank #9 with a 28-2-45 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
@@ -556,7 +556,7 @@ All-time rank #9 with a 28-2-45 record across the 2024-25 and 2025-26 datasets. 
 <details>
 <summary><h2>Alexander Chaban</h2></summary>
 
-All-time rank #10 with a 28-0-47 record across the 2024-25 and 2025-26 datasets. Current 2025-26 team: `ChabosSpurs@Law`.
+All-time rank #10 with a 28-0-47 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
