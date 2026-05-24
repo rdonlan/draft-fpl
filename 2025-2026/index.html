@@ -122,7 +122,8 @@
     details > ul,
     details > h3,
     details > .table-wrap,
-    details > .rating-chart-wrap {
+    details > .rating-chart-wrap,
+    details > .power-tabs {
       margin-left: 18px;
       margin-right: 18px;
     }
@@ -326,6 +327,67 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .power-tabs {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .power-tab-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .power-tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #eef2f7;
+    }
+    .power-tab-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #344054;
+      font-weight: 800;
+      cursor: pointer;
+      user-select: none;
+    }
+    .power-tab-panel {
+      display: none;
+      padding: 2px 0 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+    .power-tab-panel > h3,
+    .power-tab-panel > p,
+    .power-tab-panel > .table-wrap,
+    .power-tab-panel > .rating-chart-wrap {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    .power-tab-panel > h3:first-child {
+      margin-top: 18px;
+    }
+    #power-season-2025-26:checked ~ .power-tab-list label[for="power-season-2025-26"],
+    #power-season-2024-25:checked ~ .power-tab-list label[for="power-season-2024-25"] {
+      background: #075e5a;
+      border-color: #075e5a;
+      color: #ffffff;
+    }
+    #power-season-2025-26:checked ~ #power-panel-2025-26,
+    #power-season-2024-25:checked ~ #power-panel-2024-25 {
+      display: block;
+    }
     strong {
       color: var(--accent-2);
     }
@@ -369,7 +431,19 @@
       details > ul,
       details > h3,
       details > .table-wrap,
-      details > .rating-chart-wrap {
+      details > .rating-chart-wrap,
+      details > .power-tabs {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .power-tab-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .power-tab-panel > h3,
+      .power-tab-panel > p,
+      .power-tab-panel > .table-wrap,
+      .power-tab-panel > .rating-chart-wrap {
         margin-left: 10px;
         margin-right: 10px;
       }

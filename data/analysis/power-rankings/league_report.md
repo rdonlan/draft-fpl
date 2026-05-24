@@ -9,9 +9,9 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 - **Most Weeks At #1 In A Season**: Ryan Donlan (26 weeks in 2024-25).
 
 <details open>
-<summary><h2>Elo Movement Charts</h2></summary>
+<summary><h2>Season Elo Tabs</h2></summary>
 
-Use these charts to see the week-by-week rating paths. Each season starts fresh at 1500, so the lines show that year's power movement only.
+Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, weekly path, time-at-top table, and biggest rating swings.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -25,6 +25,204 @@ Use these charts to see the week-by-week rating paths. Each season starts fresh 
 
 </details>
 
+<div class="power-tabs">
+<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2025-26" checked>
+<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2024-25">
+<div class="power-tab-list" role="tablist" aria-label="Power rankings seasons">
+<label class="power-tab-label" id="power-season-2025-26-label" role="tab" for="power-season-2025-26">2025-26</label>
+<label class="power-tab-label" id="power-season-2024-25-label" role="tab" for="power-season-2024-25">2024-25</label>
+</div>
+<section class="power-tab-panel" id="power-panel-2025-26" role="tabpanel" aria-labelledby="power-season-2025-26-label">
+### 2025-26 Elo Movement
+<div class="rating-chart-wrap" role="img" aria-label="2025-26 Elo rating movement chart">
+<svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
+<text class="chart-title" x="64" y="18">2025-26 Elo Movement</text>
+<line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
+<line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
+<line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
+<text class="axis-label" x="54" y="402.0" text-anchor="end">1375</text>
+<line class="grid-line" x1="64" y1="367.2" x2="884" y2="367.2" />
+<text class="axis-label" x="54" y="371.2" text-anchor="end">1400</text>
+<line class="grid-line" x1="64" y1="336.3" x2="884" y2="336.3" />
+<text class="axis-label" x="54" y="340.3" text-anchor="end">1425</text>
+<line class="grid-line" x1="64" y1="305.5" x2="884" y2="305.5" />
+<text class="axis-label" x="54" y="309.5" text-anchor="end">1450</text>
+<line class="grid-line" x1="64" y1="274.7" x2="884" y2="274.7" />
+<text class="axis-label" x="54" y="278.7" text-anchor="end">1475</text>
+<line class="grid-line" x1="64" y1="243.8" x2="884" y2="243.8" />
+<text class="axis-label" x="54" y="247.8" text-anchor="end">1500</text>
+<line class="grid-line" x1="64" y1="213.0" x2="884" y2="213.0" />
+<text class="axis-label" x="54" y="217.0" text-anchor="end">1525</text>
+<line class="grid-line" x1="64" y1="182.2" x2="884" y2="182.2" />
+<text class="axis-label" x="54" y="186.2" text-anchor="end">1550</text>
+<line class="grid-line" x1="64" y1="151.3" x2="884" y2="151.3" />
+<text class="axis-label" x="54" y="155.3" text-anchor="end">1575</text>
+<line class="grid-line" x1="64" y1="120.5" x2="884" y2="120.5" />
+<text class="axis-label" x="54" y="124.5" text-anchor="end">1600</text>
+<line class="grid-line" x1="64" y1="89.7" x2="884" y2="89.7" />
+<text class="axis-label" x="54" y="93.7" text-anchor="end">1625</text>
+<line class="grid-line" x1="64" y1="58.8" x2="884" y2="58.8" />
+<text class="axis-label" x="54" y="62.8" text-anchor="end">1650</text>
+<line class="grid-line" x1="64" y1="28.0" x2="884" y2="28.0" />
+<text class="axis-label" x="54" y="32.0" text-anchor="end">1675</text>
+<line class="tick-line" x1="64.0" y1="398" x2="64.0" y2="404" />
+<text class="axis-label" x="64.0" y="422" text-anchor="middle">Start</text>
+<line class="tick-line" x1="174.8" y1="398" x2="174.8" y2="404" />
+<text class="axis-label" x="174.8" y="422" text-anchor="middle">5</text>
+<line class="tick-line" x1="285.6" y1="398" x2="285.6" y2="404" />
+<text class="axis-label" x="285.6" y="422" text-anchor="middle">10</text>
+<line class="tick-line" x1="396.4" y1="398" x2="396.4" y2="404" />
+<text class="axis-label" x="396.4" y="422" text-anchor="middle">15</text>
+<line class="tick-line" x1="507.2" y1="398" x2="507.2" y2="404" />
+<text class="axis-label" x="507.2" y="422" text-anchor="middle">20</text>
+<line class="tick-line" x1="618.1" y1="398" x2="618.1" y2="404" />
+<text class="axis-label" x="618.1" y="422" text-anchor="middle">25</text>
+<line class="tick-line" x1="728.9" y1="398" x2="728.9" y2="404" />
+<text class="axis-label" x="728.9" y="422" text-anchor="middle">30</text>
+<line class="tick-line" x1="839.7" y1="398" x2="839.7" y2="404" />
+<text class="axis-label" x="839.7" y="422" text-anchor="middle">35</text>
+<line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
+<text class="axis-label" x="884.0" y="422" text-anchor="middle">37</text>
+<text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
+<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Elo rating</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,286.3 152.6,270.5 174.8,253.9 197.0,237.2 219.1,253.2 241.3,239.5 263.5,255.2 285.6,239.7 307.8,226.2 329.9,239.4 352.1,225.6 374.3,241.6 396.4,255.0 418.6,240.2 440.8,225.2 462.9,212.0 485.1,197.6 507.2,186.1 529.4,171.0 551.6,159.4 573.7,177.0 595.9,164.9 618.1,183.1 640.2,168.9 662.4,187.2 684.5,173.4 706.7,163.8 728.9,150.5 751.0,141.0 773.2,131.1 795.4,119.9 817.5,109.5 839.7,95.9 861.8,87.8 884.0,78.2" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="78.2" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
+<line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
+<text class="legend-label" x="940" y="48">Ryan Donlan</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,242.8 130.5,256.7 152.6,241.9 174.8,255.7 197.0,270.7 219.1,285.4 241.3,299.1 263.5,281.4 285.6,266.0 307.8,278.3 329.9,263.9 352.1,247.4 374.3,261.0 396.4,247.4 418.6,233.6 440.8,248.6 462.9,232.5 485.1,219.2 507.2,202.4 529.4,220.6 551.6,207.1 573.7,193.5 595.9,182.0 618.1,201.0 640.2,215.2 662.4,230.6 684.5,215.8 706.7,200.2 728.9,190.1 751.0,176.0 773.2,162.8 795.4,153.6 817.5,143.1 839.7,156.7 861.8,144.5 884.0,136.4" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="136.4" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
+<line class="legend-swatch" x1="910" y1="72" x2="932" y2="72" stroke="hsl(352 76% 38%)" />
+<text class="legend-label" x="940" y="76">Justin Miller</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,244.9 130.5,231.0 152.6,216.2 174.8,232.9 197.0,218.2 219.1,204.3 241.3,190.5 263.5,205.2 285.6,192.0 307.8,179.7 329.9,166.5 352.1,184.2 374.3,171.0 396.4,158.7 418.6,148.9 440.8,153.9 462.9,140.4 485.1,160.0 507.2,176.8 529.4,191.9 551.6,208.4 573.7,195.7 595.9,211.6 618.1,229.5 640.2,217.4 662.4,204.3 684.5,191.2 706.7,206.8 728.9,220.2 751.0,204.8 773.2,190.7 795.4,179.6 817.5,170.2 839.7,190.4 861.8,191.4 884.0,210.3" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="210.3" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
+<line class="legend-swatch" x1="910" y1="100" x2="932" y2="100" stroke="hsl(266 76% 38%)" />
+<text class="legend-label" x="940" y="104">Luke Lockwood</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,273.4 130.5,258.6 152.6,273.3 174.8,256.6 197.0,270.4 219.1,254.5 241.3,240.0 263.5,225.5 285.6,208.9 307.8,225.8 329.9,212.8 352.1,229.4 374.3,242.6 396.4,256.7 418.6,271.4 440.8,255.6 462.9,271.7 485.1,254.6 507.2,270.9 529.4,256.4 551.6,270.0 573.7,282.7 595.9,265.5 618.1,247.3 640.2,230.8 662.4,219.0 684.5,235.9 706.7,222.8 728.9,209.9 751.0,224.0 773.2,238.2 795.4,252.0 817.5,262.4 839.7,249.8 861.8,237.3 884.0,221.8" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="221.8" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
+<line class="legend-swatch" x1="910" y1="128" x2="932" y2="128" stroke="hsl(12 76% 38%)" />
+<text class="legend-label" x="940" y="132">Ryan Houseman</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,243.8 130.5,229.0 152.6,213.3 174.8,199.5 197.0,216.1 219.1,201.3 241.3,188.3 263.5,173.6 285.6,190.1 307.8,208.0 329.9,194.8 352.1,213.3 374.3,199.7 396.4,186.3 418.6,172.2 440.8,191.0 462.9,204.5 485.1,221.6 507.2,238.8 529.4,255.0 551.6,241.3 573.7,254.9 595.9,267.1 618.1,251.0 640.2,267.1 662.4,280.2 684.5,263.3 706.7,247.9 728.9,234.8 751.0,223.9 773.2,237.0 795.4,248.2 817.5,231.6 839.7,218.9 861.8,218.0 884.0,233.4" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="233.4" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
+<line class="legend-swatch" x1="910" y1="156" x2="932" y2="156" stroke="hsl(154 76% 38%)" />
+<text class="legend-label" x="940" y="160">Drake Byrd</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,287.2 152.6,269.5 174.8,284.4 197.0,267.9 219.1,253.2 241.3,266.2 263.5,250.5 285.6,263.7 307.8,278.0 329.9,291.0 352.1,274.6 374.3,260.1 396.4,276.3 418.6,290.1 440.8,271.3 462.9,284.5 485.1,264.9 507.2,278.8 529.4,293.4 551.6,306.9 573.7,291.0 595.9,306.6 618.1,287.6 640.2,271.5 662.4,253.3 684.5,266.4 706.7,280.0 728.9,292.8 751.0,277.4 773.2,264.0 795.4,282.5 817.5,293.0 839.7,305.7 861.8,313.7 884.0,294.8" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="294.8" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
+<line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
+<text class="legend-label" x="940" y="188">Levi Morant</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,243.8 130.5,258.6 152.6,274.4 174.8,259.4 197.0,244.5 219.1,258.4 241.3,272.2 263.5,287.2 285.6,271.6 307.8,254.6 329.9,267.8 352.1,281.6 374.3,296.2 396.4,309.8 418.6,319.6 440.8,331.0 462.9,313.8 485.1,297.7 507.2,281.4 529.4,265.1 551.6,276.7 573.7,292.6 595.9,304.0 618.1,286.1 640.2,299.5 662.4,281.8 684.5,283.5 706.7,296.7 728.9,309.8 751.0,319.4 773.2,332.7 795.4,341.9 817.5,351.4 839.7,331.9 861.8,317.4 884.0,332.6" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="332.6" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
+<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
+<text class="legend-label" x="940" y="216">Julius Long</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,230.0 152.6,244.9 174.8,229.1 197.0,215.2 219.1,230.1 241.3,216.3 263.5,233.9 285.6,249.4 307.8,235.1 329.9,250.8 352.1,233.1 374.3,220.2 396.4,206.2 418.6,220.3 440.8,208.8 462.9,225.0 485.1,239.4 507.2,225.5 529.4,241.9 551.6,225.4 573.7,213.1 595.9,230.3 618.1,246.4 640.2,232.9 662.4,217.5 684.5,231.3 706.7,217.7 728.9,204.4 751.0,219.8 773.2,209.7 795.4,195.9 817.5,212.5 839.7,231.9 861.8,244.1 884.0,253.8" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="253.8" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
+<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
+<text class="legend-label" x="940" y="244">Dylan Reid</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,201.4 152.6,217.2 174.8,232.9 197.0,249.5 219.1,234.7 241.3,248.4 263.5,262.9 285.6,278.6 307.8,292.0 329.9,306.3 352.1,287.8 374.3,300.7 396.4,284.5 418.6,298.4 440.8,293.4 462.9,277.3 485.1,293.4 507.2,304.9 529.4,286.6 551.6,300.3 573.7,312.6 595.9,297.0 618.1,308.8 640.2,320.9 662.4,332.7 684.5,330.9 706.7,340.5 728.9,350.6 751.0,361.5 773.2,371.6 795.4,353.2 817.5,336.9 839.7,316.6 861.8,329.2 884.0,313.9" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="313.9" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
+<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
+<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,214.2 130.5,199.5 152.6,217.3 174.8,233.9 197.0,248.7 219.1,263.5 241.3,278.0 263.5,263.0 285.6,278.4 307.8,260.6 329.9,244.9 352.1,261.3 374.3,245.3 396.4,257.5 418.6,243.7 440.8,259.4 462.9,276.7 485.1,289.9 507.2,272.8 529.4,256.4 551.6,242.9 573.7,225.2 595.9,209.4 618.1,197.6 640.2,214.1 662.4,231.8 684.5,246.6 706.7,261.9 728.9,275.2 751.0,290.6 773.2,300.5 795.4,311.5 817.5,327.8 839.7,340.3 861.8,354.8 884.0,362.9" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="362.9" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
+<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
+<text class="legend-label" x="940" y="300">Alexander Chaban</text>
+</svg>
+</div>
+### 2025-26 Power Rankings
+| Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | Ryan Donlan | 1634.3 | +134.3 | 1634.3 | 2025-26 37 | 1465.6 | 2025-26 3 | 3.19 | 17 | 21 | 4 |
+| 2 | Justin Miller | 1587.1 | +87.1 | 1587.1 | 2025-26 37 | 1455.2 | 2025-26 8 | 4.59 | 0 | 18 | 6 |
+| 3 | Luke Lockwood | 1527.2 | +27.2 | 1583.9 | 2025-26 18 | 1499.2 | 2025-26 2 | 2.62 | 10 | 29 | 0 |
+| 4 | Ryan Houseman | 1517.8 | +17.8 | 1528.3 | 2025-26 10 | 1468.5 | 2025-26 23 | 5.89 | 0 | 4 | 5 |
+| 5 | Drake Byrd | 1508.4 | +8.4 | 1558.1 | 2025-26 16 | 1470.5 | 2025-26 27 | 3.78 | 6 | 17 | 1 |
+| 6 | Dylan Reid | 1492.0 | -8.1 | 1538.9 | 2025-26 33 | 1492.0 | 2025-26 37 | 4.03 | 1 | 12 | 0 |
+| 7 | Levi Morant | 1458.7 | -41.4 | 1494.6 | 2025-26 9 | 1443.3 | 2025-26 36 | 7.81 | 0 | 0 | 22 |
+| 8 | Ethan Ellsworth | 1443.2 | -56.9 | 1534.4 | 2025-26 3 | 1396.4 | 2025-26 32 | 8.19 | 0 | 4 | 28 |
+| 9 | Julius Long | 1428.0 | -72.0 | 1500.0 | 2025-26 2 | 1412.8 | 2025-26 34 | 8.62 | 0 | 0 | 33 |
+| 10 | Alexander Chaban | 1403.5 | -96.5 | 1537.5 | 2025-26 25 | 1403.5 | 2025-26 37 | 6.27 | 3 | 6 | 12 |
+
+### 2025-26 Weekly Path
+| Week | #1 | #2 | #3 | #4 | #5 | Bottom |
+|---|---:|---:|---:|---:|---:|---:|
+| 1 | Alexander Chaban (1512) | Drake Byrd (1512) | Dylan Reid (1512) | Ethan Ellsworth (1512) | Luke Lockwood (1512) | Ryan Houseman (1488) |
+| 2 | Alexander Chaban (1524) | Dylan Reid (1523) | Ethan Ellsworth (1523) | Justin Miller (1501) | Drake Byrd (1500) | Ryan Houseman (1476) |
+| 3 | Alexander Chaban (1536) | Ethan Ellsworth (1534) | Drake Byrd (1512) | Dylan Reid (1511) | Luke Lockwood (1510) | Levi Morant (1465) |
+| 4 | Drake Byrd (1525) | Luke Lockwood (1522) | Ethan Ellsworth (1522) | Alexander Chaban (1522) | Justin Miller (1502) | Julius Long (1475) |
+| 5 | Drake Byrd (1536) | Dylan Reid (1512) | Ethan Ellsworth (1509) | Luke Lockwood (1509) | Alexander Chaban (1508) | Levi Morant (1467) |
+| 6 | Dylan Reid (1523) | Drake Byrd (1522) | Luke Lockwood (1521) | Ryan Donlan (1505) | Julius Long (1499) | Justin Miller (1478) |
+| 7 | Drake Byrd (1534) | Luke Lockwood (1532) | Dylan Reid (1511) | Ethan Ellsworth (1507) | Levi Morant (1492) | Justin Miller (1466) |
+| 8 | Drake Byrd (1545) | Luke Lockwood (1543) | Dylan Reid (1522) | Ryan Donlan (1504) | Ryan Houseman (1503) | Justin Miller (1455) |
+| 9 | Drake Byrd (1557) | Luke Lockwood (1531) | Ryan Houseman (1515) | Dylan Reid (1508) | Levi Morant (1495) | Julius Long (1465) |
+| 10 | Drake Byrd (1544) | Luke Lockwood (1542) | Ryan Houseman (1528) | Ryan Donlan (1503) | Dylan Reid (1495) | Ethan Ellsworth (1472) |
+| 11 | Luke Lockwood (1552) | Drake Byrd (1529) | Ryan Houseman (1515) | Ryan Donlan (1514) | Dylan Reid (1507) | Ethan Ellsworth (1461) |
+| 12 | Luke Lockwood (1563) | Drake Byrd (1540) | Ryan Houseman (1525) | Ryan Donlan (1504) | Alexander Chaban (1499) | Ethan Ellsworth (1449) |
+| 13 | Luke Lockwood (1548) | Drake Byrd (1525) | Ryan Donlan (1515) | Ryan Houseman (1512) | Dylan Reid (1509) | Ethan Ellsworth (1464) |
+| 14 | Luke Lockwood (1559) | Drake Byrd (1536) | Dylan Reid (1519) | Ryan Donlan (1502) | Ryan Houseman (1501) | Ethan Ellsworth (1454) |
+| 15 | Luke Lockwood (1569) | Drake Byrd (1547) | Dylan Reid (1531) | Justin Miller (1497) | Ryan Donlan (1491) | Julius Long (1447) |
+| 16 | Luke Lockwood (1577) | Drake Byrd (1558) | Dylan Reid (1519) | Justin Miller (1508) | Ryan Donlan (1503) | Julius Long (1439) |
+| 17 | Luke Lockwood (1573) | Drake Byrd (1543) | Dylan Reid (1528) | Ryan Donlan (1515) | Justin Miller (1496) | Julius Long (1429) |
+| 18 | Luke Lockwood (1584) | Drake Byrd (1532) | Ryan Donlan (1526) | Dylan Reid (1515) | Justin Miller (1509) | Julius Long (1443) |
+| 19 | Luke Lockwood (1568) | Ryan Donlan (1537) | Justin Miller (1520) | Drake Byrd (1518) | Dylan Reid (1504) | Julius Long (1456) |
+| 20 | Luke Lockwood (1554) | Ryan Donlan (1547) | Justin Miller (1534) | Dylan Reid (1515) | Drake Byrd (1504) | Ethan Ellsworth (1450) |
+| 21 | Ryan Donlan (1559) | Luke Lockwood (1542) | Justin Miller (1519) | Dylan Reid (1502) | Drake Byrd (1491) | Levi Morant (1460) |
+| 22 | Ryan Donlan (1568) | Justin Miller (1530) | Luke Lockwood (1529) | Dylan Reid (1515) | Drake Byrd (1502) | Levi Morant (1449) |
+| 23 | Ryan Donlan (1554) | Justin Miller (1541) | Luke Lockwood (1539) | Dylan Reid (1525) | Alexander Chaban (1515) | Ethan Ellsworth (1444) |
+| 24 | Ryan Donlan (1564) | Justin Miller (1550) | Alexander Chaban (1528) | Luke Lockwood (1526) | Dylan Reid (1511) | Levi Morant (1449) |
+| 25 | Ryan Donlan (1549) | Alexander Chaban (1538) | Justin Miller (1535) | Luke Lockwood (1512) | Dylan Reid (1498) | Ethan Ellsworth (1447) |
+| 26 | Ryan Donlan (1561) | Alexander Chaban (1524) | Justin Miller (1523) | Luke Lockwood (1521) | Ryan Houseman (1511) | Ethan Ellsworth (1437) |
+| 27 | Ryan Donlan (1546) | Luke Lockwood (1532) | Dylan Reid (1521) | Ryan Houseman (1520) | Justin Miller (1511) | Ethan Ellsworth (1428) |
+| 28 | Ryan Donlan (1557) | Luke Lockwood (1543) | Justin Miller (1523) | Dylan Reid (1510) | Ryan Houseman (1506) | Ethan Ellsworth (1429) |
+| 29 | Ryan Donlan (1565) | Justin Miller (1535) | Luke Lockwood (1530) | Dylan Reid (1521) | Ryan Houseman (1517) | Ethan Ellsworth (1422) |
+| 30 | Ryan Donlan (1576) | Justin Miller (1544) | Dylan Reid (1532) | Ryan Houseman (1527) | Luke Lockwood (1519) | Ethan Ellsworth (1413) |
+| 31 | Ryan Donlan (1583) | Justin Miller (1555) | Luke Lockwood (1532) | Dylan Reid (1520) | Drake Byrd (1516) | Ethan Ellsworth (1405) |
+| 32 | Ryan Donlan (1591) | Justin Miller (1566) | Luke Lockwood (1543) | Dylan Reid (1528) | Drake Byrd (1506) | Ethan Ellsworth (1396) |
+| 33 | Ryan Donlan (1600) | Justin Miller (1573) | Luke Lockwood (1552) | Dylan Reid (1539) | Drake Byrd (1496) | Ethan Ellsworth (1411) |
+| 34 | Ryan Donlan (1609) | Justin Miller (1582) | Luke Lockwood (1560) | Dylan Reid (1525) | Drake Byrd (1510) | Julius Long (1413) |
+| 35 | Ryan Donlan (1620) | Justin Miller (1571) | Luke Lockwood (1543) | Drake Byrd (1520) | Dylan Reid (1510) | Alexander Chaban (1422) |
+| 36 | Ryan Donlan (1626) | Justin Miller (1581) | Luke Lockwood (1542) | Drake Byrd (1521) | Ryan Houseman (1505) | Alexander Chaban (1410) |
+| 37 | Ryan Donlan (1634) | Justin Miller (1587) | Luke Lockwood (1527) | Ryan Houseman (1518) | Drake Byrd (1508) | Alexander Chaban (1403) |
+
+### 2025-26 Time At The Top And Bottom
+| Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
+|---|---:|---:|---:|---:|---:|
+| Ryan Donlan | 17 | 21 | 4 | 3.19 | 1 |
+| Luke Lockwood | 10 | 29 | 0 | 2.62 | 3 |
+| Drake Byrd | 6 | 17 | 1 | 3.78 | 5 |
+| Alexander Chaban | 3 | 6 | 12 | 6.27 | 10 |
+| Dylan Reid | 1 | 12 | 0 | 4.03 | 6 |
+| Justin Miller | 0 | 18 | 6 | 4.59 | 2 |
+| Ryan Houseman | 0 | 4 | 5 | 5.89 | 4 |
+| Ethan Ellsworth | 0 | 4 | 28 | 8.19 | 8 |
+| Levi Morant | 0 | 0 | 22 | 7.81 | 7 |
+| Julius Long | 0 | 0 | 33 | 8.62 | 9 |
+
+### 2025-26 Biggest Rating Swings
+| Week | Manager | Opponent | Result | Score | Rating Before | Rating Change | Rating After |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 35 | Ethan Ellsworth | Luke Lockwood | W | 42-21 | 1424.5 | +16.4 | 1441.0 |
+| 35 | Luke Lockwood | Ethan Ellsworth | L | 21-42 | 1559.7 | -16.4 | 1543.3 |
+| 19 | Levi Morant | Luke Lockwood | W | 48-45 | 1467.0 | +15.9 | 1482.9 |
+| 19 | Luke Lockwood | Levi Morant | L | 45-48 | 1583.9 | -15.9 | 1568.0 |
+| 35 | Dylan Reid | Julius Long | L | 52-59 | 1525.4 | -15.8 | 1509.7 |
+| 35 | Julius Long | Dylan Reid | W | 59-52 | 1412.8 | +15.8 | 1428.6 |
+| 25 | Justin Miller | Levi Morant | L | 28-66 | 1550.1 | -15.4 | 1534.7 |
+| 25 | Levi Morant | Justin Miller | W | 66-28 | 1449.1 | +15.4 | 1464.5 |
+| 37 | Levi Morant | Luke Lockwood | W | 37-32 | 1443.3 | +15.3 | 1458.7 |
+| 37 | Luke Lockwood | Levi Morant | L | 32-37 | 1542.5 | -15.3 | 1527.2 |
+| 17 | Drake Byrd | Levi Morant | L | 23-45 | 1558.1 | -15.2 | 1542.8 |
+| 17 | Levi Morant | Drake Byrd | W | 45-23 | 1462.5 | +15.2 | 1477.7 |
+| 13 | Drake Byrd | Ethan Ellsworth | L | 39-41 | 1539.8 | -15.1 | 1524.7 |
+| 13 | Ethan Ellsworth | Drake Byrd | W | 41-39 | 1449.3 | +15.1 | 1464.4 |
+| 33 | Ethan Ellsworth | Levi Morant | W | 60-34 | 1396.4 | +14.9 | 1411.4 |
+| 33 | Levi Morant | Ethan Ellsworth | L | 34-60 | 1483.6 | -14.9 | 1468.7 |
+| 21 | Ethan Ellsworth | Justin Miller | W | 51-35 | 1450.5 | +14.8 | 1465.3 |
+| 21 | Justin Miller | Ethan Ellsworth | L | 35-51 | 1533.6 | -14.8 | 1518.8 |
+| 27 | Levi Morant | Ryan Donlan | W | 66-48 | 1477.5 | +14.8 | 1492.3 |
+| 27 | Ryan Donlan | Levi Morant | L | 48-66 | 1560.8 | -14.8 | 1545.9 |
+
+</section>
+<section class="power-tab-panel" id="power-panel-2024-25" role="tabpanel" aria-labelledby="power-season-2024-25-label">
+### 2024-25 Elo Movement
 <div class="rating-chart-wrap" role="img" aria-label="2024-25 Elo rating movement chart">
 <svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
 <text class="chart-title" x="64" y="18">2024-25 Elo Movement</text>
@@ -120,302 +318,102 @@ Use these charts to see the week-by-week rating paths. Each season starts fresh 
 <text class="legend-label" x="940" y="300">Alexander Chaban</text>
 </svg>
 </div>
-<div class="rating-chart-wrap" role="img" aria-label="2025-26 Elo rating movement chart">
-<svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
-<text class="chart-title" x="64" y="18">2025-26 Elo Movement</text>
-<line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
-<line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
-<line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
-<text class="axis-label" x="54" y="402.0" text-anchor="end">1375</text>
-<line class="grid-line" x1="64" y1="367.2" x2="884" y2="367.2" />
-<text class="axis-label" x="54" y="371.2" text-anchor="end">1400</text>
-<line class="grid-line" x1="64" y1="336.3" x2="884" y2="336.3" />
-<text class="axis-label" x="54" y="340.3" text-anchor="end">1425</text>
-<line class="grid-line" x1="64" y1="305.5" x2="884" y2="305.5" />
-<text class="axis-label" x="54" y="309.5" text-anchor="end">1450</text>
-<line class="grid-line" x1="64" y1="274.7" x2="884" y2="274.7" />
-<text class="axis-label" x="54" y="278.7" text-anchor="end">1475</text>
-<line class="grid-line" x1="64" y1="243.8" x2="884" y2="243.8" />
-<text class="axis-label" x="54" y="247.8" text-anchor="end">1500</text>
-<line class="grid-line" x1="64" y1="213.0" x2="884" y2="213.0" />
-<text class="axis-label" x="54" y="217.0" text-anchor="end">1525</text>
-<line class="grid-line" x1="64" y1="182.2" x2="884" y2="182.2" />
-<text class="axis-label" x="54" y="186.2" text-anchor="end">1550</text>
-<line class="grid-line" x1="64" y1="151.3" x2="884" y2="151.3" />
-<text class="axis-label" x="54" y="155.3" text-anchor="end">1575</text>
-<line class="grid-line" x1="64" y1="120.5" x2="884" y2="120.5" />
-<text class="axis-label" x="54" y="124.5" text-anchor="end">1600</text>
-<line class="grid-line" x1="64" y1="89.7" x2="884" y2="89.7" />
-<text class="axis-label" x="54" y="93.7" text-anchor="end">1625</text>
-<line class="grid-line" x1="64" y1="58.8" x2="884" y2="58.8" />
-<text class="axis-label" x="54" y="62.8" text-anchor="end">1650</text>
-<line class="grid-line" x1="64" y1="28.0" x2="884" y2="28.0" />
-<text class="axis-label" x="54" y="32.0" text-anchor="end">1675</text>
-<line class="tick-line" x1="64.0" y1="398" x2="64.0" y2="404" />
-<text class="axis-label" x="64.0" y="422" text-anchor="middle">Start</text>
-<line class="tick-line" x1="174.8" y1="398" x2="174.8" y2="404" />
-<text class="axis-label" x="174.8" y="422" text-anchor="middle">5</text>
-<line class="tick-line" x1="285.6" y1="398" x2="285.6" y2="404" />
-<text class="axis-label" x="285.6" y="422" text-anchor="middle">10</text>
-<line class="tick-line" x1="396.4" y1="398" x2="396.4" y2="404" />
-<text class="axis-label" x="396.4" y="422" text-anchor="middle">15</text>
-<line class="tick-line" x1="507.2" y1="398" x2="507.2" y2="404" />
-<text class="axis-label" x="507.2" y="422" text-anchor="middle">20</text>
-<line class="tick-line" x1="618.1" y1="398" x2="618.1" y2="404" />
-<text class="axis-label" x="618.1" y="422" text-anchor="middle">25</text>
-<line class="tick-line" x1="728.9" y1="398" x2="728.9" y2="404" />
-<text class="axis-label" x="728.9" y="422" text-anchor="middle">30</text>
-<line class="tick-line" x1="839.7" y1="398" x2="839.7" y2="404" />
-<text class="axis-label" x="839.7" y="422" text-anchor="middle">35</text>
-<line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
-<text class="axis-label" x="884.0" y="422" text-anchor="middle">37</text>
-<text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
-<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Elo rating</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,286.3 152.6,270.5 174.8,253.9 197.0,237.2 219.1,253.2 241.3,239.5 263.5,255.2 285.6,239.7 307.8,226.2 329.9,239.4 352.1,225.6 374.3,241.6 396.4,255.0 418.6,240.2 440.8,225.2 462.9,212.0 485.1,197.6 507.2,186.1 529.4,171.0 551.6,159.4 573.7,177.0 595.9,164.9 618.1,183.1 640.2,168.9 662.4,187.2 684.5,173.4 706.7,163.8 728.9,150.5 751.0,141.0 773.2,131.1 795.4,119.9 817.5,109.5 839.7,95.9 861.8,87.8 884.0,78.2" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="78.2" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
-<line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
-<text class="legend-label" x="940" y="48">Ryan Donlan</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,242.8 130.5,256.7 152.6,241.9 174.8,255.7 197.0,270.7 219.1,285.4 241.3,299.1 263.5,281.4 285.6,266.0 307.8,278.3 329.9,263.9 352.1,247.4 374.3,261.0 396.4,247.4 418.6,233.6 440.8,248.6 462.9,232.5 485.1,219.2 507.2,202.4 529.4,220.6 551.6,207.1 573.7,193.5 595.9,182.0 618.1,201.0 640.2,215.2 662.4,230.6 684.5,215.8 706.7,200.2 728.9,190.1 751.0,176.0 773.2,162.8 795.4,153.6 817.5,143.1 839.7,156.7 861.8,144.5 884.0,136.4" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="136.4" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
-<line class="legend-swatch" x1="910" y1="72" x2="932" y2="72" stroke="hsl(352 76% 38%)" />
-<text class="legend-label" x="940" y="76">Justin Miller</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,244.9 130.5,231.0 152.6,216.2 174.8,232.9 197.0,218.2 219.1,204.3 241.3,190.5 263.5,205.2 285.6,192.0 307.8,179.7 329.9,166.5 352.1,184.2 374.3,171.0 396.4,158.7 418.6,148.9 440.8,153.9 462.9,140.4 485.1,160.0 507.2,176.8 529.4,191.9 551.6,208.4 573.7,195.7 595.9,211.6 618.1,229.5 640.2,217.4 662.4,204.3 684.5,191.2 706.7,206.8 728.9,220.2 751.0,204.8 773.2,190.7 795.4,179.6 817.5,170.2 839.7,190.4 861.8,191.4 884.0,210.3" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="210.3" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
-<line class="legend-swatch" x1="910" y1="100" x2="932" y2="100" stroke="hsl(266 76% 38%)" />
-<text class="legend-label" x="940" y="104">Luke Lockwood</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,273.4 130.5,258.6 152.6,273.3 174.8,256.6 197.0,270.4 219.1,254.5 241.3,240.0 263.5,225.5 285.6,208.9 307.8,225.8 329.9,212.8 352.1,229.4 374.3,242.6 396.4,256.7 418.6,271.4 440.8,255.6 462.9,271.7 485.1,254.6 507.2,270.9 529.4,256.4 551.6,270.0 573.7,282.7 595.9,265.5 618.1,247.3 640.2,230.8 662.4,219.0 684.5,235.9 706.7,222.8 728.9,209.9 751.0,224.0 773.2,238.2 795.4,252.0 817.5,262.4 839.7,249.8 861.8,237.3 884.0,221.8" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="221.8" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
-<line class="legend-swatch" x1="910" y1="128" x2="932" y2="128" stroke="hsl(12 76% 38%)" />
-<text class="legend-label" x="940" y="132">Ryan Houseman</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,243.8 130.5,229.0 152.6,213.3 174.8,199.5 197.0,216.1 219.1,201.3 241.3,188.3 263.5,173.6 285.6,190.1 307.8,208.0 329.9,194.8 352.1,213.3 374.3,199.7 396.4,186.3 418.6,172.2 440.8,191.0 462.9,204.5 485.1,221.6 507.2,238.8 529.4,255.0 551.6,241.3 573.7,254.9 595.9,267.1 618.1,251.0 640.2,267.1 662.4,280.2 684.5,263.3 706.7,247.9 728.9,234.8 751.0,223.9 773.2,237.0 795.4,248.2 817.5,231.6 839.7,218.9 861.8,218.0 884.0,233.4" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="233.4" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
-<line class="legend-swatch" x1="910" y1="156" x2="932" y2="156" stroke="hsl(154 76% 38%)" />
-<text class="legend-label" x="940" y="160">Drake Byrd</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,287.2 152.6,269.5 174.8,284.4 197.0,267.9 219.1,253.2 241.3,266.2 263.5,250.5 285.6,263.7 307.8,278.0 329.9,291.0 352.1,274.6 374.3,260.1 396.4,276.3 418.6,290.1 440.8,271.3 462.9,284.5 485.1,264.9 507.2,278.8 529.4,293.4 551.6,306.9 573.7,291.0 595.9,306.6 618.1,287.6 640.2,271.5 662.4,253.3 684.5,266.4 706.7,280.0 728.9,292.8 751.0,277.4 773.2,264.0 795.4,282.5 817.5,293.0 839.7,305.7 861.8,313.7 884.0,294.8" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="294.8" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
-<line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
-<text class="legend-label" x="940" y="188">Levi Morant</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,243.8 130.5,258.6 152.6,274.4 174.8,259.4 197.0,244.5 219.1,258.4 241.3,272.2 263.5,287.2 285.6,271.6 307.8,254.6 329.9,267.8 352.1,281.6 374.3,296.2 396.4,309.8 418.6,319.6 440.8,331.0 462.9,313.8 485.1,297.7 507.2,281.4 529.4,265.1 551.6,276.7 573.7,292.6 595.9,304.0 618.1,286.1 640.2,299.5 662.4,281.8 684.5,283.5 706.7,296.7 728.9,309.8 751.0,319.4 773.2,332.7 795.4,341.9 817.5,351.4 839.7,331.9 861.8,317.4 884.0,332.6" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="332.6" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
-<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
-<text class="legend-label" x="940" y="216">Julius Long</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,230.0 152.6,244.9 174.8,229.1 197.0,215.2 219.1,230.1 241.3,216.3 263.5,233.9 285.6,249.4 307.8,235.1 329.9,250.8 352.1,233.1 374.3,220.2 396.4,206.2 418.6,220.3 440.8,208.8 462.9,225.0 485.1,239.4 507.2,225.5 529.4,241.9 551.6,225.4 573.7,213.1 595.9,230.3 618.1,246.4 640.2,232.9 662.4,217.5 684.5,231.3 706.7,217.7 728.9,204.4 751.0,219.8 773.2,209.7 795.4,195.9 817.5,212.5 839.7,231.9 861.8,244.1 884.0,253.8" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="253.8" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
-<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
-<text class="legend-label" x="940" y="244">Dylan Reid</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,201.4 152.6,217.2 174.8,232.9 197.0,249.5 219.1,234.7 241.3,248.4 263.5,262.9 285.6,278.6 307.8,292.0 329.9,306.3 352.1,287.8 374.3,300.7 396.4,284.5 418.6,298.4 440.8,293.4 462.9,277.3 485.1,293.4 507.2,304.9 529.4,286.6 551.6,300.3 573.7,312.6 595.9,297.0 618.1,308.8 640.2,320.9 662.4,332.7 684.5,330.9 706.7,340.5 728.9,350.6 751.0,361.5 773.2,371.6 795.4,353.2 817.5,336.9 839.7,316.6 861.8,329.2 884.0,313.9" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="313.9" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
-<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
-<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,214.2 130.5,199.5 152.6,217.3 174.8,233.9 197.0,248.7 219.1,263.5 241.3,278.0 263.5,263.0 285.6,278.4 307.8,260.6 329.9,244.9 352.1,261.3 374.3,245.3 396.4,257.5 418.6,243.7 440.8,259.4 462.9,276.7 485.1,289.9 507.2,272.8 529.4,256.4 551.6,242.9 573.7,225.2 595.9,209.4 618.1,197.6 640.2,214.1 662.4,231.8 684.5,246.6 706.7,261.9 728.9,275.2 751.0,290.6 773.2,300.5 795.4,311.5 817.5,327.8 839.7,340.3 861.8,354.8 884.0,362.9" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="362.9" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
-<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
-<text class="legend-label" x="940" y="300">Alexander Chaban</text>
-</svg>
-</div>
-</details>
+### 2024-25 Power Rankings
+| Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | Justin Miller | 1620.8 | +120.8 | 1637.4 | 2024-25 37 | 1476.8 | 2024-25 7 | 2.82 | 4 | 28 | 0 |
+| 2 | Ryan Donlan | 1587.8 | +87.8 | 1645.6 | 2024-25 33 | 1512.0 | 2024-25 1 | 1.45 | 26 | 37 | 0 |
+| 3 | Ryan Houseman | 1527.1 | +27.1 | 1551.4 | 2024-25 36 | 1476.8 | 2024-25 2 | 4.42 | 0 | 15 | 3 |
+| 4 | Luke Lockwood | 1525.9 | +25.9 | 1544.3 | 2024-25 33 | 1431.7 | 2024-25 21 | 7.08 | 0 | 6 | 20 |
+| 5 | Levi Morant | 1513.1 | +13.1 | 1576.5 | 2024-25 7 | 1435.6 | 2024-25 27 | 5.79 | 4 | 9 | 13 |
+| 6 | Julius Long | 1472.3 | -27.7 | 1554.6 | 2024-25 7 | 1445.7 | 2024-25 36 | 3.89 | 3 | 17 | 1 |
+| 7 | Drake Byrd | 1470.1 | -29.9 | 1507.3 | 2024-25 22 | 1446.9 | 2024-25 14 | 6.29 | 0 | 0 | 7 |
+| 8 | Alexander Chaban | 1448.4 | -51.6 | 1500.8 | 2024-25 2 | 1420.0 | 2024-25 33 | 8.87 | 0 | 0 | 34 |
+| 9 | Ethan Ellsworth | 1441.3 | -58.6 | 1505.3 | 2024-25 19 | 1421.2 | 2024-25 35 | 7.39 | 0 | 0 | 19 |
+| 10 | Dylan Reid | 1393.1 | -106.9 | 1518.6 | 2024-25 16 | 1393.1 | 2024-25 38 | 7.00 | 1 | 2 | 17 |
 
-<details>
-<summary><h2>Season Power Rankings</h2></summary>
-
-Use this table as the strength rating for each season. The latest 2025-26 row is through week 37; 2024-25 is final.
-
-| Season | Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2025-26 | 1 | Ryan Donlan | 1634.3 | +134.3 | 1634.3 | 2025-26 37 | 1465.6 | 2025-26 3 | 3.19 | 17 | 21 | 4 |
-| 2025-26 | 2 | Justin Miller | 1587.1 | +87.1 | 1587.1 | 2025-26 37 | 1455.2 | 2025-26 8 | 4.59 | 0 | 18 | 6 |
-| 2025-26 | 3 | Luke Lockwood | 1527.2 | +27.2 | 1583.9 | 2025-26 18 | 1499.2 | 2025-26 2 | 2.62 | 10 | 29 | 0 |
-| 2025-26 | 4 | Ryan Houseman | 1517.8 | +17.8 | 1528.3 | 2025-26 10 | 1468.5 | 2025-26 23 | 5.89 | 0 | 4 | 5 |
-| 2025-26 | 5 | Drake Byrd | 1508.4 | +8.4 | 1558.1 | 2025-26 16 | 1470.5 | 2025-26 27 | 3.78 | 6 | 17 | 1 |
-| 2025-26 | 6 | Dylan Reid | 1492.0 | -8.1 | 1538.9 | 2025-26 33 | 1492.0 | 2025-26 37 | 4.03 | 1 | 12 | 0 |
-| 2025-26 | 7 | Levi Morant | 1458.7 | -41.4 | 1494.6 | 2025-26 9 | 1443.3 | 2025-26 36 | 7.81 | 0 | 0 | 22 |
-| 2025-26 | 8 | Ethan Ellsworth | 1443.2 | -56.9 | 1534.4 | 2025-26 3 | 1396.4 | 2025-26 32 | 8.19 | 0 | 4 | 28 |
-| 2025-26 | 9 | Julius Long | 1428.0 | -72.0 | 1500.0 | 2025-26 2 | 1412.8 | 2025-26 34 | 8.62 | 0 | 0 | 33 |
-| 2025-26 | 10 | Alexander Chaban | 1403.5 | -96.5 | 1537.5 | 2025-26 25 | 1403.5 | 2025-26 37 | 6.27 | 3 | 6 | 12 |
-| 2024-25 | 1 | Justin Miller | 1620.8 | +120.8 | 1637.4 | 2024-25 37 | 1476.8 | 2024-25 7 | 2.82 | 4 | 28 | 0 |
-| 2024-25 | 2 | Ryan Donlan | 1587.8 | +87.8 | 1645.6 | 2024-25 33 | 1512.0 | 2024-25 1 | 1.45 | 26 | 37 | 0 |
-| 2024-25 | 3 | Ryan Houseman | 1527.1 | +27.1 | 1551.4 | 2024-25 36 | 1476.8 | 2024-25 2 | 4.42 | 0 | 15 | 3 |
-| 2024-25 | 4 | Luke Lockwood | 1525.9 | +25.9 | 1544.3 | 2024-25 33 | 1431.7 | 2024-25 21 | 7.08 | 0 | 6 | 20 |
-| 2024-25 | 5 | Levi Morant | 1513.1 | +13.1 | 1576.5 | 2024-25 7 | 1435.6 | 2024-25 27 | 5.79 | 4 | 9 | 13 |
-| 2024-25 | 6 | Julius Long | 1472.3 | -27.7 | 1554.6 | 2024-25 7 | 1445.7 | 2024-25 36 | 3.89 | 3 | 17 | 1 |
-| 2024-25 | 7 | Drake Byrd | 1470.1 | -29.9 | 1507.3 | 2024-25 22 | 1446.9 | 2024-25 14 | 6.29 | 0 | 0 | 7 |
-| 2024-25 | 8 | Alexander Chaban | 1448.4 | -51.6 | 1500.8 | 2024-25 2 | 1420.0 | 2024-25 33 | 8.87 | 0 | 0 | 34 |
-| 2024-25 | 9 | Ethan Ellsworth | 1441.3 | -58.6 | 1505.3 | 2024-25 19 | 1421.2 | 2024-25 35 | 7.39 | 0 | 0 | 19 |
-| 2024-25 | 10 | Dylan Reid | 1393.1 | -106.9 | 1518.6 | 2024-25 16 | 1393.1 | 2024-25 38 | 7.00 | 1 | 2 | 17 |
-
-</details>
-
-<details>
-<summary><h2>Weekly Power Ranking Path</h2></summary>
-
-Use this table to see who the model considered strongest after each gameweek within that season. The page shows the top five and the bottom-ranked manager; the CSV contains the full 1-10 order every week.
-
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-
-- Ratings update after each completed gameweek, then ranks are assigned from highest rating to lowest.
-- The manager shown in each rank cell includes their rounded rating after that gameweek.
-- Ratings reset to 1500 at the start of each season.
-
-</details>
-
-| Season | Week | #1 | #2 | #3 | #4 | #5 | Bottom |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 2024-25 | 1 | Dylan Reid (1512) | Julius Long (1512) | Justin Miller (1512) | Levi Morant (1512) | Ryan Donlan (1512) | Ryan Houseman (1488) |
-| 2024-25 | 2 | Levi Morant (1524) | Julius Long (1523) | Ryan Donlan (1523) | Alexander Chaban (1501) | Drake Byrd (1500) | Ethan Ellsworth (1476) |
-| 2024-25 | 3 | Ryan Donlan (1535) | Levi Morant (1535) | Julius Long (1511) | Drake Byrd (1500) | Justin Miller (1500) | Luke Lockwood (1465) |
-| 2024-25 | 4 | Ryan Donlan (1546) | Levi Morant (1545) | Julius Long (1523) | Justin Miller (1512) | Ryan Houseman (1501) | Luke Lockwood (1455) |
-| 2024-25 | 5 | Ryan Donlan (1556) | Levi Morant (1555) | Julius Long (1533) | Justin Miller (1501) | Drake Byrd (1499) | Luke Lockwood (1444) |
-| 2024-25 | 6 | Levi Morant (1567) | Ryan Donlan (1544) | Julius Long (1544) | Dylan Reid (1502) | Justin Miller (1490) | Ethan Ellsworth (1453) |
-| 2024-25 | 7 | Levi Morant (1577) | Julius Long (1555) | Ryan Donlan (1554) | Dylan Reid (1491) | Ryan Houseman (1489) | Ethan Ellsworth (1441) |
-| 2024-25 | 8 | Levi Morant (1560) | Ryan Donlan (1540) | Julius Long (1540) | Ryan Houseman (1504) | Drake Byrd (1489) | Alexander Chaban (1457) |
-| 2024-25 | 9 | Julius Long (1552) | Ryan Donlan (1549) | Levi Morant (1547) | Ryan Houseman (1515) | Justin Miller (1500) | Alexander Chaban (1446) |
-| 2024-25 | 10 | Julius Long (1537) | Ryan Donlan (1535) | Levi Morant (1532) | Justin Miller (1513) | Ryan Houseman (1503) | Alexander Chaban (1462) |
-| 2024-25 | 11 | Julius Long (1548) | Ryan Donlan (1545) | Justin Miller (1525) | Levi Morant (1519) | Ryan Houseman (1492) | Alexander Chaban (1450) |
-| 2024-25 | 12 | Ryan Donlan (1557) | Justin Miller (1536) | Julius Long (1536) | Levi Morant (1506) | Dylan Reid (1504) | Alexander Chaban (1439) |
-| 2024-25 | 13 | Ryan Donlan (1555) | Julius Long (1545) | Justin Miller (1522) | Levi Morant (1517) | Dylan Reid (1506) | Luke Lockwood (1451) |
-| 2024-25 | 14 | Ryan Donlan (1566) | Julius Long (1554) | Dylan Reid (1518) | Justin Miller (1511) | Levi Morant (1504) | Alexander Chaban (1444) |
-| 2024-25 | 15 | Ryan Donlan (1576) | Julius Long (1541) | Justin Miller (1525) | Ryan Houseman (1514) | Dylan Reid (1505) | Alexander Chaban (1433) |
-| 2024-25 | 16 | Ryan Donlan (1583) | Justin Miller (1534) | Julius Long (1528) | Ryan Houseman (1526) | Dylan Reid (1519) | Alexander Chaban (1425) |
-| 2024-25 | 17 | Ryan Donlan (1593) | Julius Long (1537) | Justin Miller (1519) | Ryan Houseman (1516) | Dylan Reid (1505) | Luke Lockwood (1434) |
-| 2024-25 | 18 | Ryan Donlan (1602) | Justin Miller (1530) | Ryan Houseman (1527) | Julius Long (1522) | Dylan Reid (1493) | Alexander Chaban (1429) |
-| 2024-25 | 19 | Ryan Donlan (1610) | Justin Miller (1542) | Ryan Houseman (1515) | Julius Long (1509) | Ethan Ellsworth (1505) | Alexander Chaban (1443) |
-| 2024-25 | 20 | Ryan Donlan (1617) | Justin Miller (1552) | Ryan Houseman (1527) | Julius Long (1498) | Ethan Ellsworth (1492) | Luke Lockwood (1441) |
-| 2024-25 | 21 | Ryan Donlan (1601) | Justin Miller (1537) | Ryan Houseman (1536) | Julius Long (1514) | Ethan Ellsworth (1503) | Luke Lockwood (1432) |
-| 2024-25 | 22 | Ryan Donlan (1609) | Justin Miller (1548) | Ryan Houseman (1545) | Drake Byrd (1507) | Julius Long (1501) | Levi Morant (1436) |
-| 2024-25 | 23 | Ryan Donlan (1619) | Justin Miller (1538) | Ryan Houseman (1529) | Dylan Reid (1494) | Drake Byrd (1493) | Alexander Chaban (1451) |
-| 2024-25 | 24 | Ryan Donlan (1626) | Justin Miller (1548) | Ryan Houseman (1540) | Dylan Reid (1483) | Drake Byrd (1480) | Levi Morant (1445) |
-| 2024-25 | 25 | Ryan Donlan (1632) | Justin Miller (1558) | Ryan Houseman (1550) | Julius Long (1489) | Dylan Reid (1471) | Ethan Ellsworth (1457) |
-| 2024-25 | 26 | Ryan Donlan (1642) | Justin Miller (1566) | Ryan Houseman (1540) | Julius Long (1488) | Drake Byrd (1479) | Levi Morant (1446) |
-| 2024-25 | 27 | Ryan Donlan (1624) | Justin Miller (1575) | Ryan Houseman (1550) | Julius Long (1498) | Ethan Ellsworth (1487) | Levi Morant (1436) |
-| 2024-25 | 28 | Ryan Donlan (1631) | Justin Miller (1586) | Ryan Houseman (1539) | Ethan Ellsworth (1499) | Julius Long (1486) | Alexander Chaban (1425) |
-| 2024-25 | 29 | Ryan Donlan (1614) | Justin Miller (1593) | Ryan Houseman (1525) | Luke Lockwood (1502) | Julius Long (1500) | Dylan Reid (1426) |
-| 2024-25 | 30 | Ryan Donlan (1622) | Justin Miller (1601) | Luke Lockwood (1515) | Ryan Houseman (1512) | Julius Long (1492) | Dylan Reid (1415) |
-| 2024-25 | 31 | Ryan Donlan (1628) | Justin Miller (1609) | Luke Lockwood (1525) | Ryan Houseman (1522) | Drake Byrd (1480) | Dylan Reid (1409) |
-| 2024-25 | 32 | Ryan Donlan (1639) | Justin Miller (1598) | Luke Lockwood (1535) | Ryan Houseman (1508) | Julius Long (1489) | Dylan Reid (1423) |
-| 2024-25 | 33 | Ryan Donlan (1646) | Justin Miller (1606) | Luke Lockwood (1544) | Ryan Houseman (1517) | Julius Long (1481) | Dylan Reid (1414) |
-| 2024-25 | 34 | Ryan Donlan (1627) | Justin Miller (1616) | Luke Lockwood (1534) | Ryan Houseman (1526) | Drake Byrd (1467) | Dylan Reid (1428) |
-| 2024-25 | 35 | Justin Miller (1622) | Ryan Donlan (1611) | Luke Lockwood (1544) | Ryan Houseman (1542) | Drake Byrd (1478) | Dylan Reid (1418) |
-| 2024-25 | 36 | Justin Miller (1628) | Ryan Donlan (1593) | Ryan Houseman (1551) | Luke Lockwood (1528) | Levi Morant (1486) | Dylan Reid (1412) |
-| 2024-25 | 37 | Justin Miller (1637) | Ryan Donlan (1577) | Ryan Houseman (1542) | Luke Lockwood (1537) | Levi Morant (1496) | Dylan Reid (1404) |
-| 2024-25 | 38 | Justin Miller (1621) | Ryan Donlan (1588) | Ryan Houseman (1527) | Luke Lockwood (1526) | Levi Morant (1513) | Dylan Reid (1393) |
-| 2025-26 | 1 | Alexander Chaban (1512) | Drake Byrd (1512) | Dylan Reid (1512) | Ethan Ellsworth (1512) | Luke Lockwood (1512) | Ryan Houseman (1488) |
-| 2025-26 | 2 | Alexander Chaban (1524) | Dylan Reid (1523) | Ethan Ellsworth (1523) | Justin Miller (1501) | Drake Byrd (1500) | Ryan Houseman (1476) |
-| 2025-26 | 3 | Alexander Chaban (1536) | Ethan Ellsworth (1534) | Drake Byrd (1512) | Dylan Reid (1511) | Luke Lockwood (1510) | Levi Morant (1465) |
-| 2025-26 | 4 | Drake Byrd (1525) | Luke Lockwood (1522) | Ethan Ellsworth (1522) | Alexander Chaban (1522) | Justin Miller (1502) | Julius Long (1475) |
-| 2025-26 | 5 | Drake Byrd (1536) | Dylan Reid (1512) | Ethan Ellsworth (1509) | Luke Lockwood (1509) | Alexander Chaban (1508) | Levi Morant (1467) |
-| 2025-26 | 6 | Dylan Reid (1523) | Drake Byrd (1522) | Luke Lockwood (1521) | Ryan Donlan (1505) | Julius Long (1499) | Justin Miller (1478) |
-| 2025-26 | 7 | Drake Byrd (1534) | Luke Lockwood (1532) | Dylan Reid (1511) | Ethan Ellsworth (1507) | Levi Morant (1492) | Justin Miller (1466) |
-| 2025-26 | 8 | Drake Byrd (1545) | Luke Lockwood (1543) | Dylan Reid (1522) | Ryan Donlan (1504) | Ryan Houseman (1503) | Justin Miller (1455) |
-| 2025-26 | 9 | Drake Byrd (1557) | Luke Lockwood (1531) | Ryan Houseman (1515) | Dylan Reid (1508) | Levi Morant (1495) | Julius Long (1465) |
-| 2025-26 | 10 | Drake Byrd (1544) | Luke Lockwood (1542) | Ryan Houseman (1528) | Ryan Donlan (1503) | Dylan Reid (1495) | Ethan Ellsworth (1472) |
-| 2025-26 | 11 | Luke Lockwood (1552) | Drake Byrd (1529) | Ryan Houseman (1515) | Ryan Donlan (1514) | Dylan Reid (1507) | Ethan Ellsworth (1461) |
-| 2025-26 | 12 | Luke Lockwood (1563) | Drake Byrd (1540) | Ryan Houseman (1525) | Ryan Donlan (1504) | Alexander Chaban (1499) | Ethan Ellsworth (1449) |
-| 2025-26 | 13 | Luke Lockwood (1548) | Drake Byrd (1525) | Ryan Donlan (1515) | Ryan Houseman (1512) | Dylan Reid (1509) | Ethan Ellsworth (1464) |
-| 2025-26 | 14 | Luke Lockwood (1559) | Drake Byrd (1536) | Dylan Reid (1519) | Ryan Donlan (1502) | Ryan Houseman (1501) | Ethan Ellsworth (1454) |
-| 2025-26 | 15 | Luke Lockwood (1569) | Drake Byrd (1547) | Dylan Reid (1531) | Justin Miller (1497) | Ryan Donlan (1491) | Julius Long (1447) |
-| 2025-26 | 16 | Luke Lockwood (1577) | Drake Byrd (1558) | Dylan Reid (1519) | Justin Miller (1508) | Ryan Donlan (1503) | Julius Long (1439) |
-| 2025-26 | 17 | Luke Lockwood (1573) | Drake Byrd (1543) | Dylan Reid (1528) | Ryan Donlan (1515) | Justin Miller (1496) | Julius Long (1429) |
-| 2025-26 | 18 | Luke Lockwood (1584) | Drake Byrd (1532) | Ryan Donlan (1526) | Dylan Reid (1515) | Justin Miller (1509) | Julius Long (1443) |
-| 2025-26 | 19 | Luke Lockwood (1568) | Ryan Donlan (1537) | Justin Miller (1520) | Drake Byrd (1518) | Dylan Reid (1504) | Julius Long (1456) |
-| 2025-26 | 20 | Luke Lockwood (1554) | Ryan Donlan (1547) | Justin Miller (1534) | Dylan Reid (1515) | Drake Byrd (1504) | Ethan Ellsworth (1450) |
-| 2025-26 | 21 | Ryan Donlan (1559) | Luke Lockwood (1542) | Justin Miller (1519) | Dylan Reid (1502) | Drake Byrd (1491) | Levi Morant (1460) |
-| 2025-26 | 22 | Ryan Donlan (1568) | Justin Miller (1530) | Luke Lockwood (1529) | Dylan Reid (1515) | Drake Byrd (1502) | Levi Morant (1449) |
-| 2025-26 | 23 | Ryan Donlan (1554) | Justin Miller (1541) | Luke Lockwood (1539) | Dylan Reid (1525) | Alexander Chaban (1515) | Ethan Ellsworth (1444) |
-| 2025-26 | 24 | Ryan Donlan (1564) | Justin Miller (1550) | Alexander Chaban (1528) | Luke Lockwood (1526) | Dylan Reid (1511) | Levi Morant (1449) |
-| 2025-26 | 25 | Ryan Donlan (1549) | Alexander Chaban (1538) | Justin Miller (1535) | Luke Lockwood (1512) | Dylan Reid (1498) | Ethan Ellsworth (1447) |
-| 2025-26 | 26 | Ryan Donlan (1561) | Alexander Chaban (1524) | Justin Miller (1523) | Luke Lockwood (1521) | Ryan Houseman (1511) | Ethan Ellsworth (1437) |
-| 2025-26 | 27 | Ryan Donlan (1546) | Luke Lockwood (1532) | Dylan Reid (1521) | Ryan Houseman (1520) | Justin Miller (1511) | Ethan Ellsworth (1428) |
-| 2025-26 | 28 | Ryan Donlan (1557) | Luke Lockwood (1543) | Justin Miller (1523) | Dylan Reid (1510) | Ryan Houseman (1506) | Ethan Ellsworth (1429) |
-| 2025-26 | 29 | Ryan Donlan (1565) | Justin Miller (1535) | Luke Lockwood (1530) | Dylan Reid (1521) | Ryan Houseman (1517) | Ethan Ellsworth (1422) |
-| 2025-26 | 30 | Ryan Donlan (1576) | Justin Miller (1544) | Dylan Reid (1532) | Ryan Houseman (1527) | Luke Lockwood (1519) | Ethan Ellsworth (1413) |
-| 2025-26 | 31 | Ryan Donlan (1583) | Justin Miller (1555) | Luke Lockwood (1532) | Dylan Reid (1520) | Drake Byrd (1516) | Ethan Ellsworth (1405) |
-| 2025-26 | 32 | Ryan Donlan (1591) | Justin Miller (1566) | Luke Lockwood (1543) | Dylan Reid (1528) | Drake Byrd (1506) | Ethan Ellsworth (1396) |
-| 2025-26 | 33 | Ryan Donlan (1600) | Justin Miller (1573) | Luke Lockwood (1552) | Dylan Reid (1539) | Drake Byrd (1496) | Ethan Ellsworth (1411) |
-| 2025-26 | 34 | Ryan Donlan (1609) | Justin Miller (1582) | Luke Lockwood (1560) | Dylan Reid (1525) | Drake Byrd (1510) | Julius Long (1413) |
-| 2025-26 | 35 | Ryan Donlan (1620) | Justin Miller (1571) | Luke Lockwood (1543) | Drake Byrd (1520) | Dylan Reid (1510) | Alexander Chaban (1422) |
-| 2025-26 | 36 | Ryan Donlan (1626) | Justin Miller (1581) | Luke Lockwood (1542) | Drake Byrd (1521) | Ryan Houseman (1505) | Alexander Chaban (1410) |
-| 2025-26 | 37 | Ryan Donlan (1634) | Justin Miller (1587) | Luke Lockwood (1527) | Ryan Houseman (1518) | Drake Byrd (1508) | Alexander Chaban (1403) |
-
-</details>
-
-<details>
-<summary><h2>Time At The Top And Bottom</h2></summary>
-
-Use this table to separate brief peaks from sustained power within each season: weeks at #1, weeks in the top three, and weeks in the bottom three.
-
-| Season | Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
+### 2024-25 Weekly Path
+| Week | #1 | #2 | #3 | #4 | #5 | Bottom |
 |---|---:|---:|---:|---:|---:|---:|
-| 2025-26 | Ryan Donlan | 17 | 21 | 4 | 3.19 | 1 |
-| 2025-26 | Luke Lockwood | 10 | 29 | 0 | 2.62 | 3 |
-| 2025-26 | Drake Byrd | 6 | 17 | 1 | 3.78 | 5 |
-| 2025-26 | Alexander Chaban | 3 | 6 | 12 | 6.27 | 10 |
-| 2025-26 | Dylan Reid | 1 | 12 | 0 | 4.03 | 6 |
-| 2025-26 | Justin Miller | 0 | 18 | 6 | 4.59 | 2 |
-| 2025-26 | Ryan Houseman | 0 | 4 | 5 | 5.89 | 4 |
-| 2025-26 | Ethan Ellsworth | 0 | 4 | 28 | 8.19 | 8 |
-| 2025-26 | Levi Morant | 0 | 0 | 22 | 7.81 | 7 |
-| 2025-26 | Julius Long | 0 | 0 | 33 | 8.62 | 9 |
-| 2024-25 | Ryan Donlan | 26 | 37 | 0 | 1.45 | 2 |
-| 2024-25 | Justin Miller | 4 | 28 | 0 | 2.82 | 1 |
-| 2024-25 | Levi Morant | 4 | 9 | 13 | 5.79 | 5 |
-| 2024-25 | Julius Long | 3 | 17 | 1 | 3.89 | 6 |
-| 2024-25 | Dylan Reid | 1 | 2 | 17 | 7.00 | 10 |
-| 2024-25 | Ryan Houseman | 0 | 15 | 3 | 4.42 | 3 |
-| 2024-25 | Luke Lockwood | 0 | 6 | 20 | 7.08 | 4 |
-| 2024-25 | Drake Byrd | 0 | 0 | 7 | 6.29 | 7 |
-| 2024-25 | Ethan Ellsworth | 0 | 0 | 19 | 7.39 | 9 |
-| 2024-25 | Alexander Chaban | 0 | 0 | 34 | 8.87 | 8 |
+| 1 | Dylan Reid (1512) | Julius Long (1512) | Justin Miller (1512) | Levi Morant (1512) | Ryan Donlan (1512) | Ryan Houseman (1488) |
+| 2 | Levi Morant (1524) | Julius Long (1523) | Ryan Donlan (1523) | Alexander Chaban (1501) | Drake Byrd (1500) | Ethan Ellsworth (1476) |
+| 3 | Ryan Donlan (1535) | Levi Morant (1535) | Julius Long (1511) | Drake Byrd (1500) | Justin Miller (1500) | Luke Lockwood (1465) |
+| 4 | Ryan Donlan (1546) | Levi Morant (1545) | Julius Long (1523) | Justin Miller (1512) | Ryan Houseman (1501) | Luke Lockwood (1455) |
+| 5 | Ryan Donlan (1556) | Levi Morant (1555) | Julius Long (1533) | Justin Miller (1501) | Drake Byrd (1499) | Luke Lockwood (1444) |
+| 6 | Levi Morant (1567) | Ryan Donlan (1544) | Julius Long (1544) | Dylan Reid (1502) | Justin Miller (1490) | Ethan Ellsworth (1453) |
+| 7 | Levi Morant (1577) | Julius Long (1555) | Ryan Donlan (1554) | Dylan Reid (1491) | Ryan Houseman (1489) | Ethan Ellsworth (1441) |
+| 8 | Levi Morant (1560) | Ryan Donlan (1540) | Julius Long (1540) | Ryan Houseman (1504) | Drake Byrd (1489) | Alexander Chaban (1457) |
+| 9 | Julius Long (1552) | Ryan Donlan (1549) | Levi Morant (1547) | Ryan Houseman (1515) | Justin Miller (1500) | Alexander Chaban (1446) |
+| 10 | Julius Long (1537) | Ryan Donlan (1535) | Levi Morant (1532) | Justin Miller (1513) | Ryan Houseman (1503) | Alexander Chaban (1462) |
+| 11 | Julius Long (1548) | Ryan Donlan (1545) | Justin Miller (1525) | Levi Morant (1519) | Ryan Houseman (1492) | Alexander Chaban (1450) |
+| 12 | Ryan Donlan (1557) | Justin Miller (1536) | Julius Long (1536) | Levi Morant (1506) | Dylan Reid (1504) | Alexander Chaban (1439) |
+| 13 | Ryan Donlan (1555) | Julius Long (1545) | Justin Miller (1522) | Levi Morant (1517) | Dylan Reid (1506) | Luke Lockwood (1451) |
+| 14 | Ryan Donlan (1566) | Julius Long (1554) | Dylan Reid (1518) | Justin Miller (1511) | Levi Morant (1504) | Alexander Chaban (1444) |
+| 15 | Ryan Donlan (1576) | Julius Long (1541) | Justin Miller (1525) | Ryan Houseman (1514) | Dylan Reid (1505) | Alexander Chaban (1433) |
+| 16 | Ryan Donlan (1583) | Justin Miller (1534) | Julius Long (1528) | Ryan Houseman (1526) | Dylan Reid (1519) | Alexander Chaban (1425) |
+| 17 | Ryan Donlan (1593) | Julius Long (1537) | Justin Miller (1519) | Ryan Houseman (1516) | Dylan Reid (1505) | Luke Lockwood (1434) |
+| 18 | Ryan Donlan (1602) | Justin Miller (1530) | Ryan Houseman (1527) | Julius Long (1522) | Dylan Reid (1493) | Alexander Chaban (1429) |
+| 19 | Ryan Donlan (1610) | Justin Miller (1542) | Ryan Houseman (1515) | Julius Long (1509) | Ethan Ellsworth (1505) | Alexander Chaban (1443) |
+| 20 | Ryan Donlan (1617) | Justin Miller (1552) | Ryan Houseman (1527) | Julius Long (1498) | Ethan Ellsworth (1492) | Luke Lockwood (1441) |
+| 21 | Ryan Donlan (1601) | Justin Miller (1537) | Ryan Houseman (1536) | Julius Long (1514) | Ethan Ellsworth (1503) | Luke Lockwood (1432) |
+| 22 | Ryan Donlan (1609) | Justin Miller (1548) | Ryan Houseman (1545) | Drake Byrd (1507) | Julius Long (1501) | Levi Morant (1436) |
+| 23 | Ryan Donlan (1619) | Justin Miller (1538) | Ryan Houseman (1529) | Dylan Reid (1494) | Drake Byrd (1493) | Alexander Chaban (1451) |
+| 24 | Ryan Donlan (1626) | Justin Miller (1548) | Ryan Houseman (1540) | Dylan Reid (1483) | Drake Byrd (1480) | Levi Morant (1445) |
+| 25 | Ryan Donlan (1632) | Justin Miller (1558) | Ryan Houseman (1550) | Julius Long (1489) | Dylan Reid (1471) | Ethan Ellsworth (1457) |
+| 26 | Ryan Donlan (1642) | Justin Miller (1566) | Ryan Houseman (1540) | Julius Long (1488) | Drake Byrd (1479) | Levi Morant (1446) |
+| 27 | Ryan Donlan (1624) | Justin Miller (1575) | Ryan Houseman (1550) | Julius Long (1498) | Ethan Ellsworth (1487) | Levi Morant (1436) |
+| 28 | Ryan Donlan (1631) | Justin Miller (1586) | Ryan Houseman (1539) | Ethan Ellsworth (1499) | Julius Long (1486) | Alexander Chaban (1425) |
+| 29 | Ryan Donlan (1614) | Justin Miller (1593) | Ryan Houseman (1525) | Luke Lockwood (1502) | Julius Long (1500) | Dylan Reid (1426) |
+| 30 | Ryan Donlan (1622) | Justin Miller (1601) | Luke Lockwood (1515) | Ryan Houseman (1512) | Julius Long (1492) | Dylan Reid (1415) |
+| 31 | Ryan Donlan (1628) | Justin Miller (1609) | Luke Lockwood (1525) | Ryan Houseman (1522) | Drake Byrd (1480) | Dylan Reid (1409) |
+| 32 | Ryan Donlan (1639) | Justin Miller (1598) | Luke Lockwood (1535) | Ryan Houseman (1508) | Julius Long (1489) | Dylan Reid (1423) |
+| 33 | Ryan Donlan (1646) | Justin Miller (1606) | Luke Lockwood (1544) | Ryan Houseman (1517) | Julius Long (1481) | Dylan Reid (1414) |
+| 34 | Ryan Donlan (1627) | Justin Miller (1616) | Luke Lockwood (1534) | Ryan Houseman (1526) | Drake Byrd (1467) | Dylan Reid (1428) |
+| 35 | Justin Miller (1622) | Ryan Donlan (1611) | Luke Lockwood (1544) | Ryan Houseman (1542) | Drake Byrd (1478) | Dylan Reid (1418) |
+| 36 | Justin Miller (1628) | Ryan Donlan (1593) | Ryan Houseman (1551) | Luke Lockwood (1528) | Levi Morant (1486) | Dylan Reid (1412) |
+| 37 | Justin Miller (1637) | Ryan Donlan (1577) | Ryan Houseman (1542) | Luke Lockwood (1537) | Levi Morant (1496) | Dylan Reid (1404) |
+| 38 | Justin Miller (1621) | Ryan Donlan (1588) | Ryan Houseman (1527) | Luke Lockwood (1526) | Levi Morant (1513) | Dylan Reid (1393) |
 
-</details>
+### 2024-25 Time At The Top And Bottom
+| Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
+|---|---:|---:|---:|---:|---:|
+| Ryan Donlan | 26 | 37 | 0 | 1.45 | 2 |
+| Justin Miller | 4 | 28 | 0 | 2.82 | 1 |
+| Levi Morant | 4 | 9 | 13 | 5.79 | 5 |
+| Julius Long | 3 | 17 | 1 | 3.89 | 6 |
+| Dylan Reid | 1 | 2 | 17 | 7.00 | 10 |
+| Ryan Houseman | 0 | 15 | 3 | 4.42 | 3 |
+| Luke Lockwood | 0 | 6 | 20 | 7.08 | 4 |
+| Drake Byrd | 0 | 0 | 7 | 6.29 | 7 |
+| Ethan Ellsworth | 0 | 0 | 19 | 7.39 | 9 |
+| Alexander Chaban | 0 | 0 | 34 | 8.87 | 8 |
 
-<details>
-<summary><h2>Biggest Rating Swings</h2></summary>
+### 2024-25 Biggest Rating Swings
+| Week | Manager | Opponent | Result | Score | Rating Before | Rating Change | Rating After |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 34 | Alexander Chaban | Ryan Donlan | W | 58-54 | 1420.0 | +18.9 | 1438.8 |
+| 34 | Ryan Donlan | Alexander Chaban | L | 54-58 | 1645.6 | -18.9 | 1626.8 |
+| 36 | Ethan Ellsworth | Ryan Donlan | W | 40-25 | 1421.2 | +18.0 | 1439.2 |
+| 36 | Ryan Donlan | Ethan Ellsworth | L | 25-40 | 1611.4 | -18.0 | 1593.4 |
+| 27 | Ethan Ellsworth | Ryan Donlan | W | 46-44 | 1469.4 | +17.5 | 1486.9 |
+| 27 | Ryan Donlan | Ethan Ellsworth | L | 44-46 | 1641.6 | -17.5 | 1624.1 |
+| 29 | Luke Lockwood | Ryan Donlan | W | 47-33 | 1485.4 | +16.8 | 1502.1 |
+| 29 | Ryan Donlan | Luke Lockwood | L | 33-47 | 1631.0 | -16.8 | 1614.3 |
+| 38 | Justin Miller | Levi Morant | L | 37-39 | 1637.4 | -16.6 | 1620.8 |
+| 38 | Levi Morant | Justin Miller | W | 39-37 | 1496.5 | +16.6 | 1513.1 |
+| 8 | Ethan Ellsworth | Levi Morant | W | 40-34 | 1441.4 | +16.4 | 1457.9 |
+| 8 | Levi Morant | Ethan Ellsworth | L | 34-40 | 1576.5 | -16.4 | 1560.1 |
+| 37 | Drake Byrd | Ryan Donlan | W | 35-34 | 1467.9 | +16.2 | 1484.0 |
+| 37 | Ryan Donlan | Drake Byrd | L | 34-35 | 1593.4 | -16.2 | 1577.2 |
+| 21 | Julius Long | Ryan Donlan | W | 46-32 | 1497.6 | +16.0 | 1513.5 |
+| 21 | Ryan Donlan | Julius Long | L | 32-46 | 1616.7 | -16.0 | 1600.8 |
+| 36 | Alexander Chaban | Luke Lockwood | W | 41-33 | 1432.5 | +15.7 | 1448.2 |
+| 36 | Luke Lockwood | Alexander Chaban | L | 33-41 | 1544.2 | -15.7 | 1528.4 |
+| 17 | Alexander Chaban | Justin Miller | W | 53-48 | 1425.2 | +15.7 | 1440.9 |
+| 17 | Justin Miller | Alexander Chaban | L | 48-53 | 1534.3 | -15.7 | 1518.6 |
 
-Use this table to find the matchups that changed the power ratings the most, usually upsets or wins between highly rated managers.
-
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-
-- **Rating Change** is the manager's Elo movement from that matchup week.
-- Positive changes are good; negative changes are bad.
-- The table is sorted by the absolute size of the swing, so a painful drop can appear beside a big gain from the same matchup.
-
-</details>
-
-| Season | Week | Manager | Opponent | Result | Score | Rating Before | Rating Change | Rating After |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2025-26 | 35 | Ethan Ellsworth | Luke Lockwood | W | 42-21 | 1424.5 | +16.4 | 1441.0 |
-| 2025-26 | 35 | Luke Lockwood | Ethan Ellsworth | L | 21-42 | 1559.7 | -16.4 | 1543.3 |
-| 2025-26 | 19 | Levi Morant | Luke Lockwood | W | 48-45 | 1467.0 | +15.9 | 1482.9 |
-| 2025-26 | 19 | Luke Lockwood | Levi Morant | L | 45-48 | 1583.9 | -15.9 | 1568.0 |
-| 2025-26 | 35 | Dylan Reid | Julius Long | L | 52-59 | 1525.4 | -15.8 | 1509.7 |
-| 2025-26 | 35 | Julius Long | Dylan Reid | W | 59-52 | 1412.8 | +15.8 | 1428.6 |
-| 2025-26 | 25 | Justin Miller | Levi Morant | L | 28-66 | 1550.1 | -15.4 | 1534.7 |
-| 2025-26 | 25 | Levi Morant | Justin Miller | W | 66-28 | 1449.1 | +15.4 | 1464.5 |
-| 2025-26 | 37 | Levi Morant | Luke Lockwood | W | 37-32 | 1443.3 | +15.3 | 1458.7 |
-| 2025-26 | 37 | Luke Lockwood | Levi Morant | L | 32-37 | 1542.5 | -15.3 | 1527.2 |
-| 2025-26 | 17 | Drake Byrd | Levi Morant | L | 23-45 | 1558.1 | -15.2 | 1542.8 |
-| 2025-26 | 17 | Levi Morant | Drake Byrd | W | 45-23 | 1462.5 | +15.2 | 1477.7 |
-| 2025-26 | 13 | Drake Byrd | Ethan Ellsworth | L | 39-41 | 1539.8 | -15.1 | 1524.7 |
-| 2025-26 | 13 | Ethan Ellsworth | Drake Byrd | W | 41-39 | 1449.3 | +15.1 | 1464.4 |
-| 2025-26 | 33 | Ethan Ellsworth | Levi Morant | W | 60-34 | 1396.4 | +14.9 | 1411.4 |
-| 2025-26 | 33 | Levi Morant | Ethan Ellsworth | L | 34-60 | 1483.6 | -14.9 | 1468.7 |
-| 2025-26 | 21 | Ethan Ellsworth | Justin Miller | W | 51-35 | 1450.5 | +14.8 | 1465.3 |
-| 2025-26 | 21 | Justin Miller | Ethan Ellsworth | L | 35-51 | 1533.6 | -14.8 | 1518.8 |
-| 2025-26 | 27 | Levi Morant | Ryan Donlan | W | 66-48 | 1477.5 | +14.8 | 1492.3 |
-| 2025-26 | 27 | Ryan Donlan | Levi Morant | L | 48-66 | 1560.8 | -14.8 | 1545.9 |
-| 2025-26 | 25 | Ryan Donlan | Ryan Houseman | L | 30-39 | 1564.0 | -14.8 | 1549.3 |
-| 2025-26 | 25 | Ryan Houseman | Ryan Donlan | W | 39-30 | 1482.5 | +14.8 | 1497.2 |
-| 2025-26 | 25 | Julius Long | Luke Lockwood | W | 49-34 | 1451.2 | +14.6 | 1465.8 |
-| 2025-26 | 25 | Luke Lockwood | Julius Long | L | 34-49 | 1526.2 | -14.6 | 1511.6 |
-| 2025-26 | 11 | Alexander Chaban | Drake Byrd | W | 42-39 | 1472.0 | +14.4 | 1486.4 |
-| 2025-26 | 11 | Drake Byrd | Alexander Chaban | L | 39-42 | 1543.5 | -14.4 | 1529.1 |
-| 2025-26 | 4 | Alexander Chaban | Levi Morant | L | 59-62 | 1536.0 | -14.4 | 1521.5 |
-| 2025-26 | 4 | Levi Morant | Alexander Chaban | W | 62-59 | 1464.8 | +14.4 | 1479.2 |
-| 2025-26 | 27 | Alexander Chaban | Julius Long | L | 37-44 | 1524.1 | -14.4 | 1509.8 |
-| 2025-26 | 27 | Julius Long | Alexander Chaban | W | 44-37 | 1454.9 | +14.4 | 1469.2 |
-
+</section>
+</div>
 </details>
 
 <details>

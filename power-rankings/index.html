@@ -122,7 +122,8 @@
     details > ul,
     details > h3,
     details > .table-wrap,
-    details > .rating-chart-wrap {
+    details > .rating-chart-wrap,
+    details > .power-tabs {
       margin-left: 18px;
       margin-right: 18px;
     }
@@ -326,6 +327,67 @@
       font-size: 12px;
       font-weight: 700;
     }
+    .power-tabs {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .power-tab-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .power-tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #eef2f7;
+    }
+    .power-tab-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #344054;
+      font-weight: 800;
+      cursor: pointer;
+      user-select: none;
+    }
+    .power-tab-panel {
+      display: none;
+      padding: 2px 0 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+    .power-tab-panel > h3,
+    .power-tab-panel > p,
+    .power-tab-panel > .table-wrap,
+    .power-tab-panel > .rating-chart-wrap {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    .power-tab-panel > h3:first-child {
+      margin-top: 18px;
+    }
+    #power-season-2025-26:checked ~ .power-tab-list label[for="power-season-2025-26"],
+    #power-season-2024-25:checked ~ .power-tab-list label[for="power-season-2024-25"] {
+      background: #075e5a;
+      border-color: #075e5a;
+      color: #ffffff;
+    }
+    #power-season-2025-26:checked ~ #power-panel-2025-26,
+    #power-season-2024-25:checked ~ #power-panel-2024-25 {
+      display: block;
+    }
     strong {
       color: var(--accent-2);
     }
@@ -369,7 +431,19 @@
       details > ul,
       details > h3,
       details > .table-wrap,
-      details > .rating-chart-wrap {
+      details > .rating-chart-wrap,
+      details > .power-tabs {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .power-tab-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .power-tab-panel > h3,
+      .power-tab-panel > p,
+      .power-tab-panel > .table-wrap,
+      .power-tab-panel > .rating-chart-wrap {
         margin-left: 10px;
         margin-right: 10px;
       }
@@ -501,8 +575,8 @@
 <li><strong>Most Weeks At #1 In A Season</strong>: Ryan Donlan (26 weeks in 2024-25).</li>
 </ul>
 <details open>
-<summary><h2>Elo Movement Charts</h2></summary>
-<p>Use these charts to see the week-by-week rating paths. Each season starts fresh at 1500, so the lines show that year&#x27;s power movement only.</p>
+<summary><h2>Season Elo Tabs</h2></summary>
+<p>Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, weekly path, time-at-top table, and biggest rating swings.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 <ul>
@@ -514,6 +588,208 @@
 <li>This first version intentionally uses only H2H result and opponent strength, with no score or margin bonus.</li>
 </ul>
 </details>
+<div class="power-tabs">
+<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2025-26" checked>
+<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2024-25">
+<div class="power-tab-list" role="tablist" aria-label="Power rankings seasons">
+<label class="power-tab-label" id="power-season-2025-26-label" role="tab" for="power-season-2025-26">2025-26</label>
+<label class="power-tab-label" id="power-season-2024-25-label" role="tab" for="power-season-2024-25">2024-25</label>
+</div>
+<section class="power-tab-panel" id="power-panel-2025-26" role="tabpanel" aria-labelledby="power-season-2025-26-label">
+<h3>2025-26 Elo Movement</h3>
+<div class="rating-chart-wrap" role="img" aria-label="2025-26 Elo rating movement chart">
+<svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
+<text class="chart-title" x="64" y="18">2025-26 Elo Movement</text>
+<line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
+<line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
+<line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
+<text class="axis-label" x="54" y="402.0" text-anchor="end">1375</text>
+<line class="grid-line" x1="64" y1="367.2" x2="884" y2="367.2" />
+<text class="axis-label" x="54" y="371.2" text-anchor="end">1400</text>
+<line class="grid-line" x1="64" y1="336.3" x2="884" y2="336.3" />
+<text class="axis-label" x="54" y="340.3" text-anchor="end">1425</text>
+<line class="grid-line" x1="64" y1="305.5" x2="884" y2="305.5" />
+<text class="axis-label" x="54" y="309.5" text-anchor="end">1450</text>
+<line class="grid-line" x1="64" y1="274.7" x2="884" y2="274.7" />
+<text class="axis-label" x="54" y="278.7" text-anchor="end">1475</text>
+<line class="grid-line" x1="64" y1="243.8" x2="884" y2="243.8" />
+<text class="axis-label" x="54" y="247.8" text-anchor="end">1500</text>
+<line class="grid-line" x1="64" y1="213.0" x2="884" y2="213.0" />
+<text class="axis-label" x="54" y="217.0" text-anchor="end">1525</text>
+<line class="grid-line" x1="64" y1="182.2" x2="884" y2="182.2" />
+<text class="axis-label" x="54" y="186.2" text-anchor="end">1550</text>
+<line class="grid-line" x1="64" y1="151.3" x2="884" y2="151.3" />
+<text class="axis-label" x="54" y="155.3" text-anchor="end">1575</text>
+<line class="grid-line" x1="64" y1="120.5" x2="884" y2="120.5" />
+<text class="axis-label" x="54" y="124.5" text-anchor="end">1600</text>
+<line class="grid-line" x1="64" y1="89.7" x2="884" y2="89.7" />
+<text class="axis-label" x="54" y="93.7" text-anchor="end">1625</text>
+<line class="grid-line" x1="64" y1="58.8" x2="884" y2="58.8" />
+<text class="axis-label" x="54" y="62.8" text-anchor="end">1650</text>
+<line class="grid-line" x1="64" y1="28.0" x2="884" y2="28.0" />
+<text class="axis-label" x="54" y="32.0" text-anchor="end">1675</text>
+<line class="tick-line" x1="64.0" y1="398" x2="64.0" y2="404" />
+<text class="axis-label" x="64.0" y="422" text-anchor="middle">Start</text>
+<line class="tick-line" x1="174.8" y1="398" x2="174.8" y2="404" />
+<text class="axis-label" x="174.8" y="422" text-anchor="middle">5</text>
+<line class="tick-line" x1="285.6" y1="398" x2="285.6" y2="404" />
+<text class="axis-label" x="285.6" y="422" text-anchor="middle">10</text>
+<line class="tick-line" x1="396.4" y1="398" x2="396.4" y2="404" />
+<text class="axis-label" x="396.4" y="422" text-anchor="middle">15</text>
+<line class="tick-line" x1="507.2" y1="398" x2="507.2" y2="404" />
+<text class="axis-label" x="507.2" y="422" text-anchor="middle">20</text>
+<line class="tick-line" x1="618.1" y1="398" x2="618.1" y2="404" />
+<text class="axis-label" x="618.1" y="422" text-anchor="middle">25</text>
+<line class="tick-line" x1="728.9" y1="398" x2="728.9" y2="404" />
+<text class="axis-label" x="728.9" y="422" text-anchor="middle">30</text>
+<line class="tick-line" x1="839.7" y1="398" x2="839.7" y2="404" />
+<text class="axis-label" x="839.7" y="422" text-anchor="middle">35</text>
+<line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
+<text class="axis-label" x="884.0" y="422" text-anchor="middle">37</text>
+<text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
+<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Elo rating</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,286.3 152.6,270.5 174.8,253.9 197.0,237.2 219.1,253.2 241.3,239.5 263.5,255.2 285.6,239.7 307.8,226.2 329.9,239.4 352.1,225.6 374.3,241.6 396.4,255.0 418.6,240.2 440.8,225.2 462.9,212.0 485.1,197.6 507.2,186.1 529.4,171.0 551.6,159.4 573.7,177.0 595.9,164.9 618.1,183.1 640.2,168.9 662.4,187.2 684.5,173.4 706.7,163.8 728.9,150.5 751.0,141.0 773.2,131.1 795.4,119.9 817.5,109.5 839.7,95.9 861.8,87.8 884.0,78.2" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="78.2" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
+<line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
+<text class="legend-label" x="940" y="48">Ryan Donlan</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,242.8 130.5,256.7 152.6,241.9 174.8,255.7 197.0,270.7 219.1,285.4 241.3,299.1 263.5,281.4 285.6,266.0 307.8,278.3 329.9,263.9 352.1,247.4 374.3,261.0 396.4,247.4 418.6,233.6 440.8,248.6 462.9,232.5 485.1,219.2 507.2,202.4 529.4,220.6 551.6,207.1 573.7,193.5 595.9,182.0 618.1,201.0 640.2,215.2 662.4,230.6 684.5,215.8 706.7,200.2 728.9,190.1 751.0,176.0 773.2,162.8 795.4,153.6 817.5,143.1 839.7,156.7 861.8,144.5 884.0,136.4" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="136.4" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
+<line class="legend-swatch" x1="910" y1="72" x2="932" y2="72" stroke="hsl(352 76% 38%)" />
+<text class="legend-label" x="940" y="76">Justin Miller</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,244.9 130.5,231.0 152.6,216.2 174.8,232.9 197.0,218.2 219.1,204.3 241.3,190.5 263.5,205.2 285.6,192.0 307.8,179.7 329.9,166.5 352.1,184.2 374.3,171.0 396.4,158.7 418.6,148.9 440.8,153.9 462.9,140.4 485.1,160.0 507.2,176.8 529.4,191.9 551.6,208.4 573.7,195.7 595.9,211.6 618.1,229.5 640.2,217.4 662.4,204.3 684.5,191.2 706.7,206.8 728.9,220.2 751.0,204.8 773.2,190.7 795.4,179.6 817.5,170.2 839.7,190.4 861.8,191.4 884.0,210.3" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="210.3" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
+<line class="legend-swatch" x1="910" y1="100" x2="932" y2="100" stroke="hsl(266 76% 38%)" />
+<text class="legend-label" x="940" y="104">Luke Lockwood</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,273.4 130.5,258.6 152.6,273.3 174.8,256.6 197.0,270.4 219.1,254.5 241.3,240.0 263.5,225.5 285.6,208.9 307.8,225.8 329.9,212.8 352.1,229.4 374.3,242.6 396.4,256.7 418.6,271.4 440.8,255.6 462.9,271.7 485.1,254.6 507.2,270.9 529.4,256.4 551.6,270.0 573.7,282.7 595.9,265.5 618.1,247.3 640.2,230.8 662.4,219.0 684.5,235.9 706.7,222.8 728.9,209.9 751.0,224.0 773.2,238.2 795.4,252.0 817.5,262.4 839.7,249.8 861.8,237.3 884.0,221.8" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="221.8" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
+<line class="legend-swatch" x1="910" y1="128" x2="932" y2="128" stroke="hsl(12 76% 38%)" />
+<text class="legend-label" x="940" y="132">Ryan Houseman</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,243.8 130.5,229.0 152.6,213.3 174.8,199.5 197.0,216.1 219.1,201.3 241.3,188.3 263.5,173.6 285.6,190.1 307.8,208.0 329.9,194.8 352.1,213.3 374.3,199.7 396.4,186.3 418.6,172.2 440.8,191.0 462.9,204.5 485.1,221.6 507.2,238.8 529.4,255.0 551.6,241.3 573.7,254.9 595.9,267.1 618.1,251.0 640.2,267.1 662.4,280.2 684.5,263.3 706.7,247.9 728.9,234.8 751.0,223.9 773.2,237.0 795.4,248.2 817.5,231.6 839.7,218.9 861.8,218.0 884.0,233.4" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="233.4" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
+<line class="legend-swatch" x1="910" y1="156" x2="932" y2="156" stroke="hsl(154 76% 38%)" />
+<text class="legend-label" x="940" y="160">Drake Byrd</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,287.2 152.6,269.5 174.8,284.4 197.0,267.9 219.1,253.2 241.3,266.2 263.5,250.5 285.6,263.7 307.8,278.0 329.9,291.0 352.1,274.6 374.3,260.1 396.4,276.3 418.6,290.1 440.8,271.3 462.9,284.5 485.1,264.9 507.2,278.8 529.4,293.4 551.6,306.9 573.7,291.0 595.9,306.6 618.1,287.6 640.2,271.5 662.4,253.3 684.5,266.4 706.7,280.0 728.9,292.8 751.0,277.4 773.2,264.0 795.4,282.5 817.5,293.0 839.7,305.7 861.8,313.7 884.0,294.8" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="294.8" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
+<line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
+<text class="legend-label" x="940" y="188">Levi Morant</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,243.8 130.5,258.6 152.6,274.4 174.8,259.4 197.0,244.5 219.1,258.4 241.3,272.2 263.5,287.2 285.6,271.6 307.8,254.6 329.9,267.8 352.1,281.6 374.3,296.2 396.4,309.8 418.6,319.6 440.8,331.0 462.9,313.8 485.1,297.7 507.2,281.4 529.4,265.1 551.6,276.7 573.7,292.6 595.9,304.0 618.1,286.1 640.2,299.5 662.4,281.8 684.5,283.5 706.7,296.7 728.9,309.8 751.0,319.4 773.2,332.7 795.4,341.9 817.5,351.4 839.7,331.9 861.8,317.4 884.0,332.6" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="332.6" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
+<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
+<text class="legend-label" x="940" y="216">Julius Long</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,230.0 152.6,244.9 174.8,229.1 197.0,215.2 219.1,230.1 241.3,216.3 263.5,233.9 285.6,249.4 307.8,235.1 329.9,250.8 352.1,233.1 374.3,220.2 396.4,206.2 418.6,220.3 440.8,208.8 462.9,225.0 485.1,239.4 507.2,225.5 529.4,241.9 551.6,225.4 573.7,213.1 595.9,230.3 618.1,246.4 640.2,232.9 662.4,217.5 684.5,231.3 706.7,217.7 728.9,204.4 751.0,219.8 773.2,209.7 795.4,195.9 817.5,212.5 839.7,231.9 861.8,244.1 884.0,253.8" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="253.8" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
+<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
+<text class="legend-label" x="940" y="244">Dylan Reid</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,201.4 152.6,217.2 174.8,232.9 197.0,249.5 219.1,234.7 241.3,248.4 263.5,262.9 285.6,278.6 307.8,292.0 329.9,306.3 352.1,287.8 374.3,300.7 396.4,284.5 418.6,298.4 440.8,293.4 462.9,277.3 485.1,293.4 507.2,304.9 529.4,286.6 551.6,300.3 573.7,312.6 595.9,297.0 618.1,308.8 640.2,320.9 662.4,332.7 684.5,330.9 706.7,340.5 728.9,350.6 751.0,361.5 773.2,371.6 795.4,353.2 817.5,336.9 839.7,316.6 861.8,329.2 884.0,313.9" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="313.9" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
+<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
+<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
+<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,214.2 130.5,199.5 152.6,217.3 174.8,233.9 197.0,248.7 219.1,263.5 241.3,278.0 263.5,263.0 285.6,278.4 307.8,260.6 329.9,244.9 352.1,261.3 374.3,245.3 396.4,257.5 418.6,243.7 440.8,259.4 462.9,276.7 485.1,289.9 507.2,272.8 529.4,256.4 551.6,242.9 573.7,225.2 595.9,209.4 618.1,197.6 640.2,214.1 662.4,231.8 684.5,246.6 706.7,261.9 728.9,275.2 751.0,290.6 773.2,300.5 795.4,311.5 817.5,327.8 839.7,340.3 861.8,354.8 884.0,362.9" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="362.9" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
+<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
+<text class="legend-label" x="940" y="300">Alexander Chaban</text>
+</svg>
+</div>
+<h3>2025-26 Power Rankings</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Final Rating</th><th>Net</th><th>Peak</th><th>Peak Week</th><th>Low</th><th>Low Week</th><th>Avg Rank</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Final Rating">1634.3</td><td data-label="Net">+134.3</td><td data-label="Peak">1634.3</td><td data-label="Peak Week">2025-26 37</td><td data-label="Low">1465.6</td><td data-label="Low Week">2025-26 3</td><td data-label="Avg Rank">3.19</td><td data-label="Weeks #1">17</td><td data-label="Top 3 Weeks">21</td><td data-label="Bottom 3 Weeks">4</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Final Rating">1587.1</td><td data-label="Net">+87.1</td><td data-label="Peak">1587.1</td><td data-label="Peak Week">2025-26 37</td><td data-label="Low">1455.2</td><td data-label="Low Week">2025-26 8</td><td data-label="Avg Rank">4.59</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">18</td><td data-label="Bottom 3 Weeks">6</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Luke Lockwood</td><td data-label="Final Rating">1527.2</td><td data-label="Net">+27.2</td><td data-label="Peak">1583.9</td><td data-label="Peak Week">2025-26 18</td><td data-label="Low">1499.2</td><td data-label="Low Week">2025-26 2</td><td data-label="Avg Rank">2.62</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">29</td><td data-label="Bottom 3 Weeks">0</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Ryan Houseman</td><td data-label="Final Rating">1517.8</td><td data-label="Net">+17.8</td><td data-label="Peak">1528.3</td><td data-label="Peak Week">2025-26 10</td><td data-label="Low">1468.5</td><td data-label="Low Week">2025-26 23</td><td data-label="Avg Rank">5.89</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">5</td></tr>
+<tr><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Final Rating">1508.4</td><td data-label="Net">+8.4</td><td data-label="Peak">1558.1</td><td data-label="Peak Week">2025-26 16</td><td data-label="Low">1470.5</td><td data-label="Low Week">2025-26 27</td><td data-label="Avg Rank">3.78</td><td data-label="Weeks #1">6</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td></tr>
+<tr><td data-label="Rank">6</td><td data-label="Manager">Dylan Reid</td><td data-label="Final Rating">1492.0</td><td data-label="Net">-8.1</td><td data-label="Peak">1538.9</td><td data-label="Peak Week">2025-26 33</td><td data-label="Low">1492.0</td><td data-label="Low Week">2025-26 37</td><td data-label="Avg Rank">4.03</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">12</td><td data-label="Bottom 3 Weeks">0</td></tr>
+<tr><td data-label="Rank">7</td><td data-label="Manager">Levi Morant</td><td data-label="Final Rating">1458.7</td><td data-label="Net">-41.4</td><td data-label="Peak">1494.6</td><td data-label="Peak Week">2025-26 9</td><td data-label="Low">1443.3</td><td data-label="Low Week">2025-26 36</td><td data-label="Avg Rank">7.81</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">22</td></tr>
+<tr><td data-label="Rank">8</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Final Rating">1443.2</td><td data-label="Net">-56.9</td><td data-label="Peak">1534.4</td><td data-label="Peak Week">2025-26 3</td><td data-label="Low">1396.4</td><td data-label="Low Week">2025-26 32</td><td data-label="Avg Rank">8.19</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">28</td></tr>
+<tr><td data-label="Rank">9</td><td data-label="Manager">Julius Long</td><td data-label="Final Rating">1428.0</td><td data-label="Net">-72.0</td><td data-label="Peak">1500.0</td><td data-label="Peak Week">2025-26 2</td><td data-label="Low">1412.8</td><td data-label="Low Week">2025-26 34</td><td data-label="Avg Rank">8.62</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">33</td></tr>
+<tr><td data-label="Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Final Rating">1403.5</td><td data-label="Net">-96.5</td><td data-label="Peak">1537.5</td><td data-label="Peak Week">2025-26 25</td><td data-label="Low">1403.5</td><td data-label="Low Week">2025-26 37</td><td data-label="Avg Rank">6.27</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">12</td></tr>
+</tbody></table></div>
+<h3>2025-26 Weekly Path</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Week</th><th>#1</th><th>#2</th><th>#3</th><th>#4</th><th>#5</th><th>Bottom</th></tr></thead>
+<tbody>
+<tr><td data-label="Week">1</td><td data-label="#1">Alexander Chaban (1512)</td><td data-label="#2">Drake Byrd (1512)</td><td data-label="#3">Dylan Reid (1512)</td><td data-label="#4">Ethan Ellsworth (1512)</td><td data-label="#5">Luke Lockwood (1512)</td><td data-label="Bottom">Ryan Houseman (1488)</td></tr>
+<tr><td data-label="Week">2</td><td data-label="#1">Alexander Chaban (1524)</td><td data-label="#2">Dylan Reid (1523)</td><td data-label="#3">Ethan Ellsworth (1523)</td><td data-label="#4">Justin Miller (1501)</td><td data-label="#5">Drake Byrd (1500)</td><td data-label="Bottom">Ryan Houseman (1476)</td></tr>
+<tr><td data-label="Week">3</td><td data-label="#1">Alexander Chaban (1536)</td><td data-label="#2">Ethan Ellsworth (1534)</td><td data-label="#3">Drake Byrd (1512)</td><td data-label="#4">Dylan Reid (1511)</td><td data-label="#5">Luke Lockwood (1510)</td><td data-label="Bottom">Levi Morant (1465)</td></tr>
+<tr><td data-label="Week">4</td><td data-label="#1">Drake Byrd (1525)</td><td data-label="#2">Luke Lockwood (1522)</td><td data-label="#3">Ethan Ellsworth (1522)</td><td data-label="#4">Alexander Chaban (1522)</td><td data-label="#5">Justin Miller (1502)</td><td data-label="Bottom">Julius Long (1475)</td></tr>
+<tr><td data-label="Week">5</td><td data-label="#1">Drake Byrd (1536)</td><td data-label="#2">Dylan Reid (1512)</td><td data-label="#3">Ethan Ellsworth (1509)</td><td data-label="#4">Luke Lockwood (1509)</td><td data-label="#5">Alexander Chaban (1508)</td><td data-label="Bottom">Levi Morant (1467)</td></tr>
+<tr><td data-label="Week">6</td><td data-label="#1">Dylan Reid (1523)</td><td data-label="#2">Drake Byrd (1522)</td><td data-label="#3">Luke Lockwood (1521)</td><td data-label="#4">Ryan Donlan (1505)</td><td data-label="#5">Julius Long (1499)</td><td data-label="Bottom">Justin Miller (1478)</td></tr>
+<tr><td data-label="Week">7</td><td data-label="#1">Drake Byrd (1534)</td><td data-label="#2">Luke Lockwood (1532)</td><td data-label="#3">Dylan Reid (1511)</td><td data-label="#4">Ethan Ellsworth (1507)</td><td data-label="#5">Levi Morant (1492)</td><td data-label="Bottom">Justin Miller (1466)</td></tr>
+<tr><td data-label="Week">8</td><td data-label="#1">Drake Byrd (1545)</td><td data-label="#2">Luke Lockwood (1543)</td><td data-label="#3">Dylan Reid (1522)</td><td data-label="#4">Ryan Donlan (1504)</td><td data-label="#5">Ryan Houseman (1503)</td><td data-label="Bottom">Justin Miller (1455)</td></tr>
+<tr><td data-label="Week">9</td><td data-label="#1">Drake Byrd (1557)</td><td data-label="#2">Luke Lockwood (1531)</td><td data-label="#3">Ryan Houseman (1515)</td><td data-label="#4">Dylan Reid (1508)</td><td data-label="#5">Levi Morant (1495)</td><td data-label="Bottom">Julius Long (1465)</td></tr>
+<tr><td data-label="Week">10</td><td data-label="#1">Drake Byrd (1544)</td><td data-label="#2">Luke Lockwood (1542)</td><td data-label="#3">Ryan Houseman (1528)</td><td data-label="#4">Ryan Donlan (1503)</td><td data-label="#5">Dylan Reid (1495)</td><td data-label="Bottom">Ethan Ellsworth (1472)</td></tr>
+<tr><td data-label="Week">11</td><td data-label="#1">Luke Lockwood (1552)</td><td data-label="#2">Drake Byrd (1529)</td><td data-label="#3">Ryan Houseman (1515)</td><td data-label="#4">Ryan Donlan (1514)</td><td data-label="#5">Dylan Reid (1507)</td><td data-label="Bottom">Ethan Ellsworth (1461)</td></tr>
+<tr><td data-label="Week">12</td><td data-label="#1">Luke Lockwood (1563)</td><td data-label="#2">Drake Byrd (1540)</td><td data-label="#3">Ryan Houseman (1525)</td><td data-label="#4">Ryan Donlan (1504)</td><td data-label="#5">Alexander Chaban (1499)</td><td data-label="Bottom">Ethan Ellsworth (1449)</td></tr>
+<tr><td data-label="Week">13</td><td data-label="#1">Luke Lockwood (1548)</td><td data-label="#2">Drake Byrd (1525)</td><td data-label="#3">Ryan Donlan (1515)</td><td data-label="#4">Ryan Houseman (1512)</td><td data-label="#5">Dylan Reid (1509)</td><td data-label="Bottom">Ethan Ellsworth (1464)</td></tr>
+<tr><td data-label="Week">14</td><td data-label="#1">Luke Lockwood (1559)</td><td data-label="#2">Drake Byrd (1536)</td><td data-label="#3">Dylan Reid (1519)</td><td data-label="#4">Ryan Donlan (1502)</td><td data-label="#5">Ryan Houseman (1501)</td><td data-label="Bottom">Ethan Ellsworth (1454)</td></tr>
+<tr><td data-label="Week">15</td><td data-label="#1">Luke Lockwood (1569)</td><td data-label="#2">Drake Byrd (1547)</td><td data-label="#3">Dylan Reid (1531)</td><td data-label="#4">Justin Miller (1497)</td><td data-label="#5">Ryan Donlan (1491)</td><td data-label="Bottom">Julius Long (1447)</td></tr>
+<tr><td data-label="Week">16</td><td data-label="#1">Luke Lockwood (1577)</td><td data-label="#2">Drake Byrd (1558)</td><td data-label="#3">Dylan Reid (1519)</td><td data-label="#4">Justin Miller (1508)</td><td data-label="#5">Ryan Donlan (1503)</td><td data-label="Bottom">Julius Long (1439)</td></tr>
+<tr><td data-label="Week">17</td><td data-label="#1">Luke Lockwood (1573)</td><td data-label="#2">Drake Byrd (1543)</td><td data-label="#3">Dylan Reid (1528)</td><td data-label="#4">Ryan Donlan (1515)</td><td data-label="#5">Justin Miller (1496)</td><td data-label="Bottom">Julius Long (1429)</td></tr>
+<tr><td data-label="Week">18</td><td data-label="#1">Luke Lockwood (1584)</td><td data-label="#2">Drake Byrd (1532)</td><td data-label="#3">Ryan Donlan (1526)</td><td data-label="#4">Dylan Reid (1515)</td><td data-label="#5">Justin Miller (1509)</td><td data-label="Bottom">Julius Long (1443)</td></tr>
+<tr><td data-label="Week">19</td><td data-label="#1">Luke Lockwood (1568)</td><td data-label="#2">Ryan Donlan (1537)</td><td data-label="#3">Justin Miller (1520)</td><td data-label="#4">Drake Byrd (1518)</td><td data-label="#5">Dylan Reid (1504)</td><td data-label="Bottom">Julius Long (1456)</td></tr>
+<tr><td data-label="Week">20</td><td data-label="#1">Luke Lockwood (1554)</td><td data-label="#2">Ryan Donlan (1547)</td><td data-label="#3">Justin Miller (1534)</td><td data-label="#4">Dylan Reid (1515)</td><td data-label="#5">Drake Byrd (1504)</td><td data-label="Bottom">Ethan Ellsworth (1450)</td></tr>
+<tr><td data-label="Week">21</td><td data-label="#1">Ryan Donlan (1559)</td><td data-label="#2">Luke Lockwood (1542)</td><td data-label="#3">Justin Miller (1519)</td><td data-label="#4">Dylan Reid (1502)</td><td data-label="#5">Drake Byrd (1491)</td><td data-label="Bottom">Levi Morant (1460)</td></tr>
+<tr><td data-label="Week">22</td><td data-label="#1">Ryan Donlan (1568)</td><td data-label="#2">Justin Miller (1530)</td><td data-label="#3">Luke Lockwood (1529)</td><td data-label="#4">Dylan Reid (1515)</td><td data-label="#5">Drake Byrd (1502)</td><td data-label="Bottom">Levi Morant (1449)</td></tr>
+<tr><td data-label="Week">23</td><td data-label="#1">Ryan Donlan (1554)</td><td data-label="#2">Justin Miller (1541)</td><td data-label="#3">Luke Lockwood (1539)</td><td data-label="#4">Dylan Reid (1525)</td><td data-label="#5">Alexander Chaban (1515)</td><td data-label="Bottom">Ethan Ellsworth (1444)</td></tr>
+<tr><td data-label="Week">24</td><td data-label="#1">Ryan Donlan (1564)</td><td data-label="#2">Justin Miller (1550)</td><td data-label="#3">Alexander Chaban (1528)</td><td data-label="#4">Luke Lockwood (1526)</td><td data-label="#5">Dylan Reid (1511)</td><td data-label="Bottom">Levi Morant (1449)</td></tr>
+<tr><td data-label="Week">25</td><td data-label="#1">Ryan Donlan (1549)</td><td data-label="#2">Alexander Chaban (1538)</td><td data-label="#3">Justin Miller (1535)</td><td data-label="#4">Luke Lockwood (1512)</td><td data-label="#5">Dylan Reid (1498)</td><td data-label="Bottom">Ethan Ellsworth (1447)</td></tr>
+<tr><td data-label="Week">26</td><td data-label="#1">Ryan Donlan (1561)</td><td data-label="#2">Alexander Chaban (1524)</td><td data-label="#3">Justin Miller (1523)</td><td data-label="#4">Luke Lockwood (1521)</td><td data-label="#5">Ryan Houseman (1511)</td><td data-label="Bottom">Ethan Ellsworth (1437)</td></tr>
+<tr><td data-label="Week">27</td><td data-label="#1">Ryan Donlan (1546)</td><td data-label="#2">Luke Lockwood (1532)</td><td data-label="#3">Dylan Reid (1521)</td><td data-label="#4">Ryan Houseman (1520)</td><td data-label="#5">Justin Miller (1511)</td><td data-label="Bottom">Ethan Ellsworth (1428)</td></tr>
+<tr><td data-label="Week">28</td><td data-label="#1">Ryan Donlan (1557)</td><td data-label="#2">Luke Lockwood (1543)</td><td data-label="#3">Justin Miller (1523)</td><td data-label="#4">Dylan Reid (1510)</td><td data-label="#5">Ryan Houseman (1506)</td><td data-label="Bottom">Ethan Ellsworth (1429)</td></tr>
+<tr><td data-label="Week">29</td><td data-label="#1">Ryan Donlan (1565)</td><td data-label="#2">Justin Miller (1535)</td><td data-label="#3">Luke Lockwood (1530)</td><td data-label="#4">Dylan Reid (1521)</td><td data-label="#5">Ryan Houseman (1517)</td><td data-label="Bottom">Ethan Ellsworth (1422)</td></tr>
+<tr><td data-label="Week">30</td><td data-label="#1">Ryan Donlan (1576)</td><td data-label="#2">Justin Miller (1544)</td><td data-label="#3">Dylan Reid (1532)</td><td data-label="#4">Ryan Houseman (1527)</td><td data-label="#5">Luke Lockwood (1519)</td><td data-label="Bottom">Ethan Ellsworth (1413)</td></tr>
+<tr><td data-label="Week">31</td><td data-label="#1">Ryan Donlan (1583)</td><td data-label="#2">Justin Miller (1555)</td><td data-label="#3">Luke Lockwood (1532)</td><td data-label="#4">Dylan Reid (1520)</td><td data-label="#5">Drake Byrd (1516)</td><td data-label="Bottom">Ethan Ellsworth (1405)</td></tr>
+<tr><td data-label="Week">32</td><td data-label="#1">Ryan Donlan (1591)</td><td data-label="#2">Justin Miller (1566)</td><td data-label="#3">Luke Lockwood (1543)</td><td data-label="#4">Dylan Reid (1528)</td><td data-label="#5">Drake Byrd (1506)</td><td data-label="Bottom">Ethan Ellsworth (1396)</td></tr>
+<tr><td data-label="Week">33</td><td data-label="#1">Ryan Donlan (1600)</td><td data-label="#2">Justin Miller (1573)</td><td data-label="#3">Luke Lockwood (1552)</td><td data-label="#4">Dylan Reid (1539)</td><td data-label="#5">Drake Byrd (1496)</td><td data-label="Bottom">Ethan Ellsworth (1411)</td></tr>
+<tr><td data-label="Week">34</td><td data-label="#1">Ryan Donlan (1609)</td><td data-label="#2">Justin Miller (1582)</td><td data-label="#3">Luke Lockwood (1560)</td><td data-label="#4">Dylan Reid (1525)</td><td data-label="#5">Drake Byrd (1510)</td><td data-label="Bottom">Julius Long (1413)</td></tr>
+<tr><td data-label="Week">35</td><td data-label="#1">Ryan Donlan (1620)</td><td data-label="#2">Justin Miller (1571)</td><td data-label="#3">Luke Lockwood (1543)</td><td data-label="#4">Drake Byrd (1520)</td><td data-label="#5">Dylan Reid (1510)</td><td data-label="Bottom">Alexander Chaban (1422)</td></tr>
+<tr><td data-label="Week">36</td><td data-label="#1">Ryan Donlan (1626)</td><td data-label="#2">Justin Miller (1581)</td><td data-label="#3">Luke Lockwood (1542)</td><td data-label="#4">Drake Byrd (1521)</td><td data-label="#5">Ryan Houseman (1505)</td><td data-label="Bottom">Alexander Chaban (1410)</td></tr>
+<tr><td data-label="Week">37</td><td data-label="#1">Ryan Donlan (1634)</td><td data-label="#2">Justin Miller (1587)</td><td data-label="#3">Luke Lockwood (1527)</td><td data-label="#4">Ryan Houseman (1518)</td><td data-label="#5">Drake Byrd (1508)</td><td data-label="Bottom">Alexander Chaban (1403)</td></tr>
+</tbody></table></div>
+<h3>2025-26 Time At The Top And Bottom</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th><th>Avg Rank</th><th>Final Rank</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Weeks #1">17</td><td data-label="Top 3 Weeks">21</td><td data-label="Bottom 3 Weeks">4</td><td data-label="Avg Rank">3.19</td><td data-label="Final Rank">1</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">29</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">2.62</td><td data-label="Final Rank">3</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Weeks #1">6</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td><td data-label="Avg Rank">3.78</td><td data-label="Final Rank">5</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">12</td><td data-label="Avg Rank">6.27</td><td data-label="Final Rank">10</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">12</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">4.03</td><td data-label="Final Rank">6</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">18</td><td data-label="Bottom 3 Weeks">6</td><td data-label="Avg Rank">4.59</td><td data-label="Final Rank">2</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">5</td><td data-label="Avg Rank">5.89</td><td data-label="Final Rank">4</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">28</td><td data-label="Avg Rank">8.19</td><td data-label="Final Rank">8</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">22</td><td data-label="Avg Rank">7.81</td><td data-label="Final Rank">7</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">33</td><td data-label="Avg Rank">8.62</td><td data-label="Final Rank">9</td></tr>
+</tbody></table></div>
+<h3>2025-26 Biggest Rating Swings</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Week</th><th>Manager</th><th>Opponent</th><th>Result</th><th>Score</th><th>Rating Before</th><th>Rating Change</th><th>Rating After</th></tr></thead>
+<tbody>
+<tr><td data-label="Week">35</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">42-21</td><td data-label="Rating Before">1424.5</td><td data-label="Rating Change">+16.4</td><td data-label="Rating After">1441.0</td></tr>
+<tr><td data-label="Week">35</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">21-42</td><td data-label="Rating Before">1559.7</td><td data-label="Rating Change">-16.4</td><td data-label="Rating After">1543.3</td></tr>
+<tr><td data-label="Week">19</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">48-45</td><td data-label="Rating Before">1467.0</td><td data-label="Rating Change">+15.9</td><td data-label="Rating After">1482.9</td></tr>
+<tr><td data-label="Week">19</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">45-48</td><td data-label="Rating Before">1583.9</td><td data-label="Rating Change">-15.9</td><td data-label="Rating After">1568.0</td></tr>
+<tr><td data-label="Week">35</td><td data-label="Manager">Dylan Reid</td><td data-label="Opponent">Julius Long</td><td data-label="Result">L</td><td data-label="Score">52-59</td><td data-label="Rating Before">1525.4</td><td data-label="Rating Change">-15.8</td><td data-label="Rating After">1509.7</td></tr>
+<tr><td data-label="Week">35</td><td data-label="Manager">Julius Long</td><td data-label="Opponent">Dylan Reid</td><td data-label="Result">W</td><td data-label="Score">59-52</td><td data-label="Rating Before">1412.8</td><td data-label="Rating Change">+15.8</td><td data-label="Rating After">1428.6</td></tr>
+<tr><td data-label="Week">25</td><td data-label="Manager">Justin Miller</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">28-66</td><td data-label="Rating Before">1550.1</td><td data-label="Rating Change">-15.4</td><td data-label="Rating After">1534.7</td></tr>
+<tr><td data-label="Week">25</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Justin Miller</td><td data-label="Result">W</td><td data-label="Score">66-28</td><td data-label="Rating Before">1449.1</td><td data-label="Rating Change">+15.4</td><td data-label="Rating After">1464.5</td></tr>
+<tr><td data-label="Week">37</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">37-32</td><td data-label="Rating Before">1443.3</td><td data-label="Rating Change">+15.3</td><td data-label="Rating After">1458.7</td></tr>
+<tr><td data-label="Week">37</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">32-37</td><td data-label="Rating Before">1542.5</td><td data-label="Rating Change">-15.3</td><td data-label="Rating After">1527.2</td></tr>
+<tr><td data-label="Week">17</td><td data-label="Manager">Drake Byrd</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">23-45</td><td data-label="Rating Before">1558.1</td><td data-label="Rating Change">-15.2</td><td data-label="Rating After">1542.8</td></tr>
+<tr><td data-label="Week">17</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Drake Byrd</td><td data-label="Result">W</td><td data-label="Score">45-23</td><td data-label="Rating Before">1462.5</td><td data-label="Rating Change">+15.2</td><td data-label="Rating After">1477.7</td></tr>
+<tr><td data-label="Week">13</td><td data-label="Manager">Drake Byrd</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">39-41</td><td data-label="Rating Before">1539.8</td><td data-label="Rating Change">-15.1</td><td data-label="Rating After">1524.7</td></tr>
+<tr><td data-label="Week">13</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Drake Byrd</td><td data-label="Result">W</td><td data-label="Score">41-39</td><td data-label="Rating Before">1449.3</td><td data-label="Rating Change">+15.1</td><td data-label="Rating After">1464.4</td></tr>
+<tr><td data-label="Week">33</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">W</td><td data-label="Score">60-34</td><td data-label="Rating Before">1396.4</td><td data-label="Rating Change">+14.9</td><td data-label="Rating After">1411.4</td></tr>
+<tr><td data-label="Week">33</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">34-60</td><td data-label="Rating Before">1483.6</td><td data-label="Rating Change">-14.9</td><td data-label="Rating After">1468.7</td></tr>
+<tr><td data-label="Week">21</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Justin Miller</td><td data-label="Result">W</td><td data-label="Score">51-35</td><td data-label="Rating Before">1450.5</td><td data-label="Rating Change">+14.8</td><td data-label="Rating After">1465.3</td></tr>
+<tr><td data-label="Week">21</td><td data-label="Manager">Justin Miller</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">35-51</td><td data-label="Rating Before">1533.6</td><td data-label="Rating Change">-14.8</td><td data-label="Rating After">1518.8</td></tr>
+<tr><td data-label="Week">27</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">66-48</td><td data-label="Rating Before">1477.5</td><td data-label="Rating Change">+14.8</td><td data-label="Rating After">1492.3</td></tr>
+<tr><td data-label="Week">27</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">48-66</td><td data-label="Rating Before">1560.8</td><td data-label="Rating Change">-14.8</td><td data-label="Rating After">1545.9</td></tr>
+</tbody></table></div>
+</section>
+<section class="power-tab-panel" id="power-panel-2024-25" role="tabpanel" aria-labelledby="power-season-2024-25-label">
+<h3>2024-25 Elo Movement</h3>
 <div class="rating-chart-wrap" role="img" aria-label="2024-25 Elo rating movement chart">
 <svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
 <text class="chart-title" x="64" y="18">2024-25 Elo Movement</text>
@@ -609,292 +885,106 @@
 <text class="legend-label" x="940" y="300">Alexander Chaban</text>
 </svg>
 </div>
-<div class="rating-chart-wrap" role="img" aria-label="2025-26 Elo rating movement chart">
-<svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
-<text class="chart-title" x="64" y="18">2025-26 Elo Movement</text>
-<line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
-<line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
-<line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
-<text class="axis-label" x="54" y="402.0" text-anchor="end">1375</text>
-<line class="grid-line" x1="64" y1="367.2" x2="884" y2="367.2" />
-<text class="axis-label" x="54" y="371.2" text-anchor="end">1400</text>
-<line class="grid-line" x1="64" y1="336.3" x2="884" y2="336.3" />
-<text class="axis-label" x="54" y="340.3" text-anchor="end">1425</text>
-<line class="grid-line" x1="64" y1="305.5" x2="884" y2="305.5" />
-<text class="axis-label" x="54" y="309.5" text-anchor="end">1450</text>
-<line class="grid-line" x1="64" y1="274.7" x2="884" y2="274.7" />
-<text class="axis-label" x="54" y="278.7" text-anchor="end">1475</text>
-<line class="grid-line" x1="64" y1="243.8" x2="884" y2="243.8" />
-<text class="axis-label" x="54" y="247.8" text-anchor="end">1500</text>
-<line class="grid-line" x1="64" y1="213.0" x2="884" y2="213.0" />
-<text class="axis-label" x="54" y="217.0" text-anchor="end">1525</text>
-<line class="grid-line" x1="64" y1="182.2" x2="884" y2="182.2" />
-<text class="axis-label" x="54" y="186.2" text-anchor="end">1550</text>
-<line class="grid-line" x1="64" y1="151.3" x2="884" y2="151.3" />
-<text class="axis-label" x="54" y="155.3" text-anchor="end">1575</text>
-<line class="grid-line" x1="64" y1="120.5" x2="884" y2="120.5" />
-<text class="axis-label" x="54" y="124.5" text-anchor="end">1600</text>
-<line class="grid-line" x1="64" y1="89.7" x2="884" y2="89.7" />
-<text class="axis-label" x="54" y="93.7" text-anchor="end">1625</text>
-<line class="grid-line" x1="64" y1="58.8" x2="884" y2="58.8" />
-<text class="axis-label" x="54" y="62.8" text-anchor="end">1650</text>
-<line class="grid-line" x1="64" y1="28.0" x2="884" y2="28.0" />
-<text class="axis-label" x="54" y="32.0" text-anchor="end">1675</text>
-<line class="tick-line" x1="64.0" y1="398" x2="64.0" y2="404" />
-<text class="axis-label" x="64.0" y="422" text-anchor="middle">Start</text>
-<line class="tick-line" x1="174.8" y1="398" x2="174.8" y2="404" />
-<text class="axis-label" x="174.8" y="422" text-anchor="middle">5</text>
-<line class="tick-line" x1="285.6" y1="398" x2="285.6" y2="404" />
-<text class="axis-label" x="285.6" y="422" text-anchor="middle">10</text>
-<line class="tick-line" x1="396.4" y1="398" x2="396.4" y2="404" />
-<text class="axis-label" x="396.4" y="422" text-anchor="middle">15</text>
-<line class="tick-line" x1="507.2" y1="398" x2="507.2" y2="404" />
-<text class="axis-label" x="507.2" y="422" text-anchor="middle">20</text>
-<line class="tick-line" x1="618.1" y1="398" x2="618.1" y2="404" />
-<text class="axis-label" x="618.1" y="422" text-anchor="middle">25</text>
-<line class="tick-line" x1="728.9" y1="398" x2="728.9" y2="404" />
-<text class="axis-label" x="728.9" y="422" text-anchor="middle">30</text>
-<line class="tick-line" x1="839.7" y1="398" x2="839.7" y2="404" />
-<text class="axis-label" x="839.7" y="422" text-anchor="middle">35</text>
-<line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
-<text class="axis-label" x="884.0" y="422" text-anchor="middle">37</text>
-<text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
-<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Elo rating</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,286.3 152.6,270.5 174.8,253.9 197.0,237.2 219.1,253.2 241.3,239.5 263.5,255.2 285.6,239.7 307.8,226.2 329.9,239.4 352.1,225.6 374.3,241.6 396.4,255.0 418.6,240.2 440.8,225.2 462.9,212.0 485.1,197.6 507.2,186.1 529.4,171.0 551.6,159.4 573.7,177.0 595.9,164.9 618.1,183.1 640.2,168.9 662.4,187.2 684.5,173.4 706.7,163.8 728.9,150.5 751.0,141.0 773.2,131.1 795.4,119.9 817.5,109.5 839.7,95.9 861.8,87.8 884.0,78.2" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="78.2" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
-<line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
-<text class="legend-label" x="940" y="48">Ryan Donlan</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,242.8 130.5,256.7 152.6,241.9 174.8,255.7 197.0,270.7 219.1,285.4 241.3,299.1 263.5,281.4 285.6,266.0 307.8,278.3 329.9,263.9 352.1,247.4 374.3,261.0 396.4,247.4 418.6,233.6 440.8,248.6 462.9,232.5 485.1,219.2 507.2,202.4 529.4,220.6 551.6,207.1 573.7,193.5 595.9,182.0 618.1,201.0 640.2,215.2 662.4,230.6 684.5,215.8 706.7,200.2 728.9,190.1 751.0,176.0 773.2,162.8 795.4,153.6 817.5,143.1 839.7,156.7 861.8,144.5 884.0,136.4" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="136.4" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
-<line class="legend-swatch" x1="910" y1="72" x2="932" y2="72" stroke="hsl(352 76% 38%)" />
-<text class="legend-label" x="940" y="76">Justin Miller</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,244.9 130.5,231.0 152.6,216.2 174.8,232.9 197.0,218.2 219.1,204.3 241.3,190.5 263.5,205.2 285.6,192.0 307.8,179.7 329.9,166.5 352.1,184.2 374.3,171.0 396.4,158.7 418.6,148.9 440.8,153.9 462.9,140.4 485.1,160.0 507.2,176.8 529.4,191.9 551.6,208.4 573.7,195.7 595.9,211.6 618.1,229.5 640.2,217.4 662.4,204.3 684.5,191.2 706.7,206.8 728.9,220.2 751.0,204.8 773.2,190.7 795.4,179.6 817.5,170.2 839.7,190.4 861.8,191.4 884.0,210.3" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="210.3" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
-<line class="legend-swatch" x1="910" y1="100" x2="932" y2="100" stroke="hsl(266 76% 38%)" />
-<text class="legend-label" x="940" y="104">Luke Lockwood</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,273.4 130.5,258.6 152.6,273.3 174.8,256.6 197.0,270.4 219.1,254.5 241.3,240.0 263.5,225.5 285.6,208.9 307.8,225.8 329.9,212.8 352.1,229.4 374.3,242.6 396.4,256.7 418.6,271.4 440.8,255.6 462.9,271.7 485.1,254.6 507.2,270.9 529.4,256.4 551.6,270.0 573.7,282.7 595.9,265.5 618.1,247.3 640.2,230.8 662.4,219.0 684.5,235.9 706.7,222.8 728.9,209.9 751.0,224.0 773.2,238.2 795.4,252.0 817.5,262.4 839.7,249.8 861.8,237.3 884.0,221.8" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="221.8" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
-<line class="legend-swatch" x1="910" y1="128" x2="932" y2="128" stroke="hsl(12 76% 38%)" />
-<text class="legend-label" x="940" y="132">Ryan Houseman</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,243.8 130.5,229.0 152.6,213.3 174.8,199.5 197.0,216.1 219.1,201.3 241.3,188.3 263.5,173.6 285.6,190.1 307.8,208.0 329.9,194.8 352.1,213.3 374.3,199.7 396.4,186.3 418.6,172.2 440.8,191.0 462.9,204.5 485.1,221.6 507.2,238.8 529.4,255.0 551.6,241.3 573.7,254.9 595.9,267.1 618.1,251.0 640.2,267.1 662.4,280.2 684.5,263.3 706.7,247.9 728.9,234.8 751.0,223.9 773.2,237.0 795.4,248.2 817.5,231.6 839.7,218.9 861.8,218.0 884.0,233.4" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="233.4" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
-<line class="legend-swatch" x1="910" y1="156" x2="932" y2="156" stroke="hsl(154 76% 38%)" />
-<text class="legend-label" x="940" y="160">Drake Byrd</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,272.4 130.5,287.2 152.6,269.5 174.8,284.4 197.0,267.9 219.1,253.2 241.3,266.2 263.5,250.5 285.6,263.7 307.8,278.0 329.9,291.0 352.1,274.6 374.3,260.1 396.4,276.3 418.6,290.1 440.8,271.3 462.9,284.5 485.1,264.9 507.2,278.8 529.4,293.4 551.6,306.9 573.7,291.0 595.9,306.6 618.1,287.6 640.2,271.5 662.4,253.3 684.5,266.4 706.7,280.0 728.9,292.8 751.0,277.4 773.2,264.0 795.4,282.5 817.5,293.0 839.7,305.7 861.8,313.7 884.0,294.8" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="294.8" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
-<line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
-<text class="legend-label" x="940" y="188">Levi Morant</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,258.6 108.3,243.8 130.5,258.6 152.6,274.4 174.8,259.4 197.0,244.5 219.1,258.4 241.3,272.2 263.5,287.2 285.6,271.6 307.8,254.6 329.9,267.8 352.1,281.6 374.3,296.2 396.4,309.8 418.6,319.6 440.8,331.0 462.9,313.8 485.1,297.7 507.2,281.4 529.4,265.1 551.6,276.7 573.7,292.6 595.9,304.0 618.1,286.1 640.2,299.5 662.4,281.8 684.5,283.5 706.7,296.7 728.9,309.8 751.0,319.4 773.2,332.7 795.4,341.9 817.5,351.4 839.7,331.9 861.8,317.4 884.0,332.6" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="332.6" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
-<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
-<text class="legend-label" x="940" y="216">Julius Long</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,230.0 152.6,244.9 174.8,229.1 197.0,215.2 219.1,230.1 241.3,216.3 263.5,233.9 285.6,249.4 307.8,235.1 329.9,250.8 352.1,233.1 374.3,220.2 396.4,206.2 418.6,220.3 440.8,208.8 462.9,225.0 485.1,239.4 507.2,225.5 529.4,241.9 551.6,225.4 573.7,213.1 595.9,230.3 618.1,246.4 640.2,232.9 662.4,217.5 684.5,231.3 706.7,217.7 728.9,204.4 751.0,219.8 773.2,209.7 795.4,195.9 817.5,212.5 839.7,231.9 861.8,244.1 884.0,253.8" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="253.8" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
-<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
-<text class="legend-label" x="940" y="244">Dylan Reid</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,215.3 130.5,201.4 152.6,217.2 174.8,232.9 197.0,249.5 219.1,234.7 241.3,248.4 263.5,262.9 285.6,278.6 307.8,292.0 329.9,306.3 352.1,287.8 374.3,300.7 396.4,284.5 418.6,298.4 440.8,293.4 462.9,277.3 485.1,293.4 507.2,304.9 529.4,286.6 551.6,300.3 573.7,312.6 595.9,297.0 618.1,308.8 640.2,320.9 662.4,332.7 684.5,330.9 706.7,340.5 728.9,350.6 751.0,361.5 773.2,371.6 795.4,353.2 817.5,336.9 839.7,316.6 861.8,329.2 884.0,313.9" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="313.9" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
-<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
-<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
-<polyline class="rating-line" points="64.0,243.8 86.2,229.0 108.3,214.2 130.5,199.5 152.6,217.3 174.8,233.9 197.0,248.7 219.1,263.5 241.3,278.0 263.5,263.0 285.6,278.4 307.8,260.6 329.9,244.9 352.1,261.3 374.3,245.3 396.4,257.5 418.6,243.7 440.8,259.4 462.9,276.7 485.1,289.9 507.2,272.8 529.4,256.4 551.6,242.9 573.7,225.2 595.9,209.4 618.1,197.6 640.2,214.1 662.4,231.8 684.5,246.6 706.7,261.9 728.9,275.2 751.0,290.6 773.2,300.5 795.4,311.5 817.5,327.8 839.7,340.3 861.8,354.8 884.0,362.9" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="362.9" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
-<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
-<text class="legend-label" x="940" y="300">Alexander Chaban</text>
-</svg>
+<h3>2024-25 Power Rankings</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Final Rating</th><th>Net</th><th>Peak</th><th>Peak Week</th><th>Low</th><th>Low Week</th><th>Avg Rank</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Justin Miller</td><td data-label="Final Rating">1620.8</td><td data-label="Net">+120.8</td><td data-label="Peak">1637.4</td><td data-label="Peak Week">2024-25 37</td><td data-label="Low">1476.8</td><td data-label="Low Week">2024-25 7</td><td data-label="Avg Rank">2.82</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">28</td><td data-label="Bottom 3 Weeks">0</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Ryan Donlan</td><td data-label="Final Rating">1587.8</td><td data-label="Net">+87.8</td><td data-label="Peak">1645.6</td><td data-label="Peak Week">2024-25 33</td><td data-label="Low">1512.0</td><td data-label="Low Week">2024-25 1</td><td data-label="Avg Rank">1.45</td><td data-label="Weeks #1">26</td><td data-label="Top 3 Weeks">37</td><td data-label="Bottom 3 Weeks">0</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Final Rating">1527.1</td><td data-label="Net">+27.1</td><td data-label="Peak">1551.4</td><td data-label="Peak Week">2024-25 36</td><td data-label="Low">1476.8</td><td data-label="Low Week">2024-25 2</td><td data-label="Avg Rank">4.42</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">15</td><td data-label="Bottom 3 Weeks">3</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Final Rating">1525.9</td><td data-label="Net">+25.9</td><td data-label="Peak">1544.3</td><td data-label="Peak Week">2024-25 33</td><td data-label="Low">1431.7</td><td data-label="Low Week">2024-25 21</td><td data-label="Avg Rank">7.08</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">20</td></tr>
+<tr><td data-label="Rank">5</td><td data-label="Manager">Levi Morant</td><td data-label="Final Rating">1513.1</td><td data-label="Net">+13.1</td><td data-label="Peak">1576.5</td><td data-label="Peak Week">2024-25 7</td><td data-label="Low">1435.6</td><td data-label="Low Week">2024-25 27</td><td data-label="Avg Rank">5.79</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">9</td><td data-label="Bottom 3 Weeks">13</td></tr>
+<tr><td data-label="Rank">6</td><td data-label="Manager">Julius Long</td><td data-label="Final Rating">1472.3</td><td data-label="Net">-27.7</td><td data-label="Peak">1554.6</td><td data-label="Peak Week">2024-25 7</td><td data-label="Low">1445.7</td><td data-label="Low Week">2024-25 36</td><td data-label="Avg Rank">3.89</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td></tr>
+<tr><td data-label="Rank">7</td><td data-label="Manager">Drake Byrd</td><td data-label="Final Rating">1470.1</td><td data-label="Net">-29.9</td><td data-label="Peak">1507.3</td><td data-label="Peak Week">2024-25 22</td><td data-label="Low">1446.9</td><td data-label="Low Week">2024-25 14</td><td data-label="Avg Rank">6.29</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">7</td></tr>
+<tr><td data-label="Rank">8</td><td data-label="Manager">Alexander Chaban</td><td data-label="Final Rating">1448.4</td><td data-label="Net">-51.6</td><td data-label="Peak">1500.8</td><td data-label="Peak Week">2024-25 2</td><td data-label="Low">1420.0</td><td data-label="Low Week">2024-25 33</td><td data-label="Avg Rank">8.87</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">34</td></tr>
+<tr><td data-label="Rank">9</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Final Rating">1441.3</td><td data-label="Net">-58.6</td><td data-label="Peak">1505.3</td><td data-label="Peak Week">2024-25 19</td><td data-label="Low">1421.2</td><td data-label="Low Week">2024-25 35</td><td data-label="Avg Rank">7.39</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">19</td></tr>
+<tr><td data-label="Rank">10</td><td data-label="Manager">Dylan Reid</td><td data-label="Final Rating">1393.1</td><td data-label="Net">-106.9</td><td data-label="Peak">1518.6</td><td data-label="Peak Week">2024-25 16</td><td data-label="Low">1393.1</td><td data-label="Low Week">2024-25 38</td><td data-label="Avg Rank">7.00</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">2</td><td data-label="Bottom 3 Weeks">17</td></tr>
+</tbody></table></div>
+<h3>2024-25 Weekly Path</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Week</th><th>#1</th><th>#2</th><th>#3</th><th>#4</th><th>#5</th><th>Bottom</th></tr></thead>
+<tbody>
+<tr><td data-label="Week">1</td><td data-label="#1">Dylan Reid (1512)</td><td data-label="#2">Julius Long (1512)</td><td data-label="#3">Justin Miller (1512)</td><td data-label="#4">Levi Morant (1512)</td><td data-label="#5">Ryan Donlan (1512)</td><td data-label="Bottom">Ryan Houseman (1488)</td></tr>
+<tr><td data-label="Week">2</td><td data-label="#1">Levi Morant (1524)</td><td data-label="#2">Julius Long (1523)</td><td data-label="#3">Ryan Donlan (1523)</td><td data-label="#4">Alexander Chaban (1501)</td><td data-label="#5">Drake Byrd (1500)</td><td data-label="Bottom">Ethan Ellsworth (1476)</td></tr>
+<tr><td data-label="Week">3</td><td data-label="#1">Ryan Donlan (1535)</td><td data-label="#2">Levi Morant (1535)</td><td data-label="#3">Julius Long (1511)</td><td data-label="#4">Drake Byrd (1500)</td><td data-label="#5">Justin Miller (1500)</td><td data-label="Bottom">Luke Lockwood (1465)</td></tr>
+<tr><td data-label="Week">4</td><td data-label="#1">Ryan Donlan (1546)</td><td data-label="#2">Levi Morant (1545)</td><td data-label="#3">Julius Long (1523)</td><td data-label="#4">Justin Miller (1512)</td><td data-label="#5">Ryan Houseman (1501)</td><td data-label="Bottom">Luke Lockwood (1455)</td></tr>
+<tr><td data-label="Week">5</td><td data-label="#1">Ryan Donlan (1556)</td><td data-label="#2">Levi Morant (1555)</td><td data-label="#3">Julius Long (1533)</td><td data-label="#4">Justin Miller (1501)</td><td data-label="#5">Drake Byrd (1499)</td><td data-label="Bottom">Luke Lockwood (1444)</td></tr>
+<tr><td data-label="Week">6</td><td data-label="#1">Levi Morant (1567)</td><td data-label="#2">Ryan Donlan (1544)</td><td data-label="#3">Julius Long (1544)</td><td data-label="#4">Dylan Reid (1502)</td><td data-label="#5">Justin Miller (1490)</td><td data-label="Bottom">Ethan Ellsworth (1453)</td></tr>
+<tr><td data-label="Week">7</td><td data-label="#1">Levi Morant (1577)</td><td data-label="#2">Julius Long (1555)</td><td data-label="#3">Ryan Donlan (1554)</td><td data-label="#4">Dylan Reid (1491)</td><td data-label="#5">Ryan Houseman (1489)</td><td data-label="Bottom">Ethan Ellsworth (1441)</td></tr>
+<tr><td data-label="Week">8</td><td data-label="#1">Levi Morant (1560)</td><td data-label="#2">Ryan Donlan (1540)</td><td data-label="#3">Julius Long (1540)</td><td data-label="#4">Ryan Houseman (1504)</td><td data-label="#5">Drake Byrd (1489)</td><td data-label="Bottom">Alexander Chaban (1457)</td></tr>
+<tr><td data-label="Week">9</td><td data-label="#1">Julius Long (1552)</td><td data-label="#2">Ryan Donlan (1549)</td><td data-label="#3">Levi Morant (1547)</td><td data-label="#4">Ryan Houseman (1515)</td><td data-label="#5">Justin Miller (1500)</td><td data-label="Bottom">Alexander Chaban (1446)</td></tr>
+<tr><td data-label="Week">10</td><td data-label="#1">Julius Long (1537)</td><td data-label="#2">Ryan Donlan (1535)</td><td data-label="#3">Levi Morant (1532)</td><td data-label="#4">Justin Miller (1513)</td><td data-label="#5">Ryan Houseman (1503)</td><td data-label="Bottom">Alexander Chaban (1462)</td></tr>
+<tr><td data-label="Week">11</td><td data-label="#1">Julius Long (1548)</td><td data-label="#2">Ryan Donlan (1545)</td><td data-label="#3">Justin Miller (1525)</td><td data-label="#4">Levi Morant (1519)</td><td data-label="#5">Ryan Houseman (1492)</td><td data-label="Bottom">Alexander Chaban (1450)</td></tr>
+<tr><td data-label="Week">12</td><td data-label="#1">Ryan Donlan (1557)</td><td data-label="#2">Justin Miller (1536)</td><td data-label="#3">Julius Long (1536)</td><td data-label="#4">Levi Morant (1506)</td><td data-label="#5">Dylan Reid (1504)</td><td data-label="Bottom">Alexander Chaban (1439)</td></tr>
+<tr><td data-label="Week">13</td><td data-label="#1">Ryan Donlan (1555)</td><td data-label="#2">Julius Long (1545)</td><td data-label="#3">Justin Miller (1522)</td><td data-label="#4">Levi Morant (1517)</td><td data-label="#5">Dylan Reid (1506)</td><td data-label="Bottom">Luke Lockwood (1451)</td></tr>
+<tr><td data-label="Week">14</td><td data-label="#1">Ryan Donlan (1566)</td><td data-label="#2">Julius Long (1554)</td><td data-label="#3">Dylan Reid (1518)</td><td data-label="#4">Justin Miller (1511)</td><td data-label="#5">Levi Morant (1504)</td><td data-label="Bottom">Alexander Chaban (1444)</td></tr>
+<tr><td data-label="Week">15</td><td data-label="#1">Ryan Donlan (1576)</td><td data-label="#2">Julius Long (1541)</td><td data-label="#3">Justin Miller (1525)</td><td data-label="#4">Ryan Houseman (1514)</td><td data-label="#5">Dylan Reid (1505)</td><td data-label="Bottom">Alexander Chaban (1433)</td></tr>
+<tr><td data-label="Week">16</td><td data-label="#1">Ryan Donlan (1583)</td><td data-label="#2">Justin Miller (1534)</td><td data-label="#3">Julius Long (1528)</td><td data-label="#4">Ryan Houseman (1526)</td><td data-label="#5">Dylan Reid (1519)</td><td data-label="Bottom">Alexander Chaban (1425)</td></tr>
+<tr><td data-label="Week">17</td><td data-label="#1">Ryan Donlan (1593)</td><td data-label="#2">Julius Long (1537)</td><td data-label="#3">Justin Miller (1519)</td><td data-label="#4">Ryan Houseman (1516)</td><td data-label="#5">Dylan Reid (1505)</td><td data-label="Bottom">Luke Lockwood (1434)</td></tr>
+<tr><td data-label="Week">18</td><td data-label="#1">Ryan Donlan (1602)</td><td data-label="#2">Justin Miller (1530)</td><td data-label="#3">Ryan Houseman (1527)</td><td data-label="#4">Julius Long (1522)</td><td data-label="#5">Dylan Reid (1493)</td><td data-label="Bottom">Alexander Chaban (1429)</td></tr>
+<tr><td data-label="Week">19</td><td data-label="#1">Ryan Donlan (1610)</td><td data-label="#2">Justin Miller (1542)</td><td data-label="#3">Ryan Houseman (1515)</td><td data-label="#4">Julius Long (1509)</td><td data-label="#5">Ethan Ellsworth (1505)</td><td data-label="Bottom">Alexander Chaban (1443)</td></tr>
+<tr><td data-label="Week">20</td><td data-label="#1">Ryan Donlan (1617)</td><td data-label="#2">Justin Miller (1552)</td><td data-label="#3">Ryan Houseman (1527)</td><td data-label="#4">Julius Long (1498)</td><td data-label="#5">Ethan Ellsworth (1492)</td><td data-label="Bottom">Luke Lockwood (1441)</td></tr>
+<tr><td data-label="Week">21</td><td data-label="#1">Ryan Donlan (1601)</td><td data-label="#2">Justin Miller (1537)</td><td data-label="#3">Ryan Houseman (1536)</td><td data-label="#4">Julius Long (1514)</td><td data-label="#5">Ethan Ellsworth (1503)</td><td data-label="Bottom">Luke Lockwood (1432)</td></tr>
+<tr><td data-label="Week">22</td><td data-label="#1">Ryan Donlan (1609)</td><td data-label="#2">Justin Miller (1548)</td><td data-label="#3">Ryan Houseman (1545)</td><td data-label="#4">Drake Byrd (1507)</td><td data-label="#5">Julius Long (1501)</td><td data-label="Bottom">Levi Morant (1436)</td></tr>
+<tr><td data-label="Week">23</td><td data-label="#1">Ryan Donlan (1619)</td><td data-label="#2">Justin Miller (1538)</td><td data-label="#3">Ryan Houseman (1529)</td><td data-label="#4">Dylan Reid (1494)</td><td data-label="#5">Drake Byrd (1493)</td><td data-label="Bottom">Alexander Chaban (1451)</td></tr>
+<tr><td data-label="Week">24</td><td data-label="#1">Ryan Donlan (1626)</td><td data-label="#2">Justin Miller (1548)</td><td data-label="#3">Ryan Houseman (1540)</td><td data-label="#4">Dylan Reid (1483)</td><td data-label="#5">Drake Byrd (1480)</td><td data-label="Bottom">Levi Morant (1445)</td></tr>
+<tr><td data-label="Week">25</td><td data-label="#1">Ryan Donlan (1632)</td><td data-label="#2">Justin Miller (1558)</td><td data-label="#3">Ryan Houseman (1550)</td><td data-label="#4">Julius Long (1489)</td><td data-label="#5">Dylan Reid (1471)</td><td data-label="Bottom">Ethan Ellsworth (1457)</td></tr>
+<tr><td data-label="Week">26</td><td data-label="#1">Ryan Donlan (1642)</td><td data-label="#2">Justin Miller (1566)</td><td data-label="#3">Ryan Houseman (1540)</td><td data-label="#4">Julius Long (1488)</td><td data-label="#5">Drake Byrd (1479)</td><td data-label="Bottom">Levi Morant (1446)</td></tr>
+<tr><td data-label="Week">27</td><td data-label="#1">Ryan Donlan (1624)</td><td data-label="#2">Justin Miller (1575)</td><td data-label="#3">Ryan Houseman (1550)</td><td data-label="#4">Julius Long (1498)</td><td data-label="#5">Ethan Ellsworth (1487)</td><td data-label="Bottom">Levi Morant (1436)</td></tr>
+<tr><td data-label="Week">28</td><td data-label="#1">Ryan Donlan (1631)</td><td data-label="#2">Justin Miller (1586)</td><td data-label="#3">Ryan Houseman (1539)</td><td data-label="#4">Ethan Ellsworth (1499)</td><td data-label="#5">Julius Long (1486)</td><td data-label="Bottom">Alexander Chaban (1425)</td></tr>
+<tr><td data-label="Week">29</td><td data-label="#1">Ryan Donlan (1614)</td><td data-label="#2">Justin Miller (1593)</td><td data-label="#3">Ryan Houseman (1525)</td><td data-label="#4">Luke Lockwood (1502)</td><td data-label="#5">Julius Long (1500)</td><td data-label="Bottom">Dylan Reid (1426)</td></tr>
+<tr><td data-label="Week">30</td><td data-label="#1">Ryan Donlan (1622)</td><td data-label="#2">Justin Miller (1601)</td><td data-label="#3">Luke Lockwood (1515)</td><td data-label="#4">Ryan Houseman (1512)</td><td data-label="#5">Julius Long (1492)</td><td data-label="Bottom">Dylan Reid (1415)</td></tr>
+<tr><td data-label="Week">31</td><td data-label="#1">Ryan Donlan (1628)</td><td data-label="#2">Justin Miller (1609)</td><td data-label="#3">Luke Lockwood (1525)</td><td data-label="#4">Ryan Houseman (1522)</td><td data-label="#5">Drake Byrd (1480)</td><td data-label="Bottom">Dylan Reid (1409)</td></tr>
+<tr><td data-label="Week">32</td><td data-label="#1">Ryan Donlan (1639)</td><td data-label="#2">Justin Miller (1598)</td><td data-label="#3">Luke Lockwood (1535)</td><td data-label="#4">Ryan Houseman (1508)</td><td data-label="#5">Julius Long (1489)</td><td data-label="Bottom">Dylan Reid (1423)</td></tr>
+<tr><td data-label="Week">33</td><td data-label="#1">Ryan Donlan (1646)</td><td data-label="#2">Justin Miller (1606)</td><td data-label="#3">Luke Lockwood (1544)</td><td data-label="#4">Ryan Houseman (1517)</td><td data-label="#5">Julius Long (1481)</td><td data-label="Bottom">Dylan Reid (1414)</td></tr>
+<tr><td data-label="Week">34</td><td data-label="#1">Ryan Donlan (1627)</td><td data-label="#2">Justin Miller (1616)</td><td data-label="#3">Luke Lockwood (1534)</td><td data-label="#4">Ryan Houseman (1526)</td><td data-label="#5">Drake Byrd (1467)</td><td data-label="Bottom">Dylan Reid (1428)</td></tr>
+<tr><td data-label="Week">35</td><td data-label="#1">Justin Miller (1622)</td><td data-label="#2">Ryan Donlan (1611)</td><td data-label="#3">Luke Lockwood (1544)</td><td data-label="#4">Ryan Houseman (1542)</td><td data-label="#5">Drake Byrd (1478)</td><td data-label="Bottom">Dylan Reid (1418)</td></tr>
+<tr><td data-label="Week">36</td><td data-label="#1">Justin Miller (1628)</td><td data-label="#2">Ryan Donlan (1593)</td><td data-label="#3">Ryan Houseman (1551)</td><td data-label="#4">Luke Lockwood (1528)</td><td data-label="#5">Levi Morant (1486)</td><td data-label="Bottom">Dylan Reid (1412)</td></tr>
+<tr><td data-label="Week">37</td><td data-label="#1">Justin Miller (1637)</td><td data-label="#2">Ryan Donlan (1577)</td><td data-label="#3">Ryan Houseman (1542)</td><td data-label="#4">Luke Lockwood (1537)</td><td data-label="#5">Levi Morant (1496)</td><td data-label="Bottom">Dylan Reid (1404)</td></tr>
+<tr><td data-label="Week">38</td><td data-label="#1">Justin Miller (1621)</td><td data-label="#2">Ryan Donlan (1588)</td><td data-label="#3">Ryan Houseman (1527)</td><td data-label="#4">Luke Lockwood (1526)</td><td data-label="#5">Levi Morant (1513)</td><td data-label="Bottom">Dylan Reid (1393)</td></tr>
+</tbody></table></div>
+<h3>2024-25 Time At The Top And Bottom</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th><th>Avg Rank</th><th>Final Rank</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Weeks #1">26</td><td data-label="Top 3 Weeks">37</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">1.45</td><td data-label="Final Rank">2</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">28</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">2.82</td><td data-label="Final Rank">1</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">9</td><td data-label="Bottom 3 Weeks">13</td><td data-label="Avg Rank">5.79</td><td data-label="Final Rank">5</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td><td data-label="Avg Rank">3.89</td><td data-label="Final Rank">6</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">2</td><td data-label="Bottom 3 Weeks">17</td><td data-label="Avg Rank">7.00</td><td data-label="Final Rank">10</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">15</td><td data-label="Bottom 3 Weeks">3</td><td data-label="Avg Rank">4.42</td><td data-label="Final Rank">3</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">20</td><td data-label="Avg Rank">7.08</td><td data-label="Final Rank">4</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">7</td><td data-label="Avg Rank">6.29</td><td data-label="Final Rank">7</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">19</td><td data-label="Avg Rank">7.39</td><td data-label="Final Rank">9</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">34</td><td data-label="Avg Rank">8.87</td><td data-label="Final Rank">8</td></tr>
+</tbody></table></div>
+<h3>2024-25 Biggest Rating Swings</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Week</th><th>Manager</th><th>Opponent</th><th>Result</th><th>Score</th><th>Rating Before</th><th>Rating Change</th><th>Rating After</th></tr></thead>
+<tbody>
+<tr><td data-label="Week">34</td><td data-label="Manager">Alexander Chaban</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">58-54</td><td data-label="Rating Before">1420.0</td><td data-label="Rating Change">+18.9</td><td data-label="Rating After">1438.8</td></tr>
+<tr><td data-label="Week">34</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Alexander Chaban</td><td data-label="Result">L</td><td data-label="Score">54-58</td><td data-label="Rating Before">1645.6</td><td data-label="Rating Change">-18.9</td><td data-label="Rating After">1626.8</td></tr>
+<tr><td data-label="Week">36</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">40-25</td><td data-label="Rating Before">1421.2</td><td data-label="Rating Change">+18.0</td><td data-label="Rating After">1439.2</td></tr>
+<tr><td data-label="Week">36</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">25-40</td><td data-label="Rating Before">1611.4</td><td data-label="Rating Change">-18.0</td><td data-label="Rating After">1593.4</td></tr>
+<tr><td data-label="Week">27</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">46-44</td><td data-label="Rating Before">1469.4</td><td data-label="Rating Change">+17.5</td><td data-label="Rating After">1486.9</td></tr>
+<tr><td data-label="Week">27</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">44-46</td><td data-label="Rating Before">1641.6</td><td data-label="Rating Change">-17.5</td><td data-label="Rating After">1624.1</td></tr>
+<tr><td data-label="Week">29</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">47-33</td><td data-label="Rating Before">1485.4</td><td data-label="Rating Change">+16.8</td><td data-label="Rating After">1502.1</td></tr>
+<tr><td data-label="Week">29</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">L</td><td data-label="Score">33-47</td><td data-label="Rating Before">1631.0</td><td data-label="Rating Change">-16.8</td><td data-label="Rating After">1614.3</td></tr>
+<tr><td data-label="Week">38</td><td data-label="Manager">Justin Miller</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">37-39</td><td data-label="Rating Before">1637.4</td><td data-label="Rating Change">-16.6</td><td data-label="Rating After">1620.8</td></tr>
+<tr><td data-label="Week">38</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Justin Miller</td><td data-label="Result">W</td><td data-label="Score">39-37</td><td data-label="Rating Before">1496.5</td><td data-label="Rating Change">+16.6</td><td data-label="Rating After">1513.1</td></tr>
+<tr><td data-label="Week">8</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">W</td><td data-label="Score">40-34</td><td data-label="Rating Before">1441.4</td><td data-label="Rating Change">+16.4</td><td data-label="Rating After">1457.9</td></tr>
+<tr><td data-label="Week">8</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">34-40</td><td data-label="Rating Before">1576.5</td><td data-label="Rating Change">-16.4</td><td data-label="Rating After">1560.1</td></tr>
+<tr><td data-label="Week">37</td><td data-label="Manager">Drake Byrd</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">35-34</td><td data-label="Rating Before">1467.9</td><td data-label="Rating Change">+16.2</td><td data-label="Rating After">1484.0</td></tr>
+<tr><td data-label="Week">37</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Drake Byrd</td><td data-label="Result">L</td><td data-label="Score">34-35</td><td data-label="Rating Before">1593.4</td><td data-label="Rating Change">-16.2</td><td data-label="Rating After">1577.2</td></tr>
+<tr><td data-label="Week">21</td><td data-label="Manager">Julius Long</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">46-32</td><td data-label="Rating Before">1497.6</td><td data-label="Rating Change">+16.0</td><td data-label="Rating After">1513.5</td></tr>
+<tr><td data-label="Week">21</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Julius Long</td><td data-label="Result">L</td><td data-label="Score">32-46</td><td data-label="Rating Before">1616.7</td><td data-label="Rating Change">-16.0</td><td data-label="Rating After">1600.8</td></tr>
+<tr><td data-label="Week">36</td><td data-label="Manager">Alexander Chaban</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">41-33</td><td data-label="Rating Before">1432.5</td><td data-label="Rating Change">+15.7</td><td data-label="Rating After">1448.2</td></tr>
+<tr><td data-label="Week">36</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Alexander Chaban</td><td data-label="Result">L</td><td data-label="Score">33-41</td><td data-label="Rating Before">1544.2</td><td data-label="Rating Change">-15.7</td><td data-label="Rating After">1528.4</td></tr>
+<tr><td data-label="Week">17</td><td data-label="Manager">Alexander Chaban</td><td data-label="Opponent">Justin Miller</td><td data-label="Result">W</td><td data-label="Score">53-48</td><td data-label="Rating Before">1425.2</td><td data-label="Rating Change">+15.7</td><td data-label="Rating After">1440.9</td></tr>
+<tr><td data-label="Week">17</td><td data-label="Manager">Justin Miller</td><td data-label="Opponent">Alexander Chaban</td><td data-label="Result">L</td><td data-label="Score">48-53</td><td data-label="Rating Before">1534.3</td><td data-label="Rating Change">-15.7</td><td data-label="Rating After">1518.6</td></tr>
+</tbody></table></div>
+</section>
 </div>
-</details>
-<details>
-<summary><h2>Season Power Rankings</h2></summary>
-<p>Use this table as the strength rating for each season. The latest 2025-26 row is through week 37; 2024-25 is final.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Season</th><th>Rank</th><th>Manager</th><th>Final Rating</th><th>Net</th><th>Peak</th><th>Peak Week</th><th>Low</th><th>Low Week</th><th>Avg Rank</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Final Rating">1634.3</td><td data-label="Net">+134.3</td><td data-label="Peak">1634.3</td><td data-label="Peak Week">2025-26 37</td><td data-label="Low">1465.6</td><td data-label="Low Week">2025-26 3</td><td data-label="Avg Rank">3.19</td><td data-label="Weeks #1">17</td><td data-label="Top 3 Weeks">21</td><td data-label="Bottom 3 Weeks">4</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Final Rating">1587.1</td><td data-label="Net">+87.1</td><td data-label="Peak">1587.1</td><td data-label="Peak Week">2025-26 37</td><td data-label="Low">1455.2</td><td data-label="Low Week">2025-26 8</td><td data-label="Avg Rank">4.59</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">18</td><td data-label="Bottom 3 Weeks">6</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">3</td><td data-label="Manager">Luke Lockwood</td><td data-label="Final Rating">1527.2</td><td data-label="Net">+27.2</td><td data-label="Peak">1583.9</td><td data-label="Peak Week">2025-26 18</td><td data-label="Low">1499.2</td><td data-label="Low Week">2025-26 2</td><td data-label="Avg Rank">2.62</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">29</td><td data-label="Bottom 3 Weeks">0</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">4</td><td data-label="Manager">Ryan Houseman</td><td data-label="Final Rating">1517.8</td><td data-label="Net">+17.8</td><td data-label="Peak">1528.3</td><td data-label="Peak Week">2025-26 10</td><td data-label="Low">1468.5</td><td data-label="Low Week">2025-26 23</td><td data-label="Avg Rank">5.89</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">5</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Final Rating">1508.4</td><td data-label="Net">+8.4</td><td data-label="Peak">1558.1</td><td data-label="Peak Week">2025-26 16</td><td data-label="Low">1470.5</td><td data-label="Low Week">2025-26 27</td><td data-label="Avg Rank">3.78</td><td data-label="Weeks #1">6</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">6</td><td data-label="Manager">Dylan Reid</td><td data-label="Final Rating">1492.0</td><td data-label="Net">-8.1</td><td data-label="Peak">1538.9</td><td data-label="Peak Week">2025-26 33</td><td data-label="Low">1492.0</td><td data-label="Low Week">2025-26 37</td><td data-label="Avg Rank">4.03</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">12</td><td data-label="Bottom 3 Weeks">0</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">7</td><td data-label="Manager">Levi Morant</td><td data-label="Final Rating">1458.7</td><td data-label="Net">-41.4</td><td data-label="Peak">1494.6</td><td data-label="Peak Week">2025-26 9</td><td data-label="Low">1443.3</td><td data-label="Low Week">2025-26 36</td><td data-label="Avg Rank">7.81</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">22</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">8</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Final Rating">1443.2</td><td data-label="Net">-56.9</td><td data-label="Peak">1534.4</td><td data-label="Peak Week">2025-26 3</td><td data-label="Low">1396.4</td><td data-label="Low Week">2025-26 32</td><td data-label="Avg Rank">8.19</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">28</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">9</td><td data-label="Manager">Julius Long</td><td data-label="Final Rating">1428.0</td><td data-label="Net">-72.0</td><td data-label="Peak">1500.0</td><td data-label="Peak Week">2025-26 2</td><td data-label="Low">1412.8</td><td data-label="Low Week">2025-26 34</td><td data-label="Avg Rank">8.62</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">33</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Final Rating">1403.5</td><td data-label="Net">-96.5</td><td data-label="Peak">1537.5</td><td data-label="Peak Week">2025-26 25</td><td data-label="Low">1403.5</td><td data-label="Low Week">2025-26 37</td><td data-label="Avg Rank">6.27</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">12</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">1</td><td data-label="Manager">Justin Miller</td><td data-label="Final Rating">1620.8</td><td data-label="Net">+120.8</td><td data-label="Peak">1637.4</td><td data-label="Peak Week">2024-25 37</td><td data-label="Low">1476.8</td><td data-label="Low Week">2024-25 7</td><td data-label="Avg Rank">2.82</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">28</td><td data-label="Bottom 3 Weeks">0</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">2</td><td data-label="Manager">Ryan Donlan</td><td data-label="Final Rating">1587.8</td><td data-label="Net">+87.8</td><td data-label="Peak">1645.6</td><td data-label="Peak Week">2024-25 33</td><td data-label="Low">1512.0</td><td data-label="Low Week">2024-25 1</td><td data-label="Avg Rank">1.45</td><td data-label="Weeks #1">26</td><td data-label="Top 3 Weeks">37</td><td data-label="Bottom 3 Weeks">0</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Final Rating">1527.1</td><td data-label="Net">+27.1</td><td data-label="Peak">1551.4</td><td data-label="Peak Week">2024-25 36</td><td data-label="Low">1476.8</td><td data-label="Low Week">2024-25 2</td><td data-label="Avg Rank">4.42</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">15</td><td data-label="Bottom 3 Weeks">3</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Final Rating">1525.9</td><td data-label="Net">+25.9</td><td data-label="Peak">1544.3</td><td data-label="Peak Week">2024-25 33</td><td data-label="Low">1431.7</td><td data-label="Low Week">2024-25 21</td><td data-label="Avg Rank">7.08</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">20</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">5</td><td data-label="Manager">Levi Morant</td><td data-label="Final Rating">1513.1</td><td data-label="Net">+13.1</td><td data-label="Peak">1576.5</td><td data-label="Peak Week">2024-25 7</td><td data-label="Low">1435.6</td><td data-label="Low Week">2024-25 27</td><td data-label="Avg Rank">5.79</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">9</td><td data-label="Bottom 3 Weeks">13</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">6</td><td data-label="Manager">Julius Long</td><td data-label="Final Rating">1472.3</td><td data-label="Net">-27.7</td><td data-label="Peak">1554.6</td><td data-label="Peak Week">2024-25 7</td><td data-label="Low">1445.7</td><td data-label="Low Week">2024-25 36</td><td data-label="Avg Rank">3.89</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">7</td><td data-label="Manager">Drake Byrd</td><td data-label="Final Rating">1470.1</td><td data-label="Net">-29.9</td><td data-label="Peak">1507.3</td><td data-label="Peak Week">2024-25 22</td><td data-label="Low">1446.9</td><td data-label="Low Week">2024-25 14</td><td data-label="Avg Rank">6.29</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">7</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">8</td><td data-label="Manager">Alexander Chaban</td><td data-label="Final Rating">1448.4</td><td data-label="Net">-51.6</td><td data-label="Peak">1500.8</td><td data-label="Peak Week">2024-25 2</td><td data-label="Low">1420.0</td><td data-label="Low Week">2024-25 33</td><td data-label="Avg Rank">8.87</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">34</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">9</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Final Rating">1441.3</td><td data-label="Net">-58.6</td><td data-label="Peak">1505.3</td><td data-label="Peak Week">2024-25 19</td><td data-label="Low">1421.2</td><td data-label="Low Week">2024-25 35</td><td data-label="Avg Rank">7.39</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">19</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Rank">10</td><td data-label="Manager">Dylan Reid</td><td data-label="Final Rating">1393.1</td><td data-label="Net">-106.9</td><td data-label="Peak">1518.6</td><td data-label="Peak Week">2024-25 16</td><td data-label="Low">1393.1</td><td data-label="Low Week">2024-25 38</td><td data-label="Avg Rank">7.00</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">2</td><td data-label="Bottom 3 Weeks">17</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Weekly Power Ranking Path</h2></summary>
-<p>Use this table to see who the model considered strongest after each gameweek within that season. The page shows the top five and the bottom-ranked manager; the CSV contains the full 1-10 order every week.</p>
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-<ul>
-<li>Ratings update after each completed gameweek, then ranks are assigned from highest rating to lowest.</li>
-<li>The manager shown in each rank cell includes their rounded rating after that gameweek.</li>
-<li>Ratings reset to 1500 at the start of each season.</li>
-</ul>
-</details>
-<div class="table-wrap"><table>
-<thead><tr><th>Season</th><th>Week</th><th>#1</th><th>#2</th><th>#3</th><th>#4</th><th>#5</th><th>Bottom</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">1</td><td data-label="#1">Dylan Reid (1512)</td><td data-label="#2">Julius Long (1512)</td><td data-label="#3">Justin Miller (1512)</td><td data-label="#4">Levi Morant (1512)</td><td data-label="#5">Ryan Donlan (1512)</td><td data-label="Bottom">Ryan Houseman (1488)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">2</td><td data-label="#1">Levi Morant (1524)</td><td data-label="#2">Julius Long (1523)</td><td data-label="#3">Ryan Donlan (1523)</td><td data-label="#4">Alexander Chaban (1501)</td><td data-label="#5">Drake Byrd (1500)</td><td data-label="Bottom">Ethan Ellsworth (1476)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">3</td><td data-label="#1">Ryan Donlan (1535)</td><td data-label="#2">Levi Morant (1535)</td><td data-label="#3">Julius Long (1511)</td><td data-label="#4">Drake Byrd (1500)</td><td data-label="#5">Justin Miller (1500)</td><td data-label="Bottom">Luke Lockwood (1465)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">4</td><td data-label="#1">Ryan Donlan (1546)</td><td data-label="#2">Levi Morant (1545)</td><td data-label="#3">Julius Long (1523)</td><td data-label="#4">Justin Miller (1512)</td><td data-label="#5">Ryan Houseman (1501)</td><td data-label="Bottom">Luke Lockwood (1455)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">5</td><td data-label="#1">Ryan Donlan (1556)</td><td data-label="#2">Levi Morant (1555)</td><td data-label="#3">Julius Long (1533)</td><td data-label="#4">Justin Miller (1501)</td><td data-label="#5">Drake Byrd (1499)</td><td data-label="Bottom">Luke Lockwood (1444)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">6</td><td data-label="#1">Levi Morant (1567)</td><td data-label="#2">Ryan Donlan (1544)</td><td data-label="#3">Julius Long (1544)</td><td data-label="#4">Dylan Reid (1502)</td><td data-label="#5">Justin Miller (1490)</td><td data-label="Bottom">Ethan Ellsworth (1453)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">7</td><td data-label="#1">Levi Morant (1577)</td><td data-label="#2">Julius Long (1555)</td><td data-label="#3">Ryan Donlan (1554)</td><td data-label="#4">Dylan Reid (1491)</td><td data-label="#5">Ryan Houseman (1489)</td><td data-label="Bottom">Ethan Ellsworth (1441)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">8</td><td data-label="#1">Levi Morant (1560)</td><td data-label="#2">Ryan Donlan (1540)</td><td data-label="#3">Julius Long (1540)</td><td data-label="#4">Ryan Houseman (1504)</td><td data-label="#5">Drake Byrd (1489)</td><td data-label="Bottom">Alexander Chaban (1457)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">9</td><td data-label="#1">Julius Long (1552)</td><td data-label="#2">Ryan Donlan (1549)</td><td data-label="#3">Levi Morant (1547)</td><td data-label="#4">Ryan Houseman (1515)</td><td data-label="#5">Justin Miller (1500)</td><td data-label="Bottom">Alexander Chaban (1446)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">10</td><td data-label="#1">Julius Long (1537)</td><td data-label="#2">Ryan Donlan (1535)</td><td data-label="#3">Levi Morant (1532)</td><td data-label="#4">Justin Miller (1513)</td><td data-label="#5">Ryan Houseman (1503)</td><td data-label="Bottom">Alexander Chaban (1462)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">11</td><td data-label="#1">Julius Long (1548)</td><td data-label="#2">Ryan Donlan (1545)</td><td data-label="#3">Justin Miller (1525)</td><td data-label="#4">Levi Morant (1519)</td><td data-label="#5">Ryan Houseman (1492)</td><td data-label="Bottom">Alexander Chaban (1450)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">12</td><td data-label="#1">Ryan Donlan (1557)</td><td data-label="#2">Justin Miller (1536)</td><td data-label="#3">Julius Long (1536)</td><td data-label="#4">Levi Morant (1506)</td><td data-label="#5">Dylan Reid (1504)</td><td data-label="Bottom">Alexander Chaban (1439)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">13</td><td data-label="#1">Ryan Donlan (1555)</td><td data-label="#2">Julius Long (1545)</td><td data-label="#3">Justin Miller (1522)</td><td data-label="#4">Levi Morant (1517)</td><td data-label="#5">Dylan Reid (1506)</td><td data-label="Bottom">Luke Lockwood (1451)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">14</td><td data-label="#1">Ryan Donlan (1566)</td><td data-label="#2">Julius Long (1554)</td><td data-label="#3">Dylan Reid (1518)</td><td data-label="#4">Justin Miller (1511)</td><td data-label="#5">Levi Morant (1504)</td><td data-label="Bottom">Alexander Chaban (1444)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">15</td><td data-label="#1">Ryan Donlan (1576)</td><td data-label="#2">Julius Long (1541)</td><td data-label="#3">Justin Miller (1525)</td><td data-label="#4">Ryan Houseman (1514)</td><td data-label="#5">Dylan Reid (1505)</td><td data-label="Bottom">Alexander Chaban (1433)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">16</td><td data-label="#1">Ryan Donlan (1583)</td><td data-label="#2">Justin Miller (1534)</td><td data-label="#3">Julius Long (1528)</td><td data-label="#4">Ryan Houseman (1526)</td><td data-label="#5">Dylan Reid (1519)</td><td data-label="Bottom">Alexander Chaban (1425)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">17</td><td data-label="#1">Ryan Donlan (1593)</td><td data-label="#2">Julius Long (1537)</td><td data-label="#3">Justin Miller (1519)</td><td data-label="#4">Ryan Houseman (1516)</td><td data-label="#5">Dylan Reid (1505)</td><td data-label="Bottom">Luke Lockwood (1434)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">18</td><td data-label="#1">Ryan Donlan (1602)</td><td data-label="#2">Justin Miller (1530)</td><td data-label="#3">Ryan Houseman (1527)</td><td data-label="#4">Julius Long (1522)</td><td data-label="#5">Dylan Reid (1493)</td><td data-label="Bottom">Alexander Chaban (1429)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">19</td><td data-label="#1">Ryan Donlan (1610)</td><td data-label="#2">Justin Miller (1542)</td><td data-label="#3">Ryan Houseman (1515)</td><td data-label="#4">Julius Long (1509)</td><td data-label="#5">Ethan Ellsworth (1505)</td><td data-label="Bottom">Alexander Chaban (1443)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">20</td><td data-label="#1">Ryan Donlan (1617)</td><td data-label="#2">Justin Miller (1552)</td><td data-label="#3">Ryan Houseman (1527)</td><td data-label="#4">Julius Long (1498)</td><td data-label="#5">Ethan Ellsworth (1492)</td><td data-label="Bottom">Luke Lockwood (1441)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">21</td><td data-label="#1">Ryan Donlan (1601)</td><td data-label="#2">Justin Miller (1537)</td><td data-label="#3">Ryan Houseman (1536)</td><td data-label="#4">Julius Long (1514)</td><td data-label="#5">Ethan Ellsworth (1503)</td><td data-label="Bottom">Luke Lockwood (1432)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">22</td><td data-label="#1">Ryan Donlan (1609)</td><td data-label="#2">Justin Miller (1548)</td><td data-label="#3">Ryan Houseman (1545)</td><td data-label="#4">Drake Byrd (1507)</td><td data-label="#5">Julius Long (1501)</td><td data-label="Bottom">Levi Morant (1436)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">23</td><td data-label="#1">Ryan Donlan (1619)</td><td data-label="#2">Justin Miller (1538)</td><td data-label="#3">Ryan Houseman (1529)</td><td data-label="#4">Dylan Reid (1494)</td><td data-label="#5">Drake Byrd (1493)</td><td data-label="Bottom">Alexander Chaban (1451)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">24</td><td data-label="#1">Ryan Donlan (1626)</td><td data-label="#2">Justin Miller (1548)</td><td data-label="#3">Ryan Houseman (1540)</td><td data-label="#4">Dylan Reid (1483)</td><td data-label="#5">Drake Byrd (1480)</td><td data-label="Bottom">Levi Morant (1445)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">25</td><td data-label="#1">Ryan Donlan (1632)</td><td data-label="#2">Justin Miller (1558)</td><td data-label="#3">Ryan Houseman (1550)</td><td data-label="#4">Julius Long (1489)</td><td data-label="#5">Dylan Reid (1471)</td><td data-label="Bottom">Ethan Ellsworth (1457)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">26</td><td data-label="#1">Ryan Donlan (1642)</td><td data-label="#2">Justin Miller (1566)</td><td data-label="#3">Ryan Houseman (1540)</td><td data-label="#4">Julius Long (1488)</td><td data-label="#5">Drake Byrd (1479)</td><td data-label="Bottom">Levi Morant (1446)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">27</td><td data-label="#1">Ryan Donlan (1624)</td><td data-label="#2">Justin Miller (1575)</td><td data-label="#3">Ryan Houseman (1550)</td><td data-label="#4">Julius Long (1498)</td><td data-label="#5">Ethan Ellsworth (1487)</td><td data-label="Bottom">Levi Morant (1436)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">28</td><td data-label="#1">Ryan Donlan (1631)</td><td data-label="#2">Justin Miller (1586)</td><td data-label="#3">Ryan Houseman (1539)</td><td data-label="#4">Ethan Ellsworth (1499)</td><td data-label="#5">Julius Long (1486)</td><td data-label="Bottom">Alexander Chaban (1425)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">29</td><td data-label="#1">Ryan Donlan (1614)</td><td data-label="#2">Justin Miller (1593)</td><td data-label="#3">Ryan Houseman (1525)</td><td data-label="#4">Luke Lockwood (1502)</td><td data-label="#5">Julius Long (1500)</td><td data-label="Bottom">Dylan Reid (1426)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">30</td><td data-label="#1">Ryan Donlan (1622)</td><td data-label="#2">Justin Miller (1601)</td><td data-label="#3">Luke Lockwood (1515)</td><td data-label="#4">Ryan Houseman (1512)</td><td data-label="#5">Julius Long (1492)</td><td data-label="Bottom">Dylan Reid (1415)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">31</td><td data-label="#1">Ryan Donlan (1628)</td><td data-label="#2">Justin Miller (1609)</td><td data-label="#3">Luke Lockwood (1525)</td><td data-label="#4">Ryan Houseman (1522)</td><td data-label="#5">Drake Byrd (1480)</td><td data-label="Bottom">Dylan Reid (1409)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">32</td><td data-label="#1">Ryan Donlan (1639)</td><td data-label="#2">Justin Miller (1598)</td><td data-label="#3">Luke Lockwood (1535)</td><td data-label="#4">Ryan Houseman (1508)</td><td data-label="#5">Julius Long (1489)</td><td data-label="Bottom">Dylan Reid (1423)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">33</td><td data-label="#1">Ryan Donlan (1646)</td><td data-label="#2">Justin Miller (1606)</td><td data-label="#3">Luke Lockwood (1544)</td><td data-label="#4">Ryan Houseman (1517)</td><td data-label="#5">Julius Long (1481)</td><td data-label="Bottom">Dylan Reid (1414)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">34</td><td data-label="#1">Ryan Donlan (1627)</td><td data-label="#2">Justin Miller (1616)</td><td data-label="#3">Luke Lockwood (1534)</td><td data-label="#4">Ryan Houseman (1526)</td><td data-label="#5">Drake Byrd (1467)</td><td data-label="Bottom">Dylan Reid (1428)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">35</td><td data-label="#1">Justin Miller (1622)</td><td data-label="#2">Ryan Donlan (1611)</td><td data-label="#3">Luke Lockwood (1544)</td><td data-label="#4">Ryan Houseman (1542)</td><td data-label="#5">Drake Byrd (1478)</td><td data-label="Bottom">Dylan Reid (1418)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">36</td><td data-label="#1">Justin Miller (1628)</td><td data-label="#2">Ryan Donlan (1593)</td><td data-label="#3">Ryan Houseman (1551)</td><td data-label="#4">Luke Lockwood (1528)</td><td data-label="#5">Levi Morant (1486)</td><td data-label="Bottom">Dylan Reid (1412)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">37</td><td data-label="#1">Justin Miller (1637)</td><td data-label="#2">Ryan Donlan (1577)</td><td data-label="#3">Ryan Houseman (1542)</td><td data-label="#4">Luke Lockwood (1537)</td><td data-label="#5">Levi Morant (1496)</td><td data-label="Bottom">Dylan Reid (1404)</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Week">38</td><td data-label="#1">Justin Miller (1621)</td><td data-label="#2">Ryan Donlan (1588)</td><td data-label="#3">Ryan Houseman (1527)</td><td data-label="#4">Luke Lockwood (1526)</td><td data-label="#5">Levi Morant (1513)</td><td data-label="Bottom">Dylan Reid (1393)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">1</td><td data-label="#1">Alexander Chaban (1512)</td><td data-label="#2">Drake Byrd (1512)</td><td data-label="#3">Dylan Reid (1512)</td><td data-label="#4">Ethan Ellsworth (1512)</td><td data-label="#5">Luke Lockwood (1512)</td><td data-label="Bottom">Ryan Houseman (1488)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">2</td><td data-label="#1">Alexander Chaban (1524)</td><td data-label="#2">Dylan Reid (1523)</td><td data-label="#3">Ethan Ellsworth (1523)</td><td data-label="#4">Justin Miller (1501)</td><td data-label="#5">Drake Byrd (1500)</td><td data-label="Bottom">Ryan Houseman (1476)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">3</td><td data-label="#1">Alexander Chaban (1536)</td><td data-label="#2">Ethan Ellsworth (1534)</td><td data-label="#3">Drake Byrd (1512)</td><td data-label="#4">Dylan Reid (1511)</td><td data-label="#5">Luke Lockwood (1510)</td><td data-label="Bottom">Levi Morant (1465)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">4</td><td data-label="#1">Drake Byrd (1525)</td><td data-label="#2">Luke Lockwood (1522)</td><td data-label="#3">Ethan Ellsworth (1522)</td><td data-label="#4">Alexander Chaban (1522)</td><td data-label="#5">Justin Miller (1502)</td><td data-label="Bottom">Julius Long (1475)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">5</td><td data-label="#1">Drake Byrd (1536)</td><td data-label="#2">Dylan Reid (1512)</td><td data-label="#3">Ethan Ellsworth (1509)</td><td data-label="#4">Luke Lockwood (1509)</td><td data-label="#5">Alexander Chaban (1508)</td><td data-label="Bottom">Levi Morant (1467)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">6</td><td data-label="#1">Dylan Reid (1523)</td><td data-label="#2">Drake Byrd (1522)</td><td data-label="#3">Luke Lockwood (1521)</td><td data-label="#4">Ryan Donlan (1505)</td><td data-label="#5">Julius Long (1499)</td><td data-label="Bottom">Justin Miller (1478)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">7</td><td data-label="#1">Drake Byrd (1534)</td><td data-label="#2">Luke Lockwood (1532)</td><td data-label="#3">Dylan Reid (1511)</td><td data-label="#4">Ethan Ellsworth (1507)</td><td data-label="#5">Levi Morant (1492)</td><td data-label="Bottom">Justin Miller (1466)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">8</td><td data-label="#1">Drake Byrd (1545)</td><td data-label="#2">Luke Lockwood (1543)</td><td data-label="#3">Dylan Reid (1522)</td><td data-label="#4">Ryan Donlan (1504)</td><td data-label="#5">Ryan Houseman (1503)</td><td data-label="Bottom">Justin Miller (1455)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">9</td><td data-label="#1">Drake Byrd (1557)</td><td data-label="#2">Luke Lockwood (1531)</td><td data-label="#3">Ryan Houseman (1515)</td><td data-label="#4">Dylan Reid (1508)</td><td data-label="#5">Levi Morant (1495)</td><td data-label="Bottom">Julius Long (1465)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">10</td><td data-label="#1">Drake Byrd (1544)</td><td data-label="#2">Luke Lockwood (1542)</td><td data-label="#3">Ryan Houseman (1528)</td><td data-label="#4">Ryan Donlan (1503)</td><td data-label="#5">Dylan Reid (1495)</td><td data-label="Bottom">Ethan Ellsworth (1472)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">11</td><td data-label="#1">Luke Lockwood (1552)</td><td data-label="#2">Drake Byrd (1529)</td><td data-label="#3">Ryan Houseman (1515)</td><td data-label="#4">Ryan Donlan (1514)</td><td data-label="#5">Dylan Reid (1507)</td><td data-label="Bottom">Ethan Ellsworth (1461)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">12</td><td data-label="#1">Luke Lockwood (1563)</td><td data-label="#2">Drake Byrd (1540)</td><td data-label="#3">Ryan Houseman (1525)</td><td data-label="#4">Ryan Donlan (1504)</td><td data-label="#5">Alexander Chaban (1499)</td><td data-label="Bottom">Ethan Ellsworth (1449)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">13</td><td data-label="#1">Luke Lockwood (1548)</td><td data-label="#2">Drake Byrd (1525)</td><td data-label="#3">Ryan Donlan (1515)</td><td data-label="#4">Ryan Houseman (1512)</td><td data-label="#5">Dylan Reid (1509)</td><td data-label="Bottom">Ethan Ellsworth (1464)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">14</td><td data-label="#1">Luke Lockwood (1559)</td><td data-label="#2">Drake Byrd (1536)</td><td data-label="#3">Dylan Reid (1519)</td><td data-label="#4">Ryan Donlan (1502)</td><td data-label="#5">Ryan Houseman (1501)</td><td data-label="Bottom">Ethan Ellsworth (1454)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">15</td><td data-label="#1">Luke Lockwood (1569)</td><td data-label="#2">Drake Byrd (1547)</td><td data-label="#3">Dylan Reid (1531)</td><td data-label="#4">Justin Miller (1497)</td><td data-label="#5">Ryan Donlan (1491)</td><td data-label="Bottom">Julius Long (1447)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">16</td><td data-label="#1">Luke Lockwood (1577)</td><td data-label="#2">Drake Byrd (1558)</td><td data-label="#3">Dylan Reid (1519)</td><td data-label="#4">Justin Miller (1508)</td><td data-label="#5">Ryan Donlan (1503)</td><td data-label="Bottom">Julius Long (1439)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">17</td><td data-label="#1">Luke Lockwood (1573)</td><td data-label="#2">Drake Byrd (1543)</td><td data-label="#3">Dylan Reid (1528)</td><td data-label="#4">Ryan Donlan (1515)</td><td data-label="#5">Justin Miller (1496)</td><td data-label="Bottom">Julius Long (1429)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">18</td><td data-label="#1">Luke Lockwood (1584)</td><td data-label="#2">Drake Byrd (1532)</td><td data-label="#3">Ryan Donlan (1526)</td><td data-label="#4">Dylan Reid (1515)</td><td data-label="#5">Justin Miller (1509)</td><td data-label="Bottom">Julius Long (1443)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">19</td><td data-label="#1">Luke Lockwood (1568)</td><td data-label="#2">Ryan Donlan (1537)</td><td data-label="#3">Justin Miller (1520)</td><td data-label="#4">Drake Byrd (1518)</td><td data-label="#5">Dylan Reid (1504)</td><td data-label="Bottom">Julius Long (1456)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">20</td><td data-label="#1">Luke Lockwood (1554)</td><td data-label="#2">Ryan Donlan (1547)</td><td data-label="#3">Justin Miller (1534)</td><td data-label="#4">Dylan Reid (1515)</td><td data-label="#5">Drake Byrd (1504)</td><td data-label="Bottom">Ethan Ellsworth (1450)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">21</td><td data-label="#1">Ryan Donlan (1559)</td><td data-label="#2">Luke Lockwood (1542)</td><td data-label="#3">Justin Miller (1519)</td><td data-label="#4">Dylan Reid (1502)</td><td data-label="#5">Drake Byrd (1491)</td><td data-label="Bottom">Levi Morant (1460)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">22</td><td data-label="#1">Ryan Donlan (1568)</td><td data-label="#2">Justin Miller (1530)</td><td data-label="#3">Luke Lockwood (1529)</td><td data-label="#4">Dylan Reid (1515)</td><td data-label="#5">Drake Byrd (1502)</td><td data-label="Bottom">Levi Morant (1449)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">23</td><td data-label="#1">Ryan Donlan (1554)</td><td data-label="#2">Justin Miller (1541)</td><td data-label="#3">Luke Lockwood (1539)</td><td data-label="#4">Dylan Reid (1525)</td><td data-label="#5">Alexander Chaban (1515)</td><td data-label="Bottom">Ethan Ellsworth (1444)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">24</td><td data-label="#1">Ryan Donlan (1564)</td><td data-label="#2">Justin Miller (1550)</td><td data-label="#3">Alexander Chaban (1528)</td><td data-label="#4">Luke Lockwood (1526)</td><td data-label="#5">Dylan Reid (1511)</td><td data-label="Bottom">Levi Morant (1449)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="#1">Ryan Donlan (1549)</td><td data-label="#2">Alexander Chaban (1538)</td><td data-label="#3">Justin Miller (1535)</td><td data-label="#4">Luke Lockwood (1512)</td><td data-label="#5">Dylan Reid (1498)</td><td data-label="Bottom">Ethan Ellsworth (1447)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">26</td><td data-label="#1">Ryan Donlan (1561)</td><td data-label="#2">Alexander Chaban (1524)</td><td data-label="#3">Justin Miller (1523)</td><td data-label="#4">Luke Lockwood (1521)</td><td data-label="#5">Ryan Houseman (1511)</td><td data-label="Bottom">Ethan Ellsworth (1437)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">27</td><td data-label="#1">Ryan Donlan (1546)</td><td data-label="#2">Luke Lockwood (1532)</td><td data-label="#3">Dylan Reid (1521)</td><td data-label="#4">Ryan Houseman (1520)</td><td data-label="#5">Justin Miller (1511)</td><td data-label="Bottom">Ethan Ellsworth (1428)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">28</td><td data-label="#1">Ryan Donlan (1557)</td><td data-label="#2">Luke Lockwood (1543)</td><td data-label="#3">Justin Miller (1523)</td><td data-label="#4">Dylan Reid (1510)</td><td data-label="#5">Ryan Houseman (1506)</td><td data-label="Bottom">Ethan Ellsworth (1429)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">29</td><td data-label="#1">Ryan Donlan (1565)</td><td data-label="#2">Justin Miller (1535)</td><td data-label="#3">Luke Lockwood (1530)</td><td data-label="#4">Dylan Reid (1521)</td><td data-label="#5">Ryan Houseman (1517)</td><td data-label="Bottom">Ethan Ellsworth (1422)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">30</td><td data-label="#1">Ryan Donlan (1576)</td><td data-label="#2">Justin Miller (1544)</td><td data-label="#3">Dylan Reid (1532)</td><td data-label="#4">Ryan Houseman (1527)</td><td data-label="#5">Luke Lockwood (1519)</td><td data-label="Bottom">Ethan Ellsworth (1413)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">31</td><td data-label="#1">Ryan Donlan (1583)</td><td data-label="#2">Justin Miller (1555)</td><td data-label="#3">Luke Lockwood (1532)</td><td data-label="#4">Dylan Reid (1520)</td><td data-label="#5">Drake Byrd (1516)</td><td data-label="Bottom">Ethan Ellsworth (1405)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">32</td><td data-label="#1">Ryan Donlan (1591)</td><td data-label="#2">Justin Miller (1566)</td><td data-label="#3">Luke Lockwood (1543)</td><td data-label="#4">Dylan Reid (1528)</td><td data-label="#5">Drake Byrd (1506)</td><td data-label="Bottom">Ethan Ellsworth (1396)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">33</td><td data-label="#1">Ryan Donlan (1600)</td><td data-label="#2">Justin Miller (1573)</td><td data-label="#3">Luke Lockwood (1552)</td><td data-label="#4">Dylan Reid (1539)</td><td data-label="#5">Drake Byrd (1496)</td><td data-label="Bottom">Ethan Ellsworth (1411)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">34</td><td data-label="#1">Ryan Donlan (1609)</td><td data-label="#2">Justin Miller (1582)</td><td data-label="#3">Luke Lockwood (1560)</td><td data-label="#4">Dylan Reid (1525)</td><td data-label="#5">Drake Byrd (1510)</td><td data-label="Bottom">Julius Long (1413)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">35</td><td data-label="#1">Ryan Donlan (1620)</td><td data-label="#2">Justin Miller (1571)</td><td data-label="#3">Luke Lockwood (1543)</td><td data-label="#4">Drake Byrd (1520)</td><td data-label="#5">Dylan Reid (1510)</td><td data-label="Bottom">Alexander Chaban (1422)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">36</td><td data-label="#1">Ryan Donlan (1626)</td><td data-label="#2">Justin Miller (1581)</td><td data-label="#3">Luke Lockwood (1542)</td><td data-label="#4">Drake Byrd (1521)</td><td data-label="#5">Ryan Houseman (1505)</td><td data-label="Bottom">Alexander Chaban (1410)</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">37</td><td data-label="#1">Ryan Donlan (1634)</td><td data-label="#2">Justin Miller (1587)</td><td data-label="#3">Luke Lockwood (1527)</td><td data-label="#4">Ryan Houseman (1518)</td><td data-label="#5">Drake Byrd (1508)</td><td data-label="Bottom">Alexander Chaban (1403)</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Time At The Top And Bottom</h2></summary>
-<p>Use this table to separate brief peaks from sustained power within each season: weeks at #1, weeks in the top three, and weeks in the bottom three.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Season</th><th>Manager</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th><th>Avg Rank</th><th>Final Rank</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Ryan Donlan</td><td data-label="Weeks #1">17</td><td data-label="Top 3 Weeks">21</td><td data-label="Bottom 3 Weeks">4</td><td data-label="Avg Rank">3.19</td><td data-label="Final Rank">1</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Luke Lockwood</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">29</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">2.62</td><td data-label="Final Rank">3</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Drake Byrd</td><td data-label="Weeks #1">6</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td><td data-label="Avg Rank">3.78</td><td data-label="Final Rank">5</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Alexander Chaban</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">12</td><td data-label="Avg Rank">6.27</td><td data-label="Final Rank">10</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Dylan Reid</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">12</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">4.03</td><td data-label="Final Rank">6</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Justin Miller</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">18</td><td data-label="Bottom 3 Weeks">6</td><td data-label="Avg Rank">4.59</td><td data-label="Final Rank">2</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Ryan Houseman</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">5</td><td data-label="Avg Rank">5.89</td><td data-label="Final Rank">4</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">28</td><td data-label="Avg Rank">8.19</td><td data-label="Final Rank">8</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Levi Morant</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">22</td><td data-label="Avg Rank">7.81</td><td data-label="Final Rank">7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Manager">Julius Long</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">33</td><td data-label="Avg Rank">8.62</td><td data-label="Final Rank">9</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Ryan Donlan</td><td data-label="Weeks #1">26</td><td data-label="Top 3 Weeks">37</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">1.45</td><td data-label="Final Rank">2</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Justin Miller</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">28</td><td data-label="Bottom 3 Weeks">0</td><td data-label="Avg Rank">2.82</td><td data-label="Final Rank">1</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Levi Morant</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">9</td><td data-label="Bottom 3 Weeks">13</td><td data-label="Avg Rank">5.79</td><td data-label="Final Rank">5</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Julius Long</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">1</td><td data-label="Avg Rank">3.89</td><td data-label="Final Rank">6</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Dylan Reid</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">2</td><td data-label="Bottom 3 Weeks">17</td><td data-label="Avg Rank">7.00</td><td data-label="Final Rank">10</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Ryan Houseman</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">15</td><td data-label="Bottom 3 Weeks">3</td><td data-label="Avg Rank">4.42</td><td data-label="Final Rank">3</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Luke Lockwood</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">20</td><td data-label="Avg Rank">7.08</td><td data-label="Final Rank">4</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Drake Byrd</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">7</td><td data-label="Avg Rank">6.29</td><td data-label="Final Rank">7</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">19</td><td data-label="Avg Rank">7.39</td><td data-label="Final Rank">9</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Manager">Alexander Chaban</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">0</td><td data-label="Bottom 3 Weeks">34</td><td data-label="Avg Rank">8.87</td><td data-label="Final Rank">8</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Biggest Rating Swings</h2></summary>
-<p>Use this table to find the matchups that changed the power ratings the most, usually upsets or wins between highly rated managers.</p>
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-<ul>
-<li><strong>Rating Change</strong> is the manager&#x27;s Elo movement from that matchup week.</li>
-<li>Positive changes are good; negative changes are bad.</li>
-<li>The table is sorted by the absolute size of the swing, so a painful drop can appear beside a big gain from the same matchup.</li>
-</ul>
-</details>
-<div class="table-wrap"><table>
-<thead><tr><th>Season</th><th>Week</th><th>Manager</th><th>Opponent</th><th>Result</th><th>Score</th><th>Rating Before</th><th>Rating Change</th><th>Rating After</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">35</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">42-21</td><td data-label="Rating Before">1424.5</td><td data-label="Rating Change">+16.4</td><td data-label="Rating After">1441.0</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">35</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">21-42</td><td data-label="Rating Before">1559.7</td><td data-label="Rating Change">-16.4</td><td data-label="Rating After">1543.3</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">19</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">48-45</td><td data-label="Rating Before">1467.0</td><td data-label="Rating Change">+15.9</td><td data-label="Rating After">1482.9</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">19</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">45-48</td><td data-label="Rating Before">1583.9</td><td data-label="Rating Change">-15.9</td><td data-label="Rating After">1568.0</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">35</td><td data-label="Manager">Dylan Reid</td><td data-label="Opponent">Julius Long</td><td data-label="Result">L</td><td data-label="Score">52-59</td><td data-label="Rating Before">1525.4</td><td data-label="Rating Change">-15.8</td><td data-label="Rating After">1509.7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">35</td><td data-label="Manager">Julius Long</td><td data-label="Opponent">Dylan Reid</td><td data-label="Result">W</td><td data-label="Score">59-52</td><td data-label="Rating Before">1412.8</td><td data-label="Rating Change">+15.8</td><td data-label="Rating After">1428.6</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="Manager">Justin Miller</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">28-66</td><td data-label="Rating Before">1550.1</td><td data-label="Rating Change">-15.4</td><td data-label="Rating After">1534.7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Justin Miller</td><td data-label="Result">W</td><td data-label="Score">66-28</td><td data-label="Rating Before">1449.1</td><td data-label="Rating Change">+15.4</td><td data-label="Rating After">1464.5</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">37</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">37-32</td><td data-label="Rating Before">1443.3</td><td data-label="Rating Change">+15.3</td><td data-label="Rating After">1458.7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">37</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">32-37</td><td data-label="Rating Before">1542.5</td><td data-label="Rating Change">-15.3</td><td data-label="Rating After">1527.2</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">17</td><td data-label="Manager">Drake Byrd</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">23-45</td><td data-label="Rating Before">1558.1</td><td data-label="Rating Change">-15.2</td><td data-label="Rating After">1542.8</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">17</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Drake Byrd</td><td data-label="Result">W</td><td data-label="Score">45-23</td><td data-label="Rating Before">1462.5</td><td data-label="Rating Change">+15.2</td><td data-label="Rating After">1477.7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">13</td><td data-label="Manager">Drake Byrd</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">39-41</td><td data-label="Rating Before">1539.8</td><td data-label="Rating Change">-15.1</td><td data-label="Rating After">1524.7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">13</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Drake Byrd</td><td data-label="Result">W</td><td data-label="Score">41-39</td><td data-label="Rating Before">1449.3</td><td data-label="Rating Change">+15.1</td><td data-label="Rating After">1464.4</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">33</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">W</td><td data-label="Score">60-34</td><td data-label="Rating Before">1396.4</td><td data-label="Rating Change">+14.9</td><td data-label="Rating After">1411.4</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">33</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">34-60</td><td data-label="Rating Before">1483.6</td><td data-label="Rating Change">-14.9</td><td data-label="Rating After">1468.7</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">21</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Opponent">Justin Miller</td><td data-label="Result">W</td><td data-label="Score">51-35</td><td data-label="Rating Before">1450.5</td><td data-label="Rating Change">+14.8</td><td data-label="Rating After">1465.3</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">21</td><td data-label="Manager">Justin Miller</td><td data-label="Opponent">Ethan Ellsworth</td><td data-label="Result">L</td><td data-label="Score">35-51</td><td data-label="Rating Before">1533.6</td><td data-label="Rating Change">-14.8</td><td data-label="Rating After">1518.8</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">27</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">66-48</td><td data-label="Rating Before">1477.5</td><td data-label="Rating Change">+14.8</td><td data-label="Rating After">1492.3</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">27</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">48-66</td><td data-label="Rating Before">1560.8</td><td data-label="Rating Change">-14.8</td><td data-label="Rating After">1545.9</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="Manager">Ryan Donlan</td><td data-label="Opponent">Ryan Houseman</td><td data-label="Result">L</td><td data-label="Score">30-39</td><td data-label="Rating Before">1564.0</td><td data-label="Rating Change">-14.8</td><td data-label="Rating After">1549.3</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="Manager">Ryan Houseman</td><td data-label="Opponent">Ryan Donlan</td><td data-label="Result">W</td><td data-label="Score">39-30</td><td data-label="Rating Before">1482.5</td><td data-label="Rating Change">+14.8</td><td data-label="Rating After">1497.2</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="Manager">Julius Long</td><td data-label="Opponent">Luke Lockwood</td><td data-label="Result">W</td><td data-label="Score">49-34</td><td data-label="Rating Before">1451.2</td><td data-label="Rating Change">+14.6</td><td data-label="Rating After">1465.8</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">25</td><td data-label="Manager">Luke Lockwood</td><td data-label="Opponent">Julius Long</td><td data-label="Result">L</td><td data-label="Score">34-49</td><td data-label="Rating Before">1526.2</td><td data-label="Rating Change">-14.6</td><td data-label="Rating After">1511.6</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">11</td><td data-label="Manager">Alexander Chaban</td><td data-label="Opponent">Drake Byrd</td><td data-label="Result">W</td><td data-label="Score">42-39</td><td data-label="Rating Before">1472.0</td><td data-label="Rating Change">+14.4</td><td data-label="Rating After">1486.4</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">11</td><td data-label="Manager">Drake Byrd</td><td data-label="Opponent">Alexander Chaban</td><td data-label="Result">L</td><td data-label="Score">39-42</td><td data-label="Rating Before">1543.5</td><td data-label="Rating Change">-14.4</td><td data-label="Rating After">1529.1</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">4</td><td data-label="Manager">Alexander Chaban</td><td data-label="Opponent">Levi Morant</td><td data-label="Result">L</td><td data-label="Score">59-62</td><td data-label="Rating Before">1536.0</td><td data-label="Rating Change">-14.4</td><td data-label="Rating After">1521.5</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">4</td><td data-label="Manager">Levi Morant</td><td data-label="Opponent">Alexander Chaban</td><td data-label="Result">W</td><td data-label="Score">62-59</td><td data-label="Rating Before">1464.8</td><td data-label="Rating Change">+14.4</td><td data-label="Rating After">1479.2</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">27</td><td data-label="Manager">Alexander Chaban</td><td data-label="Opponent">Julius Long</td><td data-label="Result">L</td><td data-label="Score">37-44</td><td data-label="Rating Before">1524.1</td><td data-label="Rating Change">-14.4</td><td data-label="Rating After">1509.8</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Week">27</td><td data-label="Manager">Julius Long</td><td data-label="Opponent">Alexander Chaban</td><td data-label="Result">W</td><td data-label="Score">44-37</td><td data-label="Rating Before">1454.9</td><td data-label="Rating Change">+14.4</td><td data-label="Rating After">1469.2</td></tr>
-</tbody></table></div>
 </details>
 <details>
 <summary><h2>Output Files</h2></summary>
