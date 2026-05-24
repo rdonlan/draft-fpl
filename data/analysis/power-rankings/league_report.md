@@ -192,7 +192,7 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 | Levi Morant | 0 | 0 | 22 | 7.81 | 7 |
 | Julius Long | 0 | 0 | 33 | 8.62 | 9 |
 
-### 2025-26 Biggest Elo Upsets
+### 2025-26 Biggest Upsets
 
 These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
 
@@ -383,7 +383,7 @@ These are the largest pre-game Elo gaps where the lower-rated manager beat the h
 | Ethan Ellsworth | 0 | 0 | 19 | 7.39 | 9 |
 | Alexander Chaban | 0 | 0 | 34 | 8.87 | 8 |
 
-### 2024-25 Biggest Elo Upsets
+### 2024-25 Biggest Upsets
 
 These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
 
