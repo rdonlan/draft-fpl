@@ -55,6 +55,7 @@ Use this table to separate raw scoring strength from the H2H table: who scored t
 - **PF/GW** is total starter points divided by gameweeks played.
 - **Top Scores** and **Bottom Scores** count weeks tied for or holding the highest/lowest score in the league.
 - **Score Stdev** is the standard deviation of weekly scores; higher means a more volatile scoring profile.
+- **League Average** is a benchmark row that averages the ten manager rows. Its best/worst entries are average personal best and worst scores, not real weeks.
 
 </details>
 
@@ -63,6 +64,7 @@ Use this table to separate raw scoring strength from the H2H table: who scored t
 | Ryan Donlan | 3484 | 46.45 | 4.41 | 9 | 4 | 2025-26 33 (103) | 2024-25 8 (19) | 14.43 |
 | Justin Miller | 3433 | 45.77 | 4.25 | 18 | 5 | 2024-25 24 (80) | 2025-26 14 (22) | 11.88 |
 | Ryan Houseman | 3113 | 41.51 | 5.41 | 8 | 9 | 2024-25 22 (81) | 2024-25 6 (22) | 13.34 |
+| **League Average** | 3082.0 | 41.09 | 5.50 | 8.4 | 8.1 | Avg best (76.1) | Avg worst (18.8) | 11.91 |
 | Drake Byrd | 3079 | 41.05 | 5.33 | 9 | 4 | 2024-25 29 (69) | 2025-26 18 (16) | 11.50 |
 | Luke Lockwood | 3028 | 40.37 | 5.67 | 5 | 7 | 2024-25 33 (76) | 2025-26 5 (21) | 11.67 |
 | Levi Morant | 3006 | 40.08 | 5.73 | 10 | 12 | 2024-25 32 (75) | 2025-26 5 (20) | 12.20 |
