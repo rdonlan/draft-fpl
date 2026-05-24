@@ -121,7 +121,8 @@
     details > p,
     details > ul,
     details > h3,
-    details > .table-wrap {
+    details > .table-wrap,
+    details > .rating-chart-wrap {
       margin-left: 18px;
       margin-right: 18px;
     }
@@ -264,6 +265,67 @@
       white-space: nowrap;
       font-weight: 750;
     }
+    .rating-chart-wrap {
+      overflow-x: auto;
+      margin: 16px 0 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+    .rating-chart {
+      display: block;
+      width: 100%;
+      min-width: 980px;
+      height: auto;
+      background: #ffffff;
+    }
+    .chart-title {
+      fill: var(--ink);
+      font-size: 17px;
+      font-weight: 800;
+    }
+    .axis-line {
+      stroke: #526071;
+      stroke-width: 1.2;
+    }
+    .grid-line {
+      stroke: #dfe5ee;
+      stroke-width: 1;
+    }
+    .tick-line {
+      stroke: #526071;
+      stroke-width: 1;
+    }
+    .axis-label {
+      fill: var(--muted);
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+    .axis-caption {
+      fill: #344054;
+      font-size: 13px;
+      font-weight: 750;
+    }
+    .rating-line {
+      fill: none;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.9;
+    }
+    .rating-endpoint {
+      stroke: #ffffff;
+      stroke-width: 1.5;
+    }
+    .legend-swatch {
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+    .legend-label {
+      fill: #263244;
+      font-size: 12px;
+      font-weight: 700;
+    }
     strong {
       color: var(--accent-2);
     }
@@ -306,7 +368,8 @@
       details > p,
       details > ul,
       details > h3,
-      details > .table-wrap {
+      details > .table-wrap,
+      details > .rating-chart-wrap {
         margin-left: 10px;
         margin-right: 10px;
       }
