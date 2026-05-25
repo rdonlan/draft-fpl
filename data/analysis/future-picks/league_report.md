@@ -1157,7 +1157,7 @@ This checks the workbook tracker against future-pick movements parsed from the t
 
 | Issue | Year | Round | Original Owner | Tracker Holder | Ledger Holder | Ledger Evidence | Notes |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Original-owner ambiguity | 2026 | 10th | Justin vs Levi | Justin -> Ryan Houseman | Levi -> Ryan Houseman | Postseason: Levi -> Ryan Houseman | The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager's same-round pick and the ledger did not clearly label the pass-through. |
+| Tracker original-owner mismatch | 2026 | 10th | Justin vs Levi | Justin -> Ryan Houseman | Levi -> Ryan Houseman | Postseason: Levi -> Ryan Houseman | Decision: Levi sent his own 2026 10th-round pick to Ryan Houseman. Update the tracker so Levi's 10th is owed to Ryan Houseman and Justin keeps his own 10th. |
 | Ledger-only move | 2026 | 12th | Donny | Donny | Dylan | Draft Day: Donny -> Dylan | - |
 
 </details>
