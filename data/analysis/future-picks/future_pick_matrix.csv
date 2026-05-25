@@ -1,7 +1,7 @@
 year,round,round_label,original_owner,current_holder,status,source_status
 2026,1,1st,Donny,Donny,Keeper,Keeper
 2026,1,1st,Justin,Justin,Keeper,Keeper
-2026,1,1st,Ryan Houseman,Ryan Houseman,Keeper,Keeper
+2026,1,1st,House,House,Keeper,Keeper
 2026,1,1st,Levi,Levi,Keeper,Keeper
 2026,1,1st,Luke,Luke,Keeper,Keeper
 2026,1,1st,Julius,Julius,Keeper,Keeper
@@ -11,7 +11,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,1,1st,Dylan,Dylan,Keeper,Keeper
 2026,2,2nd,Donny,Donny,Keeper,Keeper
 2026,2,2nd,Justin,Justin,Keeper,Keeper
-2026,2,2nd,Ryan Houseman,Ryan Houseman,Keeper,Keeper
+2026,2,2nd,House,House,Keeper,Keeper
 2026,2,2nd,Levi,Levi,Keeper,Keeper
 2026,2,2nd,Luke,Luke,Keeper,Keeper
 2026,2,2nd,Julius,Julius,Keeper,Keeper
@@ -21,7 +21,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,2,2nd,Dylan,Dylan,Keeper,Keeper
 2026,3,3rd,Donny,Donny,Own,Own
 2026,3,3rd,Justin,Dylan,Traded,Owed to Dylan
-2026,3,3rd,Ryan Houseman,Ryan Houseman,Own,Own
+2026,3,3rd,House,House,Own,Own
 2026,3,3rd,Levi,Levi,Own,Own
 2026,3,3rd,Luke,Levi,Traded,Owed to Levi
 2026,3,3rd,Julius,Julius,Own,Own
@@ -31,7 +31,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,3,3rd,Dylan,Dylan,Own,Own
 2026,4,4th,Donny,Drake,Traded,Owed to Drake
 2026,4,4th,Justin,Justin,Own,Own
-2026,4,4th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,4,4th,House,House,Own,Own
 2026,4,4th,Levi,Ethan,Traded,Owed to Ethan
 2026,4,4th,Luke,Luke,Own,Own
 2026,4,4th,Julius,Julius,Own,Own
@@ -41,7 +41,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,4,4th,Dylan,Dylan,Own,Own
 2026,5,5th,Donny,Donny,Own,Own
 2026,5,5th,Justin,Justin,Own,Own
-2026,5,5th,Ryan Houseman,Dylan,Traded,Owed to Dylan
+2026,5,5th,House,Dylan,Traded,Owed to Dylan
 2026,5,5th,Levi,Levi,Own,Own
 2026,5,5th,Luke,Luke,Own,Own
 2026,5,5th,Julius,Julius,Own,Own
@@ -51,7 +51,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,5,5th,Dylan,Dylan,Own,Own
 2026,6,6th,Donny,Ethan,Traded,Owed to Ethan
 2026,6,6th,Justin,Julius,Traded,Owed to Julius
-2026,6,6th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,6,6th,House,House,Own,Own
 2026,6,6th,Levi,Levi,Own,Own
 2026,6,6th,Luke,Luke,Own,Own
 2026,6,6th,Julius,Julius,Own,Own
@@ -61,7 +61,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,6,6th,Dylan,Dylan,Own,Own
 2026,7,7th,Donny,Donny,Own,Own
 2026,7,7th,Justin,Levi,Traded,Owed to Levi
-2026,7,7th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,7,7th,House,House,Own,Own
 2026,7,7th,Levi,Levi,Own,Own
 2026,7,7th,Luke,Levi,Traded,Owed to Levi
 2026,7,7th,Julius,Julius,Own,Own
@@ -71,7 +71,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,7,7th,Dylan,Dylan,Own,Own
 2026,8,8th,Donny,Drake,Traded,Owed to Drake
 2026,8,8th,Justin,Levi,Traded,Owed to Levi
-2026,8,8th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,8,8th,House,House,Own,Own
 2026,8,8th,Levi,Levi,Own,Own
 2026,8,8th,Luke,Luke,Own,Own
 2026,8,8th,Julius,Julius,Own,Own
@@ -81,7 +81,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,8,8th,Dylan,Dylan,Own,Own
 2026,9,9th,Donny,Julius,Traded,Owed to Julius
 2026,9,9th,Justin,Justin,Own,Own
-2026,9,9th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,9,9th,House,House,Own,Own
 2026,9,9th,Levi,Levi,Own,Own
 2026,9,9th,Luke,Luke,Own,Own
 2026,9,9th,Julius,Julius,Own,Own
@@ -91,8 +91,8 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,9,9th,Dylan,Dylan,Own,Own
 2026,10,10th,Donny,Dylan,Traded,Owed to Dylan
 2026,10,10th,Justin,Justin,Own,Own
-2026,10,10th,Ryan Houseman,Ryan Houseman,Own,Own
-2026,10,10th,Levi,Ryan Houseman,Traded,Owed to Ryan Houseman
+2026,10,10th,House,House,Own,Own
+2026,10,10th,Levi,House,Traded,Owed to House
 2026,10,10th,Luke,Luke,Own,Own
 2026,10,10th,Julius,Julius,Own,Own
 2026,10,10th,Drake,Drake,Own,Own
@@ -101,7 +101,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,10,10th,Dylan,Dylan,Own,Own
 2026,11,11th,Donny,Donny,Own,Own
 2026,11,11th,Justin,Justin,Own,Own
-2026,11,11th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,11,11th,House,House,Own,Own
 2026,11,11th,Levi,Levi,Own,Own
 2026,11,11th,Luke,Luke,Own,Own
 2026,11,11th,Julius,Julius,Own,Own
@@ -111,7 +111,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,11,11th,Dylan,Dylan,Own,Own
 2026,12,12th,Donny,Dylan,Traded,Owed to Dylan
 2026,12,12th,Justin,Justin,Own,Own
-2026,12,12th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,12,12th,House,House,Own,Own
 2026,12,12th,Levi,Levi,Own,Own
 2026,12,12th,Luke,Levi,Traded,Owed to Levi
 2026,12,12th,Julius,Julius,Own,Own
@@ -121,7 +121,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,12,12th,Dylan,Dylan,Own,Own
 2026,13,13th,Donny,Donny,Own,Own
 2026,13,13th,Justin,Justin,Own,Own
-2026,13,13th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,13,13th,House,House,Own,Own
 2026,13,13th,Levi,Levi,Own,Own
 2026,13,13th,Luke,Luke,Own,Own
 2026,13,13th,Julius,Julius,Own,Own
@@ -131,7 +131,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,13,13th,Dylan,Dylan,Own,Own
 2026,14,14th,Donny,Donny,Own,Own
 2026,14,14th,Justin,Justin,Own,Own
-2026,14,14th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,14,14th,House,House,Own,Own
 2026,14,14th,Levi,Levi,Own,Own
 2026,14,14th,Luke,Luke,Own,Own
 2026,14,14th,Julius,Julius,Own,Own
@@ -141,7 +141,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,14,14th,Dylan,Dylan,Own,Own
 2026,15,15th,Donny,Donny,Own,Own
 2026,15,15th,Justin,Justin,Own,Own
-2026,15,15th,Ryan Houseman,Ryan Houseman,Own,Own
+2026,15,15th,House,House,Own,Own
 2026,15,15th,Levi,Levi,Own,Own
 2026,15,15th,Luke,Luke,Own,Own
 2026,15,15th,Julius,Julius,Own,Own
@@ -151,7 +151,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,15,15th,Dylan,Dylan,Own,Own
 2027,1,1st,Donny,Donny,Keeper,Keeper
 2027,1,1st,Justin,Justin,Keeper,Keeper
-2027,1,1st,Ryan Houseman,Ryan Houseman,Keeper,Keeper
+2027,1,1st,House,House,Keeper,Keeper
 2027,1,1st,Levi,Levi,Keeper,Keeper
 2027,1,1st,Luke,Luke,Keeper,Keeper
 2027,1,1st,Julius,Julius,Keeper,Keeper
@@ -161,7 +161,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,1,1st,Dylan,Dylan,Keeper,Keeper
 2027,2,2nd,Donny,Donny,Keeper,Keeper
 2027,2,2nd,Justin,Justin,Keeper,Keeper
-2027,2,2nd,Ryan Houseman,Ryan Houseman,Keeper,Keeper
+2027,2,2nd,House,House,Keeper,Keeper
 2027,2,2nd,Levi,Levi,Keeper,Keeper
 2027,2,2nd,Luke,Luke,Keeper,Keeper
 2027,2,2nd,Julius,Julius,Keeper,Keeper
@@ -171,7 +171,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,2,2nd,Dylan,Dylan,Keeper,Keeper
 2027,3,3rd,Donny,Donny,Own,Own
 2027,3,3rd,Justin,Justin,Own,Own
-2027,3,3rd,Ryan Houseman,Ryan Houseman,Own,Own
+2027,3,3rd,House,House,Own,Own
 2027,3,3rd,Levi,Levi,Own,Own
 2027,3,3rd,Luke,Luke,Own,Own
 2027,3,3rd,Julius,Julius,Own,Own
@@ -181,7 +181,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,3,3rd,Dylan,Dylan,Own,Own
 2027,4,4th,Donny,Donny,Own,Own
 2027,4,4th,Justin,Justin,Own,Own
-2027,4,4th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,4,4th,House,House,Own,Own
 2027,4,4th,Levi,Levi,Own,Own
 2027,4,4th,Luke,Luke,Own,Own
 2027,4,4th,Julius,Julius,Own,Own
@@ -191,7 +191,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,4,4th,Dylan,Dylan,Own,Own
 2027,5,5th,Donny,Donny,Own,Own
 2027,5,5th,Justin,Levi,Traded,Owed to Levi
-2027,5,5th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,5,5th,House,House,Own,Own
 2027,5,5th,Levi,Levi,Own,Own
 2027,5,5th,Luke,Luke,Own,Own
 2027,5,5th,Julius,Julius,Own,Own
@@ -201,7 +201,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,5,5th,Dylan,Dylan,Own,Own
 2027,6,6th,Donny,Donny,Own,Own
 2027,6,6th,Justin,Levi,Traded,Owed to Levi
-2027,6,6th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,6,6th,House,House,Own,Own
 2027,6,6th,Levi,Levi,Own,Own
 2027,6,6th,Luke,Luke,Own,Own
 2027,6,6th,Julius,Julius,Own,Own
@@ -211,7 +211,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,6,6th,Dylan,Dylan,Own,Own
 2027,7,7th,Donny,Donny,Own,Own
 2027,7,7th,Justin,Justin,Own,Own
-2027,7,7th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,7,7th,House,House,Own,Own
 2027,7,7th,Levi,Levi,Own,Own
 2027,7,7th,Luke,Luke,Own,Own
 2027,7,7th,Julius,Julius,Own,Own
@@ -221,7 +221,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,7,7th,Dylan,Dylan,Own,Own
 2027,8,8th,Donny,Donny,Own,Own
 2027,8,8th,Justin,Justin,Own,Own
-2027,8,8th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,8,8th,House,House,Own,Own
 2027,8,8th,Levi,Levi,Own,Own
 2027,8,8th,Luke,Luke,Own,Own
 2027,8,8th,Julius,Julius,Own,Own
@@ -231,7 +231,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,8,8th,Dylan,Dylan,Own,Own
 2027,9,9th,Donny,Donny,Own,Own
 2027,9,9th,Justin,Justin,Own,Own
-2027,9,9th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,9,9th,House,House,Own,Own
 2027,9,9th,Levi,Levi,Own,Own
 2027,9,9th,Luke,Luke,Own,Own
 2027,9,9th,Julius,Julius,Own,Own
@@ -241,7 +241,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,9,9th,Dylan,Dylan,Own,Own
 2027,10,10th,Donny,Donny,Own,Own
 2027,10,10th,Justin,Justin,Own,Own
-2027,10,10th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,10,10th,House,House,Own,Own
 2027,10,10th,Levi,Levi,Own,Own
 2027,10,10th,Luke,Luke,Own,Own
 2027,10,10th,Julius,Julius,Own,Own
@@ -251,7 +251,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,10,10th,Dylan,Dylan,Own,Own
 2027,11,11th,Donny,Donny,Own,Own
 2027,11,11th,Justin,Justin,Own,Own
-2027,11,11th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,11,11th,House,House,Own,Own
 2027,11,11th,Levi,Levi,Own,Own
 2027,11,11th,Luke,Luke,Own,Own
 2027,11,11th,Julius,Julius,Own,Own
@@ -261,7 +261,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,11,11th,Dylan,Dylan,Own,Own
 2027,12,12th,Donny,Donny,Own,Own
 2027,12,12th,Justin,Justin,Own,Own
-2027,12,12th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,12,12th,House,House,Own,Own
 2027,12,12th,Levi,Levi,Own,Own
 2027,12,12th,Luke,Luke,Own,Own
 2027,12,12th,Julius,Julius,Own,Own
@@ -271,7 +271,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,12,12th,Dylan,Dylan,Own,Own
 2027,13,13th,Donny,Donny,Own,Own
 2027,13,13th,Justin,Justin,Own,Own
-2027,13,13th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,13,13th,House,House,Own,Own
 2027,13,13th,Levi,Levi,Own,Own
 2027,13,13th,Luke,Luke,Own,Own
 2027,13,13th,Julius,Julius,Own,Own
@@ -281,7 +281,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,13,13th,Dylan,Dylan,Own,Own
 2027,14,14th,Donny,Donny,Own,Own
 2027,14,14th,Justin,Justin,Own,Own
-2027,14,14th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,14,14th,House,House,Own,Own
 2027,14,14th,Levi,Levi,Own,Own
 2027,14,14th,Luke,Luke,Own,Own
 2027,14,14th,Julius,Julius,Own,Own
@@ -291,7 +291,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,14,14th,Dylan,Dylan,Own,Own
 2027,15,15th,Donny,Donny,Own,Own
 2027,15,15th,Justin,Justin,Own,Own
-2027,15,15th,Ryan Houseman,Ryan Houseman,Own,Own
+2027,15,15th,House,House,Own,Own
 2027,15,15th,Levi,Levi,Own,Own
 2027,15,15th,Luke,Luke,Own,Own
 2027,15,15th,Julius,Julius,Own,Own

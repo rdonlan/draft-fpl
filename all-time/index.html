@@ -1103,8 +1103,8 @@
     }
     .pick-profile-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.91fr) minmax(0, 0.91fr);
-      gap: 12px;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 1.05fr);
+      gap: 10px;
       align-items: start;
     }
     .pick-panel {
@@ -1132,7 +1132,7 @@
     }
     .pick-panel th,
     .pick-panel td {
-      padding: 7px 8px;
+      padding: 7px 7px;
       font-size: 0.8rem;
       white-space: normal;
       overflow-wrap: anywhere;
@@ -1144,16 +1144,32 @@
     }
     .pick-panel th:first-child,
     .pick-panel td:first-child {
-      width: 3.8rem;
+      width: 3.4rem;
       white-space: nowrap;
     }
     .pick-panel th:nth-child(2),
     .pick-panel td:nth-child(2) {
-      width: 36%;
+      width: 32%;
     }
     .pick-panel th:nth-child(3),
     .pick-panel td:nth-child(3) {
-      width: 42%;
+      width: auto;
+    }
+    .pick-panel-have th,
+    .pick-panel-have td {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    .pick-panel-have th:first-child,
+    .pick-panel-have td:first-child {
+      width: 3.2rem;
+    }
+    .pick-panel-have th:nth-child(2),
+    .pick-panel-have td:nth-child(2) {
+      width: 31%;
+      white-space: nowrap;
+      overflow-wrap: normal;
+      word-break: normal;
     }
     .trade-recap-pill {
       display: inline-flex;
@@ -1236,6 +1252,20 @@
     .draft-board-table .pick-owner-cell.is-traded {
       box-shadow: inset 0 0 0 2px var(--pick-border);
     }
+    .draft-board-table .pick-owner-cell.is-unused,
+    .draft-board-table tr:nth-child(even) .pick-owner-cell.is-unused {
+      background: #e5e7eb !important;
+      color: #6b7280 !important;
+      box-shadow: inset 0 0 0 1px #cbd5e1;
+      opacity: 0.82;
+    }
+    html[data-theme="dark"] .draft-board-table .pick-owner-cell.is-unused,
+    html[data-theme="dark"] .draft-board-table tr:nth-child(even) .pick-owner-cell.is-unused {
+      background: #202832 !important;
+      color: #94a3b8 !important;
+      box-shadow: inset 0 0 0 1px #475569;
+      opacity: 0.88;
+    }
     .draft-pick-slot {
       display: block;
       margin-bottom: 3px;
@@ -1246,6 +1276,15 @@
     .draft-pick-holder {
       display: block;
       line-height: 1.12;
+    }
+    .draft-pick-unused {
+      display: block;
+      margin-top: 3px;
+      color: inherit;
+      font-size: 0.66rem;
+      font-weight: 850;
+      line-height: 1.1;
+      text-transform: uppercase;
     }
     strong {
       color: var(--accent-2);

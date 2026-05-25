@@ -1103,8 +1103,8 @@
     }
     .pick-profile-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.91fr) minmax(0, 0.91fr);
-      gap: 12px;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 1.05fr);
+      gap: 10px;
       align-items: start;
     }
     .pick-panel {
@@ -1132,7 +1132,7 @@
     }
     .pick-panel th,
     .pick-panel td {
-      padding: 7px 8px;
+      padding: 7px 7px;
       font-size: 0.8rem;
       white-space: normal;
       overflow-wrap: anywhere;
@@ -1144,16 +1144,32 @@
     }
     .pick-panel th:first-child,
     .pick-panel td:first-child {
-      width: 3.8rem;
+      width: 3.4rem;
       white-space: nowrap;
     }
     .pick-panel th:nth-child(2),
     .pick-panel td:nth-child(2) {
-      width: 36%;
+      width: 32%;
     }
     .pick-panel th:nth-child(3),
     .pick-panel td:nth-child(3) {
-      width: 42%;
+      width: auto;
+    }
+    .pick-panel-have th,
+    .pick-panel-have td {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    .pick-panel-have th:first-child,
+    .pick-panel-have td:first-child {
+      width: 3.2rem;
+    }
+    .pick-panel-have th:nth-child(2),
+    .pick-panel-have td:nth-child(2) {
+      width: 31%;
+      white-space: nowrap;
+      overflow-wrap: normal;
+      word-break: normal;
     }
     .trade-recap-pill {
       display: inline-flex;
@@ -1236,6 +1252,20 @@
     .draft-board-table .pick-owner-cell.is-traded {
       box-shadow: inset 0 0 0 2px var(--pick-border);
     }
+    .draft-board-table .pick-owner-cell.is-unused,
+    .draft-board-table tr:nth-child(even) .pick-owner-cell.is-unused {
+      background: #e5e7eb !important;
+      color: #6b7280 !important;
+      box-shadow: inset 0 0 0 1px #cbd5e1;
+      opacity: 0.82;
+    }
+    html[data-theme="dark"] .draft-board-table .pick-owner-cell.is-unused,
+    html[data-theme="dark"] .draft-board-table tr:nth-child(even) .pick-owner-cell.is-unused {
+      background: #202832 !important;
+      color: #94a3b8 !important;
+      box-shadow: inset 0 0 0 1px #475569;
+      opacity: 0.88;
+    }
     .draft-pick-slot {
       display: block;
       margin-bottom: 3px;
@@ -1246,6 +1276,15 @@
     .draft-pick-holder {
       display: block;
       line-height: 1.12;
+    }
+    .draft-pick-unused {
+      display: block;
+      margin-top: 3px;
+      color: inherit;
+      font-size: 0.66rem;
+      font-weight: 850;
+      line-height: 1.1;
+      text-transform: uppercase;
     }
     strong {
       color: var(--accent-2);
@@ -1598,13 +1637,9 @@
       <a href="../data/analysis/future-picks/league_report.md">Raw Markdown</a>
 <a href="../data/analysis/future-picks/future_pick_matrix.csv">Pick Matrix CSV</a>
 <a href="../data/analysis/future-picks/future_pick_portfolio.csv">Portfolio CSV</a>
-<a href="../data/analysis/future-picks/future_pick_traded_detail.csv">Traded Picks CSV</a>
-<a href="../data/analysis/future-picks/future_pick_reconciliation.csv">Reconciliation CSV</a>
-<a href="../data/analysis/future-picks/future_pick_count_audit.csv">Count Audit CSV</a>
-<a href="../data/analysis/future-picks/future_pick_movements.csv">Ledger Movements CSV</a>
     </div>
     <h1>BMS FPL Future Pick Tracker</h1>
-<p>A draft-pick ownership page built from the workbook&#x27;s <code>Drafting Order</code> tab, with ledger-backed corrections applied where the tracker is known to be less accurate.</p>
+<p>A draft-pick ownership page built from the workbook&#x27;s <code>Drafting Order</code> tab and reconciled against the trade ledger.</p>
 <details open>
 <summary><h2>Manager Pick Lookup</h2></summary>
 <p>Choose a year and manager to see exactly which future picks they hold and which of their own picks they no longer control.</p>
@@ -1627,7 +1662,7 @@
 <label class="pick-control"><span>Manager</span><select data-pick-manager>
 <option value="Donny" selected>Donny</option>
 <option value="Justin">Justin</option>
-<option value="Ryan Houseman">Ryan Houseman</option>
+<option value="House">House</option>
 <option value="Levi">Levi</option>
 <option value="Luke">Luke</option>
 <option value="Julius">Julius</option>
@@ -1650,9 +1685,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>6</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Donny</td><td>Own pick</td></tr>
@@ -1699,9 +1734,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>4</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Justin</td><td>Own pick</td></tr>
@@ -1736,9 +1771,9 @@
 </div>
 </div>
 </section>
-<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Ryan Houseman" hidden>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="House" hidden>
 <div class="pick-profile-heading">
-<div><h3>Ryan Houseman - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+<div><h3>House - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
 <div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
@@ -1747,23 +1782,23 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>4th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>6th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>7th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>8th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>9th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>3rd</td><td>House</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>House</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Levi</td><td>From Levi</td></tr>
-<tr><td>10th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>11th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>12th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>13th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>14th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>15th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>House</td><td>Own pick</td></tr>
 </tbody>
 </table>
 </div>
@@ -1779,7 +1814,7 @@
 <table>
 <thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>10th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick" aria-label="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick">via Levi to Ryan Houseman</span></td></tr>
+<tr><td>10th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 10th-round pick to House. Trade: Levi sent 2026 10th-round pick; House sent 2025 12th-round pick, 13th-round pick, 14th-round pick" aria-label="2024-25 Postseason: Levi sent 2026 10th-round pick to House. Trade: Levi sent 2026 10th-round pick; House sent 2025 12th-round pick, 13th-round pick, 14th-round pick">via Levi to House</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -1796,9 +1831,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>2</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>3rd</td><td>Luke</td><td>From Luke</td></tr>
@@ -1824,7 +1859,7 @@
 <thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
 <tr><td>4th</td><td>Ethan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 24: Levi sent 4th-round pick to Ethan. Trade: Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)" aria-label="2025-26 GW 24: Levi sent 4th-round pick to Ethan. Trade: Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)">via Levi to Ethan</span></td></tr>
-<tr><td>10th</td><td>Ryan Houseman</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick" aria-label="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick">via Levi to Ryan Houseman</span></td></tr>
+<tr><td>10th</td><td>House</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 10th-round pick to House. Trade: Levi sent 2026 10th-round pick; House sent 2025 12th-round pick, 13th-round pick, 14th-round pick" aria-label="2024-25 Postseason: Levi sent 2026 10th-round pick to House. Trade: Levi sent 2026 10th-round pick; House sent 2025 12th-round pick, 13th-round pick, 14th-round pick">via Levi to House</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -1853,9 +1888,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>3</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>4th</td><td>Luke</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Luke</td><td>Own pick</td></tr>
@@ -1901,9 +1936,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Julius</td><td>Own pick</td></tr>
@@ -1953,9 +1988,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Drake</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Donny</td><td>From Donny</td></tr>
@@ -2005,9 +2040,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Chabo</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Chabo</td><td>Own pick</td></tr>
@@ -2054,9 +2089,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Ethan</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Ethan</td><td>Own pick</td></tr>
@@ -2105,15 +2140,15 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>3rd</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>4th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Dylan</td><td>Own pick</td></tr>
-<tr><td>5th</td><td>Ryan Houseman</td><td>From Ryan Houseman</td></tr>
+<tr><td>5th</td><td>House</td><td>From House</td></tr>
 <tr><td>6th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>7th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Dylan</td><td>Own pick</td></tr>
@@ -2142,7 +2177,7 @@
 <thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 3rd-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks." aria-label="2024-25 Postseason: Levi sent 2026 3rd-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks.">via Levi to Dylan</span></td></tr>
-<tr><td>5th</td><td>Ryan Houseman</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks." aria-label="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks.">via Levi to Dylan</span></td></tr>
+<tr><td>5th</td><td>House</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks." aria-label="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks.">via Levi to Dylan</span></td></tr>
 <tr><td>10th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
 <tr><td>12th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
 </tbody>
@@ -2161,9 +2196,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Donny</td><td>Own pick</td></tr>
@@ -2210,9 +2245,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>2</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
@@ -2247,9 +2282,9 @@
 </div>
 </div>
 </section>
-<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Ryan Houseman" hidden>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="House" hidden>
 <div class="pick-profile-heading">
-<div><h3>Ryan Houseman - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+<div><h3>House - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
 <div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
@@ -2258,23 +2293,23 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>4th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>5th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>6th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>7th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>8th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>9th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>11th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>12th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>13th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>14th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>15th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>3rd</td><td>House</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>House</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>House</td><td>Own pick</td></tr>
 </tbody>
 </table>
 </div>
@@ -2307,9 +2342,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Levi</td><td>Own pick</td></tr>
@@ -2359,9 +2394,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Luke</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Luke</td><td>Own pick</td></tr>
@@ -2408,9 +2443,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Julius</td><td>Own pick</td></tr>
@@ -2457,9 +2492,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Drake</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Drake</td><td>Own pick</td></tr>
@@ -2506,9 +2541,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Chabo</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Chabo</td><td>Own pick</td></tr>
@@ -2555,9 +2590,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Ethan</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Ethan</td><td>Own pick</td></tr>
@@ -2604,9 +2639,9 @@
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
-<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<thead><tr><th>Round</th><th>Original</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Dylan</td><td>Own pick</td></tr>
@@ -2654,6 +2689,7 @@
 <li>Columns are the original pick slots, ordered worst-to-first from the 25/26 league standings.</li>
 <li>The number at the top of each column is the draft slot in that round.</li>
 <li>Every box is colored by the manager who currently owns that pick.</li>
+<li>Grey boxes are surplus picks: each manager can use at most 15 total picks, so after two keeper slots only their first 13 picks shown here are usable. Any 14th+ shown pick is pick 16+ overall and will not be used unless the pick situation changes.</li>
 <li>Rounds <code>1st</code> and <code>2nd</code> are omitted because those are keeper slots.</li>
 </ul>
 </details>
@@ -2666,7 +2702,7 @@
 <th><span>3</span><strong>Chabo</strong></th>
 <th><span>4</span><strong>Levi</strong></th>
 <th><span>5</span><strong>Dylan</strong></th>
-<th><span>6</span><strong>Ryan Houseman</strong></th>
+<th><span>6</span><strong>House</strong></th>
 <th><span>7</span><strong>Drake</strong></th>
 <th><span>8</span><strong>Luke</strong></th>
 <th><span>9</span><strong>Justin</strong></th>
@@ -2680,7 +2716,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">3.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">3.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">3.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">3.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">3.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">3.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Luke"><span class="draft-pick-slot">3.08</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Justin"><span class="draft-pick-slot">3.09</span><span class="draft-pick-holder">Dylan</span></td>
@@ -2693,7 +2729,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">4.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Levi"><span class="draft-pick-slot">4.04</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">4.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">4.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">4.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">4.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">4.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">4.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2706,7 +2742,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">5.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">5.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">5.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-traded" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">5.06</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="House"><span class="draft-pick-slot">5.06</span><span class="draft-pick-holder">Dylan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">5.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">5.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">5.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2719,7 +2755,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">6.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">6.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">6.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">6.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">6.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">6.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">6.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Justin"><span class="draft-pick-slot">6.09</span><span class="draft-pick-holder">Julius</span></td>
@@ -2732,7 +2768,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">7.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">7.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">7.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">7.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">7.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">7.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Luke"><span class="draft-pick-slot">7.08</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Justin"><span class="draft-pick-slot">7.09</span><span class="draft-pick-holder">Levi</span></td>
@@ -2745,7 +2781,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">8.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">8.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">8.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">8.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">8.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">8.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">8.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Justin"><span class="draft-pick-slot">8.09</span><span class="draft-pick-holder">Levi</span></td>
@@ -2758,7 +2794,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">9.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">9.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">9.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">9.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">9.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">9.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">9.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">9.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2769,9 +2805,9 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">10.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Ethan"><span class="draft-pick-slot">10.02</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">10.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-traded" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Levi"><span class="draft-pick-slot">10.04</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="Levi"><span class="draft-pick-slot">10.04</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">10.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">10.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">10.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">10.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">10.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">10.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2784,7 +2820,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">11.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">11.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">11.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">11.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">11.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">11.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">11.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">11.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2797,11 +2833,213 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">12.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">12.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">12.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">12.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">12.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">12.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Luke"><span class="draft-pick-slot">12.08</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">12.09</span><span class="draft-pick-holder">Justin</span></td>
-<td class="pick-owner-cell is-traded" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Donny"><span class="draft-pick-slot">12.10</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-traded is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Donny"><span class="draft-pick-slot">12.10</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">13th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">13.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">13.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">13.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">13.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">13.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">13.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">13.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">13.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">13.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">14th</td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" title="Julius owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Julius</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">14.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">14.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 18 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">14.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 18 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">14.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" title="Drake owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">14.07</span><span class="draft-pick-holder">Drake</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">14.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">14.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">14.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">15th</td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" title="Julius owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Julius</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" title="Ethan owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Ethan</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">15.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 18 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 18 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 19 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">15.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 19 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">15.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" title="Drake owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">15.07</span><span class="draft-pick-holder">Drake</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">15.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">15.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">15.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary><h2>2027 Draft Board</h2></summary>
+<p>A draft-board view ordered by reverse 25/26 standings. Each box shows the current owner of that pick.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li>Columns are the original pick slots, ordered worst-to-first from the 25/26 league standings.</li>
+<li>The number at the top of each column is the draft slot in that round.</li>
+<li>Every box is colored by the manager who currently owns that pick.</li>
+<li>Grey boxes are surplus picks: each manager can use at most 15 total picks, so after two keeper slots only their first 13 picks shown here are usable. Any 14th+ shown pick is pick 16+ overall and will not be used unless the pick situation changes.</li>
+<li>Rounds <code>1st</code> and <code>2nd</code> are omitted because those are keeper slots.</li>
+</ul>
+</details>
+<div class="draft-board-wrap">
+<table class="draft-board-table">
+<thead><tr>
+<th>Round</th>
+<th><span>1</span><strong>Julius</strong></th>
+<th><span>2</span><strong>Ethan</strong></th>
+<th><span>3</span><strong>Chabo</strong></th>
+<th><span>4</span><strong>Levi</strong></th>
+<th><span>5</span><strong>Dylan</strong></th>
+<th><span>6</span><strong>House</strong></th>
+<th><span>7</span><strong>Drake</strong></th>
+<th><span>8</span><strong>Luke</strong></th>
+<th><span>9</span><strong>Justin</strong></th>
+<th><span>10</span><strong>Donny</strong></th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="draft-round-cell">3rd</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">3.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">3.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">3.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">3.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">3.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">3.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">3.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">3.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">3.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">3.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">4th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">4.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">4.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">4.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">4.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">4.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">4.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">4.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">4.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">4.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">4.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">5th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">5.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">5.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">5.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">5.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">5.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">5.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">5.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">5.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Justin"><span class="draft-pick-slot">5.09</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">5.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">6th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">6.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">6.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">6.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">6.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">6.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">6.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">6.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">6.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Justin"><span class="draft-pick-slot">6.09</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">6.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">7th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">7.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">7.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">7.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">7.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">7.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">7.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">7.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">7.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">7.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">7.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">8th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">8.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">8.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">8.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">8.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">8.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">8.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">8.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">8.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">8.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">8.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">9th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">9.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">9.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">9.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">9.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">9.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">9.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">9.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">9.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">9.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">9.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">10th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">10.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">10.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">10.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">10.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">10.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">10.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">10.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">10.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">10.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">10.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">11th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">11.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">11.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">11.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">11.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">11.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">11.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">11.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">11.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">11.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">11.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr>
+<td class="draft-round-cell">12th</td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">12.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">12.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">12.03</span><span class="draft-pick-holder">Chabo</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">12.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">12.05</span><span class="draft-pick-holder">Dylan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">12.06</span><span class="draft-pick-holder">House</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">12.07</span><span class="draft-pick-holder">Drake</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">12.08</span><span class="draft-pick-holder">Luke</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">12.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">12.10</span><span class="draft-pick-holder">Donny</span></td>
 </tr>
 <tr>
 <td class="draft-round-cell">13th</td>
@@ -2810,7 +3048,7 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">13.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">13.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">13.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">13.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">13.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">13.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">13.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2821,9 +3059,9 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">14.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">14.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">14.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">14.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">14.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">14.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">14.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">14.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2834,9 +3072,9 @@
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">15.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">15.05</span><span class="draft-pick-holder">Dylan</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="Ryan Houseman" data-original-owner="Ryan Houseman"><span class="draft-pick-slot">15.06</span><span class="draft-pick-holder">Ryan Houseman</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">15.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">15.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">15.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">15.09</span><span class="draft-pick-holder">Justin</span></td>
@@ -2845,136 +3083,6 @@
 </tbody>
 </table>
 </div>
-</details>
-<details>
-<summary><h2>2027 Pick Board</h2></summary>
-<p>Workbook-style board for 2027: each column is the original owner of the pick, and the cell shows whether that pick is still own or owed to another manager.</p>
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-<ul>
-<li><code>Own</code> means the original owner still controls that pick.</li>
-<li><code>-&gt; Manager</code> means that original pick is currently owed to the named manager.</li>
-<li><code>Keeper</code> appears for rounds 1 and 2 because those slots are not part of the traded-pick count.</li>
-</ul>
-</details>
-<div class="table-wrap"><table>
-<thead><tr><th>Round</th><th>Donny</th><th>Justin</th><th>Ryan Houseman</th><th>Levi</th><th>Luke</th><th>Julius</th><th>Drake</th><th>Chabo</th><th>Ethan</th><th>Dylan</th></tr></thead>
-<tbody>
-<tr><td data-label="Round">1st</td><td data-label="Donny">Keeper</td><td data-label="Justin">Keeper</td><td data-label="Ryan Houseman">Keeper</td><td data-label="Levi">Keeper</td><td data-label="Luke">Keeper</td><td data-label="Julius">Keeper</td><td data-label="Drake">Keeper</td><td data-label="Chabo">Keeper</td><td data-label="Ethan">Keeper</td><td data-label="Dylan">Keeper</td></tr>
-<tr><td data-label="Round">2nd</td><td data-label="Donny">Keeper</td><td data-label="Justin">Keeper</td><td data-label="Ryan Houseman">Keeper</td><td data-label="Levi">Keeper</td><td data-label="Luke">Keeper</td><td data-label="Julius">Keeper</td><td data-label="Drake">Keeper</td><td data-label="Chabo">Keeper</td><td data-label="Ethan">Keeper</td><td data-label="Dylan">Keeper</td></tr>
-<tr><td data-label="Round">3rd</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">4th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">5th</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Levi</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">6th</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Levi</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">7th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">8th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">9th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">10th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">11th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">12th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">13th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">14th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">15th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Traded Pick Detail</h2></summary>
-<p>A compact list of every future pick currently marked as owed to someone other than its original owner after ledger corrections.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Current Holder</th><th>Displayed Status</th></tr></thead>
-<tbody>
-<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Displayed Status">Owed to Drake</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Levi</td><td data-label="Current Holder">Ethan</td><td data-label="Displayed Status">Owed to Ethan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">Ryan Houseman</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Ethan</td><td data-label="Displayed Status">Owed to Ethan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Julius</td><td data-label="Displayed Status">Owed to Julius</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Displayed Status">Owed to Drake</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">9th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Julius</td><td data-label="Displayed Status">Owed to Julius</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Ethan</td><td data-label="Current Holder">Donny</td><td data-label="Displayed Status">Owed to Donny</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Levi</td><td data-label="Current Holder">Ryan Houseman</td><td data-label="Displayed Status">Owed to Ryan Houseman</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Round">5th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Ledger Corrections Applied</h2></summary>
-<p>These rows show where the page overrides the workbook tracker because the trade ledger or a manual ruling is more accurate.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Tracker Holder</th><th>Displayed Holder</th><th>Reason</th></tr></thead>
-<tbody>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin</td><td data-label="Tracker Holder">Ryan Houseman</td><td data-label="Displayed Holder">Justin</td><td data-label="Reason">Ledger decision: Levi sent his own 2026 10th-round pick to Ryan Houseman, so Justin keeps his own 10th.</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Levi</td><td data-label="Tracker Holder">Levi</td><td data-label="Displayed Holder">Ryan Houseman</td><td data-label="Reason">Ledger decision: Levi sent his own 2026 10th-round pick to Ryan Houseman.</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Tracker Holder">Donny</td><td data-label="Displayed Holder">Dylan</td><td data-label="Reason">Ledger decision: source row 37 says Donny sent his 2026 12th-round pick to Dylan.</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Trade Ledger Reconciliation</h2></summary>
-<p>This checks the workbook tracker against future-pick movements parsed from the trade ledger and calls out anything that does not line up.</p>
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-<ul>
-<li>A pick without a full draft year is assigned to the next draft after that trade season: 2024-25 trade rows default to the 2025 draft, and 2025-26 trade rows default to the 2026 draft.</li>
-<li>Draft Day is the exception: unlabeled Draft Day picks are treated as current-draft picks that can be used immediately, so they are not stored as future picks.</li>
-<li>If a pick asset clearly names a full draft year, like <code>2026 3rd-round pick</code> or <code>2027 6th-round pick</code>, that explicit draft year overrides the season default.</li>
-<li>In pass-through cases where a manager held more than one pick in the same round, the parser tries to use the non-own pick first and records that assumption below.</li>
-<li>Multi-team trade rows do not state exactly which counterparty receives each asset, so those recipient assumptions are listed separately.</li>
-</ul>
-</details>
-<p>No pick-owner mismatches found.</p>
-</details>
-<details>
-<summary><h2>Reconciliation Assumptions</h2></summary>
-<p>These are not necessarily errors; they are the trade-ledger rows where the parser had to infer pass-through ownership or a recipient.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Sender</th><th>Recipient</th><th>Timing</th><th>Assumption</th><th>Asset</th></tr></thead>
-<tbody>
-<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">Ryan Houseman</td><td data-label="Sender">Ryan Houseman</td><td data-label="Recipient">Levi</td><td data-label="Timing">Postseason</td><td data-label="Assumption">multi-team trade; recipient inferred as Levi</td><td data-label="Asset">2026 5th-round pick</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Sender">Justin</td><td data-label="Recipient">Levi</td><td data-label="Timing">Before 2024-25 postseason row 32</td><td data-label="Assumption">Manual clarification: Justin had already traded this pick to Levi before Levi sent it to Dylan; the trade ledger does not clearly mark that pass-through.</td><td data-label="Asset">2026 3rd-round pick</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Sender">Levi</td><td data-label="Recipient">Dylan</td><td data-label="Timing">Postseason</td><td data-label="Assumption">original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks</td><td data-label="Asset">2026 3rd-round pick</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">Ryan Houseman</td><td data-label="Sender">Levi</td><td data-label="Recipient">Dylan</td><td data-label="Timing">Postseason</td><td data-label="Assumption">original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks</td><td data-label="Asset">2026 5th-round pick</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Workbook Count Check</h2></summary>
-<p>This verifies the workbook&#x27;s 2026 count table against the ledger-adjusted ownership board above.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Year</th><th>Round</th><th>Manager</th><th>Workbook Count</th><th>Calculated Count</th><th>Workbook Row</th></tr></thead>
-<tbody>
-<tr><td data-label="Year">2026</td><td data-label="Round">3</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">23</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">3</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">23</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">4</td><td data-label="Manager">Ethan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">24</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">7</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">27</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Justin</td><td data-label="Workbook Count">0</td><td data-label="Calculated Count">1</td><td data-label="Workbook Row">30</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">30</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">30</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Donny</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">32</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Ethan</td><td data-label="Workbook Count">2</td><td data-label="Calculated Count">1</td><td data-label="Workbook Row">32</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">32</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Donny</td><td data-label="Workbook Count">9</td><td data-label="Calculated Count">8</td><td data-label="Workbook Row">36</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Justin</td><td data-label="Workbook Count">8</td><td data-label="Calculated Count">9</td><td data-label="Workbook Row">36</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">16</td><td data-label="Workbook Row">36</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">13</td><td data-label="Calculated Count">10</td><td data-label="Workbook Row">36</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">17</td><td data-label="Workbook Row">36</td></tr>
-</tbody></table></div>
-</details>
-<details>
-<summary><h2>Output Files</h2></summary>
-<ul>
-<li><code>future_pick_portfolio.csv</code></li>
-<li><code>future_pick_matrix.csv</code></li>
-<li><code>future_pick_traded_detail.csv</code></li>
-<li><code>future_pick_reconciliation.csv</code></li>
-<li><code>future_pick_count_audit.csv</code></li>
-<li><code>future_pick_movements.csv</code></li>
-</ul>
 </details>
   </main>
   <div class="rating-tooltip" aria-hidden="true"></div>
