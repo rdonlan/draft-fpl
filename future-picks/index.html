@@ -1446,7 +1446,7 @@
 <a href="../data/analysis/future-picks/future_pick_movements.csv">Ledger Movements CSV</a>
     </div>
     <h1>BMS FPL Future Pick Tracker</h1>
-<p>A draft-pick ownership page built from the workbook&#x27;s <code>Drafting Order</code> tab, with a reconciliation pass against the trade ledger.</p>
+<p>A draft-pick ownership page built from the workbook&#x27;s <code>Drafting Order</code> tab, with ledger-backed corrections applied where the tracker is known to be less accurate.</p>
 <details open>
 <summary><h2>Manager Pick Lookup</h2></summary>
 <p>Choose a year and manager to see exactly which future picks they hold and which of their own picks they no longer control.</p>
@@ -1482,13 +1482,13 @@
 <div class="pick-profile-list">
 <section class="pick-profile is-active" data-pick-profile data-year="2026" data-manager="Donny">
 <div class="pick-profile-heading">
-<div><h3>Donny - 2026</h3><p>9 picks, -4 versus a standard 13-pick draft.</p></div>
+<div><h3>Donny - 2026</h3><p>8 picks, -5 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>9</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>-4</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>8</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-5</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>1</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>6</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
@@ -1500,7 +1500,6 @@
 <tr><td>7th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Ethan</td><td>From Ethan</td></tr>
 <tr><td>11th</td><td>Donny</td><td>Own pick</td></tr>
-<tr><td>12th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>14th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>15th</td><td>Donny</td><td>Own pick</td></tr>
@@ -1516,6 +1515,7 @@
 <tr><td>8th</td><td>Drake</td></tr>
 <tr><td>9th</td><td>Julius</td></tr>
 <tr><td>10th</td><td>Dylan</td></tr>
+<tr><td>12th</td><td>Dylan</td></tr>
 </tbody>
 </table>
 </div>
@@ -1531,13 +1531,13 @@
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Justin" hidden>
 <div class="pick-profile-heading">
-<div><h3>Justin - 2026</h3><p>8 picks, -5 versus a standard 13-pick draft.</p></div>
+<div><h3>Justin - 2026</h3><p>9 picks, -4 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>8</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>-5</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>9</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-4</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>4</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
@@ -1547,6 +1547,7 @@
 <tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Justin</td><td>Own pick</td></tr>
@@ -1563,7 +1564,6 @@
 <tr><td>6th</td><td>Julius</td></tr>
 <tr><td>7th</td><td>Levi</td></tr>
 <tr><td>8th</td><td>Levi</td></tr>
-<tr><td>10th</td><td>Ryan Houseman</td></tr>
 </tbody>
 </table>
 </div>
@@ -1598,7 +1598,7 @@
 <tr><td>7th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>10th</td><td>Levi</td><td>From Levi</td></tr>
 <tr><td>10th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
@@ -1620,7 +1620,7 @@
 <table>
 <thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
 <tbody>
-<tr><td>10th</td><td>Justin</td></tr>
+<tr><td>10th</td><td>Levi</td></tr>
 </tbody>
 </table>
 </div>
@@ -1628,13 +1628,13 @@
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Levi" hidden>
 <div class="pick-profile-heading">
-<div><h3>Levi - 2026</h3><p>17 picks, +4 versus a standard 13-pick draft.</p></div>
+<div><h3>Levi - 2026</h3><p>16 picks, +3 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>17</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>+4</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>16</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+3</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>5</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>2</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
@@ -1651,7 +1651,6 @@
 <tr><td>8th</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>8th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Levi</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Luke</td><td>From Luke</td></tr>
@@ -1666,6 +1665,7 @@
 <thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
 <tbody>
 <tr><td>4th</td><td>Ethan</td></tr>
+<tr><td>10th</td><td>Ryan Houseman</td></tr>
 </tbody>
 </table>
 </div>
@@ -1937,12 +1937,12 @@
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Dylan" hidden>
 <div class="pick-profile-heading">
-<div><h3>Dylan - 2026</h3><p>16 picks, +3 versus a standard 13-pick draft.</p></div>
+<div><h3>Dylan - 2026</h3><p>17 picks, +4 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>16</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>+3</strong></div>
-<div class="pick-stat"><span>Incoming Picks</span><strong>3</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>17</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+4</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>4</strong></div>
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
@@ -1962,6 +1962,7 @@
 <tr><td>10th</td><td>Donny</td><td>From Donny</td></tr>
 <tr><td>10th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Donny</td><td>From Donny</td></tr>
 <tr><td>12th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>14th</td><td>Dylan</td><td>Own pick</td></tr>
@@ -1984,6 +1985,7 @@
 <tr><td>3rd</td><td>Justin</td></tr>
 <tr><td>5th</td><td>Ryan Houseman</td></tr>
 <tr><td>10th</td><td>Donny</td></tr>
+<tr><td>12th</td><td>Donny</td></tr>
 </tbody>
 </table>
 </div>
@@ -2507,9 +2509,9 @@
 <tr><td data-label="Round">7th</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Levi</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">-&gt;Levi</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 <tr><td data-label="Round">8th</td><td data-label="Donny">-&gt;Drake</td><td data-label="Justin">-&gt;Levi</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 <tr><td data-label="Round">9th</td><td data-label="Donny">-&gt;Julius</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">10th</td><td data-label="Donny">-&gt;Dylan</td><td data-label="Justin">-&gt;Ryan Houseman</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">-&gt;Donny</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">10th</td><td data-label="Donny">-&gt;Dylan</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">-&gt;Ryan Houseman</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">-&gt;Donny</td><td data-label="Dylan">Own</td></tr>
 <tr><td data-label="Round">11th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
-<tr><td data-label="Round">12th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">-&gt;Levi</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">12th</td><td data-label="Donny">-&gt;Dylan</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">-&gt;Levi</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 <tr><td data-label="Round">13th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 <tr><td data-label="Round">14th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 <tr><td data-label="Round">15th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="Ryan Houseman">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
@@ -2548,28 +2550,40 @@
 </details>
 <details>
 <summary><h2>Traded Pick Detail</h2></summary>
-<p>A compact list of every future pick currently marked as owed to someone other than its original owner.</p>
+<p>A compact list of every future pick currently marked as owed to someone other than its original owner after ledger corrections.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Current Holder</th><th>Tracker Status</th></tr></thead>
+<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Current Holder</th><th>Displayed Status</th></tr></thead>
 <tbody>
-<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Dylan</td><td data-label="Tracker Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Tracker Status">Owed to Drake</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Levi</td><td data-label="Current Holder">Ethan</td><td data-label="Tracker Status">Owed to Ethan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">Ryan Houseman</td><td data-label="Current Holder">Dylan</td><td data-label="Tracker Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Ethan</td><td data-label="Tracker Status">Owed to Ethan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Julius</td><td data-label="Tracker Status">Owed to Julius</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Tracker Status">Owed to Drake</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">9th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Julius</td><td data-label="Tracker Status">Owed to Julius</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Dylan</td><td data-label="Tracker Status">Owed to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Ethan</td><td data-label="Current Holder">Donny</td><td data-label="Tracker Status">Owed to Donny</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Ryan Houseman</td><td data-label="Tracker Status">Owed to Ryan Houseman</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Round">5th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Tracker Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Displayed Status">Owed to Drake</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Levi</td><td data-label="Current Holder">Ethan</td><td data-label="Displayed Status">Owed to Ethan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">Ryan Houseman</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Ethan</td><td data-label="Displayed Status">Owed to Ethan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Julius</td><td data-label="Displayed Status">Owed to Julius</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Displayed Status">Owed to Drake</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">9th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Julius</td><td data-label="Displayed Status">Owed to Julius</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Ethan</td><td data-label="Current Holder">Donny</td><td data-label="Displayed Status">Owed to Donny</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Levi</td><td data-label="Current Holder">Ryan Houseman</td><td data-label="Displayed Status">Owed to Ryan Houseman</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Dylan</td><td data-label="Displayed Status">Owed to Dylan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Round">5th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Displayed Status">Owed to Levi</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Ledger Corrections Applied</h2></summary>
+<p>These rows show where the page overrides the workbook tracker because the trade ledger or a manual ruling is more accurate.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Tracker Holder</th><th>Displayed Holder</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin</td><td data-label="Tracker Holder">Ryan Houseman</td><td data-label="Displayed Holder">Justin</td><td data-label="Reason">Ledger decision: Levi sent his own 2026 10th-round pick to Ryan Houseman, so Justin keeps his own 10th.</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Levi</td><td data-label="Tracker Holder">Levi</td><td data-label="Displayed Holder">Ryan Houseman</td><td data-label="Reason">Ledger decision: Levi sent his own 2026 10th-round pick to Ryan Houseman.</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Tracker Holder">Donny</td><td data-label="Displayed Holder">Dylan</td><td data-label="Reason">Ledger decision: source row 37 says Donny sent his 2026 12th-round pick to Dylan.</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -2585,12 +2599,7 @@
 <li>Multi-team trade rows do not state exactly which counterparty receives each asset, so those recipient assumptions are listed separately.</li>
 </ul>
 </details>
-<div class="table-wrap"><table>
-<thead><tr><th>Issue</th><th>Year</th><th>Round</th><th>Original Owner</th><th>Tracker Holder</th><th>Ledger Holder</th><th>Ledger Evidence</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td data-label="Issue">Tracker original-owner mismatch</td><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin vs Levi</td><td data-label="Tracker Holder">Justin -&gt; Ryan Houseman</td><td data-label="Ledger Holder">Levi -&gt; Ryan Houseman</td><td data-label="Ledger Evidence">Postseason: Levi -&gt; Ryan Houseman</td><td data-label="Notes">Decision: Levi sent his own 2026 10th-round pick to Ryan Houseman. Update the tracker so Levi&#x27;s 10th is owed to Ryan Houseman and Justin keeps his own 10th.</td></tr>
-<tr><td data-label="Issue">Ledger-only move</td><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Tracker Holder">Donny</td><td data-label="Ledger Holder">Dylan</td><td data-label="Ledger Evidence">Draft Day: Donny -&gt; Dylan</td><td data-label="Notes">-</td></tr>
-</tbody></table></div>
+<p>No pick-owner mismatches found.</p>
 </details>
 <details>
 <summary><h2>Reconciliation Assumptions</h2></summary>
@@ -2606,7 +2615,7 @@
 </details>
 <details>
 <summary><h2>Workbook Count Check</h2></summary>
-<p>This verifies the workbook&#x27;s 2026 count table against the ownership board above.</p>
+<p>This verifies the workbook&#x27;s 2026 count table against the ledger-adjusted ownership board above.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Year</th><th>Round</th><th>Manager</th><th>Workbook Count</th><th>Calculated Count</th><th>Workbook Row</th></tr></thead>
 <tbody>
@@ -2614,11 +2623,17 @@
 <tr><td data-label="Year">2026</td><td data-label="Round">3</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">23</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">4</td><td data-label="Manager">Ethan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">24</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">7</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">27</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Justin</td><td data-label="Workbook Count">0</td><td data-label="Calculated Count">1</td><td data-label="Workbook Row">30</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">30</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">30</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Donny</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">32</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Ethan</td><td data-label="Workbook Count">2</td><td data-label="Calculated Count">1</td><td data-label="Workbook Row">32</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">17</td><td data-label="Workbook Row">36</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">32</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Donny</td><td data-label="Workbook Count">9</td><td data-label="Calculated Count">8</td><td data-label="Workbook Row">36</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Justin</td><td data-label="Workbook Count">8</td><td data-label="Calculated Count">9</td><td data-label="Workbook Row">36</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">16</td><td data-label="Workbook Row">36</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">13</td><td data-label="Calculated Count">10</td><td data-label="Workbook Row">36</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">16</td><td data-label="Workbook Row">36</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">17</td><td data-label="Workbook Row">36</td></tr>
 </tbody></table></div>
 </details>
 <details>

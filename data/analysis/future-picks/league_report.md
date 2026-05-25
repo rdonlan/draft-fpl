@@ -1,6 +1,6 @@
 # BMS FPL Future Pick Tracker
 
-A draft-pick ownership page built from the workbook's `Drafting Order` tab, with a reconciliation pass against the trade ledger.
+A draft-pick ownership page built from the workbook's `Drafting Order` tab, with ledger-backed corrections applied where the tracker is known to be less accurate.
 
 <details open>
 <summary><h2>Manager Pick Lookup</h2></summary>
@@ -40,13 +40,13 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <div class="pick-profile-list">
 <section class="pick-profile is-active" data-pick-profile data-year="2026" data-manager="Donny">
 <div class="pick-profile-heading">
-<div><h3>Donny - 2026</h3><p>9 picks, -4 versus a standard 13-pick draft.</p></div>
+<div><h3>Donny - 2026</h3><p>8 picks, -5 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>9</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>-4</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>8</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-5</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>1</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>6</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
@@ -58,7 +58,6 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>7th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Ethan</td><td>From Ethan</td></tr>
 <tr><td>11th</td><td>Donny</td><td>Own pick</td></tr>
-<tr><td>12th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>14th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>15th</td><td>Donny</td><td>Own pick</td></tr>
@@ -74,6 +73,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>8th</td><td>Drake</td></tr>
 <tr><td>9th</td><td>Julius</td></tr>
 <tr><td>10th</td><td>Dylan</td></tr>
+<tr><td>12th</td><td>Dylan</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,13 +89,13 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Justin" hidden>
 <div class="pick-profile-heading">
-<div><h3>Justin - 2026</h3><p>8 picks, -5 versus a standard 13-pick draft.</p></div>
+<div><h3>Justin - 2026</h3><p>9 picks, -4 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>8</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>-5</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>9</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-4</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>4</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
@@ -105,6 +105,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Justin</td><td>Own pick</td></tr>
@@ -121,7 +122,6 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>6th</td><td>Julius</td></tr>
 <tr><td>7th</td><td>Levi</td></tr>
 <tr><td>8th</td><td>Levi</td></tr>
-<tr><td>10th</td><td>Ryan Houseman</td></tr>
 </tbody>
 </table>
 </div>
@@ -156,7 +156,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>7th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>10th</td><td>Levi</td><td>From Levi</td></tr>
 <tr><td>10th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
@@ -178,7 +178,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <table>
 <thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
 <tbody>
-<tr><td>10th</td><td>Justin</td></tr>
+<tr><td>10th</td><td>Levi</td></tr>
 </tbody>
 </table>
 </div>
@@ -186,13 +186,13 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Levi" hidden>
 <div class="pick-profile-heading">
-<div><h3>Levi - 2026</h3><p>17 picks, +4 versus a standard 13-pick draft.</p></div>
+<div><h3>Levi - 2026</h3><p>16 picks, +3 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>17</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>+4</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>16</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+3</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>5</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>2</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
@@ -209,7 +209,6 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>8th</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>8th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Levi</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>12th</td><td>Luke</td><td>From Luke</td></tr>
@@ -224,6 +223,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
 <tbody>
 <tr><td>4th</td><td>Ethan</td></tr>
+<tr><td>10th</td><td>Ryan Houseman</td></tr>
 </tbody>
 </table>
 </div>
@@ -495,12 +495,12 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Dylan" hidden>
 <div class="pick-profile-heading">
-<div><h3>Dylan - 2026</h3><p>16 picks, +3 versus a standard 13-pick draft.</p></div>
+<div><h3>Dylan - 2026</h3><p>17 picks, +4 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>16</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>+3</strong></div>
-<div class="pick-stat"><span>Incoming Picks</span><strong>3</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>17</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+4</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>4</strong></div>
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
@@ -520,6 +520,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>10th</td><td>Donny</td><td>From Donny</td></tr>
 <tr><td>10th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Donny</td><td>From Donny</td></tr>
 <tr><td>12th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>14th</td><td>Dylan</td><td>Own pick</td></tr>
@@ -542,6 +543,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>3rd</td><td>Justin</td></tr>
 <tr><td>5th</td><td>Ryan Houseman</td></tr>
 <tr><td>10th</td><td>Donny</td></tr>
+<tr><td>12th</td><td>Donny</td></tr>
 </tbody>
 </table>
 </div>
@@ -1068,9 +1070,9 @@ Workbook-style board for 2026: each column is the original owner of the pick, an
 | 7th | Own | ->Levi | Own | Own | ->Levi | Own | Own | Own | Own | Own |
 | 8th | ->Drake | ->Levi | Own | Own | Own | Own | Own | Own | Own | Own |
 | 9th | ->Julius | Own | Own | Own | Own | Own | Own | Own | Own | Own |
-| 10th | ->Dylan | ->Ryan Houseman | Own | Own | Own | Own | Own | Own | ->Donny | Own |
+| 10th | ->Dylan | Own | Own | ->Ryan Houseman | Own | Own | Own | Own | ->Donny | Own |
 | 11th | Own | Own | Own | Own | Own | Own | Own | Own | Own | Own |
-| 12th | Own | Own | Own | Own | ->Levi | Own | Own | Own | Own | Own |
+| 12th | ->Dylan | Own | Own | Own | ->Levi | Own | Own | Own | Own | Own |
 | 13th | Own | Own | Own | Own | Own | Own | Own | Own | Own | Own |
 | 14th | Own | Own | Own | Own | Own | Own | Own | Own | Own | Own |
 | 15th | Own | Own | Own | Own | Own | Own | Own | Own | Own | Own |
@@ -1114,9 +1116,9 @@ Workbook-style board for 2027: each column is the original owner of the pick, an
 <details>
 <summary><h2>Traded Pick Detail</h2></summary>
 
-A compact list of every future pick currently marked as owed to someone other than its original owner.
+A compact list of every future pick currently marked as owed to someone other than its original owner after ledger corrections.
 
-| Year | Round | Original Owner | Current Holder | Tracker Status |
+| Year | Round | Original Owner | Current Holder | Displayed Status |
 |---|---:|---:|---:|---:|
 | 2026 | 3rd | Justin | Dylan | Owed to Dylan |
 | 2026 | 3rd | Luke | Levi | Owed to Levi |
@@ -1132,10 +1134,24 @@ A compact list of every future pick currently marked as owed to someone other th
 | 2026 | 9th | Donny | Julius | Owed to Julius |
 | 2026 | 10th | Donny | Dylan | Owed to Dylan |
 | 2026 | 10th | Ethan | Donny | Owed to Donny |
-| 2026 | 10th | Justin | Ryan Houseman | Owed to Ryan Houseman |
+| 2026 | 10th | Levi | Ryan Houseman | Owed to Ryan Houseman |
+| 2026 | 12th | Donny | Dylan | Owed to Dylan |
 | 2026 | 12th | Luke | Levi | Owed to Levi |
 | 2027 | 5th | Justin | Levi | Owed to Levi |
 | 2027 | 6th | Justin | Levi | Owed to Levi |
+
+</details>
+
+<details>
+<summary><h2>Ledger Corrections Applied</h2></summary>
+
+These rows show where the page overrides the workbook tracker because the trade ledger or a manual ruling is more accurate.
+
+| Year | Round | Original Owner | Tracker Holder | Displayed Holder | Reason |
+|---|---:|---:|---:|---:|---:|
+| 2026 | 10th | Justin | Ryan Houseman | Justin | Ledger decision: Levi sent his own 2026 10th-round pick to Ryan Houseman, so Justin keeps his own 10th. |
+| 2026 | 10th | Levi | Levi | Ryan Houseman | Ledger decision: Levi sent his own 2026 10th-round pick to Ryan Houseman. |
+| 2026 | 12th | Donny | Donny | Dylan | Ledger decision: source row 37 says Donny sent his 2026 12th-round pick to Dylan. |
 
 </details>
 
@@ -1155,10 +1171,7 @@ This checks the workbook tracker against future-pick movements parsed from the t
 
 </details>
 
-| Issue | Year | Round | Original Owner | Tracker Holder | Ledger Holder | Ledger Evidence | Notes |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Tracker original-owner mismatch | 2026 | 10th | Justin vs Levi | Justin -> Ryan Houseman | Levi -> Ryan Houseman | Postseason: Levi -> Ryan Houseman | Decision: Levi sent his own 2026 10th-round pick to Ryan Houseman. Update the tracker so Levi's 10th is owed to Ryan Houseman and Justin keeps his own 10th. |
-| Ledger-only move | 2026 | 12th | Donny | Donny | Dylan | Draft Day: Donny -> Dylan | - |
+No pick-owner mismatches found.
 
 </details>
 
@@ -1179,7 +1192,7 @@ These are not necessarily errors; they are the trade-ledger rows where the parse
 <details>
 <summary><h2>Workbook Count Check</h2></summary>
 
-This verifies the workbook's 2026 count table against the ownership board above.
+This verifies the workbook's 2026 count table against the ledger-adjusted ownership board above.
 
 | Year | Round | Manager | Workbook Count | Calculated Count | Workbook Row |
 |---|---:|---:|---:|---:|---:|
@@ -1187,11 +1200,17 @@ This verifies the workbook's 2026 count table against the ownership board above.
 | 2026 | 3 | Luke | 1 | 0 | 23 |
 | 2026 | 4 | Ethan | 1 | 2 | 24 |
 | 2026 | 7 | Luke | 1 | 0 | 27 |
+| 2026 | 10 | Justin | 0 | 1 | 30 |
+| 2026 | 10 | Levi | 1 | 0 | 30 |
 | 2026 | 10 | Dylan | 1 | 2 | 30 |
+| 2026 | 12 | Donny | 1 | 0 | 32 |
 | 2026 | 12 | Ethan | 2 | 1 | 32 |
-| 2026 | Total | Levi | 15 | 17 | 36 |
+| 2026 | 12 | Dylan | 1 | 2 | 32 |
+| 2026 | Total | Donny | 9 | 8 | 36 |
+| 2026 | Total | Justin | 8 | 9 | 36 |
+| 2026 | Total | Levi | 15 | 16 | 36 |
 | 2026 | Total | Luke | 13 | 10 | 36 |
-| 2026 | Total | Dylan | 15 | 16 | 36 |
+| 2026 | Total | Dylan | 15 | 17 | 36 |
 
 </details>
 

@@ -90,9 +90,9 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,9,9th,Ethan,Ethan,Own,Own
 2026,9,9th,Dylan,Dylan,Own,Own
 2026,10,10th,Donny,Dylan,Traded,Owed to Dylan
-2026,10,10th,Justin,Ryan Houseman,Traded,Owed to Ryan Houseman
+2026,10,10th,Justin,Justin,Own,Own
 2026,10,10th,Ryan Houseman,Ryan Houseman,Own,Own
-2026,10,10th,Levi,Levi,Own,Own
+2026,10,10th,Levi,Ryan Houseman,Traded,Owed to Ryan Houseman
 2026,10,10th,Luke,Luke,Own,Own
 2026,10,10th,Julius,Julius,Own,Own
 2026,10,10th,Drake,Drake,Own,Own
@@ -109,7 +109,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,11,11th,Chabo,Chabo,Own,Own
 2026,11,11th,Ethan,Ethan,Own,Own
 2026,11,11th,Dylan,Dylan,Own,Own
-2026,12,12th,Donny,Donny,Own,Own
+2026,12,12th,Donny,Dylan,Traded,Owed to Dylan
 2026,12,12th,Justin,Justin,Own,Own
 2026,12,12th,Ryan Houseman,Ryan Houseman,Own,Own
 2026,12,12th,Levi,Levi,Own,Own
