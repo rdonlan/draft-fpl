@@ -374,6 +374,38 @@
       font-weight: 750;
       box-shadow: inset 0 -2px 0 var(--belt-accent);
     }
+    tr.cup-eliminated-row td,
+    tr:nth-child(even).cup-eliminated-row td {
+      background: #fee2e2;
+      color: #7f1d1d;
+    }
+    html[data-theme="dark"] tr.cup-eliminated-row td,
+    html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
+      background: #4c1d24;
+      color: #fecdd3;
+    }
+    td.cup-winner-cell,
+    tr:nth-child(even) td.cup-winner-cell {
+      background: #dcfce7 !important;
+      color: #14532d;
+      font-weight: 800;
+    }
+    td.cup-loser-cell,
+    tr:nth-child(even) td.cup-loser-cell {
+      background: #fee2e2 !important;
+      color: #7f1d1d;
+      font-weight: 800;
+    }
+    html[data-theme="dark"] td.cup-winner-cell,
+    html[data-theme="dark"] tr:nth-child(even) td.cup-winner-cell {
+      background: #13351f !important;
+      color: #bbf7d0;
+    }
+    html[data-theme="dark"] td.cup-loser-cell,
+    html[data-theme="dark"] tr:nth-child(even) td.cup-loser-cell {
+      background: #4c1d24 !important;
+      color: #fecdd3;
+    }
     td:nth-child(n+3), th:nth-child(n+3) {
       text-align: right;
       font-variant-numeric: tabular-nums;
@@ -670,6 +702,16 @@
       tr:nth-child(even) td {
         background: transparent;
       }
+      tr.cup-eliminated-row td,
+      tr:nth-child(even).cup-eliminated-row td {
+        background: #fee2e2;
+        color: #7f1d1d;
+      }
+      html[data-theme="dark"] tr.cup-eliminated-row td,
+      html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
+        background: #4c1d24;
+        color: #fecdd3;
+      }
       tr.belt-winner-row {
         background: var(--belt-bg);
         border-left: 6px solid var(--belt-accent);
@@ -752,156 +794,258 @@
 </ul>
 </details>
 <div class="table-wrap"><table>
-<thead><tr><th>Season</th><th>Winner</th><th>Runner-Up</th><th>Final Score</th><th>Final GW</th><th>Margin</th></tr></thead>
+<thead><tr><th>Season</th><th>Winner</th><th>Runner-Up</th><th>Final Score</th></tr></thead>
 <tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Ryan Houseman</td><td data-label="Final Score">60-55</td><td data-label="Final GW">36</td><td data-label="Margin">5</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Dylan Reid</td><td data-label="Final Score">75-66</td><td data-label="Final GW">36</td><td data-label="Margin">9</td></tr>
+<tr><td data-label="Season">2024-25</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Ryan Houseman</td><td data-label="Final Score">60-55</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Dylan Reid</td><td data-label="Final Score">75-66</td></tr>
 </tbody></table></div>
 </details>
 <details>
 <summary><h2>2025-26 Cup</h2></summary>
 <p>Open this section for the group tables, knockout path, and final from that season.</p>
 <h3>Group Stage Standings</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Group</th><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<p>The red row is the final-place entrant in that group.</p>
+<h3>Group A Standings</h3>
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
 <tbody>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">1</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">223</td><td data-label="PA">195</td><td data-label="GD">28</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">230</td><td data-label="PA">215</td><td data-label="GD">15</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">3</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">227</td><td data-label="PA">214</td><td data-label="GD">13</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">251</td><td data-label="PA">240</td><td data-label="GD">11</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">5</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">229</td><td data-label="PA">244</td><td data-label="GD">-15</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">1</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">13</td><td data-label="W">4</td><td data-label="D">1</td><td data-label="L">0</td><td data-label="PF">291</td><td data-label="PA">236</td><td data-label="GD">55</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">2</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">10</td><td data-label="W">3</td><td data-label="D">1</td><td data-label="L">1</td><td data-label="PF">295</td><td data-label="PA">214</td><td data-label="GD">81</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">3</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">189</td><td data-label="PA">208</td><td data-label="GD">-19</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">4</td><td data-label="Manager">Julius Long</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">184</td><td data-label="PA">215</td><td data-label="GD">-31</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">0</td><td data-label="W">0</td><td data-label="D">0</td><td data-label="L">5</td><td data-label="PF">173</td><td data-label="PA">311</td><td data-label="GD">-138</td></tr>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">223</td><td data-label="PA">195</td><td data-label="GD">28</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">230</td><td data-label="PA">215</td><td data-label="GD">15</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">227</td><td data-label="PA">214</td><td data-label="GD">13</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">251</td><td data-label="PA">240</td><td data-label="GD">11</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">229</td><td data-label="PA">244</td><td data-label="GD">-15</td></tr>
+</tbody></table></div>
+<h3>Group B Standings</h3>
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">13</td><td data-label="W">4</td><td data-label="D">1</td><td data-label="L">0</td><td data-label="PF">291</td><td data-label="PA">236</td><td data-label="GD">55</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">10</td><td data-label="W">3</td><td data-label="D">1</td><td data-label="L">1</td><td data-label="PF">295</td><td data-label="PA">214</td><td data-label="GD">81</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">189</td><td data-label="PA">208</td><td data-label="GD">-19</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Julius Long</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">184</td><td data-label="PA">215</td><td data-label="GD">-31</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">0</td><td data-label="W">0</td><td data-label="D">0</td><td data-label="L">5</td><td data-label="PF">173</td><td data-label="PA">311</td><td data-label="GD">-138</td></tr>
 </tbody></table></div>
 <h3>Knockout Rounds</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Stage</th><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th><th>Margin</th><th>Note</th></tr></thead>
+<p>Each two-legged tie has its own table. In aggregate rows, green marks the winner and red marks the loser.</p>
+<h3>Quarterfinals</h3>
+<p><strong>Quarterfinal: Ethan Ellsworth vs Alexander Chaban</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ethan Ellsworth</th><th>Alexander Chaban</th><th>Winner</th></tr></thead>
 <tbody>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">28</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">38</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">49</td><td data-label="Winner">Alexander Chaban</td><td data-label="Margin">11</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">28</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">49</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">50</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">1</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">28</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">40</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">37</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">3</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">28</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">25</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">49</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">24</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">29</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">41</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">26</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">15</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">29</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">56</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">49</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">7</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">29</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">32</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">48</td><td data-label="Winner">Julius Long</td><td data-label="Margin">16</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">29</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">55</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">64</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">9</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">28/29</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">79</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">75</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">4</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">28/29</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">105</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">99</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">6</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">28/29</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">72</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">85</td><td data-label="Winner">Julius Long</td><td data-label="Margin">13</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">28/29</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">80</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">113</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">33</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 1</td><td data-label="GW">32</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">51</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">52</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">1</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 1</td><td data-label="GW">32</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">31</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">61</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">30</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 2</td><td data-label="GW">33</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">73</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">81</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">8</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 2</td><td data-label="GW">33</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">61</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">53</td><td data-label="Winner">Julius Long</td><td data-label="Margin">8</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Aggregate</td><td data-label="GW">32/33</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">124</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">133</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">9</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Aggregate</td><td data-label="GW">32/33</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">92</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">114</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">22</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Final</td><td data-label="GW">36</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">75</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">66</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">9</td><td data-label="Note"></td></tr>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Ethan Ellsworth">38</td><td data-label="Alexander Chaban">49</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Ethan Ellsworth">41</td><td data-label="Alexander Chaban">26</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Ethan Ellsworth" class="cup-winner-cell">79</td><td data-label="Alexander Chaban" class="cup-loser-cell">75</td><td data-label="Winner" class="cup-winner-cell">Ethan Ellsworth</td></tr>
 </tbody></table></div>
-<h3>Group Match Results</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Round</th><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th><th>Margin</th></tr></thead>
+<p><strong>Quarterfinal: Justin Miller vs Ryan Donlan</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Justin Miller</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
 <tbody>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">6</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">53</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">57</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">4</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">6</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">30</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">28</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">2</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">6</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">38</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">22</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">16</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">6</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">63</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">63</td><td data-label="Winner">Draw</td><td data-label="Margin">0</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">6</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">17</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">54</td><td data-label="Winner">Julius Long</td><td data-label="Margin">37</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">54</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">13</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">41</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">49</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">8</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">59</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">40</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">19</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">57</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">47</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">10</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">42</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">1</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">11</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">33</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">39</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">6</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">11</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">60</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">48</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">12</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">11</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">68</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">44</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">24</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">11</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">54</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">39</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">15</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">11</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">45</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">48</td><td data-label="Winner">Alexander Chaban</td><td data-label="Margin">3</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">31</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">48</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">17</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">44</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">45</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">1</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">46</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">40</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">6</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">58</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">29</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">29</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">36</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">26</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">10</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">17</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">58</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">59</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">1</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">17</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">49</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">45</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">4</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">17</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">52</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">48</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">4</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">17</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">106</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">24</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">82</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">17</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">25</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">49</td><td data-label="Winner">Alexander Chaban</td><td data-label="Margin">24</td></tr>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Justin Miller">49</td><td data-label="Ryan Donlan">50</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Justin Miller">56</td><td data-label="Ryan Donlan">49</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Justin Miller" class="cup-winner-cell">105</td><td data-label="Ryan Donlan" class="cup-loser-cell">99</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+<p><strong>Quarterfinal: Luke Lockwood vs Julius Long</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Luke Lockwood</th><th>Julius Long</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Luke Lockwood">40</td><td data-label="Julius Long">37</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Luke Lockwood">32</td><td data-label="Julius Long">48</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Luke Lockwood" class="cup-loser-cell">72</td><td data-label="Julius Long" class="cup-winner-cell">85</td><td data-label="Winner" class="cup-winner-cell">Julius Long</td></tr>
+</tbody></table></div>
+<p><strong>Quarterfinal: Levi Morant vs Dylan Reid</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Levi Morant">25</td><td data-label="Dylan Reid">49</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Levi Morant">55</td><td data-label="Dylan Reid">64</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Levi Morant" class="cup-loser-cell">80</td><td data-label="Dylan Reid" class="cup-winner-cell">113</td><td data-label="Winner" class="cup-winner-cell">Dylan Reid</td></tr>
+</tbody></table></div>
+<h3>Semifinals</h3>
+<p><strong>Semifinal: Ethan Ellsworth vs Justin Miller</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ethan Ellsworth</th><th>Justin Miller</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">32</td><td data-label="Ethan Ellsworth">51</td><td data-label="Justin Miller">52</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Ethan Ellsworth">73</td><td data-label="Justin Miller">81</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">32/33</td><td data-label="Ethan Ellsworth" class="cup-loser-cell">124</td><td data-label="Justin Miller" class="cup-winner-cell">133</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+<p><strong>Semifinal: Julius Long vs Dylan Reid</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Julius Long</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">32</td><td data-label="Julius Long">31</td><td data-label="Dylan Reid">61</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Julius Long">61</td><td data-label="Dylan Reid">53</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">32/33</td><td data-label="Julius Long" class="cup-loser-cell">92</td><td data-label="Dylan Reid" class="cup-winner-cell">114</td><td data-label="Winner" class="cup-winner-cell">Dylan Reid</td></tr>
+</tbody></table></div>
+<h3>Final</h3>
+<p><strong>Final: Justin Miller vs Dylan Reid</strong></p>
+<div class="table-wrap cup-final-table">
+<table>
+<thead><tr><th>GW</th><th>Justin Miller</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">36</td><td data-label="Justin Miller" class="cup-winner-cell">75</td><td data-label="Dylan Reid" class="cup-loser-cell">66</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+<h3>Group Stage Results</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">6</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">53</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">57</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="GW">6</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">30</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">28</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="GW">6</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">38</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">22</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="GW">6</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">63</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">63</td><td data-label="Winner">Draw</td></tr>
+<tr><td data-label="GW">6</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">17</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">54</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">54</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">41</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">49</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">59</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">40</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">57</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">47</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">42</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="GW">11</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">33</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">39</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="GW">11</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">60</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">48</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="GW">11</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">68</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">44</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="GW">11</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">54</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">39</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="GW">11</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">45</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">48</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">31</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">48</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">44</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">45</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">46</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">40</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">58</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">29</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">36</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">26</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="GW">17</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">58</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">59</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="GW">17</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">49</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">45</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="GW">17</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">52</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">48</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="GW">17</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">106</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">24</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="GW">17</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">25</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">49</td><td data-label="Winner">Alexander Chaban</td></tr>
 </tbody></table></div>
 </details>
 <details>
 <summary><h2>2024-25 Cup</h2></summary>
 <p>Open this section for the group tables, knockout path, and final from that season.</p>
 <h3>Group Stage Standings</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Group</th><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<p>The red row is the final-place entrant in that group.</p>
+<h3>Group A Standings</h3>
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
 <tbody>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">1</td><td data-label="Manager">Julius Long</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">267</td><td data-label="PA">234</td><td data-label="GD">33</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">2</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">233</td><td data-label="PA">201</td><td data-label="GD">32</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">3</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">229</td><td data-label="PA">205</td><td data-label="GD">24</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">4</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">235</td><td data-label="PA">238</td><td data-label="GD">-3</td></tr>
-<tr><td data-label="Group">Group A</td><td data-label="Rank">5</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">181</td><td data-label="PA">228</td><td data-label="GD">-47</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">1</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">217</td><td data-label="PA">212</td><td data-label="GD">5</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">2</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">294</td><td data-label="PA">224</td><td data-label="GD">70</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">3</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">224</td><td data-label="PA">232</td><td data-label="GD">-8</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">215</td><td data-label="PA">263</td><td data-label="GD">-48</td></tr>
-<tr><td data-label="Group">Group B</td><td data-label="Rank">5</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">205</td><td data-label="PA">263</td><td data-label="GD">-58</td></tr>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Julius Long</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">267</td><td data-label="PA">234</td><td data-label="GD">33</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">233</td><td data-label="PA">201</td><td data-label="GD">32</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">229</td><td data-label="PA">205</td><td data-label="GD">24</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">235</td><td data-label="PA">238</td><td data-label="GD">-3</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">181</td><td data-label="PA">228</td><td data-label="GD">-47</td></tr>
+</tbody></table></div>
+<h3>Group B Standings</h3>
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">217</td><td data-label="PA">212</td><td data-label="GD">5</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">294</td><td data-label="PA">224</td><td data-label="GD">70</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">224</td><td data-label="PA">232</td><td data-label="GD">-8</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">215</td><td data-label="PA">263</td><td data-label="GD">-48</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">205</td><td data-label="PA">263</td><td data-label="GD">-58</td></tr>
 </tbody></table></div>
 <h3>Knockout Rounds</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Stage</th><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th><th>Margin</th><th>Note</th></tr></thead>
+<p>Each two-legged tie has its own table. In aggregate rows, green marks the winner and red marks the loser.</p>
+<h3>Quarterfinals</h3>
+<p><strong>Quarterfinal: Ryan Houseman vs Drake Byrd</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ryan Houseman</th><th>Drake Byrd</th><th>Winner</th></tr></thead>
 <tbody>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">24</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">87</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">42</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">45</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">24</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">51</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">53</td><td data-label="Winner">Alexander Chaban</td><td data-label="Margin">2</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">24</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">109</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">90</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">19</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 1</td><td data-label="GW">24</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">46</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">32</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">14</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">25</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">43</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">63</td><td data-label="Winner">Drake Byrd</td><td data-label="Margin">20</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">25</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">56</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">30</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">26</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">25</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">86</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">75</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">11</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Leg 2</td><td data-label="GW">25</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">62</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">49</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">13</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">Aggregate</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">130</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">105</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">25</td><td data-label="Note">House/Haydo advance</td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">Aggregate</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">107</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">83</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">24</td><td data-label="Note">Levi advances</td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">Aggregate</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">195</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">165</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">30</td><td data-label="Note">Justin advances</td></tr>
-<tr><td data-label="Stage">Quarterfinal Aggregate</td><td data-label="GW">Aggregate</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">108</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">81</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">27</td><td data-label="Note">Lukey advances</td></tr>
-<tr><td data-label="Stage">Semifinal Leg 1</td><td data-label="GW">31</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">43</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">54</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">11</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 1</td><td data-label="GW">31</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">48</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">40</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">8</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 2</td><td data-label="GW">33</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">55</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">63</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">8</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Leg 2</td><td data-label="GW">33</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">74</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">80</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">6</td><td data-label="Note"></td></tr>
-<tr><td data-label="Stage">Semifinal Aggregate</td><td data-label="GW">Aggregate</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">98</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">117</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">19</td><td data-label="Note">Winner advances</td></tr>
-<tr><td data-label="Stage">Semifinal Aggregate</td><td data-label="GW">Aggregate</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">122</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">120</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">2</td><td data-label="Note">Winner advances</td></tr>
-<tr><td data-label="Stage">Final</td><td data-label="GW">36</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">60</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">55</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">5</td><td data-label="Note"></td></tr>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Ryan Houseman">87</td><td data-label="Drake Byrd">42</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Ryan Houseman">43</td><td data-label="Drake Byrd">63</td><td data-label="Winner">Drake Byrd</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Ryan Houseman" class="cup-winner-cell">130</td><td data-label="Drake Byrd" class="cup-loser-cell">105</td><td data-label="Winner" class="cup-winner-cell">Ryan Houseman</td></tr>
 </tbody></table></div>
-<h3>Group Match Results</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Round</th><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th><th>Margin</th></tr></thead>
+<p><strong>Quarterfinal: Levi Morant vs Alexander Chaban</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Alexander Chaban</th><th>Winner</th></tr></thead>
 <tbody>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">4</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">38</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">42</td><td data-label="Winner">Julius Long</td><td data-label="Margin">4</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">4</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">57</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">26</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">31</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">4</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">37</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">4</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">4</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">34</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">49</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">15</td></tr>
-<tr><td data-label="Round">Group Round 1</td><td data-label="GW">4</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">73</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">41</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">32</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">34</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">38</td><td data-label="Winner">Alexander Chaban</td><td data-label="Margin">4</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">44</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">22</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">22</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">76</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">59</td><td data-label="Winner">Julius Long</td><td data-label="Margin">17</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">31</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">64</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">33</td></tr>
-<tr><td data-label="Round">Group Round 2</td><td data-label="GW">7</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">54</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">56</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">2</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">10</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">33</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">32</td><td data-label="Winner">Drake Byrd</td><td data-label="Margin">1</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">10</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">37</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">32</td><td data-label="Winner">Julius Long</td><td data-label="Margin">5</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">10</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">82</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">28</td><td data-label="Winner">Alexander Chaban</td><td data-label="Margin">54</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">10</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">47</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">42</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">5</td></tr>
-<tr><td data-label="Round">Group Round 3</td><td data-label="GW">10</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">41</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">32</td><td data-label="Winner">Justin Miller</td><td data-label="Margin">9</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">64</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">42</td><td data-label="Winner">Drake Byrd</td><td data-label="Margin">22</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">47</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">71</td><td data-label="Winner">Julius Long</td><td data-label="Margin">24</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">38</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">83</td><td data-label="Winner">Levi Morant</td><td data-label="Margin">45</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">46</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">44</td><td data-label="Winner">Ethan Ellsworth</td><td data-label="Margin">2</td></tr>
-<tr><td data-label="Round">Group Round 4</td><td data-label="GW">13</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">48</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">33</td><td data-label="Winner">Luke Lockwood</td><td data-label="Margin">15</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">16</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">58</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Donlan</td><td data-label="Margin">17</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">16</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">42</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">48</td><td data-label="Winner">Dylan Reid</td><td data-label="Margin">6</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">16</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">64</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">47</td><td data-label="Winner">Drake Byrd</td><td data-label="Margin">17</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">16</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">42</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">42</td><td data-label="Winner">Draw</td><td data-label="Margin">0</td></tr>
-<tr><td data-label="Round">Group Round 5</td><td data-label="GW">16</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">34</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">44</td><td data-label="Winner">Ryan Houseman</td><td data-label="Margin">10</td></tr>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Levi Morant">51</td><td data-label="Alexander Chaban">53</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Levi Morant">56</td><td data-label="Alexander Chaban">30</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Levi Morant" class="cup-winner-cell">107</td><td data-label="Alexander Chaban" class="cup-loser-cell">83</td><td data-label="Winner" class="cup-winner-cell">Levi Morant</td></tr>
+</tbody></table></div>
+<p><strong>Quarterfinal: Justin Miller vs Ryan Donlan</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Justin Miller</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Justin Miller">109</td><td data-label="Ryan Donlan">90</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Justin Miller">86</td><td data-label="Ryan Donlan">75</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Justin Miller" class="cup-winner-cell">195</td><td data-label="Ryan Donlan" class="cup-loser-cell">165</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+<p><strong>Quarterfinal: Luke Lockwood vs Julius Long</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Luke Lockwood</th><th>Julius Long</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Luke Lockwood">46</td><td data-label="Julius Long">32</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Luke Lockwood">62</td><td data-label="Julius Long">49</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Luke Lockwood" class="cup-winner-cell">108</td><td data-label="Julius Long" class="cup-loser-cell">81</td><td data-label="Winner" class="cup-winner-cell">Luke Lockwood</td></tr>
+</tbody></table></div>
+<h3>Semifinals</h3>
+<p><strong>Semifinal: Levi Morant vs Justin Miller</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Justin Miller</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">31</td><td data-label="Levi Morant">43</td><td data-label="Justin Miller">54</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Levi Morant">55</td><td data-label="Justin Miller">63</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">31/33</td><td data-label="Levi Morant" class="cup-loser-cell">98</td><td data-label="Justin Miller" class="cup-winner-cell">117</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+<p><strong>Semifinal: Ryan Houseman vs Luke Lockwood</strong></p>
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ryan Houseman</th><th>Luke Lockwood</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">31</td><td data-label="Ryan Houseman">48</td><td data-label="Luke Lockwood">40</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Ryan Houseman">74</td><td data-label="Luke Lockwood">80</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">31/33</td><td data-label="Ryan Houseman" class="cup-winner-cell">122</td><td data-label="Luke Lockwood" class="cup-loser-cell">120</td><td data-label="Winner" class="cup-winner-cell">Ryan Houseman</td></tr>
+</tbody></table></div>
+<h3>Final</h3>
+<p><strong>Final: Justin Miller vs Ryan Houseman</strong></p>
+<div class="table-wrap cup-final-table">
+<table>
+<thead><tr><th>GW</th><th>Justin Miller</th><th>Ryan Houseman</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">36</td><td data-label="Justin Miller" class="cup-winner-cell">60</td><td data-label="Ryan Houseman" class="cup-loser-cell">55</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+<h3>Group Stage Results</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">4</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">38</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">42</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="GW">4</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">57</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">26</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="GW">4</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">37</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="GW">4</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">34</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">49</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="GW">4</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">73</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">41</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">34</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">38</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">44</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">22</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">76</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">59</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">31</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">64</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="GW">7</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">54</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">56</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="GW">10</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">33</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">32</td><td data-label="Winner">Drake Byrd</td></tr>
+<tr><td data-label="GW">10</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">37</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">32</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="GW">10</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">82</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">28</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="GW">10</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">47</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">42</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="GW">10</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">41</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">32</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">64</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">42</td><td data-label="Winner">Drake Byrd</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">47</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">71</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">38</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">83</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">46</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">44</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="GW">13</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">48</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">33</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="GW">16</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">58</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="GW">16</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">42</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">48</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="GW">16</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">64</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">47</td><td data-label="Winner">Drake Byrd</td></tr>
+<tr><td data-label="GW">16</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">42</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">42</td><td data-label="Winner">Draw</td></tr>
+<tr><td data-label="GW">16</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">34</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">44</td><td data-label="Winner">Ryan Houseman</td></tr>
 </tbody></table></div>
 </details>
 <details>

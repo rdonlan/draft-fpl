@@ -374,6 +374,38 @@
       font-weight: 750;
       box-shadow: inset 0 -2px 0 var(--belt-accent);
     }
+    tr.cup-eliminated-row td,
+    tr:nth-child(even).cup-eliminated-row td {
+      background: #fee2e2;
+      color: #7f1d1d;
+    }
+    html[data-theme="dark"] tr.cup-eliminated-row td,
+    html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
+      background: #4c1d24;
+      color: #fecdd3;
+    }
+    td.cup-winner-cell,
+    tr:nth-child(even) td.cup-winner-cell {
+      background: #dcfce7 !important;
+      color: #14532d;
+      font-weight: 800;
+    }
+    td.cup-loser-cell,
+    tr:nth-child(even) td.cup-loser-cell {
+      background: #fee2e2 !important;
+      color: #7f1d1d;
+      font-weight: 800;
+    }
+    html[data-theme="dark"] td.cup-winner-cell,
+    html[data-theme="dark"] tr:nth-child(even) td.cup-winner-cell {
+      background: #13351f !important;
+      color: #bbf7d0;
+    }
+    html[data-theme="dark"] td.cup-loser-cell,
+    html[data-theme="dark"] tr:nth-child(even) td.cup-loser-cell {
+      background: #4c1d24 !important;
+      color: #fecdd3;
+    }
     td:nth-child(n+3), th:nth-child(n+3) {
       text-align: right;
       font-variant-numeric: tabular-nums;
@@ -669,6 +701,16 @@
       }
       tr:nth-child(even) td {
         background: transparent;
+      }
+      tr.cup-eliminated-row td,
+      tr:nth-child(even).cup-eliminated-row td {
+        background: #fee2e2;
+        color: #7f1d1d;
+      }
+      html[data-theme="dark"] tr.cup-eliminated-row td,
+      html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
+        background: #4c1d24;
+        color: #fecdd3;
       }
       tr.belt-winner-row {
         background: var(--belt-bg);

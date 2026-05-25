@@ -15,10 +15,10 @@ Use this as the fast read on who won each cup and how the final finished.
 - Manager names are normalized to the same names used across the rest of the website.
 </details>
 
-| Season | Winner | Runner-Up | Final Score | Final GW | Margin |
-| --- | --- | --- | --- | --- | --- |
-| 2024-25 | Justin Miller | Ryan Houseman | 60-55 | 36 | 5 |
-| 2025-26 | Justin Miller | Dylan Reid | 75-66 | 36 | 9 |
+| Season | Winner | Runner-Up | Final Score |
+| --- | --- | --- | --- |
+| 2024-25 | Justin Miller | Ryan Houseman | 60-55 |
+| 2025-26 | Justin Miller | Dylan Reid | 75-66 |
 
 </details>
 
@@ -28,70 +28,134 @@ Use this as the fast read on who won each cup and how the final finished.
 Open this section for the group tables, knockout path, and final from that season.
 
 ### Group Stage Standings
-| Group | Rank | Manager | Pts | W | D | L | PF | PA | GD |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Group A | 1 | Ethan Ellsworth | 12 | 4 | 0 | 1 | 223 | 195 | 28 |
-| Group A | 2 | Justin Miller | 9 | 3 | 0 | 2 | 230 | 215 | 15 |
-| Group A | 3 | Levi Morant | 9 | 3 | 0 | 2 | 227 | 214 | 13 |
-| Group A | 4 | Luke Lockwood | 9 | 3 | 0 | 2 | 251 | 240 | 11 |
-| Group A | 5 | Ryan Houseman | 3 | 1 | 0 | 4 | 229 | 244 | -15 |
-| Group B | 1 | Dylan Reid | 13 | 4 | 1 | 0 | 291 | 236 | 55 |
-| Group B | 2 | Ryan Donlan | 10 | 3 | 1 | 1 | 295 | 214 | 81 |
-| Group B | 3 | Alexander Chaban | 6 | 2 | 0 | 3 | 189 | 208 | -19 |
-| Group B | 4 | Julius Long | 3 | 1 | 0 | 4 | 184 | 215 | -31 |
-| Group B | 5 | Drake Byrd | 0 | 0 | 0 | 5 | 173 | 311 | -138 |
+The red row is the final-place entrant in that group.
+
+### Group A Standings
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">223</td><td data-label="PA">195</td><td data-label="GD">28</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">230</td><td data-label="PA">215</td><td data-label="GD">15</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">227</td><td data-label="PA">214</td><td data-label="GD">13</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">251</td><td data-label="PA">240</td><td data-label="GD">11</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">229</td><td data-label="PA">244</td><td data-label="GD">-15</td></tr>
+</tbody></table></div>
+
+### Group B Standings
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">13</td><td data-label="W">4</td><td data-label="D">1</td><td data-label="L">0</td><td data-label="PF">291</td><td data-label="PA">236</td><td data-label="GD">55</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">10</td><td data-label="W">3</td><td data-label="D">1</td><td data-label="L">1</td><td data-label="PF">295</td><td data-label="PA">214</td><td data-label="GD">81</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">189</td><td data-label="PA">208</td><td data-label="GD">-19</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Julius Long</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">184</td><td data-label="PA">215</td><td data-label="GD">-31</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">0</td><td data-label="W">0</td><td data-label="D">0</td><td data-label="L">5</td><td data-label="PF">173</td><td data-label="PA">311</td><td data-label="GD">-138</td></tr>
+</tbody></table></div>
 
 ### Knockout Rounds
-| Stage | GW | Manager A | Score A | Manager B | Score B | Winner | Margin | Note |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Quarterfinal Leg 1 | 28 | Ethan Ellsworth | 38 | Alexander Chaban | 49 | Alexander Chaban | 11 |  |
-| Quarterfinal Leg 1 | 28 | Justin Miller | 49 | Ryan Donlan | 50 | Ryan Donlan | 1 |  |
-| Quarterfinal Leg 1 | 28 | Luke Lockwood | 40 | Julius Long | 37 | Luke Lockwood | 3 |  |
-| Quarterfinal Leg 1 | 28 | Levi Morant | 25 | Dylan Reid | 49 | Dylan Reid | 24 |  |
-| Quarterfinal Leg 2 | 29 | Ethan Ellsworth | 41 | Alexander Chaban | 26 | Ethan Ellsworth | 15 |  |
-| Quarterfinal Leg 2 | 29 | Justin Miller | 56 | Ryan Donlan | 49 | Justin Miller | 7 |  |
-| Quarterfinal Leg 2 | 29 | Luke Lockwood | 32 | Julius Long | 48 | Julius Long | 16 |  |
-| Quarterfinal Leg 2 | 29 | Levi Morant | 55 | Dylan Reid | 64 | Dylan Reid | 9 |  |
-| Quarterfinal Aggregate | 28/29 | Ethan Ellsworth | 79 | Alexander Chaban | 75 | Ethan Ellsworth | 4 |  |
-| Quarterfinal Aggregate | 28/29 | Justin Miller | 105 | Ryan Donlan | 99 | Justin Miller | 6 |  |
-| Quarterfinal Aggregate | 28/29 | Luke Lockwood | 72 | Julius Long | 85 | Julius Long | 13 |  |
-| Quarterfinal Aggregate | 28/29 | Levi Morant | 80 | Dylan Reid | 113 | Dylan Reid | 33 |  |
-| Semifinal Leg 1 | 32 | Ethan Ellsworth | 51 | Justin Miller | 52 | Justin Miller | 1 |  |
-| Semifinal Leg 1 | 32 | Julius Long | 31 | Dylan Reid | 61 | Dylan Reid | 30 |  |
-| Semifinal Leg 2 | 33 | Ethan Ellsworth | 73 | Justin Miller | 81 | Justin Miller | 8 |  |
-| Semifinal Leg 2 | 33 | Julius Long | 61 | Dylan Reid | 53 | Julius Long | 8 |  |
-| Semifinal Aggregate | 32/33 | Ethan Ellsworth | 124 | Justin Miller | 133 | Justin Miller | 9 |  |
-| Semifinal Aggregate | 32/33 | Julius Long | 92 | Dylan Reid | 114 | Dylan Reid | 22 |  |
-| Final | 36 | Justin Miller | 75 | Dylan Reid | 66 | Justin Miller | 9 |  |
+Each two-legged tie has its own table. In aggregate rows, green marks the winner and red marks the loser.
 
-### Group Match Results
-| Round | GW | Manager A | Score A | Manager B | Score B | Winner | Margin |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Group Round 1 | 6 | Ryan Houseman | 53 | Luke Lockwood | 57 | Luke Lockwood | 4 |
-| Group Round 1 | 6 | Justin Miller | 30 | Ethan Ellsworth | 28 | Justin Miller | 2 |
-| Group Round 1 | 6 | Levi Morant | 38 | Alexander Chaban | 22 | Levi Morant | 16 |
-| Group Round 1 | 6 | Dylan Reid | 63 | Ryan Donlan | 63 | Draw | 0 |
-| Group Round 1 | 6 | Drake Byrd | 17 | Julius Long | 54 | Julius Long | 37 |
-| Group Round 2 | 7 | Ryan Houseman | 54 | Justin Miller | 41 | Ryan Houseman | 13 |
-| Group Round 2 | 7 | Luke Lockwood | 41 | Levi Morant | 49 | Levi Morant | 8 |
-| Group Round 2 | 7 | Ethan Ellsworth | 59 | Julius Long | 40 | Ethan Ellsworth | 19 |
-| Group Round 2 | 7 | Dylan Reid | 57 | Drake Byrd | 47 | Dylan Reid | 10 |
-| Group Round 2 | 7 | Ryan Donlan | 42 | Alexander Chaban | 41 | Ryan Donlan | 1 |
-| Group Round 3 | 11 | Ryan Houseman | 33 | Ethan Ellsworth | 39 | Ethan Ellsworth | 6 |
-| Group Round 3 | 11 | Luke Lockwood | 60 | Ryan Donlan | 48 | Luke Lockwood | 12 |
-| Group Round 3 | 11 | Justin Miller | 68 | Levi Morant | 44 | Justin Miller | 24 |
-| Group Round 3 | 11 | Dylan Reid | 54 | Julius Long | 39 | Dylan Reid | 15 |
-| Group Round 3 | 11 | Drake Byrd | 45 | Alexander Chaban | 48 | Alexander Chaban | 3 |
-| Group Round 4 | 13 | Ryan Houseman | 31 | Levi Morant | 48 | Levi Morant | 17 |
-| Group Round 4 | 13 | Luke Lockwood | 44 | Ethan Ellsworth | 45 | Ethan Ellsworth | 1 |
-| Group Round 4 | 13 | Justin Miller | 46 | Drake Byrd | 40 | Justin Miller | 6 |
-| Group Round 4 | 13 | Dylan Reid | 58 | Alexander Chaban | 29 | Dylan Reid | 29 |
-| Group Round 4 | 13 | Ryan Donlan | 36 | Julius Long | 26 | Ryan Donlan | 10 |
-| Group Round 5 | 17 | Ryan Houseman | 58 | Dylan Reid | 59 | Dylan Reid | 1 |
-| Group Round 5 | 17 | Luke Lockwood | 49 | Justin Miller | 45 | Luke Lockwood | 4 |
-| Group Round 5 | 17 | Ethan Ellsworth | 52 | Levi Morant | 48 | Ethan Ellsworth | 4 |
-| Group Round 5 | 17 | Ryan Donlan | 106 | Drake Byrd | 24 | Ryan Donlan | 82 |
-| Group Round 5 | 17 | Julius Long | 25 | Alexander Chaban | 49 | Alexander Chaban | 24 |
+### Quarterfinals
+**Quarterfinal: Ethan Ellsworth vs Alexander Chaban**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ethan Ellsworth</th><th>Alexander Chaban</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Ethan Ellsworth">38</td><td data-label="Alexander Chaban">49</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Ethan Ellsworth">41</td><td data-label="Alexander Chaban">26</td><td data-label="Winner">Ethan Ellsworth</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Ethan Ellsworth" class="cup-winner-cell">79</td><td data-label="Alexander Chaban" class="cup-loser-cell">75</td><td data-label="Winner" class="cup-winner-cell">Ethan Ellsworth</td></tr>
+</tbody></table></div>
+
+**Quarterfinal: Justin Miller vs Ryan Donlan**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Justin Miller</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Justin Miller">49</td><td data-label="Ryan Donlan">50</td><td data-label="Winner">Ryan Donlan</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Justin Miller">56</td><td data-label="Ryan Donlan">49</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Justin Miller" class="cup-winner-cell">105</td><td data-label="Ryan Donlan" class="cup-loser-cell">99</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+
+**Quarterfinal: Luke Lockwood vs Julius Long**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Luke Lockwood</th><th>Julius Long</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Luke Lockwood">40</td><td data-label="Julius Long">37</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Luke Lockwood">32</td><td data-label="Julius Long">48</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Luke Lockwood" class="cup-loser-cell">72</td><td data-label="Julius Long" class="cup-winner-cell">85</td><td data-label="Winner" class="cup-winner-cell">Julius Long</td></tr>
+</tbody></table></div>
+
+**Quarterfinal: Levi Morant vs Dylan Reid**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Levi Morant">25</td><td data-label="Dylan Reid">49</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Levi Morant">55</td><td data-label="Dylan Reid">64</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Levi Morant" class="cup-loser-cell">80</td><td data-label="Dylan Reid" class="cup-winner-cell">113</td><td data-label="Winner" class="cup-winner-cell">Dylan Reid</td></tr>
+</tbody></table></div>
+
+### Semifinals
+**Semifinal: Ethan Ellsworth vs Justin Miller**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ethan Ellsworth</th><th>Justin Miller</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">32</td><td data-label="Ethan Ellsworth">51</td><td data-label="Justin Miller">52</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Ethan Ellsworth">73</td><td data-label="Justin Miller">81</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">32/33</td><td data-label="Ethan Ellsworth" class="cup-loser-cell">124</td><td data-label="Justin Miller" class="cup-winner-cell">133</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+
+**Semifinal: Julius Long vs Dylan Reid**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Julius Long</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">32</td><td data-label="Julius Long">31</td><td data-label="Dylan Reid">61</td><td data-label="Winner">Dylan Reid</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Julius Long">61</td><td data-label="Dylan Reid">53</td><td data-label="Winner">Julius Long</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">32/33</td><td data-label="Julius Long" class="cup-loser-cell">92</td><td data-label="Dylan Reid" class="cup-winner-cell">114</td><td data-label="Winner" class="cup-winner-cell">Dylan Reid</td></tr>
+</tbody></table></div>
+
+### Final
+**Final: Justin Miller vs Dylan Reid**
+<div class="table-wrap cup-final-table">
+<table>
+<thead><tr><th>GW</th><th>Justin Miller</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">36</td><td data-label="Justin Miller" class="cup-winner-cell">75</td><td data-label="Dylan Reid" class="cup-loser-cell">66</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+
+### Group Stage Results
+| GW | Manager A | Score A | Manager B | Score B | Winner |
+| --- | --- | --- | --- | --- | --- |
+| 6 | Ryan Houseman | 53 | Luke Lockwood | 57 | Luke Lockwood |
+| 6 | Justin Miller | 30 | Ethan Ellsworth | 28 | Justin Miller |
+| 6 | Levi Morant | 38 | Alexander Chaban | 22 | Levi Morant |
+| 6 | Dylan Reid | 63 | Ryan Donlan | 63 | Draw |
+| 6 | Drake Byrd | 17 | Julius Long | 54 | Julius Long |
+| 7 | Ryan Houseman | 54 | Justin Miller | 41 | Ryan Houseman |
+| 7 | Luke Lockwood | 41 | Levi Morant | 49 | Levi Morant |
+| 7 | Ethan Ellsworth | 59 | Julius Long | 40 | Ethan Ellsworth |
+| 7 | Dylan Reid | 57 | Drake Byrd | 47 | Dylan Reid |
+| 7 | Ryan Donlan | 42 | Alexander Chaban | 41 | Ryan Donlan |
+| 11 | Ryan Houseman | 33 | Ethan Ellsworth | 39 | Ethan Ellsworth |
+| 11 | Luke Lockwood | 60 | Ryan Donlan | 48 | Luke Lockwood |
+| 11 | Justin Miller | 68 | Levi Morant | 44 | Justin Miller |
+| 11 | Dylan Reid | 54 | Julius Long | 39 | Dylan Reid |
+| 11 | Drake Byrd | 45 | Alexander Chaban | 48 | Alexander Chaban |
+| 13 | Ryan Houseman | 31 | Levi Morant | 48 | Levi Morant |
+| 13 | Luke Lockwood | 44 | Ethan Ellsworth | 45 | Ethan Ellsworth |
+| 13 | Justin Miller | 46 | Drake Byrd | 40 | Justin Miller |
+| 13 | Dylan Reid | 58 | Alexander Chaban | 29 | Dylan Reid |
+| 13 | Ryan Donlan | 36 | Julius Long | 26 | Ryan Donlan |
+| 17 | Ryan Houseman | 58 | Dylan Reid | 59 | Dylan Reid |
+| 17 | Luke Lockwood | 49 | Justin Miller | 45 | Luke Lockwood |
+| 17 | Ethan Ellsworth | 52 | Levi Morant | 48 | Ethan Ellsworth |
+| 17 | Ryan Donlan | 106 | Drake Byrd | 24 | Ryan Donlan |
+| 17 | Julius Long | 25 | Alexander Chaban | 49 | Alexander Chaban |
 
 </details>
 
@@ -101,70 +165,134 @@ Open this section for the group tables, knockout path, and final from that seaso
 Open this section for the group tables, knockout path, and final from that season.
 
 ### Group Stage Standings
-| Group | Rank | Manager | Pts | W | D | L | PF | PA | GD |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Group A | 1 | Julius Long | 12 | 4 | 0 | 1 | 267 | 234 | 33 |
-| Group A | 2 | Drake Byrd | 9 | 3 | 0 | 2 | 233 | 201 | 32 |
-| Group A | 3 | Ryan Donlan | 9 | 3 | 0 | 2 | 229 | 205 | 24 |
-| Group A | 4 | Alexander Chaban | 6 | 2 | 0 | 3 | 235 | 238 | -3 |
-| Group A | 5 | Dylan Reid | 3 | 1 | 0 | 4 | 181 | 228 | -47 |
-| Group B | 1 | Ryan Houseman | 9 | 3 | 0 | 2 | 217 | 212 | 5 |
-| Group B | 2 | Levi Morant | 7 | 2 | 1 | 2 | 294 | 224 | 70 |
-| Group B | 3 | Justin Miller | 7 | 2 | 1 | 2 | 224 | 232 | -8 |
-| Group B | 4 | Luke Lockwood | 6 | 2 | 0 | 3 | 215 | 263 | -48 |
-| Group B | 5 | Ethan Ellsworth | 6 | 2 | 0 | 3 | 205 | 263 | -58 |
+The red row is the final-place entrant in that group.
+
+### Group A Standings
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Julius Long</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">267</td><td data-label="PA">234</td><td data-label="GD">33</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">233</td><td data-label="PA">201</td><td data-label="GD">32</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">229</td><td data-label="PA">205</td><td data-label="GD">24</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">235</td><td data-label="PA">238</td><td data-label="GD">-3</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">181</td><td data-label="PA">228</td><td data-label="GD">-47</td></tr>
+</tbody></table></div>
+
+### Group B Standings
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">217</td><td data-label="PA">212</td><td data-label="GD">5</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">294</td><td data-label="PA">224</td><td data-label="GD">70</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">224</td><td data-label="PA">232</td><td data-label="GD">-8</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">215</td><td data-label="PA">263</td><td data-label="GD">-48</td></tr>
+<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">205</td><td data-label="PA">263</td><td data-label="GD">-58</td></tr>
+</tbody></table></div>
 
 ### Knockout Rounds
-| Stage | GW | Manager A | Score A | Manager B | Score B | Winner | Margin | Note |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Quarterfinal Leg 1 | 24 | Ryan Houseman | 87 | Drake Byrd | 42 | Ryan Houseman | 45 |  |
-| Quarterfinal Leg 1 | 24 | Levi Morant | 51 | Alexander Chaban | 53 | Alexander Chaban | 2 |  |
-| Quarterfinal Leg 1 | 24 | Justin Miller | 109 | Ryan Donlan | 90 | Justin Miller | 19 |  |
-| Quarterfinal Leg 1 | 24 | Luke Lockwood | 46 | Julius Long | 32 | Luke Lockwood | 14 |  |
-| Quarterfinal Leg 2 | 25 | Ryan Houseman | 43 | Drake Byrd | 63 | Drake Byrd | 20 |  |
-| Quarterfinal Leg 2 | 25 | Levi Morant | 56 | Alexander Chaban | 30 | Levi Morant | 26 |  |
-| Quarterfinal Leg 2 | 25 | Justin Miller | 86 | Ryan Donlan | 75 | Justin Miller | 11 |  |
-| Quarterfinal Leg 2 | 25 | Luke Lockwood | 62 | Julius Long | 49 | Luke Lockwood | 13 |  |
-| Quarterfinal Aggregate | Aggregate | Ryan Houseman | 130 | Drake Byrd | 105 | Ryan Houseman | 25 | House/Haydo advance |
-| Quarterfinal Aggregate | Aggregate | Levi Morant | 107 | Alexander Chaban | 83 | Levi Morant | 24 | Levi advances |
-| Quarterfinal Aggregate | Aggregate | Justin Miller | 195 | Ryan Donlan | 165 | Justin Miller | 30 | Justin advances |
-| Quarterfinal Aggregate | Aggregate | Luke Lockwood | 108 | Julius Long | 81 | Luke Lockwood | 27 | Lukey advances |
-| Semifinal Leg 1 | 31 | Levi Morant | 43 | Justin Miller | 54 | Justin Miller | 11 |  |
-| Semifinal Leg 1 | 31 | Ryan Houseman | 48 | Luke Lockwood | 40 | Ryan Houseman | 8 |  |
-| Semifinal Leg 2 | 33 | Levi Morant | 55 | Justin Miller | 63 | Justin Miller | 8 |  |
-| Semifinal Leg 2 | 33 | Ryan Houseman | 74 | Luke Lockwood | 80 | Luke Lockwood | 6 |  |
-| Semifinal Aggregate | Aggregate | Levi Morant | 98 | Justin Miller | 117 | Justin Miller | 19 | Winner advances |
-| Semifinal Aggregate | Aggregate | Ryan Houseman | 122 | Luke Lockwood | 120 | Ryan Houseman | 2 | Winner advances |
-| Final | 36 | Justin Miller | 60 | Ryan Houseman | 55 | Justin Miller | 5 |  |
+Each two-legged tie has its own table. In aggregate rows, green marks the winner and red marks the loser.
 
-### Group Match Results
-| Round | GW | Manager A | Score A | Manager B | Score B | Winner | Margin |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Group Round 1 | 4 | Drake Byrd | 38 | Julius Long | 42 | Julius Long | 4 |
-| Group Round 1 | 4 | Ryan Donlan | 57 | Alexander Chaban | 26 | Ryan Donlan | 31 |
-| Group Round 1 | 4 | Dylan Reid | 37 | Ryan Houseman | 41 | Ryan Houseman | 4 |
-| Group Round 1 | 4 | Ethan Ellsworth | 34 | Justin Miller | 49 | Justin Miller | 15 |
-| Group Round 1 | 4 | Levi Morant | 73 | Luke Lockwood | 41 | Levi Morant | 32 |
-| Group Round 2 | 7 | Drake Byrd | 34 | Alexander Chaban | 38 | Alexander Chaban | 4 |
-| Group Round 2 | 7 | Ryan Donlan | 44 | Dylan Reid | 22 | Ryan Donlan | 22 |
-| Group Round 2 | 7 | Julius Long | 76 | Justin Miller | 59 | Julius Long | 17 |
-| Group Round 2 | 7 | Ethan Ellsworth | 31 | Luke Lockwood | 64 | Luke Lockwood | 33 |
-| Group Round 2 | 7 | Levi Morant | 54 | Ryan Houseman | 56 | Ryan Houseman | 2 |
-| Group Round 3 | 10 | Drake Byrd | 33 | Ryan Donlan | 32 | Drake Byrd | 1 |
-| Group Round 3 | 10 | Julius Long | 37 | Dylan Reid | 32 | Julius Long | 5 |
-| Group Round 3 | 10 | Alexander Chaban | 82 | Luke Lockwood | 28 | Alexander Chaban | 54 |
-| Group Round 3 | 10 | Ethan Ellsworth | 47 | Levi Morant | 42 | Ethan Ellsworth | 5 |
-| Group Round 3 | 10 | Justin Miller | 41 | Ryan Houseman | 32 | Justin Miller | 9 |
-| Group Round 4 | 13 | Drake Byrd | 64 | Dylan Reid | 42 | Drake Byrd | 22 |
-| Group Round 4 | 13 | Alexander Chaban | 47 | Julius Long | 71 | Julius Long | 24 |
-| Group Round 4 | 13 | Ryan Donlan | 38 | Levi Morant | 83 | Levi Morant | 45 |
-| Group Round 4 | 13 | Ethan Ellsworth | 46 | Ryan Houseman | 44 | Ethan Ellsworth | 2 |
-| Group Round 4 | 13 | Luke Lockwood | 48 | Justin Miller | 33 | Luke Lockwood | 15 |
-| Group Round 5 | 16 | Ryan Donlan | 58 | Julius Long | 41 | Ryan Donlan | 17 |
-| Group Round 5 | 16 | Alexander Chaban | 42 | Dylan Reid | 48 | Dylan Reid | 6 |
-| Group Round 5 | 16 | Drake Byrd | 64 | Ethan Ellsworth | 47 | Drake Byrd | 17 |
-| Group Round 5 | 16 | Levi Morant | 42 | Justin Miller | 42 | Draw | 0 |
-| Group Round 5 | 16 | Luke Lockwood | 34 | Ryan Houseman | 44 | Ryan Houseman | 10 |
+### Quarterfinals
+**Quarterfinal: Ryan Houseman vs Drake Byrd**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ryan Houseman</th><th>Drake Byrd</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Ryan Houseman">87</td><td data-label="Drake Byrd">42</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Ryan Houseman">43</td><td data-label="Drake Byrd">63</td><td data-label="Winner">Drake Byrd</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Ryan Houseman" class="cup-winner-cell">130</td><td data-label="Drake Byrd" class="cup-loser-cell">105</td><td data-label="Winner" class="cup-winner-cell">Ryan Houseman</td></tr>
+</tbody></table></div>
+
+**Quarterfinal: Levi Morant vs Alexander Chaban**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Alexander Chaban</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Levi Morant">51</td><td data-label="Alexander Chaban">53</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Levi Morant">56</td><td data-label="Alexander Chaban">30</td><td data-label="Winner">Levi Morant</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Levi Morant" class="cup-winner-cell">107</td><td data-label="Alexander Chaban" class="cup-loser-cell">83</td><td data-label="Winner" class="cup-winner-cell">Levi Morant</td></tr>
+</tbody></table></div>
+
+**Quarterfinal: Justin Miller vs Ryan Donlan**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Justin Miller</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Justin Miller">109</td><td data-label="Ryan Donlan">90</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Justin Miller">86</td><td data-label="Ryan Donlan">75</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Justin Miller" class="cup-winner-cell">195</td><td data-label="Ryan Donlan" class="cup-loser-cell">165</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+
+**Quarterfinal: Luke Lockwood vs Julius Long**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Luke Lockwood</th><th>Julius Long</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Luke Lockwood">46</td><td data-label="Julius Long">32</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Luke Lockwood">62</td><td data-label="Julius Long">49</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Luke Lockwood" class="cup-winner-cell">108</td><td data-label="Julius Long" class="cup-loser-cell">81</td><td data-label="Winner" class="cup-winner-cell">Luke Lockwood</td></tr>
+</tbody></table></div>
+
+### Semifinals
+**Semifinal: Levi Morant vs Justin Miller**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Justin Miller</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">31</td><td data-label="Levi Morant">43</td><td data-label="Justin Miller">54</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Levi Morant">55</td><td data-label="Justin Miller">63</td><td data-label="Winner">Justin Miller</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">31/33</td><td data-label="Levi Morant" class="cup-loser-cell">98</td><td data-label="Justin Miller" class="cup-winner-cell">117</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+
+**Semifinal: Ryan Houseman vs Luke Lockwood**
+<div class="table-wrap cup-knockout-table">
+<table>
+<thead><tr><th>Leg</th><th>GW</th><th>Ryan Houseman</th><th>Luke Lockwood</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="Leg">Leg 1</td><td data-label="GW">31</td><td data-label="Ryan Houseman">48</td><td data-label="Luke Lockwood">40</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Ryan Houseman">74</td><td data-label="Luke Lockwood">80</td><td data-label="Winner">Luke Lockwood</td></tr>
+<tr><td data-label="Leg">Aggregate</td><td data-label="GW">31/33</td><td data-label="Ryan Houseman" class="cup-winner-cell">122</td><td data-label="Luke Lockwood" class="cup-loser-cell">120</td><td data-label="Winner" class="cup-winner-cell">Ryan Houseman</td></tr>
+</tbody></table></div>
+
+### Final
+**Final: Justin Miller vs Ryan Houseman**
+<div class="table-wrap cup-final-table">
+<table>
+<thead><tr><th>GW</th><th>Justin Miller</th><th>Ryan Houseman</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">36</td><td data-label="Justin Miller" class="cup-winner-cell">60</td><td data-label="Ryan Houseman" class="cup-loser-cell">55</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
+</tbody></table></div>
+
+### Group Stage Results
+| GW | Manager A | Score A | Manager B | Score B | Winner |
+| --- | --- | --- | --- | --- | --- |
+| 4 | Drake Byrd | 38 | Julius Long | 42 | Julius Long |
+| 4 | Ryan Donlan | 57 | Alexander Chaban | 26 | Ryan Donlan |
+| 4 | Dylan Reid | 37 | Ryan Houseman | 41 | Ryan Houseman |
+| 4 | Ethan Ellsworth | 34 | Justin Miller | 49 | Justin Miller |
+| 4 | Levi Morant | 73 | Luke Lockwood | 41 | Levi Morant |
+| 7 | Drake Byrd | 34 | Alexander Chaban | 38 | Alexander Chaban |
+| 7 | Ryan Donlan | 44 | Dylan Reid | 22 | Ryan Donlan |
+| 7 | Julius Long | 76 | Justin Miller | 59 | Julius Long |
+| 7 | Ethan Ellsworth | 31 | Luke Lockwood | 64 | Luke Lockwood |
+| 7 | Levi Morant | 54 | Ryan Houseman | 56 | Ryan Houseman |
+| 10 | Drake Byrd | 33 | Ryan Donlan | 32 | Drake Byrd |
+| 10 | Julius Long | 37 | Dylan Reid | 32 | Julius Long |
+| 10 | Alexander Chaban | 82 | Luke Lockwood | 28 | Alexander Chaban |
+| 10 | Ethan Ellsworth | 47 | Levi Morant | 42 | Ethan Ellsworth |
+| 10 | Justin Miller | 41 | Ryan Houseman | 32 | Justin Miller |
+| 13 | Drake Byrd | 64 | Dylan Reid | 42 | Drake Byrd |
+| 13 | Alexander Chaban | 47 | Julius Long | 71 | Julius Long |
+| 13 | Ryan Donlan | 38 | Levi Morant | 83 | Levi Morant |
+| 13 | Ethan Ellsworth | 46 | Ryan Houseman | 44 | Ethan Ellsworth |
+| 13 | Luke Lockwood | 48 | Justin Miller | 33 | Luke Lockwood |
+| 16 | Ryan Donlan | 58 | Julius Long | 41 | Ryan Donlan |
+| 16 | Alexander Chaban | 42 | Dylan Reid | 48 | Dylan Reid |
+| 16 | Drake Byrd | 64 | Ethan Ellsworth | 47 | Drake Byrd |
+| 16 | Levi Morant | 42 | Justin Miller | 42 | Draw |
+| 16 | Luke Lockwood | 34 | Ryan Houseman | 44 | Ryan Houseman |
 
 </details>
 
