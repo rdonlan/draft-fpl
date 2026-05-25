@@ -577,6 +577,192 @@
     #power-season-2024-25:checked ~ #power-panel-2024-25 {
       display: block;
     }
+    .recaps-page {
+      margin-top: 18px;
+    }
+    .recap-controls {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 22px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .recap-season-tabs,
+    .recap-filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .recap-tab-button,
+    .recap-filter-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .recap-tab-button span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+    .recap-tab-button.is-active,
+    .recap-filter-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .recap-tab-button.is-active span {
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .recap-search-label {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+    .recap-search-input {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+    }
+    .recap-count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+    .recap-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .recap-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    .recap-card.is-hidden {
+      display: none;
+    }
+    .recap-card details {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .recap-card details[open] {
+      box-shadow: none;
+    }
+    .recap-card summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 14px 16px;
+      background: var(--paper);
+    }
+    .recap-card details[open] summary {
+      background: var(--soft);
+    }
+    .recap-summary-main {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+    }
+    .recap-title {
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 850;
+    }
+    .recap-preview {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.35;
+    }
+    .recap-summary-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+    .recap-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft-3);
+      color: var(--tab-ink);
+      font-size: 0.78rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .recap-badge-cup {
+      border-color: #bae6fd;
+      background: #e0f2fe;
+      color: #075985;
+    }
+    .recap-badge-mixed {
+      border-color: #fed7aa;
+      background: #ffedd5;
+      color: #9a3412;
+    }
+    .recap-badge-league {
+      border-color: #bbf7d0;
+      background: #dcfce7;
+      color: #166534;
+    }
+    html[data-theme="dark"] .recap-badge-cup {
+      border-color: #164e63;
+      background: #0e2f3f;
+      color: #bae6fd;
+    }
+    html[data-theme="dark"] .recap-badge-mixed {
+      border-color: #7c2d12;
+      background: #3b2415;
+      color: #fed7aa;
+    }
+    html[data-theme="dark"] .recap-badge-league {
+      border-color: #166534;
+      background: #12351f;
+      color: #bbf7d0;
+    }
+    .recap-body {
+      padding: 16px 18px 20px;
+      border-top: 1px solid var(--line);
+    }
+    .recap-body p {
+      margin: 0 0 13px;
+      font-size: 0.98rem;
+      line-height: 1.62;
+    }
+    .recap-body p:last-child {
+      margin-bottom: 0;
+    }
+    .recap-meta-line {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
     strong {
       color: var(--accent-2);
     }
@@ -628,6 +814,23 @@
       .power-tab-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .recap-season-tabs,
+      .recap-filter-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .recap-tab-button,
+      .recap-filter-button {
+        width: 100%;
+        min-height: 42px;
+      }
+      .recap-card summary {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .recap-summary-meta {
+        justify-content: flex-start;
       }
       .power-tab-panel > h3,
       .power-tab-panel > p,
@@ -768,6 +971,7 @@
 <a class="season-tab" href="../power-rankings/">Power Rankings</a>
 <a class="season-tab" href="../cup-history/">Cup History</a>
 <a class="season-tab" href="../trophy-cabinet/">Trophy Cabinet</a>
+<a class="season-tab" href="../recaps/">Recaps</a>
       <label class="theme-switch">
         <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
         <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
@@ -1393,6 +1597,69 @@
       tooltip.classList.remove("is-visible");
     });
   });
+})();
+</script>
+  <script>
+(() => {
+  const page = document.querySelector("[data-recaps-page]");
+  if (!page) return;
+
+  const seasonButtons = Array.from(page.querySelectorAll("[data-recap-season-button]"));
+  const filterButtons = Array.from(page.querySelectorAll("[data-recap-filter-button]"));
+  const cards = Array.from(page.querySelectorAll(".recap-card"));
+  const search = page.querySelector("[data-recap-search]");
+  const count = page.querySelector("[data-recap-count]");
+  let activeSeason = seasonButtons.find((button) => button.classList.contains("is-active"))?.dataset.recapSeasonButton || "all";
+  let activeFilter = "all";
+
+  const setButtonState = (buttons, activeButton, attrName) => {
+    buttons.forEach((button) => {
+      const isActive = button === activeButton;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  const cardMatchesFilter = (card) => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "multigw") return card.dataset.multi === "true";
+    return card.dataset.kind === activeFilter;
+  };
+
+  const applyFilters = () => {
+    const query = (search?.value || "").trim().toLowerCase();
+    let visible = 0;
+    cards.forEach((card) => {
+      const matchesSeason = card.dataset.season === activeSeason;
+      const matchesType = cardMatchesFilter(card);
+      const matchesSearch = !query || (card.dataset.search || "").includes(query);
+      const isVisible = matchesSeason && matchesType && matchesSearch;
+      card.classList.toggle("is-hidden", !isVisible);
+      if (isVisible) visible += 1;
+    });
+    if (count) {
+      count.textContent = `${visible} recap${visible === 1 ? "" : "s"}`;
+    }
+  };
+
+  seasonButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeSeason = button.dataset.recapSeasonButton;
+      setButtonState(seasonButtons, button, "data-recap-season-button");
+      applyFilters();
+    });
+  });
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.recapFilterButton;
+      setButtonState(filterButtons, button, "data-recap-filter-button");
+      applyFilters();
+    });
+  });
+
+  search?.addEventListener("input", applyFilters);
+  applyFilters();
 })();
 </script>
 </body>
