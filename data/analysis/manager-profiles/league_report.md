@@ -7,12 +7,12 @@ Use this page when you want the story of one manager instead of another league-w
 <details open>
 <summary><h2>Ryan Donlan</h2></summary>
 
-All-time rank #1 with a 54-1-21 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #1 with a 54-1-21 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 1 |
+| Cumulative Rank | 1 |
 | Record | 54-1-21 |
 | H2H Points | 163 |
 | H2H Points/GW | 2.14 |
@@ -76,12 +76,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Justin Miller</h2></summary>
 
-All-time rank #2 with a 50-1-25 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #2 with a 50-1-25 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 2 |
+| Cumulative Rank | 2 |
 | Record | 50-1-25 |
 | H2H Points | 151 |
 | H2H Points/GW | 1.99 |
@@ -145,12 +145,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Ryan Houseman</h2></summary>
 
-All-time rank #3 with a 41-0-35 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #3 with a 41-0-35 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 3 |
+| Cumulative Rank | 3 |
 | Record | 41-0-35 |
 | H2H Points | 123 |
 | H2H Points/GW | 1.62 |
@@ -214,12 +214,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Luke Lockwood</h2></summary>
 
-All-time rank #4 with a 39-4-33 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #4 with a 39-4-33 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 4 |
+| Cumulative Rank | 4 |
 | Record | 39-4-33 |
 | H2H Points | 121 |
 | H2H Points/GW | 1.59 |
@@ -283,12 +283,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Drake Byrd</h2></summary>
 
-All-time rank #5 with a 36-2-38 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #5 with a 36-2-38 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 5 |
+| Cumulative Rank | 5 |
 | Record | 36-2-38 |
 | H2H Points | 110 |
 | H2H Points/GW | 1.45 |
@@ -352,12 +352,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Levi Morant</h2></summary>
 
-All-time rank #6 with a 35-0-41 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #6 with a 35-0-41 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 6 |
+| Cumulative Rank | 6 |
 | Record | 35-0-41 |
 | H2H Points | 105 |
 | H2H Points/GW | 1.38 |
@@ -421,12 +421,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Julius Long</h2></summary>
 
-All-time rank #7 with a 31-2-43 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #7 with a 31-2-43 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 7 |
+| Cumulative Rank | 7 |
 | Record | 31-2-43 |
 | H2H Points | 95 |
 | H2H Points/GW | 1.25 |
@@ -490,12 +490,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Dylan Reid</h2></summary>
 
-All-time rank #8 with a 31-2-43 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #8 with a 31-2-43 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 8 |
+| Cumulative Rank | 8 |
 | Record | 31-2-43 |
 | H2H Points | 95 |
 | H2H Points/GW | 1.25 |
@@ -559,12 +559,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Ethan Ellsworth</h2></summary>
 
-All-time rank #9 with a 28-2-46 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #9 with a 28-2-46 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 9 |
+| Cumulative Rank | 9 |
 | Record | 28-2-46 |
 | H2H Points | 86 |
 | H2H Points/GW | 1.13 |
@@ -628,12 +628,12 @@ Elo resets to 1500 at the start of each season, so these rows compare the manage
 <details>
 <summary><h2>Alexander Chaban</h2></summary>
 
-All-time rank #10 with a 28-0-48 record across the 2024-25 and 2025-26 datasets.
+Cumulative rank #10 with a 28-0-48 record across the 2024-25 and 2025-26 datasets.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
-| All-Time Rank | 10 |
+| Cumulative Rank | 10 |
 | Record | 28-0-48 |
 | H2H Points | 84 |
 | H2H Points/GW | 1.11 |

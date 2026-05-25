@@ -1,4 +1,4 @@
-# BMS FPL Draft All-Time Stats
+# BMS FPL Draft Cumulative Stats
 
 Combines the complete 2024-25 and 2025-26 seasons: 38 gameweeks per season, 76 manager-gameweeks per manager.
 
@@ -6,14 +6,14 @@ Use the dropdown sections below to open or hide each metric.
 
 ## Best Quick Hits
 
-- **All-Time Table Leader**: Ryan Donlan (163).
+- **Cumulative Table Leader**: Ryan Donlan (163).
 - **Most Wins**: Ryan Donlan (54).
 - **Total PF King**: Ryan Donlan (3521).
 - **Best PF/GW**: Ryan Donlan (46.33).
 - **Most Weekly Top Scores**: Justin Miller (19).
 
 <details open>
-<summary><h2>All-Time Standings</h2></summary>
+<summary><h2>Cumulative Standings</h2></summary>
 
 Use this as the career table: total record, table points, points for, points against, and scoring average across both seasons.
 
@@ -44,7 +44,7 @@ Use this as the career table: total record, table points, points for, points aga
 </details>
 
 <details>
-<summary><h2>All-Time Elo Power</h2></summary>
+<summary><h2>Cumulative Elo Power</h2></summary>
 
 Use this table as the career power-rankings view: it aggregates the season-reset Elo ratings from the Power Rankings page.
 
@@ -76,7 +76,7 @@ Use this table as the career power-rankings view: it aggregates the season-reset
 </details>
 
 <details>
-<summary><h2>All-Time Head-To-Head Matrix</h2></summary>
+<summary><h2>Cumulative Head-To-Head Matrix</h2></summary>
 
 Use this as the career matchup grid: each cell shows the row manager's record against the column manager across both seasons.
 
@@ -105,7 +105,7 @@ Use this as the career matchup grid: each cell shows the row manager's record ag
 </details>
 
 <details>
-<summary><h2>All-Time Scoring Profile</h2></summary>
+<summary><h2>Cumulative Scoring Profile</h2></summary>
 
 Use this table to separate raw scoring strength from the H2H table: who scored the most, who scored efficiently, and who had the biggest single-week highs and lows.
 
@@ -135,7 +135,7 @@ Use this table to separate raw scoring strength from the H2H table: who scored t
 </details>
 
 <details>
-<summary><h2>All-Time Score Bands</h2></summary>
+<summary><h2>Cumulative Score Bands</h2></summary>
 
 Use this table to see how often each manager landed in the top or bottom scoring bands across all available gameweeks.
 
@@ -166,7 +166,7 @@ Use this table to see how often each manager landed in the top or bottom scoring
 </details>
 
 <details>
-<summary><h2>All-Time Streaks</h2></summary>
+<summary><h2>Cumulative Streaks</h2></summary>
 
 Use this table to see the longest H2H winning and losing runs across the full two-season timeline.
 
@@ -195,7 +195,7 @@ Use this table to see the longest H2H winning and losing runs across the full tw
 </details>
 
 <details>
-<summary><h2>All-Time Lineal Belt</h2></summary>
+<summary><h2>Cumulative Lineal Belt</h2></summary>
 
 Use this table as the combined belt record book: total reigns, fight records, defenses, and weeks ending as belt holder.
 
@@ -270,7 +270,7 @@ Use this table as the quick trophy case for the combined two-season sample.
 
 | Award | Manager | Value | Notes |
 |---|---:|---:|---:|
-| All-Time Table Leader | Ryan Donlan | 163 | Most combined H2H table points. |
+| Cumulative Table Leader | Ryan Donlan | 163 | Most combined H2H table points. |
 | Most Wins | Ryan Donlan | 54 | Most combined H2H wins. |
 | Total PF King | Ryan Donlan | 3521 | Most total starter points scored. |
 | Best PF/GW | Ryan Donlan | 46.33 | Best scoring average across both seasons. |
@@ -287,7 +287,7 @@ Use this table as the quick trophy case for the combined two-season sample.
 <details>
 <summary><h2>Output Files</h2></summary>
 
-These are the supporting CSVs exposed for the all-time page.
+These are the supporting CSVs exposed for the cumulative stats page.
 
 - `all_time_standings.csv`
 - `all_time_power.csv`

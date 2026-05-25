@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BMS FPL Draft All-Time Stats</title>
+  <title>BMS FPL Draft Cumulative Stats</title>
   <script>
 (() => {
   const saved = localStorage.getItem("bms-theme");
@@ -1217,7 +1217,7 @@
     <nav class="season-tabs" aria-label="Season reports">
       <a class="season-tab" href="../2025-2026/">2025-2026</a>
 <a class="season-tab" href="../2024-2025/">2024-2025</a>
-<a class="season-tab active" href="../all-time/">All-Time</a>
+<a class="season-tab active" href="../all-time/">Cumulative Stats</a>
 <a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
 <a class="season-tab" href="../cup-history/">Cup History</a>
 <a class="season-tab" href="../trophy-cabinet/">Trophy Cabinet</a>
@@ -1231,9 +1231,9 @@
     </nav>
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/all-time/league_report.md">Raw Markdown</a>
-<a href="../data/analysis/all-time/all_time_standings.csv">All-Time Standings CSV</a>
-<a href="../data/analysis/all-time/all_time_power.csv">All-Time Elo CSV</a>
-<a href="../data/analysis/all-time/all_time_scoring.csv">All-Time Scoring CSV</a>
+<a href="../data/analysis/all-time/all_time_standings.csv">Cumulative Standings CSV</a>
+<a href="../data/analysis/all-time/all_time_power.csv">Cumulative Elo CSV</a>
+<a href="../data/analysis/all-time/all_time_scoring.csv">Cumulative Scoring CSV</a>
 <a href="../data/analysis/all-time/all_time_score_bands.csv">Score Bands CSV</a>
 <a href="../data/analysis/all-time/all_time_streaks.csv">Streaks CSV</a>
 <a href="../data/analysis/all-time/all_time_lineal_belt.csv">Lineal Belt CSV</a>
@@ -1241,19 +1241,19 @@
 <a href="../data/analysis/all-time/season_comparison.csv">Season Change CSV</a>
 <a href="../data/analysis/all-time/two_year_awards.csv">Awards CSV</a>
     </div>
-    <h1>BMS FPL Draft All-Time Stats</h1>
+    <h1>BMS FPL Draft Cumulative Stats</h1>
 <p>Combines the complete 2024-25 and 2025-26 seasons: 38 gameweeks per season, 76 manager-gameweeks per manager.</p>
 <p>Use the dropdown sections below to open or hide each metric.</p>
 <h2>Best Quick Hits</h2>
 <ul>
-<li><strong>All-Time Table Leader</strong>: Ryan Donlan (163).</li>
+<li><strong>Cumulative Table Leader</strong>: Ryan Donlan (163).</li>
 <li><strong>Most Wins</strong>: Ryan Donlan (54).</li>
 <li><strong>Total PF King</strong>: Ryan Donlan (3521).</li>
 <li><strong>Best PF/GW</strong>: Ryan Donlan (46.33).</li>
 <li><strong>Most Weekly Top Scores</strong>: Justin Miller (19).</li>
 </ul>
 <details open>
-<summary><h2>All-Time Standings</h2></summary>
+<summary><h2>Cumulative Standings</h2></summary>
 <p>Use this as the career table: total record, table points, points for, points against, and scoring average across both seasons.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1281,7 +1281,7 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>All-Time Elo Power</h2></summary>
+<summary><h2>Cumulative Elo Power</h2></summary>
 <p>Use this table as the career power-rankings view: it aggregates the season-reset Elo ratings from the Power Rankings page.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1310,7 +1310,7 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>All-Time Head-To-Head Matrix</h2></summary>
+<summary><h2>Cumulative Head-To-Head Matrix</h2></summary>
 <p>Use this as the career matchup grid: each cell shows the row manager&#x27;s record against the column manager across both seasons.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1336,7 +1336,7 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>All-Time Scoring Profile</h2></summary>
+<summary><h2>Cumulative Scoring Profile</h2></summary>
 <p>Use this table to separate raw scoring strength from the H2H table: who scored the most, who scored efficiently, and who had the biggest single-week highs and lows.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1363,7 +1363,7 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>All-Time Score Bands</h2></summary>
+<summary><h2>Cumulative Score Bands</h2></summary>
 <p>Use this table to see how often each manager landed in the top or bottom scoring bands across all available gameweeks.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1391,7 +1391,7 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>All-Time Streaks</h2></summary>
+<summary><h2>Cumulative Streaks</h2></summary>
 <p>Use this table to see the longest H2H winning and losing runs across the full two-season timeline.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1417,7 +1417,7 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>All-Time Lineal Belt</h2></summary>
+<summary><h2>Cumulative Lineal Belt</h2></summary>
 <p>Use this table as the combined belt record book: total reigns, fight records, defenses, and weeks ending as belt holder.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1484,7 +1484,7 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Award</th><th>Manager</th><th>Value</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td data-label="Award">All-Time Table Leader</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">163</td><td data-label="Notes">Most combined H2H table points.</td></tr>
+<tr><td data-label="Award">Cumulative Table Leader</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">163</td><td data-label="Notes">Most combined H2H table points.</td></tr>
 <tr><td data-label="Award">Most Wins</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">54</td><td data-label="Notes">Most combined H2H wins.</td></tr>
 <tr><td data-label="Award">Total PF King</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">3521</td><td data-label="Notes">Most total starter points scored.</td></tr>
 <tr><td data-label="Award">Best PF/GW</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">46.33</td><td data-label="Notes">Best scoring average across both seasons.</td></tr>
@@ -1499,7 +1499,7 @@
 </details>
 <details>
 <summary><h2>Output Files</h2></summary>
-<p>These are the supporting CSVs exposed for the all-time page.</p>
+<p>These are the supporting CSVs exposed for the cumulative stats page.</p>
 <ul>
 <li><code>all_time_standings.csv</code></li>
 <li><code>all_time_power.csv</code></li>
