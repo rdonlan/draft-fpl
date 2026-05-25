@@ -1,21 +1,21 @@
 year,manager,total_picks,net_vs_standard,incoming_count,outgoing_count,incoming,outgoing
 2026,Levi,17,4,5,1,Luke 3rd; Justin 7th; Luke 7th; Justin 8th; Luke 12th,4th to Ethan
-2026,Dylan,16,3,3,0,Justin 3rd; House/Haydo 5th; Donny 10th,
+2026,Dylan,16,3,3,0,Justin 3rd; Ryan Houseman 5th; Donny 10th,
 2026,Drake,15,2,2,0,Donny 4th; Donny 8th,
 2026,Julius,15,2,2,0,Justin 6th; Donny 9th,
 2026,Ethan,14,1,2,1,Levi 4th; Donny 6th,10th to Donny
 2026,Chabo,13,0,0,0,,
-2026,House/Haydo,13,0,1,1,Justin 10th,5th to Dylan
+2026,Ryan Houseman,13,0,1,1,Justin 10th,5th to Dylan
 2026,Luke,10,-3,0,3,,3rd to Levi; 7th to Levi; 12th to Levi
 2026,Donny,9,-4,1,5,Ethan 10th,4th to Drake; 6th to Ethan; 8th to Drake; 9th to Julius; 10th to Dylan
-2026,Justin,8,-5,0,5,,3rd to Dylan; 6th to Julius; 7th to Levi; 8th to Levi; 10th to House/Haydo
+2026,Justin,8,-5,0,5,,3rd to Dylan; 6th to Julius; 7th to Levi; 8th to Levi; 10th to Ryan Houseman
 2027,Levi,15,2,2,0,Justin 5th; Justin 6th,
 2027,Chabo,13,0,0,0,,
 2027,Donny,13,0,0,0,,
 2027,Drake,13,0,0,0,,
 2027,Dylan,13,0,0,0,,
 2027,Ethan,13,0,0,0,,
-2027,House/Haydo,13,0,0,0,,
 2027,Julius,13,0,0,0,,
 2027,Luke,13,0,0,0,,
+2027,Ryan Houseman,13,0,0,0,,
 2027,Justin,11,-2,0,2,,5th to Levi; 6th to Levi

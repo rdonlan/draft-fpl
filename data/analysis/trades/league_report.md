@@ -22,11 +22,11 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <option value="drake">Drake</option>
 <option value="dylan">Dylan</option>
 <option value="ethan">Ethan</option>
-<option value="house/haydo">House/Haydo</option>
 <option value="julius">Julius</option>
 <option value="justin">Justin</option>
 <option value="levi">Levi</option>
 <option value="luke">Luke</option>
+<option value="ryan houseman">Ryan Houseman</option>
 </select>
 <label class="trade-filter-label" for="trade-search">Search trades</label>
 <input id="trade-search" class="trade-search-input" type="search" placeholder="Search player, manager, pick, condition..." autocomplete="off" data-trade-search>
@@ -394,20 +394,20 @@ A searchable ledger of player, pick, and conditional trades from the league work
 </div>
 </details>
 </article>
-<article class="trade-card" data-season="2024-25" data-managers="levi|house/haydo" data-search="2024-25 gw 4 in-season levi, house/haydo levi sent tavernier (bou), livramento (new); house/haydo sent trossard (ars), veltman (bha)">
+<article class="trade-card" data-season="2024-25" data-managers="levi|ryan houseman" data-search="2024-25 gw 4 in-season levi, ryan houseman levi sent tavernier (bou), livramento (new); ryan houseman sent trossard (ars), veltman (bha)">
 <details>
 <summary>
 <span class="trade-summary-main">
 <span class="trade-kicker">2024-25 | GW 4 | In-season</span>
-<span class="trade-title">Levi &lt;-&gt; House/Haydo</span>
-<span class="trade-description">Levi sent Tavernier (BOU), Livramento (NEW); House/Haydo sent Trossard (ARS), Veltman (BHA)</span>
+<span class="trade-title">Levi &lt;-&gt; Ryan Houseman</span>
+<span class="trade-description">Levi sent Tavernier (BOU), Livramento (NEW); Ryan Houseman sent Trossard (ARS), Veltman (BHA)</span>
 </span>
 <span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span></span>
 </summary>
 <div class="trade-body">
 <div class="trade-side-list">
 <div class="trade-side"><strong>Levi sent</strong><p>Tavernier (BOU), Livramento (NEW)</p></div>
-<div class="trade-side"><strong>House/Haydo sent</strong><p>Trossard (ARS), Veltman (BHA)</p></div>
+<div class="trade-side"><strong>Ryan Houseman sent</strong><p>Trossard (ARS), Veltman (BHA)</p></div>
 </div>
 
 </div>
@@ -603,20 +603,20 @@ A searchable ledger of player, pick, and conditional trades from the league work
 </div>
 </details>
 </article>
-<article class="trade-card" data-season="2024-25" data-managers="levi|house/haydo" data-search="2024-25 gw 24 in-season levi, house/haydo levi sent williams (not), dango (bou), ndiaye (eve), 9th-round pick; house/haydo sent young (eve), wilson (ful), archer (sou), 3rd-round pick">
+<article class="trade-card" data-season="2024-25" data-managers="levi|ryan houseman" data-search="2024-25 gw 24 in-season levi, ryan houseman levi sent williams (not), dango (bou), ndiaye (eve), 9th-round pick; ryan houseman sent young (eve), wilson (ful), archer (sou), 3rd-round pick">
 <details>
 <summary>
 <span class="trade-summary-main">
 <span class="trade-kicker">2024-25 | GW 24 | In-season</span>
-<span class="trade-title">Levi &lt;-&gt; House/Haydo</span>
-<span class="trade-description">Levi sent Williams (NOT), Dango (BOU), Ndiaye (EVE), 9th-round pick; House/Haydo sent Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</span>
+<span class="trade-title">Levi &lt;-&gt; Ryan Houseman</span>
+<span class="trade-description">Levi sent Williams (NOT), Dango (BOU), Ndiaye (EVE), 9th-round pick; Ryan Houseman sent Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</span>
 </span>
 <span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">8 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
 </summary>
 <div class="trade-body">
 <div class="trade-side-list">
 <div class="trade-side"><strong>Levi sent</strong><p>Williams (NOT), Dango (BOU), Ndiaye (EVE), 9th-round pick</p></div>
-<div class="trade-side"><strong>House/Haydo sent</strong><p>Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</p></div>
+<div class="trade-side"><strong>Ryan Houseman sent</strong><p>Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</p></div>
 </div>
 
 </div>
@@ -850,13 +850,13 @@ A searchable ledger of player, pick, and conditional trades from the league work
 </div>
 </details>
 </article>
-<article class="trade-card" data-season="2024-25" data-managers="levi|luke|house/haydo" data-search="2024-25 postseason postseason levi, luke, house/haydo levi sent 5th-round pick (1st), 10th-round pick (7th), 11th-round pick (7th); luke sent 7th-round pick (5th); house/haydo sent wood (nf), 2026 5th-round pick">
+<article class="trade-card" data-season="2024-25" data-managers="levi|luke|ryan houseman" data-search="2024-25 postseason postseason levi, luke, ryan houseman levi sent 5th-round pick (1st), 10th-round pick (7th), 11th-round pick (7th); luke sent 7th-round pick (5th); ryan houseman sent wood (nf), 2026 5th-round pick">
 <details>
 <summary>
 <span class="trade-summary-main">
 <span class="trade-kicker">2024-25 | Postseason | Postseason</span>
-<span class="trade-title">Levi &lt;-&gt; Luke &lt;-&gt; House/Haydo</span>
-<span class="trade-description">Levi sent 5th-round pick (1st), 10th-round pick (7th), 11th-round pick (7th); Luke sent 7th-round pick (5th); House/Haydo sent Wood (NF), 2026 5th-round pick</span>
+<span class="trade-title">Levi &lt;-&gt; Luke &lt;-&gt; Ryan Houseman</span>
+<span class="trade-description">Levi sent 5th-round pick (1st), 10th-round pick (7th), 11th-round pick (7th); Luke sent 7th-round pick (5th); Ryan Houseman sent Wood (NF), 2026 5th-round pick</span>
 </span>
 <span class="trade-summary-meta"><span class="trade-badge">3 teams</span><span class="trade-badge">6 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
 </summary>
@@ -864,7 +864,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <div class="trade-side-list">
 <div class="trade-side"><strong>Levi sent</strong><p>5th-round pick (1st), 10th-round pick (7th), 11th-round pick (7th)</p></div>
 <div class="trade-side"><strong>Luke sent</strong><p>7th-round pick (5th)</p></div>
-<div class="trade-side"><strong>House/Haydo sent</strong><p>Wood (NF), 2026 5th-round pick</p></div>
+<div class="trade-side"><strong>Ryan Houseman sent</strong><p>Wood (NF), 2026 5th-round pick</p></div>
 </div>
 
 </div>
@@ -927,20 +927,20 @@ A searchable ledger of player, pick, and conditional trades from the league work
 </div>
 </details>
 </article>
-<article class="trade-card" data-season="2024-25" data-managers="levi|house/haydo" data-search="2024-25 postseason postseason levi, house/haydo levi sent 2026 10th-round pick; house/haydo sent 2025 12th-round pick, 13th-round pick, 14th-round pick">
+<article class="trade-card" data-season="2024-25" data-managers="levi|ryan houseman" data-search="2024-25 postseason postseason levi, ryan houseman levi sent 2026 10th-round pick; ryan houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick">
 <details>
 <summary>
 <span class="trade-summary-main">
 <span class="trade-kicker">2024-25 | Postseason | Postseason</span>
-<span class="trade-title">Levi &lt;-&gt; House/Haydo</span>
-<span class="trade-description">Levi sent 2026 10th-round pick; House/Haydo sent 2025 12th-round pick, 13th-round pick, 14th-round pick</span>
+<span class="trade-title">Levi &lt;-&gt; Ryan Houseman</span>
+<span class="trade-description">Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick</span>
 </span>
 <span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
 </summary>
 <div class="trade-body">
 <div class="trade-side-list">
 <div class="trade-side"><strong>Levi sent</strong><p>2026 10th-round pick</p></div>
-<div class="trade-side"><strong>House/Haydo sent</strong><p>2025 12th-round pick, 13th-round pick, 14th-round pick</p></div>
+<div class="trade-side"><strong>Ryan Houseman sent</strong><p>2025 12th-round pick, 13th-round pick, 14th-round pick</p></div>
 </div>
 
 </div>
@@ -972,7 +972,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 | Dylan | 7 | 16 | 7 | Donny (3) |
 | Julius | 7 | 12 | 5 | Levi (4) |
 | Chabo | 5 | 13 | 4 | Levi (2) |
-| House/Haydo | 4 | 11 | 3 | Levi (4) |
+| Ryan Houseman | 4 | 11 | 3 | Levi (4) |
 | Drake | 3 | 8 | 3 | Levi (2) |
 
 </details>
@@ -985,8 +985,8 @@ A searchable ledger of player, pick, and conditional trades from the league work
 | Levi | Luke | 7 |
 | Justin | Levi | 6 |
 | Ethan | Levi | 5 |
-| House/Haydo | Levi | 4 |
 | Julius | Levi | 4 |
+| Levi | Ryan Houseman | 4 |
 | Donny | Dylan | 3 |
 | Donny | Ethan | 3 |
 | Dylan | Levi | 3 |
@@ -1000,7 +1000,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 | Donny | Levi | 1 |
 | Donny | Luke | 1 |
 | Dylan | Justin | 1 |
-| House/Haydo | Luke | 1 |
+| Luke | Ryan Houseman | 1 |
 
 </details>
 

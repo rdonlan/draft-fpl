@@ -26,7 +26,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <label class="pick-control"><span>Manager</span><select data-pick-manager>
 <option value="Donny" selected>Donny</option>
 <option value="Justin">Justin</option>
-<option value="House/Haydo">House/Haydo</option>
+<option value="Ryan Houseman">Ryan Houseman</option>
 <option value="Levi">Levi</option>
 <option value="Luke">Luke</option>
 <option value="Julius">Julius</option>
@@ -121,7 +121,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>6th</td><td>Julius</td></tr>
 <tr><td>7th</td><td>Levi</td></tr>
 <tr><td>8th</td><td>Levi</td></tr>
-<tr><td>10th</td><td>House/Haydo</td></tr>
+<tr><td>10th</td><td>Ryan Houseman</td></tr>
 </tbody>
 </table>
 </div>
@@ -135,9 +135,9 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 </div>
 </section>
-<section class="pick-profile" data-pick-profile data-year="2026" data-manager="House/Haydo" hidden>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Ryan Houseman" hidden>
 <div class="pick-profile-heading">
-<div><h3>House/Haydo - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+<div><h3>Ryan Houseman - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
 <div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
@@ -150,19 +150,19 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <table>
 <thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>4th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>6th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>7th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>8th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>9th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>3rd</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Justin</td><td>From Justin</td></tr>
-<tr><td>11th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>12th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>13th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>14th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>15th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 </tbody>
 </table>
 </div>
@@ -512,7 +512,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>3rd</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>4th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Dylan</td><td>Own pick</td></tr>
-<tr><td>5th</td><td>House/Haydo</td><td>From House/Haydo</td></tr>
+<tr><td>5th</td><td>Ryan Houseman</td><td>From Ryan Houseman</td></tr>
 <tr><td>6th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>7th</td><td>Dylan</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Dylan</td><td>Own pick</td></tr>
@@ -540,7 +540,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
 <tbody>
 <tr><td>3rd</td><td>Justin</td></tr>
-<tr><td>5th</td><td>House/Haydo</td></tr>
+<tr><td>5th</td><td>Ryan Houseman</td></tr>
 <tr><td>10th</td><td>Donny</td></tr>
 </tbody>
 </table>
@@ -644,9 +644,9 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 </div>
 </section>
-<section class="pick-profile" data-pick-profile data-year="2027" data-manager="House/Haydo" hidden>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Ryan Houseman" hidden>
 <div class="pick-profile-heading">
-<div><h3>House/Haydo - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+<div><h3>Ryan Houseman - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
 <div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
@@ -659,19 +659,19 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <table>
 <thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>4th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>5th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>6th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>7th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>8th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>9th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>10th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>11th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>12th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>13th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>14th</td><td>House/Haydo</td><td>Own pick</td></tr>
-<tr><td>15th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>3rd</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Ryan Houseman</td><td>Own pick</td></tr>
 </tbody>
 </table>
 </div>
@@ -1057,7 +1057,7 @@ Workbook-style board for 2026: each column is the original owner of the pick, an
 
 </details>
 
-| Round | Donny | Justin | House/Haydo | Levi | Luke | Julius | Drake | Chabo | Ethan | Dylan |
+| Round | Donny | Justin | Ryan Houseman | Levi | Luke | Julius | Drake | Chabo | Ethan | Dylan |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1st | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper |
 | 2nd | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper |
@@ -1068,7 +1068,7 @@ Workbook-style board for 2026: each column is the original owner of the pick, an
 | 7th | Own | ->Levi | Own | Own | ->Levi | Own | Own | Own | Own | Own |
 | 8th | ->Drake | ->Levi | Own | Own | Own | Own | Own | Own | Own | Own |
 | 9th | ->Julius | Own | Own | Own | Own | Own | Own | Own | Own | Own |
-| 10th | ->Dylan | ->House/Haydo | Own | Own | Own | Own | Own | Own | ->Donny | Own |
+| 10th | ->Dylan | ->Ryan Houseman | Own | Own | Own | Own | Own | Own | ->Donny | Own |
 | 11th | Own | Own | Own | Own | Own | Own | Own | Own | Own | Own |
 | 12th | Own | Own | Own | Own | ->Levi | Own | Own | Own | Own | Own |
 | 13th | Own | Own | Own | Own | Own | Own | Own | Own | Own | Own |
@@ -1091,7 +1091,7 @@ Workbook-style board for 2027: each column is the original owner of the pick, an
 
 </details>
 
-| Round | Donny | Justin | House/Haydo | Levi | Luke | Julius | Drake | Chabo | Ethan | Dylan |
+| Round | Donny | Justin | Ryan Houseman | Levi | Luke | Julius | Drake | Chabo | Ethan | Dylan |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1st | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper |
 | 2nd | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper | Keeper |
@@ -1116,26 +1116,26 @@ Workbook-style board for 2027: each column is the original owner of the pick, an
 
 A compact list of every future pick currently marked as owed to someone other than its original owner.
 
-| Year | Round | Original Owner | Current Holder | Workbook Cell |
+| Year | Round | Original Owner | Current Holder | Tracker Status |
 |---|---:|---:|---:|---:|
-| 2026 | 3rd | Justin | Dylan | OWED TO DYLAN |
-| 2026 | 3rd | Luke | Levi | OWED TO LEVI |
-| 2026 | 4th | Donny | Drake | OWED TO DRAKE |
-| 2026 | 4th | Levi | Ethan | OWED TO ETHAN |
-| 2026 | 5th | House/Haydo | Dylan | OWED TO DYLAN |
-| 2026 | 6th | Donny | Ethan | OWED TO ETHAN |
-| 2026 | 6th | Justin | Julius | OWED TO JULIUS |
-| 2026 | 7th | Justin | Levi | OWED TO LEVI |
-| 2026 | 7th | Luke | Levi | OWED TO LEVI |
-| 2026 | 8th | Donny | Drake | OWED TO DRAKE |
-| 2026 | 8th | Justin | Levi | OWED TO LEVI |
-| 2026 | 9th | Donny | Julius | OWED TO JULIUS |
-| 2026 | 10th | Donny | Dylan | OWED TO DYLAN |
-| 2026 | 10th | Ethan | Donny | OWED TO DONNY |
-| 2026 | 10th | Justin | House/Haydo | OWED TO HOUSE/HAYDO |
-| 2026 | 12th | Luke | Levi | OWED TO LEVI |
-| 2027 | 5th | Justin | Levi | OWED TO LEVI |
-| 2027 | 6th | Justin | Levi | OWED TO LEVI |
+| 2026 | 3rd | Justin | Dylan | Owed to Dylan |
+| 2026 | 3rd | Luke | Levi | Owed to Levi |
+| 2026 | 4th | Donny | Drake | Owed to Drake |
+| 2026 | 4th | Levi | Ethan | Owed to Ethan |
+| 2026 | 5th | Ryan Houseman | Dylan | Owed to Dylan |
+| 2026 | 6th | Donny | Ethan | Owed to Ethan |
+| 2026 | 6th | Justin | Julius | Owed to Julius |
+| 2026 | 7th | Justin | Levi | Owed to Levi |
+| 2026 | 7th | Luke | Levi | Owed to Levi |
+| 2026 | 8th | Donny | Drake | Owed to Drake |
+| 2026 | 8th | Justin | Levi | Owed to Levi |
+| 2026 | 9th | Donny | Julius | Owed to Julius |
+| 2026 | 10th | Donny | Dylan | Owed to Dylan |
+| 2026 | 10th | Ethan | Donny | Owed to Donny |
+| 2026 | 10th | Justin | Ryan Houseman | Owed to Ryan Houseman |
+| 2026 | 12th | Luke | Levi | Owed to Levi |
+| 2027 | 5th | Justin | Levi | Owed to Levi |
+| 2027 | 6th | Justin | Levi | Owed to Levi |
 
 </details>
 
@@ -1157,7 +1157,7 @@ This checks the workbook tracker against future-pick movements parsed from the t
 | Issue | Year | Round | Original Owner | Tracker Holder | Ledger Holder | Ledger Evidence | Notes |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Original-owner ambiguity | 2026 | 9th | Donny vs Dylan | Donny -> Julius | Dylan -> Julius | GW 32: Donny -> Julius | The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager's same-round pick and the ledger did not clearly label the pass-through. original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks |
-| Original-owner ambiguity | 2026 | 10th | Justin vs Levi | Justin -> House/Haydo | Levi -> House/Haydo | Postseason: Levi -> House/Haydo | The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager's same-round pick and the ledger did not clearly label the pass-through. |
+| Original-owner ambiguity | 2026 | 10th | Justin vs Levi | Justin -> Ryan Houseman | Levi -> Ryan Houseman | Postseason: Levi -> Ryan Houseman | The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager's same-round pick and the ledger did not clearly label the pass-through. |
 | Ledger-only move | 2026 | 12th | Donny | Donny | Dylan | Draft Day: Donny -> Dylan | - |
 
 </details>
@@ -1169,10 +1169,10 @@ These are not necessarily errors; they are the trade-ledger rows where the parse
 
 | Year | Round | Original Owner | Sender | Recipient | Timing | Assumption | Asset |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 2026 | 5th | House/Haydo | House/Haydo | Levi | Postseason | multi-team trade; recipient inferred as Levi | 2026 5th-round pick |
+| 2026 | 5th | Ryan Houseman | Ryan Houseman | Levi | Postseason | multi-team trade; recipient inferred as Levi | 2026 5th-round pick |
 | 2026 | 3rd | Justin | Justin | Levi | Before 2024-25 postseason row 32 | Manual clarification: Justin had already traded this pick to Levi before Levi sent it to Dylan; the trade ledger does not clearly mark that pass-through. | 2026 3rd-round pick |
 | 2026 | 3rd | Justin | Levi | Dylan | Postseason | original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks | 2026 3rd-round pick |
-| 2026 | 5th | House/Haydo | Levi | Dylan | Postseason | original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks | 2026 5th-round pick |
+| 2026 | 5th | Ryan Houseman | Levi | Dylan | Postseason | original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks | 2026 5th-round pick |
 | 2026 | 9th | Dylan | Donny | Julius | GW 32 | original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks | 2026 9th-round pick |
 
 </details>
