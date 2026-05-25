@@ -1,0 +1,842 @@
+fpl_position,player,pl_team,roster_owner,position_rank,overall_rank,season_points,points_per_game
+FWD,Haaland,MCI,Ryan Donlan,1,1,239,6.8
+MID,B.Fernandes,MUN,Drake Byrd,1,2,235,6.7
+DEF,Gabriel,ARS,Ryan Houseman,1,3,209,6.5
+MID,Semenyo,MCI,Dylan Reid,2,4,202,5.5
+MID,Gibbs-White,NFO,Ryan Donlan,3,5,188,5.1
+FWD,Bowen,WHU,Dylan Reid,2,6,187,4.9
+MID,Rice,ARS,Ryan Houseman,4,7,184,5.1
+FWD,Thiago,BRE,Dylan Reid,3,8,181,4.8
+MID,Anderson,NFO,Ryan Houseman,5,9,180,4.7
+DEF,Guéhi,MCI,Luke Lockwood,2,10,179,5.1
+FWD,João Pedro,CHE,Dylan Reid,4,11,177,5.1
+DEF,Senesi,BOU,Dylan Reid,3,12,175,4.7
+DEF,Virgil,LIV,Ryan Donlan,3,12,175,4.6
+DEF,Tarkowski,EVE,Justin Miller,5,14,170,4.6
+MID,Rogers,AVL,Alexander Chaban,6,15,169,4.6
+MID,Wilson,FUL,Justin Miller,7,16,168,4.7
+FWD,Watkins,AVL,Justin Miller,5,17,167,4.5
+MID,Casemiro,MUN,Drake Byrd,8,18,165,4.9
+DEF,Truffert,BOU,Julius Long,6,18,165,4.3
+GKP,Raya,ARS,Ryan Houseman,1,20,162,4.4
+DEF,O'Reilly,MCI,Justin Miller,7,21,160,4.7
+MID,Szoboszlai,LIV,Ryan Houseman,9,21,160,4.4
+MID,Garner,EVE,Unowned,10,23,159,4.2
+MID,Saka,ARS,Levi Morant,11,24,157,5.1
+MID,Enzo,CHE,Julius Long,11,24,157,4.4
+MID,Bruno G.,NEW,Drake Byrd,13,26,154,5.3
+DEF,Matheus N.,MCI,Luke Lockwood,8,26,154,4.5
+DEF,Lacroix,CRY,Julius Long,8,26,154,4.4
+MID,Dewsbury-Hall,EVE,Luke Lockwood,14,29,151,4.9
+DEF,Mukiele,SUN,Ryan Houseman,10,29,151,4.7
+DEF,J.Timber,ARS,Unowned,11,31,149,5.0
+MID,Mbeumo,MUN,Luke Lockwood,15,32,148,4.5
+DEF,Van Hecke,BHA,Drake Byrd,12,32,148,4.1
+MID,E.Le Fée,SUN,Dylan Reid,16,34,147,4.1
+MID,Gravenberch,LIV,Drake Byrd,17,35,144,4.0
+MID,Cunha,MUN,Ryan Donlan,18,36,143,4.3
+GKP,Kelleher,BRE,Ryan Donlan,2,36,143,3.9
+FWD,Calvert-Lewin,LEE,Ryan Donlan,6,38,142,4.1
+MID,Stach,LEE,Ryan Houseman,19,39,137,4.7
+DEF,Saliba,ARS,Drake Byrd,13,39,137,4.4
+MID,Tavernier,BOU,Drake Byrd,19,39,137,4.0
+DEF,Muñoz,CRY,Drake Byrd,14,42,136,4.7
+MID,O.Dango,BRE,Justin Miller,21,42,136,4.2
+DEF,Chalobah,CHE,Dylan Reid,14,42,136,4.0
+GKP,Roefs,SUN,Unowned,3,42,136,3.9
+MID,Scott,BOU,Levi Morant,21,42,136,3.7
+MID,Cherki,MCI,Ethan Ellsworth,23,47,135,4.1
+GKP,Donnarumma,MCI,Justin Miller,4,47,135,4.0
+MID,M.Fernandes,WHU,Alexander Chaban,23,47,135,3.8
+DEF,Mitchell,CRY,Unowned,16,47,135,3.6
+GKP,Pickford,EVE,Julius Long,4,47,135,3.6
+MID,Ampadu,LEE,Unowned,25,52,134,3.8
+MID,Zubimendi,ARS,Unowned,26,53,133,3.5
+MID,Foden,MCI,Julius Long,27,54,131,4.0
+DEF,Keane,EVE,Ryan Houseman,17,54,131,4.0
+MID,Gakpo,LIV,Ethan Ellsworth,27,54,131,3.6
+GKP,Henderson,CRY,Alexander Chaban,6,54,131,3.5
+GKP,Verbruggen,BHA,Justin Miller,7,58,130,3.4
+DEF,Collins,BRE,Julius Long,18,59,129,3.7
+DEF,Konaté,LIV,Luke Lockwood,18,59,129,3.6
+MID,Ndiaye,EVE,Justin Miller,29,61,128,4.0
+DEF,Richards,CRY,Drake Byrd,20,61,128,3.9
+FWD,Gyökeres,ARS,Julius Long,7,61,128,3.6
+DEF,N.Williams,NFO,Ethan Ellsworth,20,61,128,3.5
+MID,Anthony,BUR,Alexander Chaban,30,65,127,3.4
+MID,J.Palhinha,TOT,Unowned,31,66,126,3.8
+DEF,Thiaw,NEW,Luke Lockwood,22,66,126,3.6
+MID,Aaronson,LEE,Ethan Ellsworth,31,66,126,3.4
+FWD,Welbeck,BHA,Ryan Houseman,8,66,126,3.4
+FWD,Ekitiké,LIV,Luke Lockwood,9,70,125,4.5
+DEF,Alderete,SUN,Dylan Reid,23,70,125,3.8
+MID,Wirtz,LIV,Justin Miller,33,70,125,3.8
+MID,Neto,CHE,Unowned,33,70,125,3.7
+MID,Schade,BRE,Ryan Donlan,33,70,125,3.6
+MID,Xhaka,SUN,Unowned,36,75,124,3.6
+GKP,Petrović,BOU,Drake Byrd,8,75,124,3.3
+MID,M.Salah,LIV,Luke Lockwood,37,77,123,4.6
+DEF,Andersen,FUL,Unowned,24,77,123,3.7
+DEF,Mavropanos,WHU,Justin Miller,25,79,122,3.9
+GKP,Leno,FUL,Alexander Chaban,9,79,122,3.2
+MID,Doku,MCI,Alexander Chaban,38,81,120,4.0
+GKP,Martinez,AVL,Ryan Houseman,10,81,120,3.8
+MID,Trossard,ARS,Julius Long,39,83,119,3.8
+FWD,Richarlison,TOT,Drake Byrd,10,83,119,3.7
+DEF,Milenković,NFO,Unowned,26,83,119,3.1
+DEF,F.Kadıoğlu,BHA,Unowned,27,86,118,3.2
+MID,Sarr,CRY,Ethan Ellsworth,40,87,117,4.2
+MID,Minteh,BHA,Unowned,40,87,117,3.4
+DEF,Pedro Porro,TOT,Levi Morant,28,87,117,3.4
+DEF,Cash,AVL,Alexander Chaban,28,87,117,3.3
+DEF,Ballard,SUN,Ryan Houseman,30,91,116,4.0
+DEF,Van de Ven,TOT,Alexander Chaban,30,91,116,3.3
+DEF,O'Brien,EVE,Alexander Chaban,30,91,116,3.1
+DEF,James,CHE,Alexander Chaban,33,94,115,4.0
+FWD,Evanilson,BOU,Drake Byrd,11,94,115,3.2
+DEF,Lewis-Potter,BRE,Unowned,33,94,115,3.2
+MID,Palmer,CHE,Levi Morant,42,97,114,4.4
+FWD,Mateta,CRY,Ryan Houseman,12,97,114,3.6
+FWD,Igor Jesus,NFO,Luke Lockwood,12,97,114,3.1
+DEF,Rúben,MCI,Ryan Houseman,35,100,113,4.3
+DEF,Van den Berg,BRE,Julius Long,35,100,113,3.5
+MID,Damsgaard,BRE,Ethan Ellsworth,43,100,113,3.4
+MID,Eze,ARS,Ryan Houseman,43,100,113,3.4
+FWD,Kroupi.Jr,BOU,Ethan Ellsworth,14,100,113,3.4
+GKP,Sánchez,CHE,Luke Lockwood,11,100,113,3.2
+DEF,Kayode,BRE,Alexander Chaban,35,100,113,3.1
+DEF,Shaw,MUN,Drake Byrd,35,100,113,3.0
+MID,Wharton,CRY,Unowned,45,108,112,3.3
+FWD,Raúl,FUL,Luke Lockwood,15,108,112,3.1
+FWD,Šeško,MUN,Julius Long,16,110,111,3.7
+DEF,Dalot,MUN,Ethan Ellsworth,39,110,111,3.3
+DEF,Hill,BOU,Ryan Donlan,40,112,110,3.8
+MID,Summerville,WHU,Luke Lockwood,46,112,110,3.5
+MID,Caicedo,CHE,Unowned,46,112,110,3.3
+DEF,Hume,SUN,Unowned,40,112,110,2.9
+DEF,Calafiori,ARS,Luke Lockwood,42,116,109,4.2
+MID,Okafor,LEE,Unowned,48,116,109,3.9
+GKP,Lammens,MUN,Unowned,12,116,109,3.4
+DEF,Rodon,LEE,Unowned,42,116,109,3.1
+FWD,Woltemade,NEW,Julius Long,17,120,108,3.3
+DEF,Struijk,LEE,Unowned,44,120,108,3.2
+MID,Mac Allister,LIV,Unowned,49,120,108,2.9
+MID,J.Gomes,WOL,Unowned,50,123,107,3.1
+MID,Barnes,NEW,Alexander Chaban,51,124,106,2.9
+GKP,Sels,NFO,Drake Byrd,13,125,105,3.4
+DEF,Diouf,WHU,Ethan Ellsworth,45,126,104,3.2
+DEF,Cucurella,CHE,Julius Long,45,126,104,3.1
+FWD,Beto,EVE,Alexander Chaban,18,126,104,2.8
+MID,Yarmoliuk,BRE,Unowned,52,126,104,2.8
+MID,Iwobi,FUL,Unowned,53,130,103,3.6
+DEF,Bassey,FUL,Ryan Donlan,47,130,103,3.4
+MID,McGinn,AVL,Unowned,53,130,103,3.4
+MID,Souček,WHU,Levi Morant,53,130,103,2.9
+MID,Buendía,AVL,Unowned,56,134,102,2.8
+MID,Bernardo,MCI,Julius Long,56,134,102,2.7
+MID,Gordon,NEW,Ryan Donlan,58,136,101,3.9
+DEF,Dunk,BHA,Unowned,48,137,100,3.0
+DEF,Konsa,AVL,Unowned,48,137,100,2.9
+DEF,Bijol,LEE,Unowned,50,139,99,4.0
+FWD,Flemming,BUR,Levi Morant,19,139,99,3.4
+MID,Ayari,BHA,Unowned,59,141,98,3.4
+MID,Jensen,BRE,Unowned,59,141,98,2.7
+DEF,Digne,AVL,Unowned,51,143,97,3.1
+MID,Gomez,BHA,Unowned,61,143,97,3.0
+MID,Ugochukwu,BUR,Unowned,61,143,97,2.8
+GKP,Pope,NEW,Dylan Reid,14,146,96,3.6
+DEF,Bogle,LEE,Unowned,52,146,96,2.8
+DEF,Gusto,CHE,Unowned,52,146,96,2.8
+MID,André,WOL,Unowned,63,146,96,2.7
+GKP,Dúbravka,BUR,Levi Morant,14,146,96,2.7
+DEF,Dorgu,MUN,Unowned,54,151,95,3.7
+MID,Sessegnon,FUL,Unowned,64,151,95,3.5
+DEF,Mykolenko,EVE,Unowned,54,151,95,2.9
+FWD,Barry,EVE,Alexander Chaban,20,151,95,2.5
+MID,Wieffer,BHA,Unowned,65,155,94,3.6
+DEF,Justin,LEE,Unowned,56,155,94,3.2
+DEF,Burn,NEW,Levi Morant,57,157,93,3.2
+MID,Reijnders,MCI,Unowned,66,158,92,3.3
+DEF,S.Bueno,WOL,Levi Morant,58,158,92,3.2
+FWD,Brobbey,SUN,Alexander Chaban,21,158,92,3.0
+DEF,Romero,TOT,Unowned,59,161,91,4.0
+GKP,A.Becker,LIV,Luke Lockwood,16,161,91,3.5
+MID,Hinshelwood,BHA,Unowned,67,161,91,3.4
+MID,Amad,MUN,Dylan Reid,67,161,91,2.8
+MID,Berge,FUL,Unowned,67,161,91,2.6
+DEF,Maguire,MUN,Ethan Ellsworth,60,166,90,3.9
+GKP,Vicario,TOT,Unowned,17,166,90,2.9
+DEF,Botman,NEW,Levi Morant,61,168,89,3.6
+MID,Sangaré,NFO,Unowned,70,168,89,3.2
+MID,Hudson-Odoi,NFO,Unowned,71,170,88,2.9
+DEF,Hincapie,ARS,Levi Morant,62,171,87,3.5
+MID,Georginio,BHA,Unowned,72,171,87,2.7
+MID,Bentancur,TOT,Unowned,73,173,86,3.3
+DEF,Estève,BUR,Unowned,63,174,85,2.5
+DEF,Kerkez,LIV,Unowned,63,174,85,2.5
+DEF,De Cuyper,BHA,Ryan Donlan,65,176,84,2.8
+MID,Florentino,BUR,Unowned,74,176,84,2.7
+MID,Gana,EVE,Unowned,75,178,83,3.3
+DEF,Murillo,NFO,Unowned,66,178,83,3.3
+MID,Talbi,SUN,Unowned,75,178,83,3.0
+DEF,H.Bueno,WOL,Unowned,66,178,83,2.4
+MID,Hutchinson,NFO,Unowned,77,182,82,2.6
+MID,J.Murphy,NEW,Dylan Reid,77,182,82,2.5
+DEF,Tete,FUL,Unowned,68,184,81,3.7
+MID,C.Jones,LIV,Unowned,79,184,81,2.4
+MID,Tonali,NEW,Unowned,79,184,81,2.3
+MID,Xavi,TOT,Unowned,81,187,80,2.9
+FWD,Wilson,WHU,Unowned,22,187,80,2.5
+MID,Sadiki,SUN,Unowned,81,187,80,2.4
+MID,Smith Rowe,FUL,Unowned,81,187,80,2.2
+DEF,Gvardiol,MCI,Unowned,69,191,79,4.4
+MID,Grealish,EVE,Unowned,84,191,79,4.0
+DEF,Hall,NEW,Dylan Reid,69,191,79,2.6
+MID,Groß,BHA,Ryan Donlan,85,194,78,4.1
+DEF,Spence,TOT,Unowned,71,194,78,2.6
+MID,Tel,TOT,Levi Morant,85,194,78,2.5
+MID,Adams,BOU,Unowned,87,197,77,3.1
+MID,Yeremy,CRY,Unowned,87,197,77,2.3
+GKP,Hermansen,WHU,Julius Long,18,199,76,4.2
+FWD,Osula,NEW,Ethan Ellsworth,23,199,76,3.2
+MID,Onana,AVL,Unowned,89,199,76,3.0
+DEF,Ajer,BRE,Unowned,72,199,76,2.8
+MID,Henderson,BRE,Unowned,89,199,76,2.4
+MID,Kudus,TOT,Unowned,91,204,75,3.9
+FWD,Strand Larsen,CRY,Drake Byrd,24,204,75,2.1
+MID,Ødegaard,ARS,Julius Long,92,206,74,3.1
+MID,Janelt,BRE,Unowned,92,206,74,3.0
+DEF,Reinildo,SUN,Unowned,73,206,74,3.0
+FWD,Mané,WOL,Levi Morant,25,206,74,2.7
+DEF,A.Jimenez,BOU,Unowned,73,206,74,2.4
+FWD,Isidor,SUN,Unowned,25,206,74,2.3
+MID,Joelinton,NEW,Unowned,94,212,73,2.7
+MID,Mainoo,MUN,Luke Lockwood,94,212,73,2.6
+FWD,Nmecha,LEE,Ryan Houseman,27,212,73,2.4
+DEF,Canvot,CRY,Unowned,75,215,72,3.6
+MID,L.Miley,NEW,Unowned,96,215,72,3.1
+MID,Madueke,ARS,Unowned,96,215,72,2.8
+GKP,Darlow,LEE,Ryan Donlan,19,218,71,3.2
+MID,P.M.Sarr,TOT,Unowned,98,218,71,2.7
+MID,Cullen,BUR,Unowned,99,220,70,3.9
+DEF,Walker,BUR,Unowned,76,220,70,1.9
+MID,L.Paquetá,WHU,Unowned,100,222,69,3.8
+MID,Rodrigo,MCI,Unowned,100,222,69,3.3
+MID,Lerma,CRY,Unowned,100,222,69,2.2
+GKP,José Sá,WOL,Unowned,20,225,68,3.0
+MID,Tielemans,AVL,Unowned,103,225,68,2.7
+DEF,Krejčí,WOL,Unowned,77,225,68,2.4
+MID,Iroegbunam,EVE,Unowned,103,225,68,2.3
+DEF,Gudmundsson,LEE,Unowned,77,225,68,2.1
+MID,Rayan,BOU,Dylan Reid,105,230,67,4.5
+DEF,Aina,NFO,Dylan Reid,79,230,67,3.7
+DEF,Khusanov,MCI,Ethan Ellsworth,79,230,67,3.2
+MID,Merino,ARS,Unowned,105,230,67,3.0
+DEF,Wan-Bissaka,WHU,Unowned,79,230,67,2.7
+MID,Lukić,FUL,Unowned,105,230,67,2.6
+MID,Kamada,CRY,Unowned,105,230,67,2.4
+MID,Tanaka,LEE,Unowned,105,230,67,2.4
+MID,Adli,BOU,Unowned,105,230,67,2.2
+FWD,Tolu,WOL,Unowned,28,239,66,2.0
+MID,Diarra,SUN,Unowned,111,240,65,3.2
+DEF,Robinson,FUL,Unowned,82,240,65,3.0
+DEF,Fofana,CHE,Unowned,82,240,65,2.6
+MID,Johnson,CRY,Unowned,111,240,65,1.9
+DEF,Pau,AVL,Unowned,84,244,64,3.0
+DEF,Frimpong,LIV,Unowned,85,245,63,3.0
+DEF,Hartman,BUR,Unowned,85,245,63,3.0
+DEF,Danso,TOT,Unowned,85,245,63,2.6
+MID,N.Gonzalez,MCI,Unowned,113,245,63,2.5
+MID,King,FUL,Unowned,113,245,63,2.0
+MID,Chukwueze,FUL,Unowned,115,250,62,2.7
+MID,Mitoma,BHA,Unowned,115,250,62,2.5
+MID,J.Ramsey,NEW,Unowned,115,250,62,2.2
+MID,Kamara,AVL,Unowned,118,253,61,3.4
+FWD,Taty,WHU,Justin Miller,29,253,61,3.4
+MID,Gray,TOT,Unowned,118,253,61,2.5
+DEF,Mosquera,WOL,Unowned,88,253,61,2.3
+DEF,Castagne,FUL,Unowned,88,253,61,2.0
+DEF,Aït-Nouri,MCI,Unowned,90,258,60,3.5
+DEF,Livramento,NEW,Unowned,91,259,59,3.5
+MID,Hannibal,BUR,Unowned,120,259,59,2.2
+MID,Tchaouna,BUR,Unowned,120,259,59,2.0
+MID,Brooks,BOU,Unowned,120,259,59,1.9
+MID,Estêvão,CHE,Unowned,123,263,58,2.6
+DEF,Smith,BOU,Justin Miller,92,263,58,2.6
+MID,Mount,MUN,Unowned,123,263,58,2.5
+FWD,Foster,BUR,Unowned,30,263,58,2.2
+MID,Martinelli,ARS,Unowned,125,267,57,1.9
+MID,Barkley,AVL,Unowned,126,268,56,2.7
+MID,Marmoush,MCI,Unowned,126,268,56,2.7
+MID,Gruev,LEE,Unowned,126,268,56,2.4
+MID,Longstaff,LEE,Unowned,126,268,56,2.4
+MID,Garnacho,CHE,Unowned,126,268,56,2.3
+MID,Baleba,BHA,Unowned,126,268,56,1.8
+DEF,Yoro,MUN,Unowned,93,268,56,1.8
+MID,Laurent,BUR,Unowned,126,268,56,1.7
+MID,Malen,AVL,Unowned,133,276,55,2.6
+DEF,Robertson,LIV,Unowned,94,276,55,2.3
+DEF,Geertruida,SUN,Unowned,94,276,55,2.0
+DEF,Trippier,NEW,Unowned,96,279,54,2.6
+MID,Hee Chan,WOL,Unowned,134,279,54,2.1
+DEF,Maatsen,AVL,Unowned,96,279,54,1.8
+DEF,Mazraoui,MUN,Unowned,98,282,53,2.6
+DEF,Morato,NFO,Unowned,98,282,53,2.5
+MID,McNeil,EVE,Unowned,135,282,53,2.4
+DEF,Walker-Peters,WHU,Unowned,98,282,53,2.3
+DEF,Ekdal,BUR,Unowned,101,286,52,2.7
+DEF,Henry,BRE,Unowned,101,286,52,2.1
+FWD,Kolo Muani,TOT,Levi Morant,31,286,52,1.7
+DEF,Tchatchoua,WOL,Unowned,101,286,52,1.7
+DEF,Schär,NEW,Unowned,104,290,51,3.2
+DEF,Martinez,MUN,Unowned,104,290,51,2.8
+GKP,Areola,WHU,Unowned,21,290,51,2.5
+MID,Edwards,BUR,Unowned,136,290,51,2.2
+DEF,Mings,AVL,Unowned,106,294,50,2.9
+MID,Ndoye,NFO,Unowned,137,294,50,2.1
+DEF,Disasi,WHU,Unowned,107,296,49,3.5
+MID,Bergvall,TOT,Unowned,138,296,49,2.1
+MID,Kevin,FUL,Unowned,138,296,49,1.9
+DEF,R.Gomes,WOL,Unowned,108,299,48,2.2
+MID,Dominguez,NFO,Unowned,140,299,48,1.8
+MID,Elanga,NEW,Unowned,140,299,48,1.5
+DEF,Humphreys,BUR,Unowned,109,302,47,2.4
+MID,Christie,BOU,Unowned,142,302,47,1.8
+MID,Andrey Santos,CHE,Unowned,142,302,47,1.7
+DEF,Diakité,BOU,Unowned,110,305,46,2.6
+DEF,Todibo,WHU,Unowned,110,305,46,2.0
+MID,Odobert,TOT,Unowned,144,305,46,1.9
+DEF,Veltman,BHA,Unowned,110,305,46,1.9
+DEF,White,ARS,Unowned,113,309,45,3.8
+MID,J.Arias,WOL,Unowned,145,309,45,2.0
+FWD,Delap,CHE,Unowned,32,309,45,1.6
+MID,Hughes,CRY,Unowned,145,309,45,1.5
+MID,Gallagher,TOT,Unowned,147,313,44,2.8
+MID,Guessand,CRY,Unowned,147,313,44,2.1
+MID,Bellegarde,WOL,Unowned,147,313,44,1.7
+DEF,De Ligt,MUN,Unowned,114,316,43,3.3
+GKP,Perri,LEE,Unowned,22,316,43,2.7
+FWD,Awoniyi,NFO,Unowned,33,316,43,2.5
+MID,Ngumoha,LIV,Unowned,150,316,43,2.3
+FWD,Broja,BUR,Unowned,33,316,43,1.8
+MID,Savinho,MCI,Unowned,150,316,43,1.8
+DEF,Bradley,LIV,Unowned,115,322,42,2.8
+DEF,Heaven,MUN,Unowned,115,322,42,2.5
+MID,S.Magassa,WHU,Unowned,152,322,42,1.9
+MID,Bobb,FUL,Unowned,152,322,42,1.8
+FWD,Zirkzee,MUN,Unowned,35,322,42,1.8
+FWD,Isak,LIV,Justin Miller,36,327,41,2.9
+FWD,Wood,NFO,Unowned,36,327,41,2.7
+DEF,Toti,WOL,Unowned,117,327,41,2.2
+MID,Kluivert,BOU,Unowned,154,327,41,2.0
+MID,Cairney,FUL,Unowned,154,327,41,1.7
+MID,Bruun Larsen,BUR,Unowned,154,327,41,1.5
+FWD,Solanke,TOT,Ryan Donlan,38,333,40,2.7
+MID,Cook,BOU,Unowned,157,333,40,2.2
+MID,Ward-Prowse,BUR,Unowned,157,333,40,2.2
+FWD,Mayenda,SUN,Unowned,38,333,40,2.0
+DEF,Mosquera,ARS,Ryan Donlan,118,333,40,2.0
+DEF,Bogarde,AVL,Unowned,118,333,40,1.4
+DEF,Boscagli,BHA,Unowned,120,339,39,3.2
+FWD,Armstrong,WOL,Unowned,40,339,39,2.8
+DEF,Savona,NFO,Unowned,120,339,39,2.8
+DEF,J.Cuenca,FUL,Unowned,120,339,39,2.6
+DEF,Acheampong,CHE,Unowned,120,339,39,2.3
+MID,Munetsi,WOL,Unowned,159,344,38,2.9
+MID,Ugarte,MUN,Unowned,159,344,38,1.7
+MID,Willock,NEW,Unowned,159,344,38,1.6
+DEF,Hickey,BRE,Unowned,124,347,37,1.8
+MID,Potts,WHU,Unowned,162,347,37,1.7
+MID,Sancho,AVL,Unowned,162,347,37,1.6
+MID,Chiesa,LIV,Unowned,162,347,37,1.4
+FWD,Havertz,ARS,Unowned,41,351,36,3.0
+MID,Röhl,EVE,Unowned,165,351,36,2.2
+DEF,Aké,MCI,Unowned,125,351,36,2.0
+MID,Rigg,SUN,Unowned,165,351,36,2.0
+MID,Devenny,CRY,Unowned,165,351,36,1.7
+DEF,Kilman,WHU,Unowned,125,351,36,1.7
+FWD,Muniz,FUL,Unowned,41,351,36,1.7
+MID,Gruda,BHA,Unowned,168,358,35,1.9
+MID,Milner,BHA,Unowned,168,358,35,1.8
+MID,Douglas Luiz,AVL,Unowned,168,358,35,1.7
+FWD,Kostoulas,BHA,Unowned,43,358,35,1.7
+DEF,Møller Wolfe,WOL,Unowned,127,358,35,1.6
+GKP,Mamardashvili,LIV,Ethan Ellsworth,23,363,34,3.4
+MID,Adingra,SUN,Unowned,171,363,34,2.4
+DEF,Tuanzebe,BUR,Unowned,128,363,34,2.4
+DEF,Tosin,CHE,Unowned,128,363,34,2.1
+DEF,Gomez,LIV,Unowned,130,367,33,1.6
+DEF,Branthwaite,EVE,Unowned,131,368,32,3.2
+MID,Gnonto,LEE,Unowned,172,368,32,1.4
+DEF,Diop,FUL,Unowned,132,370,31,2.4
+MID,Traoré,SUN,Unowned,173,371,30,2.5
+MID,Yates,NFO,Unowned,173,371,30,1.4
+DEF,Lindelöf,AVL,Unowned,133,373,29,1.7
+MID,Alcaraz,EVE,Unowned,175,373,29,1.4
+DEF,Lewis-Skelly,ARS,Justin Miller,133,373,29,1.4
+DEF,Udogie,TOT,Unowned,133,373,29,1.4
+FWD,Wissa,NEW,Unowned,44,377,27,1.4
+FWD,Enes Ünal,BOU,Unowned,44,377,27,1.2
+DEF,O'Nien,SUN,Unowned,136,379,26,2.2
+MID,Bakwa,NFO,Unowned,176,379,26,1.9
+FWD,Pablo,WHU,Ethan Ellsworth,46,379,26,1.9
+DEF,Bornauw,LEE,Unowned,137,382,25,2.1
+GKP,Ramsdale,NEW,Dylan Reid,24,382,25,2.1
+MID,Gittens,CHE,Unowned,177,382,25,1.6
+DEF,Lucas Pires,BUR,Unowned,137,382,25,1.2
+MID,Adama,WHU,Unowned,177,382,25,1.0
+FWD,G.Jesus,ARS,Unowned,47,387,24,1.7
+FWD,Abraham,AVL,Unowned,48,388,23,1.9
+FWD,Nketiah,CRY,Unowned,48,388,23,1.9
+DEF,Agbadou,WOL,Unowned,139,388,23,1.6
+MID,James,LEE,Unowned,179,388,23,1.2
+DEF,Patterson,EVE,Unowned,140,392,22,3.1
+GKP,Johnstone,WOL,Unowned,25,393,21,1.8
+MID,Armstrong,EVE,Unowned,180,393,21,1.6
+MID,Bailey,AVL,Unowned,180,393,21,1.6
+DEF,Scarles,WHU,Unowned,141,393,21,1.6
+GKP,Kinsky,TOT,Ethan Ellsworth,26,397,20,2.9
+DEF,Chadi Riad,CRY,Unowned,142,397,20,2.2
+DEF,Worrall,BUR,Unowned,142,397,20,1.8
+DEF,Milosavljević,BOU,Unowned,144,400,19,2.7
+DEF,Lewis,MCI,Unowned,144,400,19,1.7
+DEF,Hato,CHE,Unowned,144,400,19,0.9
+MID,Dibling,EVE,Unowned,182,403,18,1.3
+DEF,Clyne,CRY,Unowned,147,404,17,1.7
+DEF,Dragusin,TOT,Unowned,147,404,17,1.7
+MID,Bissouma,TOT,Unowned,183,404,17,1.5
+MID,McAtee,NFO,Unowned,183,404,17,1.2
+FWD,Uche,CRY,Unowned,50,404,17,1.2
+FWD,Piroe,LEE,Unowned,50,404,17,1.1
+GKP,Ellborg,SUN,Unowned,27,410,16,5.3
+MID,Dowman,ARS,Justin Miller,185,410,16,2.7
+MID,O'Riley,BHA,Unowned,185,410,16,2.7
+GKP,M.Bizot,AVL,Unowned,27,410,16,2.3
+DEF,Stones,MCI,Unowned,149,410,16,1.8
+FWD,Tzimas,BHA,Unowned,52,410,16,1.8
+MID,Angel,WOL,Unowned,185,410,16,1.3
+MID,George,EVE,Unowned,185,410,16,1.1
+MID,Reed,FUL,Unowned,189,418,15,2.1
+DEF,Pinnock,BRE,Unowned,150,419,14,3.5
+DEF,Cirkin,SUN,Unowned,150,419,14,1.8
+DEF,Doherty,WOL,Unowned,150,419,14,1.3
+MID,Mundle,SUN,Unowned,190,419,14,1.0
+GKP,Trafford,MCI,Unowned,29,423,13,3.2
+MID,Carvalho,BRE,Unowned,191,423,13,2.2
+DEF,Sonne,BUR,Unowned,153,423,13,1.9
+MID,Angulo,SUN,Unowned,191,423,13,1.6
+DEF,Jair Cunha,NFO,Unowned,153,423,13,1.4
+FWD,Marc Guiu,CHE,Unowned,53,423,13,1.3
+MID,Nelson,BRE,Unowned,191,423,13,1.3
+MID,Lavia,CHE,Unowned,191,423,13,1.1
+MID,Onyeka,BRE,Unowned,195,431,12,2.0
+MID,Endo,LIV,Unowned,195,431,12,1.5
+FWD,Füllkrug,WHU,Unowned,54,431,12,1.5
+MID,Fer López,WOL,Unowned,195,431,12,1.3
+MID,Harrison,LEE,Unowned,195,431,12,1.1
+GKP,Ortega Moreno,NFO,Unowned,30,436,11,3.7
+GKP,John,NFO,Unowned,30,436,11,2.2
+GKP,Bayindir,MUN,Unowned,30,436,11,1.8
+DEF,Netz,NFO,Unowned,155,436,11,1.6
+MID,Gannon-Doak,BOU,Unowned,199,436,11,1.4
+DEF,Davies,TOT,Unowned,156,441,10,3.3
+DEF,Coppola,BHA,Unowned,156,441,10,2.0
+DEF,Hoever,WOL,Unowned,156,441,10,1.2
+DEF,Pedro Lima,WOL,Unowned,156,441,10,1.1
+FWD,Lucca,NFO,Unowned,55,445,9,2.2
+GKP,Jörgensen,CHE,Unowned,33,445,9,1.8
+MID,Kovačić,MCI,Unowned,200,445,9,1.5
+MID,Irving,WHU,Unowned,200,445,9,1.3
+FWD,Kalimuendo,NFO,Unowned,55,445,9,1.0
+MID,Mohamadou Kanté,WHU,Unowned,200,445,9,0.8
+DEF,Colwill,CHE,Unowned,160,451,8,2.7
+MID,Edozie,WOL,Unowned,203,451,8,2.7
+MID,G.Rodriguez,WHU,Unowned,203,451,8,1.3
+MID,Nwaneri,ARS,Unowned,203,451,8,1.3
+MID,Tóth.A,BOU,Unowned,203,451,8,0.9
+GKP,Benitez,CRY,Unowned,34,456,7,7.0
+GKP,Weiss,BUR,Levi Morant,34,456,7,2.3
+DEF,Zinchenko,NFO,Unowned,161,456,7,1.4
+MID,Nørgaard,ARS,Unowned,207,456,7,1.0
+DEF,B.Badiashile,CHE,Unowned,161,456,7,0.9
+GKP,Bentley,WOL,Unowned,36,461,6,2.0
+GKP,Woodman,LIV,Unowned,36,461,6,2.0
+DEF,Igor,BHA,Unowned,163,461,6,1.5
+DEF,Mayers,WHU,Unowned,163,461,6,1.0
+MID,Nyoni,LIV,Unowned,208,461,6,1.0
+MID,Trésor,BUR,Unowned,208,461,6,1.0
+FWD,Kusi-Asare,FUL,Unowned,57,461,6,0.9
+DEF,Sosa,CRY,Unowned,163,461,6,0.9
+DEF,Alleyne,MCI,Unowned,166,469,5,2.5
+DEF,Coleman,EVE,Unowned,166,469,5,1.0
+MID,Elliott,AVL,Unowned,210,469,5,1.0
+MID,L.Guilherme,WHU,Unowned,210,469,5,1.0
+FWD,Barnes,BUR,Unowned,58,469,5,0.9
+DEF,A.García,AVL,Unowned,166,469,5,0.8
+MID,Watson,BHA,Unowned,210,469,5,0.8
+MID,H.Traorè,BOU,Unowned,213,476,4,4.0
+MID,Howell,BHA,Unowned,213,476,4,1.3
+FWD,Amdouni,BUR,Unowned,59,476,4,1.0
+MID,Donovan,BRE,Unowned,213,476,4,1.0
+MID,Esse,CRY,Unowned,213,476,4,1.0
+MID,March,BHA,Unowned,213,476,4,1.0
+DEF,N.Aguerd,WHU,Unowned,169,482,3,1.5
+DEF,Abbott,NFO,Unowned,169,482,3,1.0
+MID,Alysson,AVL,Unowned,218,482,3,1.0
+MID,J.Fletcher,MUN,Unowned,218,482,3,1.0
+MID,Lacey,MUN,Unowned,218,482,3,1.0
+DEF,M.Sarr,CHE,Unowned,169,482,3,1.0
+MID,Maddison,TOT,Unowned,218,482,3,1.0
+DEF,Malacia,MUN,Unowned,169,482,3,1.0
+MID,Neil,SUN,Unowned,218,482,3,1.0
+DEF,Soler,BOU,Unowned,169,482,3,1.0
+MID,Buonanotte,LEE,Unowned,218,482,3,0.8
+DEF,Souza,TOT,Unowned,169,482,3,0.8
+GKP,Arrizabalaga,ARS,Unowned,38,494,2,2.0
+MID,Cardines,CRY,Unowned,224,494,2,2.0
+DEF,A.Murphy,NEW,Unowned,175,494,2,1.0
+DEF,Byram,LEE,Unowned,175,494,2,1.0
+MID,Chirewa,WOL,Unowned,224,494,2,1.0
+MID,Dasilva,BRE,Unowned,224,494,2,1.0
+MID,Drakes-Thomas,CRY,Unowned,224,494,2,1.0
+MID,Fletcher,MUN,Unowned,224,494,2,1.0
+MID,George Hemmings,AVL,Unowned,224,494,2,1.0
+FWD,Marshall,WHU,Unowned,60,494,2,1.0
+MID,Mukasa,MCI,Unowned,224,494,2,1.0
+FWD,Scarlett,TOT,Unowned,60,494,2,1.0
+DEF,Seelt,SUN,Unowned,175,494,2,1.0
+MID,Abbey,WOL,Unowned,231,507,1,1.0
+MID,Banel,BUR,Unowned,231,507,1,1.0
+MID,Bendito Mantato,MUN,Unowned,231,507,1,1.0
+MID,Burrowes,AVL,Unowned,231,507,1,1.0
+DEF,Byfield,TOT,Unowned,178,507,1,1.0
+MID,Derry,CHE,Unowned,231,507,1,1.0
+MID,Earthy,WHU,Unowned,231,507,1,1.0
+DEF,Fredricson,MUN,Unowned,178,507,1,1.0
+FWD,Furo,BRE,Unowned,62,507,1,1.0
+GKP,Gunn,NFO,Unowned,39,507,1,1.0
+MID,Jimoh-Aloba,AVL,Unowned,231,507,1,1.0
+MID,Jocelin.T,SUN,Unowned,231,507,1,1.0
+MID,Jota,NFO,Unowned,231,507,1,1.0
+FWD,Kalajdžić,WOL,Unowned,62,507,1,1.0
+MID,Knight,BHA,Unowned,231,507,1,1.0
+FWD,Mheuka,CHE,Unowned,62,507,1,1.0
+MID,Milambo,BRE,Unowned,231,507,1,1.0
+FWD,Neave,NEW,Unowned,62,507,1,1.0
+MID,Olusesi,TOT,Unowned,231,507,1,1.0
+MID,Oriola,BHA,Unowned,231,507,1,1.0
+MID,Peart-Harris,BRE,Unowned,231,507,1,1.0
+MID,Roberts,SUN,Unowned,231,507,1,1.0
+MID,Rodney,CRY,Unowned,231,507,1,1.0
+DEF,Rowswell,TOT,Unowned,178,507,1,1.0
+GKP,Valdimarsson,BRE,Unowned,39,507,1,1.0
+MID,Winterburn,BOU,Unowned,231,507,1,1.0
+FWD,Édouard,CRY,Unowned,62,507,1,1.0
+DEF,Lascelles,NEW,Unowned,178,507,1,0.5
+MID,D.Essugo,CHE,Unowned,231,507,1,0.3
+DEF,Masuaku,SUN,Unowned,178,507,1,0.3
+MID,A.Ramsey,BUR,Unowned,249,537,0,0.0
+FWD,Abdullahi,SUN,Unowned,67,537,0,0.0
+MID,Adewumi,BUR,Unowned,249,537,0,0.0
+FWD,Adu-Adjei,BOU,Unowned,67,537,0,0.0
+MID,Agbinone,CRY,Unowned,249,537,0,0.0
+MID,Ahamada,CRY,Unowned,249,537,0,0.0
+DEF,Akanji,MCI,Unowned,183,537,0,0.0
+MID,Akhamrich,TOT,Unowned,249,537,0,0.0
+DEF,Akinmboni,BOU,Unowned,183,537,0,0.0
+MID,Alabi,NEW,Unowned,249,537,0,0.0
+MID,Aleksić,SUN,Unowned,249,537,0,0.0
+DEF,Alese,SUN,Unowned,183,537,0,0.0
+DEF,Alex Moreno,AVL,Unowned,183,537,0,0.0
+DEF,Amass,MUN,Unowned,183,537,0,0.0
+DEF,Amissah,FUL,Unowned,183,537,0,0.0
+DEF,Anderson,SUN,Unowned,183,537,0,0.0
+MID,Andreas,FUL,Unowned,249,537,0,0.0
+DEF,Anselmino,CHE,Unowned,183,537,0,0.0
+MID,Antony,MUN,Unowned,249,537,0,0.0
+MID,Antoñito C.,NEW,Unowned,249,537,0,0.0
+DEF,Arthur,BRE,Unowned,183,537,0,0.0
+DEF,Ashby,NEW,Unowned,183,537,0,0.0
+GKP,Austin,TOT,Unowned,41,537,0,0.0
+DEF,Aznou,EVE,Unowned,183,537,0,0.0
+MID,B.Traore,WOL,Unowned,249,537,0,0.0
+MID,Ba,SUN,Unowned,249,537,0,0.0
+MID,Bajcetic,LIV,Unowned,249,537,0,0.0
+GKP,Balcombe,BRE,Unowned,41,537,0,0.0
+FWD,Bamford,LEE,Unowned,67,537,0,0.0
+MID,Barrenechea,AVL,Unowned,249,537,0,0.0
+MID,Bates,EVE,Unowned,249,537,0,0.0
+DEF,Benamar,CRY,Unowned,183,537,0,0.0
+GKP,Benda,FUL,Unowned,41,537,0,0.0
+MID,Benson,BUR,Unowned,249,537,0,0.0
+MID,Bentt,BRE,Unowned,249,537,0,0.0
+GKP,Bettinelli,MCI,Unowned,41,537,0,0.0
+DEF,Bevan,BOU,Unowned,183,537,0,0.0
+MID,Boateng,BUR,Unowned,249,537,0,0.0
+DEF,Boly,NFO,Unowned,183,537,0,0.0
+MID,Brierley,BUR,Unowned,249,537,0,0.0
+MID,Broggio,AVL,Unowned,249,537,0,0.0
+GKP,Brooks,WOL,Unowned,41,537,0,0.0
+MID,Browne,SUN,Unowned,249,537,0,0.0
+MID,Bryan,TOT,Unowned,249,537,0,0.0
+GKP,C.Miguel,NFO,Unowned,41,537,0,0.0
+GKP,Cairns,LEE,Unowned,41,537,0,0.0
+DEF,Campbell,EVE,Unowned,183,537,0,0.0
+DEF,Carroll,AVL,Unowned,183,537,0,0.0
+DEF,Casey,WHU,Unowned,183,537,0,0.0
+FWD,Casey,CRY,Unowned,67,537,0,0.0
+DEF,Cashin,BHA,Unowned,183,537,0,0.0
+MID,Chadwick,LEE,Unowned,249,537,0,0.0
+MID,Chambers,LEE,Unowned,249,537,0,0.0
+FWD,Chiwome,WOL,Unowned,67,537,0,0.0
+MID,Churlinov,BUR,Unowned,249,537,0,0.0
+DEF,Clarke,ARS,Unowned,183,537,0,0.0
+MID,Collyer,MUN,Unowned,249,537,0,0.0
+MID,Cornet,WHU,Unowned,249,537,0,0.0
+GKP,Cox,BRE,Unowned,41,537,0,0.0
+MID,Cresswell,LEE,Unowned,249,537,0,0.0
+MID,Crew,LEE,Unowned,249,537,0,0.0
+DEF,Cuiabano,NFO,Unowned,183,537,0,0.0
+DEF,D.Leon,MUN,Unowned,183,537,0,0.0
+MID,Da Silva Moreira,NFO,Unowned,249,537,0,0.0
+MID,DaCosta,BOU,Unowned,249,537,0,0.0
+FWD,Danns,LIV,Unowned,67,537,0,0.0
+FWD,Darwin,LIV,Unowned,67,537,0,0.0
+DEF,David Carmo,NFO,Unowned,183,537,0,0.0
+DEF,Delcroix,BUR,Unowned,183,537,0,0.0
+MID,Dendoncker,AVL,Unowned,249,537,0,0.0
+GKP,Dennis,BOU,Unowned,41,537,0,0.0
+DEF,Dixon,EVE,Unowned,183,537,0,0.0
+MID,Dobbin,AVL,Unowned,249,537,0,0.0
+DEF,Dodgson,BUR,Unowned,183,537,0,0.0
+MID,Doucouré,CRY,Unowned,249,537,0,0.0
+MID,Ebere,EVE,Unowned,249,537,0,0.0
+MID,Ebiowei,CRY,Unowned,249,537,0,0.0
+MID,Eboué,CHE,Unowned,249,537,0,0.0
+MID,Echeverri,MCI,Unowned,249,537,0,0.0
+GKP,Ederson M.,MCI,Unowned,41,537,0,0.0
+MID,Ekwah,SUN,Unowned,249,537,0,0.0
+MID,Emenalo,CHE,Unowned,249,537,0,0.0
+DEF,Emerson,WHU,Unowned,183,537,0,0.0
+MID,Enciso,BHA,Unowned,249,537,0,0.0
+DEF,Estupiñan,BHA,Unowned,183,537,0,0.0
+GKP,Eyestone,BRE,Unowned,41,537,0,0.0
+GKP,Fabianski,WHU,Unowned,41,537,0,0.0
+MID,Faivre,BOU,Unowned,249,537,0,0.0
+FWD,Ferguson,BHA,Unowned,67,537,0,0.0
+MID,Fitzgerald,MUN,Unowned,249,537,0,0.0
+GKP,Foderingham,WHU,Unowned,41,537,0,0.0
+GKP,Forster,BOU,Unowned,41,537,0,0.0
+FWD,Fraser,WOL,Unowned,67,537,0,0.0
+DEF,Fredrick,BRE,Unowned,183,537,0,0.0
+FWD,Fábio Silva,WOL,Unowned,67,537,0,0.0
+MID,Fábio Vieira,ARS,Unowned,249,537,0,0.0
+GKP,Gauci,AVL,Unowned,41,537,0,0.0
+MID,Gelhardt,LEE,Unowned,249,537,0,0.0
+GKP,Gillespie,NEW,Unowned,41,537,0,0.0
+MID,Godo,FUL,Unowned,249,537,0,0.0
+DEF,Golambeckis,WHU,Unowned,183,537,0,0.0
+MID,Gonzalez,WOL,Unowned,249,537,0,0.0
+GKP,Gracey,WOL,Unowned,41,537,0,0.0
+FWD,Graham,EVE,Unowned,67,537,0,0.0
+FWD,Gray,LEE,Unowned,67,537,0,0.0
+MID,Gray,MCI,Unowned,249,537,0,0.0
+GKP,Green,BUR,Unowned,41,537,0,0.0
+MID,Greenwood,LEE,Unowned,249,537,0,0.0
+MID,Guedes,WOL,Unowned,249,537,0,0.0
+MID,Gyabi,LEE,Unowned,249,537,0,0.0
+MID,Gündoğan,MCI,Unowned,249,537,0,0.0
+MID,H.Jones,SUN,Unowned,249,537,0,0.0
+MID,Harriman-Annous,ARS,Unowned,249,537,0,0.0
+MID,Harris,FUL,Unowned,249,537,0,0.0
+GKP,Harrison,MUN,Unowned,41,537,0,0.0
+MID,Hayden,NEW,Unowned,249,537,0,0.0
+MID,Heath,EVE,Unowned,249,537,0,0.0
+GKP,Heaton,MUN,Unowned,41,537,0,0.0
+GKP,Hegyi,WHU,Unowned,41,537,0,0.0
+GKP,Hein,ARS,Unowned,41,537,0,0.0
+GKP,Herrick,WHU,Unowned,41,537,0,0.0
+MID,Heskey,MCI,Unowned,249,537,0,0.0
+DEF,Hjelde,SUN,Unowned,183,537,0,0.0
+GKP,Hladký,BUR,Unowned,41,537,0,0.0
+MID,Hodge,WOL,Unowned,249,537,0,0.0
+DEF,Holding,CRY,Unowned,183,537,0,0.0
+GKP,Hollingshead,AVL,Unowned,41,537,0,0.0
+DEF,Huggins,SUN,Unowned,183,537,0,0.0
+FWD,Højlund,MUN,Unowned,67,537,0,0.0
+MID,Iling Jr,AVL,Unowned,249,537,0,0.0
+DEF,Imray,CRY,Unowned,183,537,0,0.0
+DEF,J.Araujo,BOU,Unowned,183,537,0,0.0
+MID,J.Rak-Sakyi,CRY,Unowned,249,537,0,0.0
+DEF,Jenson Jones,SUN,Unowned,183,537,0,0.0
+DEF,Ji-soo,BRE,Unowned,183,537,0,0.0
+DEF,Johnson,SUN,Unowned,183,537,0,0.0
+MID,Jones,SUN,Unowned,249,537,0,0.0
+DEF,Jordan,BUR,Unowned,183,537,0,0.0
+MID,Kabia,ARS,Unowned,249,537,0,0.0
+DEF,Kacurri,ARS,Unowned,183,537,0,0.0
+MID,Kavuma-McQueen,CHE,Unowned,249,537,0,0.0
+GKP,King,EVE,Unowned,41,537,0,0.0
+DEF,King,CRY,Unowned,183,537,0,0.0
+DEF,Kiwior,ARS,Unowned,183,537,0,0.0
+MID,Koleosho,BUR,Unowned,249,537,0,0.0
+MID,Konak,BRE,Unowned,249,537,0,0.0
+MID,Kone,MUN,Unowned,249,537,0,0.0
+DEF,Kporha,CRY,Unowned,183,537,0,0.0
+DEF,Krafth,NEW,Unowned,183,537,0,0.0
+DEF,Kukonki,MUN,Unowned,183,537,0,0.0
+MID,Kulusevski,TOT,Unowned,249,537,0,0.0
+MID,Kuol,NEW,Unowned,249,537,0,0.0
+MID,Kyerematen,TOT,Unowned,249,537,0,0.0
+MID,Lamadrid,WHU,Unowned,249,537,0,0.0
+DEF,Lamptey,BHA,Unowned,183,537,0,0.0
+FWD,Lankshear,TOT,Unowned,67,537,0,0.0
+GKP,Lecomte,FUL,Unowned,41,537,0,0.0
+DEF,Leon Routh,AVL,Unowned,183,537,0,0.0
+DEF,Leoni,LIV,Unowned,183,537,0,0.0
+DEF,Lienou,LEE,Unowned,183,537,0,0.0
+DEF,Lucky,LIV,Unowned,183,537,0,0.0
+MID,Luis Díaz,LIV,Unowned,249,537,0,0.0
+FWD,Luís Hemir,SUN,Unowned,67,537,0,0.0
+MID,M.França,CRY,Unowned,249,537,0,0.0
+MID,Maghoma,BRE,Unowned,249,537,0,0.0
+GKP,Mandas,BOU,Unowned,41,537,0,0.0
+GKP,Marschall,AVL,Unowned,41,537,0,0.0
+FWD,Marsh,CRY,Unowned,67,537,0,0.0
+FWD,Mateo Joseph,LEE,Unowned,67,537,0,0.0
+MID,Matete,SUN,Unowned,249,537,0,0.0
+GKP,Matthews,CRY,Unowned,41,537,0,0.0
+MID,Mazilu,BHA,Unowned,249,537,0,0.0
+MID,McAidoo,MCI,Unowned,249,537,0,0.0
+MID,McConnell,LIV,Unowned,249,537,0,0.0
+GKP,McGill,BHA,Unowned,41,537,0,0.0
+GKP,McKenna,BOU,Unowned,41,537,0,0.0
+MID,McMahon-Brown,BUR,Unowned,249,537,0,0.0
+DEF,McManus,BRE,Unowned,183,537,0,0.0
+GKP,McNally,FUL,Unowned,41,537,0,0.0
+GKP,Mee,MUN,Unowned,41,537,0,0.0
+DEF,Meghoma,BRE,Unowned,183,537,0,0.0
+DEF,Mepham,BOU,Unowned,183,537,0,0.0
+GKP,Merrick,CHE,Unowned,41,537,0,0.0
+GKP,Meslier,LEE,Unowned,41,537,0,0.0
+MID,Metcalfe,EVE,Unowned,249,537,0,0.0
+DEF,Meupiyou,WOL,Unowned,183,537,0,0.0
+DEF,Mfuni,MCI,Unowned,183,537,0,0.0
+MID,Min-hyeok,TOT,Unowned,249,537,0,0.0
+GKP,Moore,SUN,Unowned,41,537,0,0.0
+MID,Moore,TOT,Unowned,249,537,0,0.0
+MID,Moorhouse,MUN,Unowned,249,537,0,0.0
+MID,Moran,BHA,Unowned,249,537,0,0.0
+FWD,Morgan,BRE,Unowned,67,537,0,0.0
+MID,Morrison,LIV,Unowned,249,537,0,0.0
+MID,Morton,LIV,Unowned,249,537,0,0.0
+MID,Mudryk,CHE,Unowned,249,537,0,0.0
+FWD,N.Jackson,CHE,Unowned,67,537,0,0.0
+DEF,Nallo,LIV,Unowned,183,537,0,0.0
+DEF,Ndiaye,LIV,Unowned,183,537,0,0.0
+GKP,Neto,BOU,Unowned,41,537,0,0.0
+DEF,Nichols,ARS,Unowned,183,537,0,0.0
+MID,Nkunku,CHE,Unowned,249,537,0,0.0
+GKP,Nna Noukeu,SUN,Unowned,41,537,0,0.0
+MID,Nunes,BRE,Unowned,249,537,0,0.0
+MID,Nypan,MCI,Unowned,249,537,0,0.0
+MID,O'Brien,NFO,Unowned,249,537,0,0.0
+DEF,O.Richards,NFO,Unowned,183,537,0,0.0
+FWD,Obafemi,BUR,Unowned,67,537,0,0.0
+FWD,Obi,MUN,Unowned,67,537,0,0.0
+GKP,Odysseas,NEW,Unowned,41,537,0,0.0
+MID,Ojinnaka,WOL,Unowned,249,537,0,0.0
+DEF,Olagunju,WOL,Unowned,183,537,0,0.0
+GKP,Onana,MUN,Unowned,41,537,0,0.0
+MID,Onyango,EVE,Unowned,249,537,0,0.0
+MID,Orford,WHU,Unowned,249,537,0,0.0
+MID,Owen,BRE,Unowned,249,537,0,0.0
+MID,Ozoh,CRY,Unowned,249,537,0,0.0
+MID,Paez,CHE,Unowned,249,537,0,0.0
+GKP,Patterson,SUN,Unowned,41,537,0,0.0
+DEF,Patterson,AVL,Unowned,183,537,0,0.0
+GKP,Paulsen,BOU,Unowned,41,537,0,0.0
+DEF,Pembele,SUN,Unowned,183,537,0,0.0
+GKP,Penders,CHE,Unowned,41,537,0,0.0
+MID,Philip,BOU,Unowned,249,537,0,0.0
+MID,Phillips,MCI,Unowned,249,537,0,0.0
+DEF,Phillips,TOT,Unowned,183,537,0,0.0
+MID,Pimlott,BUR,Unowned,249,537,0,0.0
+DEF,Pivas,NEW,Unowned,183,537,0,0.0
+DEF,Pond,WOL,Unowned,183,537,0,0.0
+MID,Poveda,SUN,Unowned,249,537,0,0.0
+GKP,Proctor,AVL,Unowned,41,537,0,0.0
+GKP,Pécsi,LIV,Unowned,41,537,0,0.0
+DEF,R.Williams,LIV,Unowned,183,537,0,0.0
+MID,Ramazani,LEE,Unowned,249,537,0,0.0
+DEF,Ramsay,LIV,Unowned,183,537,0,0.0
+MID,Rashford,MUN,Unowned,249,537,0,0.0
+MID,Rawlings,WOL,Unowned,249,537,0,0.0
+FWD,Redmond,AVL,Unowned,67,537,0,0.0
+MID,Rees-Dottin,BOU,Unowned,249,537,0,0.0
+MID,Ridgeon,FUL,Unowned,249,537,0,0.0
+DEF,Roberts,BUR,Unowned,183,537,0,0.0
+DEF,Roerslev,BRE,Unowned,183,537,0,0.0
+DEF,Rowe,AVL,Unowned,183,537,0,0.0
+GKP,Ruddy,NEW,Unowned,41,537,0,0.0
+GKP,Rushworth,BHA,Unowned,41,537,0,0.0
+FWD,Rusyn,SUN,Unowned,67,537,0,0.0
+MID,Sadi,BOU,Unowned,249,537,0,0.0
+DEF,Salmon,ARS,Unowned,183,537,0,0.0
+MID,Sambi,ARS,Unowned,249,537,0,0.0
+DEF,Sambo,BUR,Unowned,183,537,0,0.0
+MID,Sarmiento,BHA,Unowned,249,537,0,0.0
+GKP,Scherpen,BHA,Unowned,41,537,0,0.0
+DEF,Schmidt,LEE,Unowned,183,537,0,0.0
+GKP,Setford,ARS,Unowned,41,537,0,0.0
+MID,Seung soo,NEW,Unowned,249,537,0,0.0
+DEF,Shahar,NEW,Unowned,183,537,0,0.0
+GKP,Sharman-Lowe,CHE,Unowned,41,537,0,0.0
+FWD,Sherif,EVE,Unowned,67,537,0,0.0
+DEF,Shield,BRE,Unowned,183,537,0,0.0
+MID,Silcott-Duberry,BOU,Unowned,249,537,0,0.0
+FWD,Sillah,NFO,Unowned,67,537,0,0.0
+MID,Sima,BHA,Unowned,249,537,0,0.0
+DEF,Simmonds,BHA,Unowned,183,537,0,0.0
+MID,Sinclair,NFO,Unowned,249,537,0,0.0
+MID,Sinisterra,BOU,Unowned,249,537,0,0.0
+DEF,Slater,BHA,Unowned,183,537,0,0.0
+GKP,Slonina,CHE,Unowned,41,537,0,0.0
+MID,Solomon,TOT,Unowned,249,537,0,0.0
+MID,Son,TOT,Unowned,249,537,0,0.0
+DEF,Sousa,AVL,Unowned,183,537,0,0.0
+MID,Stamenic,NFO,Unowned,249,537,0,0.0
+GKP,Steele,BHA,Unowned,41,537,0,0.0
+DEF,Stephenson,BRE,Unowned,183,537,0,0.0
+MID,Stevens,BOU,Unowned,249,537,0,0.0
+MID,Sutherland,WOL,Unowned,249,537,0,0.0
+DEF,Takai,TOT,Unowned,183,537,0,0.0
+DEF,Targett,NEW,Unowned,183,537,0,0.0
+DEF,Tasker,BHA,Unowned,183,537,0,0.0
+MID,Thwaites,MUN,Unowned,249,537,0,0.0
+GKP,Travers,EVE,Unowned,41,537,0,0.0
+MID,Trevitt,BRE,Unowned,249,537,0,0.0
+MID,Triantis,SUN,Unowned,249,537,0,0.0
+DEF,Tsimikas,LIV,Unowned,183,537,0,0.0
+GKP,Turner,NFO,Unowned,41,537,0,0.0
+MID,Tutierov,SUN,Unowned,249,537,0,0.0
+GKP,Tyrer,EVE,Unowned,41,537,0,0.0
+MID,Umeh,CRY,Unowned,249,537,0,0.0
+DEF,Vitor Reis,MCI,Unowned,183,537,0,0.0
+DEF,Vuskovic,TOT,Unowned,183,537,0,0.0
+DEF,Webster,BHA,Unowned,183,537,0,0.0
+DEF,Welch,EVE,Unowned,183,537,0,0.0
+FWD,Wheatley,MUN,Unowned,67,537,0,0.0
+MID,White,NEW,Unowned,249,537,0,0.0
+MID,Whitehall,NFO,Unowned,249,537,0,0.0
+MID,Whittaker,SUN,Unowned,249,537,0,0.0
+MID,Williams-Barnett,TOT,Unowned,249,537,0,0.0
+FWD,Wilson,TOT,Unowned,67,537,0,0.0
+GKP,Wright,AVL,Unowned,41,537,0,0.0
+FWD,Wright,LIV,Unowned,67,537,0,0.0
+FWD,Y.Chermiti,EVE,Unowned,67,537,0,0.0
+MID,Yalcouye,BHA,Unowned,249,537,0,0.0
+DEF,Yasin,AVL,Unowned,183,537,0,0.0
+MID,Young,AVL,Unowned,249,537,0,0.0
+DEF,Zabarnyi,BOU,Unowned,183,537,0,0.0
+MID,Álvarez,WHU,Unowned,249,537,0,0.0

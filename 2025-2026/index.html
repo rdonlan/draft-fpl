@@ -375,6 +375,93 @@
       font-weight: 750;
       box-shadow: inset 0 -2px 0 var(--belt-accent);
     }
+    .keeper-roster-table tr.keeper-pos-gkp td,
+    .keeper-roster-table tr:nth-child(even).keeper-pos-gkp td {
+      background: #e0f2fe;
+    }
+    .keeper-roster-table tr.keeper-pos-def td,
+    .keeper-roster-table tr:nth-child(even).keeper-pos-def td {
+      background: #dcfce7;
+    }
+    .keeper-roster-table tr.keeper-pos-mid td,
+    .keeper-roster-table tr:nth-child(even).keeper-pos-mid td {
+      background: #fef3c7;
+    }
+    .keeper-roster-table tr.keeper-pos-fwd td,
+    .keeper-roster-table tr:nth-child(even).keeper-pos-fwd td {
+      background: #ffe4e6;
+    }
+    .keeper-roster-table tr.keeper-pos-gkp td:first-child {
+      border-left: 5px solid #0284c7;
+    }
+    .keeper-roster-table tr.keeper-pos-def td:first-child {
+      border-left: 5px solid #16a34a;
+    }
+    .keeper-roster-table tr.keeper-pos-mid td:first-child {
+      border-left: 5px solid #d97706;
+    }
+    .keeper-roster-table tr.keeper-pos-fwd td:first-child {
+      border-left: 5px solid #e11d48;
+    }
+    .keeper-filter-controls {
+      display: grid;
+      grid-template-columns: minmax(180px, 1.2fr) minmax(140px, 0.8fr) minmax(140px, 0.8fr) auto;
+      gap: 10px;
+      align-items: end;
+      margin: 14px 0 16px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .keeper-filter-label {
+      display: grid;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 850;
+    }
+    .keeper-search-input,
+    .keeper-filter-select {
+      width: 100%;
+      min-height: 38px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.92rem;
+    }
+    .keeper-player-count {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .keeper-player-pool-table tr.is-hidden {
+      display: none !important;
+    }
+    html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-gkp td,
+    html[data-theme="dark"] .keeper-roster-table tr:nth-child(even).keeper-pos-gkp td {
+      background: #0f2a3a;
+    }
+    html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-def td,
+    html[data-theme="dark"] .keeper-roster-table tr:nth-child(even).keeper-pos-def td {
+      background: #12351f;
+    }
+    html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-mid td,
+    html[data-theme="dark"] .keeper-roster-table tr:nth-child(even).keeper-pos-mid td {
+      background: #3b2d12;
+    }
+    html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-fwd td,
+    html[data-theme="dark"] .keeper-roster-table tr:nth-child(even).keeper-pos-fwd td {
+      background: #3d1720;
+    }
     tr.cup-eliminated-row td,
     tr:nth-child(even).cup-eliminated-row td {
       background: #fee2e2;
@@ -1371,6 +1458,12 @@
       .pick-controls {
         grid-template-columns: 1fr;
       }
+      .keeper-filter-controls {
+        grid-template-columns: 1fr;
+      }
+      .keeper-player-count {
+        justify-content: flex-start;
+      }
       .pick-profile {
         padding: 12px;
       }
@@ -1452,6 +1545,44 @@
       }
       tr:nth-child(even) td {
         background: transparent;
+      }
+      .keeper-roster-table tr.keeper-pos-gkp {
+        background: #e0f2fe;
+        border-left: 6px solid #0284c7;
+      }
+      .keeper-roster-table tr.keeper-pos-def {
+        background: #dcfce7;
+        border-left: 6px solid #16a34a;
+      }
+      .keeper-roster-table tr.keeper-pos-mid {
+        background: #fef3c7;
+        border-left: 6px solid #d97706;
+      }
+      .keeper-roster-table tr.keeper-pos-fwd {
+        background: #ffe4e6;
+        border-left: 6px solid #e11d48;
+      }
+      .keeper-roster-table tr.keeper-pos-gkp td,
+      .keeper-roster-table tr.keeper-pos-def td,
+      .keeper-roster-table tr.keeper-pos-mid td,
+      .keeper-roster-table tr.keeper-pos-fwd td,
+      .keeper-roster-table tr:nth-child(even).keeper-pos-gkp td,
+      .keeper-roster-table tr:nth-child(even).keeper-pos-def td,
+      .keeper-roster-table tr:nth-child(even).keeper-pos-mid td,
+      .keeper-roster-table tr:nth-child(even).keeper-pos-fwd td {
+        background: transparent;
+      }
+      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-gkp {
+        background: #0f2a3a;
+      }
+      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-def {
+        background: #12351f;
+      }
+      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-mid {
+        background: #3b2d12;
+      }
+      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-fwd {
+        background: #3d1720;
       }
       tr.cup-eliminated-row td,
       tr:nth-child(even).cup-eliminated-row td {
@@ -1627,6 +1758,7 @@
 <a class="season-tab" href="../recaps/">Recaps</a>
 <a class="season-tab" href="../trades/">Trades</a>
 <a class="season-tab" href="../future-picks/">Future Picks</a>
+<a class="season-tab" href="../keepers/">Keepers</a>
       <label class="theme-switch">
         <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
         <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
@@ -2744,6 +2876,47 @@
   yearSelect?.addEventListener("change", update);
   managerSelect?.addEventListener("change", update);
   update();
+})();
+</script>
+  <script>
+(() => {
+  const pool = document.querySelector("[data-keeper-player-pool]");
+  if (!pool) return;
+
+  const search = pool.querySelector("[data-keeper-player-search]");
+  const position = pool.querySelector("[data-keeper-player-position]");
+  const team = pool.querySelector("[data-keeper-player-team]");
+  const owner = pool.querySelector("[data-keeper-player-owner]");
+  const count = pool.querySelector("[data-keeper-player-count]");
+  const rows = Array.from(pool.querySelectorAll("tbody tr"));
+
+  const applyFilters = () => {
+    const query = (search?.value || "").trim().toLowerCase();
+    const selectedPosition = position?.value || "";
+    const selectedTeam = team?.value || "";
+    const selectedOwner = owner?.value || "";
+    let visible = 0;
+
+    rows.forEach((row) => {
+      const matchesSearch = !query || (row.dataset.player || "").includes(query);
+      const matchesPosition = !selectedPosition || row.dataset.position === selectedPosition;
+      const matchesTeam = !selectedTeam || row.dataset.team === selectedTeam;
+      const matchesOwner = !selectedOwner || row.dataset.owner === selectedOwner;
+      const isVisible = matchesSearch && matchesPosition && matchesTeam && matchesOwner;
+      row.classList.toggle("is-hidden", !isVisible);
+      if (isVisible) visible += 1;
+    });
+
+    if (count) {
+      count.textContent = `${visible} player${visible === 1 ? "" : "s"}`;
+    }
+  };
+
+  search?.addEventListener("input", applyFilters);
+  position?.addEventListener("change", applyFilters);
+  team?.addEventListener("change", applyFilters);
+  owner?.addEventListener("change", applyFilters);
+  applyFilters();
 })();
 </script>
 </body>
