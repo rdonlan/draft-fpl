@@ -2579,6 +2579,7 @@
 <summary>Definitions and calculation notes</summary>
 <ul>
 <li>A pick without a full draft year is assigned to the next draft after that trade season: 2024-25 trade rows default to the 2025 draft, and 2025-26 trade rows default to the 2026 draft.</li>
+<li>Draft Day is the exception: unlabeled Draft Day picks are treated as current-draft picks that can be used immediately, so they are not stored as future picks.</li>
 <li>If a pick asset clearly names a full draft year, like <code>2026 3rd-round pick</code> or <code>2027 6th-round pick</code>, that explicit draft year overrides the season default.</li>
 <li>In pass-through cases where a manager held more than one pick in the same round, the parser tries to use the non-own pick first and records that assumption below.</li>
 <li>Multi-team trade rows do not state exactly which counterparty receives each asset, so those recipient assumptions are listed separately.</li>
@@ -2587,7 +2588,6 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Issue</th><th>Year</th><th>Round</th><th>Original Owner</th><th>Tracker Holder</th><th>Ledger Holder</th><th>Ledger Evidence</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td data-label="Issue">Original-owner ambiguity</td><td data-label="Year">2026</td><td data-label="Round">9th</td><td data-label="Original Owner">Donny vs Dylan</td><td data-label="Tracker Holder">Donny -&gt; Julius</td><td data-label="Ledger Holder">Dylan -&gt; Julius</td><td data-label="Ledger Evidence">GW 32: Donny -&gt; Julius</td><td data-label="Notes">The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager&#x27;s same-round pick and the ledger did not clearly label the pass-through. original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks</td></tr>
 <tr><td data-label="Issue">Original-owner ambiguity</td><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin vs Levi</td><td data-label="Tracker Holder">Justin -&gt; Ryan Houseman</td><td data-label="Ledger Holder">Levi -&gt; Ryan Houseman</td><td data-label="Ledger Evidence">Postseason: Levi -&gt; Ryan Houseman</td><td data-label="Notes">The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager&#x27;s same-round pick and the ledger did not clearly label the pass-through.</td></tr>
 <tr><td data-label="Issue">Ledger-only move</td><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Tracker Holder">Donny</td><td data-label="Ledger Holder">Dylan</td><td data-label="Ledger Evidence">Draft Day: Donny -&gt; Dylan</td><td data-label="Notes">-</td></tr>
 </tbody></table></div>
@@ -2602,7 +2602,6 @@
 <tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Sender">Justin</td><td data-label="Recipient">Levi</td><td data-label="Timing">Before 2024-25 postseason row 32</td><td data-label="Assumption">Manual clarification: Justin had already traded this pick to Levi before Levi sent it to Dylan; the trade ledger does not clearly mark that pass-through.</td><td data-label="Asset">2026 3rd-round pick</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Sender">Levi</td><td data-label="Recipient">Dylan</td><td data-label="Timing">Postseason</td><td data-label="Assumption">original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks</td><td data-label="Asset">2026 3rd-round pick</td></tr>
 <tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">Ryan Houseman</td><td data-label="Sender">Levi</td><td data-label="Recipient">Dylan</td><td data-label="Timing">Postseason</td><td data-label="Assumption">original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks</td><td data-label="Asset">2026 5th-round pick</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Round">9th</td><td data-label="Original Owner">Dylan</td><td data-label="Sender">Donny</td><td data-label="Recipient">Julius</td><td data-label="Timing">GW 32</td><td data-label="Assumption">original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks</td><td data-label="Asset">2026 9th-round pick</td></tr>
 </tbody></table></div>
 </details>
 <details>
