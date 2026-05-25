@@ -1,0 +1,2378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMS FPL Trade Ledger</title>
+  <script>
+(() => {
+  const saved = localStorage.getItem("bms-theme");
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+})();
+</script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --paper: #ffffff;
+      --ink: #18202f;
+      --muted: #667085;
+      --line: #d9deea;
+      --accent: #0b7a75;
+      --accent-2: #b54708;
+      --code: #f0f4f8;
+      --soft: #f8fafc;
+      --soft-2: #eef6f5;
+      --soft-3: #eef2f7;
+      --row-alt: #fbfcfe;
+      --table-head: #f1f5f9;
+      --table-head-ink: #344054;
+      --tab-ink: #344054;
+      --active: #075e5a;
+      --note-bg: #fbfefd;
+      --note-head: #eef6f5;
+      --note-border: #d9e6e4;
+      --note-ink: #075e5a;
+      --chart-grid: #dfe5ee;
+      --chart-axis: #526071;
+      --shadow: rgba(20, 31, 53, 0.08);
+      --shadow-soft: rgba(20, 31, 53, 0.06);
+      --tooltip-bg: rgba(255, 255, 255, 0.97);
+      --tooltip-border: #b9c5d4;
+      --switch-bg: #e9eef5;
+      --switch-active: #0b7a75;
+      --switch-thumb: #ffffff;
+    }
+    html[data-theme="dark"] {
+      --bg: #0c1117;
+      --paper: #141b23;
+      --ink: #e6edf3;
+      --muted: #9aa7b4;
+      --line: #2b3643;
+      --accent: #2dd4bf;
+      --accent-2: #f6ad55;
+      --code: #111923;
+      --soft: #101820;
+      --soft-2: #102320;
+      --soft-3: #101824;
+      --row-alt: #101820;
+      --table-head: #101a24;
+      --table-head-ink: #d7e2ed;
+      --tab-ink: #d7e2ed;
+      --active: #0f766e;
+      --note-bg: #0f211f;
+      --note-head: #12302d;
+      --note-border: #1e4f4a;
+      --note-ink: #99f6e4;
+      --chart-grid: #273241;
+      --chart-axis: #8795a8;
+      --shadow: rgba(0, 0, 0, 0.32);
+      --shadow-soft: rgba(0, 0, 0, 0.24);
+      --tooltip-bg: rgba(20, 27, 35, 0.98);
+      --tooltip-border: #3c4a5c;
+      --switch-bg: #263241;
+      --switch-active: #2dd4bf;
+      --switch-thumb: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 32px auto 56px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 55px var(--shadow);
+      padding: clamp(24px, 4vw, 48px);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 36px 0 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 1.45rem;
+      letter-spacing: 0;
+    }
+    details {
+      margin: 16px 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    details[open] {
+      box-shadow: 0 10px 28px var(--shadow-soft);
+    }
+    summary {
+      cursor: pointer;
+      padding: 15px 18px;
+      background: var(--soft);
+      border-bottom: 1px solid transparent;
+      color: var(--ink);
+      user-select: none;
+    }
+    details[open] summary {
+      border-bottom-color: var(--line);
+    }
+    summary h2 {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+    details > details {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    details.notes {
+      margin-top: 10px;
+      margin-bottom: 18px;
+      border-color: var(--note-border);
+      background: var(--note-bg);
+      box-shadow: none;
+    }
+    details.notes[open] {
+      box-shadow: none;
+    }
+    details.notes > summary {
+      padding: 10px 12px;
+      background: var(--note-head);
+      color: var(--note-ink);
+      font-size: 0.92rem;
+      font-weight: 750;
+    }
+    details.position-group {
+      margin: 12px 18px;
+      border-color: var(--line);
+      background: var(--paper);
+      box-shadow: none;
+    }
+    details.position-group[open] {
+      box-shadow: none;
+    }
+    details.position-group > summary {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 11px 14px;
+      background: var(--soft-3);
+      color: var(--ink);
+      font-weight: 800;
+    }
+    details.position-group > .table-wrap {
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+    details > p,
+    details > ul,
+    details > h3,
+    details > .table-wrap,
+    details > .rating-chart-wrap,
+    details > .power-tabs {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    details > p:first-of-type {
+      margin-top: 16px;
+    }
+    h3 {
+      margin: 26px 0 10px;
+      font-size: 1.05rem;
+      color: var(--accent);
+      letter-spacing: 0;
+    }
+    p, li {
+      font-size: 0.98rem;
+    }
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 1.35rem;
+    }
+    li {
+      margin: 6px 0;
+    }
+    code {
+      background: var(--code);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 0.08rem 0.35rem;
+      font-size: 0.92em;
+      white-space: nowrap;
+    }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin: 18px 0 28px;
+      padding: 12px;
+      background: var(--soft-2);
+      border: 1px solid var(--note-border);
+      border-radius: 8px;
+    }
+    .season-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 18px;
+    }
+    .season-tab {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font-size: 0.95rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .theme-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 36px;
+      color: var(--tab-ink);
+      font-size: 0.95rem;
+      font-weight: 750;
+      cursor: pointer;
+      user-select: none;
+    }
+    .theme-switch-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .theme-switch-track {
+      position: relative;
+      display: inline-flex;
+      flex: 0 0 auto;
+      width: 48px;
+      height: 26px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--switch-bg);
+      transition: background 160ms ease, border-color 160ms ease;
+    }
+    .theme-switch-thumb {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--switch-thumb);
+      box-shadow: 0 2px 7px var(--shadow);
+      transition: transform 160ms ease;
+    }
+    .theme-switch-input:checked + .theme-switch-track {
+      border-color: var(--switch-active);
+      background: var(--switch-active);
+    }
+    .theme-switch-input:checked + .theme-switch-track .theme-switch-thumb {
+      transform: translateX(22px);
+    }
+    .theme-switch-input:focus-visible + .theme-switch-track {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .theme-switch:hover .theme-switch-label {
+      color: var(--accent);
+    }
+    .theme-switch-label {
+      white-space: nowrap;
+    }
+    .season-tab.active {
+      background: var(--active);
+      border-color: var(--active);
+      color: #ffffff;
+    }
+    .toolbar a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid var(--note-border);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--note-ink);
+      font-size: 0.9rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 14px 0 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    @supports (content-visibility: auto) {
+      .table-wrap,
+      .rating-chart-wrap {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 360px;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--table-head);
+      color: var(--table-head-ink);
+      font-weight: 750;
+      position: sticky;
+      top: 0;
+    }
+    tr:nth-child(even) td {
+      background: var(--row-alt);
+    }
+    tr.belt-winner-row td,
+    tr:nth-child(even).belt-winner-row td {
+      background: var(--belt-bg);
+    }
+    html[data-theme="dark"] tr.belt-winner-row td,
+    html[data-theme="dark"] tr:nth-child(even).belt-winner-row td {
+      background: var(--belt-bg-dark);
+    }
+    tr.belt-winner-row td:first-child {
+      border-left: 6px solid var(--belt-accent);
+      font-weight: 750;
+    }
+    tr.belt-winner-row td:last-child {
+      font-weight: 750;
+      box-shadow: inset 0 -2px 0 var(--belt-accent);
+    }
+    tr.cup-eliminated-row td,
+    tr:nth-child(even).cup-eliminated-row td {
+      background: #fee2e2;
+      color: #7f1d1d;
+    }
+    html[data-theme="dark"] tr.cup-eliminated-row td,
+    html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
+      background: #4c1d24;
+      color: #fecdd3;
+    }
+    td.cup-winner-cell,
+    tr:nth-child(even) td.cup-winner-cell {
+      background: #dcfce7 !important;
+      color: #14532d;
+      font-weight: 800;
+    }
+    td.cup-loser-cell,
+    tr:nth-child(even) td.cup-loser-cell {
+      background: #fee2e2 !important;
+      color: #7f1d1d;
+      font-weight: 800;
+    }
+    html[data-theme="dark"] td.cup-winner-cell,
+    html[data-theme="dark"] tr:nth-child(even) td.cup-winner-cell {
+      background: #13351f !important;
+      color: #bbf7d0;
+    }
+    html[data-theme="dark"] td.cup-loser-cell,
+    html[data-theme="dark"] tr:nth-child(even) td.cup-loser-cell {
+      background: #4c1d24 !important;
+      color: #fecdd3;
+    }
+    td:nth-child(n+3), th:nth-child(n+3) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .belt-path-table td:nth-child(n+3),
+    .belt-path-table th:nth-child(n+3) {
+      text-align: left;
+    }
+    .belt-path-table td:first-child,
+    .belt-path-table th:first-child,
+    .belt-path-table td:nth-child(4),
+    .belt-path-table th:nth-child(4) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .belt-path-table td:nth-child(4) {
+      white-space: nowrap;
+      font-weight: 750;
+    }
+    .rating-chart-wrap {
+      overflow-x: auto;
+      margin: 16px 0 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .rating-chart {
+      display: block;
+      width: 100%;
+      min-width: 980px;
+      height: auto;
+      background: var(--paper);
+    }
+    .chart-title {
+      fill: var(--ink);
+      font-size: 17px;
+      font-weight: 800;
+    }
+    .axis-line {
+      stroke: var(--chart-axis);
+      stroke-width: 1.2;
+    }
+    .grid-line {
+      stroke: var(--chart-grid);
+      stroke-width: 1;
+    }
+    .tick-line {
+      stroke: var(--chart-axis);
+      stroke-width: 1;
+    }
+    .axis-label {
+      fill: var(--muted);
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+    .axis-caption {
+      fill: var(--table-head-ink);
+      font-size: 13px;
+      font-weight: 750;
+    }
+    .rating-line {
+      fill: none;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.9;
+    }
+    .rating-endpoint {
+      stroke: var(--paper);
+      stroke-width: 1.5;
+    }
+    .legend-swatch {
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+    .legend-label {
+      fill: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .rating-hover-zone {
+      fill: transparent;
+      cursor: crosshair;
+      pointer-events: all;
+    }
+    .rating-hover-zone:hover {
+      fill: color-mix(in srgb, var(--accent) 10%, transparent);
+      stroke: color-mix(in srgb, var(--accent) 45%, transparent);
+      stroke-width: 1;
+    }
+    .rating-tooltip {
+      position: fixed;
+      z-index: 50;
+      display: none;
+      max-width: min(320px, calc(100vw - 28px));
+      padding: 10px 12px;
+      border: 1px solid var(--tooltip-border);
+      border-radius: 8px;
+      background: var(--tooltip-bg);
+      box-shadow: 0 14px 38px var(--shadow);
+      color: var(--ink);
+      font-size: 0.86rem;
+      line-height: 1.4;
+      white-space: pre;
+      pointer-events: none;
+      font-variant-numeric: tabular-nums;
+    }
+    .rating-tooltip.is-visible {
+      display: block;
+    }
+    .power-tabs {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .power-tab-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .power-tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-3);
+    }
+    .power-tab-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: var(--tab-ink);
+      font-weight: 800;
+      cursor: pointer;
+      user-select: none;
+    }
+    .power-tab-panel {
+      display: none;
+      padding: 2px 0 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .power-tab-panel > h3,
+    .power-tab-panel > p,
+    .power-tab-panel > .table-wrap,
+    .power-tab-panel > .rating-chart-wrap {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    .power-tab-panel > h3:first-child {
+      margin-top: 18px;
+    }
+    #power-season-2025-26:checked ~ .power-tab-list label[for="power-season-2025-26"],
+    #power-season-2024-25:checked ~ .power-tab-list label[for="power-season-2024-25"] {
+      background: var(--active);
+      border-color: var(--active);
+      color: #ffffff;
+    }
+    #power-season-2025-26:checked ~ #power-panel-2025-26,
+    #power-season-2024-25:checked ~ #power-panel-2024-25 {
+      display: block;
+    }
+    .recaps-page {
+      margin-top: 18px;
+    }
+    .recap-controls {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 22px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .recap-season-tabs,
+    .recap-filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .recap-tab-button,
+    .recap-filter-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .recap-tab-button span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+    .recap-tab-button.is-active,
+    .recap-filter-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .recap-tab-button.is-active span {
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .recap-search-label {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+    .recap-search-input {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+    }
+    .recap-count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+    .recap-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .recap-card {
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    .recap-card[data-kind="league"] {
+      border-left-color: #16a34a;
+    }
+    .recap-card[data-kind="cup"] {
+      border-left-color: #0284c7;
+    }
+    .recap-card[data-kind="mixed"] {
+      border-left-color: #ea580c;
+    }
+    .recap-card.is-hidden {
+      display: none;
+    }
+    .recap-card details {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .recap-card details[open] {
+      box-shadow: none;
+    }
+    .recap-card summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 16px;
+      background: var(--paper);
+    }
+    .recap-card details[open] summary {
+      background: var(--soft);
+    }
+    .recap-summary-main {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+    .recap-kicker {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .recap-title {
+      color: var(--ink);
+      font-size: 1.02rem;
+      font-weight: 850;
+      line-height: 1.25;
+    }
+    .recap-description {
+      color: var(--tab-ink);
+      font-size: 0.92rem;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+    .recap-summary-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+    .recap-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft-3);
+      color: var(--tab-ink);
+      font-size: 0.78rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .recap-badge-cup {
+      border-color: #bae6fd;
+      background: #e0f2fe;
+      color: #075985;
+    }
+    .recap-badge-mixed {
+      border-color: #fed7aa;
+      background: #ffedd5;
+      color: #9a3412;
+    }
+    .recap-badge-league {
+      border-color: #bbf7d0;
+      background: #dcfce7;
+      color: #166534;
+    }
+    html[data-theme="dark"] .recap-badge-cup {
+      border-color: #164e63;
+      background: #0e2f3f;
+      color: #bae6fd;
+    }
+    html[data-theme="dark"] .recap-badge-mixed {
+      border-color: #7c2d12;
+      background: #3b2415;
+      color: #fed7aa;
+    }
+    html[data-theme="dark"] .recap-badge-league {
+      border-color: #166534;
+      background: #12351f;
+      color: #bbf7d0;
+    }
+    .recap-body {
+      padding: 16px 18px 20px;
+      border-top: 1px solid var(--line);
+    }
+    .recap-body p {
+      margin: 0 0 13px;
+      font-size: 0.98rem;
+      line-height: 1.62;
+    }
+    .recap-body p:last-child {
+      margin-bottom: 0;
+    }
+    .recap-meta-line {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+    .trades-page {
+      margin-top: 18px;
+    }
+    .trade-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .trade-stat {
+      display: grid;
+      gap: 4px;
+      min-height: 92px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .trade-stat span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    .trade-stat strong {
+      color: var(--ink);
+      font-size: 1.32rem;
+      line-height: 1.1;
+    }
+    .trade-stat em {
+      color: var(--tab-ink);
+      font-style: normal;
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .trade-controls {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 22px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .trade-season-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .trade-tab-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .trade-tab-button span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+    .trade-tab-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .trade-tab-button.is-active span {
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .trade-filter-label {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+    .trade-manager-select,
+    .trade-search-input {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+    }
+    .trade-count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+    .trade-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .trade-card {
+      border: 1px solid var(--line);
+      border-left: 6px solid #0b7a75;
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    .trade-card.is-hidden {
+      display: none;
+    }
+    .trade-card details {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .trade-card details[open] {
+      box-shadow: none;
+    }
+    .trade-card summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 16px;
+      background: var(--paper);
+    }
+    .trade-card details[open] summary {
+      background: var(--soft);
+    }
+    .trade-summary-main {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+    .trade-kicker {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .trade-title {
+      color: var(--ink);
+      font-size: 1.02rem;
+      font-weight: 850;
+      line-height: 1.25;
+    }
+    .trade-description {
+      color: var(--tab-ink);
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .trade-summary-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+    .trade-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft-3);
+      color: var(--tab-ink);
+      font-size: 0.78rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .trade-badge-pick {
+      border-color: #fed7aa;
+      background: #ffedd5;
+      color: #9a3412;
+    }
+    html[data-theme="dark"] .trade-badge-pick {
+      border-color: #7c2d12;
+      background: #3b2415;
+      color: #fed7aa;
+    }
+    .trade-body {
+      padding: 16px 18px 20px;
+      border-top: 1px solid var(--line);
+    }
+    .trade-side-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .trade-side {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .trade-side strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 0.88rem;
+    }
+    .trade-side p,
+    .trade-note {
+      margin: 0;
+      font-size: 0.94rem;
+      line-height: 1.48;
+    }
+    .trade-note {
+      margin-top: 12px;
+      color: var(--tab-ink);
+    }
+    strong {
+      color: var(--accent-2);
+    }
+    @media (max-width: 760px) {
+      body {
+        background: var(--paper);
+      }
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 14px 12px 28px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.08;
+      }
+      h2 {
+        margin-top: 24px;
+        font-size: 1.25rem;
+      }
+      summary {
+        min-height: 48px;
+        padding: 13px 14px;
+      }
+      summary h2 {
+        font-size: 1.02rem;
+      }
+      details {
+        margin: 12px 0;
+        border-radius: 8px;
+      }
+      details > details,
+      details.position-group {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      details > p,
+      details > ul,
+      details > h3,
+      details > .table-wrap,
+      details > .rating-chart-wrap,
+      details > .power-tabs {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .power-tab-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .recap-season-tabs,
+      .recap-filter-tabs,
+      .trade-season-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .recap-tab-button,
+      .recap-filter-button,
+      .trade-tab-button {
+        width: 100%;
+        min-height: 42px;
+      }
+      .recap-card summary {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .recap-summary-meta {
+        justify-content: flex-start;
+      }
+      .trade-stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .trade-card summary {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .trade-summary-meta {
+        justify-content: flex-start;
+      }
+      .power-tab-panel > h3,
+      .power-tab-panel > p,
+      .power-tab-panel > .table-wrap,
+      .power-tab-panel > .rating-chart-wrap {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .season-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .season-tab {
+        justify-content: center;
+        min-height: 42px;
+      }
+      .toolbar {
+        flex-wrap: nowrap;
+        gap: 8px;
+        margin: 12px 0 18px;
+        padding: 9px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+      }
+      .toolbar a {
+        flex: 0 0 auto;
+        min-height: 38px;
+        white-space: nowrap;
+      }
+      .table-wrap {
+        overflow: visible;
+        border: 0;
+        border-radius: 0;
+      }
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+        width: 100%;
+      }
+      table {
+        min-width: 0;
+        font-size: 0.92rem;
+      }
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      tbody {
+        display: grid;
+        gap: 10px;
+      }
+      tr {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+        overflow: hidden;
+      }
+      @supports (content-visibility: auto) {
+        tbody > tr {
+          content-visibility: auto;
+          contain-intrinsic-size: auto 96px;
+        }
+      }
+      tr:nth-child(even) td {
+        background: transparent;
+      }
+      tr.cup-eliminated-row td,
+      tr:nth-child(even).cup-eliminated-row td {
+        background: #fee2e2;
+        color: #7f1d1d;
+      }
+      html[data-theme="dark"] tr.cup-eliminated-row td,
+      html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
+        background: #4c1d24;
+        color: #fecdd3;
+      }
+      tr.belt-winner-row {
+        background: var(--belt-bg);
+        border-left: 6px solid var(--belt-accent);
+      }
+      html[data-theme="dark"] tr.belt-winner-row {
+        background: var(--belt-bg-dark);
+      }
+      tr.belt-winner-row td,
+      tr:nth-child(even).belt-winner-row td {
+        background: transparent;
+      }
+      tr.belt-winner-row td:first-child {
+        border-left: 0;
+      }
+      tr.belt-winner-row td:last-child {
+        box-shadow: none;
+      }
+      td,
+      td:nth-child(n+3),
+      .belt-path-table td:nth-child(n+3),
+      .belt-path-table td:first-child,
+      .belt-path-table td:nth-child(4) {
+        display: grid;
+        grid-template-columns: minmax(96px, 42%) minmax(0, 1fr);
+        gap: 12px;
+        align-items: start;
+        padding: 9px 10px;
+        text-align: right;
+        border-bottom: 1px solid var(--line);
+        font-variant-numeric: tabular-nums;
+      }
+      td:last-child {
+        border-bottom: 0;
+      }
+      td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 750;
+        text-align: left;
+      }
+      code {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="season-tabs" aria-label="Season reports">
+      <a class="season-tab" href="../2025-2026/">2025-2026</a>
+<a class="season-tab" href="../2024-2025/">2024-2025</a>
+<a class="season-tab" href="../all-time/">All-Time</a>
+<a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
+<a class="season-tab" href="../power-rankings/">Power Rankings</a>
+<a class="season-tab" href="../cup-history/">Cup History</a>
+<a class="season-tab" href="../trophy-cabinet/">Trophy Cabinet</a>
+<a class="season-tab" href="../recaps/">Recaps</a>
+<a class="season-tab active" href="../trades/">Trades</a>
+      <label class="theme-switch">
+        <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
+        <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
+        <span class="theme-switch-label">Dark mode</span>
+      </label>
+    </nav>
+    <div class="toolbar" aria-label="Report files">
+      <a href="../data/analysis/trades/league_report.md">Raw Markdown</a>
+<a href="../data/analysis/trades/trades.csv">Trade Ledger CSV</a>
+<a href="../data/analysis/trades/manager_trade_summary.csv">Manager Summary CSV</a>
+<a href="../data/analysis/trades/trade_partner_summary.csv">Partner Summary CSV</a>
+<a href="../data/analysis/trades/season_trade_summary.csv">Season Summary CSV</a>
+    </div>
+    <h1>BMS FPL Trade Ledger</h1>
+<p>A searchable ledger of player, pick, and conditional trades from the league workbook.</p>
+<section class="trades-page" data-trades-page>
+<div class="trade-stat-grid">
+<div class="trade-stat"><span>Total trades</span><strong>48</strong></div>
+<div class="trade-stat"><span>Most active trader</span><strong>Levi</strong><em>33 trades</em></div>
+<div class="trade-stat"><span>Pick/condition trades</span><strong>38</strong></div>
+<div class="trade-stat"><span>Biggest trade</span><strong>13 assets</strong><em>Levi &lt;-&gt; Chabo</em></div>
+</div>
+<div class="trade-controls">
+<div class="trade-season-tabs" aria-label="Trade seasons">
+<button type="button" class="trade-tab-button is-active" data-trade-season-button="2025-26" aria-pressed="true">2025-26 <span>14</span></button>
+<button type="button" class="trade-tab-button" data-trade-season-button="2024-25" aria-pressed="false">2024-25 <span>34</span></button>
+</div>
+<label class="trade-filter-label" for="trade-manager">Manager</label>
+<select id="trade-manager" class="trade-manager-select" data-trade-manager>
+<option value="all">All managers</option>
+<option value="chabo">Chabo</option>
+<option value="donny">Donny</option>
+<option value="drake">Drake</option>
+<option value="dylan">Dylan</option>
+<option value="ethan">Ethan</option>
+<option value="house/haydo">House/Haydo</option>
+<option value="julius">Julius</option>
+<option value="justin">Justin</option>
+<option value="levi">Levi</option>
+<option value="luke">Luke</option>
+</select>
+<label class="trade-filter-label" for="trade-search">Search trades</label>
+<input id="trade-search" class="trade-search-input" type="search" placeholder="Search player, manager, pick, condition..." autocomplete="off" data-trade-search>
+<div class="trade-count" data-trade-count></div>
+</div>
+<div class="trade-list" data-trade-list>
+<article class="trade-card" data-season="2025-26" data-managers="donny|dylan" data-search="2025-26 draft day draft day donny, dylan donny sent 2026 10th rounder (via donny), 2026 12th rounder (via donny); dylan sent 9th round (1st)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | Draft Day | Draft Day</span>
+<span class="trade-title">Donny &lt;-&gt; Dylan</span>
+<span class="trade-description">Donny sent 2026 10th rounder (via Donny), 2026 12th rounder (via Donny); Dylan sent 9th Round (1st)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>2026 10th rounder (via Donny), 2026 12th rounder (via Donny)</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>9th Round (1st)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="donny|ethan" data-search="2025-26 preseason preseason donny, ethan donny sent mamardashvili (liv); ethan sent 10th rounder (via ethan), vicario (tot)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | Preseason | Preseason</span>
+<span class="trade-title">Donny &lt;-&gt; Ethan</span>
+<span class="trade-description">Donny sent Mamardashvili (LIV); Ethan sent 10th Rounder (via Ethan), Vicario (TOT)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Mamardashvili (LIV)</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>10th Rounder (via Ethan), Vicario (TOT)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|julius" data-search="2025-26 preseason preseason levi, julius levi sent sesko (mu), gyokeres (ars), wirtz (liv); julius sent salah (liv), isak (new)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | Preseason | Preseason</span>
+<span class="trade-title">Levi &lt;-&gt; Julius</span>
+<span class="trade-description">Levi sent Sesko (MU), Gyokeres (ARS), Wirtz (LIV); Julius sent Salah (LIV), Isak (NEW)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">5 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Sesko (MU), Gyokeres (ARS), Wirtz (LIV)</p></div>
+<div class="trade-side"><strong>Julius sent</strong><p>Salah (LIV), Isak (NEW)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|justin" data-search="2025-26 preseason preseason levi, justin levi sent isak (new), flemming (bur); justin sent watkins (avl), wissa (bre)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | Preseason | Preseason</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Isak (NEW), Flemming (BUR); Justin sent Watkins (AVL), Wissa (BRE)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Isak (NEW), Flemming (BUR)</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>Watkins (AVL), Wissa (BRE)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|luke" data-search="2025-26 gw 10 in-season levi, luke levi sent simons (tot); luke sent cullen (bur), 12th-rd pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 10 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Luke</span>
+<span class="trade-description">Levi sent Simons (TOT); Luke sent Cullen (BUR), 12th-Rd Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Simons (TOT)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>Cullen (BUR), 12th-Rd Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="donny|ethan" data-search="2025-26 gw 22 in-season donny, ethan donny sent kushannov (mci), 6th rounder; ethan sent timber (ars)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 22 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Ethan</span>
+<span class="trade-description">Donny sent Kushannov (MCI), 6th rounder; Ethan sent Timber (ARS)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Kushannov (MCI), 6th rounder</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Timber (ARS)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|ethan" data-search="2025-26 gw 24 in-season levi, ethan levi sent damsgaard (bre), 4th rounder; ethan sent mbuemo (mu)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 24 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Ethan</span>
+<span class="trade-description">Levi sent Damsgaard (BRE), 4th rounder; Ethan sent Mbuemo (MU)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Damsgaard (BRE), 4th rounder</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Mbuemo (MU)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|justin" data-search="2025-26 gw 26 in-season levi, justin levi sent wissa (new); justin sent pablo (whu), 2026 7th-rd. pick, 2027 6th-rd. pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 26 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-Rd. Pick, 2027 6th-Rd. Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Wissa (NEW)</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>Pablo (WHU), 2026 7th-Rd. Pick, 2027 6th-Rd. Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|justin" data-search="2025-26 gw 31 in-season levi, justin levi sent havertz (ars), watkins (avl); justin sent 2027 5th-rd. pick, matching players to be dropped">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-Rd. Pick, matching players to be dropped</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Havertz (ARS), Watkins (AVL)</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>2027 5th-Rd. Pick, matching players to be dropped</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|luke" data-search="2025-26 gw 31 in-season levi, luke levi sent konate (liv), salah (liv), summerville (whu), armstrong (wol); luke sent 2026 7th-rd. pick, matching players to be dropped">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Luke</span>
+<span class="trade-description">Levi sent Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL); Luke sent 2026 7th-Rd. Pick, matching players to be dropped</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">6 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>2026 7th-Rd. Pick, matching players to be dropped</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|luke" data-search="2025-26 gw 31 in-season levi, luke levi sent mbuemo (mu); luke sent 2026 3rd-rd. pick, matching players to be dropped">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Luke</span>
+<span class="trade-description">Levi sent Mbuemo (MU); Luke sent 2026 3rd-Rd. Pick, matching players to be dropped</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Mbuemo (MU)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>2026 3rd-Rd. Pick, matching players to be dropped</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="levi|justin" data-search="2025-26 gw 31 in-season levi, justin levi sent o&#x27;reilly (mc); justin sent 2026 8th-rd. pick, matching players to be dropped">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent O&#x27;Reilly (MC); Justin sent 2026 8th-Rd. Pick, matching players to be dropped</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>O&#x27;Reilly (MC)</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>2026 8th-Rd. Pick, matching players to be dropped</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="julius|justin" data-search="2025-26 gw 31 in-season julius, justin julius sent garner (eve); justin sent 2026 6th-rd. pick, joão gomes (wol)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-title">Julius &lt;-&gt; Justin</span>
+<span class="trade-description">Julius sent Garner (EVE); Justin sent 2026 6th-Rd. Pick, João Gomes (WOL)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Julius sent</strong><p>Garner (EVE)</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>2026 6th-Rd. Pick, João Gomes (WOL)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2025-26" data-managers="julius|donny" data-search="2025-26 gw 32 in-season julius, donny julius sent calvert-lewin (lee); donny sent 2026 9th-rd. pick, muniz (ful)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2025-26 | GW 32 | In-season</span>
+<span class="trade-title">Julius &lt;-&gt; Donny</span>
+<span class="trade-description">Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-Rd. Pick, Muniz (FUL)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Julius sent</strong><p>Calvert-Lewin (LEE)</p></div>
+<div class="trade-side"><strong>Donny sent</strong><p>2026 9th-Rd. Pick, Muniz (FUL)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|julius" data-search="2024-25 gw 1 in-season levi, julius levi sent onana (mun), estupinan (bha), wissa (bre); julius sent raya (ars), gabriel (ars), welbeck (bha)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 1 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Julius</span>
+<span class="trade-description">Levi sent Onana (MUN), Estupinan (BHA), Wissa (BRE); Julius sent Raya (ARS), Gabriel (ARS), Welbeck (BHA)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">6 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Onana (MUN), Estupinan (BHA), Wissa (BRE)</p></div>
+<div class="trade-side"><strong>Julius sent</strong><p>Raya (ARS), Gabriel (ARS), Welbeck (BHA)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|chabo" data-search="2024-25 gw 1 in-season levi, chabo levi sent pope (new), romero (tot), quansah (liv), van de ven (tot), semenyo (bou), welbeck (bha); chabo sent ortega moreno (mci), white (ars), munoz (cry), cancelo (mci), sterling (che), j. alvarez (mci), 2024 4th round pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 1 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Chabo</span>
+<span class="trade-description">Levi sent Pope (NEW), Romero (TOT), Quansah (LIV), Van de Ven (TOT), Semenyo (BOU), Welbeck (BHA); Chabo sent Ortega Moreno (MCI), White (ARS), Munoz (CRY), Cancelo (MCI), Sterling (CHE), J. Alvarez (MCI), 2024 4th Round Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">13 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Pope (NEW), Romero (TOT), Quansah (LIV), Van de Ven (TOT), Semenyo (BOU), Welbeck (BHA)</p></div>
+<div class="trade-side"><strong>Chabo sent</strong><p>Ortega Moreno (MCI), White (ARS), Munoz (CRY), Cancelo (MCI), Sterling (CHE), J. Alvarez (MCI), 2024 4th Round Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|ethan" data-search="2024-25 gw 3 in-season levi, ethan levi sent kudus (whu); ethan sent rashford (mun), 2024 4th round pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 3 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Ethan</span>
+<span class="trade-description">Levi sent Kudus (WHU); Ethan sent Rashford (MUN), 2024 4th Round Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Kudus (WHU)</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Rashford (MUN), 2024 4th Round Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|justin" data-search="2024-25 gw 4 in-season levi, justin levi sent nketiah (cp), barnes (new), bowen (whu), lewis (mc); justin sent havertz (ars), gundogan (mc), andreas (ful), zabarnyi (bou), 2024 5th round pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 4 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Nketiah (CP), Barnes (NEW), Bowen (WHU), Lewis (MC); Justin sent Havertz (ARS), Gundogan (MC), Andreas (FUL), Zabarnyi (BOU), 2024 5th Round Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">9 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Nketiah (CP), Barnes (NEW), Bowen (WHU), Lewis (MC)</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>Havertz (ARS), Gundogan (MC), Andreas (FUL), Zabarnyi (BOU), 2024 5th Round Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|luke" data-search="2024-25 gw 4 in-season levi, luke levi sent armstrong (sou), ramsdale (sou), gundogan (mc); luke sent toney (n/a), dubravka (new), onana (avl)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 4 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Luke</span>
+<span class="trade-description">Levi sent Armstrong (SOU), Ramsdale (SOU), Gundogan (MC); Luke sent Toney (N/A), Dubravka (NEW), Onana (AVL)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">6 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Armstrong (SOU), Ramsdale (SOU), Gundogan (MC)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>Toney (N/A), Dubravka (NEW), Onana (AVL)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|house/haydo" data-search="2024-25 gw 4 in-season levi, house/haydo levi sent tavernier (bou), livramento (new); house/haydo sent trossard (ars), veltman (bha)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 4 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; House/Haydo</span>
+<span class="trade-description">Levi sent Tavernier (BOU), Livramento (NEW); House/Haydo sent Trossard (ARS), Veltman (BHA)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Tavernier (BOU), Livramento (NEW)</p></div>
+<div class="trade-side"><strong>House/Haydo sent</strong><p>Trossard (ARS), Veltman (BHA)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|drake" data-search="2024-25 gw 5 in-season levi, drake levi sent johnstone (wol), munoz (cp), andeas (ful), onana (avl); drake sent sa (wol), trippier (new), rice (ars), mainoo (mu), 2024 4th-rd. pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 5 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Drake</span>
+<span class="trade-description">Levi sent Johnstone (WOL), Munoz (CP), Andeas (FUL), Onana (AVL); Drake sent Sa (WOL), Trippier (NEW), Rice (ARS), Mainoo (MU), 2024 4th-Rd. Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">9 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Johnstone (WOL), Munoz (CP), Andeas (FUL), Onana (AVL)</p></div>
+<div class="trade-side"><strong>Drake sent</strong><p>Sa (WOL), Trippier (NEW), Rice (ARS), Mainoo (MU), 2024 4th-Rd. Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|chabo" data-search="2024-25 gw 10 in-season donny, chabo donny sent flekken (bre), udogie (tot); chabo sent pope (new), maatsen (avl)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 10 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Chabo</span>
+<span class="trade-description">Donny sent Flekken (BRE), Udogie (TOT); Chabo sent Pope (NEW), Maatsen (AVL)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Flekken (BRE), Udogie (TOT)</p></div>
+<div class="trade-side"><strong>Chabo sent</strong><p>Pope (NEW), Maatsen (AVL)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|luke" data-search="2024-25 gw 13 in-season levi, luke levi sent raya (ars), gabriel (ars), hudson-odoi (not), mcneil (eve), damsgaard (bre), havertz (ars), 3-5th round picks for 2025 (3rd conditional, converys to 6th if no trophies won for levi); luke sent sels (not), bassey (ful), janelt (bre), savio (mc), palmer (che), archer (sou)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 13 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Luke</span>
+<span class="trade-description">Levi sent Raya (ARS), Gabriel (ARS), Hudson-Odoi (NOT), McNeil (EVE), Damsgaard (BRE), Havertz (ARS), 3-5th round picks for 2025 (3rd conditional, converys to 6th if no trophies won for Levi); Luke sent Sels (NOT), Bassey (FUL), Janelt (BRE), Savio (MC), Palmer (CHE), Archer (SOU)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">13 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Raya (ARS), Gabriel (ARS), Hudson-Odoi (NOT), McNeil (EVE), Damsgaard (BRE), Havertz (ARS), 3-5th round picks for 2025 (3rd conditional, converys to 6th if no trophies won for Levi)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>Sels (NOT), Bassey (FUL), Janelt (BRE), Savio (MC), Palmer (CHE), Archer (SOU)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|julius" data-search="2024-25 gw 14 in-season levi, julius levi sent hojlund (mu), paqueta (whu), davis (ips); julius sent antonio (whu), newcastle (new), estupinan (bha) - 2025 5th rd. pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 14 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Julius</span>
+<span class="trade-description">Levi sent Hojlund (MU), Paqueta (WHU), Davis (IPS); Julius sent Antonio (WHU), Newcastle (NEW), Estupinan (BHA) - 2025 5th Rd. Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">6 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Hojlund (MU), Paqueta (WHU), Davis (IPS)</p></div>
+<div class="trade-side"><strong>Julius sent</strong><p>Antonio (WHU), Newcastle (NEW), Estupinan (BHA) - 2025 5th Rd. Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|dylan" data-search="2024-25 gw 14 in-season levi, dylan levi sent enzo (che), fullkrug (whu); dylan sent doku (mc), muniz (ful), 5th-rd. pick 2025">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 14 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Dylan</span>
+<span class="trade-description">Levi sent Enzo (CHE), Fullkrug (WHU); Dylan sent Doku (MC), Muniz (FUL), 5th-Rd. pick 2025</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">5 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Enzo (CHE), Fullkrug (WHU)</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>Doku (MC), Muniz (FUL), 5th-Rd. pick 2025</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|dylan" data-search="2024-25 gw 16 in-season donny, dylan donny sent smith rowe (ful), pope (new), 4th round pick; dylan sent son (tot), kelleher (liv)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 16 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Dylan</span>
+<span class="trade-description">Donny sent Smith Rowe (FUL), Pope (NEW), 4th round pick; Dylan sent Son (TOT), Kelleher (LIV)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">5 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Smith Rowe (FUL), Pope (NEW), 4th round pick</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>Son (TOT), Kelleher (LIV)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|luke" data-search="2024-25 gw 16 in-season donny, luke donny sent hermansen (lei), mitoma (bha); luke sent becker (liv), mcneil (eve)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 16 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Luke</span>
+<span class="trade-description">Donny sent Hermansen (LEI), Mitoma (BHA); Luke sent Becker (LIV), McNeil (EVE)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Hermansen (LEI), Mitoma (BHA)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>Becker (LIV), McNeil (EVE)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|ethan" data-search="2024-25 gw 18 in-season levi, ethan levi sent ortega moreno (mc), hall (new), sarr (cp), 8th rounder; ethan sent vicario (tot), de ligt (mu), jones (liv), 3rd-round pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 18 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Ethan</span>
+<span class="trade-description">Levi sent Ortega Moreno (MC), Hall (NEW), Sarr (CP), 8th rounder; Ethan sent Vicario (TOT), de Ligt (MU), Jones (LIV), 3rd-round pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">8 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Ortega Moreno (MC), Hall (NEW), Sarr (CP), 8th rounder</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Vicario (TOT), de Ligt (MU), Jones (LIV), 3rd-round pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|justin" data-search="2024-25 gw 18 in-season levi, justin levi sent sels (not), livramento (new), colwill (che), kluivert (bou), 7th rounder, remove restrictions on previously traded nketiah pick; justin sent fabianksi (whu), tsimikas (liv), castangne (ful), barnes (new), 4th rounder">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 18 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Sels (NOT), Livramento (NEW), Colwill (CHE), Kluivert (BOU), 7th rounder, remove restrictions on previously traded Nketiah pick; Justin sent Fabianksi (WHU), Tsimikas (LIV), Castangne (FUL), Barnes (NEW), 4th rounder</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">11 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Sels (NOT), Livramento (NEW), Colwill (CHE), Kluivert (BOU), 7th rounder, remove restrictions on previously traded Nketiah pick</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>Fabianksi (WHU), Tsimikas (LIV), Castangne (FUL), Barnes (NEW), 4th rounder</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|chabo" data-search="2024-25 gw 23 in-season donny, chabo donny sent ake (mci), 5th round pick; chabo sent aina (nfo)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 23 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Chabo</span>
+<span class="trade-description">Donny sent Ake (MCI), 5th round pick; Chabo sent Aina (NFO)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Ake (MCI), 5th round pick</p></div>
+<div class="trade-side"><strong>Chabo sent</strong><p>Aina (NFO)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|house/haydo" data-search="2024-25 gw 24 in-season levi, house/haydo levi sent williams (not), dango (bou), ndiaye (eve), 9th-rd. pick; house/haydo sent young (eve), wilson (ful), archer (sou), 3rd-round pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 24 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; House/Haydo</span>
+<span class="trade-description">Levi sent Williams (NOT), Dango (BOU), Ndiaye (EVE), 9th-Rd. Pick; House/Haydo sent Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">8 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Williams (NOT), Dango (BOU), Ndiaye (EVE), 9th-Rd. Pick</p></div>
+<div class="trade-side"><strong>House/Haydo sent</strong><p>Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="justin|julius" data-search="2024-25 gw 24 in-season justin, julius justin sent maddison (tot), 3rd-round pick; julius sent salah (liv) julius gets keeper swap option at end of season (he picks one of justin&#x27;s keepers and justin picks one of his). optional, but up to julius to exercise option.">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 24 | In-season</span>
+<span class="trade-title">Justin &lt;-&gt; Julius</span>
+<span class="trade-description">Justin sent Maddison (TOT), 3rd-round pick; Julius sent Salah (LIV)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Justin sent</strong><p>Maddison (TOT), 3rd-round pick</p></div>
+<div class="trade-side"><strong>Julius sent</strong><p>Salah (LIV)</p></div>
+</div>
+<p class="trade-note"><strong>Note:</strong> Julius gets keeper swap option at end of season (he picks one of Justin&#x27;s keepers and Justin picks one of his). Optional, but up to Julius to exercise option.</p>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|levi" data-search="2024-25 gw 27 in-season donny, levi donny sent mbuemo (bre), son (tot), taa (liv), 7th; levi sent white (ars), merino (ars), rice (ars), 3rd, 4th, 4th, 5th">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 27 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Levi</span>
+<span class="trade-description">Donny sent Mbuemo (BRE), Son (TOT), TAA (LIV), 7th; Levi sent White (ARS), Merino (ARS), Rice (ARS), 3rd, 4th, 4th, 5th</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">11 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Mbuemo (BRE), Son (TOT), TAA (LIV), 7th</p></div>
+<div class="trade-side"><strong>Levi sent</strong><p>White (ARS), Merino (ARS), Rice (ARS), 3rd, 4th, 4th, 5th</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|drake" data-search="2024-25 gw 27 in-season levi, drake levi sent rashford (avl), de ligt (mu), 4th-rd. pick; drake sent diaz (liv), konsa (avl)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 27 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Drake</span>
+<span class="trade-description">Levi sent Rashford (AVL), de Ligt (MU), 4th-Rd. Pick; Drake sent Diaz (LIV), Konsa (AVL)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">5 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Rashford (AVL), de Ligt (MU), 4th-Rd. Pick</p></div>
+<div class="trade-side"><strong>Drake sent</strong><p>Diaz (LIV), Konsa (AVL)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|dylan" data-search="2024-25 gw 28 in-season donny, dylan donny sent merino (ars), white (ars), 6th, 9th; dylan sent neto (che), porro (tot)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 28 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Dylan</span>
+<span class="trade-description">Donny sent Merino (ARS), White (ARS), 6th, 9th; Dylan sent Neto (CHE), Porro (TOT)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">6 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Merino (ARS), White (ARS), 6th, 9th</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>Neto (CHE), Porro (TOT)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|ethan" data-search="2024-25 gw 28 in-season levi, ethan levi sent armstrong (sou), 7th-rd. pick; ethan sent pedro (bha)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 28 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Ethan</span>
+<span class="trade-description">Levi sent Armstrong (SOU), 7th-Rd. Pick; Ethan sent Pedro (BHA)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Armstrong (SOU), 7th-Rd. Pick</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Pedro (BHA)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|chabo" data-search="2024-25 gw 30 in-season levi, chabo levi sent son (tot); chabo sent minteh (bha), 6th-rd. pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 30 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Chabo</span>
+<span class="trade-description">Levi sent Son (TOT); Chabo sent Minteh (BHA), 6th-Rd. Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Son (TOT)</p></div>
+<div class="trade-side"><strong>Chabo sent</strong><p>Minteh (BHA), 6th-Rd. Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|dylan" data-search="2024-25 gw 30 in-season levi, dylan levi sent minteh (bha), 6th-rd. pick; dylan sent merino (ars)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 30 | In-season</span>
+<span class="trade-title">Levi &lt;-&gt; Dylan</span>
+<span class="trade-description">Levi sent Minteh (BHA), 6th-Rd. Pick; Dylan sent Merino (ARS)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Minteh (BHA), 6th-Rd. Pick</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>Merino (ARS)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="donny|ethan" data-search="2024-25 gw 30 in-season donny, ethan donny sent daka (lei), 4th round pick (5th if doesn&#x27;t donny win league); ethan sent evanilson (bou)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | GW 30 | In-season</span>
+<span class="trade-title">Donny &lt;-&gt; Ethan</span>
+<span class="trade-description">Donny sent Daka (LEI), 4th round pick (5th if doesn&#x27;t Donny win league); Ethan sent Evanilson (BOU)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Daka (LEI), 4th round pick (5th if doesn&#x27;t Donny win league)</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Evanilson (BOU)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|luke" data-search="2024-25 postseason postseason levi, luke levi sent diaz (liv), amad (mu), conditional 5th-rd. picks (3) if diaz leaves the prem before draft; luke sent marmoush (mc), 8th-rd. pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Levi &lt;-&gt; Luke</span>
+<span class="trade-description">Levi sent Diaz (LIV), Amad (MU), Conditional 5th-Rd. Picks (3) if Diaz leaves the Prem before draft; Luke sent Marmoush (MC), 8th-Rd. Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">5 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Diaz (LIV), Amad (MU), Conditional 5th-Rd. Picks (3) if Diaz leaves the Prem before draft</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>Marmoush (MC), 8th-Rd. Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|ethan" data-search="2024-25 postseason postseason levi, ethan levi sent mbeumo (bre), marmoush (mc); ethan sent isak (new)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Levi &lt;-&gt; Ethan</span>
+<span class="trade-description">Levi sent Mbeumo (BRE), Marmoush (MC); Ethan sent Isak (NEW)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Mbeumo (BRE), Marmoush (MC)</p></div>
+<div class="trade-side"><strong>Ethan sent</strong><p>Isak (NEW)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|julius" data-search="2024-25 postseason postseason levi, julius levi sent 3rd rd. pick (5th), 3rd rd. pick (9th); julius sent isak (new)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Levi &lt;-&gt; Julius</span>
+<span class="trade-description">Levi sent 3rd Rd. Pick (5th), 3rd Rd. Pick (9th); Julius sent Isak (NEW)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>3rd Rd. Pick (5th), 3rd Rd. Pick (9th)</p></div>
+<div class="trade-side"><strong>Julius sent</strong><p>Isak (NEW)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="justin|dylan" data-search="2024-25 postseason postseason justin, dylan justin sent bowen (whu); dylan sent 6th rd. pick (1st)">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Justin &lt;-&gt; Dylan</span>
+<span class="trade-description">Justin sent Bowen (WHU); Dylan sent 6th Rd. Pick (1st)</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">2 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Justin sent</strong><p>Bowen (WHU)</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>6th Rd. Pick (1st)</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|luke|house/haydo" data-search="2024-25 postseason postseason levi, luke, house/haydo levi sent 5th-rd. (1st), 10th-rd. (7th), 11th-rd. (7th); luke sent 7th-rd. (5th); house/haydo sent wood (nf), 2026 5th-rd.">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Levi &lt;-&gt; Luke &lt;-&gt; House/Haydo</span>
+<span class="trade-description">Levi sent 5th-Rd. (1st), 10th-Rd. (7th), 11th-Rd. (7th); Luke sent 7th-Rd. (5th); House/Haydo sent Wood (NF), 2026 5th-Rd.</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">3 teams</span><span class="trade-badge">6 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>5th-Rd. (1st), 10th-Rd. (7th), 11th-Rd. (7th)</p></div>
+<div class="trade-side"><strong>Luke sent</strong><p>7th-Rd. (5th)</p></div>
+<div class="trade-side"><strong>House/Haydo sent</strong><p>Wood (NF), 2026 5th-Rd.</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|dylan" data-search="2024-25 postseason postseason levi, dylan levi sent 3rd-rd. (5th), 3rd-rd. (9th), 5th-rd. (5th), 5th-rd. (9th), 2026 3rd-rd, 2026 5th-rd.; dylan sent 3rd rd. (1st), 11th-rd, 12th-rd, 13th-rd, 14th-rd, 15th-rd">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Levi &lt;-&gt; Dylan</span>
+<span class="trade-description">Levi sent 3rd-Rd. (5th), 3rd-Rd. (9th), 5th-Rd. (5th), 5th-Rd. (9th), 2026 3rd-Rd, 2026 5th-Rd.; Dylan sent 3rd Rd. (1st), 11th-Rd, 12th-Rd, 13th-Rd, 14th-Rd, 15th-Rd</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">12 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>3rd-Rd. (5th), 3rd-Rd. (9th), 5th-Rd. (5th), 5th-Rd. (9th), 2026 3rd-Rd, 2026 5th-Rd.</p></div>
+<div class="trade-side"><strong>Dylan sent</strong><p>3rd Rd. (1st), 11th-Rd, 12th-Rd, 13th-Rd, 14th-Rd, 15th-Rd</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="drake|donny" data-search="2024-25 postseason postseason drake, donny drake sent 4th rd (2nd); donny sent 2026 4th, 2026 8th">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Drake &lt;-&gt; Donny</span>
+<span class="trade-description">Drake sent 4th Rd (2nd); Donny sent 2026 4th, 2026 8th</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Drake sent</strong><p>4th Rd (2nd)</p></div>
+<div class="trade-side"><strong>Donny sent</strong><p>2026 4th, 2026 8th</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="justin|chabo" data-search="2024-25 postseason postseason justin, chabo justin sent rogers (avl); chabo sent 8th-rd. pick">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Justin &lt;-&gt; Chabo</span>
+<span class="trade-description">Justin sent Rogers (AVL); Chabo sent 8th-Rd. Pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">2 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Justin sent</strong><p>Rogers (AVL)</p></div>
+<div class="trade-side"><strong>Chabo sent</strong><p>8th-Rd. Pick</p></div>
+</div>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2024-25" data-managers="levi|house/haydo" data-search="2024-25 postseason postseason levi, house/haydo levi sent 2026 10th-rd. pick; house/haydo sent 2025 12th, 13th, 14th picks">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-title">Levi &lt;-&gt; House/Haydo</span>
+<span class="trade-description">Levi sent 2026 10th-Rd. Pick; House/Haydo sent 2025 12th, 13th, 14th picks</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>2026 10th-Rd. Pick</p></div>
+<div class="trade-side"><strong>House/Haydo sent</strong><p>2025 12th, 13th, 14th picks</p></div>
+</div>
+</div>
+</details>
+</article>
+</div>
+</section>
+<details>
+<summary><h2>Trade Activity Summary</h2></summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Season</th><th>Trades</th><th>Managers</th><th>In-Season</th><th>Postseason</th><th>Preseason/Draft</th><th>Multi-Team</th><th>Pick/Condition Trades</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2025-26</td><td data-label="Trades">14</td><td data-label="Managers">7</td><td data-label="In-Season">10</td><td data-label="Postseason">0</td><td data-label="Preseason/Draft">4</td><td data-label="Multi-Team">0</td><td data-label="Pick/Condition Trades">12</td></tr>
+<tr><td data-label="Season">2024-25</td><td data-label="Trades">34</td><td data-label="Managers">10</td><td data-label="In-Season">25</td><td data-label="Postseason">9</td><td data-label="Preseason/Draft">0</td><td data-label="Multi-Team">1</td><td data-label="Pick/Condition Trades">26</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Manager Trade Summary</h2></summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager</th><th>Trades</th><th>Assets Sent</th><th>Pick/Condition Trades</th><th>Most Common Partner</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Levi</td><td data-label="Trades">33</td><td data-label="Assets Sent">98</td><td data-label="Pick/Condition Trades">26</td><td data-label="Most Common Partner">Luke (7)</td></tr>
+<tr><td data-label="Manager">Donny</td><td data-label="Trades">12</td><td data-label="Assets Sent">28</td><td data-label="Pick/Condition Trades">8</td><td data-label="Most Common Partner">Dylan (3)</td></tr>
+<tr><td data-label="Manager">Justin</td><td data-label="Trades">10</td><td data-label="Assets Sent">25</td><td data-label="Pick/Condition Trades">9</td><td data-label="Most Common Partner">Levi (6)</td></tr>
+<tr><td data-label="Manager">Ethan</td><td data-label="Trades">8</td><td data-label="Assets Sent">13</td><td data-label="Pick/Condition Trades">7</td><td data-label="Most Common Partner">Levi (5)</td></tr>
+<tr><td data-label="Manager">Luke</td><td data-label="Trades">8</td><td data-label="Assets Sent">20</td><td data-label="Pick/Condition Trades">6</td><td data-label="Most Common Partner">Levi (7)</td></tr>
+<tr><td data-label="Manager">Dylan</td><td data-label="Trades">7</td><td data-label="Assets Sent">16</td><td data-label="Pick/Condition Trades">6</td><td data-label="Most Common Partner">Donny (3)</td></tr>
+<tr><td data-label="Manager">Julius</td><td data-label="Trades">7</td><td data-label="Assets Sent">12</td><td data-label="Pick/Condition Trades">5</td><td data-label="Most Common Partner">Levi (4)</td></tr>
+<tr><td data-label="Manager">Chabo</td><td data-label="Trades">5</td><td data-label="Assets Sent">13</td><td data-label="Pick/Condition Trades">4</td><td data-label="Most Common Partner">Levi (2)</td></tr>
+<tr><td data-label="Manager">House/Haydo</td><td data-label="Trades">4</td><td data-label="Assets Sent">11</td><td data-label="Pick/Condition Trades">3</td><td data-label="Most Common Partner">Levi (4)</td></tr>
+<tr><td data-label="Manager">Drake</td><td data-label="Trades">3</td><td data-label="Assets Sent">8</td><td data-label="Pick/Condition Trades">3</td><td data-label="Most Common Partner">Levi (2)</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Most Common Trade Partners</h2></summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager 1</th><th>Manager 2</th><th>Trades</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager 1">Levi</td><td data-label="Manager 2">Luke</td><td data-label="Trades">7</td></tr>
+<tr><td data-label="Manager 1">Justin</td><td data-label="Manager 2">Levi</td><td data-label="Trades">6</td></tr>
+<tr><td data-label="Manager 1">Ethan</td><td data-label="Manager 2">Levi</td><td data-label="Trades">5</td></tr>
+<tr><td data-label="Manager 1">House/Haydo</td><td data-label="Manager 2">Levi</td><td data-label="Trades">4</td></tr>
+<tr><td data-label="Manager 1">Julius</td><td data-label="Manager 2">Levi</td><td data-label="Trades">4</td></tr>
+<tr><td data-label="Manager 1">Donny</td><td data-label="Manager 2">Dylan</td><td data-label="Trades">3</td></tr>
+<tr><td data-label="Manager 1">Donny</td><td data-label="Manager 2">Ethan</td><td data-label="Trades">3</td></tr>
+<tr><td data-label="Manager 1">Dylan</td><td data-label="Manager 2">Levi</td><td data-label="Trades">3</td></tr>
+<tr><td data-label="Manager 1">Chabo</td><td data-label="Manager 2">Donny</td><td data-label="Trades">2</td></tr>
+<tr><td data-label="Manager 1">Chabo</td><td data-label="Manager 2">Levi</td><td data-label="Trades">2</td></tr>
+<tr><td data-label="Manager 1">Drake</td><td data-label="Manager 2">Levi</td><td data-label="Trades">2</td></tr>
+<tr><td data-label="Manager 1">Julius</td><td data-label="Manager 2">Justin</td><td data-label="Trades">2</td></tr>
+<tr><td data-label="Manager 1">Chabo</td><td data-label="Manager 2">Justin</td><td data-label="Trades">1</td></tr>
+<tr><td data-label="Manager 1">Donny</td><td data-label="Manager 2">Drake</td><td data-label="Trades">1</td></tr>
+<tr><td data-label="Manager 1">Donny</td><td data-label="Manager 2">Julius</td><td data-label="Trades">1</td></tr>
+<tr><td data-label="Manager 1">Donny</td><td data-label="Manager 2">Levi</td><td data-label="Trades">1</td></tr>
+<tr><td data-label="Manager 1">Donny</td><td data-label="Manager 2">Luke</td><td data-label="Trades">1</td></tr>
+<tr><td data-label="Manager 1">Dylan</td><td data-label="Manager 2">Justin</td><td data-label="Trades">1</td></tr>
+<tr><td data-label="Manager 1">House/Haydo</td><td data-label="Manager 2">Luke</td><td data-label="Trades">1</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Source Notes</h2></summary>
+<ul>
+<li>Trade ledger source: <code>BPL Fantasy.xlsx</code> / <code>Trade History</code>.</li>
+<li><code>Assets Sent</code> are read from the workbook as the assets each listed manager gave up.</li>
+<li>Pick and condition trades are flagged when the assets or notes mention picks, rounds, rounders, or conditions.</li>
+<li>The postseason rows before the 2025/26 divider remain grouped under <code>2024-25</code>, because that is how the workbook separates them.</li>
+</ul>
+</details>
+  </main>
+  <div class="rating-tooltip" aria-hidden="true"></div>
+  <script>
+(() => {
+  const inputs = document.querySelectorAll(".theme-switch-input");
+  if (!inputs.length) return;
+
+  const sync = () => {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    inputs.forEach((input) => {
+      input.checked = isDark;
+      input.setAttribute("aria-checked", String(isDark));
+      input.setAttribute("aria-label", isDark ? "Dark mode on" : "Dark mode off");
+    });
+  };
+
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+      const next = input.checked ? "dark" : "light";
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem("bms-theme", next);
+      sync();
+    });
+  });
+
+  sync();
+})();
+</script>
+  <script>
+(() => {
+  const tooltip = document.querySelector(".rating-tooltip");
+  if (!tooltip) return;
+
+  const moveTooltip = (event) => {
+    const offset = 14;
+    const rect = tooltip.getBoundingClientRect();
+    let left = event.clientX + offset;
+    let top = event.clientY + offset;
+    if (left + rect.width > window.innerWidth - 8) {
+      left = event.clientX - rect.width - offset;
+    }
+    if (top + rect.height > window.innerHeight - 8) {
+      top = event.clientY - rect.height - offset;
+    }
+    tooltip.style.left = `${Math.max(8, left)}px`;
+    tooltip.style.top = `${Math.max(8, top)}px`;
+  };
+
+  document.querySelectorAll(".rating-hover-zone").forEach((zone) => {
+    zone.addEventListener("mouseenter", (event) => {
+      tooltip.textContent = zone.dataset.tooltip || "";
+      tooltip.classList.add("is-visible");
+      moveTooltip(event);
+    });
+    zone.addEventListener("mousemove", moveTooltip);
+    zone.addEventListener("mouseleave", () => {
+      tooltip.classList.remove("is-visible");
+    });
+  });
+})();
+</script>
+  <script>
+(() => {
+  const page = document.querySelector("[data-recaps-page]");
+  if (!page) return;
+
+  const seasonButtons = Array.from(page.querySelectorAll("[data-recap-season-button]"));
+  const filterButtons = Array.from(page.querySelectorAll("[data-recap-filter-button]"));
+  const cards = Array.from(page.querySelectorAll(".recap-card"));
+  const search = page.querySelector("[data-recap-search]");
+  const count = page.querySelector("[data-recap-count]");
+  let activeSeason = seasonButtons.find((button) => button.classList.contains("is-active"))?.dataset.recapSeasonButton || "all";
+  let activeFilter = "all";
+
+  const setButtonState = (buttons, activeButton, attrName) => {
+    buttons.forEach((button) => {
+      const isActive = button === activeButton;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  const cardMatchesFilter = (card) => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "multigw") return card.dataset.multi === "true";
+    return card.dataset.kind === activeFilter;
+  };
+
+  const applyFilters = () => {
+    const query = (search?.value || "").trim().toLowerCase();
+    let visible = 0;
+    cards.forEach((card) => {
+      const matchesSeason = card.dataset.season === activeSeason;
+      const matchesType = cardMatchesFilter(card);
+      const matchesSearch = !query || (card.dataset.search || "").includes(query);
+      const isVisible = matchesSeason && matchesType && matchesSearch;
+      card.classList.toggle("is-hidden", !isVisible);
+      if (isVisible) visible += 1;
+    });
+    if (count) {
+      count.textContent = `${visible} recap${visible === 1 ? "" : "s"}`;
+    }
+  };
+
+  seasonButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeSeason = button.dataset.recapSeasonButton;
+      setButtonState(seasonButtons, button, "data-recap-season-button");
+      applyFilters();
+    });
+  });
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.recapFilterButton;
+      setButtonState(filterButtons, button, "data-recap-filter-button");
+      applyFilters();
+    });
+  });
+
+  search?.addEventListener("input", applyFilters);
+  applyFilters();
+})();
+</script>
+  <script>
+(() => {
+  const page = document.querySelector("[data-trades-page]");
+  if (!page) return;
+
+  const seasonButtons = Array.from(page.querySelectorAll("[data-trade-season-button]"));
+  const cards = Array.from(page.querySelectorAll(".trade-card"));
+  const managerSelect = page.querySelector("[data-trade-manager]");
+  const search = page.querySelector("[data-trade-search]");
+  const count = page.querySelector("[data-trade-count]");
+  let activeSeason = seasonButtons.find((button) => button.classList.contains("is-active"))?.dataset.tradeSeasonButton || "all";
+
+  const setButtonState = (activeButton) => {
+    seasonButtons.forEach((button) => {
+      const isActive = button === activeButton;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  const applyFilters = () => {
+    const query = (search?.value || "").trim().toLowerCase();
+    const manager = managerSelect?.value || "all";
+    let visible = 0;
+    cards.forEach((card) => {
+      const managers = (card.dataset.managers || "").split("|");
+      const matchesSeason = card.dataset.season === activeSeason;
+      const matchesManager = manager === "all" || managers.includes(manager);
+      const matchesSearch = !query || (card.dataset.search || "").includes(query);
+      const isVisible = matchesSeason && matchesManager && matchesSearch;
+      card.classList.toggle("is-hidden", !isVisible);
+      if (isVisible) visible += 1;
+    });
+    if (count) {
+      count.textContent = `${visible} trade${visible === 1 ? "" : "s"}`;
+    }
+  };
+
+  seasonButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeSeason = button.dataset.tradeSeasonButton;
+      setButtonState(button);
+      applyFilters();
+    });
+  });
+
+  managerSelect?.addEventListener("change", applyFilters);
+  search?.addEventListener("input", applyFilters);
+  applyFilters();
+})();
+</script>
+</body>
+</html>

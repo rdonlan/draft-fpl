@@ -782,6 +782,226 @@
       font-size: 0.88rem;
       font-weight: 800;
     }
+    .trades-page {
+      margin-top: 18px;
+    }
+    .trade-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .trade-stat {
+      display: grid;
+      gap: 4px;
+      min-height: 92px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .trade-stat span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    .trade-stat strong {
+      color: var(--ink);
+      font-size: 1.32rem;
+      line-height: 1.1;
+    }
+    .trade-stat em {
+      color: var(--tab-ink);
+      font-style: normal;
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .trade-controls {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 22px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .trade-season-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .trade-tab-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .trade-tab-button span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+    .trade-tab-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .trade-tab-button.is-active span {
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .trade-filter-label {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+    .trade-manager-select,
+    .trade-search-input {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+    }
+    .trade-count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+    .trade-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .trade-card {
+      border: 1px solid var(--line);
+      border-left: 6px solid #0b7a75;
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    .trade-card.is-hidden {
+      display: none;
+    }
+    .trade-card details {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .trade-card details[open] {
+      box-shadow: none;
+    }
+    .trade-card summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 16px;
+      background: var(--paper);
+    }
+    .trade-card details[open] summary {
+      background: var(--soft);
+    }
+    .trade-summary-main {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+    .trade-kicker {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .trade-title {
+      color: var(--ink);
+      font-size: 1.02rem;
+      font-weight: 850;
+      line-height: 1.25;
+    }
+    .trade-description {
+      color: var(--tab-ink);
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .trade-summary-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+    .trade-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft-3);
+      color: var(--tab-ink);
+      font-size: 0.78rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .trade-badge-pick {
+      border-color: #fed7aa;
+      background: #ffedd5;
+      color: #9a3412;
+    }
+    html[data-theme="dark"] .trade-badge-pick {
+      border-color: #7c2d12;
+      background: #3b2415;
+      color: #fed7aa;
+    }
+    .trade-body {
+      padding: 16px 18px 20px;
+      border-top: 1px solid var(--line);
+    }
+    .trade-side-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .trade-side {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .trade-side strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 0.88rem;
+    }
+    .trade-side p,
+    .trade-note {
+      margin: 0;
+      font-size: 0.94rem;
+      line-height: 1.48;
+    }
+    .trade-note {
+      margin-top: 12px;
+      color: var(--tab-ink);
+    }
     strong {
       color: var(--accent-2);
     }
@@ -835,12 +1055,14 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .recap-season-tabs,
-      .recap-filter-tabs {
+      .recap-filter-tabs,
+      .trade-season-tabs {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .recap-tab-button,
-      .recap-filter-button {
+      .recap-filter-button,
+      .trade-tab-button {
         width: 100%;
         min-height: 42px;
       }
@@ -849,6 +1071,16 @@
         gap: 10px;
       }
       .recap-summary-meta {
+        justify-content: flex-start;
+      }
+      .trade-stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .trade-card summary {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .trade-summary-meta {
         justify-content: flex-start;
       }
       .power-tab-panel > h3,
@@ -991,6 +1223,7 @@
 <a class="season-tab" href="../cup-history/">Cup History</a>
 <a class="season-tab" href="../trophy-cabinet/">Trophy Cabinet</a>
 <a class="season-tab" href="../recaps/">Recaps</a>
+<a class="season-tab" href="../trades/">Trades</a>
       <label class="theme-switch">
         <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
         <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
@@ -1814,6 +2047,57 @@
     });
   });
 
+  search?.addEventListener("input", applyFilters);
+  applyFilters();
+})();
+</script>
+  <script>
+(() => {
+  const page = document.querySelector("[data-trades-page]");
+  if (!page) return;
+
+  const seasonButtons = Array.from(page.querySelectorAll("[data-trade-season-button]"));
+  const cards = Array.from(page.querySelectorAll(".trade-card"));
+  const managerSelect = page.querySelector("[data-trade-manager]");
+  const search = page.querySelector("[data-trade-search]");
+  const count = page.querySelector("[data-trade-count]");
+  let activeSeason = seasonButtons.find((button) => button.classList.contains("is-active"))?.dataset.tradeSeasonButton || "all";
+
+  const setButtonState = (activeButton) => {
+    seasonButtons.forEach((button) => {
+      const isActive = button === activeButton;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  const applyFilters = () => {
+    const query = (search?.value || "").trim().toLowerCase();
+    const manager = managerSelect?.value || "all";
+    let visible = 0;
+    cards.forEach((card) => {
+      const managers = (card.dataset.managers || "").split("|");
+      const matchesSeason = card.dataset.season === activeSeason;
+      const matchesManager = manager === "all" || managers.includes(manager);
+      const matchesSearch = !query || (card.dataset.search || "").includes(query);
+      const isVisible = matchesSeason && matchesManager && matchesSearch;
+      card.classList.toggle("is-hidden", !isVisible);
+      if (isVisible) visible += 1;
+    });
+    if (count) {
+      count.textContent = `${visible} trade${visible === 1 ? "" : "s"}`;
+    }
+  };
+
+  seasonButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeSeason = button.dataset.tradeSeasonButton;
+      setButtonState(button);
+      applyFilters();
+    });
+  });
+
+  managerSelect?.addEventListener("change", applyFilters);
   search?.addEventListener("input", applyFilters);
   applyFilters();
 })();
