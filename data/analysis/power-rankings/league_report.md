@@ -11,7 +11,7 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 <details open>
 <summary><h2>Season Elo Tabs</h2></summary>
 
-Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, time-at-top table, and biggest rating swings.
+Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, time-at-top table, and biggest underdog Elo wins.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -192,29 +192,32 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 | Levi Morant | 0 | 0 | 22 | 7.81 | 7 |
 | Julius Long | 0 | 0 | 33 | 8.62 | 9 |
 
-### 2025-26 Biggest Rating Swings
-| Week | Manager | Opponent | Result | Score | Rating Before | Rating Change | Rating After |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 35 | Ethan Ellsworth | Luke Lockwood | W | 42-21 | 1424.5 | +16.4 | 1441.0 |
-| 35 | Luke Lockwood | Ethan Ellsworth | L | 21-42 | 1559.7 | -16.4 | 1543.3 |
-| 19 | Levi Morant | Luke Lockwood | W | 48-45 | 1467.0 | +15.9 | 1482.9 |
-| 19 | Luke Lockwood | Levi Morant | L | 45-48 | 1583.9 | -15.9 | 1568.0 |
-| 35 | Dylan Reid | Julius Long | L | 52-59 | 1525.4 | -15.8 | 1509.7 |
-| 35 | Julius Long | Dylan Reid | W | 59-52 | 1412.8 | +15.8 | 1428.6 |
-| 25 | Justin Miller | Levi Morant | L | 28-66 | 1550.1 | -15.4 | 1534.7 |
-| 25 | Levi Morant | Justin Miller | W | 66-28 | 1449.1 | +15.4 | 1464.5 |
-| 37 | Levi Morant | Luke Lockwood | W | 37-32 | 1443.3 | +15.3 | 1458.7 |
-| 37 | Luke Lockwood | Levi Morant | L | 32-37 | 1542.5 | -15.3 | 1527.2 |
-| 17 | Drake Byrd | Levi Morant | L | 23-45 | 1558.1 | -15.2 | 1542.8 |
-| 17 | Levi Morant | Drake Byrd | W | 45-23 | 1462.5 | +15.2 | 1477.7 |
-| 13 | Drake Byrd | Ethan Ellsworth | L | 39-41 | 1539.8 | -15.1 | 1524.7 |
-| 13 | Ethan Ellsworth | Drake Byrd | W | 41-39 | 1449.3 | +15.1 | 1464.4 |
-| 33 | Ethan Ellsworth | Levi Morant | W | 60-34 | 1396.4 | +14.9 | 1411.4 |
-| 33 | Levi Morant | Ethan Ellsworth | L | 34-60 | 1483.6 | -14.9 | 1468.7 |
-| 21 | Ethan Ellsworth | Justin Miller | W | 51-35 | 1450.5 | +14.8 | 1465.3 |
-| 21 | Justin Miller | Ethan Ellsworth | L | 35-51 | 1533.6 | -14.8 | 1518.8 |
-| 27 | Levi Morant | Ryan Donlan | W | 66-48 | 1477.5 | +14.8 | 1492.3 |
-| 27 | Ryan Donlan | Levi Morant | L | 48-66 | 1560.8 | -14.8 | 1545.9 |
+### 2025-26 Biggest Upsets
+
+These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
+
+| Week | Underdog Winner | Favorite | Elo Gap | Underdog Elo | Favorite Elo | Score |
+|---|---:|---:|---:|---:|---:|---:|
+| 35 | Ethan Ellsworth | Luke Lockwood | 135.2 | 1424.5 | 1559.7 | 42-21 |
+| 19 | Levi Morant | Luke Lockwood | 116.9 | 1467.0 | 1583.9 | 48-45 |
+| 35 | Julius Long | Dylan Reid | 112.6 | 1412.8 | 1525.4 | 59-52 |
+| 25 | Levi Morant | Justin Miller | 101.0 | 1449.1 | 1550.1 | 66-28 |
+| 37 | Levi Morant | Luke Lockwood | 99.2 | 1443.3 | 1542.5 | 37-32 |
+| 17 | Levi Morant | Drake Byrd | 95.5 | 1462.5 | 1558.1 | 45-23 |
+| 13 | Ethan Ellsworth | Drake Byrd | 90.5 | 1449.3 | 1539.8 | 41-39 |
+| 33 | Ethan Ellsworth | Levi Morant | 87.2 | 1396.4 | 1483.6 | 60-34 |
+| 27 | Levi Morant | Ryan Donlan | 83.2 | 1477.5 | 1560.8 | 66-48 |
+| 21 | Ethan Ellsworth | Justin Miller | 83.1 | 1450.5 | 1533.6 | 51-35 |
+| 25 | Ryan Houseman | Ryan Donlan | 81.6 | 1482.5 | 1564.0 | 39-30 |
+| 25 | Julius Long | Luke Lockwood | 75.0 | 1451.2 | 1526.2 | 49-34 |
+| 11 | Alexander Chaban | Drake Byrd | 71.6 | 1472.0 | 1543.5 | 42-39 |
+| 4 | Levi Morant | Alexander Chaban | 71.2 | 1464.8 | 1536.0 | 62-59 |
+| 27 | Julius Long | Alexander Chaban | 69.3 | 1454.9 | 1524.1 | 44-37 |
+| 13 | Dylan Reid | Luke Lockwood | 68.3 | 1494.4 | 1562.7 | 45-38 |
+| 23 | Alexander Chaban | Ryan Donlan | 67.7 | 1500.8 | 1568.5 | 36-34 |
+| 9 | Justin Miller | Dylan Reid | 67.1 | 1455.2 | 1522.4 | 31-23 |
+| 18 | Julius Long | Alexander Chaban | 58.0 | 1429.3 | 1487.4 | 43-32 |
+| 24 | Ryan Houseman | Dylan Reid | 56.4 | 1468.5 | 1524.9 | 59-54 |
 
 </section>
 <section class="power-tab-panel" id="power-panel-2024-25" role="tabpanel" aria-labelledby="power-season-2024-25-label">
@@ -380,29 +383,32 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 | Ethan Ellsworth | 0 | 0 | 19 | 7.39 | 9 |
 | Alexander Chaban | 0 | 0 | 34 | 8.87 | 8 |
 
-### 2024-25 Biggest Rating Swings
-| Week | Manager | Opponent | Result | Score | Rating Before | Rating Change | Rating After |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 34 | Alexander Chaban | Ryan Donlan | W | 58-54 | 1420.0 | +18.9 | 1438.8 |
-| 34 | Ryan Donlan | Alexander Chaban | L | 54-58 | 1645.6 | -18.9 | 1626.8 |
-| 36 | Ethan Ellsworth | Ryan Donlan | W | 40-25 | 1421.2 | +18.0 | 1439.2 |
-| 36 | Ryan Donlan | Ethan Ellsworth | L | 25-40 | 1611.4 | -18.0 | 1593.4 |
-| 27 | Ethan Ellsworth | Ryan Donlan | W | 46-44 | 1469.4 | +17.5 | 1486.9 |
-| 27 | Ryan Donlan | Ethan Ellsworth | L | 44-46 | 1641.6 | -17.5 | 1624.1 |
-| 29 | Luke Lockwood | Ryan Donlan | W | 47-33 | 1485.4 | +16.8 | 1502.1 |
-| 29 | Ryan Donlan | Luke Lockwood | L | 33-47 | 1631.0 | -16.8 | 1614.3 |
-| 38 | Justin Miller | Levi Morant | L | 37-39 | 1637.4 | -16.6 | 1620.8 |
-| 38 | Levi Morant | Justin Miller | W | 39-37 | 1496.5 | +16.6 | 1513.1 |
-| 8 | Ethan Ellsworth | Levi Morant | W | 40-34 | 1441.4 | +16.4 | 1457.9 |
-| 8 | Levi Morant | Ethan Ellsworth | L | 34-40 | 1576.5 | -16.4 | 1560.1 |
-| 37 | Drake Byrd | Ryan Donlan | W | 35-34 | 1467.9 | +16.2 | 1484.0 |
-| 37 | Ryan Donlan | Drake Byrd | L | 34-35 | 1593.4 | -16.2 | 1577.2 |
-| 21 | Julius Long | Ryan Donlan | W | 46-32 | 1497.6 | +16.0 | 1513.5 |
-| 21 | Ryan Donlan | Julius Long | L | 32-46 | 1616.7 | -16.0 | 1600.8 |
-| 36 | Alexander Chaban | Luke Lockwood | W | 41-33 | 1432.5 | +15.7 | 1448.2 |
-| 36 | Luke Lockwood | Alexander Chaban | L | 33-41 | 1544.2 | -15.7 | 1528.4 |
-| 17 | Alexander Chaban | Justin Miller | W | 53-48 | 1425.2 | +15.7 | 1440.9 |
-| 17 | Justin Miller | Alexander Chaban | L | 48-53 | 1534.3 | -15.7 | 1518.6 |
+### 2024-25 Biggest Upsets
+
+These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
+
+| Week | Underdog Winner | Favorite | Elo Gap | Underdog Elo | Favorite Elo | Score |
+|---|---:|---:|---:|---:|---:|---:|
+| 34 | Alexander Chaban | Ryan Donlan | 225.6 | 1420.0 | 1645.6 | 58-54 |
+| 36 | Ethan Ellsworth | Ryan Donlan | 190.2 | 1421.2 | 1611.4 | 40-25 |
+| 27 | Ethan Ellsworth | Ryan Donlan | 172.2 | 1469.4 | 1641.6 | 46-44 |
+| 29 | Luke Lockwood | Ryan Donlan | 145.7 | 1485.4 | 1631.0 | 47-33 |
+| 38 | Levi Morant | Justin Miller | 141.0 | 1496.5 | 1637.4 | 39-37 |
+| 8 | Ethan Ellsworth | Levi Morant | 135.1 | 1441.4 | 1576.5 | 40-34 |
+| 37 | Drake Byrd | Ryan Donlan | 125.5 | 1467.9 | 1593.4 | 35-34 |
+| 21 | Julius Long | Ryan Donlan | 119.2 | 1497.6 | 1616.7 | 46-32 |
+| 36 | Alexander Chaban | Luke Lockwood | 111.7 | 1432.5 | 1544.2 | 41-33 |
+| 17 | Alexander Chaban | Justin Miller | 109.0 | 1425.2 | 1534.3 | 53-48 |
+| 23 | Levi Morant | Ryan Houseman | 108.8 | 1436.0 | 1544.9 | 53-33 |
+| 10 | Ethan Ellsworth | Julius Long | 103.8 | 1448.7 | 1552.5 | 42-28 |
+| 10 | Alexander Chaban | Levi Morant | 101.2 | 1446.2 | 1547.4 | 66-40 |
+| 35 | Ryan Houseman | Ryan Donlan | 100.6 | 1526.2 | 1626.8 | 38-28 |
+| 38 | Julius Long | Ryan Houseman | 84.5 | 1457.5 | 1542.0 | 34-24 |
+| 8 | Luke Lockwood | Julius Long | 84.4 | 1470.2 | 1554.6 | 38-29 |
+| 32 | Levi Morant | Ryan Houseman | 80.5 | 1441.9 | 1522.3 | 75-39 |
+| 21 | Drake Byrd | Justin Miller | 71.4 | 1480.2 | 1551.6 | 60-38 |
+| 10 | Drake Byrd | Ryan Donlan | 71.3 | 1477.8 | 1549.1 | 32-30 |
+| 18 | Levi Morant | Julius Long | 67.7 | 1469.1 | 1536.7 | 56-40 |
 
 </section>
 </div>
@@ -415,5 +421,5 @@ These are the supporting CSVs exposed for the power rankings page.
 
 - `power_ranking_summary.csv`
 - `power_ranking_weekly.csv`
-- `power_ranking_swings.csv`
+- `power_ranking_upsets.csv`
 </details>
