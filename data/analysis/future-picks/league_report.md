@@ -1156,12 +1156,8 @@ This checks the workbook tracker against future-pick movements parsed from the t
 
 | Issue | Year | Round | Original Owner | Tracker Holder | Ledger Holder | Ledger Evidence | Notes |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Tracker-only move | 2026 | 3rd | Justin | Dylan | Justin | No future-pick movement found in parsed trade ledger | - |
-| Ledger-only move | 2026 | 3rd | Levi | Levi | Dylan | Postseason: Levi -> Dylan | - |
-| Tracker-only move | 2026 | 9th | Donny | Julius | Donny | No future-pick movement found in parsed trade ledger | - |
-| Ledger-only move | 2026 | 9th | Dylan | Dylan | Julius | GW 32: Donny -> Julius | original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks |
-| Tracker-only move | 2026 | 10th | Justin | House/Haydo | Justin | No future-pick movement found in parsed trade ledger | - |
-| Ledger-only move | 2026 | 10th | Levi | Levi | House/Haydo | Postseason: Levi -> House/Haydo | - |
+| Original-owner ambiguity | 2026 | 9th | Donny vs Dylan | Donny -> Julius | Dylan -> Julius | GW 32: Donny -> Julius | The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager's same-round pick and the ledger did not clearly label the pass-through. original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks |
+| Original-owner ambiguity | 2026 | 10th | Justin vs Levi | Justin -> House/Haydo | Levi -> House/Haydo | Postseason: Levi -> House/Haydo | The board and ledger agree on the final holder, but disagree on the original pick owner. This usually means the sender held another manager's same-round pick and the ledger did not clearly label the pass-through. |
 | Ledger-only move | 2026 | 12th | Donny | Donny | Dylan | Draft Day: Donny -> Dylan | - |
 
 </details>
@@ -1174,6 +1170,8 @@ These are not necessarily errors; they are the trade-ledger rows where the parse
 | Year | Round | Original Owner | Sender | Recipient | Timing | Assumption | Asset |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 2026 | 5th | House/Haydo | House/Haydo | Levi | Postseason | multi-team trade; recipient inferred as Levi | 2026 5th-round pick |
+| 2026 | 3rd | Justin | Justin | Levi | Before 2024-25 postseason row 32 | Manual clarification: Justin had already traded this pick to Levi before Levi sent it to Dylan; the trade ledger does not clearly mark that pass-through. | 2026 3rd-round pick |
+| 2026 | 3rd | Justin | Levi | Dylan | Postseason | original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks | 2026 3rd-round pick |
 | 2026 | 5th | House/Haydo | Levi | Dylan | Postseason | original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks | 2026 5th-round pick |
 | 2026 | 9th | Dylan | Donny | Julius | GW 32 | original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks | 2026 9th-round pick |
 
