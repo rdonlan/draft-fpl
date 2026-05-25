@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BMS FPL Cup History</title>
+  <title>BMS FPL Future Pick Tracker</title>
   <script>
 (() => {
   const saved = localStorage.getItem("bms-theme");
@@ -1219,11 +1219,11 @@
 <a class="season-tab" href="../2024-2025/">24/25 League</a>
 <a class="season-tab" href="../all-time/">Cumulative Stats</a>
 <a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
-<a class="season-tab active" href="../cup-history/">Cup History</a>
+<a class="season-tab" href="../cup-history/">Cup History</a>
 <a class="season-tab" href="../trophy-cabinet/">Trophy Cabinet</a>
 <a class="season-tab" href="../recaps/">Recaps</a>
 <a class="season-tab" href="../trades/">Trades</a>
-<a class="season-tab" href="../future-picks/">Future Picks</a>
+<a class="season-tab active" href="../future-picks/">Future Picks</a>
       <label class="theme-switch">
         <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
         <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
@@ -1231,332 +1231,207 @@
       </label>
     </nav>
     <div class="toolbar" aria-label="Report files">
-      <a href="../data/analysis/history/cup_history.md">Raw Markdown</a>
-<a href="../data/analysis/history/cup_finals.csv">Cup Finals CSV</a>
-<a href="../data/analysis/history/cup_all_time_records.csv">All-Time Records CSV</a>
-<a href="../data/analysis/history/cup_matches.csv">Cup Matches CSV</a>
-<a href="../data/analysis/history/cup_group_standings.csv">Group Standings CSV</a>
+      <a href="../data/analysis/future-picks/league_report.md">Raw Markdown</a>
+<a href="../data/analysis/future-picks/future_pick_matrix.csv">Pick Matrix CSV</a>
+<a href="../data/analysis/future-picks/future_pick_portfolio.csv">Portfolio CSV</a>
+<a href="../data/analysis/future-picks/future_pick_traded_detail.csv">Traded Picks CSV</a>
+<a href="../data/analysis/future-picks/future_pick_reconciliation.csv">Reconciliation CSV</a>
+<a href="../data/analysis/future-picks/future_pick_count_audit.csv">Count Audit CSV</a>
+<a href="../data/analysis/future-picks/future_pick_movements.csv">Ledger Movements CSV</a>
     </div>
-    <h1>BMS FPL Cup History</h1>
-<p>A dedicated history page for the BMS FPL Cup using the manual cup workbooks. League scoring stats still live on the season and all-time pages; this page is just the cup competition.</p>
-<details open>
-<summary><h2>Cup Overview</h2></summary>
-<p>Use this as the fast read on who won each cup and how the final finished.</p>
-<details class="notes">
-<summary>Definitions and source notes</summary>
+    <h1>BMS FPL Future Pick Tracker</h1>
+<p>A draft-pick ownership page built from the workbook&#x27;s <code>Drafting Order</code> tab, with a reconciliation pass against the trade ledger.</p>
+<h2>Best Quick Hits</h2>
 <ul>
-<li><strong>2023-24</strong> records the known cup winner and finalist only; detailed group and knockout data starts in 2024-25.</li>
-<li><strong>2024-25</strong> comes from <code>2024-25 Season.xlsx</code>, tab <code>BMS does FPL Cup</code>.</li>
-<li><strong>2025-26</strong> comes from the <code>BMS Does FPL.xlsx</code> cup workbook, using <code>Group Schedule</code>, <code>Group Standings</code>, and <code>Knockout Schedule</code>.</li>
-<li>Manager names are normalized to the same names used across the rest of the website.</li>
+<li><strong>2026 traded picks on the tracker</strong>: 16.</li>
+<li><strong>2027 traded picks on the tracker</strong>: 2.</li>
+<li><strong>Most 2026 picks</strong>: Levi with 17 picks.</li>
+<li><strong>Most 2027 picks</strong>: Levi with 15 picks.</li>
+<li><strong>Reconciliation flags</strong>: 5 pick-owner mismatches between the Excel tracker and the parsed trade ledger.</li>
+<li><strong>Workbook count-table flags</strong>: 9 count mismatches between the 2026 count table and the 2026 ownership board.</li>
+</ul>
+<details open>
+<summary><h2>Manager Pick Portfolio</h2></summary>
+<p>Use this as the quick manager-by-manager view: total future picks, net gain/loss versus the standard 13 draft picks, incoming picks, and outgoing picks.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li>The standard count is rounds <code>3rd</code> through <code>15th</code>; rounds <code>1st</code> and <code>2nd</code> are keeper slots in the workbook.</li>
+<li><strong>Incoming</strong> means another manager&#x27;s original pick is currently held by this manager.</li>
+<li><strong>Outgoing</strong> means this manager&#x27;s original pick is currently owed to someone else.</li>
 </ul>
 </details>
 <div class="table-wrap"><table>
-<thead><tr><th>Season</th><th>Winner</th><th>Runner-Up</th><th>Final Score</th></tr></thead>
+<thead><tr><th>Year</th><th>Manager</th><th>Total Picks</th><th>Net vs 13</th><th>Incoming</th><th>Outgoing</th><th>Incoming Picks</th><th>Outgoing Picks</th></tr></thead>
 <tbody>
-<tr><td data-label="Season">2023-24</td><td data-label="Winner">Luke Lockwood</td><td data-label="Runner-Up">Ryan Donlan</td><td data-label="Final Score">Not tracked</td></tr>
-<tr><td data-label="Season">2024-25</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Ryan Houseman</td><td data-label="Final Score">60-55</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Dylan Reid</td><td data-label="Final Score">75-66</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Levi</td><td data-label="Total Picks">17</td><td data-label="Net vs 13">+4</td><td data-label="Incoming">5</td><td data-label="Outgoing">1</td><td data-label="Incoming Picks">Luke 3rd; Justin 7th; Luke 7th; Justin 8th; Luke 12th</td><td data-label="Outgoing Picks">4th to Ethan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Dylan</td><td data-label="Total Picks">16</td><td data-label="Net vs 13">+3</td><td data-label="Incoming">3</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Justin 3rd; House/Haydo 5th; Donny 10th</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Drake</td><td data-label="Total Picks">15</td><td data-label="Net vs 13">+2</td><td data-label="Incoming">2</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Donny 4th; Donny 8th</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Julius</td><td data-label="Total Picks">15</td><td data-label="Net vs 13">+2</td><td data-label="Incoming">2</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Justin 6th; Donny 9th</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Ethan</td><td data-label="Total Picks">14</td><td data-label="Net vs 13">+1</td><td data-label="Incoming">2</td><td data-label="Outgoing">1</td><td data-label="Incoming Picks">Levi 4th; Donny 6th</td><td data-label="Outgoing Picks">10th to Donny</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Chabo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">House/Haydo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">1</td><td data-label="Outgoing">1</td><td data-label="Incoming Picks">Justin 10th</td><td data-label="Outgoing Picks">5th to Dylan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Luke</td><td data-label="Total Picks">10</td><td data-label="Net vs 13">-3</td><td data-label="Incoming">0</td><td data-label="Outgoing">3</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">3rd to Levi; 7th to Levi; 12th to Levi</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Donny</td><td data-label="Total Picks">9</td><td data-label="Net vs 13">-4</td><td data-label="Incoming">1</td><td data-label="Outgoing">5</td><td data-label="Incoming Picks">Ethan 10th</td><td data-label="Outgoing Picks">4th to Drake; 6th to Ethan; 8th to Drake; 9th to Julius; 10th to Dylan</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Manager">Justin</td><td data-label="Total Picks">8</td><td data-label="Net vs 13">-5</td><td data-label="Incoming">0</td><td data-label="Outgoing">5</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">3rd to Dylan; 6th to Julius; 7th to Levi; 8th to Levi; 10th to House/Haydo</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Levi</td><td data-label="Total Picks">15</td><td data-label="Net vs 13">+2</td><td data-label="Incoming">2</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Justin 5th; Justin 6th</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Chabo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Donny</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Drake</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Dylan</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Ethan</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">House/Haydo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Julius</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Luke</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Manager">Justin</td><td data-label="Total Picks">11</td><td data-label="Net vs 13">-2</td><td data-label="Incoming">0</td><td data-label="Outgoing">2</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">5th to Levi; 6th to Levi</td></tr>
 </tbody></table></div>
 </details>
-<details open>
-<summary><h2>All-Time Cup Records</h2></summary>
-<p>This table summarizes each manager&#x27;s record across tracked BMS FPL Cup matchups.</p>
+<details>
+<summary><h2>2026 Pick Board</h2></summary>
+<p>Workbook-style board for 2026: each column is the original owner of the pick, and the cell shows whether that pick is still own or owed to another manager.</p>
 <details class="notes">
-<summary>Definitions and source notes</summary>
+<summary>Definitions and calculation notes</summary>
 <ul>
-<li>Records are shown as <strong>wins-draws-losses</strong>.</li>
-<li><strong>Overall Record</strong> includes group-stage matches, aggregate knockout ties, and finals.</li>
-<li><strong>Record In Knockout Ties</strong> includes quarterfinal aggregates, semifinal aggregates, and finals.</li>
-<li>For quarterfinals and semifinals, only the aggregate result counts as the matchup; individual legs are not counted.</li>
-<li>The 2023-24 final is included because the winner/finalist are known, but detailed group and aggregate data starts in 2024-25.</li>
+<li><code>Own</code> means the original owner still controls that pick.</li>
+<li><code>-&gt; Manager</code> means that original pick is currently owed to the named manager.</li>
+<li><code>Keeper</code> appears for rounds 1 and 2 because those slots are not part of the traded-pick count.</li>
 </ul>
 </details>
 <div class="table-wrap"><table>
-<thead><tr><th>Manager</th><th>Overall Record</th><th>Record In Knockout Ties</th></tr></thead>
+<thead><tr><th>Round</th><th>Donny</th><th>Justin</th><th>House/Haydo</th><th>Levi</th><th>Luke</th><th>Julius</th><th>Drake</th><th>Chabo</th><th>Ethan</th><th>Dylan</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Justin Miller</td><td data-label="Overall Record">11-1-4</td><td data-label="Record In Knockout Ties">6-0-0</td></tr>
-<tr><td data-label="Manager">Dylan Reid</td><td data-label="Overall Record">7-1-5</td><td data-label="Record In Knockout Ties">2-0-1</td></tr>
-<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Overall Record">7-0-7</td><td data-label="Record In Knockout Ties">2-0-2</td></tr>
-<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Overall Record">7-0-5</td><td data-label="Record In Knockout Ties">1-0-1</td></tr>
-<tr><td data-label="Manager">Levi Morant</td><td data-label="Overall Record">6-1-6</td><td data-label="Record In Knockout Ties">1-0-2</td></tr>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Overall Record">6-1-6</td><td data-label="Record In Knockout Ties">0-0-3</td></tr>
-<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Overall Record">6-0-7</td><td data-label="Record In Knockout Ties">2-0-1</td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Overall Record">6-0-7</td><td data-label="Record In Knockout Ties">1-0-2</td></tr>
-<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Overall Record">4-0-8</td><td data-label="Record In Knockout Ties">0-0-2</td></tr>
-<tr><td data-label="Manager">Drake Byrd</td><td data-label="Overall Record">3-0-8</td><td data-label="Record In Knockout Ties">0-0-1</td></tr>
+<tr><td data-label="Round">1st</td><td data-label="Donny">Keeper</td><td data-label="Justin">Keeper</td><td data-label="House/Haydo">Keeper</td><td data-label="Levi">Keeper</td><td data-label="Luke">Keeper</td><td data-label="Julius">Keeper</td><td data-label="Drake">Keeper</td><td data-label="Chabo">Keeper</td><td data-label="Ethan">Keeper</td><td data-label="Dylan">Keeper</td></tr>
+<tr><td data-label="Round">2nd</td><td data-label="Donny">Keeper</td><td data-label="Justin">Keeper</td><td data-label="House/Haydo">Keeper</td><td data-label="Levi">Keeper</td><td data-label="Luke">Keeper</td><td data-label="Julius">Keeper</td><td data-label="Drake">Keeper</td><td data-label="Chabo">Keeper</td><td data-label="Ethan">Keeper</td><td data-label="Dylan">Keeper</td></tr>
+<tr><td data-label="Round">3rd</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Dylan</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">-&gt;Levi</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">4th</td><td data-label="Donny">-&gt;Drake</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">-&gt;Ethan</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">5th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">-&gt;Dylan</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">6th</td><td data-label="Donny">-&gt;Ethan</td><td data-label="Justin">-&gt;Julius</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">7th</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Levi</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">-&gt;Levi</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">8th</td><td data-label="Donny">-&gt;Drake</td><td data-label="Justin">-&gt;Levi</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">9th</td><td data-label="Donny">-&gt;Julius</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">10th</td><td data-label="Donny">-&gt;Dylan</td><td data-label="Justin">-&gt;House/Haydo</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">-&gt;Donny</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">11th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">12th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">-&gt;Levi</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">13th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">14th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">15th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>2025-26 Cup</h2></summary>
-<p>Open this section for the group tables, knockout path, and final from that season.</p>
-<h3>Group Stage Standings</h3>
-<p>The red row is the final-place entrant in that group.</p>
-<h3>Group A Standings</h3>
-<div class="table-wrap cup-group-table">
-<table>
-<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
-<tbody>
-<tr><td data-label="Rank">1</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">223</td><td data-label="PA">195</td><td data-label="GD">28</td></tr>
-<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">230</td><td data-label="PA">215</td><td data-label="GD">15</td></tr>
-<tr><td data-label="Rank">3</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">227</td><td data-label="PA">214</td><td data-label="GD">13</td></tr>
-<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">251</td><td data-label="PA">240</td><td data-label="GD">11</td></tr>
-<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">229</td><td data-label="PA">244</td><td data-label="GD">-15</td></tr>
-</tbody></table></div>
-<h3>Group B Standings</h3>
-<div class="table-wrap cup-group-table">
-<table>
-<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
-<tbody>
-<tr><td data-label="Rank">1</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">13</td><td data-label="W">4</td><td data-label="D">1</td><td data-label="L">0</td><td data-label="PF">291</td><td data-label="PA">236</td><td data-label="GD">55</td></tr>
-<tr><td data-label="Rank">2</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">10</td><td data-label="W">3</td><td data-label="D">1</td><td data-label="L">1</td><td data-label="PF">295</td><td data-label="PA">214</td><td data-label="GD">81</td></tr>
-<tr><td data-label="Rank">3</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">189</td><td data-label="PA">208</td><td data-label="GD">-19</td></tr>
-<tr><td data-label="Rank">4</td><td data-label="Manager">Julius Long</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">184</td><td data-label="PA">215</td><td data-label="GD">-31</td></tr>
-<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">0</td><td data-label="W">0</td><td data-label="D">0</td><td data-label="L">5</td><td data-label="PF">173</td><td data-label="PA">311</td><td data-label="GD">-138</td></tr>
-</tbody></table></div>
-<h3>Knockout Rounds</h3>
-<p>Each two-legged tie has its own table. In aggregate rows, green marks the winner and red marks the loser.</p>
-<h3>Quarterfinals</h3>
-<p><strong>Quarterfinal: Ethan Ellsworth vs Alexander Chaban</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Ethan Ellsworth</th><th>Alexander Chaban</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Ethan Ellsworth">38</td><td data-label="Alexander Chaban">49</td><td data-label="Winner">Alexander Chaban</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Ethan Ellsworth">41</td><td data-label="Alexander Chaban">26</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Ethan Ellsworth" class="cup-winner-cell">79</td><td data-label="Alexander Chaban" class="cup-loser-cell">75</td><td data-label="Winner" class="cup-winner-cell">Ethan Ellsworth</td></tr>
-</tbody></table></div>
-<p><strong>Quarterfinal: Justin Miller vs Ryan Donlan</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Justin Miller</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Justin Miller">49</td><td data-label="Ryan Donlan">50</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Justin Miller">56</td><td data-label="Ryan Donlan">49</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Justin Miller" class="cup-winner-cell">105</td><td data-label="Ryan Donlan" class="cup-loser-cell">99</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
-</tbody></table></div>
-<p><strong>Quarterfinal: Luke Lockwood vs Julius Long</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Luke Lockwood</th><th>Julius Long</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Luke Lockwood">40</td><td data-label="Julius Long">37</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Luke Lockwood">32</td><td data-label="Julius Long">48</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Luke Lockwood" class="cup-loser-cell">72</td><td data-label="Julius Long" class="cup-winner-cell">85</td><td data-label="Winner" class="cup-winner-cell">Julius Long</td></tr>
-</tbody></table></div>
-<p><strong>Quarterfinal: Levi Morant vs Dylan Reid</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">28</td><td data-label="Levi Morant">25</td><td data-label="Dylan Reid">49</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">29</td><td data-label="Levi Morant">55</td><td data-label="Dylan Reid">64</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">28/29</td><td data-label="Levi Morant" class="cup-loser-cell">80</td><td data-label="Dylan Reid" class="cup-winner-cell">113</td><td data-label="Winner" class="cup-winner-cell">Dylan Reid</td></tr>
-</tbody></table></div>
-<h3>Semifinals</h3>
-<p><strong>Semifinal: Ethan Ellsworth vs Justin Miller</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Ethan Ellsworth</th><th>Justin Miller</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">32</td><td data-label="Ethan Ellsworth">51</td><td data-label="Justin Miller">52</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Ethan Ellsworth">73</td><td data-label="Justin Miller">81</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">32/33</td><td data-label="Ethan Ellsworth" class="cup-loser-cell">124</td><td data-label="Justin Miller" class="cup-winner-cell">133</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
-</tbody></table></div>
-<p><strong>Semifinal: Julius Long vs Dylan Reid</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Julius Long</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">32</td><td data-label="Julius Long">31</td><td data-label="Dylan Reid">61</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Julius Long">61</td><td data-label="Dylan Reid">53</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">32/33</td><td data-label="Julius Long" class="cup-loser-cell">92</td><td data-label="Dylan Reid" class="cup-winner-cell">114</td><td data-label="Winner" class="cup-winner-cell">Dylan Reid</td></tr>
-</tbody></table></div>
-<h3>Final</h3>
-<p><strong>Final: Justin Miller vs Dylan Reid</strong></p>
-<div class="table-wrap cup-final-table">
-<table>
-<thead><tr><th>GW</th><th>Justin Miller</th><th>Dylan Reid</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="GW">36</td><td data-label="Justin Miller" class="cup-winner-cell">75</td><td data-label="Dylan Reid" class="cup-loser-cell">66</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
-</tbody></table></div>
-<h3>Group Stage Results</h3>
+<summary><h2>2027 Pick Board</h2></summary>
+<p>Workbook-style board for 2027: each column is the original owner of the pick, and the cell shows whether that pick is still own or owed to another manager.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li><code>Own</code> means the original owner still controls that pick.</li>
+<li><code>-&gt; Manager</code> means that original pick is currently owed to the named manager.</li>
+<li><code>Keeper</code> appears for rounds 1 and 2 because those slots are not part of the traded-pick count.</li>
+</ul>
+</details>
 <div class="table-wrap"><table>
-<thead><tr><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th></tr></thead>
+<thead><tr><th>Round</th><th>Donny</th><th>Justin</th><th>House/Haydo</th><th>Levi</th><th>Luke</th><th>Julius</th><th>Drake</th><th>Chabo</th><th>Ethan</th><th>Dylan</th></tr></thead>
 <tbody>
-<tr><td data-label="GW">6</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">53</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">57</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="GW">6</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">30</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">28</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="GW">6</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">38</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">22</td><td data-label="Winner">Levi Morant</td></tr>
-<tr><td data-label="GW">6</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">63</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">63</td><td data-label="Winner">Draw</td></tr>
-<tr><td data-label="GW">6</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">17</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">54</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">54</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Houseman</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">41</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">49</td><td data-label="Winner">Levi Morant</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">59</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">40</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">57</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">47</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">42</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="GW">11</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">33</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">39</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="GW">11</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">60</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">48</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="GW">11</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">68</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">44</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="GW">11</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">54</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">39</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="GW">11</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">45</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">48</td><td data-label="Winner">Alexander Chaban</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">31</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">48</td><td data-label="Winner">Levi Morant</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">44</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">45</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">46</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">40</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">58</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">29</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">36</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">26</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="GW">17</td><td data-label="Manager A">Ryan Houseman</td><td data-label="Score A">58</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">59</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="GW">17</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">49</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">45</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="GW">17</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">52</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">48</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="GW">17</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">106</td><td data-label="Manager B">Drake Byrd</td><td data-label="Score B">24</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="GW">17</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">25</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">49</td><td data-label="Winner">Alexander Chaban</td></tr>
+<tr><td data-label="Round">1st</td><td data-label="Donny">Keeper</td><td data-label="Justin">Keeper</td><td data-label="House/Haydo">Keeper</td><td data-label="Levi">Keeper</td><td data-label="Luke">Keeper</td><td data-label="Julius">Keeper</td><td data-label="Drake">Keeper</td><td data-label="Chabo">Keeper</td><td data-label="Ethan">Keeper</td><td data-label="Dylan">Keeper</td></tr>
+<tr><td data-label="Round">2nd</td><td data-label="Donny">Keeper</td><td data-label="Justin">Keeper</td><td data-label="House/Haydo">Keeper</td><td data-label="Levi">Keeper</td><td data-label="Luke">Keeper</td><td data-label="Julius">Keeper</td><td data-label="Drake">Keeper</td><td data-label="Chabo">Keeper</td><td data-label="Ethan">Keeper</td><td data-label="Dylan">Keeper</td></tr>
+<tr><td data-label="Round">3rd</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">4th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">5th</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Levi</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">6th</td><td data-label="Donny">Own</td><td data-label="Justin">-&gt;Levi</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">7th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">8th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">9th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">10th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">11th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">12th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">13th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">14th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
+<tr><td data-label="Round">15th</td><td data-label="Donny">Own</td><td data-label="Justin">Own</td><td data-label="House/Haydo">Own</td><td data-label="Levi">Own</td><td data-label="Luke">Own</td><td data-label="Julius">Own</td><td data-label="Drake">Own</td><td data-label="Chabo">Own</td><td data-label="Ethan">Own</td><td data-label="Dylan">Own</td></tr>
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>2024-25 Cup</h2></summary>
-<p>Open this section for the group tables, knockout path, and final from that season.</p>
-<h3>Group Stage Standings</h3>
-<p>The red row is the final-place entrant in that group.</p>
-<h3>Group A Standings</h3>
-<div class="table-wrap cup-group-table">
-<table>
-<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
-<tbody>
-<tr><td data-label="Rank">1</td><td data-label="Manager">Julius Long</td><td data-label="Pts">12</td><td data-label="W">4</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">267</td><td data-label="PA">234</td><td data-label="GD">33</td></tr>
-<tr><td data-label="Rank">2</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">233</td><td data-label="PA">201</td><td data-label="GD">32</td></tr>
-<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">229</td><td data-label="PA">205</td><td data-label="GD">24</td></tr>
-<tr><td data-label="Rank">4</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">235</td><td data-label="PA">238</td><td data-label="GD">-3</td></tr>
-<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">4</td><td data-label="PF">181</td><td data-label="PA">228</td><td data-label="GD">-47</td></tr>
-</tbody></table></div>
-<h3>Group B Standings</h3>
-<div class="table-wrap cup-group-table">
-<table>
-<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
-<tbody>
-<tr><td data-label="Rank">1</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">9</td><td data-label="W">3</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">217</td><td data-label="PA">212</td><td data-label="GD">5</td></tr>
-<tr><td data-label="Rank">2</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">294</td><td data-label="PA">224</td><td data-label="GD">70</td></tr>
-<tr><td data-label="Rank">3</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">7</td><td data-label="W">2</td><td data-label="D">1</td><td data-label="L">2</td><td data-label="PF">224</td><td data-label="PA">232</td><td data-label="GD">-8</td></tr>
-<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">215</td><td data-label="PA">263</td><td data-label="GD">-48</td></tr>
-<tr class="cup-eliminated-row"><td data-label="Rank">5</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">3</td><td data-label="PF">205</td><td data-label="PA">263</td><td data-label="GD">-58</td></tr>
-</tbody></table></div>
-<h3>Knockout Rounds</h3>
-<p>Each two-legged tie has its own table. In aggregate rows, green marks the winner and red marks the loser.</p>
-<h3>Quarterfinals</h3>
-<p><strong>Quarterfinal: Ryan Houseman vs Drake Byrd</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Ryan Houseman</th><th>Drake Byrd</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Ryan Houseman">87</td><td data-label="Drake Byrd">42</td><td data-label="Winner">Ryan Houseman</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Ryan Houseman">43</td><td data-label="Drake Byrd">63</td><td data-label="Winner">Drake Byrd</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Ryan Houseman" class="cup-winner-cell">130</td><td data-label="Drake Byrd" class="cup-loser-cell">105</td><td data-label="Winner" class="cup-winner-cell">Ryan Houseman</td></tr>
-</tbody></table></div>
-<p><strong>Quarterfinal: Levi Morant vs Alexander Chaban</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Alexander Chaban</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Levi Morant">51</td><td data-label="Alexander Chaban">53</td><td data-label="Winner">Alexander Chaban</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Levi Morant">56</td><td data-label="Alexander Chaban">30</td><td data-label="Winner">Levi Morant</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Levi Morant" class="cup-winner-cell">107</td><td data-label="Alexander Chaban" class="cup-loser-cell">83</td><td data-label="Winner" class="cup-winner-cell">Levi Morant</td></tr>
-</tbody></table></div>
-<p><strong>Quarterfinal: Justin Miller vs Ryan Donlan</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Justin Miller</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Justin Miller">109</td><td data-label="Ryan Donlan">90</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Justin Miller">86</td><td data-label="Ryan Donlan">75</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Justin Miller" class="cup-winner-cell">195</td><td data-label="Ryan Donlan" class="cup-loser-cell">165</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
-</tbody></table></div>
-<p><strong>Quarterfinal: Luke Lockwood vs Julius Long</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Luke Lockwood</th><th>Julius Long</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">24</td><td data-label="Luke Lockwood">46</td><td data-label="Julius Long">32</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">25</td><td data-label="Luke Lockwood">62</td><td data-label="Julius Long">49</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">24/25</td><td data-label="Luke Lockwood" class="cup-winner-cell">108</td><td data-label="Julius Long" class="cup-loser-cell">81</td><td data-label="Winner" class="cup-winner-cell">Luke Lockwood</td></tr>
-</tbody></table></div>
-<h3>Semifinals</h3>
-<p><strong>Semifinal: Levi Morant vs Justin Miller</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Levi Morant</th><th>Justin Miller</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">31</td><td data-label="Levi Morant">43</td><td data-label="Justin Miller">54</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Levi Morant">55</td><td data-label="Justin Miller">63</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">31/33</td><td data-label="Levi Morant" class="cup-loser-cell">98</td><td data-label="Justin Miller" class="cup-winner-cell">117</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
-</tbody></table></div>
-<p><strong>Semifinal: Ryan Houseman vs Luke Lockwood</strong></p>
-<div class="table-wrap cup-knockout-table">
-<table>
-<thead><tr><th>Leg</th><th>GW</th><th>Ryan Houseman</th><th>Luke Lockwood</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="Leg">Leg 1</td><td data-label="GW">31</td><td data-label="Ryan Houseman">48</td><td data-label="Luke Lockwood">40</td><td data-label="Winner">Ryan Houseman</td></tr>
-<tr><td data-label="Leg">Leg 2</td><td data-label="GW">33</td><td data-label="Ryan Houseman">74</td><td data-label="Luke Lockwood">80</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="Leg">Aggregate</td><td data-label="GW">31/33</td><td data-label="Ryan Houseman" class="cup-winner-cell">122</td><td data-label="Luke Lockwood" class="cup-loser-cell">120</td><td data-label="Winner" class="cup-winner-cell">Ryan Houseman</td></tr>
-</tbody></table></div>
-<h3>Final</h3>
-<p><strong>Final: Justin Miller vs Ryan Houseman</strong></p>
-<div class="table-wrap cup-final-table">
-<table>
-<thead><tr><th>GW</th><th>Justin Miller</th><th>Ryan Houseman</th><th>Winner</th></tr></thead>
-<tbody>
-<tr><td data-label="GW">36</td><td data-label="Justin Miller" class="cup-winner-cell">60</td><td data-label="Ryan Houseman" class="cup-loser-cell">55</td><td data-label="Winner" class="cup-winner-cell">Justin Miller</td></tr>
-</tbody></table></div>
-<h3>Group Stage Results</h3>
+<summary><h2>Traded Pick Detail</h2></summary>
+<p>A compact list of every future pick currently marked as owed to someone other than its original owner.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>GW</th><th>Manager A</th><th>Score A</th><th>Manager B</th><th>Score B</th><th>Winner</th></tr></thead>
+<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Current Holder</th><th>Workbook Cell</th></tr></thead>
 <tbody>
-<tr><td data-label="GW">4</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">38</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">42</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="GW">4</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">57</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">26</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="GW">4</td><td data-label="Manager A">Dylan Reid</td><td data-label="Score A">37</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Houseman</td></tr>
-<tr><td data-label="GW">4</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">34</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">49</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="GW">4</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">73</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">41</td><td data-label="Winner">Levi Morant</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">34</td><td data-label="Manager B">Alexander Chaban</td><td data-label="Score B">38</td><td data-label="Winner">Alexander Chaban</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">44</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">22</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">76</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">59</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">31</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">64</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="GW">7</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">54</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">56</td><td data-label="Winner">Ryan Houseman</td></tr>
-<tr><td data-label="GW">10</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">33</td><td data-label="Manager B">Ryan Donlan</td><td data-label="Score B">32</td><td data-label="Winner">Drake Byrd</td></tr>
-<tr><td data-label="GW">10</td><td data-label="Manager A">Julius Long</td><td data-label="Score A">37</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">32</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="GW">10</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">82</td><td data-label="Manager B">Luke Lockwood</td><td data-label="Score B">28</td><td data-label="Winner">Alexander Chaban</td></tr>
-<tr><td data-label="GW">10</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">47</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">42</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="GW">10</td><td data-label="Manager A">Justin Miller</td><td data-label="Score A">41</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">32</td><td data-label="Winner">Justin Miller</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">64</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">42</td><td data-label="Winner">Drake Byrd</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">47</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">71</td><td data-label="Winner">Julius Long</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">38</td><td data-label="Manager B">Levi Morant</td><td data-label="Score B">83</td><td data-label="Winner">Levi Morant</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Ethan Ellsworth</td><td data-label="Score A">46</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">44</td><td data-label="Winner">Ethan Ellsworth</td></tr>
-<tr><td data-label="GW">13</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">48</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">33</td><td data-label="Winner">Luke Lockwood</td></tr>
-<tr><td data-label="GW">16</td><td data-label="Manager A">Ryan Donlan</td><td data-label="Score A">58</td><td data-label="Manager B">Julius Long</td><td data-label="Score B">41</td><td data-label="Winner">Ryan Donlan</td></tr>
-<tr><td data-label="GW">16</td><td data-label="Manager A">Alexander Chaban</td><td data-label="Score A">42</td><td data-label="Manager B">Dylan Reid</td><td data-label="Score B">48</td><td data-label="Winner">Dylan Reid</td></tr>
-<tr><td data-label="GW">16</td><td data-label="Manager A">Drake Byrd</td><td data-label="Score A">64</td><td data-label="Manager B">Ethan Ellsworth</td><td data-label="Score B">47</td><td data-label="Winner">Drake Byrd</td></tr>
-<tr><td data-label="GW">16</td><td data-label="Manager A">Levi Morant</td><td data-label="Score A">42</td><td data-label="Manager B">Justin Miller</td><td data-label="Score B">42</td><td data-label="Winner">Draw</td></tr>
-<tr><td data-label="GW">16</td><td data-label="Manager A">Luke Lockwood</td><td data-label="Score A">34</td><td data-label="Manager B">Ryan Houseman</td><td data-label="Score B">44</td><td data-label="Winner">Ryan Houseman</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Dylan</td><td data-label="Workbook Cell">OWED TO DYLAN</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Workbook Cell">OWED TO DRAKE</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">4th</td><td data-label="Original Owner">Levi</td><td data-label="Current Holder">Ethan</td><td data-label="Workbook Cell">OWED TO ETHAN</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">House/Haydo</td><td data-label="Current Holder">Dylan</td><td data-label="Workbook Cell">OWED TO DYLAN</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Ethan</td><td data-label="Workbook Cell">OWED TO ETHAN</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Julius</td><td data-label="Workbook Cell">OWED TO JULIUS</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">7th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Drake</td><td data-label="Workbook Cell">OWED TO DRAKE</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">8th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">9th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Julius</td><td data-label="Workbook Cell">OWED TO JULIUS</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Donny</td><td data-label="Current Holder">Dylan</td><td data-label="Workbook Cell">OWED TO DYLAN</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Ethan</td><td data-label="Current Holder">Donny</td><td data-label="Workbook Cell">OWED TO DONNY</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">House/Haydo</td><td data-label="Workbook Cell">OWED TO HOUSE/HAYDO</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Luke</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Round">5th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
+<tr><td data-label="Year">2027</td><td data-label="Round">6th</td><td data-label="Original Owner">Justin</td><td data-label="Current Holder">Levi</td><td data-label="Workbook Cell">OWED TO LEVI</td></tr>
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>2023-24 Cup</h2></summary>
-<p>Open this section for the group tables, knockout path, and final from that season.</p>
-<h3>Knockout Rounds</h3>
-<p>Only the final winner and finalist are tracked for this season; detailed knockout data is not available.</p>
-<h3>Final</h3>
-<p><strong>Final: Luke Lockwood vs Ryan Donlan</strong></p>
-<div class="table-wrap cup-final-table">
-<table>
-<thead><tr><th>GW</th><th>Luke Lockwood</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
+<summary><h2>Trade Ledger Reconciliation</h2></summary>
+<p>This checks the workbook tracker against future-pick movements parsed from the trade ledger and calls out anything that does not line up.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li>For 2024-25 trade rows, only explicitly labeled <code>2026</code> or <code>2027</code> picks are treated as future picks; unlabeled picks are assumed to belong to the already-completed 2025 draft.</li>
+<li>For 2025-26 rows after Draft Day, unlabeled pick assets are treated as 2026 future picks unless the asset explicitly says 2027.</li>
+<li>In pass-through cases where a manager held more than one pick in the same round, the parser tries to use the non-own pick first and records that assumption below.</li>
+<li>Multi-team trade rows do not state exactly which counterparty receives each asset, so those recipient assumptions are listed separately.</li>
+</ul>
+</details>
+<div class="table-wrap"><table>
+<thead><tr><th>Issue</th><th>Year</th><th>Round</th><th>Original Owner</th><th>Tracker Holder</th><th>Ledger Holder</th><th>Ledger Evidence</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td data-label="GW">Not tracked</td><td data-label="Luke Lockwood" class="cup-winner-cell">Not tracked</td><td data-label="Ryan Donlan" class="cup-loser-cell">Not tracked</td><td data-label="Winner" class="cup-winner-cell">Luke Lockwood</td></tr>
+<tr><td data-label="Issue">Tracker-only move</td><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Justin</td><td data-label="Tracker Holder">Dylan</td><td data-label="Ledger Holder">Justin</td><td data-label="Ledger Evidence">No future-pick movement found in parsed trade ledger</td><td data-label="Notes">-</td></tr>
+<tr><td data-label="Issue">Ledger-only move</td><td data-label="Year">2026</td><td data-label="Round">3rd</td><td data-label="Original Owner">Levi</td><td data-label="Tracker Holder">Levi</td><td data-label="Ledger Holder">Dylan</td><td data-label="Ledger Evidence">Postseason: Levi -&gt; Dylan</td><td data-label="Notes">-</td></tr>
+<tr><td data-label="Issue">Tracker-only move</td><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Justin</td><td data-label="Tracker Holder">House/Haydo</td><td data-label="Ledger Holder">Justin</td><td data-label="Ledger Evidence">No future-pick movement found in parsed trade ledger</td><td data-label="Notes">-</td></tr>
+<tr><td data-label="Issue">Ledger-only move</td><td data-label="Year">2026</td><td data-label="Round">10th</td><td data-label="Original Owner">Levi</td><td data-label="Tracker Holder">Levi</td><td data-label="Ledger Holder">House/Haydo</td><td data-label="Ledger Evidence">Postseason: Levi -&gt; House/Haydo</td><td data-label="Notes">-</td></tr>
+<tr><td data-label="Issue">Ledger-only move</td><td data-label="Year">2026</td><td data-label="Round">12th</td><td data-label="Original Owner">Donny</td><td data-label="Tracker Holder">Donny</td><td data-label="Ledger Holder">Dylan</td><td data-label="Ledger Evidence">Draft Day: Donny -&gt; Dylan</td><td data-label="Notes">-</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Reconciliation Assumptions</h2></summary>
+<p>These are not necessarily errors; they are the trade-ledger rows where the parser had to infer pass-through ownership or a recipient.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Year</th><th>Round</th><th>Original Owner</th><th>Sender</th><th>Recipient</th><th>Timing</th><th>Assumption</th><th>Asset</th></tr></thead>
+<tbody>
+<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">House/Haydo</td><td data-label="Sender">House/Haydo</td><td data-label="Recipient">Levi</td><td data-label="Timing">Postseason</td><td data-label="Assumption">multi-team trade; recipient inferred as Levi</td><td data-label="Asset">2026 5th-round pick</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">5th</td><td data-label="Original Owner">House/Haydo</td><td data-label="Sender">Levi</td><td data-label="Recipient">Dylan</td><td data-label="Timing">Postseason</td><td data-label="Assumption">original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks</td><td data-label="Asset">2026 5th-round pick</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Workbook Count Check</h2></summary>
+<p>This verifies the workbook&#x27;s 2026 count table against the ownership board above.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Year</th><th>Round</th><th>Manager</th><th>Workbook Count</th><th>Calculated Count</th><th>Workbook Row</th></tr></thead>
+<tbody>
+<tr><td data-label="Year">2026</td><td data-label="Round">3</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">23</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">3</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">23</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">4</td><td data-label="Manager">Ethan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">24</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">7</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">0</td><td data-label="Workbook Row">27</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">10</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">1</td><td data-label="Calculated Count">2</td><td data-label="Workbook Row">30</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">12</td><td data-label="Manager">Ethan</td><td data-label="Workbook Count">2</td><td data-label="Calculated Count">1</td><td data-label="Workbook Row">32</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Levi</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">17</td><td data-label="Workbook Row">36</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Luke</td><td data-label="Workbook Count">13</td><td data-label="Calculated Count">10</td><td data-label="Workbook Row">36</td></tr>
+<tr><td data-label="Year">2026</td><td data-label="Round">Total</td><td data-label="Manager">Dylan</td><td data-label="Workbook Count">15</td><td data-label="Calculated Count">16</td><td data-label="Workbook Row">36</td></tr>
 </tbody></table></div>
 </details>
 <details>
 <summary><h2>Output Files</h2></summary>
-<p>Supporting CSVs generated for this page.</p>
 <ul>
-<li><code>cup_finals.csv</code></li>
-<li><code>cup_all_time_records.csv</code></li>
-<li><code>cup_group_standings.csv</code></li>
-<li><code>cup_matches.csv</code></li>
+<li><code>future_pick_portfolio.csv</code></li>
+<li><code>future_pick_matrix.csv</code></li>
+<li><code>future_pick_traded_detail.csv</code></li>
+<li><code>future_pick_reconciliation.csv</code></li>
+<li><code>future_pick_count_audit.csv</code></li>
+<li><code>future_pick_movements.csv</code></li>
 </ul>
 </details>
   </main>

@@ -1,0 +1,21 @@
+trade_id,source_row,season,timing,year,round,round_label,original_owner,previous_holder,sender,recipient,asset,notes,headline,source
+2024-25-30,31,2024-25,Postseason,2026,5,5th,House/Haydo,House/Haydo,House/Haydo,Levi,2026 5th-round pick,multi-team trade; recipient inferred as Levi,Levi <-> Luke <-> House/Haydo,BPL Fantasy.xlsx / Trade History
+2024-25-31,32,2024-25,Postseason,2026,3,3rd,Levi,Levi,Levi,Dylan,2026 3rd-round pick,,Levi <-> Dylan,BPL Fantasy.xlsx / Trade History
+2024-25-31,32,2024-25,Postseason,2026,5,5th,House/Haydo,Levi,Levi,Dylan,2026 5th-round pick,original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks,Levi <-> Dylan,BPL Fantasy.xlsx / Trade History
+2024-25-32,33,2024-25,Postseason,2026,4,4th,Donny,Donny,Donny,Drake,2026 4th-round pick,,Drake <-> Donny,BPL Fantasy.xlsx / Trade History
+2024-25-32,33,2024-25,Postseason,2026,8,8th,Donny,Donny,Donny,Drake,2026 8th-round pick,,Drake <-> Donny,BPL Fantasy.xlsx / Trade History
+2024-25-34,35,2024-25,Postseason,2026,10,10th,Levi,Levi,Levi,House/Haydo,2026 10th-round pick,,Levi <-> House/Haydo,BPL Fantasy.xlsx / Trade History
+2025-26-35,37,2025-26,Draft Day,2026,10,10th,Donny,Donny,Donny,Dylan,2026 10th-round pick (via Donny),,Donny <-> Dylan,BPL Fantasy.xlsx / Trade History
+2025-26-35,37,2025-26,Draft Day,2026,12,12th,Donny,Donny,Donny,Dylan,2026 12th-round pick (via Donny),,Donny <-> Dylan,BPL Fantasy.xlsx / Trade History
+2025-26-36,38,2025-26,Preseason,2026,10,10th,Ethan,Ethan,Ethan,Donny,10th-round pick (via Ethan),,Donny <-> Ethan,BPL Fantasy.xlsx / Trade History
+2025-26-39,41,2025-26,GW 10,2026,12,12th,Luke,Luke,Luke,Levi,12th-round pick,,Levi <-> Luke,BPL Fantasy.xlsx / Trade History
+2025-26-40,42,2025-26,GW 22,2026,6,6th,Donny,Donny,Donny,Ethan,6th-round pick,,Donny <-> Ethan,BPL Fantasy.xlsx / Trade History
+2025-26-41,43,2025-26,GW 24,2026,4,4th,Levi,Levi,Levi,Ethan,4th-round pick,,Levi <-> Ethan,BPL Fantasy.xlsx / Trade History
+2025-26-42,44,2025-26,GW 26,2026,7,7th,Justin,Justin,Justin,Levi,2026 7th-round pick,,Levi <-> Justin,BPL Fantasy.xlsx / Trade History
+2025-26-42,44,2025-26,GW 26,2027,6,6th,Justin,Justin,Justin,Levi,2027 6th-round pick,,Levi <-> Justin,BPL Fantasy.xlsx / Trade History
+2025-26-43,45,2025-26,GW 31,2027,5,5th,Justin,Justin,Justin,Levi,2027 5th-round pick,,Levi <-> Justin,BPL Fantasy.xlsx / Trade History
+2025-26-44,46,2025-26,GW 31,2026,7,7th,Luke,Luke,Luke,Levi,2026 7th-round pick,,Levi <-> Luke,BPL Fantasy.xlsx / Trade History
+2025-26-45,47,2025-26,GW 31,2026,3,3rd,Luke,Luke,Luke,Levi,2026 3rd-round pick,,Levi <-> Luke,BPL Fantasy.xlsx / Trade History
+2025-26-46,48,2025-26,GW 31,2026,8,8th,Justin,Justin,Justin,Levi,2026 8th-round pick,,Levi <-> Justin,BPL Fantasy.xlsx / Trade History
+2025-26-47,49,2025-26,GW 31,2026,6,6th,Justin,Justin,Justin,Julius,2026 6th-round pick,,Julius <-> Justin,BPL Fantasy.xlsx / Trade History
+2025-26-48,50,2025-26,GW 32,2026,9,9th,Donny,Donny,Donny,Julius,2026 9th-round pick,,Julius <-> Donny,BPL Fantasy.xlsx / Trade History
