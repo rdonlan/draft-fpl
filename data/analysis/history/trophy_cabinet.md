@@ -11,14 +11,14 @@ Use this table as the simple trophy cabinet: league titles plus BMS FPL Cup titl
 <summary>Definitions and source notes</summary>
 
 - **Major Trophies** equals league titles plus cup titles.
-- `N/A` cup seasons are ignored.
+- `N/A` cup seasons are ignored. The 2023-24 cup winner/finalist are included, but detailed cup match data starts in 2024-25.
 - The 2025-26 league champion and cup winner are added from the generated analysis and cup workbook.
 </details>
 
 | Manager | Major Trophies | League Titles | League Seasons | Cup Titles | Cup Seasons |
 | --- | --- | --- | --- | --- | --- |
-| Ryan Donlan | 3 | 3 | 2023-24, 2024-25, 2025-26 | 0 |  |
-| Justin Miller | 2 | 0 |  | 2 | 2024-25, 2025-26 |
+| Ryan Donlan | 3 | 3 | 2025-26, 2024-25, 2023-24 | 0 |  |
+| Justin Miller | 2 | 0 |  | 2 | 2025-26, 2024-25 |
 | Levi Morant | 1 | 1 | 2022-23 | 0 |  |
 | Luke Lockwood | 1 | 0 |  | 1 | 2023-24 |
 | Alexander Chaban | 0 | 0 |  | 0 |  |
@@ -33,14 +33,14 @@ Use this table as the simple trophy cabinet: league titles plus BMS FPL Cup titl
 <details>
 <summary><h2>Season Honor Roll</h2></summary>
 
-Use this as the year-by-year ledger for champions, cup winners, and season awards.
+Use this as the year-by-year ledger for league and cup finalists.
 
-| Season | Champion | Cup Winner | Leading Scorer | Underdog Player | Highest Scoring Week | Lowest Scoring Week | Longest Win Streak | Longest Loss Streak |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2022-23 | Levi Morant | N/A | Haaland (Arjun) | N/A | N/A | N/A | N/A | N/A |
-| 2023-24 | Ryan Donlan | Luke Lockwood | Palmer (Ryan Donlan) | N/A | Luke Lockwood | Owen | Ryan Donlan | Owen |
-| 2024-25 | Ryan Donlan | Justin Miller | Salah (Julius Long / Justin Miller) | Murphy (Ryan Donlan) | Ryan Donlan (83) | Ethan Ellsworth (13) | Justin Miller (8) | Dylan Reid (8) |
-| 2025-26 | Ryan Donlan (81) | Justin Miller | Not yet tracked in source workbook | Not yet tracked in source workbook | Ryan Donlan (103, GW33) | Drake Byrd (16, GW18) | Ryan Donlan (11) | Alexander Chaban (13) |
+| Season | League Winner | League Runner-Up | Cup Winner | Cup Finalist |
+| --- | --- | --- | --- | --- |
+| 2025-26 | Ryan Donlan | Justin Miller | Justin Miller | Dylan Reid |
+| 2024-25 | Ryan Donlan | Justin Miller | Justin Miller | Ryan Houseman |
+| 2023-24 | Ryan Donlan | Luke Lockwood | Luke Lockwood | Ryan Donlan |
+| 2022-23 | Levi Morant | Ryan Donlan | N/A | N/A |
 
 </details>
 
@@ -54,7 +54,7 @@ Use this as the audit trail for what fed the page.
 | Cup History | 2024-25 Season.xlsx / BMS does FPL Cup tab | 2024-25 cup group, knockout, and final data |
 | Cup History | BMS Does FPL.xlsx cup workbook | 2025-26 cup group, knockout, and final data |
 | Trophy Cabinet | BPL Fantasy.xlsx | 2022-23 through 2024-25 season honor roll |
-| Trophy Cabinet | API/generated analysis | 2025-26 champion, highest/lowest weekly score, and streak winners |
+| Trophy Cabinet | API/generated analysis | 2025-26 champion and runner-up records |
 
 </details>
 
