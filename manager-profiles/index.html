@@ -182,7 +182,8 @@
     details > h3,
     details > .table-wrap,
     details > .rating-chart-wrap,
-    details > .power-tabs {
+    details > .power-tabs,
+    details > .pick-lookup {
       margin-left: 18px;
       margin-right: 18px;
     }
@@ -1002,6 +1003,135 @@
       margin-top: 12px;
       color: var(--tab-ink);
     }
+    .pick-lookup {
+      margin-top: 18px;
+      margin-bottom: 24px;
+    }
+    .pick-controls {
+      display: grid;
+      grid-template-columns: minmax(130px, 180px) minmax(180px, 260px) minmax(0, 1fr);
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 16px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .pick-control {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 850;
+    }
+    .pick-control select {
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.96rem;
+      font-weight: 750;
+    }
+    .pick-lookup-status {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 850;
+    }
+    .pick-profile {
+      display: none;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .pick-profile.is-active {
+      display: block;
+    }
+    .pick-profile-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .pick-profile-heading h3 {
+      margin: 0 0 4px;
+      color: var(--ink);
+      font-size: 1.14rem;
+    }
+    .pick-profile-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+    .pick-profile-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .pick-stat {
+      display: grid;
+      gap: 4px;
+      min-height: 76px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .pick-stat span {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    .pick-stat strong {
+      color: var(--ink);
+      font-size: 1.28rem;
+      line-height: 1.1;
+    }
+    .pick-profile-grid {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.2fr) minmax(220px, 0.9fr) minmax(220px, 0.9fr);
+      gap: 12px;
+      align-items: start;
+    }
+    .pick-panel {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .pick-panel-title {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 850;
+    }
+    .pick-panel table {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .pick-panel th,
+    .pick-panel td {
+      padding: 8px 10px;
+      font-size: 0.86rem;
+    }
     strong {
       color: var(--accent-2);
     }
@@ -1046,7 +1176,8 @@
       details > h3,
       details > .table-wrap,
       details > .rating-chart-wrap,
-      details > .power-tabs {
+      details > .power-tabs,
+      details > .pick-lookup {
         margin-left: 10px;
         margin-right: 10px;
       }
@@ -1082,6 +1213,18 @@
       }
       .trade-summary-meta {
         justify-content: flex-start;
+      }
+      .pick-controls {
+        grid-template-columns: 1fr;
+      }
+      .pick-profile {
+        padding: 12px;
+      }
+      .pick-profile-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .pick-profile-grid {
+        grid-template-columns: 1fr;
       }
       .power-tab-panel > h3,
       .power-tab-panel > p,
@@ -2143,6 +2286,36 @@
   managerSelect?.addEventListener("change", applyFilters);
   search?.addEventListener("input", applyFilters);
   applyFilters();
+})();
+</script>
+  <script>
+(() => {
+  const lookup = document.querySelector("[data-pick-lookup]");
+  if (!lookup) return;
+
+  const yearSelect = lookup.querySelector("[data-pick-year]");
+  const managerSelect = lookup.querySelector("[data-pick-manager]");
+  const status = lookup.querySelector("[data-pick-lookup-status]");
+  const profiles = Array.from(lookup.querySelectorAll("[data-pick-profile]"));
+
+  const update = () => {
+    const year = yearSelect?.value || "";
+    const manager = managerSelect?.value || "";
+    let activeProfile = null;
+    profiles.forEach((profile) => {
+      const isActive = profile.dataset.year === year && profile.dataset.manager === manager;
+      profile.classList.toggle("is-active", isActive);
+      profile.toggleAttribute("hidden", !isActive);
+      if (isActive) activeProfile = profile;
+    });
+    if (status) {
+      status.textContent = activeProfile ? `${manager} ${year}` : "No matching pick profile";
+    }
+  };
+
+  yearSelect?.addEventListener("change", update);
+  managerSelect?.addEventListener("change", update);
+  update();
 })();
 </script>
 </body>

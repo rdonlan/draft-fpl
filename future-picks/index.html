@@ -182,7 +182,8 @@
     details > h3,
     details > .table-wrap,
     details > .rating-chart-wrap,
-    details > .power-tabs {
+    details > .power-tabs,
+    details > .pick-lookup {
       margin-left: 18px;
       margin-right: 18px;
     }
@@ -1002,6 +1003,135 @@
       margin-top: 12px;
       color: var(--tab-ink);
     }
+    .pick-lookup {
+      margin-top: 18px;
+      margin-bottom: 24px;
+    }
+    .pick-controls {
+      display: grid;
+      grid-template-columns: minmax(130px, 180px) minmax(180px, 260px) minmax(0, 1fr);
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 16px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .pick-control {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 850;
+    }
+    .pick-control select {
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.96rem;
+      font-weight: 750;
+    }
+    .pick-lookup-status {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 850;
+    }
+    .pick-profile {
+      display: none;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .pick-profile.is-active {
+      display: block;
+    }
+    .pick-profile-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .pick-profile-heading h3 {
+      margin: 0 0 4px;
+      color: var(--ink);
+      font-size: 1.14rem;
+    }
+    .pick-profile-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+    .pick-profile-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .pick-stat {
+      display: grid;
+      gap: 4px;
+      min-height: 76px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .pick-stat span {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    .pick-stat strong {
+      color: var(--ink);
+      font-size: 1.28rem;
+      line-height: 1.1;
+    }
+    .pick-profile-grid {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.2fr) minmax(220px, 0.9fr) minmax(220px, 0.9fr);
+      gap: 12px;
+      align-items: start;
+    }
+    .pick-panel {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .pick-panel-title {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 850;
+    }
+    .pick-panel table {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .pick-panel th,
+    .pick-panel td {
+      padding: 8px 10px;
+      font-size: 0.86rem;
+    }
     strong {
       color: var(--accent-2);
     }
@@ -1046,7 +1176,8 @@
       details > h3,
       details > .table-wrap,
       details > .rating-chart-wrap,
-      details > .power-tabs {
+      details > .power-tabs,
+      details > .pick-lookup {
         margin-left: 10px;
         margin-right: 10px;
       }
@@ -1082,6 +1213,18 @@
       }
       .trade-summary-meta {
         justify-content: flex-start;
+      }
+      .pick-controls {
+        grid-template-columns: 1fr;
+      }
+      .pick-profile {
+        padding: 12px;
+      }
+      .pick-profile-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .pick-profile-grid {
+        grid-template-columns: 1fr;
       }
       .power-tab-panel > h3,
       .power-tab-panel > p,
@@ -1251,40 +1394,1041 @@
 <li><strong>Workbook count-table flags</strong>: 9 count mismatches between the 2026 count table and the 2026 ownership board.</li>
 </ul>
 <details open>
-<summary><h2>Manager Pick Portfolio</h2></summary>
-<p>Use this as the quick manager-by-manager view: total future picks, net gain/loss versus the standard 13 draft picks, incoming picks, and outgoing picks.</p>
+<summary><h2>Manager Pick Lookup</h2></summary>
+<p>Choose a year and manager to see exactly which future picks they hold and which of their own picks they no longer control.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 <ul>
-<li>The standard count is rounds <code>3rd</code> through <code>15th</code>; rounds <code>1st</code> and <code>2nd</code> are keeper slots in the workbook.</li>
-<li><strong>Incoming</strong> means another manager&#x27;s original pick is currently held by this manager.</li>
-<li><strong>Outgoing</strong> means this manager&#x27;s original pick is currently owed to someone else.</li>
+<li>The lookup counts rounds <code>3rd</code> through <code>15th</code>; the <code>1st</code> and <code>2nd</code> rounds are keeper slots.</li>
+<li><strong>Picks They Have</strong> includes both their own picks and picks acquired from other managers.</li>
+<li><strong>Own Picks They Do Not Have</strong> shows original picks that are currently owed away.</li>
+<li><strong>Incoming Picks From Other Managers</strong> is the acquired-pick subset of the picks they hold.</li>
 </ul>
 </details>
-<div class="table-wrap"><table>
-<thead><tr><th>Year</th><th>Manager</th><th>Total Picks</th><th>Net vs 13</th><th>Incoming</th><th>Outgoing</th><th>Incoming Picks</th><th>Outgoing Picks</th></tr></thead>
+<div class="pick-lookup" data-pick-lookup>
+<div class="pick-controls">
+<label class="pick-control"><span>Year</span><select data-pick-year>
+<option value="2026" selected>2026</option>
+<option value="2027">2027</option>
+</select></label>
+<label class="pick-control"><span>Manager</span><select data-pick-manager>
+<option value="Donny" selected>Donny</option>
+<option value="Justin">Justin</option>
+<option value="House/Haydo">House/Haydo</option>
+<option value="Levi">Levi</option>
+<option value="Luke">Luke</option>
+<option value="Julius">Julius</option>
+<option value="Drake">Drake</option>
+<option value="Chabo">Chabo</option>
+<option value="Ethan">Ethan</option>
+<option value="Dylan">Dylan</option>
+</select></label>
+<div class="pick-lookup-status" data-pick-lookup-status></div>
+</div>
+<div class="pick-profile-list">
+<section class="pick-profile is-active" data-pick-profile data-year="2026" data-manager="Donny">
+<div class="pick-profile-heading">
+<div><h3>Donny - 2026</h3><p>9 picks, -4 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>9</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-4</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>1</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
 <tbody>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Levi</td><td data-label="Total Picks">17</td><td data-label="Net vs 13">+4</td><td data-label="Incoming">5</td><td data-label="Outgoing">1</td><td data-label="Incoming Picks">Luke 3rd; Justin 7th; Luke 7th; Justin 8th; Luke 12th</td><td data-label="Outgoing Picks">4th to Ethan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Dylan</td><td data-label="Total Picks">16</td><td data-label="Net vs 13">+3</td><td data-label="Incoming">3</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Justin 3rd; House/Haydo 5th; Donny 10th</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Drake</td><td data-label="Total Picks">15</td><td data-label="Net vs 13">+2</td><td data-label="Incoming">2</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Donny 4th; Donny 8th</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Julius</td><td data-label="Total Picks">15</td><td data-label="Net vs 13">+2</td><td data-label="Incoming">2</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Justin 6th; Donny 9th</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Ethan</td><td data-label="Total Picks">14</td><td data-label="Net vs 13">+1</td><td data-label="Incoming">2</td><td data-label="Outgoing">1</td><td data-label="Incoming Picks">Levi 4th; Donny 6th</td><td data-label="Outgoing Picks">10th to Donny</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Chabo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">House/Haydo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">1</td><td data-label="Outgoing">1</td><td data-label="Incoming Picks">Justin 10th</td><td data-label="Outgoing Picks">5th to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Luke</td><td data-label="Total Picks">10</td><td data-label="Net vs 13">-3</td><td data-label="Incoming">0</td><td data-label="Outgoing">3</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">3rd to Levi; 7th to Levi; 12th to Levi</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Donny</td><td data-label="Total Picks">9</td><td data-label="Net vs 13">-4</td><td data-label="Incoming">1</td><td data-label="Outgoing">5</td><td data-label="Incoming Picks">Ethan 10th</td><td data-label="Outgoing Picks">4th to Drake; 6th to Ethan; 8th to Drake; 9th to Julius; 10th to Dylan</td></tr>
-<tr><td data-label="Year">2026</td><td data-label="Manager">Justin</td><td data-label="Total Picks">8</td><td data-label="Net vs 13">-5</td><td data-label="Incoming">0</td><td data-label="Outgoing">5</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">3rd to Dylan; 6th to Julius; 7th to Levi; 8th to Levi; 10th to House/Haydo</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Levi</td><td data-label="Total Picks">15</td><td data-label="Net vs 13">+2</td><td data-label="Incoming">2</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">Justin 5th; Justin 6th</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Chabo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Donny</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Drake</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Dylan</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Ethan</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">House/Haydo</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Julius</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Luke</td><td data-label="Total Picks">13</td><td data-label="Net vs 13">+0</td><td data-label="Incoming">0</td><td data-label="Outgoing">0</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">-</td></tr>
-<tr><td data-label="Year">2027</td><td data-label="Manager">Justin</td><td data-label="Total Picks">11</td><td data-label="Net vs 13">-2</td><td data-label="Incoming">0</td><td data-label="Outgoing">2</td><td data-label="Incoming Picks">-</td><td data-label="Outgoing Picks">5th to Levi; 6th to Levi</td></tr>
-</tbody></table></div>
+<tr><td>3rd</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Ethan</td><td>From Ethan</td></tr>
+<tr><td>11th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Donny</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>4th</td><td>Drake</td></tr>
+<tr><td>6th</td><td>Ethan</td></tr>
+<tr><td>8th</td><td>Drake</td></tr>
+<tr><td>9th</td><td>Julius</td></tr>
+<tr><td>10th</td><td>Dylan</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>10th</td><td>Ethan</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Justin" hidden>
+<div class="pick-profile-heading">
+<div><h3>Justin - 2026</h3><p>8 picks, -5 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>8</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-5</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Justin</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Dylan</td></tr>
+<tr><td>6th</td><td>Julius</td></tr>
+<tr><td>7th</td><td>Levi</td></tr>
+<tr><td>8th</td><td>Levi</td></tr>
+<tr><td>10th</td><td>House/Haydo</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="House/Haydo" hidden>
+<div class="pick-profile-heading">
+<div><h3>House/Haydo - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>1</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>11th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>House/Haydo</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>5th</td><td>Dylan</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>10th</td><td>Justin</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Levi" hidden>
+<div class="pick-profile-heading">
+<div><h3>Levi - 2026</h3><p>17 picks, +4 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>17</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+4</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>5</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>3rd</td><td>Luke</td><td>From Luke</td></tr>
+<tr><td>5th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>7th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Luke</td><td>From Luke</td></tr>
+<tr><td>8th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>8th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Luke</td><td>From Luke</td></tr>
+<tr><td>13th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Levi</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>4th</td><td>Ethan</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Luke</td></tr>
+<tr><td>7th</td><td>Justin</td></tr>
+<tr><td>7th</td><td>Luke</td></tr>
+<tr><td>8th</td><td>Justin</td></tr>
+<tr><td>12th</td><td>Luke</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Luke" hidden>
+<div class="pick-profile-heading">
+<div><h3>Luke - 2026</h3><p>10 picks, -3 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>10</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-3</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>3</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>4th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Luke</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Levi</td></tr>
+<tr><td>7th</td><td>Levi</td></tr>
+<tr><td>12th</td><td>Levi</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Julius" hidden>
+<div class="pick-profile-heading">
+<div><h3>Julius - 2026</h3><p>15 picks, +2 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>15</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+2</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>7th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Donny</td><td>From Donny</td></tr>
+<tr><td>9th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Julius</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>6th</td><td>Justin</td></tr>
+<tr><td>9th</td><td>Donny</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Drake" hidden>
+<div class="pick-profile-heading">
+<div><h3>Drake - 2026</h3><p>15 picks, +2 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>15</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+2</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Donny</td><td>From Donny</td></tr>
+<tr><td>4th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Donny</td><td>From Donny</td></tr>
+<tr><td>8th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Drake</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>4th</td><td>Donny</td></tr>
+<tr><td>8th</td><td>Donny</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Chabo" hidden>
+<div class="pick-profile-heading">
+<div><h3>Chabo - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Chabo</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Ethan" hidden>
+<div class="pick-profile-heading">
+<div><h3>Ethan - 2026</h3><p>14 picks, +1 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>14</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+1</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Levi</td><td>From Levi</td></tr>
+<tr><td>5th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Donny</td><td>From Donny</td></tr>
+<tr><td>6th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Ethan</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>10th</td><td>Donny</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>4th</td><td>Levi</td></tr>
+<tr><td>6th</td><td>Donny</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2026" data-manager="Dylan" hidden>
+<div class="pick-profile-heading">
+<div><h3>Dylan - 2026</h3><p>16 picks, +3 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>16</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+3</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>3</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>3rd</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>4th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>House/Haydo</td><td>From House/Haydo</td></tr>
+<tr><td>6th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Donny</td><td>From Donny</td></tr>
+<tr><td>10th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Dylan</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Justin</td></tr>
+<tr><td>5th</td><td>House/Haydo</td></tr>
+<tr><td>10th</td><td>Donny</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Donny" hidden>
+<div class="pick-profile-heading">
+<div><h3>Donny - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Donny</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Justin" hidden>
+<div class="pick-profile-heading">
+<div><h3>Justin - 2027</h3><p>11 picks, -2 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>11</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-2</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>2</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Justin</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Justin</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td>5th</td><td>Levi</td></tr>
+<tr><td>6th</td><td>Levi</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="House/Haydo" hidden>
+<div class="pick-profile-heading">
+<div><h3>House/Haydo - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>House/Haydo</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>House/Haydo</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Levi" hidden>
+<div class="pick-profile-heading">
+<div><h3>Levi - 2027</h3><p>15 picks, +2 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>15</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+2</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>5th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Justin</td><td>From Justin</td></tr>
+<tr><td>6th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Levi</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td>5th</td><td>Justin</td></tr>
+<tr><td>6th</td><td>Justin</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Luke" hidden>
+<div class="pick-profile-heading">
+<div><h3>Luke - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Luke</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Luke</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Julius" hidden>
+<div class="pick-profile-heading">
+<div><h3>Julius - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Julius</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Julius</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Drake" hidden>
+<div class="pick-profile-heading">
+<div><h3>Drake - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Drake</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Drake</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Chabo" hidden>
+<div class="pick-profile-heading">
+<div><h3>Chabo - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Chabo</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Chabo</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Ethan" hidden>
+<div class="pick-profile-heading">
+<div><h3>Ethan - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Ethan</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Ethan</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="pick-profile" data-pick-profile data-year="2027" data-manager="Dylan" hidden>
+<div class="pick-profile-heading">
+<div><h3>Dylan - 2027</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
+</div>
+<div class="pick-profile-stats">
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+</div>
+<div class="pick-profile-grid">
+<div class="pick-panel"><div class="pick-panel-title">Picks They Have</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Type</th></tr></thead>
+<tbody>
+<tr><td>3rd</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>4th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>5th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>8th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>10th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>11th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>12th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>13th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>14th</td><td>Dylan</td><td>Own pick</td></tr>
+<tr><td>15th</td><td>Dylan</td><td>Own pick</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
+<table>
+<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
+<table>
+<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<tbody>
+<tr><td colspan="2">None</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</div>
+</div>
 </details>
 <details>
 <summary><h2>2026 Pick Board</h2></summary>
@@ -1607,6 +2751,36 @@
   managerSelect?.addEventListener("change", applyFilters);
   search?.addEventListener("input", applyFilters);
   applyFilters();
+})();
+</script>
+  <script>
+(() => {
+  const lookup = document.querySelector("[data-pick-lookup]");
+  if (!lookup) return;
+
+  const yearSelect = lookup.querySelector("[data-pick-year]");
+  const managerSelect = lookup.querySelector("[data-pick-manager]");
+  const status = lookup.querySelector("[data-pick-lookup-status]");
+  const profiles = Array.from(lookup.querySelectorAll("[data-pick-profile]"));
+
+  const update = () => {
+    const year = yearSelect?.value || "";
+    const manager = managerSelect?.value || "";
+    let activeProfile = null;
+    profiles.forEach((profile) => {
+      const isActive = profile.dataset.year === year && profile.dataset.manager === manager;
+      profile.classList.toggle("is-active", isActive);
+      profile.toggleAttribute("hidden", !isActive);
+      if (isActive) activeProfile = profile;
+    });
+    if (status) {
+      status.textContent = activeProfile ? `${manager} ${year}` : "No matching pick profile";
+    }
+  };
+
+  yearSelect?.addEventListener("change", update);
+  managerSelect?.addEventListener("change", update);
+  update();
 })();
 </script>
 </body>
