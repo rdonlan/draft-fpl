@@ -554,6 +554,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,16290,16305,**Cunha Believe it?!,13,False,318,Bassey,FUL,DEF,2,2,1
 37,16290,16305,**Cunha Believe it?!,14,False,485,Gordon,NEW,MID,0,0,1
 37,16290,16305,**Cunha Believe it?!,15,False,250,Delap,CHE,FWD,1,1,1
+38,16290,16305,**Cunha Believe it?!,1,True,341,Darlow,LEE,GKP,2,2,1
+38,16290,16305,**Cunha Believe it?!,2,True,373,Virgil,LIV,DEF,2,2,1
+38,16290,16305,**Cunha Believe it?!,3,True,145,De Cuyper,BHA,DEF,0,0,1
+38,16290,16305,**Cunha Believe it?!,4,True,77,Hill,BOU,DEF,3,3,1
+38,16290,16305,**Cunha Believe it?!,5,True,660,Mosquera,ARS,DEF,4,4,1
+38,16290,16305,**Cunha Believe it?!,6,True,318,Bassey,FUL,DEF,6,6,1
+38,16290,16305,**Cunha Believe it?!,7,True,515,Gibbs-White,NFO,MID,9,9,1
+38,16290,16305,**Cunha Believe it?!,8,True,784,Groß,BHA,MID,2,2,1
+38,16290,16305,**Cunha Believe it?!,9,True,120,Schade,BRE,MID,7,7,1
+38,16290,16305,**Cunha Believe it?!,10,True,691,Calvert-Lewin,LEE,FWD,2,2,1
+38,16290,16305,**Cunha Believe it?!,11,True,596,Solanke,TOT,FWD,0,0,1
+38,16290,16305,**Cunha Believe it?!,12,False,101,Kelleher,BRE,GKP,6,6,1
+38,16290,16305,**Cunha Believe it?!,13,False,450,Cunha,MUN,MID,0,0,1
+38,16290,16305,**Cunha Believe it?!,14,False,485,Gordon,NEW,MID,0,0,1
+38,16290,16305,**Cunha Believe it?!,15,False,430,Haaland,MCI,FWD,0,0,1
 1,17373,17389,Santa’s reijnders,1,True,366,A.Becker,LIV,GKP,1,1,1
 1,17373,17389,Santa’s reijnders,2,True,371,Kerkez,LIV,DEF,0,0,1
 1,17373,17389,Santa’s reijnders,3,True,224,Cucurella,CHE,DEF,8,8,1
@@ -1109,6 +1124,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,17373,17389,Santa’s reijnders,13,False,603,Diouf,WHU,DEF,0,0,1
 37,17373,17389,Santa’s reijnders,14,False,121,Damsgaard,BRE,MID,2,2,1
 37,17373,17389,Santa’s reijnders,15,False,714,A.Jimenez,BOU,DEF,0,0,1
+38,17373,17389,Santa’s reijnders,1,True,567,Kinsky,TOT,GKP,5,5,1
+38,17373,17389,Santa’s reijnders,2,True,442,Maguire,MUN,DEF,6,6,1
+38,17373,17389,Santa’s reijnders,3,True,603,Diouf,WHU,DEF,6,6,1
+38,17373,17389,Santa’s reijnders,4,True,508,N.Williams,NFO,DEF,2,2,1
+38,17373,17389,Santa’s reijnders,5,True,121,Damsgaard,BRE,MID,1,1,1
+38,17373,17389,Santa’s reijnders,6,True,384,Gakpo,LIV,MID,2,2,1
+38,17373,17389,Santa’s reijnders,7,True,267,Sarr,CRY,MID,1,1,1
+38,17373,17389,Santa’s reijnders,8,True,417,Cherki,MCI,MID,1,1,1
+38,17373,17389,Santa’s reijnders,9,True,500,Osula,NEW,FWD,2,2,1
+38,17373,17389,Santa’s reijnders,10,True,100,Kroupi.Jr,BOU,FWD,2,2,1
+38,17373,17389,Santa’s reijnders,11,True,785,Pablo,WHU,FWD,1,1,1
+38,17373,17389,Santa’s reijnders,12,False,367,Mamardashvili,LIV,GKP,0,0,1
+38,17373,17389,Santa’s reijnders,13,False,406,Khusanov,MCI,DEF,0,0,1
+38,17373,17389,Santa’s reijnders,14,False,350,Aaronson,LEE,MID,1,1,1
+38,17373,17389,Santa’s reijnders,15,False,440,Dalot,MUN,DEF,0,0,1
 1,19316,19296,Amorim de mi vida,1,True,287,Pickford,EVE,GKP,2,2,1
 1,19316,19296,Amorim de mi vida,2,True,476,Burn,NEW,DEF,9,9,1
 1,19316,19296,Amorim de mi vida,3,True,440,Dalot,MUN,DEF,1,1,1
@@ -1664,6 +1694,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,19316,19296,Amorim de mi vida,13,False,679,Šeško,MUN,FWD,0,0,1
 37,19316,19296,Amorim de mi vida,14,False,74,Truffert,BOU,DEF,4,4,1
 37,19316,19296,Amorim de mi vida,15,False,113,Van den Berg,BRE,DEF,4,4,1
+38,19316,19296,Amorim de mi vida,1,True,287,Pickford,EVE,GKP,2,2,1
+38,19316,19296,Amorim de mi vida,2,True,106,Collins,BRE,DEF,3,3,1
+38,19316,19296,Amorim de mi vida,3,True,224,Cucurella,CHE,DEF,1,1,1
+38,19316,19296,Amorim de mi vida,4,True,74,Truffert,BOU,DEF,6,6,1
+38,19316,19296,Amorim de mi vida,5,True,113,Van den Berg,BRE,DEF,4,4,1
+38,19316,19296,Amorim de mi vida,6,True,414,Foden,MCI,MID,2,2,1
+38,19316,19296,Amorim de mi vida,7,True,237,Enzo,CHE,MID,1,1,1
+38,19316,19296,Amorim de mi vida,8,True,416,Bernardo,MCI,MID,1,1,1
+38,19316,19296,Amorim de mi vida,9,True,20,Trossard,ARS,MID,0,0,1
+38,19316,19296,Amorim de mi vida,10,True,715,Woltemade,NEW,FWD,2,2,1
+38,19316,19296,Amorim de mi vida,11,True,661,Gyökeres,ARS,FWD,1,1,1
+38,19316,19296,Amorim de mi vida,12,False,681,Hermansen,WHU,GKP,7,7,1
+38,19316,19296,Amorim de mi vida,13,False,17,Ødegaard,ARS,MID,0,0,1
+38,19316,19296,Amorim de mi vida,14,False,679,Šeško,MUN,FWD,0,0,1
+38,19316,19296,Amorim de mi vida,15,False,257,Lacroix,CRY,DEF,0,0,1
 1,37280,36251,Grand-Larseny,1,True,502,Sels,NFO,GKP,2,2,1
 1,37280,36251,Grand-Larseny,2,True,256,Muñoz,CRY,DEF,5,5,1
 1,37280,36251,Grand-Larseny,3,True,6,Saliba,ARS,DEF,9,9,1
@@ -2219,6 +2264,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,37280,36251,Grand-Larseny,13,False,597,Richarlison,TOT,FWD,7,7,1
 37,37280,36251,Grand-Larseny,14,False,390,Gravenberch,LIV,MID,2,2,1
 37,37280,36251,Grand-Larseny,15,False,443,Shaw,MUN,DEF,6,6,1
+38,37280,36251,Grand-Larseny,1,True,502,Sels,NFO,GKP,3,3,1
+38,37280,36251,Grand-Larseny,2,True,256,Muñoz,CRY,DEF,1,1,1
+38,37280,36251,Grand-Larseny,3,True,443,Shaw,MUN,DEF,6,6,1
+38,37280,36251,Grand-Larseny,4,True,151,Van Hecke,BHA,DEF,1,1,1
+38,37280,36251,Grand-Larseny,5,True,449,B.Fernandes,MUN,MID,14,14,1
+38,37280,36251,Grand-Larseny,6,True,84,Tavernier,BOU,MID,10,10,1
+38,37280,36251,Grand-Larseny,7,True,488,Bruno G.,NEW,MID,1,1,1
+38,37280,36251,Grand-Larseny,8,True,390,Gravenberch,LIV,MID,2,2,1
+38,37280,36251,Grand-Larseny,9,True,654,Strand Larsen,CRY,FWD,2,2,1
+38,37280,36251,Grand-Larseny,10,True,597,Richarlison,TOT,FWD,2,2,1
+38,37280,36251,Grand-Larseny,11,True,97,Evanilson,BOU,FWD,2,2,1
+38,37280,36251,Grand-Larseny,12,False,67,Petrović,BOU,GKP,3,3,1
+38,37280,36251,Grand-Larseny,13,False,6,Saliba,ARS,DEF,0,0,1
+38,37280,36251,Grand-Larseny,14,False,261,Richards,CRY,DEF,0,0,1
+38,37280,36251,Grand-Larseny,15,False,457,Casemiro,MUN,MID,0,0,1
 1,38443,37354,Sue-nited FC*,1,True,314,Leno,FUL,GKP,3,3,1
 1,38443,37354,Sue-nited FC*,2,True,374,Konaté,LIV,DEF,1,1,1
 1,38443,37354,Sue-nited FC*,3,True,10,Lewis-Skelly,ARS,DEF,0,0,1
@@ -2774,6 +2834,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,38443,37354,Sue-nited FC*,13,False,499,Isak,LIV,FWD,0,0,1
 37,38443,37354,Sue-nited FC*,14,False,370,Frimpong,LIV,DEF,0,0,1
 37,38443,37354,Sue-nited FC*,15,False,403,Gvardiol,MCI,DEF,0,0,1
+38,38443,37354,Sue-nited FC*,1,True,139,Verbruggen,BHA,GKP,2,2,1
+38,38443,37354,Sue-nited FC*,2,True,606,Mavropanos,WHU,DEF,8,8,1
+38,38443,37354,Sue-nited FC*,3,True,291,Tarkowski,EVE,DEF,3,3,1
+38,38443,37354,Sue-nited FC*,4,True,73,Smith,BOU,DEF,2,2,1
+38,38443,37354,Sue-nited FC*,5,True,329,Wilson,FUL,MID,4,4,1
+38,38443,37354,Sue-nited FC*,6,True,382,Wirtz,LIV,MID,1,1,1
+38,38443,37354,Sue-nited FC*,7,True,83,O.Dango,BRE,MID,2,2,1
+38,38443,37354,Sue-nited FC*,8,True,700,Dowman,ARS,MID,3,3,1
+38,38443,37354,Sue-nited FC*,9,True,299,Ndiaye,EVE,MID,2,2,1
+38,38443,37354,Sue-nited FC*,10,True,792,Taty,WHU,FWD,8,8,1
+38,38443,37354,Sue-nited FC*,11,True,64,Watkins,AVL,FWD,13,13,1
+38,38443,37354,Sue-nited FC*,12,False,728,Donnarumma,MCI,GKP,0,0,1
+38,38443,37354,Sue-nited FC*,13,False,411,O'Reilly,MCI,DEF,0,0,1
+38,38443,37354,Sue-nited FC*,14,False,10,Lewis-Skelly,ARS,DEF,2,2,1
+38,38443,37354,Sue-nited FC*,15,False,499,Isak,LIV,FWD,0,0,1
 1,52346,50697,*Saka It To Me Baby,1,True,182,Trafford,MCI,GKP,7,7,1
 1,52346,50697,*Saka It To Me Baby,2,True,11,White,ARS,DEF,6,6,1
 1,52346,50697,*Saka It To Me Baby,3,True,38,Konsa,AVL,DEF,3,3,1
@@ -3329,6 +3404,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,52346,50697,*Saka It To Me Baby,13,False,146,Dunk,BHA,DEF,2,2,1
 37,52346,50697,*Saka It To Me Baby,14,False,735,Kolo Muani,TOT,FWD,2,2,1
 37,52346,50697,*Saka It To Me Baby,15,False,215,Flemming,BUR,FWD,1,1,1
+38,52346,50697,*Saka It To Me Baby,1,True,183,Weiss,BUR,GKP,3,3,1
+38,52346,50697,*Saka It To Me Baby,2,True,720,Hincapie,ARS,DEF,2,2,1
+38,52346,50697,*Saka It To Me Baby,3,True,636,S.Bueno,WOL,DEF,2,2,1
+38,52346,50697,*Saka It To Me Baby,4,True,568,Pedro Porro,TOT,DEF,10,10,1
+38,52346,50697,*Saka It To Me Baby,5,True,475,Botman,NEW,DEF,3,3,1
+38,52346,50697,*Saka It To Me Baby,6,True,235,Palmer,CHE,MID,8,8,1
+38,52346,50697,*Saka It To Me Baby,7,True,584,Tel,TOT,MID,3,3,1
+38,52346,50697,*Saka It To Me Baby,8,True,613,Souček,WHU,MID,3,3,1
+38,52346,50697,*Saka It To Me Baby,9,True,215,Flemming,BUR,FWD,9,9,1
+38,52346,50697,*Saka It To Me Baby,10,True,735,Kolo Muani,TOT,FWD,1,1,1
+38,52346,50697,*Saka It To Me Baby,11,True,752,Mané,WOL,FWD,2,2,1
+38,52346,50697,*Saka It To Me Baby,12,False,470,Dúbravka,BUR,GKP,0,0,1
+38,52346,50697,*Saka It To Me Baby,13,False,90,Scott,BOU,MID,0,0,1
+38,52346,50697,*Saka It To Me Baby,14,False,476,Burn,NEW,DEF,1,1,1
+38,52346,50697,*Saka It To Me Baby,15,False,16,Saka,ARS,MID,0,0,1
 1,52570,50914,Bowen Arrows,1,True,469,Pope,NEW,GKP,9,9,1
 1,52570,50914,Bowen Arrows,2,True,370,Frimpong,LIV,DEF,1,1,1
 1,52570,50914,Bowen Arrows,3,True,402,Aït-Nouri,MCI,DEF,9,9,1
@@ -3884,6 +3974,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,52570,50914,Bowen Arrows,13,False,507,Aina,NFO,DEF,0,0,1
 37,52570,50914,Bowen Arrows,14,False,249,João Pedro,CHE,FWD,0,0,1
 37,52570,50914,Bowen Arrows,15,False,547,E.Le Fée,SUN,MID,13,13,1
+38,52570,50914,Bowen Arrows,1,True,469,Pope,NEW,GKP,2,2,1
+38,52570,50914,Bowen Arrows,2,True,226,Chalobah,CHE,DEF,1,1,1
+38,52570,50914,Bowen Arrows,3,True,473,Hall,NEW,DEF,1,1,1
+38,52570,50914,Bowen Arrows,4,True,72,Senesi,BOU,DEF,2,2,1
+38,52570,50914,Bowen Arrows,5,True,82,Semenyo,MCI,MID,6,6,1
+38,52570,50914,Bowen Arrows,6,True,808,Rayan,BOU,MID,2,2,1
+38,52570,50914,Bowen Arrows,7,True,452,Amad,MUN,MID,7,7,1
+38,52570,50914,Bowen Arrows,8,True,489,J.Murphy,NEW,MID,1,1,1
+38,52570,50914,Bowen Arrows,9,True,624,Bowen,WHU,FWD,12,12,1
+38,52570,50914,Bowen Arrows,10,True,249,João Pedro,CHE,FWD,1,1,1
+38,52570,50914,Bowen Arrows,11,True,136,Thiago,BRE,FWD,2,2,1
+38,52570,50914,Bowen Arrows,12,False,673,Ramsdale,NEW,GKP,0,0,1
+38,52570,50914,Bowen Arrows,13,False,507,Aina,NFO,DEF,0,0,1
+38,52570,50914,Bowen Arrows,14,False,684,Alderete,SUN,DEF,0,0,1
+38,52570,50914,Bowen Arrows,15,False,547,E.Le Fée,SUN,MID,5,5,1
 1,55182,53433,Into the WOODwork*,1,True,220,Sánchez,CHE,GKP,8,8,1
 1,55182,53433,Into the WOODwork*,2,True,260,Guéhi,MCI,DEF,6,6,1
 1,55182,53433,Into the WOODwork*,3,True,508,N.Williams,NFO,DEF,1,1,1
@@ -4439,6 +4544,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,55182,53433,Into the WOODwork*,13,False,381,M.Salah,LIV,MID,1,1,1
 37,55182,53433,Into the WOODwork*,14,False,615,Summerville,WHU,MID,2,2,1
 37,55182,53433,Into the WOODwork*,15,False,337,Raúl,FUL,FWD,1,1,1
+38,55182,53433,Into the WOODwork*,1,True,220,Sánchez,CHE,GKP,2,2,1
+38,55182,53433,Into the WOODwork*,2,True,374,Konaté,LIV,DEF,1,1,1
+38,55182,53433,Into the WOODwork*,3,True,683,Thiaw,NEW,DEF,1,1,1
+38,55182,53433,Into the WOODwork*,4,True,7,Calafiori,ARS,DEF,1,1,1
+38,55182,53433,Into the WOODwork*,5,True,458,Mainoo,MUN,MID,2,2,1
+38,55182,53433,Into the WOODwork*,6,True,242,Dewsbury-Hall,EVE,MID,2,2,1
+38,55182,53433,Into the WOODwork*,7,True,119,Mbeumo,MUN,MID,9,9,1
+38,55182,53433,Into the WOODwork*,8,True,615,Summerville,WHU,MID,6,6,1
+38,55182,53433,Into the WOODwork*,9,True,381,M.Salah,LIV,MID,6,6,1
+38,55182,53433,Into the WOODwork*,10,True,337,Raúl,FUL,FWD,1,1,1
+38,55182,53433,Into the WOODwork*,11,True,526,Igor Jesus,NFO,FWD,2,2,1
+38,55182,53433,Into the WOODwork*,12,False,366,A.Becker,LIV,GKP,2,2,1
+38,55182,53433,Into the WOODwork*,13,False,260,Guéhi,MCI,DEF,0,0,1
+38,55182,53433,Into the WOODwork*,14,False,407,Matheus N.,MCI,DEF,0,0,1
+38,55182,53433,Into the WOODwork*,15,False,666,Ekitiké,LIV,FWD,0,0,1
 1,90970,88117,ChabosSpurs@Law,1,True,253,Henderson,CRY,GKP,6,6,1
 1,90970,88117,ChabosSpurs@Law,2,True,507,Aina,NFO,DEF,4,4,1
 1,90970,88117,ChabosSpurs@Law,3,True,477,Livramento,NEW,DEF,9,9,1
@@ -4994,6 +5114,21 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,90970,88117,ChabosSpurs@Law,13,False,225,James,CHE,DEF,0,0,1
 37,90970,88117,ChabosSpurs@Law,14,False,311,Beto,EVE,FWD,2,2,1
 37,90970,88117,ChabosSpurs@Law,15,False,310,Barry,EVE,FWD,1,1,1
+38,90970,88117,ChabosSpurs@Law,1,True,314,Leno,FUL,GKP,6,6,1
+38,90970,88117,ChabosSpurs@Law,2,True,225,James,CHE,DEF,1,1,1
+38,90970,88117,ChabosSpurs@Law,3,True,293,O'Brien,EVE,DEF,1,1,1
+38,90970,88117,ChabosSpurs@Law,4,True,575,Van de Ven,TOT,DEF,6,6,1
+38,90970,88117,ChabosSpurs@Law,5,True,110,Kayode,BRE,DEF,2,2,1
+38,90970,88117,ChabosSpurs@Law,6,True,36,Cash,AVL,DEF,1,1,1
+38,90970,88117,ChabosSpurs@Law,7,True,418,Doku,MCI,MID,1,1,1
+38,90970,88117,ChabosSpurs@Law,8,True,708,M.Fernandes,WHU,MID,9,9,1
+38,90970,88117,ChabosSpurs@Law,9,True,200,Anthony,BUR,MID,2,2,1
+38,90970,88117,ChabosSpurs@Law,10,True,487,Barnes,NEW,MID,1,1,1
+38,90970,88117,ChabosSpurs@Law,11,True,733,Brobbey,SUN,FWD,5,5,1
+38,90970,88117,ChabosSpurs@Law,12,False,253,Henderson,CRY,GKP,2,2,1
+38,90970,88117,ChabosSpurs@Law,13,False,47,Rogers,AVL,MID,0,0,1
+38,90970,88117,ChabosSpurs@Law,14,False,311,Beto,EVE,FWD,1,1,1
+38,90970,88117,ChabosSpurs@Law,15,False,310,Barry,EVE,FWD,2,2,1
 1,102012,99210,eze as u like b*%chs,1,True,1,Raya,ARS,GKP,10,10,1
 1,102012,99210,eze as u like b*%chs,2,True,5,Gabriel,ARS,DEF,6,6,1
 1,102012,99210,eze as u like b*%chs,3,True,506,Murillo,NFO,DEF,2,2,1
@@ -5549,3 +5684,18 @@ event,entry_id,league_entry_id,team,slot,is_starter,element,player,club,position
 37,102012,99210,eze as u like b*%chs,13,False,365,Nmecha,LEE,FWD,1,1,1
 37,102012,99210,eze as u like b*%chs,14,False,408,Rúben,MCI,DEF,0,0,1
 37,102012,99210,eze as u like b*%chs,15,False,531,Ballard,SUN,DEF,0,0,1
+38,102012,99210,eze as u like b*%chs,1,True,1,Raya,ARS,GKP,0,0,1
+38,102012,99210,eze as u like b*%chs,2,True,5,Gabriel,ARS,DEF,1,1,1
+38,102012,99210,eze as u like b*%chs,3,True,295,Keane,EVE,DEF,4,4,1
+38,102012,99210,eze as u like b*%chs,4,True,694,Mukiele,SUN,DEF,4,4,1
+38,102012,99210,eze as u like b*%chs,5,True,408,Rúben,MCI,DEF,1,1,1
+38,102012,99210,eze as u like b*%chs,6,True,266,Eze,ARS,MID,1,1,1
+38,102012,99210,eze as u like b*%chs,7,True,517,Anderson,NFO,MID,2,2,1
+38,102012,99210,eze as u like b*%chs,8,True,387,Szoboszlai,LIV,MID,2,2,1
+38,102012,99210,eze as u like b*%chs,9,True,283,Mateta,CRY,FWD,6,6,1
+38,102012,99210,eze as u like b*%chs,10,True,178,Welbeck,BHA,FWD,1,1,1
+38,102012,99210,eze as u like b*%chs,11,True,365,Nmecha,LEE,FWD,2,2,1
+38,102012,99210,eze as u like b*%chs,12,False,32,Martinez,AVL,GKP,0,0,1
+38,102012,99210,eze as u like b*%chs,13,False,664,Stach,LEE,MID,0,0,1
+38,102012,99210,eze as u like b*%chs,14,False,21,Rice,ARS,MID,0,0,1
+38,102012,99210,eze as u like b*%chs,15,False,531,Ballard,SUN,DEF,0,0,1

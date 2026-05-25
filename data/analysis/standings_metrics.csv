@@ -1,11 +1,11 @@
 rank,team,manager,record,h2h_points,points_for,points_against,avg,median,stdev,expected_h2h_points,schedule_luck,avg_weekly_rank,top_score_weeks,bottom_score_weeks,close_wins,close_losses,bad_beat_losses,soft_wins
-1,**Cunha Believe it?!,Ryan Donlan,26-0-11,78,1727,1415,46.68,44,15.35,63.0,15.0,4.78,4,2,4,2,3,6
-2,Sue-nited FC*,Justin Miller,23-0-14,69,1633,1609,44.14,45,11.19,65.67,3.33,4.73,7,3,3,2,3,2
-3,Into the WOODwork*,Luke Lockwood,21-2-14,65,1494,1420,40.38,40,11.66,52.89,12.11,5.68,3,2,8,2,1,5
-4,Grand-Larseny,Drake Byrd,19-1-17,58,1612,1637,43.57,44,12.18,63.44,-5.44,4.84,6,3,4,5,7,3
-5,eze as u like b*%chs,Ryan Houseman,19-0-18,57,1635,1543,44.19,45,12.37,63.0,-6.0,4.95,6,4,3,4,7,2
-6,Bowen Arrows,Dylan Reid,19-0-18,57,1540,1490,41.62,41,9.79,56.11,0.89,5.27,3,3,3,9,4,6
-7,*Saka It To Me Baby,Levi Morant,15-0-22,45,1449,1535,39.16,36,12.35,44.89,0.11,6.27,4,8,5,4,2,4
-8,ChabosSpurs@Law,Alexander Chaban,14-0-23,42,1450,1648,39.19,36,11.41,48.33,-6.33,6.05,3,5,6,6,4,2
-9,Santa’s reijnders,Ethan Ellsworth,13-2-22,41,1477,1529,39.92,40,9.18,51.11,-10.11,5.95,3,3,2,5,5,2
-10,Amorim de mi vida,Julius Long,13-1-23,40,1430,1621,38.65,38,12.87,42.67,-2.67,6.49,3,8,4,3,2,4
+1,**Cunha Believe it?!,Ryan Donlan,27-0-11,81,1764,1444,46.42,44.0,15.23,64.78,16.22,4.76,4,2,4,2,3,6
+2,Sue-nited FC*,Justin Miller,24-0-14,72,1681,1642,44.24,45.0,11.06,68.67,3.33,4.63,8,3,3,2,3,2
+3,Into the WOODwork*,Luke Lockwood,21-2-15,65,1527,1468,40.18,40.0,11.56,53.89,11.11,5.71,3,2,8,2,1,5
+4,Grand-Larseny,Drake Byrd,20-1-17,61,1656,1672,43.58,44.0,12.02,65.78,-4.78,4.79,6,3,4,5,7,3
+5,eze as u like b*%chs,Ryan Houseman,20-0-18,60,1659,1566,43.66,44.5,12.63,63.33,-3.33,5.05,6,4,4,4,7,3
+6,Bowen Arrows,Dylan Reid,19-0-19,57,1577,1536,41.5,41.0,9.69,57.89,-0.89,5.26,3,3,3,9,5,6
+7,*Saka It To Me Baby,Levi Morant,16-0-22,48,1495,1572,39.34,36.5,12.24,47.56,0.44,6.16,4,8,5,4,2,4
+8,ChabosSpurs@Law,Alexander Chaban,14-0-24,42,1485,1692,39.08,36.0,11.28,49.67,-7.67,6.05,3,5,6,6,4,2
+9,Santa’s reijnders,Ethan Ellsworth,13-2-23,41,1506,1566,39.63,40.0,9.22,51.78,-10.78,6,3,3,2,5,5,2
+10,Amorim de mi vida,Julius Long,13-1-24,40,1453,1645,38.24,37.0,12.94,42.67,-2.67,6.58,3,9,4,4,2,4
