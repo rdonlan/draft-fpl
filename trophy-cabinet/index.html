@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMS FPL Trophy Cabinet</title>
+  <script>
+(() => {
+  const saved = localStorage.getItem("bms-theme");
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+})();
+</script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --paper: #ffffff;
+      --ink: #18202f;
+      --muted: #667085;
+      --line: #d9deea;
+      --accent: #0b7a75;
+      --accent-2: #b54708;
+      --code: #f0f4f8;
+      --soft: #f8fafc;
+      --soft-2: #eef6f5;
+      --soft-3: #eef2f7;
+      --row-alt: #fbfcfe;
+      --table-head: #f1f5f9;
+      --table-head-ink: #344054;
+      --tab-ink: #344054;
+      --active: #075e5a;
+      --note-bg: #fbfefd;
+      --note-head: #eef6f5;
+      --note-border: #d9e6e4;
+      --note-ink: #075e5a;
+      --chart-grid: #dfe5ee;
+      --chart-axis: #526071;
+      --shadow: rgba(20, 31, 53, 0.08);
+      --shadow-soft: rgba(20, 31, 53, 0.06);
+      --tooltip-bg: rgba(255, 255, 255, 0.97);
+      --tooltip-border: #b9c5d4;
+      --switch-bg: #e9eef5;
+      --switch-active: #0b7a75;
+      --switch-thumb: #ffffff;
+    }
+    html[data-theme="dark"] {
+      --bg: #0c1117;
+      --paper: #141b23;
+      --ink: #e6edf3;
+      --muted: #9aa7b4;
+      --line: #2b3643;
+      --accent: #2dd4bf;
+      --accent-2: #f6ad55;
+      --code: #111923;
+      --soft: #101820;
+      --soft-2: #102320;
+      --soft-3: #101824;
+      --row-alt: #101820;
+      --table-head: #101a24;
+      --table-head-ink: #d7e2ed;
+      --tab-ink: #d7e2ed;
+      --active: #0f766e;
+      --note-bg: #0f211f;
+      --note-head: #12302d;
+      --note-border: #1e4f4a;
+      --note-ink: #99f6e4;
+      --chart-grid: #273241;
+      --chart-axis: #8795a8;
+      --shadow: rgba(0, 0, 0, 0.32);
+      --shadow-soft: rgba(0, 0, 0, 0.24);
+      --tooltip-bg: rgba(20, 27, 35, 0.98);
+      --tooltip-border: #3c4a5c;
+      --switch-bg: #263241;
+      --switch-active: #2dd4bf;
+      --switch-thumb: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 32px auto 56px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 55px var(--shadow);
+      padding: clamp(24px, 4vw, 48px);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 36px 0 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 1.45rem;
+      letter-spacing: 0;
+    }
+    details {
+      margin: 16px 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    details[open] {
+      box-shadow: 0 10px 28px var(--shadow-soft);
+    }
+    summary {
+      cursor: pointer;
+      padding: 15px 18px;
+      background: var(--soft);
+      border-bottom: 1px solid transparent;
+      color: var(--ink);
+      user-select: none;
+    }
+    details[open] summary {
+      border-bottom-color: var(--line);
+    }
+    summary h2 {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+    details > details {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    details.notes {
+      margin-top: 10px;
+      margin-bottom: 18px;
+      border-color: var(--note-border);
+      background: var(--note-bg);
+      box-shadow: none;
+    }
+    details.notes[open] {
+      box-shadow: none;
+    }
+    details.notes > summary {
+      padding: 10px 12px;
+      background: var(--note-head);
+      color: var(--note-ink);
+      font-size: 0.92rem;
+      font-weight: 750;
+    }
+    details.position-group {
+      margin: 12px 18px;
+      border-color: var(--line);
+      background: var(--paper);
+      box-shadow: none;
+    }
+    details.position-group[open] {
+      box-shadow: none;
+    }
+    details.position-group > summary {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 11px 14px;
+      background: var(--soft-3);
+      color: var(--ink);
+      font-weight: 800;
+    }
+    details.position-group > .table-wrap {
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+    details > p,
+    details > ul,
+    details > h3,
+    details > .table-wrap,
+    details > .rating-chart-wrap,
+    details > .power-tabs {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    details > p:first-of-type {
+      margin-top: 16px;
+    }
+    h3 {
+      margin: 26px 0 10px;
+      font-size: 1.05rem;
+      color: var(--accent);
+      letter-spacing: 0;
+    }
+    p, li {
+      font-size: 0.98rem;
+    }
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 1.35rem;
+    }
+    li {
+      margin: 6px 0;
+    }
+    code {
+      background: var(--code);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 0.08rem 0.35rem;
+      font-size: 0.92em;
+      white-space: nowrap;
+    }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin: 18px 0 28px;
+      padding: 12px;
+      background: var(--soft-2);
+      border: 1px solid var(--note-border);
+      border-radius: 8px;
+    }
+    .season-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 18px;
+    }
+    .season-tab {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font-size: 0.95rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .theme-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 36px;
+      color: var(--tab-ink);
+      font-size: 0.95rem;
+      font-weight: 750;
+      cursor: pointer;
+      user-select: none;
+    }
+    .theme-switch-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .theme-switch-track {
+      position: relative;
+      display: inline-flex;
+      flex: 0 0 auto;
+      width: 48px;
+      height: 26px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--switch-bg);
+      transition: background 160ms ease, border-color 160ms ease;
+    }
+    .theme-switch-thumb {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--switch-thumb);
+      box-shadow: 0 2px 7px var(--shadow);
+      transition: transform 160ms ease;
+    }
+    .theme-switch-input:checked + .theme-switch-track {
+      border-color: var(--switch-active);
+      background: var(--switch-active);
+    }
+    .theme-switch-input:checked + .theme-switch-track .theme-switch-thumb {
+      transform: translateX(22px);
+    }
+    .theme-switch-input:focus-visible + .theme-switch-track {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .theme-switch:hover .theme-switch-label {
+      color: var(--accent);
+    }
+    .theme-switch-label {
+      white-space: nowrap;
+    }
+    .season-tab.active {
+      background: var(--active);
+      border-color: var(--active);
+      color: #ffffff;
+    }
+    .toolbar a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid var(--note-border);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--note-ink);
+      font-size: 0.9rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 14px 0 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    @supports (content-visibility: auto) {
+      .table-wrap,
+      .rating-chart-wrap {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 360px;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--table-head);
+      color: var(--table-head-ink);
+      font-weight: 750;
+      position: sticky;
+      top: 0;
+    }
+    tr:nth-child(even) td {
+      background: var(--row-alt);
+    }
+    tr.belt-winner-row td,
+    tr:nth-child(even).belt-winner-row td {
+      background: var(--belt-bg);
+    }
+    html[data-theme="dark"] tr.belt-winner-row td,
+    html[data-theme="dark"] tr:nth-child(even).belt-winner-row td {
+      background: var(--belt-bg-dark);
+    }
+    tr.belt-winner-row td:first-child {
+      border-left: 6px solid var(--belt-accent);
+      font-weight: 750;
+    }
+    tr.belt-winner-row td:last-child {
+      font-weight: 750;
+      box-shadow: inset 0 -2px 0 var(--belt-accent);
+    }
+    td:nth-child(n+3), th:nth-child(n+3) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .belt-path-table td:nth-child(n+3),
+    .belt-path-table th:nth-child(n+3) {
+      text-align: left;
+    }
+    .belt-path-table td:first-child,
+    .belt-path-table th:first-child,
+    .belt-path-table td:nth-child(4),
+    .belt-path-table th:nth-child(4) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .belt-path-table td:nth-child(4) {
+      white-space: nowrap;
+      font-weight: 750;
+    }
+    .rating-chart-wrap {
+      overflow-x: auto;
+      margin: 16px 0 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .rating-chart {
+      display: block;
+      width: 100%;
+      min-width: 980px;
+      height: auto;
+      background: var(--paper);
+    }
+    .chart-title {
+      fill: var(--ink);
+      font-size: 17px;
+      font-weight: 800;
+    }
+    .axis-line {
+      stroke: var(--chart-axis);
+      stroke-width: 1.2;
+    }
+    .grid-line {
+      stroke: var(--chart-grid);
+      stroke-width: 1;
+    }
+    .tick-line {
+      stroke: var(--chart-axis);
+      stroke-width: 1;
+    }
+    .axis-label {
+      fill: var(--muted);
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+    .axis-caption {
+      fill: var(--table-head-ink);
+      font-size: 13px;
+      font-weight: 750;
+    }
+    .rating-line {
+      fill: none;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.9;
+    }
+    .rating-endpoint {
+      stroke: var(--paper);
+      stroke-width: 1.5;
+    }
+    .legend-swatch {
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+    .legend-label {
+      fill: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .rating-hover-zone {
+      fill: transparent;
+      cursor: crosshair;
+      pointer-events: all;
+    }
+    .rating-hover-zone:hover {
+      fill: color-mix(in srgb, var(--accent) 10%, transparent);
+      stroke: color-mix(in srgb, var(--accent) 45%, transparent);
+      stroke-width: 1;
+    }
+    .rating-tooltip {
+      position: fixed;
+      z-index: 50;
+      display: none;
+      max-width: min(320px, calc(100vw - 28px));
+      padding: 10px 12px;
+      border: 1px solid var(--tooltip-border);
+      border-radius: 8px;
+      background: var(--tooltip-bg);
+      box-shadow: 0 14px 38px var(--shadow);
+      color: var(--ink);
+      font-size: 0.86rem;
+      line-height: 1.4;
+      white-space: pre;
+      pointer-events: none;
+      font-variant-numeric: tabular-nums;
+    }
+    .rating-tooltip.is-visible {
+      display: block;
+    }
+    .power-tabs {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    .power-tab-input {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .power-tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-3);
+    }
+    .power-tab-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: var(--tab-ink);
+      font-weight: 800;
+      cursor: pointer;
+      user-select: none;
+    }
+    .power-tab-panel {
+      display: none;
+      padding: 2px 0 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .power-tab-panel > h3,
+    .power-tab-panel > p,
+    .power-tab-panel > .table-wrap,
+    .power-tab-panel > .rating-chart-wrap {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+    .power-tab-panel > h3:first-child {
+      margin-top: 18px;
+    }
+    #power-season-2025-26:checked ~ .power-tab-list label[for="power-season-2025-26"],
+    #power-season-2024-25:checked ~ .power-tab-list label[for="power-season-2024-25"] {
+      background: var(--active);
+      border-color: var(--active);
+      color: #ffffff;
+    }
+    #power-season-2025-26:checked ~ #power-panel-2025-26,
+    #power-season-2024-25:checked ~ #power-panel-2024-25 {
+      display: block;
+    }
+    strong {
+      color: var(--accent-2);
+    }
+    @media (max-width: 760px) {
+      body {
+        background: var(--paper);
+      }
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 14px 12px 28px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.08;
+      }
+      h2 {
+        margin-top: 24px;
+        font-size: 1.25rem;
+      }
+      summary {
+        min-height: 48px;
+        padding: 13px 14px;
+      }
+      summary h2 {
+        font-size: 1.02rem;
+      }
+      details {
+        margin: 12px 0;
+        border-radius: 8px;
+      }
+      details > details,
+      details.position-group {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      details > p,
+      details > ul,
+      details > h3,
+      details > .table-wrap,
+      details > .rating-chart-wrap,
+      details > .power-tabs {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .power-tab-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .power-tab-panel > h3,
+      .power-tab-panel > p,
+      .power-tab-panel > .table-wrap,
+      .power-tab-panel > .rating-chart-wrap {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .season-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .season-tab {
+        justify-content: center;
+        min-height: 42px;
+      }
+      .toolbar {
+        flex-wrap: nowrap;
+        gap: 8px;
+        margin: 12px 0 18px;
+        padding: 9px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+      }
+      .toolbar a {
+        flex: 0 0 auto;
+        min-height: 38px;
+        white-space: nowrap;
+      }
+      .table-wrap {
+        overflow: visible;
+        border: 0;
+        border-radius: 0;
+      }
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+        width: 100%;
+      }
+      table {
+        min-width: 0;
+        font-size: 0.92rem;
+      }
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      tbody {
+        display: grid;
+        gap: 10px;
+      }
+      tr {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+        overflow: hidden;
+      }
+      @supports (content-visibility: auto) {
+        tbody > tr {
+          content-visibility: auto;
+          contain-intrinsic-size: auto 96px;
+        }
+      }
+      tr:nth-child(even) td {
+        background: transparent;
+      }
+      tr.belt-winner-row {
+        background: var(--belt-bg);
+        border-left: 6px solid var(--belt-accent);
+      }
+      html[data-theme="dark"] tr.belt-winner-row {
+        background: var(--belt-bg-dark);
+      }
+      tr.belt-winner-row td,
+      tr:nth-child(even).belt-winner-row td {
+        background: transparent;
+      }
+      tr.belt-winner-row td:first-child {
+        border-left: 0;
+      }
+      tr.belt-winner-row td:last-child {
+        box-shadow: none;
+      }
+      td,
+      td:nth-child(n+3),
+      .belt-path-table td:nth-child(n+3),
+      .belt-path-table td:first-child,
+      .belt-path-table td:nth-child(4) {
+        display: grid;
+        grid-template-columns: minmax(96px, 42%) minmax(0, 1fr);
+        gap: 12px;
+        align-items: start;
+        padding: 9px 10px;
+        text-align: right;
+        border-bottom: 1px solid var(--line);
+        font-variant-numeric: tabular-nums;
+      }
+      td:last-child {
+        border-bottom: 0;
+      }
+      td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 750;
+        text-align: left;
+      }
+      code {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="season-tabs" aria-label="Season reports">
+      <a class="season-tab" href="../2025-2026/">2025-2026</a>
+<a class="season-tab" href="../2024-2025/">2024-2025</a>
+<a class="season-tab" href="../all-time/">All-Time</a>
+<a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
+<a class="season-tab" href="../power-rankings/">Power Rankings</a>
+<a class="season-tab" href="../cup-history/">Cup History</a>
+<a class="season-tab active" href="../trophy-cabinet/">Trophy Cabinet</a>
+      <label class="theme-switch">
+        <input class="theme-switch-input" type="checkbox" role="switch" aria-label="Dark mode">
+        <span class="theme-switch-track" aria-hidden="true"><span class="theme-switch-thumb"></span></span>
+        <span class="theme-switch-label">Dark mode</span>
+      </label>
+    </nav>
+    <div class="toolbar" aria-label="Report files">
+      <a href="../data/analysis/history/trophy_cabinet.md">Raw Markdown</a>
+<a href="../data/analysis/history/season_honor_roll.csv">Honor Roll CSV</a>
+<a href="../data/analysis/history/major_trophies.csv">Major Trophies CSV</a>
+<a href="../data/analysis/history/history_source_audit.csv">Source Audit CSV</a>
+    </div>
+    <h1>BMS FPL Trophy Cabinet</h1>
+<p>A quick historical record of league titles, cup titles, and season-level honors. The oldest seasons are only as complete as the manual history workbook, while 2024-25 and 2025-26 have much richer supporting data elsewhere on the site.</p>
+<details open>
+<summary><h2>Major Trophy Count</h2></summary>
+<p>Use this table as the simple trophy cabinet: league titles plus BMS FPL Cup titles.</p>
+<details class="notes">
+<summary>Definitions and source notes</summary>
+<ul>
+<li><strong>Major Trophies</strong> equals league titles plus cup titles.</li>
+<li><code>N/A</code> cup seasons are ignored.</li>
+<li>The 2025-26 league champion and cup winner are added from the generated analysis and cup workbook.</li>
+</ul>
+</details>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager</th><th>Major Trophies</th><th>League Titles</th><th>League Seasons</th><th>Cup Titles</th><th>Cup Seasons</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Major Trophies">3</td><td data-label="League Titles">3</td><td data-label="League Seasons">2023-24, 2024-25, 2025-26</td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Major Trophies">2</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">2</td><td data-label="Cup Seasons">2024-25, 2025-26</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Major Trophies">1</td><td data-label="League Titles">1</td><td data-label="League Seasons">2022-23</td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Major Trophies">1</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">1</td><td data-label="Cup Seasons">2023-24</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Major Trophies">0</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Major Trophies">0</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Major Trophies">0</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Major Trophies">0</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Major Trophies">0</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Major Trophies">0</td><td data-label="League Titles">0</td><td data-label="League Seasons"></td><td data-label="Cup Titles">0</td><td data-label="Cup Seasons"></td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Season Honor Roll</h2></summary>
+<p>Use this as the year-by-year ledger for champions, cup winners, and season awards.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Season</th><th>Champion</th><th>Cup Winner</th><th>Leading Scorer</th><th>Underdog Player</th><th>Highest Scoring Week</th><th>Lowest Scoring Week</th><th>Longest Win Streak</th><th>Longest Loss Streak</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2022-23</td><td data-label="Champion">Levi Morant</td><td data-label="Cup Winner">N/A</td><td data-label="Leading Scorer">Haaland (Arjun)</td><td data-label="Underdog Player">N/A</td><td data-label="Highest Scoring Week">N/A</td><td data-label="Lowest Scoring Week">N/A</td><td data-label="Longest Win Streak">N/A</td><td data-label="Longest Loss Streak">N/A</td></tr>
+<tr><td data-label="Season">2023-24</td><td data-label="Champion">Ryan Donlan</td><td data-label="Cup Winner">Luke Lockwood</td><td data-label="Leading Scorer">Palmer (Ryan Donlan)</td><td data-label="Underdog Player">N/A</td><td data-label="Highest Scoring Week">Luke Lockwood</td><td data-label="Lowest Scoring Week">Owen</td><td data-label="Longest Win Streak">Ryan Donlan</td><td data-label="Longest Loss Streak">Owen</td></tr>
+<tr><td data-label="Season">2024-25</td><td data-label="Champion">Ryan Donlan</td><td data-label="Cup Winner">Justin Miller</td><td data-label="Leading Scorer">Salah (Julius Long / Justin Miller)</td><td data-label="Underdog Player">Murphy (Ryan Donlan)</td><td data-label="Highest Scoring Week">Ryan Donlan (83)</td><td data-label="Lowest Scoring Week">Ethan Ellsworth (13)</td><td data-label="Longest Win Streak">Justin Miller (8)</td><td data-label="Longest Loss Streak">Dylan Reid (8)</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Champion">Ryan Donlan (81)</td><td data-label="Cup Winner">Justin Miller</td><td data-label="Leading Scorer">Not yet tracked in source workbook</td><td data-label="Underdog Player">Not yet tracked in source workbook</td><td data-label="Highest Scoring Week">Ryan Donlan (103, GW33)</td><td data-label="Lowest Scoring Week">Drake Byrd (16, GW18)</td><td data-label="Longest Win Streak">Ryan Donlan (11)</td><td data-label="Longest Loss Streak">Alexander Chaban (13)</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Source Notes</h2></summary>
+<p>Use this as the audit trail for what fed the page.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Page</th><th>Source</th><th>Used For</th></tr></thead>
+<tbody>
+<tr><td data-label="Page">Cup History</td><td data-label="Source">2024-25 Season.xlsx / BMS does FPL Cup tab</td><td data-label="Used For">2024-25 cup group, knockout, and final data</td></tr>
+<tr><td data-label="Page">Cup History</td><td data-label="Source">BMS Does FPL.xlsx cup workbook</td><td data-label="Used For">2025-26 cup group, knockout, and final data</td></tr>
+<tr><td data-label="Page">Trophy Cabinet</td><td data-label="Source">BPL Fantasy.xlsx</td><td data-label="Used For">2022-23 through 2024-25 season honor roll</td></tr>
+<tr><td data-label="Page">Trophy Cabinet</td><td data-label="Source">API/generated analysis</td><td data-label="Used For">2025-26 champion, highest/lowest weekly score, and streak winners</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Output Files</h2></summary>
+<p>Supporting CSVs generated for this page.</p>
+<ul>
+<li><code>season_honor_roll.csv</code></li>
+<li><code>major_trophies.csv</code></li>
+<li><code>history_source_audit.csv</code></li>
+</ul>
+</details>
+  </main>
+  <div class="rating-tooltip" aria-hidden="true"></div>
+  <script>
+(() => {
+  const inputs = document.querySelectorAll(".theme-switch-input");
+  if (!inputs.length) return;
+
+  const sync = () => {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    inputs.forEach((input) => {
+      input.checked = isDark;
+      input.setAttribute("aria-checked", String(isDark));
+      input.setAttribute("aria-label", isDark ? "Dark mode on" : "Dark mode off");
+    });
+  };
+
+  inputs.forEach((input) => {
+    input.addEventListener("change", () => {
+      const next = input.checked ? "dark" : "light";
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem("bms-theme", next);
+      sync();
+    });
+  });
+
+  sync();
+})();
+</script>
+  <script>
+(() => {
+  const tooltip = document.querySelector(".rating-tooltip");
+  if (!tooltip) return;
+
+  const moveTooltip = (event) => {
+    const offset = 14;
+    const rect = tooltip.getBoundingClientRect();
+    let left = event.clientX + offset;
+    let top = event.clientY + offset;
+    if (left + rect.width > window.innerWidth - 8) {
+      left = event.clientX - rect.width - offset;
+    }
+    if (top + rect.height > window.innerHeight - 8) {
+      top = event.clientY - rect.height - offset;
+    }
+    tooltip.style.left = `${Math.max(8, left)}px`;
+    tooltip.style.top = `${Math.max(8, top)}px`;
+  };
+
+  document.querySelectorAll(".rating-hover-zone").forEach((zone) => {
+    zone.addEventListener("mouseenter", (event) => {
+      tooltip.textContent = zone.dataset.tooltip || "";
+      tooltip.classList.add("is-visible");
+      moveTooltip(event);
+    });
+    zone.addEventListener("mousemove", moveTooltip);
+    zone.addEventListener("mouseleave", () => {
+      tooltip.classList.remove("is-visible");
+    });
+  });
+})();
+</script>
+</body>
+</html>

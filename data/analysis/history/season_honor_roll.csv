@@ -1,0 +1,5 @@
+season,champion,champion_manager,cup_winner,cup_winner_manager,leading_scorer,underdog_player,highest_scoring_week,lowest_scoring_week,longest_winning_streak,longest_losing_streak,source
+2022-23,Levi Morant,Levi Morant,N/A,,Haaland (Arjun),N/A,N/A,N/A,N/A,N/A,BPL Fantasy.xlsx / Seasons Page
+2023-24,Ryan Donlan,Ryan Donlan,Luke Lockwood,Luke Lockwood,Palmer (Ryan Donlan),N/A,Luke Lockwood,Owen,Ryan Donlan,Owen,BPL Fantasy.xlsx / Seasons Page
+2024-25,Ryan Donlan,Ryan Donlan,Justin Miller,Justin Miller,Salah (Julius Long / Justin Miller),Murphy (Ryan Donlan),Ryan Donlan (83),Ethan Ellsworth (13),Justin Miller (8),Dylan Reid (8),BPL Fantasy.xlsx / Seasons Page
+2025-26,Ryan Donlan (81),Ryan Donlan,Justin Miller,Justin Miller,Not yet tracked in source workbook,Not yet tracked in source workbook,"Ryan Donlan (103, GW33)","Drake Byrd (16, GW18)",Ryan Donlan (11),Alexander Chaban (13),API analysis + BMS Does FPL.xlsx
