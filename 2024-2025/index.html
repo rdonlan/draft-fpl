@@ -1103,12 +1103,12 @@
     }
     .pick-profile-grid {
       display: grid;
-      grid-template-columns: minmax(260px, 1.2fr) minmax(220px, 0.9fr) minmax(220px, 0.9fr);
+      grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.91fr) minmax(0, 0.91fr);
       gap: 12px;
       align-items: start;
     }
     .pick-panel {
-      overflow-x: auto;
+      overflow: visible;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--paper);
@@ -1128,19 +1128,32 @@
       border: 0;
       border-radius: 0;
       box-shadow: none;
-      table-layout: auto;
+      table-layout: fixed;
     }
     .pick-panel th,
     .pick-panel td {
-      padding: 8px 10px;
-      font-size: 0.86rem;
+      padding: 7px 8px;
+      font-size: 0.8rem;
       white-space: normal;
       overflow-wrap: anywhere;
     }
+    .pick-panel th {
+      white-space: normal;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
     .pick-panel th:first-child,
     .pick-panel td:first-child {
-      width: 4.5rem;
+      width: 3.8rem;
       white-space: nowrap;
+    }
+    .pick-panel th:nth-child(2),
+    .pick-panel td:nth-child(2) {
+      width: 36%;
+    }
+    .pick-panel th:nth-child(3),
+    .pick-panel td:nth-child(3) {
+      width: 42%;
     }
     .trade-recap-pill {
       display: inline-flex;
@@ -1155,7 +1168,8 @@
       font-size: 0.78rem;
       font-weight: 850;
       line-height: 1.1;
-      white-space: nowrap;
+      white-space: normal;
+      text-align: left;
       cursor: help;
     }
     .trade-recap-pill:focus-visible {
@@ -1451,7 +1465,7 @@
         text-align: left;
       }
       .pick-panel {
-        overflow-x: auto;
+        overflow: visible;
       }
       .pick-panel table,
       .pick-panel thead,
@@ -1465,7 +1479,8 @@
       .pick-panel table {
         display: table;
         width: 100%;
-        min-width: max-content;
+        min-width: 0;
+        table-layout: fixed;
         font-size: 0.86rem;
       }
       .pick-panel thead {
@@ -1493,6 +1508,9 @@
         padding: 8px 10px;
         text-align: left;
         border-bottom: 1px solid var(--line);
+        white-space: normal;
+        overflow-wrap: normal;
+        word-break: normal;
       }
       .pick-panel td::before {
         content: none;
