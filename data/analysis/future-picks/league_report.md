@@ -1147,8 +1147,8 @@ This checks the workbook tracker against future-pick movements parsed from the t
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 
-- For 2024-25 trade rows, only explicitly labeled `2026` or `2027` picks are treated as future picks; unlabeled picks are assumed to belong to the already-completed 2025 draft.
-- For 2025-26 rows after Draft Day, unlabeled pick assets are treated as 2026 future picks unless the asset explicitly says 2027.
+- A pick without a full draft year is assigned to the next draft after that trade season: 2024-25 trade rows default to the 2025 draft, and 2025-26 trade rows default to the 2026 draft.
+- If a pick asset clearly names a full draft year, like `2026 3rd-round pick` or `2027 6th-round pick`, that explicit draft year overrides the season default.
 - In pass-through cases where a manager held more than one pick in the same round, the parser tries to use the non-own pick first and records that assumption below.
 - Multi-team trade rows do not state exactly which counterparty receives each asset, so those recipient assumptions are listed separately.
 
@@ -1158,6 +1158,8 @@ This checks the workbook tracker against future-pick movements parsed from the t
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Tracker-only move | 2026 | 3rd | Justin | Dylan | Justin | No future-pick movement found in parsed trade ledger | - |
 | Ledger-only move | 2026 | 3rd | Levi | Levi | Dylan | Postseason: Levi -> Dylan | - |
+| Tracker-only move | 2026 | 9th | Donny | Julius | Donny | No future-pick movement found in parsed trade ledger | - |
+| Ledger-only move | 2026 | 9th | Dylan | Dylan | Julius | GW 32: Donny -> Julius | original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks |
 | Tracker-only move | 2026 | 10th | Justin | House/Haydo | Justin | No future-pick movement found in parsed trade ledger | - |
 | Ledger-only move | 2026 | 10th | Levi | Levi | House/Haydo | Postseason: Levi -> House/Haydo | - |
 | Ledger-only move | 2026 | 12th | Donny | Donny | Dylan | Draft Day: Donny -> Dylan | - |
@@ -1173,6 +1175,7 @@ These are not necessarily errors; they are the trade-ledger rows where the parse
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 2026 | 5th | House/Haydo | House/Haydo | Levi | Postseason | multi-team trade; recipient inferred as Levi | 2026 5th-round pick |
 | 2026 | 5th | House/Haydo | Levi | Dylan | Postseason | original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks | 2026 5th-round pick |
+| 2026 | 9th | Dylan | Donny | Julius | GW 32 | original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks | 2026 9th-round pick |
 
 </details>
 

@@ -1,6 +1,8 @@
 issue_type,year,round,round_label,original_owner,tracker_holder,ledger_holder,ledger_evidence,notes
 Tracker-only move,2026,3,3rd,Justin,Dylan,Justin,No future-pick movement found in parsed trade ledger,
 Ledger-only move,2026,3,3rd,Levi,Levi,Dylan,Postseason: Levi -> Dylan,
+Tracker-only move,2026,9,9th,Donny,Julius,Donny,No future-pick movement found in parsed trade ledger,
+Ledger-only move,2026,9,9th,Dylan,Dylan,Julius,GW 32: Donny -> Julius,original owner inferred from a pass-through pick currently held by sender; sender held 2 9th-round picks
 Tracker-only move,2026,10,10th,Justin,House/Haydo,Justin,No future-pick movement found in parsed trade ledger,
 Ledger-only move,2026,10,10th,Levi,Levi,House/Haydo,Postseason: Levi -> House/Haydo,
 Ledger-only move,2026,12,12th,Donny,Donny,Dylan,Draft Day: Donny -> Dylan,
