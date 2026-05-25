@@ -51,6 +51,7 @@ Use this as the audit trail for what fed the page.
 
 | Page | Source | Used For |
 | --- | --- | --- |
+| Cup History | BPL Fantasy.xlsx + user-confirmed finalist | 2023-24 known cup winner/finalist only |
 | Cup History | 2024-25 Season.xlsx / BMS does FPL Cup tab | 2024-25 cup group, knockout, and final data |
 | Cup History | BMS Does FPL.xlsx cup workbook | 2025-26 cup group, knockout, and final data |
 | Trophy Cabinet | BPL Fantasy.xlsx | 2022-23 through 2024-25 season honor roll |

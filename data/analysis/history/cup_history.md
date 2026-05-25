@@ -10,6 +10,7 @@ Use this as the fast read on who won each cup and how the final finished.
 <details class="notes">
 <summary>Definitions and source notes</summary>
 
+- **2023-24** records the known cup winner and finalist only; detailed group and knockout data starts in 2024-25.
 - **2024-25** comes from `2024-25 Season.xlsx`, tab `BMS does FPL Cup`.
 - **2025-26** comes from the `BMS Does FPL.xlsx` cup workbook, using `Group Schedule`, `Group Standings`, and `Knockout Schedule`.
 - Manager names are normalized to the same names used across the rest of the website.
@@ -17,8 +18,39 @@ Use this as the fast read on who won each cup and how the final finished.
 
 | Season | Winner | Runner-Up | Final Score |
 | --- | --- | --- | --- |
+| 2023-24 | Luke Lockwood | Ryan Donlan | Not tracked |
 | 2024-25 | Justin Miller | Ryan Houseman | 60-55 |
 | 2025-26 | Justin Miller | Dylan Reid | 75-66 |
+
+</details>
+
+<details open>
+<summary><h2>All-Time Cup Records</h2></summary>
+
+This table summarizes each manager's record across tracked BMS FPL Cup matchups.
+
+<details class="notes">
+<summary>Definitions and source notes</summary>
+
+- Records are shown as **wins-draws-losses**.
+- **Overall Record** includes group-stage matches, aggregate knockout ties, and finals.
+- **Record In Knockout Ties** includes quarterfinal aggregates, semifinal aggregates, and finals.
+- For quarterfinals and semifinals, only the aggregate result counts as the matchup; individual legs are not counted.
+- The 2023-24 final is included because the winner/finalist are known, but detailed group and aggregate data starts in 2024-25.
+</details>
+
+| Manager | Overall Record | Record In Knockout Ties |
+| --- | --- | --- |
+| Justin Miller | 11-1-4 | 6-0-0 |
+| Dylan Reid | 7-1-5 | 2-0-1 |
+| Luke Lockwood | 7-0-7 | 2-0-2 |
+| Ethan Ellsworth | 7-0-5 | 1-0-1 |
+| Levi Morant | 6-1-6 | 1-0-2 |
+| Ryan Donlan | 6-1-6 | 0-0-3 |
+| Ryan Houseman | 6-0-7 | 2-0-1 |
+| Julius Long | 6-0-7 | 1-0-2 |
+| Alexander Chaban | 4-0-8 | 0-0-2 |
+| Drake Byrd | 3-0-8 | 0-0-1 |
 
 </details>
 
@@ -297,11 +329,31 @@ Each two-legged tie has its own table. In aggregate rows, green marks the winner
 </details>
 
 <details>
+<summary><h2>2023-24 Cup</h2></summary>
+
+Open this section for the group tables, knockout path, and final from that season.
+
+### Knockout Rounds
+Only the final winner and finalist are tracked for this season; detailed knockout data is not available.
+
+### Final
+**Final: Luke Lockwood vs Ryan Donlan**
+<div class="table-wrap cup-final-table">
+<table>
+<thead><tr><th>GW</th><th>Luke Lockwood</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">Not tracked</td><td data-label="Luke Lockwood" class="cup-winner-cell">Not tracked</td><td data-label="Ryan Donlan" class="cup-loser-cell">Not tracked</td><td data-label="Winner" class="cup-winner-cell">Luke Lockwood</td></tr>
+</tbody></table></div>
+
+</details>
+
+<details>
 <summary><h2>Output Files</h2></summary>
 
 Supporting CSVs generated for this page.
 
 - `cup_finals.csv`
+- `cup_all_time_records.csv`
 - `cup_group_standings.csv`
 - `cup_matches.csv`
 </details>

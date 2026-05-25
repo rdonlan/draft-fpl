@@ -777,6 +777,7 @@
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/history/cup_history.md">Raw Markdown</a>
 <a href="../data/analysis/history/cup_finals.csv">Cup Finals CSV</a>
+<a href="../data/analysis/history/cup_all_time_records.csv">All-Time Records CSV</a>
 <a href="../data/analysis/history/cup_matches.csv">Cup Matches CSV</a>
 <a href="../data/analysis/history/cup_group_standings.csv">Group Standings CSV</a>
     </div>
@@ -788,6 +789,7 @@
 <details class="notes">
 <summary>Definitions and source notes</summary>
 <ul>
+<li><strong>2023-24</strong> records the known cup winner and finalist only; detailed group and knockout data starts in 2024-25.</li>
 <li><strong>2024-25</strong> comes from <code>2024-25 Season.xlsx</code>, tab <code>BMS does FPL Cup</code>.</li>
 <li><strong>2025-26</strong> comes from the <code>BMS Does FPL.xlsx</code> cup workbook, using <code>Group Schedule</code>, <code>Group Standings</code>, and <code>Knockout Schedule</code>.</li>
 <li>Manager names are normalized to the same names used across the rest of the website.</li>
@@ -796,8 +798,37 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Season</th><th>Winner</th><th>Runner-Up</th><th>Final Score</th></tr></thead>
 <tbody>
+<tr><td data-label="Season">2023-24</td><td data-label="Winner">Luke Lockwood</td><td data-label="Runner-Up">Ryan Donlan</td><td data-label="Final Score">Not tracked</td></tr>
 <tr><td data-label="Season">2024-25</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Ryan Houseman</td><td data-label="Final Score">60-55</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Winner">Justin Miller</td><td data-label="Runner-Up">Dylan Reid</td><td data-label="Final Score">75-66</td></tr>
+</tbody></table></div>
+</details>
+<details open>
+<summary><h2>All-Time Cup Records</h2></summary>
+<p>This table summarizes each manager&#x27;s record across tracked BMS FPL Cup matchups.</p>
+<details class="notes">
+<summary>Definitions and source notes</summary>
+<ul>
+<li>Records are shown as <strong>wins-draws-losses</strong>.</li>
+<li><strong>Overall Record</strong> includes group-stage matches, aggregate knockout ties, and finals.</li>
+<li><strong>Record In Knockout Ties</strong> includes quarterfinal aggregates, semifinal aggregates, and finals.</li>
+<li>For quarterfinals and semifinals, only the aggregate result counts as the matchup; individual legs are not counted.</li>
+<li>The 2023-24 final is included because the winner/finalist are known, but detailed group and aggregate data starts in 2024-25.</li>
+</ul>
+</details>
+<div class="table-wrap"><table>
+<thead><tr><th>Manager</th><th>Overall Record</th><th>Record In Knockout Ties</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Overall Record">11-1-4</td><td data-label="Record In Knockout Ties">6-0-0</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Overall Record">7-1-5</td><td data-label="Record In Knockout Ties">2-0-1</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Overall Record">7-0-7</td><td data-label="Record In Knockout Ties">2-0-2</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Overall Record">7-0-5</td><td data-label="Record In Knockout Ties">1-0-1</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Overall Record">6-1-6</td><td data-label="Record In Knockout Ties">1-0-2</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Overall Record">6-1-6</td><td data-label="Record In Knockout Ties">0-0-3</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Overall Record">6-0-7</td><td data-label="Record In Knockout Ties">2-0-1</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Overall Record">6-0-7</td><td data-label="Record In Knockout Ties">1-0-2</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Overall Record">4-0-8</td><td data-label="Record In Knockout Ties">0-0-2</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Overall Record">3-0-8</td><td data-label="Record In Knockout Ties">0-0-1</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -1049,10 +1080,25 @@
 </tbody></table></div>
 </details>
 <details>
+<summary><h2>2023-24 Cup</h2></summary>
+<p>Open this section for the group tables, knockout path, and final from that season.</p>
+<h3>Knockout Rounds</h3>
+<p>Only the final winner and finalist are tracked for this season; detailed knockout data is not available.</p>
+<h3>Final</h3>
+<p><strong>Final: Luke Lockwood vs Ryan Donlan</strong></p>
+<div class="table-wrap cup-final-table">
+<table>
+<thead><tr><th>GW</th><th>Luke Lockwood</th><th>Ryan Donlan</th><th>Winner</th></tr></thead>
+<tbody>
+<tr><td data-label="GW">Not tracked</td><td data-label="Luke Lockwood" class="cup-winner-cell">Not tracked</td><td data-label="Ryan Donlan" class="cup-loser-cell">Not tracked</td><td data-label="Winner" class="cup-winner-cell">Luke Lockwood</td></tr>
+</tbody></table></div>
+</details>
+<details>
 <summary><h2>Output Files</h2></summary>
 <p>Supporting CSVs generated for this page.</p>
 <ul>
 <li><code>cup_finals.csv</code></li>
+<li><code>cup_all_time_records.csv</code></li>
 <li><code>cup_group_standings.csv</code></li>
 <li><code>cup_matches.csv</code></li>
 </ul>
