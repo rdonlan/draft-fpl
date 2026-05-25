@@ -13,35 +13,16 @@ Use the season tabs above to switch between this archive-backed 2024-2025 page a
 - Harshest timing: Alexander Chaban finished -11.4 points below all-play expectation.
 - Biggest weekly score: Ryan Donlan scored 83 in GW24.
 
-<details open>
-<summary><h2>Data Source and Limits</h2></summary>
 
-This page uses FantasyFooty's static 2024-2025 archive, which contains league `45384` and confirms Ryan Donlan, Luke Lockwood, Dylan Reid, Levi Morant, Ryan Houseman, Ethan Ellsworth, Drake Byrd, Julius Long, Justin Miller, and Alexander Chaban.
 
-<details class="notes">
-<summary>What the archive includes</summary>
 
-- Weekly cumulative team scoring and final H2H records.
-- Weekly standings progression.
-- Aggregate head-to-head records by opponent.
-- An inferred weekly fixture schedule, reconstructed from the 5-match opponent pairs, standings progression, weekly scores, and final H2H matrix.
-- Position, player, club, action-category, and transfer-summary tables.
-- It does not include raw lineups, starters, bench slots, transactions, or dropped-player details.
 
-</details>
 
-| Field | Value |
-|---|---|
-| Archive URL | https://fantasyfooty.xyz/fantasy-footy-2024-2025-archive.json |
-| Archive leagues | 422 |
-| Archive total records | 258275 |
-| League records | 790 |
-| League files processed | 11 |
-| Missing files | None |
-| Inferred fixture schedule | Unique solution |
-| Schedule validation errors | 0 |
 
-</details>
+
+
+
+
 
 <details open>
 <summary><h2>Standings</h2></summary>
@@ -75,7 +56,128 @@ Use this table for the plain 2024-2025 league table: record, league points, scor
 | 10 | Dylan Reid | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 | 2 (53) | 3 (20) |
 
 </details>
+<details>
+<summary><h2>Lineal Belt</h2></summary>
 
+Ryan Donlan started with the belt going into GW1. The belt changes hands only when the holder loses a weekly matchup; holder wins and draws retain it.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- **Number of Reigns** counts separate times a manager held the belt, including Ryan Donlan's starting reign.
+- **Longest Defense Run** is the most holder wins in one reign before losing the belt. Draws retain the belt but do not count as defenses.
+- **Belt Fight Record** is wins-losses across every belt matchup, whether the manager entered as holder or challenger.
+- The weekly path uses the inferred 2024-2025 matchup schedule described above.
+- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
+- **Score** is shown in holder-entering to challenger order. If Belt After GW matches Holder Entering, the holder defended; if it changes, the challenger won the belt.
+
+</details>
+
+Current holder after GW38: Levi Morant.
+
+### Holder Summary
+
+| Manager | Number of Reigns | Longest Defense Run | Current Holder |
+|---|---|---|---|
+| Levi Morant | 2 | 1 | Yes |
+| Ryan Donlan | 4 | 5 |  |
+| Justin Miller | 2 | 6 |  |
+| Ethan Ellsworth | 2 | 2 |  |
+| Drake Byrd | 2 | 0 |  |
+| Luke Lockwood | 1 | 1 |  |
+| Ryan Houseman | 1 | 1 |  |
+| Alexander Chaban | 1 | 0 |  |
+| Dylan Reid | 1 | 0 |  |
+| Julius Long | 1 | 0 |  |
+
+### Belt Fight Records
+
+| Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
+|---|---|---|---|
+| Alexander Chaban | 1-3 | 41.8 | +2.7 |
+| Drake Byrd | 2-6 | 36.0 | -3.3 |
+| Dylan Reid | 1-4 | 35.6 | +1.5 |
+| Ethan Ellsworth | 4-6 | 38.7 | +0.7 |
+| Julius Long | 1-2 | 43.7 | +3.6 |
+| Justin Miller | 10-4 | 51.4 | +6.3 |
+| Levi Morant | 3-3 | 39.0 | -2.3 |
+| Luke Lockwood | 2-3 | 42.0 | +1.9 |
+| Ryan Donlan | 12-4 | 50.7 | +7.7 |
+| Ryan Houseman | 2-3 | 38.6 | -0.3 |
+
+### Week-By-Week Belt Path
+
+| GW | Holder Entering | Challenger | Score | Belt After GW |
+|---|---|---|---|---|
+| 1 | Ryan Donlan | Drake Byrd | 49-32 | Ryan Donlan |
+| 2 | Ryan Donlan | Luke Lockwood | 66-34 | Ryan Donlan |
+| 3 | Ryan Donlan | Julius Long | 59-50 | Ryan Donlan |
+| 4 | Ryan Donlan | Dylan Reid | 44-35 | Ryan Donlan |
+| 5 | Ryan Donlan | Justin Miller | 63-58 | Ryan Donlan |
+| 6 | Ryan Donlan | Levi Morant | 27-47 | Levi Morant |
+| 7 | Levi Morant | Drake Byrd | 38-33 | Levi Morant |
+| 8 | Levi Morant | Ethan Ellsworth | 34-40 | Ethan Ellsworth |
+| 9 | Ethan Ellsworth | Ryan Donlan | 32-50 | Ryan Donlan |
+| 10 | Ryan Donlan | Drake Byrd | 30-32 | Drake Byrd |
+| 11 | Drake Byrd | Ethan Ellsworth | 43-51 | Ethan Ellsworth |
+| 12 | Ethan Ellsworth | Alexander Chaban | 47-29 | Ethan Ellsworth |
+| 13 | Ethan Ellsworth | Justin Miller | 45-31 | Ethan Ellsworth |
+| 14 | Ethan Ellsworth | Dylan Reid | 36-41 | Dylan Reid |
+| 15 | Dylan Reid | Ryan Houseman | 27-31 | Ryan Houseman |
+| 16 | Ryan Houseman | Ethan Ellsworth | 42-36 | Ryan Houseman |
+| 17 | Ryan Houseman | Ryan Donlan | 29-53 | Ryan Donlan |
+| 18 | Ryan Donlan | Ethan Ellsworth | 39-28 | Ryan Donlan |
+| 19 | Ryan Donlan | Drake Byrd | 65-31 | Ryan Donlan |
+| 20 | Ryan Donlan | Luke Lockwood | 52-33 | Ryan Donlan |
+| 21 | Ryan Donlan | Julius Long | 32-46 | Julius Long |
+| 22 | Julius Long | Drake Byrd | 35-37 | Drake Byrd |
+| 23 | Drake Byrd | Luke Lockwood | 36-43 | Luke Lockwood |
+| 24 | Luke Lockwood | Ethan Ellsworth | 39-26 | Luke Lockwood |
+| 25 | Luke Lockwood | Justin Miller | 61-66 | Justin Miller |
+| 26 | Justin Miller | Alexander Chaban | 53-39 | Justin Miller |
+| 27 | Justin Miller | Dylan Reid | 71-45 | Justin Miller |
+| 28 | Justin Miller | Ryan Houseman | 57-51 | Justin Miller |
+| 29 | Justin Miller | Levi Morant | 24-23 | Justin Miller |
+| 30 | Justin Miller | Drake Byrd | 54-44 | Justin Miller |
+| 31 | Justin Miller | Ethan Ellsworth | 52-46 | Justin Miller |
+| 32 | Justin Miller | Ryan Donlan | 58-65 | Ryan Donlan |
+| 33 | Ryan Donlan | Levi Morant | 63-53 | Ryan Donlan |
+| 34 | Ryan Donlan | Alexander Chaban | 54-58 | Alexander Chaban |
+| 35 | Alexander Chaban | Justin Miller | 41-45 | Justin Miller |
+| 36 | Justin Miller | Dylan Reid | 58-30 | Justin Miller |
+| 37 | Justin Miller | Ryan Houseman | 55-40 | Justin Miller |
+| 38 | Justin Miller | Levi Morant | 37-39 | Levi Morant |
+
+</details>
+<details open>
+<summary><h2>Data Source and Limits</h2></summary>
+
+This page uses FantasyFooty's static 2024-2025 archive, which contains league `45384` and confirms Ryan Donlan, Luke Lockwood, Dylan Reid, Levi Morant, Ryan Houseman, Ethan Ellsworth, Drake Byrd, Julius Long, Justin Miller, and Alexander Chaban.
+
+<details class="notes">
+<summary>What the archive includes</summary>
+
+- Weekly cumulative team scoring and final H2H records.
+- Weekly standings progression.
+- Aggregate head-to-head records by opponent.
+- An inferred weekly fixture schedule, reconstructed from the 5-match opponent pairs, standings progression, weekly scores, and final H2H matrix.
+- Position, player, club, action-category, and transfer-summary tables.
+- It does not include raw lineups, starters, bench slots, transactions, or dropped-player details.
+
+</details>
+
+| Field | Value |
+|---|---|
+| Archive URL | https://fantasyfooty.xyz/fantasy-footy-2024-2025-archive.json |
+| Archive leagues | 422 |
+| Archive total records | 258275 |
+| League records | 790 |
+| League files processed | 11 |
+| Missing files | None |
+| Inferred fixture schedule | Unique solution |
+| Schedule validation errors | 0 |
+
+</details>
 <details>
 <summary><h2>Winning And Losing Streaks</h2></summary>
 
@@ -106,7 +208,6 @@ Use this table to see each manager's longest winning run and longest losing run.
 | Alexander Chaban | 2 | 19-20, 23-24, 29-30 | 4 | 25-28 |
 
 </details>
-
 <details>
 <summary><h2>Score Bands</h2></summary>
 
@@ -137,7 +238,6 @@ Use this table to see how often each manager landed in the top, middle, or botto
 | Dylan Reid | 2.6% | 13.2% | 23.7% | 81.6% | 60.5% | 13.2% |
 
 </details>
-
 <details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
@@ -157,7 +257,6 @@ This ranks teams by how their weekly scores performed against the whole league, 
 | 10 | Dylan Reid | 35.3 | 38 | 1303 | 7.17 |
 
 </details>
-
 <details>
 <summary><h2>Schedule Luck</h2></summary>
 
@@ -187,7 +286,6 @@ Use this table to see who gained or lost league-table points from the weekly opp
 | Alexander Chaban | 42 | 53.4 | -11.4 | 1585 |
 
 </details>
-
 <details>
 <summary><h2>Weekly Scoring And Boom/Bust</h2></summary>
 
@@ -240,7 +338,6 @@ Use this table to find the league's biggest weekly spikes.
 | 10 | Alexander Chaban | 66 | 1.0 | 30.2 |
 
 </details>
-
 <details>
 <summary><h2>Bad Beats And Soft Wins</h2></summary>
 
@@ -432,7 +529,6 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 </details>
 
 </details>
-
 <details>
 <summary><h2>Position Scoring</h2></summary>
 
@@ -482,101 +578,6 @@ FantasyFooty's archive has aggregate points by manager and position. This is not
 | Forward | 10 | Drake Byrd | 201 | 5.3 |
 
 </details>
-
-<details>
-<summary><h2>Lineal Belt</h2></summary>
-
-Ryan Donlan started with the belt going into GW1. The belt changes hands only when the holder loses a weekly matchup; holder wins and draws retain it.
-
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-
-- **Number of Reigns** counts separate times a manager held the belt, including Ryan Donlan's starting reign.
-- **Longest Defense Run** is the most holder wins in one reign before losing the belt. Draws retain the belt but do not count as defenses.
-- **Belt Fight Record** is wins-losses across every belt matchup, whether the manager entered as holder or challenger.
-- The weekly path uses the inferred 2024-2025 matchup schedule described above.
-- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
-- **Score** is shown in holder-entering to challenger order. If Belt After GW matches Holder Entering, the holder defended; if it changes, the challenger won the belt.
-
-</details>
-
-Current holder after GW38: Levi Morant.
-
-### Holder Summary
-
-| Manager | Number of Reigns | Longest Defense Run | Current Holder |
-|---|---|---|---|
-| Levi Morant | 2 | 1 | Yes |
-| Ryan Donlan | 4 | 5 |  |
-| Justin Miller | 2 | 6 |  |
-| Ethan Ellsworth | 2 | 2 |  |
-| Drake Byrd | 2 | 0 |  |
-| Luke Lockwood | 1 | 1 |  |
-| Ryan Houseman | 1 | 1 |  |
-| Alexander Chaban | 1 | 0 |  |
-| Dylan Reid | 1 | 0 |  |
-| Julius Long | 1 | 0 |  |
-
-### Belt Fight Records
-
-| Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
-|---|---|---|---|
-| Alexander Chaban | 1-3 | 41.8 | +2.7 |
-| Drake Byrd | 2-6 | 36.0 | -3.3 |
-| Dylan Reid | 1-4 | 35.6 | +1.5 |
-| Ethan Ellsworth | 4-6 | 38.7 | +0.7 |
-| Julius Long | 1-2 | 43.7 | +3.6 |
-| Justin Miller | 10-4 | 51.4 | +6.3 |
-| Levi Morant | 3-3 | 39.0 | -2.3 |
-| Luke Lockwood | 2-3 | 42.0 | +1.9 |
-| Ryan Donlan | 12-4 | 50.7 | +7.7 |
-| Ryan Houseman | 2-3 | 38.6 | -0.3 |
-
-### Week-By-Week Belt Path
-
-| GW | Holder Entering | Challenger | Score | Belt After GW |
-|---|---|---|---|---|
-| 1 | Ryan Donlan | Drake Byrd | 49-32 | Ryan Donlan |
-| 2 | Ryan Donlan | Luke Lockwood | 66-34 | Ryan Donlan |
-| 3 | Ryan Donlan | Julius Long | 59-50 | Ryan Donlan |
-| 4 | Ryan Donlan | Dylan Reid | 44-35 | Ryan Donlan |
-| 5 | Ryan Donlan | Justin Miller | 63-58 | Ryan Donlan |
-| 6 | Ryan Donlan | Levi Morant | 27-47 | Levi Morant |
-| 7 | Levi Morant | Drake Byrd | 38-33 | Levi Morant |
-| 8 | Levi Morant | Ethan Ellsworth | 34-40 | Ethan Ellsworth |
-| 9 | Ethan Ellsworth | Ryan Donlan | 32-50 | Ryan Donlan |
-| 10 | Ryan Donlan | Drake Byrd | 30-32 | Drake Byrd |
-| 11 | Drake Byrd | Ethan Ellsworth | 43-51 | Ethan Ellsworth |
-| 12 | Ethan Ellsworth | Alexander Chaban | 47-29 | Ethan Ellsworth |
-| 13 | Ethan Ellsworth | Justin Miller | 45-31 | Ethan Ellsworth |
-| 14 | Ethan Ellsworth | Dylan Reid | 36-41 | Dylan Reid |
-| 15 | Dylan Reid | Ryan Houseman | 27-31 | Ryan Houseman |
-| 16 | Ryan Houseman | Ethan Ellsworth | 42-36 | Ryan Houseman |
-| 17 | Ryan Houseman | Ryan Donlan | 29-53 | Ryan Donlan |
-| 18 | Ryan Donlan | Ethan Ellsworth | 39-28 | Ryan Donlan |
-| 19 | Ryan Donlan | Drake Byrd | 65-31 | Ryan Donlan |
-| 20 | Ryan Donlan | Luke Lockwood | 52-33 | Ryan Donlan |
-| 21 | Ryan Donlan | Julius Long | 32-46 | Julius Long |
-| 22 | Julius Long | Drake Byrd | 35-37 | Drake Byrd |
-| 23 | Drake Byrd | Luke Lockwood | 36-43 | Luke Lockwood |
-| 24 | Luke Lockwood | Ethan Ellsworth | 39-26 | Luke Lockwood |
-| 25 | Luke Lockwood | Justin Miller | 61-66 | Justin Miller |
-| 26 | Justin Miller | Alexander Chaban | 53-39 | Justin Miller |
-| 27 | Justin Miller | Dylan Reid | 71-45 | Justin Miller |
-| 28 | Justin Miller | Ryan Houseman | 57-51 | Justin Miller |
-| 29 | Justin Miller | Levi Morant | 24-23 | Justin Miller |
-| 30 | Justin Miller | Drake Byrd | 54-44 | Justin Miller |
-| 31 | Justin Miller | Ethan Ellsworth | 52-46 | Justin Miller |
-| 32 | Justin Miller | Ryan Donlan | 58-65 | Ryan Donlan |
-| 33 | Ryan Donlan | Levi Morant | 63-53 | Ryan Donlan |
-| 34 | Ryan Donlan | Alexander Chaban | 54-58 | Alexander Chaban |
-| 35 | Alexander Chaban | Justin Miller | 41-45 | Justin Miller |
-| 36 | Justin Miller | Dylan Reid | 58-30 | Justin Miller |
-| 37 | Justin Miller | Ryan Houseman | 55-40 | Justin Miller |
-| 38 | Justin Miller | Levi Morant | 37-39 | Levi Morant |
-
-</details>
-
 <details>
 <summary><h2>Unavailable From This Archive</h2></summary>
 

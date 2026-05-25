@@ -324,6 +324,55 @@
       font-weight: 650;
       text-decoration: none;
     }
+    .league-toolbar-group {
+      display: none;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .league-toolbar-group.is-active {
+      display: flex;
+    }
+    .league-history-page {
+      display: grid;
+      gap: 18px;
+    }
+    .league-year-toggle {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: fit-content;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .league-year-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.94rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .league-year-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .league-year-panel {
+      display: none;
+    }
+    .league-year-panel.is-active {
+      display: block;
+    }
     .table-wrap {
       overflow-x: auto;
       margin: 14px 0 24px;
@@ -355,6 +404,39 @@
       font-weight: 750;
       position: sticky;
       top: 0;
+    }
+    .keeper-sort-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: 100%;
+      min-height: 24px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      font-weight: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+    .keeper-sort-button::after {
+      content: "";
+      min-width: 1.2em;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+    th[data-sort-state="asc"] .keeper-sort-button::after {
+      content: "^";
+    }
+    th[data-sort-state="desc"] .keeper-sort-button::after {
+      content: "v";
+    }
+    .keeper-sort-button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 4px;
     }
     tr:nth-child(even) td {
       background: var(--row-alt);
@@ -1135,6 +1217,113 @@
       font-size: 0.95rem;
       font-weight: 850;
     }
+    .rivalry-hub {
+      margin: 18px 0 24px;
+    }
+    .rivalry-controls {
+      display: grid;
+      grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(0, 1fr);
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 16px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .rivalry-filter-label {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 850;
+    }
+    .rivalry-select {
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.96rem;
+      font-weight: 750;
+    }
+    .rivalry-status {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      padding: 9px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 850;
+    }
+    .rivalry-card-stack {
+      display: grid;
+      gap: 12px;
+    }
+    .rivalry-card {
+      display: none;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--accent);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .rivalry-card.is-active {
+      display: block;
+    }
+    .rivalry-card-title {
+      margin-bottom: 12px;
+      color: var(--ink);
+      font-size: 1.08rem;
+      font-weight: 850;
+    }
+    .rivalry-card-kpis {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .rivalry-kpi {
+      min-width: 0;
+    }
+    .rivalry-kpi span {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    .rivalry-kpi strong {
+      display: block;
+      color: var(--ink);
+      font-size: 0.98rem;
+      line-height: 1.25;
+    }
+    .rivalry-card-subtitle {
+      margin: 18px 0 8px;
+      color: var(--ink);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+    .rivalry-summary-table {
+      margin: 0;
+    }
+    .rivalry-summary-table table {
+      min-width: 0;
+    }
+    .rivalry-summary-table th:first-child,
+    .rivalry-summary-table td:first-child {
+      width: 34%;
+    }
     .pick-profile {
       display: none;
       padding: 16px;
@@ -1458,6 +1647,16 @@
       .pick-controls {
         grid-template-columns: 1fr;
       }
+      .rivalry-controls {
+        grid-template-columns: 1fr;
+      }
+      .rivalry-card {
+        padding: 12px;
+      }
+      .rivalry-card-kpis {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
       .keeper-filter-controls {
         grid-template-columns: 1fr;
       }
@@ -1500,6 +1699,19 @@
         flex: 0 0 auto;
         min-height: 38px;
         white-space: nowrap;
+      }
+      .league-toolbar-group.is-active {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+      }
+      .league-year-toggle {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+      }
+      .league-year-button {
+        min-height: 42px;
       }
       .table-wrap {
         overflow: visible;
@@ -1749,8 +1961,7 @@
 <body>
   <main>
     <nav class="season-tabs" aria-label="Season reports">
-      <a class="season-tab" href="../2025-2026/">25/26 League</a>
-<a class="season-tab" href="../2024-2025/">24/25 League</a>
+      <a class="season-tab" href="../league-history/">League History</a>
 <a class="season-tab active" href="../all-time/">Cumulative Stats</a>
 <a class="season-tab" href="../manager-profiles/">Manager Profiles</a>
 <a class="season-tab" href="../cup-history/">Cup History</a>
@@ -1768,7 +1979,7 @@
     <div class="toolbar" aria-label="Report files">
       <a href="../data/analysis/all-time/league_report.md">Raw Markdown</a>
 <a href="../data/analysis/all-time/all_time_standings.csv">Cumulative Standings CSV</a>
-<a href="../data/analysis/all-time/all_time_power.csv">Cumulative Elo CSV</a>
+<a href="../data/analysis/all-time/all_time_power.csv">Cumulative Power CSV</a>
 <a href="../data/analysis/all-time/all_time_scoring.csv">Cumulative Scoring CSV</a>
 <a href="../data/analysis/all-time/all_time_score_bands.csv">Score Bands CSV</a>
 <a href="../data/analysis/all-time/all_time_streaks.csv">Streaks CSV</a>
@@ -1817,32 +2028,142 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>Cumulative Elo Power</h2></summary>
-<p>Use this table as the career power-rankings view: it aggregates the season-reset Elo ratings from the Power Rankings page.</p>
+<summary><h2>Cumulative Lineal Belt</h2></summary>
+<p>Use this as the combined belt record book: total reigns, fight records, defenses, weeks ending as belt holder, and the full two-year belt path.</p>
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 <ul>
-<li>Every manager starts at <code>1500</code> before week 1 of each season, so this table aggregates separate season Elo runs instead of carrying one rating across years.</li>
-<li><strong>Avg Final Elo</strong> averages each manager&#x27;s end-of-season Elo across the seasons in this dataset.</li>
-<li><strong>Latest Elo</strong> and <strong>Latest Rank</strong> are from the newest season currently loaded.</li>
-<li><strong>Best Peak</strong> is the highest single-season Elo reached, with the season and gameweek shown because this table spans multiple years.</li>
-<li><strong>Avg Elo Rank</strong> is the manager&#x27;s average weekly Elo rank, weighted by gameweeks played; lower is better.</li>
-<li><strong>Total Net</strong> sums each manager&#x27;s season-level Elo change from the 1500 starting point.</li>
+<li>This aggregates the two separate season belt histories: Ryan Donlan started with the belt in 2024-25, and Levi Morant started with it in 2025-26.</li>
+<li><strong>Reigns</strong> sums each manager&#x27;s number of belt reigns across the two season histories.</li>
+<li><strong>Belt Fight Record</strong> is wins-losses across every matchup where that manager appeared in a belt fight.</li>
+<li><strong>Weeks Holding</strong> counts gameweeks where the manager finished the week holding the belt.</li>
+<li><strong>Current Holder</strong> refers to the latest holder in the 2025-26 report.</li>
+<li>In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.</li>
 </ul>
 </details>
 <div class="table-wrap"><table>
-<thead><tr><th>Power Rank</th><th>Manager</th><th>Avg Final Elo</th><th>Latest Elo</th><th>Latest Rank</th><th>Best Peak</th><th>Best Peak Week</th><th>Avg Elo Rank</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th><th>Total Net</th></tr></thead>
+<thead><tr><th>Manager</th><th>Reigns</th><th>Belt Fight Record</th><th>Win %</th><th>Longest Defense Run</th><th>Weeks Holding</th><th>Avg Belt Fight Score</th><th>Current Holder</th></tr></thead>
 <tbody>
-<tr><td data-label="Power Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Avg Final Elo">1614.1</td><td data-label="Latest Elo">1640.3</td><td data-label="Latest Rank">1</td><td data-label="Best Peak">1645.6</td><td data-label="Best Peak Week">2024-25 33</td><td data-label="Avg Elo Rank">2.29</td><td data-label="Weeks #1">44</td><td data-label="Top 3 Weeks">59</td><td data-label="Bottom 3 Weeks">4</td><td data-label="Total Net">+228.1</td></tr>
-<tr><td data-label="Power Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Avg Final Elo">1608.9</td><td data-label="Latest Elo">1597.0</td><td data-label="Latest Rank">2</td><td data-label="Best Peak">1637.4</td><td data-label="Best Peak Week">2024-25 37</td><td data-label="Avg Elo Rank">3.68</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">47</td><td data-label="Bottom 3 Weeks">6</td><td data-label="Total Net">+217.8</td></tr>
-<tr><td data-label="Power Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Avg Final Elo">1527.0</td><td data-label="Latest Elo">1526.8</td><td data-label="Latest Rank">3</td><td data-label="Best Peak">1551.4</td><td data-label="Best Peak Week">2024-25 36</td><td data-label="Avg Elo Rank">5.12</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">20</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+53.9</td></tr>
-<tr><td data-label="Power Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Avg Final Elo">1521.6</td><td data-label="Latest Elo">1517.2</td><td data-label="Latest Rank">4</td><td data-label="Best Peak">1583.9</td><td data-label="Best Peak Week">2025-26 18</td><td data-label="Avg Elo Rank">4.87</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">35</td><td data-label="Bottom 3 Weeks">20</td><td data-label="Total Net">+43.1</td></tr>
-<tr><td data-label="Power Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Avg Final Elo">1493.5</td><td data-label="Latest Elo">1516.9</td><td data-label="Latest Rank">5</td><td data-label="Best Peak">1558.1</td><td data-label="Best Peak Week">2025-26 16</td><td data-label="Avg Elo Rank">5.05</td><td data-label="Weeks #1">6</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">-13.0</td></tr>
-<tr><td data-label="Power Rank">6</td><td data-label="Manager">Levi Morant</td><td data-label="Avg Final Elo">1492.4</td><td data-label="Latest Elo">1471.8</td><td data-label="Latest Rank">7</td><td data-label="Best Peak">1576.5</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Elo Rank">6.79</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">9</td><td data-label="Bottom 3 Weeks">35</td><td data-label="Total Net">-15.1</td></tr>
-<tr><td data-label="Power Rank">7</td><td data-label="Manager">Julius Long</td><td data-label="Avg Final Elo">1445.7</td><td data-label="Latest Elo">1419.0</td><td data-label="Latest Rank">9</td><td data-label="Best Peak">1554.6</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Elo Rank">6.26</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">35</td><td data-label="Total Net">-108.7</td></tr>
-<tr><td data-label="Power Rank">8</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Avg Final Elo">1439.3</td><td data-label="Latest Elo">1437.2</td><td data-label="Latest Rank">8</td><td data-label="Best Peak">1534.4</td><td data-label="Best Peak Week">2025-26 3</td><td data-label="Avg Elo Rank">7.78</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">48</td><td data-label="Total Net">-121.5</td></tr>
-<tr><td data-label="Power Rank">9</td><td data-label="Manager">Dylan Reid</td><td data-label="Avg Final Elo">1435.9</td><td data-label="Latest Elo">1478.8</td><td data-label="Latest Rank">6</td><td data-label="Best Peak">1538.9</td><td data-label="Best Peak Week">2025-26 33</td><td data-label="Avg Elo Rank">5.54</td><td data-label="Weeks #1">2</td><td data-label="Top 3 Weeks">14</td><td data-label="Bottom 3 Weeks">17</td><td data-label="Total Net">-128.1</td></tr>
-<tr><td data-label="Power Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Avg Final Elo">1421.7</td><td data-label="Latest Elo">1395.0</td><td data-label="Latest Rank">10</td><td data-label="Best Peak">1537.5</td><td data-label="Best Peak Week">2025-26 25</td><td data-label="Avg Elo Rank">7.62</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">47</td><td data-label="Total Net">-156.7</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Reigns">7</td><td data-label="Belt Fight Record">22-6</td><td data-label="Win %">78.6%</td><td data-label="Longest Defense Run">5</td><td data-label="Weeks Holding">22</td><td data-label="Avg Belt Fight Score">46.71</td><td data-label="Current Holder">Yes</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Reigns">6</td><td data-label="Belt Fight Record">10-11</td><td data-label="Win %">47.6%</td><td data-label="Longest Defense Run">3</td><td data-label="Weeks Holding">10</td><td data-label="Avg Belt Fight Score">39.81</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">14-7</td><td data-label="Win %">66.7%</td><td data-label="Longest Defense Run">6</td><td data-label="Weeks Holding">14</td><td data-label="Avg Belt Fight Score">48.71</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">6-14</td><td data-label="Win %">30.0%</td><td data-label="Longest Defense Run">2</td><td data-label="Weeks Holding">6</td><td data-label="Avg Belt Fight Score">38.20</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">4-7</td><td data-label="Win %">36.4%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">4</td><td data-label="Avg Belt Fight Score">37.64</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Reigns">3</td><td data-label="Belt Fight Record">8-6</td><td data-label="Win %">57.1%</td><td data-label="Longest Defense Run">3</td><td data-label="Weeks Holding">8</td><td data-label="Avg Belt Fight Score">46.93</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">4-6</td><td data-label="Win %">40.0%</td><td data-label="Longest Defense Run">2</td><td data-label="Weeks Holding">4</td><td data-label="Avg Belt Fight Score">36.70</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">3-7</td><td data-label="Win %">30.0%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">3</td><td data-label="Avg Belt Fight Score">34.60</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">3-6</td><td data-label="Win %">33.3%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">3</td><td data-label="Avg Belt Fight Score">37.67</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">2-6</td><td data-label="Win %">25.0%</td><td data-label="Longest Defense Run">0</td><td data-label="Weeks Holding">2</td><td data-label="Avg Belt Fight Score">42.75</td><td data-label="Current Holder"></td></tr>
+</tbody></table></div>
+<h3>Week-By-Week Belt Path</h3>
+<div class="table-wrap belt-path-table"><table>
+<thead><tr><th>GW</th><th>Season</th><th>Holder Entering</th><th>Challenger</th><th>Score</th><th>Belt After GW</th></tr></thead>
+<tbody>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">1</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">49-32</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">2</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Luke Lockwood</td><td data-label="Score">66-34</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">3</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Julius Long</td><td data-label="Score">59-50</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">4</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">44-35</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">5</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">63-58</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(118 92% 94%); --belt-bg-dark: hsl(118 56% 17%); --belt-accent: hsl(118 76% 39%);" data-belt-holder="Levi Morant"><td data-label="GW">6</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">27-47</td><td data-label="Belt After GW">Levi Morant</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(118 92% 94%); --belt-bg-dark: hsl(118 56% 17%); --belt-accent: hsl(118 76% 39%);" data-belt-holder="Levi Morant"><td data-label="GW">7</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Levi Morant</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">38-33</td><td data-label="Belt After GW">Levi Morant</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth"><td data-label="GW">8</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Levi Morant</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">34-40</td><td data-label="Belt After GW">Ethan Ellsworth</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">9</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ethan Ellsworth</td><td data-label="Challenger">Ryan Donlan</td><td data-label="Score">32-50</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">10</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">30-32</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth"><td data-label="GW">11</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">43-51</td><td data-label="Belt After GW">Ethan Ellsworth</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth"><td data-label="GW">12</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ethan Ellsworth</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">47-29</td><td data-label="Belt After GW">Ethan Ellsworth</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth"><td data-label="GW">13</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ethan Ellsworth</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">45-31</td><td data-label="Belt After GW">Ethan Ellsworth</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(292 92% 94%); --belt-bg-dark: hsl(292 56% 17%); --belt-accent: hsl(292 76% 39%);" data-belt-holder="Dylan Reid"><td data-label="GW">14</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ethan Ellsworth</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">36-41</td><td data-label="Belt After GW">Dylan Reid</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">15</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Dylan Reid</td><td data-label="Challenger">Ryan Houseman</td><td data-label="Score">27-31</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">16</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">42-36</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">17</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Ryan Donlan</td><td data-label="Score">29-53</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">18</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">39-28</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">19</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">65-31</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">20</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Luke Lockwood</td><td data-label="Score">52-33</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(224 92% 94%); --belt-bg-dark: hsl(224 56% 17%); --belt-accent: hsl(224 76% 39%);" data-belt-holder="Julius Long"><td data-label="GW">21</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Julius Long</td><td data-label="Score">32-46</td><td data-label="Belt After GW">Julius Long</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">22</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Julius Long</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">35-37</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(266 92% 94%); --belt-bg-dark: hsl(266 56% 17%); --belt-accent: hsl(266 76% 39%);" data-belt-holder="Luke Lockwood"><td data-label="GW">23</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Luke Lockwood</td><td data-label="Score">36-43</td><td data-label="Belt After GW">Luke Lockwood</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(266 92% 94%); --belt-bg-dark: hsl(266 56% 17%); --belt-accent: hsl(266 76% 39%);" data-belt-holder="Luke Lockwood"><td data-label="GW">24</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Luke Lockwood</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">39-26</td><td data-label="Belt After GW">Luke Lockwood</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">25</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Luke Lockwood</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">61-66</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">26</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">53-39</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">27</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">71-45</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">28</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Ryan Houseman</td><td data-label="Score">57-51</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">29</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">24-23</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">30</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">54-44</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">31</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">52-46</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">32</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Ryan Donlan</td><td data-label="Score">58-65</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">33</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">63-53</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(28 92% 94%); --belt-bg-dark: hsl(28 56% 17%); --belt-accent: hsl(28 76% 39%);" data-belt-holder="Alexander Chaban"><td data-label="GW">34</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">54-58</td><td data-label="Belt After GW">Alexander Chaban</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">35</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Alexander Chaban</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">41-45</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">36</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">58-30</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">37</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Ryan Houseman</td><td data-label="Score">55-40</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(118 92% 94%); --belt-bg-dark: hsl(118 56% 17%); --belt-accent: hsl(118 76% 39%);" data-belt-holder="Levi Morant"><td data-label="GW">38</td><td data-label="Season">2024-25</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">37-39</td><td data-label="Belt After GW">Levi Morant</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(266 92% 94%); --belt-bg-dark: hsl(266 56% 17%); --belt-accent: hsl(266 76% 39%);" data-belt-holder="Luke Lockwood"><td data-label="GW">1</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Levi Morant</td><td data-label="Challenger">Luke Lockwood</td><td data-label="Score">36-42</td><td data-label="Belt After GW">Luke Lockwood</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">2</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Luke Lockwood</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">24-42</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth"><td data-label="GW">3</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">30-49</td><td data-label="Belt After GW">Ethan Ellsworth</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">4</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ethan Ellsworth</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">39-41</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">5</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">47-46</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">6</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Ryan Donlan</td><td data-label="Score">18-47</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">7</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Ryan Houseman</td><td data-label="Score">34-45</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">8</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">79-32</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">9</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">69-45</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">10</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">61-51</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(224 92% 94%); --belt-bg-dark: hsl(224 56% 17%); --belt-accent: hsl(224 76% 39%);" data-belt-holder="Julius Long"><td data-label="GW">11</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Julius Long</td><td data-label="Score">31-36</td><td data-label="Belt After GW">Julius Long</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">12</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Julius Long</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">43-59</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth"><td data-label="GW">13</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">39-41</td><td data-label="Belt After GW">Ethan Ellsworth</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(292 92% 94%); --belt-bg-dark: hsl(292 56% 17%); --belt-accent: hsl(292 76% 39%);" data-belt-holder="Dylan Reid"><td data-label="GW">14</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ethan Ellsworth</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">28-30</td><td data-label="Belt After GW">Dylan Reid</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(292 92% 94%); --belt-bg-dark: hsl(292 56% 17%); --belt-accent: hsl(292 76% 39%);" data-belt-holder="Dylan Reid"><td data-label="GW">15</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Dylan Reid</td><td data-label="Challenger">Ryan Houseman</td><td data-label="Score">50-42</td><td data-label="Belt After GW">Dylan Reid</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">16</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Dylan Reid</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">37-40</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(118 92% 94%); --belt-bg-dark: hsl(118 56% 17%); --belt-accent: hsl(118 76% 39%);" data-belt-holder="Levi Morant"><td data-label="GW">17</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">23-45</td><td data-label="Belt After GW">Levi Morant</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">18</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Levi Morant</td><td data-label="Challenger">Ryan Donlan</td><td data-label="Score">36-45</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">19</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">34-29</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">20</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">44-37</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">21</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Luke Lockwood</td><td data-label="Score">46-38</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">22</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Julius Long</td><td data-label="Score">28-26</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(28 92% 94%); --belt-bg-dark: hsl(28 56% 17%); --belt-accent: hsl(28 76% 39%);" data-belt-holder="Alexander Chaban"><td data-label="GW">23</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">34-36</td><td data-label="Belt After GW">Alexander Chaban</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(28 92% 94%); --belt-bg-dark: hsl(28 56% 17%); --belt-accent: hsl(28 76% 39%);" data-belt-holder="Alexander Chaban"><td data-label="GW">24</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Alexander Chaban</td><td data-label="Challenger">Luke Lockwood</td><td data-label="Score">37-25</td><td data-label="Belt After GW">Alexander Chaban</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(28 92% 94%); --belt-bg-dark: hsl(28 56% 17%); --belt-accent: hsl(28 76% 39%);" data-belt-holder="Alexander Chaban"><td data-label="GW">25</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Alexander Chaban</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">41-40</td><td data-label="Belt After GW">Alexander Chaban</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">26</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Alexander Chaban</td><td data-label="Challenger">Ryan Houseman</td><td data-label="Score">30-44</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman"><td data-label="GW">27</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">46-40</td><td data-label="Belt After GW">Ryan Houseman</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">28</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Houseman</td><td data-label="Challenger">Drake Byrd</td><td data-label="Score">47-55</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">29</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">39-24</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">30</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Julius Long</td><td data-label="Score">64-52</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd"><td data-label="GW">31</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">35-29</td><td data-label="Belt After GW">Drake Byrd</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">32</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Drake Byrd</td><td data-label="Challenger">Justin Miller</td><td data-label="Score">37-50</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">33</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Julius Long</td><td data-label="Score">68-54</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller"><td data-label="GW">34</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">38-35</td><td data-label="Belt After GW">Justin Miller</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">35</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Justin Miller</td><td data-label="Challenger">Ryan Donlan</td><td data-label="Score">30-38</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">36</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">49-28</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">37</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Dylan Reid</td><td data-label="Score">61-22</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">38</td><td data-label="Season">2025-26</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">37-29</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+</tbody></table></div>
+</details>
+<details>
+<summary><h2>Cumulative Power Rankings</h2></summary>
+<p>Use this table as the career power-rankings view: it aggregates the season-reset power ratings from the Power Rankings page.</p>
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+<ul>
+<li>Every manager starts at <code>1500</code> before week 1 of each season, so this table aggregates separate season rating runs instead of carrying one rating across years.</li>
+<li><strong>Avg Final Rating</strong> averages each manager&#x27;s end-of-season power rating across the seasons in this dataset.</li>
+<li><strong>Latest Rating</strong> and <strong>Latest Rank</strong> are from the newest season currently loaded.</li>
+<li><strong>Best Peak</strong> is the highest single-season power rating reached, with the season and gameweek shown because this table spans multiple years.</li>
+<li><strong>Avg Power Rank</strong> is the manager&#x27;s average weekly power rank, weighted by gameweeks played; lower is better.</li>
+<li><strong>Total Net</strong> sums each manager&#x27;s season-level rating change from the 1500 starting point.</li>
+</ul>
+</details>
+<div class="table-wrap"><table>
+<thead><tr><th>Power Rank</th><th>Manager</th><th>Avg Final Rating</th><th>Latest Rating</th><th>Latest Rank</th><th>Best Peak</th><th>Best Peak Week</th><th>Avg Power Rank</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th><th>Total Net</th></tr></thead>
+<tbody>
+<tr><td data-label="Power Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Avg Final Rating">1614.1</td><td data-label="Latest Rating">1640.3</td><td data-label="Latest Rank">1</td><td data-label="Best Peak">1645.6</td><td data-label="Best Peak Week">2024-25 33</td><td data-label="Avg Power Rank">2.29</td><td data-label="Weeks #1">44</td><td data-label="Top 3 Weeks">59</td><td data-label="Bottom 3 Weeks">4</td><td data-label="Total Net">+228.1</td></tr>
+<tr><td data-label="Power Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Avg Final Rating">1608.9</td><td data-label="Latest Rating">1597.0</td><td data-label="Latest Rank">2</td><td data-label="Best Peak">1637.4</td><td data-label="Best Peak Week">2024-25 37</td><td data-label="Avg Power Rank">3.68</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">47</td><td data-label="Bottom 3 Weeks">6</td><td data-label="Total Net">+217.8</td></tr>
+<tr><td data-label="Power Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Avg Final Rating">1527.0</td><td data-label="Latest Rating">1526.8</td><td data-label="Latest Rank">3</td><td data-label="Best Peak">1551.4</td><td data-label="Best Peak Week">2024-25 36</td><td data-label="Avg Power Rank">5.12</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">20</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+53.9</td></tr>
+<tr><td data-label="Power Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Avg Final Rating">1521.6</td><td data-label="Latest Rating">1517.2</td><td data-label="Latest Rank">4</td><td data-label="Best Peak">1583.9</td><td data-label="Best Peak Week">2025-26 18</td><td data-label="Avg Power Rank">4.87</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">35</td><td data-label="Bottom 3 Weeks">20</td><td data-label="Total Net">+43.1</td></tr>
+<tr><td data-label="Power Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Avg Final Rating">1493.5</td><td data-label="Latest Rating">1516.9</td><td data-label="Latest Rank">5</td><td data-label="Best Peak">1558.1</td><td data-label="Best Peak Week">2025-26 16</td><td data-label="Avg Power Rank">5.05</td><td data-label="Weeks #1">6</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">-13.0</td></tr>
+<tr><td data-label="Power Rank">6</td><td data-label="Manager">Levi Morant</td><td data-label="Avg Final Rating">1492.4</td><td data-label="Latest Rating">1471.8</td><td data-label="Latest Rank">7</td><td data-label="Best Peak">1576.5</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Power Rank">6.79</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">9</td><td data-label="Bottom 3 Weeks">35</td><td data-label="Total Net">-15.1</td></tr>
+<tr><td data-label="Power Rank">7</td><td data-label="Manager">Julius Long</td><td data-label="Avg Final Rating">1445.7</td><td data-label="Latest Rating">1419.0</td><td data-label="Latest Rank">9</td><td data-label="Best Peak">1554.6</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Power Rank">6.26</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">35</td><td data-label="Total Net">-108.7</td></tr>
+<tr><td data-label="Power Rank">8</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Avg Final Rating">1439.3</td><td data-label="Latest Rating">1437.2</td><td data-label="Latest Rank">8</td><td data-label="Best Peak">1534.4</td><td data-label="Best Peak Week">2025-26 3</td><td data-label="Avg Power Rank">7.78</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">48</td><td data-label="Total Net">-121.5</td></tr>
+<tr><td data-label="Power Rank">9</td><td data-label="Manager">Dylan Reid</td><td data-label="Avg Final Rating">1435.9</td><td data-label="Latest Rating">1478.8</td><td data-label="Latest Rank">6</td><td data-label="Best Peak">1538.9</td><td data-label="Best Peak Week">2025-26 33</td><td data-label="Avg Power Rank">5.54</td><td data-label="Weeks #1">2</td><td data-label="Top 3 Weeks">14</td><td data-label="Bottom 3 Weeks">17</td><td data-label="Total Net">-128.1</td></tr>
+<tr><td data-label="Power Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Avg Final Rating">1421.7</td><td data-label="Latest Rating">1395.0</td><td data-label="Latest Rank">10</td><td data-label="Best Peak">1537.5</td><td data-label="Best Peak Week">2025-26 25</td><td data-label="Avg Power Rank">7.62</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">47</td><td data-label="Total Net">-156.7</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -1953,34 +2274,6 @@
 </tbody></table></div>
 </details>
 <details>
-<summary><h2>Cumulative Lineal Belt</h2></summary>
-<p>Use this table as the combined belt record book: total reigns, fight records, defenses, and weeks ending as belt holder.</p>
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-<ul>
-<li>This aggregates the two separate season belt histories: Ryan Donlan started with the belt in 2024-25, and Levi Morant started with it in 2025-26.</li>
-<li><strong>Reigns</strong> sums each manager&#x27;s number of belt reigns across the two season histories.</li>
-<li><strong>Belt Fight Record</strong> is wins-losses across every matchup where that manager appeared in a belt fight.</li>
-<li><strong>Weeks Holding</strong> counts gameweeks where the manager finished the week holding the belt.</li>
-<li><strong>Current Holder</strong> refers to the latest holder in the 2025-26 report.</li>
-</ul>
-</details>
-<div class="table-wrap"><table>
-<thead><tr><th>Manager</th><th>Reigns</th><th>Belt Fight Record</th><th>Win %</th><th>Longest Defense Run</th><th>Weeks Holding</th><th>Avg Belt Fight Score</th><th>Current Holder</th></tr></thead>
-<tbody>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Reigns">7</td><td data-label="Belt Fight Record">22-6</td><td data-label="Win %">78.6%</td><td data-label="Longest Defense Run">5</td><td data-label="Weeks Holding">22</td><td data-label="Avg Belt Fight Score">46.71</td><td data-label="Current Holder">Yes</td></tr>
-<tr><td data-label="Manager">Drake Byrd</td><td data-label="Reigns">6</td><td data-label="Belt Fight Record">10-11</td><td data-label="Win %">47.6%</td><td data-label="Longest Defense Run">3</td><td data-label="Weeks Holding">10</td><td data-label="Avg Belt Fight Score">39.81</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Justin Miller</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">14-7</td><td data-label="Win %">66.7%</td><td data-label="Longest Defense Run">6</td><td data-label="Weeks Holding">14</td><td data-label="Avg Belt Fight Score">48.71</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">6-14</td><td data-label="Win %">30.0%</td><td data-label="Longest Defense Run">2</td><td data-label="Weeks Holding">6</td><td data-label="Avg Belt Fight Score">38.20</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Levi Morant</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">4-7</td><td data-label="Win %">36.4%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">4</td><td data-label="Avg Belt Fight Score">37.64</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Reigns">3</td><td data-label="Belt Fight Record">8-6</td><td data-label="Win %">57.1%</td><td data-label="Longest Defense Run">3</td><td data-label="Weeks Holding">8</td><td data-label="Avg Belt Fight Score">46.93</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">4-6</td><td data-label="Win %">40.0%</td><td data-label="Longest Defense Run">2</td><td data-label="Weeks Holding">4</td><td data-label="Avg Belt Fight Score">36.70</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Dylan Reid</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">3-7</td><td data-label="Win %">30.0%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">3</td><td data-label="Avg Belt Fight Score">34.60</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">3-6</td><td data-label="Win %">33.3%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">3</td><td data-label="Avg Belt Fight Score">37.67</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">2-6</td><td data-label="Win %">25.0%</td><td data-label="Longest Defense Run">0</td><td data-label="Weeks Holding">2</td><td data-label="Avg Belt Fight Score">42.75</td><td data-label="Current Holder"></td></tr>
-</tbody></table></div>
-</details>
-<details>
 <summary><h2>Season-By-Season Change</h2></summary>
 <p>Use this table to see who moved up or down from 2024-25 to 2025-26.</p>
 <details class="notes">
@@ -2043,6 +2336,7 @@
 <li><code>all_time_score_bands.csv</code></li>
 <li><code>all_time_streaks.csv</code></li>
 <li><code>all_time_lineal_belt.csv</code></li>
+<li><code>all_time_lineal_belt_path.csv</code></li>
 <li><code>all_time_h2h_matrix.csv</code></li>
 <li><code>season_comparison.csv</code></li>
 <li><code>two_year_awards.csv</code></li>
@@ -2292,6 +2586,212 @@
   team?.addEventListener("change", applyFilters);
   owner?.addEventListener("change", applyFilters);
   applyFilters();
+})();
+</script>
+  <script>
+(() => {
+  const tables = Array.from(document.querySelectorAll(".keeper-roster-table table"));
+  if (!tables.length) return;
+
+  const parseNumber = (text) => {
+    const cleaned = String(text || "").replace(/,/g, "").trim();
+    if (!cleaned) return Number.NaN;
+    const value = Number.parseFloat(cleaned);
+    return Number.isFinite(value) ? value : Number.NaN;
+  };
+
+  const getCellText = (row, index) => row.children[index]?.textContent.trim() || "";
+
+  const sortTypeForColumn = (rows, index) => {
+    const values = rows.map((row) => getCellText(row, index)).filter(Boolean);
+    return values.length && values.every((value) => Number.isFinite(parseNumber(value))) ? "number" : "text";
+  };
+
+  const defaultDirection = (label, type) => {
+    if (type !== "number") return "asc";
+    return /rank/i.test(label) ? "asc" : "desc";
+  };
+
+  tables.forEach((table) => {
+    if (table.dataset.sortReady === "true") return;
+    const headerCells = Array.from(table.querySelectorAll("thead th"));
+    const body = table.querySelector("tbody");
+    const rows = body ? Array.from(body.querySelectorAll("tr")) : [];
+    if (!headerCells.length || !body || !rows.length) return;
+
+    table.dataset.sortReady = "true";
+    const headerLabels = headerCells.map((header) => header.textContent.trim());
+    rows.forEach((row, index) => {
+      row.dataset.originalIndex = String(index);
+    });
+
+    headerCells.forEach((header, index) => {
+      const label = headerLabels[index];
+      const type = sortTypeForColumn(rows, index);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "keeper-sort-button";
+      button.textContent = label;
+      button.setAttribute("aria-label", `Sort by ${label}`);
+      header.textContent = "";
+      header.appendChild(button);
+      header.dataset.sortType = type;
+      header.setAttribute("aria-sort", "none");
+
+      button.addEventListener("click", () => {
+        const currentIndex = table.dataset.sortIndex;
+        const currentDirection = table.dataset.sortDirection;
+        const initialDirection = defaultDirection(label, type);
+        const nextDirection = currentIndex === String(index)
+          ? (currentDirection === "asc" ? "desc" : "asc")
+          : initialDirection;
+
+        const sortedRows = rows.slice().sort((rowA, rowB) => {
+          const textA = getCellText(rowA, index);
+          const textB = getCellText(rowB, index);
+          let comparison = 0;
+
+          if (type === "number") {
+            const numberA = parseNumber(textA);
+            const numberB = parseNumber(textB);
+            if (Number.isNaN(numberA) && Number.isNaN(numberB)) {
+              comparison = 0;
+            } else if (Number.isNaN(numberA)) {
+              comparison = 1;
+            } else if (Number.isNaN(numberB)) {
+              comparison = -1;
+            } else {
+              comparison = numberA - numberB;
+            }
+          } else {
+            comparison = textA.localeCompare(textB, undefined, {
+              numeric: true,
+              sensitivity: "base",
+            });
+          }
+
+          if (comparison === 0) {
+            comparison = Number(rowA.dataset.originalIndex || 0) - Number(rowB.dataset.originalIndex || 0);
+          }
+          return nextDirection === "asc" ? comparison : -comparison;
+        });
+
+        sortedRows.forEach((row) => body.appendChild(row));
+        table.dataset.sortIndex = String(index);
+        table.dataset.sortDirection = nextDirection;
+
+        headerCells.forEach((cell, cellIndex) => {
+          const isActive = cellIndex === index;
+          cell.dataset.sortState = isActive ? nextDirection : "";
+          cell.setAttribute("aria-sort", isActive ? (nextDirection === "asc" ? "ascending" : "descending") : "none");
+        });
+      });
+    });
+
+    const initialSortIndex = headerLabels.findIndex((label) => label === "Season Pts");
+    if (initialSortIndex >= 0) {
+      table.dataset.sortIndex = String(initialSortIndex);
+      table.dataset.sortDirection = "desc";
+      headerCells[initialSortIndex].dataset.sortState = "desc";
+      headerCells[initialSortIndex].setAttribute("aria-sort", "descending");
+    }
+  });
+})();
+</script>
+  <script>
+(() => {
+  const hubs = Array.from(document.querySelectorAll("[data-rivalry-hub]"));
+  if (!hubs.length) return;
+
+  hubs.forEach((hub) => {
+    const order = (hub.dataset.managerOrder || "").split("|").filter(Boolean);
+    const selectA = hub.querySelector("[data-rivalry-manager-a]");
+    const selectB = hub.querySelector("[data-rivalry-manager-b]");
+    const status = hub.querySelector("[data-rivalry-status]");
+    const cards = Array.from(hub.querySelectorAll("[data-rivalry-card]"));
+
+    const orderedPair = (managerA, managerB) => {
+      const indexA = order.indexOf(managerA);
+      const indexB = order.indexOf(managerB);
+      if (indexA === -1 || indexB === -1) return [managerA, managerB].sort();
+      return indexA <= indexB ? [managerA, managerB] : [managerB, managerA];
+    };
+
+    const chooseFallbackOpponent = (manager) => {
+      return order.find((candidate) => candidate !== manager) || "";
+    };
+
+    const update = (changedSelect) => {
+      if (!selectA || !selectB) return;
+      if (selectA.value === selectB.value) {
+        const fallback = chooseFallbackOpponent(selectA.value);
+        if (changedSelect === selectA) {
+          selectB.value = fallback;
+        } else {
+          selectA.value = fallback;
+        }
+      }
+
+      const [managerA, managerB] = orderedPair(selectA.value, selectB.value);
+      let activeCard = null;
+      cards.forEach((card) => {
+        const isActive = card.dataset.managerA === managerA && card.dataset.managerB === managerB;
+        card.classList.toggle("is-active", isActive);
+        card.toggleAttribute("hidden", !isActive);
+        if (isActive) activeCard = card;
+      });
+      if (status) {
+        status.textContent = activeCard ? `${selectA.value} vs ${selectB.value}` : "No rivalry data";
+      }
+    };
+
+    selectA?.addEventListener("change", () => update(selectA));
+    selectB?.addEventListener("change", () => update(selectB));
+    update();
+  });
+})();
+</script>
+  <script>
+(() => {
+  const page = document.querySelector("[data-league-history]");
+  if (!page) return;
+
+  const buttons = Array.from(page.querySelectorAll("[data-league-year-button]"));
+  const panels = Array.from(page.querySelectorAll("[data-league-year-panel]"));
+  const toolbars = Array.from(document.querySelectorAll("[data-league-year-toolbar]"));
+  const defaultYear = page.dataset.defaultYear || "2025-2026";
+  const validYears = new Set(buttons.map((button) => button.dataset.leagueYearButton));
+
+  const setYear = (year, updateUrl = false) => {
+    const selectedYear = validYears.has(year) ? year : defaultYear;
+    buttons.forEach((button) => {
+      const isActive = button.dataset.leagueYearButton === selectedYear;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+    panels.forEach((panel) => {
+      const isActive = panel.dataset.leagueYearPanel === selectedYear;
+      panel.classList.toggle("is-active", isActive);
+      panel.toggleAttribute("hidden", !isActive);
+    });
+    toolbars.forEach((toolbar) => {
+      const isActive = toolbar.dataset.leagueYearToolbar === selectedYear;
+      toolbar.classList.toggle("is-active", isActive);
+      toolbar.toggleAttribute("hidden", !isActive);
+    });
+    if (updateUrl && window.history && window.URLSearchParams) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("year", selectedYear);
+      window.history.replaceState({}, "", url);
+    }
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => setYear(button.dataset.leagueYearButton, true));
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  setYear(params.get("year") || defaultYear, false);
 })();
 </script>
 </body>

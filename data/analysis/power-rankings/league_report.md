@@ -9,9 +9,9 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 - **Most Weeks At #1 In A Season**: Ryan Donlan (26 weeks in 2024-25).
 
 <details open>
-<summary><h2>Season Elo Tabs</h2></summary>
+<summary><h2>Season Power Rankings</h2></summary>
 
-Use the tabs to switch between seasons. Each season has its own Elo chart, final power table, time-at-top table, and biggest underdog Elo wins.
+Use the tabs to switch between seasons. Each season has its own rating chart, final power table, time-at-top table, and biggest underdog wins.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -33,10 +33,10 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 <label class="power-tab-label" id="power-season-2024-25-label" role="tab" for="power-season-2024-25">2024-25</label>
 </div>
 <section class="power-tab-panel" id="power-panel-2025-26" role="tabpanel" aria-labelledby="power-season-2025-26-label">
-### 2025-26 Elo Movement
-<div class="rating-chart-wrap" role="img" aria-label="2025-26 Elo rating movement chart">
+### 2025-26 Power Rating Movement
+<div class="rating-chart-wrap" role="img" aria-label="2025-26 power rating movement chart">
 <svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
-<text class="chart-title" x="64" y="18">2025-26 Elo Movement</text>
+<text class="chart-title" x="64" y="18">2025-26 Power Rating Movement</text>
 <line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
 <line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
 <line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
@@ -86,7 +86,7 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 <line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
 <text class="axis-label" x="884.0" y="422" text-anchor="middle">38</text>
 <text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
-<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Elo rating</text>
+<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Power rating</text>
 <polyline class="rating-line" points="64.0,227.2 85.6,240.9 107.2,253.6 128.7,266.4 150.3,251.9 171.9,236.5 193.5,221.1 215.1,235.8 236.6,223.2 258.2,237.7 279.8,223.4 301.4,211.0 322.9,223.1 344.5,210.4 366.1,225.2 387.7,237.5 409.3,223.9 430.8,210.0 452.4,197.8 474.0,184.6 495.6,173.9 517.2,160.0 538.7,149.3 560.3,165.5 581.9,154.3 603.5,171.2 625.1,158.1 646.6,174.9 668.2,162.2 689.8,153.4 711.4,141.1 732.9,132.3 754.5,123.2 776.1,112.9 797.7,103.3 819.3,90.7 840.8,83.2 862.4,74.3 884.0,67.5" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
 <circle class="rating-endpoint" cx="884.0" cy="67.5" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
 <line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
@@ -197,9 +197,9 @@ Use the tabs to switch between seasons. Each season has its own Elo chart, final
 
 ### 2025-26 Biggest Upsets
 
-These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
+These are the largest pre-game rating gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
 
-| Week | Underdog Winner | Favorite | Elo Gap | Underdog Elo | Favorite Elo | Score |
+| Week | Underdog Winner | Favorite | Rating Gap | Underdog Rating | Favorite Rating | Score |
 |---|---:|---:|---:|---:|---:|---:|
 | 35 | Ethan Ellsworth | Luke Lockwood | 135.2 | 1424.5 | 1559.7 | 42-21 |
 | 19 | Levi Morant | Luke Lockwood | 116.9 | 1467.0 | 1583.9 | 48-45 |
@@ -224,10 +224,10 @@ These are the largest pre-game Elo gaps where the lower-rated manager beat the h
 
 </section>
 <section class="power-tab-panel" id="power-panel-2024-25" role="tabpanel" aria-labelledby="power-season-2024-25-label">
-### 2024-25 Elo Movement
-<div class="rating-chart-wrap" role="img" aria-label="2024-25 Elo rating movement chart">
+### 2024-25 Power Rating Movement
+<div class="rating-chart-wrap" role="img" aria-label="2024-25 power rating movement chart">
 <svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
-<text class="chart-title" x="64" y="18">2024-25 Elo Movement</text>
+<text class="chart-title" x="64" y="18">2024-25 Power Rating Movement</text>
 <line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
 <line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
 <line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
@@ -277,7 +277,7 @@ These are the largest pre-game Elo gaps where the lower-rated manager beat the h
 <line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
 <text class="axis-label" x="884.0" y="422" text-anchor="middle">38</text>
 <text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
-<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Elo rating</text>
+<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Power rating</text>
 <polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,200.9 128.7,187.2 150.3,175.4 171.9,163.0 193.5,176.7 215.1,165.6 236.6,181.8 258.2,171.3 279.8,187.7 301.4,176.1 322.9,162.3 344.5,164.4 366.1,152.0 387.7,140.8 409.3,132.4 430.8,121.0 452.4,110.9 474.0,102.0 495.6,94.3 517.2,112.5 538.7,103.1 560.3,91.8 581.9,84.2 603.5,76.5 625.1,66.0 646.6,86.0 668.2,78.0 689.8,97.1 711.4,87.8 732.9,81.5 754.5,68.5 776.1,61.5 797.7,82.9 819.3,100.4 840.8,120.9 862.4,139.3 884.0,127.2" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
 <circle class="rating-endpoint" cx="884.0" cy="127.2" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
 <line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
@@ -388,9 +388,9 @@ These are the largest pre-game Elo gaps where the lower-rated manager beat the h
 
 ### 2024-25 Biggest Upsets
 
-These are the largest pre-game Elo gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
+These are the largest pre-game rating gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
 
-| Week | Underdog Winner | Favorite | Elo Gap | Underdog Elo | Favorite Elo | Score |
+| Week | Underdog Winner | Favorite | Rating Gap | Underdog Rating | Favorite Rating | Score |
 |---|---:|---:|---:|---:|---:|---:|
 | 34 | Alexander Chaban | Ryan Donlan | 225.6 | 1420.0 | 1645.6 | 58-54 |
 | 36 | Ethan Ellsworth | Ryan Donlan | 190.2 | 1421.2 | 1611.4 | 40-25 |

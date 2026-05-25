@@ -45,6 +45,107 @@ Use this table for the plain league table: record, league points, scoring totals
 </details>
 
 <details>
+<summary><h2>Lineal Belt</h2></summary>
+
+Use this section to follow the imaginary boxing-style belt as it moves only when the current holder loses a league matchup.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- The belt started with Levi Morant (`*Saka It To Me Baby`) going into GW1.
+- Each gameweek, only the current holder's matchup matters.
+- If the holder wins or draws, they keep the belt and it is up for grabs again in their next matchup.
+- If the holder loses, the opponent takes the belt immediately after that gameweek.
+- **Number of Reigns** counts every separate time a manager held the belt, including Levi's starting reign.
+- **Longest Defense Run** is the most holder wins in a single reign before losing the belt. A draw retains the belt, but it is not counted as a defense.
+- **Belt Fight Record** is shown as wins-losses across every lineal belt matchup a manager appeared in, whether they entered as holder or challenger.
+- **Avg Score in Belt Fights** is that manager's average score in matchups where the lineal belt was on the line.
+- **Diff vs Non-Belt Avg** is Avg Score in Belt Fights minus that manager's average score in all other league matchups. Positive means they scored better in belt fights than in non-belt weeks.
+- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
+- **Score** is shown in holder-entering to challenger order. If Belt After GW matches Holder Entering, the holder defended; if it changes, the challenger won the belt.
+
+</details>
+
+Current holder after GW38: Ryan Donlan (`**Cunha Believe it?!`).
+
+### Holder Summary
+
+| Team | Manager | Number of Reigns | Longest Defense Run | Current Holder |
+|---|---|---:|---:|---|
+| `**Cunha Believe it?!` | Ryan Donlan | 3 | 4 | Yes |
+| `Grand-Larseny` | Drake Byrd | 4 | 3 |  |
+| `eze as u like b*%chs` | Ryan Houseman | 2 | 3 |  |
+| `Sue-nited FC*` | Justin Miller | 2 | 2 |  |
+| `ChabosSpurs@Law` | Alexander Chaban | 1 | 2 |  |
+| `Bowen Arrows` | Dylan Reid | 1 | 1 |  |
+| `*Saka It To Me Baby` | Levi Morant | 2 | 0 |  |
+| `Santa’s reijnders` | Ethan Ellsworth | 2 | 0 |  |
+| `Amorim de mi vida` | Julius Long | 1 | 0 |  |
+| `Into the WOODwork*` | Luke Lockwood | 1 | 0 |  |
+
+### Belt Fight Records
+
+Use this table to see each manager's W-L record in all lineal belt matchups and whether their scoring rose or fell when the belt was involved.
+
+| Team | Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
+|---|---|---:|---:|---:|
+| `eze as u like b*%chs` | Ryan Houseman | 6-3 | 51.6 | +10.3 |
+| `Sue-nited FC*` | Justin Miller | 4-3 | 43.4 | -1.0 |
+| `Amorim de mi vida` | Julius Long | 1-4 | 42.2 | +4.6 |
+| `Grand-Larseny` | Drake Byrd | 8-5 | 42.1 | -2.2 |
+| `**Cunha Believe it?!` | Ryan Donlan | 10-2 | 41.4 | -7.3 |
+| `Santa’s reijnders` | Ethan Ellsworth | 2-8 | 37.7 | -2.6 |
+| `*Saka It To Me Baby` | Levi Morant | 1-4 | 36.0 | -3.9 |
+| `Bowen Arrows` | Dylan Reid | 2-3 | 33.6 | -9.1 |
+| `ChabosSpurs@Law` | Alexander Chaban | 3-3 | 33.3 | -6.8 |
+| `Into the WOODwork*` | Luke Lockwood | 1-3 | 32.2 | -8.9 |
+
+### Week-By-Week Belt Path
+
+| GW | Holder Entering | Challenger | Score | Belt After GW |
+|---:|---|---|---:|---|
+| 1 | Levi Morant | Luke Lockwood | 36-42 | Luke Lockwood |
+| 2 | Luke Lockwood | Justin Miller | 24-42 | Justin Miller |
+| 3 | Justin Miller | Ethan Ellsworth | 30-49 | Ethan Ellsworth |
+| 4 | Ethan Ellsworth | Drake Byrd | 39-41 | Drake Byrd |
+| 5 | Drake Byrd | Justin Miller | 47-46 | Drake Byrd |
+| 6 | Drake Byrd | Ryan Donlan | 18-47 | Ryan Donlan |
+| 7 | Ryan Donlan | Ryan Houseman | 34-45 | Ryan Houseman |
+| 8 | Ryan Houseman | Alexander Chaban | 79-32 | Ryan Houseman |
+| 9 | Ryan Houseman | Ethan Ellsworth | 69-45 | Ryan Houseman |
+| 10 | Ryan Houseman | Drake Byrd | 61-51 | Ryan Houseman |
+| 11 | Ryan Houseman | Julius Long | 31-36 | Julius Long |
+| 12 | Julius Long | Drake Byrd | 43-59 | Drake Byrd |
+| 13 | Drake Byrd | Ethan Ellsworth | 39-41 | Ethan Ellsworth |
+| 14 | Ethan Ellsworth | Dylan Reid | 28-30 | Dylan Reid |
+| 15 | Dylan Reid | Ryan Houseman | 50-42 | Dylan Reid |
+| 16 | Dylan Reid | Drake Byrd | 37-40 | Drake Byrd |
+| 17 | Drake Byrd | Levi Morant | 23-45 | Levi Morant |
+| 18 | Levi Morant | Ryan Donlan | 36-45 | Ryan Donlan |
+| 19 | Ryan Donlan | Dylan Reid | 34-29 | Ryan Donlan |
+| 20 | Ryan Donlan | Ethan Ellsworth | 44-37 | Ryan Donlan |
+| 21 | Ryan Donlan | Luke Lockwood | 46-38 | Ryan Donlan |
+| 22 | Ryan Donlan | Julius Long | 28-26 | Ryan Donlan |
+| 23 | Ryan Donlan | Alexander Chaban | 34-36 | Alexander Chaban |
+| 24 | Alexander Chaban | Luke Lockwood | 37-25 | Alexander Chaban |
+| 25 | Alexander Chaban | Ethan Ellsworth | 41-40 | Alexander Chaban |
+| 26 | Alexander Chaban | Ryan Houseman | 30-44 | Ryan Houseman |
+| 27 | Ryan Houseman | Ethan Ellsworth | 46-40 | Ryan Houseman |
+| 28 | Ryan Houseman | Drake Byrd | 47-55 | Drake Byrd |
+| 29 | Drake Byrd | Alexander Chaban | 39-24 | Drake Byrd |
+| 30 | Drake Byrd | Julius Long | 64-52 | Drake Byrd |
+| 31 | Drake Byrd | Ethan Ellsworth | 35-29 | Drake Byrd |
+| 32 | Drake Byrd | Justin Miller | 37-50 | Justin Miller |
+| 33 | Justin Miller | Julius Long | 68-54 | Justin Miller |
+| 34 | Justin Miller | Levi Morant | 38-35 | Justin Miller |
+| 35 | Justin Miller | Ryan Donlan | 30-38 | Ryan Donlan |
+| 36 | Ryan Donlan | Levi Morant | 49-28 | Ryan Donlan |
+| 37 | Ryan Donlan | Dylan Reid | 61-22 | Ryan Donlan |
+| 38 | Ryan Donlan | Ethan Ellsworth | 37-29 | Ryan Donlan |
+
+</details>
+
+<details>
 <summary><h2>Winning And Losing Streaks</h2></summary>
 
 Use this table to see each team's longest winning run and longest losing run.
@@ -163,107 +264,6 @@ For `**Cunha Believe it?!`, that is `81 - 64.8 = +16.2`. The team still led the 
 | `Grand-Larseny` | 61 | 65.8 | -4.8 | 1672 |
 | `ChabosSpurs@Law` | 42 | 49.7 | -7.7 | 1692 |
 | `Santa’s reijnders` | 41 | 51.8 | -10.8 | 1566 |
-
-</details>
-
-<details>
-<summary><h2>Lineal Belt</h2></summary>
-
-Use this section to follow the imaginary boxing-style belt as it moves only when the current holder loses a league matchup.
-
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-
-- The belt started with Levi Morant (`*Saka It To Me Baby`) going into GW1.
-- Each gameweek, only the current holder's matchup matters.
-- If the holder wins or draws, they keep the belt and it is up for grabs again in their next matchup.
-- If the holder loses, the opponent takes the belt immediately after that gameweek.
-- **Number of Reigns** counts every separate time a manager held the belt, including Levi's starting reign.
-- **Longest Defense Run** is the most holder wins in a single reign before losing the belt. A draw retains the belt, but it is not counted as a defense.
-- **Belt Fight Record** is shown as wins-losses across every lineal belt matchup a manager appeared in, whether they entered as holder or challenger.
-- **Avg Score in Belt Fights** is that manager's average score in matchups where the lineal belt was on the line.
-- **Diff vs Non-Belt Avg** is Avg Score in Belt Fights minus that manager's average score in all other league matchups. Positive means they scored better in belt fights than in non-belt weeks.
-- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
-- **Score** is shown in holder-entering to challenger order. If Belt After GW matches Holder Entering, the holder defended; if it changes, the challenger won the belt.
-
-</details>
-
-Current holder after GW38: Ryan Donlan (`**Cunha Believe it?!`).
-
-### Holder Summary
-
-| Team | Manager | Number of Reigns | Longest Defense Run | Current Holder |
-|---|---|---:|---:|---|
-| `**Cunha Believe it?!` | Ryan Donlan | 3 | 4 | Yes |
-| `Grand-Larseny` | Drake Byrd | 4 | 3 |  |
-| `eze as u like b*%chs` | Ryan Houseman | 2 | 3 |  |
-| `Sue-nited FC*` | Justin Miller | 2 | 2 |  |
-| `ChabosSpurs@Law` | Alexander Chaban | 1 | 2 |  |
-| `Bowen Arrows` | Dylan Reid | 1 | 1 |  |
-| `*Saka It To Me Baby` | Levi Morant | 2 | 0 |  |
-| `Santa’s reijnders` | Ethan Ellsworth | 2 | 0 |  |
-| `Amorim de mi vida` | Julius Long | 1 | 0 |  |
-| `Into the WOODwork*` | Luke Lockwood | 1 | 0 |  |
-
-### Belt Fight Records
-
-Use this table to see each manager's W-L record in all lineal belt matchups and whether their scoring rose or fell when the belt was involved.
-
-| Team | Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
-|---|---|---:|---:|---:|
-| `eze as u like b*%chs` | Ryan Houseman | 6-3 | 51.6 | +10.3 |
-| `Sue-nited FC*` | Justin Miller | 4-3 | 43.4 | -1.0 |
-| `Amorim de mi vida` | Julius Long | 1-4 | 42.2 | +4.6 |
-| `Grand-Larseny` | Drake Byrd | 8-5 | 42.1 | -2.2 |
-| `**Cunha Believe it?!` | Ryan Donlan | 10-2 | 41.4 | -7.3 |
-| `Santa’s reijnders` | Ethan Ellsworth | 2-8 | 37.7 | -2.6 |
-| `*Saka It To Me Baby` | Levi Morant | 1-4 | 36.0 | -3.9 |
-| `Bowen Arrows` | Dylan Reid | 2-3 | 33.6 | -9.1 |
-| `ChabosSpurs@Law` | Alexander Chaban | 3-3 | 33.3 | -6.8 |
-| `Into the WOODwork*` | Luke Lockwood | 1-3 | 32.2 | -8.9 |
-
-### Week-By-Week Belt Path
-
-| GW | Holder Entering | Challenger | Score | Belt After GW |
-|---:|---|---|---:|---|
-| 1 | Levi Morant | Luke Lockwood | 36-42 | Luke Lockwood |
-| 2 | Luke Lockwood | Justin Miller | 24-42 | Justin Miller |
-| 3 | Justin Miller | Ethan Ellsworth | 30-49 | Ethan Ellsworth |
-| 4 | Ethan Ellsworth | Drake Byrd | 39-41 | Drake Byrd |
-| 5 | Drake Byrd | Justin Miller | 47-46 | Drake Byrd |
-| 6 | Drake Byrd | Ryan Donlan | 18-47 | Ryan Donlan |
-| 7 | Ryan Donlan | Ryan Houseman | 34-45 | Ryan Houseman |
-| 8 | Ryan Houseman | Alexander Chaban | 79-32 | Ryan Houseman |
-| 9 | Ryan Houseman | Ethan Ellsworth | 69-45 | Ryan Houseman |
-| 10 | Ryan Houseman | Drake Byrd | 61-51 | Ryan Houseman |
-| 11 | Ryan Houseman | Julius Long | 31-36 | Julius Long |
-| 12 | Julius Long | Drake Byrd | 43-59 | Drake Byrd |
-| 13 | Drake Byrd | Ethan Ellsworth | 39-41 | Ethan Ellsworth |
-| 14 | Ethan Ellsworth | Dylan Reid | 28-30 | Dylan Reid |
-| 15 | Dylan Reid | Ryan Houseman | 50-42 | Dylan Reid |
-| 16 | Dylan Reid | Drake Byrd | 37-40 | Drake Byrd |
-| 17 | Drake Byrd | Levi Morant | 23-45 | Levi Morant |
-| 18 | Levi Morant | Ryan Donlan | 36-45 | Ryan Donlan |
-| 19 | Ryan Donlan | Dylan Reid | 34-29 | Ryan Donlan |
-| 20 | Ryan Donlan | Ethan Ellsworth | 44-37 | Ryan Donlan |
-| 21 | Ryan Donlan | Luke Lockwood | 46-38 | Ryan Donlan |
-| 22 | Ryan Donlan | Julius Long | 28-26 | Ryan Donlan |
-| 23 | Ryan Donlan | Alexander Chaban | 34-36 | Alexander Chaban |
-| 24 | Alexander Chaban | Luke Lockwood | 37-25 | Alexander Chaban |
-| 25 | Alexander Chaban | Ethan Ellsworth | 41-40 | Alexander Chaban |
-| 26 | Alexander Chaban | Ryan Houseman | 30-44 | Ryan Houseman |
-| 27 | Ryan Houseman | Ethan Ellsworth | 46-40 | Ryan Houseman |
-| 28 | Ryan Houseman | Drake Byrd | 47-55 | Drake Byrd |
-| 29 | Drake Byrd | Alexander Chaban | 39-24 | Drake Byrd |
-| 30 | Drake Byrd | Julius Long | 64-52 | Drake Byrd |
-| 31 | Drake Byrd | Ethan Ellsworth | 35-29 | Drake Byrd |
-| 32 | Drake Byrd | Justin Miller | 37-50 | Justin Miller |
-| 33 | Justin Miller | Julius Long | 68-54 | Justin Miller |
-| 34 | Justin Miller | Levi Morant | 38-35 | Justin Miller |
-| 35 | Justin Miller | Ryan Donlan | 30-38 | Ryan Donlan |
-| 36 | Ryan Donlan | Levi Morant | 49-28 | Ryan Donlan |
-| 37 | Ryan Donlan | Dylan Reid | 61-22 | Ryan Donlan |
-| 38 | Ryan Donlan | Ethan Ellsworth | 37-29 | Ryan Donlan |
 
 </details>
 

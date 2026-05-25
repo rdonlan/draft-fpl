@@ -44,23 +44,136 @@ Use this as the career table: total record, table points, points for, points aga
 </details>
 
 <details>
-<summary><h2>Cumulative Elo Power</h2></summary>
+<summary><h2>Cumulative Lineal Belt</h2></summary>
 
-Use this table as the career power-rankings view: it aggregates the season-reset Elo ratings from the Power Rankings page.
+Use this as the combined belt record book: total reigns, fight records, defenses, weeks ending as belt holder, and the full two-year belt path.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 
-- Every manager starts at `1500` before week 1 of each season, so this table aggregates separate season Elo runs instead of carrying one rating across years.
-- **Avg Final Elo** averages each manager's end-of-season Elo across the seasons in this dataset.
-- **Latest Elo** and **Latest Rank** are from the newest season currently loaded.
-- **Best Peak** is the highest single-season Elo reached, with the season and gameweek shown because this table spans multiple years.
-- **Avg Elo Rank** is the manager's average weekly Elo rank, weighted by gameweeks played; lower is better.
-- **Total Net** sums each manager's season-level Elo change from the 1500 starting point.
+- This aggregates the two separate season belt histories: Ryan Donlan started with the belt in 2024-25, and Levi Morant started with it in 2025-26.
+- **Reigns** sums each manager's number of belt reigns across the two season histories.
+- **Belt Fight Record** is wins-losses across every matchup where that manager appeared in a belt fight.
+- **Weeks Holding** counts gameweeks where the manager finished the week holding the belt.
+- **Current Holder** refers to the latest holder in the 2025-26 report.
+- In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
 
 </details>
 
-| Power Rank | Manager | Avg Final Elo | Latest Elo | Latest Rank | Best Peak | Best Peak Week | Avg Elo Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Total Net |
+| Manager | Reigns | Belt Fight Record | Win % | Longest Defense Run | Weeks Holding | Avg Belt Fight Score | Current Holder |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Ryan Donlan | 7 | 22-6 | 78.6% | 5 | 22 | 46.71 | Yes |
+| Drake Byrd | 6 | 10-11 | 47.6% | 3 | 10 | 39.81 |  |
+| Justin Miller | 4 | 14-7 | 66.7% | 6 | 14 | 48.71 |  |
+| Ethan Ellsworth | 4 | 6-14 | 30.0% | 2 | 6 | 38.20 |  |
+| Levi Morant | 4 | 4-7 | 36.4% | 1 | 4 | 37.64 |  |
+| Ryan Houseman | 3 | 8-6 | 57.1% | 3 | 8 | 46.93 |  |
+| Alexander Chaban | 2 | 4-6 | 40.0% | 2 | 4 | 36.70 |  |
+| Dylan Reid | 2 | 3-7 | 30.0% | 1 | 3 | 34.60 |  |
+| Luke Lockwood | 2 | 3-6 | 33.3% | 1 | 3 | 37.67 |  |
+| Julius Long | 2 | 2-6 | 25.0% | 0 | 2 | 42.75 |  |
+
+### Week-By-Week Belt Path
+
+| GW | Season | Holder Entering | Challenger | Score | Belt After GW |
+|---|---:|---:|---:|---:|---:|
+| 1 | 2024-25 | Ryan Donlan | Drake Byrd | 49-32 | Ryan Donlan |
+| 2 | 2024-25 | Ryan Donlan | Luke Lockwood | 66-34 | Ryan Donlan |
+| 3 | 2024-25 | Ryan Donlan | Julius Long | 59-50 | Ryan Donlan |
+| 4 | 2024-25 | Ryan Donlan | Dylan Reid | 44-35 | Ryan Donlan |
+| 5 | 2024-25 | Ryan Donlan | Justin Miller | 63-58 | Ryan Donlan |
+| 6 | 2024-25 | Ryan Donlan | Levi Morant | 27-47 | Levi Morant |
+| 7 | 2024-25 | Levi Morant | Drake Byrd | 38-33 | Levi Morant |
+| 8 | 2024-25 | Levi Morant | Ethan Ellsworth | 34-40 | Ethan Ellsworth |
+| 9 | 2024-25 | Ethan Ellsworth | Ryan Donlan | 32-50 | Ryan Donlan |
+| 10 | 2024-25 | Ryan Donlan | Drake Byrd | 30-32 | Drake Byrd |
+| 11 | 2024-25 | Drake Byrd | Ethan Ellsworth | 43-51 | Ethan Ellsworth |
+| 12 | 2024-25 | Ethan Ellsworth | Alexander Chaban | 47-29 | Ethan Ellsworth |
+| 13 | 2024-25 | Ethan Ellsworth | Justin Miller | 45-31 | Ethan Ellsworth |
+| 14 | 2024-25 | Ethan Ellsworth | Dylan Reid | 36-41 | Dylan Reid |
+| 15 | 2024-25 | Dylan Reid | Ryan Houseman | 27-31 | Ryan Houseman |
+| 16 | 2024-25 | Ryan Houseman | Ethan Ellsworth | 42-36 | Ryan Houseman |
+| 17 | 2024-25 | Ryan Houseman | Ryan Donlan | 29-53 | Ryan Donlan |
+| 18 | 2024-25 | Ryan Donlan | Ethan Ellsworth | 39-28 | Ryan Donlan |
+| 19 | 2024-25 | Ryan Donlan | Drake Byrd | 65-31 | Ryan Donlan |
+| 20 | 2024-25 | Ryan Donlan | Luke Lockwood | 52-33 | Ryan Donlan |
+| 21 | 2024-25 | Ryan Donlan | Julius Long | 32-46 | Julius Long |
+| 22 | 2024-25 | Julius Long | Drake Byrd | 35-37 | Drake Byrd |
+| 23 | 2024-25 | Drake Byrd | Luke Lockwood | 36-43 | Luke Lockwood |
+| 24 | 2024-25 | Luke Lockwood | Ethan Ellsworth | 39-26 | Luke Lockwood |
+| 25 | 2024-25 | Luke Lockwood | Justin Miller | 61-66 | Justin Miller |
+| 26 | 2024-25 | Justin Miller | Alexander Chaban | 53-39 | Justin Miller |
+| 27 | 2024-25 | Justin Miller | Dylan Reid | 71-45 | Justin Miller |
+| 28 | 2024-25 | Justin Miller | Ryan Houseman | 57-51 | Justin Miller |
+| 29 | 2024-25 | Justin Miller | Levi Morant | 24-23 | Justin Miller |
+| 30 | 2024-25 | Justin Miller | Drake Byrd | 54-44 | Justin Miller |
+| 31 | 2024-25 | Justin Miller | Ethan Ellsworth | 52-46 | Justin Miller |
+| 32 | 2024-25 | Justin Miller | Ryan Donlan | 58-65 | Ryan Donlan |
+| 33 | 2024-25 | Ryan Donlan | Levi Morant | 63-53 | Ryan Donlan |
+| 34 | 2024-25 | Ryan Donlan | Alexander Chaban | 54-58 | Alexander Chaban |
+| 35 | 2024-25 | Alexander Chaban | Justin Miller | 41-45 | Justin Miller |
+| 36 | 2024-25 | Justin Miller | Dylan Reid | 58-30 | Justin Miller |
+| 37 | 2024-25 | Justin Miller | Ryan Houseman | 55-40 | Justin Miller |
+| 38 | 2024-25 | Justin Miller | Levi Morant | 37-39 | Levi Morant |
+| 1 | 2025-26 | Levi Morant | Luke Lockwood | 36-42 | Luke Lockwood |
+| 2 | 2025-26 | Luke Lockwood | Justin Miller | 24-42 | Justin Miller |
+| 3 | 2025-26 | Justin Miller | Ethan Ellsworth | 30-49 | Ethan Ellsworth |
+| 4 | 2025-26 | Ethan Ellsworth | Drake Byrd | 39-41 | Drake Byrd |
+| 5 | 2025-26 | Drake Byrd | Justin Miller | 47-46 | Drake Byrd |
+| 6 | 2025-26 | Drake Byrd | Ryan Donlan | 18-47 | Ryan Donlan |
+| 7 | 2025-26 | Ryan Donlan | Ryan Houseman | 34-45 | Ryan Houseman |
+| 8 | 2025-26 | Ryan Houseman | Alexander Chaban | 79-32 | Ryan Houseman |
+| 9 | 2025-26 | Ryan Houseman | Ethan Ellsworth | 69-45 | Ryan Houseman |
+| 10 | 2025-26 | Ryan Houseman | Drake Byrd | 61-51 | Ryan Houseman |
+| 11 | 2025-26 | Ryan Houseman | Julius Long | 31-36 | Julius Long |
+| 12 | 2025-26 | Julius Long | Drake Byrd | 43-59 | Drake Byrd |
+| 13 | 2025-26 | Drake Byrd | Ethan Ellsworth | 39-41 | Ethan Ellsworth |
+| 14 | 2025-26 | Ethan Ellsworth | Dylan Reid | 28-30 | Dylan Reid |
+| 15 | 2025-26 | Dylan Reid | Ryan Houseman | 50-42 | Dylan Reid |
+| 16 | 2025-26 | Dylan Reid | Drake Byrd | 37-40 | Drake Byrd |
+| 17 | 2025-26 | Drake Byrd | Levi Morant | 23-45 | Levi Morant |
+| 18 | 2025-26 | Levi Morant | Ryan Donlan | 36-45 | Ryan Donlan |
+| 19 | 2025-26 | Ryan Donlan | Dylan Reid | 34-29 | Ryan Donlan |
+| 20 | 2025-26 | Ryan Donlan | Ethan Ellsworth | 44-37 | Ryan Donlan |
+| 21 | 2025-26 | Ryan Donlan | Luke Lockwood | 46-38 | Ryan Donlan |
+| 22 | 2025-26 | Ryan Donlan | Julius Long | 28-26 | Ryan Donlan |
+| 23 | 2025-26 | Ryan Donlan | Alexander Chaban | 34-36 | Alexander Chaban |
+| 24 | 2025-26 | Alexander Chaban | Luke Lockwood | 37-25 | Alexander Chaban |
+| 25 | 2025-26 | Alexander Chaban | Ethan Ellsworth | 41-40 | Alexander Chaban |
+| 26 | 2025-26 | Alexander Chaban | Ryan Houseman | 30-44 | Ryan Houseman |
+| 27 | 2025-26 | Ryan Houseman | Ethan Ellsworth | 46-40 | Ryan Houseman |
+| 28 | 2025-26 | Ryan Houseman | Drake Byrd | 47-55 | Drake Byrd |
+| 29 | 2025-26 | Drake Byrd | Alexander Chaban | 39-24 | Drake Byrd |
+| 30 | 2025-26 | Drake Byrd | Julius Long | 64-52 | Drake Byrd |
+| 31 | 2025-26 | Drake Byrd | Ethan Ellsworth | 35-29 | Drake Byrd |
+| 32 | 2025-26 | Drake Byrd | Justin Miller | 37-50 | Justin Miller |
+| 33 | 2025-26 | Justin Miller | Julius Long | 68-54 | Justin Miller |
+| 34 | 2025-26 | Justin Miller | Levi Morant | 38-35 | Justin Miller |
+| 35 | 2025-26 | Justin Miller | Ryan Donlan | 30-38 | Ryan Donlan |
+| 36 | 2025-26 | Ryan Donlan | Levi Morant | 49-28 | Ryan Donlan |
+| 37 | 2025-26 | Ryan Donlan | Dylan Reid | 61-22 | Ryan Donlan |
+| 38 | 2025-26 | Ryan Donlan | Ethan Ellsworth | 37-29 | Ryan Donlan |
+
+</details>
+
+<details>
+<summary><h2>Cumulative Power Rankings</h2></summary>
+
+Use this table as the career power-rankings view: it aggregates the season-reset power ratings from the Power Rankings page.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- Every manager starts at `1500` before week 1 of each season, so this table aggregates separate season rating runs instead of carrying one rating across years.
+- **Avg Final Rating** averages each manager's end-of-season power rating across the seasons in this dataset.
+- **Latest Rating** and **Latest Rank** are from the newest season currently loaded.
+- **Best Peak** is the highest single-season power rating reached, with the season and gameweek shown because this table spans multiple years.
+- **Avg Power Rank** is the manager's average weekly power rank, weighted by gameweeks played; lower is better.
+- **Total Net** sums each manager's season-level rating change from the 1500 starting point.
+
+</details>
+
+| Power Rank | Manager | Avg Final Rating | Latest Rating | Latest Rank | Best Peak | Best Peak Week | Avg Power Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Total Net |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | Ryan Donlan | 1614.1 | 1640.3 | 1 | 1645.6 | 2024-25 33 | 2.29 | 44 | 59 | 4 | +228.1 |
 | 2 | Justin Miller | 1608.9 | 1597.0 | 2 | 1637.4 | 2024-25 37 | 3.68 | 4 | 47 | 6 | +217.8 |
@@ -195,37 +308,6 @@ Use this table to see the longest H2H winning and losing runs across the full tw
 </details>
 
 <details>
-<summary><h2>Cumulative Lineal Belt</h2></summary>
-
-Use this table as the combined belt record book: total reigns, fight records, defenses, and weeks ending as belt holder.
-
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-
-- This aggregates the two separate season belt histories: Ryan Donlan started with the belt in 2024-25, and Levi Morant started with it in 2025-26.
-- **Reigns** sums each manager's number of belt reigns across the two season histories.
-- **Belt Fight Record** is wins-losses across every matchup where that manager appeared in a belt fight.
-- **Weeks Holding** counts gameweeks where the manager finished the week holding the belt.
-- **Current Holder** refers to the latest holder in the 2025-26 report.
-
-</details>
-
-| Manager | Reigns | Belt Fight Record | Win % | Longest Defense Run | Weeks Holding | Avg Belt Fight Score | Current Holder |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Donlan | 7 | 22-6 | 78.6% | 5 | 22 | 46.71 | Yes |
-| Drake Byrd | 6 | 10-11 | 47.6% | 3 | 10 | 39.81 |  |
-| Justin Miller | 4 | 14-7 | 66.7% | 6 | 14 | 48.71 |  |
-| Ethan Ellsworth | 4 | 6-14 | 30.0% | 2 | 6 | 38.20 |  |
-| Levi Morant | 4 | 4-7 | 36.4% | 1 | 4 | 37.64 |  |
-| Ryan Houseman | 3 | 8-6 | 57.1% | 3 | 8 | 46.93 |  |
-| Alexander Chaban | 2 | 4-6 | 40.0% | 2 | 4 | 36.70 |  |
-| Dylan Reid | 2 | 3-7 | 30.0% | 1 | 3 | 34.60 |  |
-| Luke Lockwood | 2 | 3-6 | 33.3% | 1 | 3 | 37.67 |  |
-| Julius Long | 2 | 2-6 | 25.0% | 0 | 2 | 42.75 |  |
-
-</details>
-
-<details>
 <summary><h2>Season-By-Season Change</h2></summary>
 
 Use this table to see who moved up or down from 2024-25 to 2025-26.
@@ -295,6 +377,7 @@ These are the supporting CSVs exposed for the cumulative stats page.
 - `all_time_score_bands.csv`
 - `all_time_streaks.csv`
 - `all_time_lineal_belt.csv`
+- `all_time_lineal_belt_path.csv`
 - `all_time_h2h_matrix.csv`
 - `season_comparison.csv`
 - `two_year_awards.csv`
