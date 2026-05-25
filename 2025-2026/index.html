@@ -654,9 +654,19 @@
     }
     .recap-card {
       border: 1px solid var(--line);
+      border-left: 6px solid var(--line);
       border-radius: 8px;
       background: var(--paper);
       overflow: hidden;
+    }
+    .recap-card[data-kind="league"] {
+      border-left-color: #16a34a;
+    }
+    .recap-card[data-kind="cup"] {
+      border-left-color: #0284c7;
+    }
+    .recap-card[data-kind="mixed"] {
+      border-left-color: #ea580c;
     }
     .recap-card.is-hidden {
       display: none;
@@ -675,7 +685,7 @@
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 14px;
       align-items: center;
-      padding: 14px 16px;
+      padding: 15px 16px;
       background: var(--paper);
     }
     .recap-card details[open] summary {
@@ -683,17 +693,26 @@
     }
     .recap-summary-main {
       display: grid;
-      gap: 4px;
+      gap: 5px;
       min-width: 0;
+    }
+    .recap-kicker {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0;
+      text-transform: uppercase;
     }
     .recap-title {
       color: var(--ink);
-      font-size: 1rem;
+      font-size: 1.02rem;
       font-weight: 850;
+      line-height: 1.25;
     }
-    .recap-preview {
-      color: var(--muted);
-      font-size: 0.9rem;
+    .recap-description {
+      color: var(--tab-ink);
+      font-size: 0.92rem;
+      font-weight: 750;
       line-height: 1.35;
     }
     .recap-summary-meta {
