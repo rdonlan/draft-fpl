@@ -14,6 +14,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 - **Picks They Have** includes both their own picks and picks acquired from other managers.
 - **Own Picks They Do Not Have** shows original picks that are currently owed away.
 - **Incoming Picks From Other Managers** is the acquired-pick subset of the picks they hold.
+- **Trade Recap** stays compact on the page; hover the pill to see the condensed trade context behind that pick movement.
 
 </details>
 
@@ -66,22 +67,22 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>4th</td><td>Drake</td></tr>
-<tr><td>6th</td><td>Ethan</td></tr>
-<tr><td>8th</td><td>Drake</td></tr>
-<tr><td>9th</td><td>Julius</td></tr>
-<tr><td>10th</td><td>Dylan</td></tr>
-<tr><td>12th</td><td>Dylan</td></tr>
+<tr><td>4th</td><td>Drake</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Donny sent 2026 4th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick" aria-label="2024-25 Postseason: Donny sent 2026 4th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick">via Donny to Drake</span></td></tr>
+<tr><td>6th</td><td>Ethan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 22: Donny sent 6th-round pick to Ethan. Trade: Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)" aria-label="2025-26 GW 22: Donny sent 6th-round pick to Ethan. Trade: Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)">via Donny to Ethan</span></td></tr>
+<tr><td>8th</td><td>Drake</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Donny sent 2026 8th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick" aria-label="2024-25 Postseason: Donny sent 2026 8th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick">via Donny to Drake</span></td></tr>
+<tr><td>9th</td><td>Julius</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)" aria-label="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)">via Donny to Julius</span></td></tr>
+<tr><td>10th</td><td>Dylan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
+<tr><td>12th</td><td>Dylan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>10th</td><td>Ethan</td></tr>
+<tr><td>10th</td><td>Ethan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Preseason: Ethan sent 10th-round pick (via Ethan) to Donny. Trade: Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)" aria-label="2025-26 Preseason: Ethan sent 10th-round pick (via Ethan) to Donny. Trade: Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)">via Ethan to Donny</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -116,20 +117,20 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>Dylan</td></tr>
-<tr><td>6th</td><td>Julius</td></tr>
-<tr><td>7th</td><td>Levi</td></tr>
-<tr><td>8th</td><td>Levi</td></tr>
+<tr><td>3rd</td><td>Dylan</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 3rd-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks." aria-label="2024-25 Postseason: Levi sent 2026 3rd-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks.">via Levi to Dylan</span></td></tr>
+<tr><td>6th</td><td>Julius</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2026 6th-round pick to Julius. Trade: Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)" aria-label="2025-26 GW 31: Justin sent 2026 6th-round pick to Julius. Trade: Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)">via Justin to Julius</span></td></tr>
+<tr><td>7th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 26: Justin sent 2026 7th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick" aria-label="2025-26 GW 26: Justin sent 2026 7th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick">via Justin to Levi</span></td></tr>
+<tr><td>8th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2026 8th-round pick to Levi. Trade: Levi sent O&#x27;Reilly (MC); Justin sent 2026 8th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Justin sent 2026 8th-round pick to Levi. Trade: Levi sent O&#x27;Reilly (MC); Justin sent 2026 8th-round pick, matching players to be dropped">via Justin to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -168,17 +169,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>5th</td><td>Dylan</td></tr>
+<tr><td>5th</td><td>Dylan</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks." aria-label="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks.">via Levi to Dylan</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>10th</td><td>Levi</td></tr>
+<tr><td>10th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick" aria-label="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick">via Levi to Ryan Houseman</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -220,22 +221,22 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>4th</td><td>Ethan</td></tr>
-<tr><td>10th</td><td>Ryan Houseman</td></tr>
+<tr><td>4th</td><td>Ethan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 24: Levi sent 4th-round pick to Ethan. Trade: Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)" aria-label="2025-26 GW 24: Levi sent 4th-round pick to Ethan. Trade: Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)">via Levi to Ethan</span></td></tr>
+<tr><td>10th</td><td>Ryan Houseman</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick" aria-label="2024-25 Postseason: Levi sent 2026 10th-round pick to Ryan Houseman. Trade: Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick">via Levi to Ryan Houseman</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>Luke</td></tr>
-<tr><td>7th</td><td>Justin</td></tr>
-<tr><td>7th</td><td>Luke</td></tr>
-<tr><td>8th</td><td>Justin</td></tr>
-<tr><td>12th</td><td>Luke</td></tr>
+<tr><td>3rd</td><td>Luke</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Luke sent 2026 3rd-round pick to Levi. Trade: Levi sent Mbuemo (MU); Luke sent 2026 3rd-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Luke sent 2026 3rd-round pick to Levi. Trade: Levi sent Mbuemo (MU); Luke sent 2026 3rd-round pick, matching players to be dropped">via Luke to Levi</span></td></tr>
+<tr><td>7th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 26: Justin sent 2026 7th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick" aria-label="2025-26 GW 26: Justin sent 2026 7th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick">via Justin to Levi</span></td></tr>
+<tr><td>7th</td><td>Luke</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Luke sent 2026 7th-round pick to Levi. Trade: Levi sent Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL); Luke sent 2026 7th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Luke sent 2026 7th-round pick to Levi. Trade: Levi sent Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL); Luke sent 2026 7th-round pick, matching players to be dropped">via Luke to Levi</span></td></tr>
+<tr><td>8th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2026 8th-round pick to Levi. Trade: Levi sent O&#x27;Reilly (MC); Justin sent 2026 8th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Justin sent 2026 8th-round pick to Levi. Trade: Levi sent O&#x27;Reilly (MC); Justin sent 2026 8th-round pick, matching players to be dropped">via Justin to Levi</span></td></tr>
+<tr><td>12th</td><td>Luke</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 10: Luke sent 12th-round pick to Levi. Trade: Levi sent Simons (TOT); Luke sent Cullen (BUR), 12th-round pick" aria-label="2025-26 GW 10: Luke sent 12th-round pick to Levi. Trade: Levi sent Simons (TOT); Luke sent Cullen (BUR), 12th-round pick">via Luke to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -271,19 +272,19 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>Levi</td></tr>
-<tr><td>7th</td><td>Levi</td></tr>
-<tr><td>12th</td><td>Levi</td></tr>
+<tr><td>3rd</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Luke sent 2026 3rd-round pick to Levi. Trade: Levi sent Mbuemo (MU); Luke sent 2026 3rd-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Luke sent 2026 3rd-round pick to Levi. Trade: Levi sent Mbuemo (MU); Luke sent 2026 3rd-round pick, matching players to be dropped">via Luke to Levi</span></td></tr>
+<tr><td>7th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Luke sent 2026 7th-round pick to Levi. Trade: Levi sent Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL); Luke sent 2026 7th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Luke sent 2026 7th-round pick to Levi. Trade: Levi sent Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL); Luke sent 2026 7th-round pick, matching players to be dropped">via Luke to Levi</span></td></tr>
+<tr><td>12th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 10: Luke sent 12th-round pick to Levi. Trade: Levi sent Simons (TOT); Luke sent Cullen (BUR), 12th-round pick" aria-label="2025-26 GW 10: Luke sent 12th-round pick to Levi. Trade: Levi sent Simons (TOT); Luke sent Cullen (BUR), 12th-round pick">via Luke to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -324,18 +325,18 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>6th</td><td>Justin</td></tr>
-<tr><td>9th</td><td>Donny</td></tr>
+<tr><td>6th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2026 6th-round pick to Julius. Trade: Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)" aria-label="2025-26 GW 31: Justin sent 2026 6th-round pick to Julius. Trade: Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)">via Justin to Julius</span></td></tr>
+<tr><td>9th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)" aria-label="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)">via Donny to Julius</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -376,18 +377,18 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>4th</td><td>Donny</td></tr>
-<tr><td>8th</td><td>Donny</td></tr>
+<tr><td>4th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Donny sent 2026 4th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick" aria-label="2024-25 Postseason: Donny sent 2026 4th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick">via Donny to Drake</span></td></tr>
+<tr><td>8th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Donny sent 2026 8th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick" aria-label="2024-25 Postseason: Donny sent 2026 8th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick">via Donny to Drake</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -426,17 +427,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -476,18 +477,18 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>10th</td><td>Donny</td></tr>
+<tr><td>10th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Preseason: Ethan sent 10th-round pick (via Ethan) to Donny. Trade: Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)" aria-label="2025-26 Preseason: Ethan sent 10th-round pick (via Ethan) to Donny. Trade: Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)">via Ethan to Donny</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>4th</td><td>Levi</td></tr>
-<tr><td>6th</td><td>Donny</td></tr>
+<tr><td>4th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 24: Levi sent 4th-round pick to Ethan. Trade: Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)" aria-label="2025-26 GW 24: Levi sent 4th-round pick to Ethan. Trade: Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)">via Levi to Ethan</span></td></tr>
+<tr><td>6th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 22: Donny sent 6th-round pick to Ethan. Trade: Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)" aria-label="2025-26 GW 22: Donny sent 6th-round pick to Ethan. Trade: Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)">via Donny to Ethan</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -530,20 +531,20 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>3rd</td><td>Justin</td></tr>
-<tr><td>5th</td><td>Ryan Houseman</td></tr>
-<tr><td>10th</td><td>Donny</td></tr>
-<tr><td>12th</td><td>Donny</td></tr>
+<tr><td>3rd</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 3rd-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks." aria-label="2024-25 Postseason: Levi sent 2026 3rd-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 3rd-round picks.">via Levi to Dylan</span></td></tr>
+<tr><td>5th</td><td>Ryan Houseman</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks." aria-label="2024-25 Postseason: Levi sent 2026 5th-round pick to Dylan. Trade: Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-r... Note: original owner inferred from a pass-through pick currently held by sender; sender held 2 5th-round picks.">via Levi to Dylan</span></td></tr>
+<tr><td>10th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
+<tr><td>12th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -582,17 +583,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -629,18 +630,18 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>5th</td><td>Levi</td></tr>
-<tr><td>6th</td><td>Levi</td></tr>
+<tr><td>5th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped">via Justin to Levi</span></td></tr>
+<tr><td>6th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick" aria-label="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick">via Justin to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -679,17 +680,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -730,18 +731,18 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td>5th</td><td>Justin</td></tr>
-<tr><td>6th</td><td>Justin</td></tr>
+<tr><td>5th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped">via Justin to Levi</span></td></tr>
+<tr><td>6th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick" aria-label="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick">via Justin to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -780,17 +781,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -829,17 +830,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -878,17 +879,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -927,17 +928,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -976,17 +977,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
@@ -1025,17 +1026,17 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Own Picks They Do Not Have</div>
 <table>
-<thead><tr><th>Round</th><th>Current Holder</th></tr></thead>
+<thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
 <div class="pick-panel"><div class="pick-panel-title">Incoming Picks From Other Managers</div>
 <table>
-<thead><tr><th>Round</th><th>Original Owner</th></tr></thead>
+<thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="2">None</td></tr>
+<tr><td colspan="3">None</td></tr>
 </tbody>
 </table>
 </div>
