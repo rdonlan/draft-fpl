@@ -2,15 +2,6 @@
 
 A draft-pick ownership page built from the workbook's `Drafting Order` tab, with a reconciliation pass against the trade ledger.
 
-## Best Quick Hits
-
-- **2026 traded picks on the tracker**: 16.
-- **2027 traded picks on the tracker**: 2.
-- **Most 2026 picks**: Levi with 17 picks.
-- **Most 2027 picks**: Levi with 15 picks.
-- **Reconciliation flags**: 5 pick-owner mismatches between the Excel tracker and the parsed trade ledger.
-- **Workbook count-table flags**: 9 count mismatches between the 2026 count table and the 2026 ownership board.
-
 <details open>
 <summary><h2>Manager Pick Lookup</h2></summary>
 
