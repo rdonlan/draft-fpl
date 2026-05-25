@@ -469,18 +469,18 @@ A searchable reader for the league and cup recaps from the season workbooks.
 </div>
 </details>
 </article>
-<article class="recap-card" data-season="2025-26" data-kind="cup" data-multi="false" data-search="2025-26 cup group stage recap cup gw 17 group stage recap drake has already been eliminated by ryan “every time i send that haaland meme levi wants to rip his throat out” donlan. so sadly, drizzy is out of the cup. he’s quoted as saying, “good, we can focus on the league now.” house/haydo have all but beaten dylan to give himself a fighting chance. so it all comes down to justin and lukey tonight. justin had wilson as captain, lukey has jimenez up top. it’s neck and neck, with it all on the line. it’s such an important match, that as cup commissioner i’ve decided that i must attend the match in person. so i’ll be at craven cottage tonight to make sure there’s no funny business. tune in everyone!">
+<article class="recap-card" data-season="2025-26" data-kind="cup" data-multi="false" data-search="2025-26 cup group stage round 5 cup gw 17 group stage round 5 drake has already been eliminated by ryan “every time i send that haaland meme levi wants to rip his throat out” donlan. so sadly, drizzy is out of the cup. he’s quoted as saying, “good, we can focus on the league now.” house/haydo have all but beaten dylan to give himself a fighting chance. so it all comes down to justin and lukey tonight. justin had wilson as captain, lukey has jimenez up top. it’s neck and neck, with it all on the line. it’s such an important match, that as cup commissioner i’ve decided that i must attend the match in person. so i’ll be at craven cottage tonight to make sure there’s no funny business. tune in everyone!">
 <details>
 <summary>
 <span class="recap-summary-main">
 <span class="recap-kicker">2025-26 | Cup | GW 17</span>
-<span class="recap-title">Cup Group Stage Recap</span>
-<span class="recap-description">Cup recap | Group Stage Recap | GW 17</span>
+<span class="recap-title">Cup Group Stage Round 5</span>
+<span class="recap-description">Cup recap | Group Stage Round 5 | GW 17</span>
 </span>
-<span class="recap-summary-meta"><span class="recap-badge recap-badge-cup">Cup</span><span class="recap-badge">Group Stage Recap</span></span>
+<span class="recap-summary-meta"><span class="recap-badge recap-badge-cup">Cup</span><span class="recap-badge">Group Stage Round 5</span></span>
 </summary>
 <div class="recap-body">
-<div class="recap-meta-line">GW 17 | Cup | Group Stage Recap</div>
+<div class="recap-meta-line">GW 17 | Cup | Group Stage Round 5</div>
 <p>Drake has already been eliminated by Ryan “every time I send that Haaland meme Levi wants to rip his throat out” Donlan.</p>
 <p>So sadly, Drizzy is out of the cup. He’s quoted as saying, “Good, we can focus on the league now.”</p>
 <p>House/Haydo have all but beaten Dylan to give himself a fighting chance. So it all comes down to Justin and Lukey tonight. Justin had Wilson as captain, Lukey has Jimenez up top. It’s neck and neck, with it all on the line.</p>
@@ -831,18 +831,18 @@ A searchable reader for the league and cup recaps from the season workbooks.
 </div>
 </details>
 </article>
-<article class="recap-card" data-season="2025-26" data-kind="cup" data-multi="false" data-search="2025-26 cup semifinal leg 1 cup gw 32 semifinal leg 1 alright the first leg of the cup semifinals is in the books and we are very rapidly moving on to the second leg. in a very predictable matchup, julius put up a poultry 31 pts and dylan essentially doubled the score and put up 61. led by thiago, dylan is definitely going into the second leg as the massive favourite and probably is our tournament favourite. meanwhile ethan, dead last in the league, put up a fantastic 51 pts. justin bettered him by just 1 pt at 52, so that tie is very much still up in the air. justin is going for the cup repeat, never been done before, and ethan is going for the wigan — winning the cup while being relegated.">
+<article class="recap-card" data-season="2025-26" data-kind="cup" data-multi="false" data-search="2025-26 cup semifinals leg 1 cup gw 32 semifinals leg 1 alright the first leg of the cup semifinals is in the books and we are very rapidly moving on to the second leg. in a very predictable matchup, julius put up a poultry 31 pts and dylan essentially doubled the score and put up 61. led by thiago, dylan is definitely going into the second leg as the massive favourite and probably is our tournament favourite. meanwhile ethan, dead last in the league, put up a fantastic 51 pts. justin bettered him by just 1 pt at 52, so that tie is very much still up in the air. justin is going for the cup repeat, never been done before, and ethan is going for the wigan — winning the cup while being relegated.">
 <details>
 <summary>
 <span class="recap-summary-main">
 <span class="recap-kicker">2025-26 | Cup | GW 32</span>
-<span class="recap-title">Cup Semifinal Leg 1</span>
-<span class="recap-description">Cup recap | Semifinal Leg 1 | GW 32</span>
+<span class="recap-title">Cup Semifinals Leg 1</span>
+<span class="recap-description">Cup recap | Semifinals Leg 1 | GW 32</span>
 </span>
-<span class="recap-summary-meta"><span class="recap-badge recap-badge-cup">Cup</span><span class="recap-badge">Semifinal Leg 1</span></span>
+<span class="recap-summary-meta"><span class="recap-badge recap-badge-cup">Cup</span><span class="recap-badge">Semifinals Leg 1</span></span>
 </summary>
 <div class="recap-body">
-<div class="recap-meta-line">GW 32 | Cup | Semifinal Leg 1</div>
+<div class="recap-meta-line">GW 32 | Cup | Semifinals Leg 1</div>
 <p>Alright the first leg of the Cup semifinals is in the books and we are very rapidly moving on to the second leg.</p>
 <p>In a very predictable matchup, Julius put up a poultry 31 pts and Dylan essentially doubled the score and put up 61. Led by Thiago, Dylan is definitely going into the second leg as the massive favourite and probably is our tournament favourite.</p>
 <p>Meanwhile Ethan, dead last in the league, put up a fantastic 51 pts. Justin bettered him by just 1 pt at 52, so that tie is very much still up in the air. Justin is going for the Cup repeat, never been done before, and Ethan is going for the Wigan — winning the Cup while being relegated.</p>
@@ -873,18 +873,18 @@ A searchable reader for the league and cup recaps from the season workbooks.
 </div>
 </details>
 </article>
-<article class="recap-card" data-season="2025-26" data-kind="cup" data-multi="true" data-search="2025-26 cup semifinal leg 2 &amp; aggregate cup gws 32-33 semifinal leg 2 &amp; aggregate little delayed but i was in dc all week, better late than never! our second legs of the semifinals is over. at the end of it all there were no upsets, but some good surprises. julius got obliterated in the first leg, but made a proper showing of himself in the second. beating dylan 61-53. however, it was not nearly enough and dyl the thrill advances to his first cup final in his managerial history. 114-92 on aggregate was always comfortable; will he dethrone the dominant duo that has ruled the league ever since i decided to take it easy? we’ll see! ethan will feel a lot more hard done by. sitting bottom of the league, he went into this matchup with everyone counting him out. a great first leg left him essentially tied with justin going into leg 2. and despite putting up an electric 73 pts, the second most out of any knockout cup performance this season…he went up against the number one cup performance, by the number one cup performer. justin put up 81 pts and smashed his way to the final for a second consecutive year. between he and donnie, we really are just living in their world of fantasy dominance. ethan may be last, and may be out, but had he drawn either julius or dylan he’d have made it to the final. he has lots to be proud of. the cup final will be in matchweek 36 in an attempt to ensure there’s no team not playing and that you have enough time to get your waivers done. good luck justinho, good luck dyl. you are both great for making it this far, but to be a legend remembered for all time you must go one step further">
+<article class="recap-card" data-season="2025-26" data-kind="cup" data-multi="true" data-search="2025-26 cup semifinals leg 2 &amp; aggregate cup gws 32-33 semifinals leg 2 &amp; aggregate little delayed but i was in dc all week, better late than never! our second legs of the semifinals is over. at the end of it all there were no upsets, but some good surprises. julius got obliterated in the first leg, but made a proper showing of himself in the second. beating dylan 61-53. however, it was not nearly enough and dyl the thrill advances to his first cup final in his managerial history. 114-92 on aggregate was always comfortable; will he dethrone the dominant duo that has ruled the league ever since i decided to take it easy? we’ll see! ethan will feel a lot more hard done by. sitting bottom of the league, he went into this matchup with everyone counting him out. a great first leg left him essentially tied with justin going into leg 2. and despite putting up an electric 73 pts, the second most out of any knockout cup performance this season…he went up against the number one cup performance, by the number one cup performer. justin put up 81 pts and smashed his way to the final for a second consecutive year. between he and donnie, we really are just living in their world of fantasy dominance. ethan may be last, and may be out, but had he drawn either julius or dylan he’d have made it to the final. he has lots to be proud of. the cup final will be in matchweek 36 in an attempt to ensure there’s no team not playing and that you have enough time to get your waivers done. good luck justinho, good luck dyl. you are both great for making it this far, but to be a legend remembered for all time you must go one step further">
 <details>
 <summary>
 <span class="recap-summary-main">
 <span class="recap-kicker">2025-26 | Cup | GWs 32-33</span>
-<span class="recap-title">Cup Semifinal Leg 2 &amp; Aggregate</span>
-<span class="recap-description">Cup recap | Semifinal Leg 2 &amp; Aggregate | GWs 32-33</span>
+<span class="recap-title">Cup Semifinals Leg 2 &amp; Aggregate</span>
+<span class="recap-description">Cup recap | Semifinals Leg 2 &amp; Aggregate | GWs 32-33</span>
 </span>
-<span class="recap-summary-meta"><span class="recap-badge recap-badge-cup">Cup</span><span class="recap-badge">Multi-GW</span><span class="recap-badge">Semifinal Leg 2 &amp; Aggregate</span></span>
+<span class="recap-summary-meta"><span class="recap-badge recap-badge-cup">Cup</span><span class="recap-badge">Multi-GW</span><span class="recap-badge">Semifinals Leg 2 &amp; Aggregate</span></span>
 </summary>
 <div class="recap-body">
-<div class="recap-meta-line">GWs 32-33 | Cup | Semifinal Leg 2 &amp; Aggregate | Multi-GW</div>
+<div class="recap-meta-line">GWs 32-33 | Cup | Semifinals Leg 2 &amp; Aggregate | Multi-GW</div>
 <p>Little delayed but I was in DC all week, better late than never!</p>
 <p>Our second legs of the semifinals is over. At the end of it all there were no upsets, but some good surprises.</p>
 <p>Julius got obliterated in the first leg, but made a proper showing of himself in the second. Beating Dylan 61-53. However, it was not nearly enough and Dyl the Thrill advances to his first Cup final in his managerial history. 114-92 on aggregate was always comfortable; will he dethrone the dominant duo that has ruled the league ever since I decided to take it easy? We’ll see!</p>
