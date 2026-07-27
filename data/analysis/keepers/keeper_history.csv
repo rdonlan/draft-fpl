@@ -1,21 +1,21 @@
-season,manager,keeper_order,player,full_name,pl_team,fpl_position,source
-2025-26,Chabo,1,Solanke,Dominic Solanke,Spurs,FWD,2025-26 Season.xlsx / Draft
-2025-26,Chabo,2,Rogers,Morgan Rogers,Aston Villa,MID,2025-26 Season.xlsx / Draft
-2025-26,Donny,1,Haaland,Erling Haaland,Man City,FWD,2025-26 Season.xlsx / Draft
-2025-26,Donny,2,Cunha,Matheus Cunha,Man Utd,MID,2025-26 Season.xlsx / Draft
-2025-26,Drake,1,B.Fernandes,Bruno Fernandes,Man Utd,MID,2025-26 Season.xlsx / Draft
-2025-26,Drake,2,Strand Larsen,Jørgen Strand Larsen,Crystal Palace,FWD,2025-26 Season.xlsx / Draft
-2025-26,Dylan,1,Bowen,Jarrod Bowen,West Ham,FWD,2025-26 Season.xlsx / Draft
-2025-26,Dylan,2,Joao Pedro,João Pedro,Chelsea,FWD,2025-26 Season.xlsx / Draft
-2025-26,Ethan,1,Mbuemo,Bryan Mbeumo,Man Utd,MID,2025-26 Season.xlsx / Draft
-2025-26,Ethan,2,Marmoush,Omar Marmoush,Man City,MID,2025-26 Season.xlsx / Draft
-2025-26,Julius,1,Isak,Alexander Isak,Liverpool,FWD,2025-26 Season.xlsx / Draft
-2025-26,Julius,2,Salah,Mohamed Salah,Liverpool,MID,2025-26 Season.xlsx / Draft
-2025-26,Justin,1,Watkins,Ollie Watkins,Aston Villa,FWD,2025-26 Season.xlsx / Draft
-2025-26,Justin,2,Wissa,Yoane Wissa,Newcastle,FWD,2025-26 Season.xlsx / Draft
-2025-26,Levi,1,Saka,Bukayo Saka,Arsenal,MID,2025-26 Season.xlsx / Draft
-2025-26,Levi,2,Palmer,Cole Palmer,Chelsea,MID,2025-26 Season.xlsx / Draft
-2025-26,Luke,1,Wood,Chris Wood,Nott'm Forest,FWD,2025-26 Season.xlsx / Draft
-2025-26,Luke,2,Raul,Raúl Jiménez,Fulham,FWD,2025-26 Season.xlsx / Draft
-2025-26,Ryan Houseman,1,Mateta,Jean-Philippe Mateta,Crystal Palace,FWD,2025-26 Season.xlsx / Draft
-2025-26,Ryan Houseman,2,Eze,Eberechi Eze,Arsenal,MID,2025-26 Season.xlsx / Draft
+season,manager,keeper_order,player,full_name,pl_team,fpl_position,points_2024_25,points_2025_26,overall_rank_2024_25,overall_rank_2025_26,position_rank_2024_25,position_rank_2025_26,source
+2025-26,Chabo,1,Solanke,Dominic Solanke,Spurs,FWD,108,40,94,333,18,38,2025-26 Season.xlsx / Draft
+2025-26,Chabo,2,Rogers,Morgan Rogers,Aston Villa,MID,161,169,14,15,8,6,2025-26 Season.xlsx / Draft
+2025-26,Donny,1,Haaland,Erling Haaland,Man City,FWD,181,239,10,1,5,1,2025-26 Season.xlsx / Draft
+2025-26,Donny,2,Cunha,Matheus Cunha,Man Utd,MID,178,143,11,36,6,18,2025-26 Season.xlsx / Draft
+2025-26,Drake,1,B.Fernandes,Bruno Fernandes,Man Utd,MID,174,235,12,2,6,1,2025-26 Season.xlsx / Draft
+2025-26,Drake,2,Strand Larsen,Jørgen Strand Larsen,Crystal Palace,FWD,145,75,30,204,9,24,2025-26 Season.xlsx / Draft
+2025-26,Dylan,1,Bowen,Jarrod Bowen,West Ham,FWD,193,187,6,6,4,2,2025-26 Season.xlsx / Draft
+2025-26,Dylan,2,Joao Pedro,João Pedro,Chelsea,FWD,126,177,59,11,14,4,2025-26 Season.xlsx / Draft
+2025-26,Ethan,1,Mbuemo,Bryan Mbeumo,Man Utd,MID,236,148,2,32,2,15,2025-26 Season.xlsx / Draft
+2025-26,Ethan,2,Marmoush,Omar Marmoush,Man City,MID,73,56,175,268,23,126,2025-26 Season.xlsx / Draft
+2025-26,Julius,1,Isak,Alexander Isak,Liverpool,FWD,211,41,4,327,1,36,2025-26 Season.xlsx / Draft
+2025-26,Julius,2,Salah,Mohamed Salah,Liverpool,MID,344,123,1,77,1,37,2025-26 Season.xlsx / Draft
+2025-26,Justin,1,Watkins,Ollie Watkins,Aston Villa,FWD,186,167,7,17,3,5,2025-26 Season.xlsx / Draft
+2025-26,Justin,2,Wissa,Yoane Wissa,Newcastle,FWD,185,27,8,377,4,44,2025-26 Season.xlsx / Draft
+2025-26,Levi,1,Saka,Bukayo Saka,Arsenal,MID,127,157,55,24,28,11,2025-26 Season.xlsx / Draft
+2025-26,Levi,2,Palmer,Cole Palmer,Chelsea,MID,214,114,3,97,3,42,2025-26 Season.xlsx / Draft
+2025-26,Luke,1,Wood,Chris Wood,Nott'm Forest,FWD,200,41,5,327,2,36,2025-26 Season.xlsx / Draft
+2025-26,Luke,2,Raul,Raúl Jiménez,Fulham,FWD,147,112,29,108,8,15,2025-26 Season.xlsx / Draft
+2025-26,Ryan Houseman,1,Mateta,Jean-Philippe Mateta,Crystal Palace,FWD,150,114,23,97,7,12,2025-26 Season.xlsx / Draft
+2025-26,Ryan Houseman,2,Eze,Eberechi Eze,Arsenal,MID,148,113,27,100,17,43,2025-26 Season.xlsx / Draft

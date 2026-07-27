@@ -1150,74 +1150,108 @@ These are the two players each manager selected as keepers for this season.
 <article class="keeper-history-card">
 ### Alexander Chaban
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Dominic Solanke</strong><em>Spurs · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><strong>Morgan Rogers</strong><em>Aston Villa · MID</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Dominic Solanke</strong><em>Spurs · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>108 → 40</b><i>−68</i></div><div><span>Overall rank</span><b>#94 → #333</b><i>−239</i></div><div><span>Position rank</span><b>#18 → #38</b><i>−20</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Morgan Rogers</strong><em>Aston Villa · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>161 → 169</b><i>+8</i></div><div><span>Overall rank</span><b>#14 → #15</b><i>−1</i></div><div><span>Position rank</span><b>#8 → #6</b><i>+2</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Ryan Donlan
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Erling Haaland</strong><em>Man City · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><strong>Matheus Cunha</strong><em>Man Utd · MID</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Erling Haaland</strong><em>Man City · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>181 → 239</b><i>+58</i></div><div><span>Overall rank</span><b>#10 → #1</b><i>+9</i></div><div><span>Position rank</span><b>#5 → #1</b><i>+4</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Matheus Cunha</strong><em>Man Utd · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>178 → 143</b><i>−35</i></div><div><span>Overall rank</span><b>#11 → #36</b><i>−25</i></div><div><span>Position rank</span><b>#6 → #18</b><i>−12</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Drake Byrd
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 1</span><strong>Bruno Fernandes</strong><em>Man Utd · MID</em></div>
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><strong>Jørgen Strand Larsen</strong><em>Crystal Palace · FWD</em></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 1</span><div class="keeper-history-player"><strong>Bruno Fernandes</strong><em>Man Utd · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>174 → 235</b><i>+61</i></div><div><span>Overall rank</span><b>#12 → #2</b><i>+10</i></div><div><span>Position rank</span><b>#6 → #1</b><i>+5</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><div class="keeper-history-player"><strong>Jørgen Strand Larsen</strong><em>Crystal Palace · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>145 → 75</b><i>−70</i></div><div><span>Overall rank</span><b>#30 → #204</b><i>−174</i></div><div><span>Position rank</span><b>#9 → #24</b><i>−15</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Dylan Reid
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Jarrod Bowen</strong><em>West Ham · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><strong>João Pedro</strong><em>Chelsea · FWD</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Jarrod Bowen</strong><em>West Ham · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>193 → 187</b><i>−6</i></div><div><span>Overall rank</span><b>#6 → #6</b><i>+0</i></div><div><span>Position rank</span><b>#4 → #2</b><i>+2</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><div class="keeper-history-player"><strong>João Pedro</strong><em>Chelsea · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>126 → 177</b><i>+51</i></div><div><span>Overall rank</span><b>#59 → #11</b><i>+48</i></div><div><span>Position rank</span><b>#14 → #4</b><i>+10</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Ethan Ellsworth
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 1</span><strong>Bryan Mbeumo</strong><em>Man Utd · MID</em></div>
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><strong>Omar Marmoush</strong><em>Man City · MID</em></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 1</span><div class="keeper-history-player"><strong>Bryan Mbeumo</strong><em>Man Utd · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>236 → 148</b><i>−88</i></div><div><span>Overall rank</span><b>#2 → #32</b><i>−30</i></div><div><span>Position rank</span><b>#2 → #15</b><i>−13</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Omar Marmoush</strong><em>Man City · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>73 → 56</b><i>−17</i></div><div><span>Overall rank</span><b>#175 → #268</b><i>−93</i></div><div><span>Position rank</span><b>#23 → #126</b><i>−103</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Julius Long
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Alexander Isak</strong><em>Liverpool · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><strong>Mohamed Salah</strong><em>Liverpool · MID</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Alexander Isak</strong><em>Liverpool · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>211 → 41</b><i>−170</i></div><div><span>Overall rank</span><b>#4 → #327</b><i>−323</i></div><div><span>Position rank</span><b>#1 → #36</b><i>−35</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Mohamed Salah</strong><em>Liverpool · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>344 → 123</b><i>−221</i></div><div><span>Overall rank</span><b>#1 → #77</b><i>−76</i></div><div><span>Position rank</span><b>#1 → #37</b><i>−36</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Justin Miller
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Ollie Watkins</strong><em>Aston Villa · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><strong>Yoane Wissa</strong><em>Newcastle · FWD</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Ollie Watkins</strong><em>Aston Villa · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>186 → 167</b><i>−19</i></div><div><span>Overall rank</span><b>#7 → #17</b><i>−10</i></div><div><span>Position rank</span><b>#3 → #5</b><i>−2</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><div class="keeper-history-player"><strong>Yoane Wissa</strong><em>Newcastle · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>185 → 27</b><i>−158</i></div><div><span>Overall rank</span><b>#8 → #377</b><i>−369</i></div><div><span>Position rank</span><b>#4 → #44</b><i>−40</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Levi Morant
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 1</span><strong>Bukayo Saka</strong><em>Arsenal · MID</em></div>
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><strong>Cole Palmer</strong><em>Chelsea · MID</em></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 1</span><div class="keeper-history-player"><strong>Bukayo Saka</strong><em>Arsenal · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>127 → 157</b><i>+30</i></div><div><span>Overall rank</span><b>#55 → #24</b><i>+31</i></div><div><span>Position rank</span><b>#28 → #11</b><i>+17</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Cole Palmer</strong><em>Chelsea · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>214 → 114</b><i>−100</i></div><div><span>Overall rank</span><b>#3 → #97</b><i>−94</i></div><div><span>Position rank</span><b>#3 → #42</b><i>−39</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Luke Lockwood
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Chris Wood</strong><em>Nott&#x27;m Forest · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><strong>Raúl Jiménez</strong><em>Fulham · FWD</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Chris Wood</strong><em>Nott&#x27;m Forest · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>200 → 41</b><i>−159</i></div><div><span>Overall rank</span><b>#5 → #327</b><i>−322</i></div><div><span>Position rank</span><b>#2 → #36</b><i>−34</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 2</span><div class="keeper-history-player"><strong>Raúl Jiménez</strong><em>Fulham · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>147 → 112</b><i>−35</i></div><div><span>Overall rank</span><b>#29 → #108</b><i>−79</i></div><div><span>Position rank</span><b>#8 → #15</b><i>−7</i></div></div></div></div>
 </div>
 </article>
 <article class="keeper-history-card">
 ### Ryan Houseman
 <div class="keeper-history-picks">
-<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><strong>Jean-Philippe Mateta</strong><em>Crystal Palace · FWD</em></div>
-<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><strong>Eberechi Eze</strong><em>Arsenal · MID</em></div>
+<div class="keeper-history-pick keeper-pos-fwd"><span>Keeper 1</span><div class="keeper-history-player"><strong>Jean-Philippe Mateta</strong><em>Crystal Palace · FWD</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>150 → 114</b><i>−36</i></div><div><span>Overall rank</span><b>#23 → #97</b><i>−74</i></div><div><span>Position rank</span><b>#7 → #12</b><i>−5</i></div></div></div></div>
+<div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Eberechi Eze</strong><em>Arsenal · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>148 → 113</b><i>−35</i></div><div><span>Overall rank</span><b>#27 → #100</b><i>−73</i></div><div><span>Position rank</span><b>#17 → #43</b><i>−26</i></div></div></div></div>
 </div>
 </article>
 </div>
+<section class="keeper-breakdown">
+## Selection Breakdown
+
+<div class="keeper-breakdown-grid">
+<section class="keeper-breakdown-card">
+### By Position
+
+| Position | Keepers |
+|---|---|
+| MID | 9 |
+| FWD | 11 |
+
+</section>
+<section class="keeper-breakdown-card">
+### By Club
+
+| Club | Keepers |
+|---|---|
+| Man Utd | 3 |
+| Arsenal | 2 |
+| Aston Villa | 2 |
+| Chelsea | 2 |
+| Crystal Palace | 2 |
+| Liverpool | 2 |
+| Man City | 2 |
+| Fulham | 1 |
+| Newcastle | 1 |
+| Nott'm Forest | 1 |
+| Spurs | 1 |
+| West Ham | 1 |
+
+</section>
+</div>
+</section>
 <details class="notes">
 <summary>Source</summary>
 2025-26 Season.xlsx / Draft
