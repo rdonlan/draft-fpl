@@ -11,7 +11,8 @@ A searchable ledger of player, pick, and conditional trades from the league work
 </div>
 <div class="trade-controls">
 <div class="trade-season-tabs" aria-label="Trade seasons">
-<button type="button" class="trade-tab-button is-active" data-trade-season-button="2025-26" aria-pressed="true">2025-26 <span>14</span></button>
+<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>0</span></button>
+<button type="button" class="trade-tab-button" data-trade-season-button="2025-26" aria-pressed="false">2025-26 <span>14</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2024-25" aria-pressed="false">2024-25 <span>34</span></button>
 </div>
 <label class="trade-filter-label" for="trade-manager">Manager</label>
@@ -1008,6 +1009,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <summary><h2>Source Notes</h2></summary>
 
 - Trade ledger source: `BPL Fantasy.xlsx` / `Trade History`.
+- Current-season structured transactions: `bms_fpl_data_sheets/2026-27 Transaction Ledger.xlsx` / `Transactions`.
 - `Assets Sent` are read from the workbook as the assets each listed manager gave up.
 - Draft-pick wording is standardized for display as `7th-round pick`, regardless of whether the workbook says `7th`, `7th Rd.`, `7th rounder`, or `7th Round Pick`.
 - Pick and condition trades are flagged when the assets or notes mention picks, rounds, rounders, or conditions.
