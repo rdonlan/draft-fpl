@@ -438,6 +438,97 @@
       outline-offset: 2px;
       border-radius: 4px;
     }
+    .keeper-view-switcher {
+      margin: 18px 0 22px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .keeper-view-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .keeper-view-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 40px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .keeper-view-button span {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+    .keeper-view-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .keeper-view-button.is-active span {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .keeper-view-panel[hidden] {
+      display: none !important;
+    }
+    .keeper-history-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0 24px;
+    }
+    .keeper-history-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .keeper-history-card h3 {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 1rem;
+    }
+    .keeper-history-picks {
+      display: grid;
+      gap: 8px;
+    }
+    .keeper-history-pick {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 9px;
+      align-items: center;
+      min-height: 48px;
+      padding: 8px 10px;
+      border-left: 5px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+    }
+    .keeper-history-pick span,
+    .keeper-history-pick em {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-style: normal;
+      font-weight: 800;
+    }
+    .keeper-history-pick strong {
+      color: var(--ink);
+      font-size: 0.94rem;
+    }
+    .keeper-history-pick.keeper-pos-gkp { border-left-color: #0284c7; }
+    .keeper-history-pick.keeper-pos-def { border-left-color: #16a34a; }
+    .keeper-history-pick.keeper-pos-mid { border-left-color: #d97706; }
+    .keeper-history-pick.keeper-pos-fwd { border-left-color: #e11d48; }
     tr:nth-child(even) td {
       background: var(--row-alt);
     }
@@ -1617,13 +1708,18 @@
       }
       .recap-season-tabs,
       .recap-filter-tabs,
-      .trade-season-tabs {
+      .trade-season-tabs,
+      .keeper-view-tabs {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      .keeper-history-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
       .recap-tab-button,
       .recap-filter-button,
-      .trade-tab-button {
+      .trade-tab-button,
+      .keeper-view-button {
         width: 100%;
         min-height: 42px;
       }
@@ -3630,6 +3726,33 @@
   yearSelect?.addEventListener("change", update);
   managerSelect?.addEventListener("change", update);
   update();
+})();
+</script>
+  <script>
+(() => {
+  const switcher = document.querySelector("[data-keeper-view-switcher]");
+  if (!switcher) return;
+
+  const buttons = Array.from(switcher.querySelectorAll("[data-keeper-view-button]"));
+  const panels = Array.from(document.querySelectorAll("[data-keeper-view]"));
+
+  const selectView = (view) => {
+    buttons.forEach((button) => {
+      const isActive = button.dataset.keeperViewButton === view;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+    panels.forEach((panel) => {
+      const isActive = panel.dataset.keeperView === view;
+      panel.classList.toggle("is-active", isActive);
+      panel.toggleAttribute("hidden", !isActive);
+    });
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => selectView(button.dataset.keeperViewButton));
+  });
+  selectView("current");
 })();
 </script>
   <script>
