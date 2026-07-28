@@ -488,6 +488,48 @@
       gap: 12px;
       margin: 18px 0 24px;
     }
+    .keeper-history-mode-toggle {
+      display: inline-flex;
+      gap: 6px;
+      margin: 14px 0 2px;
+      padding: 5px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .keeper-history-mode-button {
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .keeper-history-mode-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #fff;
+    }
+    .keeper-history-mode-panel[hidden] {
+      display: none !important;
+    }
+    .keeper-history-table .table-wrap {
+      margin-top: 18px;
+    }
+    .keeper-history-table table {
+      min-width: 1180px;
+      font-size: 0.82rem;
+    }
+    .keeper-history-table th,
+    .keeper-history-table td {
+      padding: 8px 9px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
     .keeper-history-card {
       padding: 14px;
       border: 1px solid var(--line);
@@ -1794,6 +1836,14 @@
       .keeper-history-grid {
         grid-template-columns: minmax(0, 1fr);
       }
+      .keeper-history-mode-toggle {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+      }
+      .keeper-history-start {
+        display: none !important;
+      }
       .keeper-breakdown-grid {
         grid-template-columns: minmax(0, 1fr);
       }
@@ -2450,6 +2500,29 @@
   buttons.forEach((button) => {
     button.addEventListener("click", () => selectView(button.dataset.keeperViewButton));
   });
+
+  document.querySelectorAll('[data-keeper-view]:not([data-keeper-view="current"])').forEach((panel) => {
+    const modeButtons = Array.from(panel.querySelectorAll("[data-keeper-history-mode-button]"));
+    const modePanels = Array.from(panel.querySelectorAll("[data-keeper-history-mode-panel]"));
+    const selectMode = (mode) => {
+      modeButtons.forEach((button) => {
+        const active = button.dataset.keeperHistoryModeButton === mode;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+      modePanels.forEach((modePanel) => {
+        modePanel.toggleAttribute(
+          "hidden",
+          modePanel.dataset.keeperHistoryModePanel !== mode
+        );
+      });
+    };
+    modeButtons.forEach((button) => {
+      button.addEventListener("click", () => selectMode(button.dataset.keeperHistoryModeButton));
+    });
+    selectMode("cards");
+  });
+
   selectView("current");
 })();
 </script>
@@ -2496,11 +2569,11 @@
 </script>
   <script>
 (() => {
-  const tables = Array.from(document.querySelectorAll(".keeper-roster-table table"));
+  const tables = Array.from(document.querySelectorAll(".keeper-roster-table table, .keeper-history-table table"));
   if (!tables.length) return;
 
   const parseNumber = (text) => {
-    const cleaned = String(text || "").replace(/,/g, "").trim();
+    const cleaned = String(text || "").replace(/,/g, "").replace(/−/g, "-").replace(/^#/, "").trim();
     if (!cleaned) return Number.NaN;
     const value = Number.parseFloat(cleaned);
     return Number.isFinite(value) ? value : Number.NaN;

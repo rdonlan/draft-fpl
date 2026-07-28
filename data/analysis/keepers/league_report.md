@@ -1146,6 +1146,11 @@ Each manager must select two players from their final GW38 roster as keepers for
 <section class="keeper-view-panel" data-keeper-view="2025-26" hidden>
 ## 2025-26 Keeper Selections
 These are the two players each manager selected as keepers for this season.
+<div class="keeper-history-mode-toggle" role="group" aria-label="Historical keeper layout">
+<button type="button" class="keeper-history-mode-button is-active" data-keeper-history-mode-button="cards" aria-pressed="true">Manager Cards</button>
+<button type="button" class="keeper-history-mode-button" data-keeper-history-mode-button="table" aria-pressed="false">Sortable Table</button>
+</div>
+<div class="keeper-history-mode-panel" data-keeper-history-mode-panel="cards">
 <div class="keeper-history-grid">
 <article class="keeper-history-card">
 ### Alexander Chaban
@@ -1217,6 +1222,327 @@ These are the two players each manager selected as keepers for this season.
 <div class="keeper-history-pick keeper-pos-mid"><span>Keeper 2</span><div class="keeper-history-player"><strong>Eberechi Eze</strong><em>Arsenal · MID</em><div class="keeper-history-comparison"><div class="keeper-history-comparison-head"><span></span><b>24/25 → 25/26</b><i>Δ</i></div><div><span>Points</span><b>148 → 113</b><i>−35</i></div><div><span>Overall rank</span><b>#27 → #100</b><i>−73</i></div><div><span>Position rank</span><b>#17 → #43</b><i>−26</i></div></div></div></div>
 </div>
 </article>
+</div>
+</div>
+<div class="keeper-history-mode-panel keeper-history-table" data-keeper-history-mode-panel="table" hidden>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Manager</th>
+<th>Player</th>
+<th>Club</th>
+<th>Pos</th>
+<th class="keeper-history-start">Pts 24/25</th>
+<th>Pts 25/26</th>
+<th>Pts Δ</th>
+<th class="keeper-history-start">Overall 24/25</th>
+<th>Overall 25/26</th>
+<th>Overall Δ</th>
+<th class="keeper-history-start">Pos 24/25</th>
+<th>Pos 25/26</th>
+<th>Pos Δ</th>
+</tr></thead>
+<tbody>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(28 92% 94%); --belt-bg-dark: hsl(28 56% 17%); --belt-accent: hsl(28 76% 39%);" data-belt-holder="Alexander Chaban">
+<td data-label="Manager">Alexander Chaban</td>
+<td data-label="Player">Dominic Solanke</td>
+<td data-label="Club">Spurs</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">108</td>
+<td data-label="Pts 25/26">40</td>
+<td data-label="Pts Δ">−68</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#94</td>
+<td data-label="Overall 25/26">#333</td>
+<td data-label="Overall Δ">−239</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#18</td>
+<td data-label="Pos 25/26">#38</td>
+<td data-label="Pos Δ">−20</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(28 92% 94%); --belt-bg-dark: hsl(28 56% 17%); --belt-accent: hsl(28 76% 39%);" data-belt-holder="Alexander Chaban">
+<td data-label="Manager">Alexander Chaban</td>
+<td data-label="Player">Morgan Rogers</td>
+<td data-label="Club">Aston Villa</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">161</td>
+<td data-label="Pts 25/26">169</td>
+<td data-label="Pts Δ">+8</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#14</td>
+<td data-label="Overall 25/26">#15</td>
+<td data-label="Overall Δ">−1</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#8</td>
+<td data-label="Pos 25/26">#6</td>
+<td data-label="Pos Δ">+2</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan">
+<td data-label="Manager">Ryan Donlan</td>
+<td data-label="Player">Erling Haaland</td>
+<td data-label="Club">Man City</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">181</td>
+<td data-label="Pts 25/26">239</td>
+<td data-label="Pts Δ">+58</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#10</td>
+<td data-label="Overall 25/26">#1</td>
+<td data-label="Overall Δ">+9</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#5</td>
+<td data-label="Pos 25/26">#1</td>
+<td data-label="Pos Δ">+4</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan">
+<td data-label="Manager">Ryan Donlan</td>
+<td data-label="Player">Matheus Cunha</td>
+<td data-label="Club">Man Utd</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">178</td>
+<td data-label="Pts 25/26">143</td>
+<td data-label="Pts Δ">−35</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#11</td>
+<td data-label="Overall 25/26">#36</td>
+<td data-label="Overall Δ">−25</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#6</td>
+<td data-label="Pos 25/26">#18</td>
+<td data-label="Pos Δ">−12</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd">
+<td data-label="Manager">Drake Byrd</td>
+<td data-label="Player">Bruno Fernandes</td>
+<td data-label="Club">Man Utd</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">174</td>
+<td data-label="Pts 25/26">235</td>
+<td data-label="Pts Δ">+61</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#12</td>
+<td data-label="Overall 25/26">#2</td>
+<td data-label="Overall Δ">+10</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#6</td>
+<td data-label="Pos 25/26">#1</td>
+<td data-label="Pos Δ">+5</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(154 92% 94%); --belt-bg-dark: hsl(154 56% 17%); --belt-accent: hsl(154 76% 39%);" data-belt-holder="Drake Byrd">
+<td data-label="Manager">Drake Byrd</td>
+<td data-label="Player">Jørgen Strand Larsen</td>
+<td data-label="Club">Crystal Palace</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">145</td>
+<td data-label="Pts 25/26">75</td>
+<td data-label="Pts Δ">−70</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#30</td>
+<td data-label="Overall 25/26">#204</td>
+<td data-label="Overall Δ">−174</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#9</td>
+<td data-label="Pos 25/26">#24</td>
+<td data-label="Pos Δ">−15</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(292 92% 94%); --belt-bg-dark: hsl(292 56% 17%); --belt-accent: hsl(292 76% 39%);" data-belt-holder="Dylan Reid">
+<td data-label="Manager">Dylan Reid</td>
+<td data-label="Player">Jarrod Bowen</td>
+<td data-label="Club">West Ham</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">193</td>
+<td data-label="Pts 25/26">187</td>
+<td data-label="Pts Δ">−6</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#6</td>
+<td data-label="Overall 25/26">#6</td>
+<td data-label="Overall Δ">+0</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#4</td>
+<td data-label="Pos 25/26">#2</td>
+<td data-label="Pos Δ">+2</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(292 92% 94%); --belt-bg-dark: hsl(292 56% 17%); --belt-accent: hsl(292 76% 39%);" data-belt-holder="Dylan Reid">
+<td data-label="Manager">Dylan Reid</td>
+<td data-label="Player">João Pedro</td>
+<td data-label="Club">Chelsea</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">126</td>
+<td data-label="Pts 25/26">177</td>
+<td data-label="Pts Δ">+51</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#59</td>
+<td data-label="Overall 25/26">#11</td>
+<td data-label="Overall Δ">+48</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#14</td>
+<td data-label="Pos 25/26">#4</td>
+<td data-label="Pos Δ">+10</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth">
+<td data-label="Manager">Ethan Ellsworth</td>
+<td data-label="Player">Bryan Mbeumo</td>
+<td data-label="Club">Man Utd</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">236</td>
+<td data-label="Pts 25/26">148</td>
+<td data-label="Pts Δ">−88</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#2</td>
+<td data-label="Overall 25/26">#32</td>
+<td data-label="Overall Δ">−30</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#2</td>
+<td data-label="Pos 25/26">#15</td>
+<td data-label="Pos Δ">−13</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(78 92% 94%); --belt-bg-dark: hsl(78 56% 17%); --belt-accent: hsl(78 76% 39%);" data-belt-holder="Ethan Ellsworth">
+<td data-label="Manager">Ethan Ellsworth</td>
+<td data-label="Player">Omar Marmoush</td>
+<td data-label="Club">Man City</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">73</td>
+<td data-label="Pts 25/26">56</td>
+<td data-label="Pts Δ">−17</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#175</td>
+<td data-label="Overall 25/26">#268</td>
+<td data-label="Overall Δ">−93</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#23</td>
+<td data-label="Pos 25/26">#126</td>
+<td data-label="Pos Δ">−103</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(224 92% 94%); --belt-bg-dark: hsl(224 56% 17%); --belt-accent: hsl(224 76% 39%);" data-belt-holder="Julius Long">
+<td data-label="Manager">Julius Long</td>
+<td data-label="Player">Alexander Isak</td>
+<td data-label="Club">Liverpool</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">211</td>
+<td data-label="Pts 25/26">41</td>
+<td data-label="Pts Δ">−170</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#4</td>
+<td data-label="Overall 25/26">#327</td>
+<td data-label="Overall Δ">−323</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#1</td>
+<td data-label="Pos 25/26">#36</td>
+<td data-label="Pos Δ">−35</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(224 92% 94%); --belt-bg-dark: hsl(224 56% 17%); --belt-accent: hsl(224 76% 39%);" data-belt-holder="Julius Long">
+<td data-label="Manager">Julius Long</td>
+<td data-label="Player">Mohamed Salah</td>
+<td data-label="Club">Liverpool</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">344</td>
+<td data-label="Pts 25/26">123</td>
+<td data-label="Pts Δ">−221</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#1</td>
+<td data-label="Overall 25/26">#77</td>
+<td data-label="Overall Δ">−76</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#1</td>
+<td data-label="Pos 25/26">#37</td>
+<td data-label="Pos Δ">−36</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller">
+<td data-label="Manager">Justin Miller</td>
+<td data-label="Player">Ollie Watkins</td>
+<td data-label="Club">Aston Villa</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">186</td>
+<td data-label="Pts 25/26">167</td>
+<td data-label="Pts Δ">−19</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#7</td>
+<td data-label="Overall 25/26">#17</td>
+<td data-label="Overall Δ">−10</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#3</td>
+<td data-label="Pos 25/26">#5</td>
+<td data-label="Pos Δ">−2</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(352 92% 94%); --belt-bg-dark: hsl(352 56% 17%); --belt-accent: hsl(352 76% 39%);" data-belt-holder="Justin Miller">
+<td data-label="Manager">Justin Miller</td>
+<td data-label="Player">Yoane Wissa</td>
+<td data-label="Club">Newcastle</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">185</td>
+<td data-label="Pts 25/26">27</td>
+<td data-label="Pts Δ">−158</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#8</td>
+<td data-label="Overall 25/26">#377</td>
+<td data-label="Overall Δ">−369</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#4</td>
+<td data-label="Pos 25/26">#44</td>
+<td data-label="Pos Δ">−40</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(118 92% 94%); --belt-bg-dark: hsl(118 56% 17%); --belt-accent: hsl(118 76% 39%);" data-belt-holder="Levi Morant">
+<td data-label="Manager">Levi Morant</td>
+<td data-label="Player">Bukayo Saka</td>
+<td data-label="Club">Arsenal</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">127</td>
+<td data-label="Pts 25/26">157</td>
+<td data-label="Pts Δ">+30</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#55</td>
+<td data-label="Overall 25/26">#24</td>
+<td data-label="Overall Δ">+31</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#28</td>
+<td data-label="Pos 25/26">#11</td>
+<td data-label="Pos Δ">+17</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(118 92% 94%); --belt-bg-dark: hsl(118 56% 17%); --belt-accent: hsl(118 76% 39%);" data-belt-holder="Levi Morant">
+<td data-label="Manager">Levi Morant</td>
+<td data-label="Player">Cole Palmer</td>
+<td data-label="Club">Chelsea</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">214</td>
+<td data-label="Pts 25/26">114</td>
+<td data-label="Pts Δ">−100</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#3</td>
+<td data-label="Overall 25/26">#97</td>
+<td data-label="Overall Δ">−94</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#3</td>
+<td data-label="Pos 25/26">#42</td>
+<td data-label="Pos Δ">−39</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(266 92% 94%); --belt-bg-dark: hsl(266 56% 17%); --belt-accent: hsl(266 76% 39%);" data-belt-holder="Luke Lockwood">
+<td data-label="Manager">Luke Lockwood</td>
+<td data-label="Player">Chris Wood</td>
+<td data-label="Club">Nott&#x27;m Forest</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">200</td>
+<td data-label="Pts 25/26">41</td>
+<td data-label="Pts Δ">−159</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#5</td>
+<td data-label="Overall 25/26">#327</td>
+<td data-label="Overall Δ">−322</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#2</td>
+<td data-label="Pos 25/26">#36</td>
+<td data-label="Pos Δ">−34</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(266 92% 94%); --belt-bg-dark: hsl(266 56% 17%); --belt-accent: hsl(266 76% 39%);" data-belt-holder="Luke Lockwood">
+<td data-label="Manager">Luke Lockwood</td>
+<td data-label="Player">Raúl Jiménez</td>
+<td data-label="Club">Fulham</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">147</td>
+<td data-label="Pts 25/26">112</td>
+<td data-label="Pts Δ">−35</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#29</td>
+<td data-label="Overall 25/26">#108</td>
+<td data-label="Overall Δ">−79</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#8</td>
+<td data-label="Pos 25/26">#15</td>
+<td data-label="Pos Δ">−7</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman">
+<td data-label="Manager">Ryan Houseman</td>
+<td data-label="Player">Jean-Philippe Mateta</td>
+<td data-label="Club">Crystal Palace</td>
+<td data-label="Pos">FWD</td>
+<td class="keeper-history-start" data-label="Pts 24/25">150</td>
+<td data-label="Pts 25/26">114</td>
+<td data-label="Pts Δ">−36</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#23</td>
+<td data-label="Overall 25/26">#97</td>
+<td data-label="Overall Δ">−74</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#7</td>
+<td data-label="Pos 25/26">#12</td>
+<td data-label="Pos Δ">−5</td>
+</tr>
+<tr class="belt-winner-row keeper-manager-row" style="--belt-bg: hsl(12 92% 94%); --belt-bg-dark: hsl(12 56% 17%); --belt-accent: hsl(12 76% 39%);" data-belt-holder="Ryan Houseman">
+<td data-label="Manager">Ryan Houseman</td>
+<td data-label="Player">Eberechi Eze</td>
+<td data-label="Club">Arsenal</td>
+<td data-label="Pos">MID</td>
+<td class="keeper-history-start" data-label="Pts 24/25">148</td>
+<td data-label="Pts 25/26">113</td>
+<td data-label="Pts Δ">−35</td>
+<td class="keeper-history-start" data-label="Overall 24/25">#27</td>
+<td data-label="Overall 25/26">#100</td>
+<td data-label="Overall Δ">−73</td>
+<td class="keeper-history-start" data-label="Pos 24/25">#17</td>
+<td data-label="Pos 25/26">#43</td>
+<td data-label="Pos Δ">−26</td>
+</tr>
+</tbody></table></div>
 </div>
 <section class="keeper-breakdown">
 ## Selection Breakdown
