@@ -482,6 +482,200 @@
     .keeper-view-panel[hidden] {
       display: none !important;
     }
+    .keeper-simulator-summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+      gap: 10px;
+      align-items: stretch;
+      margin: 18px 0 10px;
+    }
+    .keeper-simulator-summary > div {
+      display: grid;
+      gap: 4px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .keeper-simulator-summary span {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .keeper-simulator-summary strong {
+      color: var(--accent);
+      font-size: 1.15rem;
+    }
+    .keeper-simulator-reset {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--accent);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .keeper-simulator-status {
+      margin: 8px 0 16px;
+      padding: 10px 12px;
+      border-left: 4px solid #d97706;
+      border-radius: 5px;
+      background: #fffbeb;
+      color: #92400e;
+      font-weight: 750;
+    }
+    .keeper-simulator-status.is-complete {
+      border-left-color: #16a34a;
+      background: #f0fdf4;
+      color: #166534;
+    }
+    html[data-theme="dark"] .keeper-simulator-status {
+      background: #422006;
+      color: #fde68a;
+    }
+    html[data-theme="dark"] .keeper-simulator-status.is-complete {
+      background: #052e16;
+      color: #bbf7d0;
+    }
+    .keeper-simulator-manager-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 16px 0 28px;
+    }
+    .keeper-simulator-manager {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--manager-accent);
+      border-radius: 8px;
+      background: var(--manager-soft);
+    }
+    html[data-theme="dark"] .keeper-simulator-manager {
+      background: var(--manager-soft-dark);
+    }
+    .keeper-simulator-manager-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      gap: 8px;
+      align-items: center;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .keeper-simulator-manager-head h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1rem;
+    }
+    .keeper-simulator-manager-head span {
+      min-width: 42px;
+      padding: 4px 7px;
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 850;
+      text-align: center;
+    }
+    .keeper-simulator-manager-head span.is-complete {
+      background: var(--manager-accent);
+      color: #fff;
+    }
+    .keeper-simulator-manager-head button {
+      padding: 4px 7px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.74rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .keeper-simulator-roster {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+      padding: 10px;
+    }
+    .keeper-simulator-player {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+      min-height: 52px;
+      padding: 8px 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+    .keeper-simulator-player strong {
+      overflow: hidden;
+      color: inherit;
+      font-size: 0.82rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .keeper-simulator-player span {
+      overflow: hidden;
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .keeper-simulator-player:hover:not(:disabled) {
+      border-color: var(--manager-accent);
+    }
+    .keeper-simulator-player.is-selected {
+      border-color: var(--manager-accent);
+      background: var(--manager-accent);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+    }
+    .keeper-simulator-player.is-selected span {
+      color: rgba(255, 255, 255, 0.82);
+    }
+    .keeper-simulator-player:disabled {
+      cursor: not-allowed;
+      opacity: 0.48;
+    }
+    .keeper-simulator-player.is-unavailable {
+      border-style: dashed;
+      background: var(--soft-2);
+    }
+    .keeper-simulator-player.is-unavailable strong {
+      text-decoration: line-through;
+      text-decoration-thickness: 1px;
+    }
+    .keeper-simulator-controls {
+      grid-template-columns: repeat(5, minmax(125px, 1fr)) auto;
+    }
+    .keeper-simulator-position-counts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+    .keeper-simulator-position-counts span {
+      padding: 6px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+    .keeper-simulator-position-counts strong {
+      color: var(--accent);
+    }
+    .keeper-simulator-pool-table table {
+      min-width: 850px;
+    }
     .keeper-history-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1835,6 +2029,18 @@
       }
       .keeper-history-grid {
         grid-template-columns: minmax(0, 1fr);
+      }
+      .keeper-simulator-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .keeper-simulator-reset {
+        grid-column: 1 / -1;
+      }
+      .keeper-simulator-manager-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .keeper-simulator-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .keeper-history-mode-toggle {
         display: grid;
@@ -4134,6 +4340,209 @@
   });
 
   selectView("current");
+})();
+</script>
+  <script>
+(() => {
+  const app = document.querySelector("[data-keeper-simulator]");
+  const dataNode = document.querySelector("[data-keeper-simulator-data]");
+  if (!app || !dataNode) return;
+
+  const data = JSON.parse(dataNode.textContent);
+  const storageKey = "bms-keeper-simulator";
+  const selected = new Set();
+  const managerPlayers = new Map();
+  const playerById = new Map(data.players.map((player) => [Number(player.element), player]));
+  const playerButtons = Array.from(app.querySelectorAll("[data-simulator-player]"));
+  const selectedCount = app.querySelector("[data-simulator-selected-count]");
+  const managerCount = app.querySelector("[data-simulator-manager-count]");
+  const poolCount = app.querySelector("[data-simulator-pool-count]");
+  const status = app.querySelector("[data-simulator-status]");
+  const poolBody = app.querySelector("[data-simulator-pool-body]");
+  const filteredCount = app.querySelector("[data-simulator-filtered-count]");
+  const positionCounts = app.querySelector("[data-simulator-position-counts]");
+  const search = app.querySelector("[data-simulator-search]");
+  const position = app.querySelector("[data-simulator-position]");
+  const club = app.querySelector("[data-simulator-club]");
+  const owner = app.querySelector("[data-simulator-owner]");
+  const sort = app.querySelector("[data-simulator-sort]");
+
+  data.managers.forEach((manager) => managerPlayers.set(manager, new Set()));
+  playerButtons.forEach((button) => {
+    const manager = button.dataset.simulatorPlayerManager;
+    if (button.dataset.simulatorPlayerEligible === "true") {
+      managerPlayers.get(manager)?.add(Number(button.dataset.simulatorPlayer));
+    }
+  });
+
+  const escapeHtml = (value) => String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+  const managerSelections = (manager) => Array.from(selected).filter(
+    (element) => managerPlayers.get(manager)?.has(element)
+  );
+
+  const save = () => {
+    const selections = {};
+    data.managers.forEach((manager) => {
+      selections[manager] = managerSelections(manager);
+    });
+    localStorage.setItem(storageKey, JSON.stringify({ version: data.version, selections }));
+  };
+
+  const load = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+      if (saved.version !== data.version || !saved.selections) return;
+      data.managers.forEach((manager) => {
+        const valid = Array.isArray(saved.selections[manager])
+          ? saved.selections[manager]
+              .map(Number)
+              .filter((element) => managerPlayers.get(manager)?.has(element))
+              .slice(0, 2)
+          : [];
+        valid.forEach((element) => selected.add(element));
+      });
+    } catch {
+      localStorage.removeItem(storageKey);
+    }
+  };
+
+  const fillFilters = () => {
+    [...new Set(data.players.filter((player) => player.draft_eligible).map((player) => player.club))]
+      .filter(Boolean)
+      .sort((a, b) => a.localeCompare(b))
+      .forEach((name) => club.add(new Option(name, name)));
+    data.managers.forEach((manager) => {
+      const sample = data.players.find((player) => player.owner === manager);
+      owner.add(new Option(sample?.owner_name || manager, manager));
+    });
+  };
+
+  const availablePlayers = () => data.players.filter(
+    (player) => player.draft_eligible && !selected.has(Number(player.element))
+  );
+
+  const renderPool = (available) => {
+    const query = search.value.trim().toLowerCase();
+    const filtered = available.filter((player) => {
+      const source = player.owner || "Unowned";
+      return (!query || `${player.player} ${player.short_name} ${player.club}`.toLowerCase().includes(query))
+        && (!position.value || player.position === position.value)
+        && (!club.value || player.club === club.value)
+        && (!owner.value || source === owner.value);
+    });
+    const [sortField, direction] = sort.value.split("-");
+    const accessors = {
+      points: (player) => player.points,
+      ppg: (player) => player.ppg,
+      overall: (player) => player.overall_rank,
+      position: (player) => player.position_rank,
+      name: (player) => player.player.toLowerCase(),
+    };
+    const accessor = accessors[sortField] || accessors.points;
+    filtered.sort((a, b) => {
+      const valueA = accessor(a);
+      const valueB = accessor(b);
+      let comparison = 0;
+      if (valueA == null && valueB == null) return 0;
+      if (valueA == null) return 1;
+      if (valueB == null) return -1;
+      comparison = typeof valueA === "string"
+        ? valueA.localeCompare(valueB)
+        : valueA - valueB;
+      return direction === "desc" ? -comparison : comparison;
+    });
+    poolBody.innerHTML = filtered.map((player) => {
+      const source = player.owner_name || "Already unowned";
+      const positionClass = `keeper-pos-${player.position.toLowerCase()}`;
+      return `<tr class="${positionClass}">
+        <td data-label="Position">${escapeHtml(player.position)}</td>
+        <td data-label="Player">${escapeHtml(player.player)}</td>
+        <td data-label="Club">${escapeHtml(player.club)}</td>
+        <td data-label="Released By">${escapeHtml(source)}</td>
+        <td data-label="Season Pts">${player.points}</td>
+        <td data-label="PPG">${player.ppg.toFixed(1)}</td>
+        <td data-label="Overall Rank">${player.overall_rank ?? "—"}</td>
+        <td data-label="Pos Rank">${player.position_rank ?? "—"}</td>
+      </tr>`;
+    }).join("");
+    filteredCount.textContent = `${filtered.length} player${filtered.length === 1 ? "" : "s"} shown`;
+  };
+
+  const render = () => {
+    playerButtons.forEach((button) => {
+      const element = Number(button.dataset.simulatorPlayer);
+      const manager = button.dataset.simulatorPlayerManager;
+      const active = selected.has(element);
+      const full = managerSelections(manager).length >= 2;
+      const eligible = button.dataset.simulatorPlayerEligible === "true";
+      button.classList.toggle("is-selected", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+      button.disabled = !eligible || (!active && full);
+    });
+
+    let completeManagers = 0;
+    data.managers.forEach((manager) => {
+      const count = managerSelections(manager).length;
+      if (count === 2) completeManagers += 1;
+      const managerStatus = app.querySelector(`[data-simulator-manager-status="${CSS.escape(manager)}"]`);
+      if (managerStatus) {
+        managerStatus.textContent = `${count} / 2`;
+        managerStatus.classList.toggle("is-complete", count === 2);
+      }
+    });
+
+    const available = availablePlayers();
+    selectedCount.textContent = `${selected.size} / ${data.managers.length * 2}`;
+    managerCount.textContent = `${completeManagers} / ${data.managers.length}`;
+    poolCount.textContent = String(available.length);
+    status.textContent = completeManagers === data.managers.length
+      ? "Scenario complete: the projected draft pool is finalized."
+      : `Incomplete scenario: ${data.managers.length - completeManagers} manager${data.managers.length - completeManagers === 1 ? "" : "s"} still need keeper selections.`;
+    status.classList.toggle("is-complete", completeManagers === data.managers.length);
+
+    const counts = { GKP: 0, DEF: 0, MID: 0, FWD: 0 };
+    available.forEach((player) => { counts[player.position] = (counts[player.position] || 0) + 1; });
+    positionCounts.innerHTML = Object.entries(counts)
+      .map(([label, count]) => `<span><strong>${count}</strong> ${label}</span>`)
+      .join("");
+    renderPool(available);
+    save();
+  };
+
+  playerButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const element = Number(button.dataset.simulatorPlayer);
+      const manager = button.dataset.simulatorPlayerManager;
+      if (selected.has(element)) {
+        selected.delete(element);
+      } else if (managerSelections(manager).length < 2) {
+        selected.add(element);
+      }
+      render();
+    });
+  });
+  app.querySelectorAll("[data-simulator-reset-manager]").forEach((button) => {
+    button.addEventListener("click", () => {
+      managerSelections(button.dataset.simulatorResetManager).forEach((element) => selected.delete(element));
+      render();
+    });
+  });
+  app.querySelector("[data-simulator-reset-all]")?.addEventListener("click", () => {
+    selected.clear();
+    render();
+  });
+  [search, position, club, owner, sort].forEach((control) => {
+    control?.addEventListener(control === search ? "input" : "change", () => renderPool(availablePlayers()));
+  });
+
+  fillFilters();
+  load();
+  render();
 })();
 </script>
   <script>

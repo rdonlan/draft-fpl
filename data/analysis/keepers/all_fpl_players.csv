@@ -1,842 +1,842 @@
-fpl_position,player,full_name,pl_team,roster_owner,position_rank,overall_rank,season_points,points_per_game
-FWD,Haaland,Erling Haaland,Man City,Ryan Donlan,1,1,239,6.8
-MID,B.Fernandes,Bruno Fernandes,Man Utd,Drake Byrd,1,2,235,6.7
-DEF,Gabriel,Gabriel,Arsenal,Ryan Houseman,1,3,209,6.5
-MID,Semenyo,Antoine Semenyo,Man City,Dylan Reid,2,4,202,5.5
-MID,Gibbs-White,Morgan Gibbs-White,Nott'm Forest,Ryan Donlan,3,5,188,5.1
-FWD,Bowen,Jarrod Bowen,West Ham,Dylan Reid,2,6,187,4.9
-MID,Rice,Declan Rice,Arsenal,Ryan Houseman,4,7,184,5.1
-FWD,Thiago,Thiago,Brentford,Dylan Reid,3,8,181,4.8
-MID,Anderson,Elliot Anderson,Nott'm Forest,Ryan Houseman,5,9,180,4.7
-DEF,Guéhi,Marc Guéhi,Man City,Luke Lockwood,2,10,179,5.1
-FWD,João Pedro,João Pedro,Chelsea,Dylan Reid,4,11,177,5.1
-DEF,Senesi,Marcos Senesi,Bournemouth,Dylan Reid,3,12,175,4.7
-DEF,Virgil,Virgil,Liverpool,Ryan Donlan,3,12,175,4.6
-DEF,Tarkowski,James Tarkowski,Everton,Justin Miller,5,14,170,4.6
-MID,Rogers,Morgan Rogers,Aston Villa,Alexander Chaban,6,15,169,4.6
-MID,Wilson,Harry Wilson,Fulham,Justin Miller,7,16,168,4.7
-FWD,Watkins,Ollie Watkins,Aston Villa,Justin Miller,5,17,167,4.5
-MID,Casemiro,Carlos Casemiro,Man Utd,Drake Byrd,8,18,165,4.9
-DEF,Truffert,Adrien Truffert,Bournemouth,Julius Long,6,18,165,4.3
-GKP,Raya,David Raya,Arsenal,Ryan Houseman,1,20,162,4.4
-DEF,O'Reilly,Nico O'Reilly,Man City,Justin Miller,7,21,160,4.7
-MID,Szoboszlai,Dominik Szoboszlai,Liverpool,Ryan Houseman,9,21,160,4.4
-MID,Garner,James Garner,Everton,Unowned,10,23,159,4.2
-MID,Saka,Bukayo Saka,Arsenal,Levi Morant,11,24,157,5.1
-MID,Enzo,Enzo,Chelsea,Julius Long,11,24,157,4.4
-MID,Bruno G.,Bruno Moura,Newcastle,Drake Byrd,13,26,154,5.3
-DEF,Matheus N.,Matheus Nunes,Man City,Luke Lockwood,8,26,154,4.5
-DEF,Lacroix,Maxence Lacroix,Crystal Palace,Julius Long,8,26,154,4.4
-MID,Dewsbury-Hall,Kiernan Dewsbury-Hall,Everton,Luke Lockwood,14,29,151,4.9
-DEF,Mukiele,Nordi Mukiele,Sunderland,Ryan Houseman,10,29,151,4.7
-DEF,J.Timber,Jurriën Timber,Arsenal,Unowned,11,31,149,5.0
-MID,Mbeumo,Bryan Mbeumo,Man Utd,Luke Lockwood,15,32,148,4.5
-DEF,Van Hecke,Jan Van Hecke,Brighton,Drake Byrd,12,32,148,4.1
-MID,E.Le Fée,Enzo Le Fée,Sunderland,Dylan Reid,16,34,147,4.1
-MID,Gravenberch,Ryan Gravenberch,Liverpool,Drake Byrd,17,35,144,4.0
-MID,Cunha,Matheus Cunha,Man Utd,Ryan Donlan,18,36,143,4.3
-GKP,Kelleher,Caoimhín Kelleher,Brentford,Ryan Donlan,2,36,143,3.9
-FWD,Calvert-Lewin,Dominic Calvert-Lewin,Leeds,Ryan Donlan,6,38,142,4.1
-MID,Stach,Anton Stach,Leeds,Ryan Houseman,19,39,137,4.7
-DEF,Saliba,William Saliba,Arsenal,Drake Byrd,13,39,137,4.4
-MID,Tavernier,Marcus Tavernier,Bournemouth,Drake Byrd,19,39,137,4.0
-DEF,Muñoz,Daniel Muñoz,Crystal Palace,Drake Byrd,14,42,136,4.7
-MID,O.Dango,Dango Dango,Brentford,Justin Miller,21,42,136,4.2
-DEF,Chalobah,Trevoh Chalobah,Chelsea,Dylan Reid,14,42,136,4.0
-GKP,Roefs,Robin Roefs,Sunderland,Unowned,3,42,136,3.9
-MID,Scott,Alex Scott,Bournemouth,Levi Morant,21,42,136,3.7
-MID,Cherki,Rayan Cherki,Man City,Ethan Ellsworth,23,47,135,4.1
-GKP,Donnarumma,Gianluigi Donnarumma,Man City,Justin Miller,4,47,135,4.0
-MID,M.Fernandes,Mateus Fernandes,West Ham,Alexander Chaban,23,47,135,3.8
-DEF,Mitchell,Tyrick Mitchell,Crystal Palace,Unowned,16,47,135,3.6
-GKP,Pickford,Jordan Pickford,Everton,Julius Long,4,47,135,3.6
-MID,Ampadu,Ethan Ampadu,Leeds,Unowned,25,52,134,3.8
-MID,Zubimendi,Martín Zubimendi,Arsenal,Unowned,26,53,133,3.5
-MID,Foden,Phil Foden,Man City,Julius Long,27,54,131,4.0
-DEF,Keane,Michael Keane,Everton,Ryan Houseman,17,54,131,4.0
-MID,Gakpo,Cody Gakpo,Liverpool,Ethan Ellsworth,27,54,131,3.6
-GKP,Henderson,Dean Henderson,Crystal Palace,Alexander Chaban,6,54,131,3.5
-GKP,Verbruggen,Bart Verbruggen,Brighton,Justin Miller,7,58,130,3.4
-DEF,Collins,Nathan Collins,Brentford,Julius Long,18,59,129,3.7
-DEF,Konaté,Ibrahima Konaté,Liverpool,Luke Lockwood,18,59,129,3.6
-MID,Ndiaye,Iliman Ndiaye,Everton,Justin Miller,29,61,128,4.0
-DEF,Richards,Chris Richards,Crystal Palace,Drake Byrd,20,61,128,3.9
-FWD,Gyökeres,Viktor Gyökeres,Arsenal,Julius Long,7,61,128,3.6
-DEF,N.Williams,Neco Williams,Nott'm Forest,Ethan Ellsworth,20,61,128,3.5
-MID,Anthony,Jaidon Anthony,Burnley,Alexander Chaban,30,65,127,3.4
-MID,J.Palhinha,João Palhinha,Spurs,Unowned,31,66,126,3.8
-DEF,Thiaw,Malick Thiaw,Newcastle,Luke Lockwood,22,66,126,3.6
-MID,Aaronson,Brenden Aaronson,Leeds,Ethan Ellsworth,31,66,126,3.4
-FWD,Welbeck,Danny Welbeck,Brighton,Ryan Houseman,8,66,126,3.4
-FWD,Ekitiké,Hugo Ekitiké,Liverpool,Luke Lockwood,9,70,125,4.5
-DEF,Alderete,Omar Alderete,Sunderland,Dylan Reid,23,70,125,3.8
-MID,Wirtz,Florian Wirtz,Liverpool,Justin Miller,33,70,125,3.8
-MID,Neto,Pedro Neto,Chelsea,Unowned,33,70,125,3.7
-MID,Schade,Kevin Schade,Brentford,Ryan Donlan,33,70,125,3.6
-MID,Xhaka,Granit Xhaka,Sunderland,Unowned,36,75,124,3.6
-GKP,Petrović,Đorđe Petrović,Bournemouth,Drake Byrd,8,75,124,3.3
-MID,M.Salah,Mohamed Salah,Liverpool,Luke Lockwood,37,77,123,4.6
-DEF,Andersen,Joachim Andersen,Fulham,Unowned,24,77,123,3.7
-DEF,Mavropanos,Konstantinos Mavropanos,West Ham,Justin Miller,25,79,122,3.9
-GKP,Leno,Bernd Leno,Fulham,Alexander Chaban,9,79,122,3.2
-MID,Doku,Jérémy Doku,Man City,Alexander Chaban,38,81,120,4.0
-GKP,Martinez,Emiliano Martinez,Aston Villa,Ryan Houseman,10,81,120,3.8
-MID,Trossard,Leandro Trossard,Arsenal,Julius Long,39,83,119,3.8
-FWD,Richarlison,Richarlison,Spurs,Drake Byrd,10,83,119,3.7
-DEF,Milenković,Nikola Milenković,Nott'm Forest,Unowned,26,83,119,3.1
-DEF,F.Kadıoğlu,Ferdi Kadıoğlu,Brighton,Unowned,27,86,118,3.2
-MID,Sarr,Ismaïla Sarr,Crystal Palace,Ethan Ellsworth,40,87,117,4.2
-MID,Minteh,Yankuba Minteh,Brighton,Unowned,40,87,117,3.4
-DEF,Pedro Porro,Pedro Sauceda,Spurs,Levi Morant,28,87,117,3.4
-DEF,Cash,Matty Cash,Aston Villa,Alexander Chaban,28,87,117,3.3
-DEF,Ballard,Daniel Ballard,Sunderland,Ryan Houseman,30,91,116,4.0
-DEF,Van de Ven,Micky Van de Ven,Spurs,Alexander Chaban,30,91,116,3.3
-DEF,O'Brien,Jake O'Brien,Everton,Alexander Chaban,30,91,116,3.1
-DEF,James,Reece James,Chelsea,Alexander Chaban,33,94,115,4.0
-FWD,Evanilson,Evanilson,Bournemouth,Drake Byrd,11,94,115,3.2
-DEF,Lewis-Potter,Keane Lewis-Potter,Brentford,Unowned,33,94,115,3.2
-MID,Palmer,Cole Palmer,Chelsea,Levi Morant,42,97,114,4.4
-FWD,Mateta,Jean-Philippe Mateta,Crystal Palace,Ryan Houseman,12,97,114,3.6
-FWD,Igor Jesus,Igor Jesus,Nott'm Forest,Luke Lockwood,12,97,114,3.1
-DEF,Rúben,Rúben,Man City,Ryan Houseman,35,100,113,4.3
-DEF,Van den Berg,Sepp Van den Berg,Brentford,Julius Long,35,100,113,3.5
-MID,Damsgaard,Mikkel Damsgaard,Brentford,Ethan Ellsworth,43,100,113,3.4
-MID,Eze,Eberechi Eze,Arsenal,Ryan Houseman,43,100,113,3.4
-FWD,Kroupi.Jr,Junior Kroupi.Jr,Bournemouth,Ethan Ellsworth,14,100,113,3.4
-GKP,Sánchez,Robert Sánchez,Chelsea,Luke Lockwood,11,100,113,3.2
-DEF,Kayode,Michael Kayode,Brentford,Alexander Chaban,35,100,113,3.1
-DEF,Shaw,Luke Shaw,Man Utd,Drake Byrd,35,100,113,3.0
-MID,Wharton,Adam Wharton,Crystal Palace,Unowned,45,108,112,3.3
-FWD,Raúl,Raúl,Fulham,Luke Lockwood,15,108,112,3.1
-FWD,Šeško,Benjamin Šeško,Man Utd,Julius Long,16,110,111,3.7
-DEF,Dalot,Diogo Dalot,Man Utd,Ethan Ellsworth,39,110,111,3.3
-DEF,Hill,James Hill,Bournemouth,Ryan Donlan,40,112,110,3.8
-MID,Summerville,Crysencio Summerville,West Ham,Luke Lockwood,46,112,110,3.5
-MID,Caicedo,Moisés Caicedo,Chelsea,Unowned,46,112,110,3.3
-DEF,Hume,Trai Hume,Sunderland,Unowned,40,112,110,2.9
-DEF,Calafiori,Riccardo Calafiori,Arsenal,Luke Lockwood,42,116,109,4.2
-MID,Okafor,Noah Okafor,Leeds,Unowned,48,116,109,3.9
-GKP,Lammens,Senne Lammens,Man Utd,Unowned,12,116,109,3.4
-DEF,Rodon,Joe Rodon,Leeds,Unowned,42,116,109,3.1
-FWD,Woltemade,Nick Woltemade,Newcastle,Julius Long,17,120,108,3.3
-DEF,Struijk,Pascal Struijk,Leeds,Unowned,44,120,108,3.2
-MID,Mac Allister,Alexis Mac Allister,Liverpool,Unowned,49,120,108,2.9
-MID,J.Gomes,João Gomes,Wolves,Unowned,50,123,107,3.1
-MID,Barnes,Harvey Barnes,Newcastle,Alexander Chaban,51,124,106,2.9
-GKP,Sels,Matz Sels,Nott'm Forest,Drake Byrd,13,125,105,3.4
-DEF,Diouf,El Diouf,West Ham,Ethan Ellsworth,45,126,104,3.2
-DEF,Cucurella,Marc Cucurella,Chelsea,Julius Long,45,126,104,3.1
-FWD,Beto,Norberto Beto,Everton,Alexander Chaban,18,126,104,2.8
-MID,Yarmoliuk,Yehor Yarmoliuk,Brentford,Unowned,52,126,104,2.8
-MID,Iwobi,Alex Iwobi,Fulham,Unowned,53,130,103,3.6
-DEF,Bassey,Calvin Bassey,Fulham,Ryan Donlan,47,130,103,3.4
-MID,McGinn,John McGinn,Aston Villa,Unowned,53,130,103,3.4
-MID,Souček,Tomáš Souček,West Ham,Levi Morant,53,130,103,2.9
-MID,Buendía,Emiliano Buendía,Aston Villa,Unowned,56,134,102,2.8
-MID,Bernardo,Bernardo,Man City,Julius Long,56,134,102,2.7
-MID,Gordon,Anthony Gordon,Newcastle,Ryan Donlan,58,136,101,3.9
-DEF,Dunk,Lewis Dunk,Brighton,Unowned,48,137,100,3.0
-DEF,Konsa,Ezri Konsa,Aston Villa,Unowned,48,137,100,2.9
-DEF,Bijol,Jaka Bijol,Leeds,Unowned,50,139,99,4.0
-FWD,Flemming,Zian Flemming,Burnley,Levi Morant,19,139,99,3.4
-MID,Ayari,Yasin Ayari,Brighton,Unowned,59,141,98,3.4
-MID,Jensen,Mathias Jensen,Brentford,Unowned,59,141,98,2.7
-DEF,Digne,Lucas Digne,Aston Villa,Unowned,51,143,97,3.1
-MID,Gomez,Diego Gomez,Brighton,Unowned,61,143,97,3.0
-MID,Ugochukwu,Lesley Ugochukwu,Burnley,Unowned,61,143,97,2.8
-GKP,Pope,Nick Pope,Newcastle,Dylan Reid,14,146,96,3.6
-DEF,Bogle,Jayden Bogle,Leeds,Unowned,52,146,96,2.8
-DEF,Gusto,Malo Gusto,Chelsea,Unowned,52,146,96,2.8
-MID,André,André,Wolves,Unowned,63,146,96,2.7
-GKP,Dúbravka,Martin Dúbravka,Burnley,Levi Morant,14,146,96,2.7
-DEF,Dorgu,Patrick Dorgu,Man Utd,Unowned,54,151,95,3.7
-MID,Sessegnon,Ryan Sessegnon,Fulham,Unowned,64,151,95,3.5
-DEF,Mykolenko,Vitalii Mykolenko,Everton,Unowned,54,151,95,2.9
-FWD,Barry,Thierno Barry,Everton,Alexander Chaban,20,151,95,2.5
-MID,Wieffer,Mats Wieffer,Brighton,Unowned,65,155,94,3.6
-DEF,Justin,James Justin,Leeds,Unowned,56,155,94,3.2
-DEF,Burn,Dan Burn,Newcastle,Levi Morant,57,157,93,3.2
-MID,Reijnders,Tijjani Reijnders,Man City,Unowned,66,158,92,3.3
-DEF,S.Bueno,Santiago Bueno,Wolves,Levi Morant,58,158,92,3.2
-FWD,Brobbey,Brian Brobbey,Sunderland,Alexander Chaban,21,158,92,3.0
-DEF,Romero,Cristian Romero,Spurs,Unowned,59,161,91,4.0
-GKP,A.Becker,Alisson Becker,Liverpool,Luke Lockwood,16,161,91,3.5
-MID,Hinshelwood,Jack Hinshelwood,Brighton,Unowned,67,161,91,3.4
-MID,Amad,Amad,Man Utd,Dylan Reid,67,161,91,2.8
-MID,Berge,Sander Berge,Fulham,Unowned,67,161,91,2.6
-DEF,Maguire,Harry Maguire,Man Utd,Ethan Ellsworth,60,166,90,3.9
-GKP,Vicario,Guglielmo Vicario,Spurs,Unowned,17,166,90,2.9
-DEF,Botman,Sven Botman,Newcastle,Levi Morant,61,168,89,3.6
-MID,Sangaré,Ibrahim Sangaré,Nott'm Forest,Unowned,70,168,89,3.2
-MID,Hudson-Odoi,Callum Hudson-Odoi,Nott'm Forest,Unowned,71,170,88,2.9
-DEF,Hincapie,Piero Hincapie,Arsenal,Levi Morant,62,171,87,3.5
-MID,Georginio,Georginio,Brighton,Unowned,72,171,87,2.7
-MID,Bentancur,Rodrigo Bentancur,Spurs,Unowned,73,173,86,3.3
-DEF,Estève,Maxime Estève,Burnley,Unowned,63,174,85,2.5
-DEF,Kerkez,Milos Kerkez,Liverpool,Unowned,63,174,85,2.5
-DEF,De Cuyper,Maxim De Cuyper,Brighton,Ryan Donlan,65,176,84,2.8
-MID,Florentino,Florentino,Burnley,Unowned,74,176,84,2.7
-MID,Gana,Gana,Everton,Unowned,75,178,83,3.3
-DEF,Murillo,Murillo,Nott'm Forest,Unowned,66,178,83,3.3
-MID,Talbi,Chemsdine Talbi,Sunderland,Unowned,75,178,83,3.0
-DEF,H.Bueno,Hugo Bueno,Wolves,Unowned,66,178,83,2.4
-MID,Hutchinson,Omari Hutchinson,Nott'm Forest,Unowned,77,182,82,2.6
-MID,J.Murphy,Jacob Murphy,Newcastle,Dylan Reid,77,182,82,2.5
-DEF,Tete,Kenny Tete,Fulham,Unowned,68,184,81,3.7
-MID,C.Jones,Curtis Jones,Liverpool,Unowned,79,184,81,2.4
-MID,Tonali,Sandro Tonali,Newcastle,Unowned,79,184,81,2.3
-MID,Xavi,Xavi,Spurs,Unowned,81,187,80,2.9
-FWD,Wilson,Callum Wilson,West Ham,Unowned,22,187,80,2.5
-MID,Sadiki,Noah Sadiki,Sunderland,Unowned,81,187,80,2.4
-MID,Smith Rowe,Emile Smith Rowe,Fulham,Unowned,81,187,80,2.2
-DEF,Gvardiol,Joško Gvardiol,Man City,Unowned,69,191,79,4.4
-MID,Grealish,Jack Grealish,Everton,Unowned,84,191,79,4.0
-DEF,Hall,Lewis Hall,Newcastle,Dylan Reid,69,191,79,2.6
-MID,Groß,Pascal Groß,Brighton,Ryan Donlan,85,194,78,4.1
-DEF,Spence,Djed Spence,Spurs,Unowned,71,194,78,2.6
-MID,Tel,Mathys Tel,Spurs,Levi Morant,85,194,78,2.5
-MID,Adams,Tyler Adams,Bournemouth,Unowned,87,197,77,3.1
-MID,Yeremy,Yéremy Yeremy,Crystal Palace,Unowned,87,197,77,2.3
-GKP,Hermansen,Mads Hermansen,West Ham,Julius Long,18,199,76,4.2
-FWD,Osula,William Osula,Newcastle,Ethan Ellsworth,23,199,76,3.2
-MID,Onana,Amadou Onana,Aston Villa,Unowned,89,199,76,3.0
-DEF,Ajer,Kristoffer Ajer,Brentford,Unowned,72,199,76,2.8
-MID,Henderson,Jordan Henderson,Brentford,Unowned,89,199,76,2.4
-MID,Kudus,Mohammed Kudus,Spurs,Unowned,91,204,75,3.9
-FWD,Strand Larsen,Jørgen Strand Larsen,Crystal Palace,Drake Byrd,24,204,75,2.1
-MID,Ødegaard,Martin Ødegaard,Arsenal,Julius Long,92,206,74,3.1
-MID,Janelt,Vitaly Janelt,Brentford,Unowned,92,206,74,3.0
-DEF,Reinildo,Reinildo,Sunderland,Unowned,73,206,74,3.0
-FWD,Mané,Mateus Mané,Wolves,Levi Morant,25,206,74,2.7
-DEF,A.Jimenez,Álex Jimenez,Bournemouth,Unowned,73,206,74,2.4
-FWD,Isidor,Wilson Isidor,Sunderland,Unowned,25,206,74,2.3
-MID,Joelinton,Joelinton,Newcastle,Unowned,94,212,73,2.7
-MID,Mainoo,Kobbie Mainoo,Man Utd,Luke Lockwood,94,212,73,2.6
-FWD,Nmecha,Lukas Nmecha,Leeds,Ryan Houseman,27,212,73,2.4
-DEF,Canvot,Jaydee Canvot,Crystal Palace,Unowned,75,215,72,3.6
-MID,L.Miley,Lewis Miley,Newcastle,Unowned,96,215,72,3.1
-MID,Madueke,Noni Madueke,Arsenal,Unowned,96,215,72,2.8
-GKP,Darlow,Karl Darlow,Leeds,Ryan Donlan,19,218,71,3.2
-MID,P.M.Sarr,Pape M.Sarr,Spurs,Unowned,98,218,71,2.7
-MID,Cullen,Josh Cullen,Burnley,Unowned,99,220,70,3.9
-DEF,Walker,Kyle Walker,Burnley,Unowned,76,220,70,1.9
-MID,L.Paquetá,Lucas Paquetá,West Ham,Unowned,100,222,69,3.8
-MID,Rodrigo,Rodrigo,Man City,Unowned,100,222,69,3.3
-MID,Lerma,Jefferson Lerma,Crystal Palace,Unowned,100,222,69,2.2
-GKP,José Sá,José Sá,Wolves,Unowned,20,225,68,3.0
-MID,Tielemans,Youri Tielemans,Aston Villa,Unowned,103,225,68,2.7
-DEF,Krejčí,Ladislav Krejčí,Wolves,Unowned,77,225,68,2.4
-MID,Iroegbunam,Tim Iroegbunam,Everton,Unowned,103,225,68,2.3
-DEF,Gudmundsson,Gabriel Gudmundsson,Leeds,Unowned,77,225,68,2.1
-MID,Rayan,Rayan,Bournemouth,Dylan Reid,105,230,67,4.5
-DEF,Aina,Ola Aina,Nott'm Forest,Dylan Reid,79,230,67,3.7
-DEF,Khusanov,Abdukodir Khusanov,Man City,Ethan Ellsworth,79,230,67,3.2
-MID,Merino,Mikel Merino,Arsenal,Unowned,105,230,67,3.0
-DEF,Wan-Bissaka,Aaron Wan-Bissaka,West Ham,Unowned,79,230,67,2.7
-MID,Lukić,Saša Lukić,Fulham,Unowned,105,230,67,2.6
-MID,Kamada,Daichi Kamada,Crystal Palace,Unowned,105,230,67,2.4
-MID,Tanaka,Tanaka,Leeds,Unowned,105,230,67,2.4
-MID,Adli,Amine Adli,Bournemouth,Unowned,105,230,67,2.2
-FWD,Tolu,Tolu,Wolves,Unowned,28,239,66,2.0
-MID,Diarra,Habib Diarra,Sunderland,Unowned,111,240,65,3.2
-DEF,Robinson,Antonee Robinson,Fulham,Unowned,82,240,65,3.0
-DEF,Fofana,Wesley Fofana,Chelsea,Unowned,82,240,65,2.6
-MID,Johnson,Brennan Johnson,Crystal Palace,Unowned,111,240,65,1.9
-DEF,Pau,Pau,Aston Villa,Unowned,84,244,64,3.0
-DEF,Frimpong,Jeremie Frimpong,Liverpool,Unowned,85,245,63,3.0
-DEF,Hartman,Quilindschy Hartman,Burnley,Unowned,85,245,63,3.0
-DEF,Danso,Kevin Danso,Spurs,Unowned,85,245,63,2.6
-MID,N.Gonzalez,Nico Gonzalez,Man City,Unowned,113,245,63,2.5
-MID,King,Josh King,Fulham,Unowned,113,245,63,2.0
-MID,Chukwueze,Samuel Chukwueze,Fulham,Unowned,115,250,62,2.7
-MID,Mitoma,Mitoma,Brighton,Unowned,115,250,62,2.5
-MID,J.Ramsey,Jacob Ramsey,Newcastle,Unowned,115,250,62,2.2
-MID,Kamara,Boubacar Kamara,Aston Villa,Unowned,118,253,61,3.4
-FWD,Taty,Valentín Taty,West Ham,Justin Miller,29,253,61,3.4
-MID,Gray,Archie Gray,Spurs,Unowned,118,253,61,2.5
-DEF,Mosquera,Yerson Mosquera,Wolves,Unowned,88,253,61,2.3
-DEF,Castagne,Timothy Castagne,Fulham,Unowned,88,253,61,2.0
-DEF,Aït-Nouri,Rayan Aït-Nouri,Man City,Unowned,90,258,60,3.5
-DEF,Livramento,Tino Livramento,Newcastle,Unowned,91,259,59,3.5
-MID,Hannibal,Hannibal,Burnley,Unowned,120,259,59,2.2
-MID,Tchaouna,Loum Tchaouna,Burnley,Unowned,120,259,59,2.0
-MID,Brooks,David Brooks,Bournemouth,Unowned,120,259,59,1.9
-MID,Estêvão,Estêvão,Chelsea,Unowned,123,263,58,2.6
-DEF,Smith,Adam Smith,Bournemouth,Justin Miller,92,263,58,2.6
-MID,Mount,Mason Mount,Man Utd,Unowned,123,263,58,2.5
-FWD,Foster,Lyle Foster,Burnley,Unowned,30,263,58,2.2
-MID,Martinelli,Gabriel Martinelli,Arsenal,Unowned,125,267,57,1.9
-MID,Barkley,Ross Barkley,Aston Villa,Unowned,126,268,56,2.7
-MID,Marmoush,Omar Marmoush,Man City,Unowned,126,268,56,2.7
-MID,Gruev,Ilia Gruev,Leeds,Unowned,126,268,56,2.4
-MID,Longstaff,Sean Longstaff,Leeds,Unowned,126,268,56,2.4
-MID,Garnacho,Alejandro Garnacho,Chelsea,Unowned,126,268,56,2.3
-MID,Baleba,Carlos Baleba,Brighton,Unowned,126,268,56,1.8
-DEF,Yoro,Leny Yoro,Man Utd,Unowned,93,268,56,1.8
-MID,Laurent,Josh Laurent,Burnley,Unowned,126,268,56,1.7
-MID,Malen,Donyell Malen,Aston Villa,Unowned,133,276,55,2.6
-DEF,Robertson,Andrew Robertson,Liverpool,Unowned,94,276,55,2.3
-DEF,Geertruida,Lutsharel Geertruida,Sunderland,Unowned,94,276,55,2.0
-DEF,Trippier,Kieran Trippier,Newcastle,Unowned,96,279,54,2.6
-MID,Hee Chan,Hwang Hee Chan,Wolves,Unowned,134,279,54,2.1
-DEF,Maatsen,Ian Maatsen,Aston Villa,Unowned,96,279,54,1.8
-DEF,Mazraoui,Noussair Mazraoui,Man Utd,Unowned,98,282,53,2.6
-DEF,Morato,Felipe Morato,Nott'm Forest,Unowned,98,282,53,2.5
-MID,McNeil,Dwight McNeil,Everton,Unowned,135,282,53,2.4
-DEF,Walker-Peters,Kyle Walker-Peters,West Ham,Unowned,98,282,53,2.3
-DEF,Ekdal,Hjalmar Ekdal,Burnley,Unowned,101,286,52,2.7
-DEF,Henry,Rico Henry,Brentford,Unowned,101,286,52,2.1
-FWD,Kolo Muani,Randal Kolo Muani,Spurs,Levi Morant,31,286,52,1.7
-DEF,Tchatchoua,Jackson Tchatchoua,Wolves,Unowned,101,286,52,1.7
-DEF,Schär,Fabian Schär,Newcastle,Unowned,104,290,51,3.2
-DEF,Martinez,Lisandro Martinez,Man Utd,Unowned,104,290,51,2.8
-GKP,Areola,Alphonse Areola,West Ham,Unowned,21,290,51,2.5
-MID,Edwards,Marcus Edwards,Burnley,Unowned,136,290,51,2.2
-DEF,Mings,Tyrone Mings,Aston Villa,Unowned,106,294,50,2.9
-MID,Ndoye,Dan Ndoye,Nott'm Forest,Unowned,137,294,50,2.1
-DEF,Disasi,Axel Disasi,West Ham,Unowned,107,296,49,3.5
-MID,Bergvall,Lucas Bergvall,Spurs,Unowned,138,296,49,2.1
-MID,Kevin,Kevin,Fulham,Unowned,138,296,49,1.9
-DEF,R.Gomes,Rodrigo Gomes,Wolves,Unowned,108,299,48,2.2
-MID,Dominguez,Nicolás Dominguez,Nott'm Forest,Unowned,140,299,48,1.8
-MID,Elanga,Anthony Elanga,Newcastle,Unowned,140,299,48,1.5
-DEF,Humphreys,Bashir Humphreys,Burnley,Unowned,109,302,47,2.4
-MID,Christie,Ryan Christie,Bournemouth,Unowned,142,302,47,1.8
-MID,Andrey Santos,Andrey Santos,Chelsea,Unowned,142,302,47,1.7
-DEF,Diakité,Bafodé Diakité,Bournemouth,Unowned,110,305,46,2.6
-DEF,Todibo,Jean-Clair Todibo,West Ham,Unowned,110,305,46,2.0
-MID,Odobert,Wilson Odobert,Spurs,Unowned,144,305,46,1.9
-DEF,Veltman,Joël Veltman,Brighton,Unowned,110,305,46,1.9
-DEF,White,Benjamin White,Arsenal,Unowned,113,309,45,3.8
-MID,J.Arias,Jhon Arias,Wolves,Unowned,145,309,45,2.0
-FWD,Delap,Liam Delap,Chelsea,Unowned,32,309,45,1.6
-MID,Hughes,Will Hughes,Crystal Palace,Unowned,145,309,45,1.5
-MID,Gallagher,Conor Gallagher,Spurs,Unowned,147,313,44,2.8
-MID,Guessand,Evann Guessand,Crystal Palace,Unowned,147,313,44,2.1
-MID,Bellegarde,Jean-Ricner Bellegarde,Wolves,Unowned,147,313,44,1.7
-DEF,De Ligt,Matthijs De Ligt,Man Utd,Unowned,114,316,43,3.3
-GKP,Perri,Lucas Perri,Leeds,Unowned,22,316,43,2.7
-FWD,Awoniyi,Taiwo Awoniyi,Nott'm Forest,Unowned,33,316,43,2.5
-MID,Ngumoha,Rio Ngumoha,Liverpool,Unowned,150,316,43,2.3
-FWD,Broja,Armando Broja,Burnley,Unowned,33,316,43,1.8
-MID,Savinho,Sávio Savinho,Man City,Unowned,150,316,43,1.8
-DEF,Bradley,Conor Bradley,Liverpool,Unowned,115,322,42,2.8
-DEF,Heaven,Ayden Heaven,Man Utd,Unowned,115,322,42,2.5
-MID,S.Magassa,Soungoutou Magassa,West Ham,Unowned,152,322,42,1.9
-MID,Bobb,Oscar Bobb,Fulham,Unowned,152,322,42,1.8
-FWD,Zirkzee,Joshua Zirkzee,Man Utd,Unowned,35,322,42,1.8
-FWD,Isak,Alexander Isak,Liverpool,Justin Miller,36,327,41,2.9
-FWD,Wood,Chris Wood,Nott'm Forest,Unowned,36,327,41,2.7
-DEF,Toti,Toti,Wolves,Unowned,117,327,41,2.2
-MID,Kluivert,Justin Kluivert,Bournemouth,Unowned,154,327,41,2.0
-MID,Cairney,Tom Cairney,Fulham,Unowned,154,327,41,1.7
-MID,Bruun Larsen,Jacob Bruun Larsen,Burnley,Unowned,154,327,41,1.5
-FWD,Solanke,Dominic Solanke,Spurs,Ryan Donlan,38,333,40,2.7
-MID,Cook,Lewis Cook,Bournemouth,Unowned,157,333,40,2.2
-MID,Ward-Prowse,James Ward-Prowse,Burnley,Unowned,157,333,40,2.2
-FWD,Mayenda,Eliezer Mayenda,Sunderland,Unowned,38,333,40,2.0
-DEF,Mosquera,Cristhian Mosquera,Arsenal,Ryan Donlan,118,333,40,2.0
-DEF,Bogarde,Lamare Bogarde,Aston Villa,Unowned,118,333,40,1.4
-DEF,Boscagli,Olivier Boscagli,Brighton,Unowned,120,339,39,3.2
-FWD,Armstrong,Adam Armstrong,Wolves,Unowned,40,339,39,2.8
-DEF,Savona,Nicolò Savona,Nott'm Forest,Unowned,120,339,39,2.8
-DEF,J.Cuenca,Jorge Cuenca,Fulham,Unowned,120,339,39,2.6
-DEF,Acheampong,Josh Acheampong,Chelsea,Unowned,120,339,39,2.3
-MID,Munetsi,Marshall Munetsi,Wolves,Unowned,159,344,38,2.9
-MID,Ugarte,Manuel Ugarte,Man Utd,Unowned,159,344,38,1.7
-MID,Willock,Joe Willock,Newcastle,Unowned,159,344,38,1.6
-DEF,Hickey,Aaron Hickey,Brentford,Unowned,124,347,37,1.8
-MID,Potts,Freddie Potts,West Ham,Unowned,162,347,37,1.7
-MID,Sancho,Jadon Sancho,Aston Villa,Unowned,162,347,37,1.6
-MID,Chiesa,Federico Chiesa,Liverpool,Unowned,162,347,37,1.4
-FWD,Havertz,Kai Havertz,Arsenal,Unowned,41,351,36,3.0
-MID,Röhl,Merlin Röhl,Everton,Unowned,165,351,36,2.2
-DEF,Aké,Nathan Aké,Man City,Unowned,125,351,36,2.0
-MID,Rigg,Chris Rigg,Sunderland,Unowned,165,351,36,2.0
-MID,Devenny,Justin Devenny,Crystal Palace,Unowned,165,351,36,1.7
-DEF,Kilman,Maximilian Kilman,West Ham,Unowned,125,351,36,1.7
-FWD,Muniz,Rodrigo Muniz,Fulham,Unowned,41,351,36,1.7
-MID,Gruda,Brajan Gruda,Brighton,Unowned,168,358,35,1.9
-MID,Milner,James Milner,Brighton,Unowned,168,358,35,1.8
-MID,Douglas Luiz,Douglas Luiz,Aston Villa,Unowned,168,358,35,1.7
-FWD,Kostoulas,Charalampos Kostoulas,Brighton,Unowned,43,358,35,1.7
-DEF,Møller Wolfe,David Møller Wolfe,Wolves,Unowned,127,358,35,1.6
-GKP,Mamardashvili,Giorgi Mamardashvili,Liverpool,Ethan Ellsworth,23,363,34,3.4
-MID,Adingra,Simon Adingra,Sunderland,Unowned,171,363,34,2.4
-DEF,Tuanzebe,Axel Tuanzebe,Burnley,Unowned,128,363,34,2.4
-DEF,Tosin,Tosin,Chelsea,Unowned,128,363,34,2.1
-DEF,Gomez,Joe Gomez,Liverpool,Unowned,130,367,33,1.6
-DEF,Branthwaite,Jarrad Branthwaite,Everton,Unowned,131,368,32,3.2
-MID,Gnonto,Wilfried Gnonto,Leeds,Unowned,172,368,32,1.4
-DEF,Diop,Issa Diop,Fulham,Unowned,132,370,31,2.4
-MID,Traoré,Bertrand Traoré,Sunderland,Unowned,173,371,30,2.5
-MID,Yates,Ryan Yates,Nott'm Forest,Unowned,173,371,30,1.4
-DEF,Lindelöf,Victor Lindelöf,Aston Villa,Unowned,133,373,29,1.7
-MID,Alcaraz,Carlos Alcaraz,Everton,Unowned,175,373,29,1.4
-DEF,Lewis-Skelly,Myles Lewis-Skelly,Arsenal,Justin Miller,133,373,29,1.4
-DEF,Udogie,Destiny Udogie,Spurs,Unowned,133,373,29,1.4
-FWD,Wissa,Yoane Wissa,Newcastle,Unowned,44,377,27,1.4
-FWD,Enes Ünal,Enes Ünal,Bournemouth,Unowned,44,377,27,1.2
-DEF,O'Nien,Luke O'Nien,Sunderland,Unowned,136,379,26,2.2
-MID,Bakwa,Dilane Bakwa,Nott'm Forest,Unowned,176,379,26,1.9
-FWD,Pablo,Pablo,West Ham,Ethan Ellsworth,46,379,26,1.9
-DEF,Bornauw,Sebastiaan Bornauw,Leeds,Unowned,137,382,25,2.1
-GKP,Ramsdale,Aaron Ramsdale,Newcastle,Dylan Reid,24,382,25,2.1
-MID,Gittens,Jamie Gittens,Chelsea,Unowned,177,382,25,1.6
-DEF,Lucas Pires,Lucas Silva,Burnley,Unowned,137,382,25,1.2
-MID,Adama,Adama,West Ham,Unowned,177,382,25,1.0
-FWD,G.Jesus,Gabriel Jesus,Arsenal,Unowned,47,387,24,1.7
-FWD,Abraham,Tammy Abraham,Aston Villa,Unowned,48,388,23,1.9
-FWD,Nketiah,Eddie Nketiah,Crystal Palace,Unowned,48,388,23,1.9
-DEF,Agbadou,Emmanuel Agbadou,Wolves,Unowned,139,388,23,1.6
-MID,James,Daniel James,Leeds,Unowned,179,388,23,1.2
-DEF,Patterson,Nathan Patterson,Everton,Unowned,140,392,22,3.1
-GKP,Johnstone,Sam Johnstone,Wolves,Unowned,25,393,21,1.8
-MID,Armstrong,Harrison Armstrong,Everton,Unowned,180,393,21,1.6
-MID,Bailey,Leon Bailey,Aston Villa,Unowned,180,393,21,1.6
-DEF,Scarles,Ollie Scarles,West Ham,Unowned,141,393,21,1.6
-GKP,Kinsky,Antonín Kinsky,Spurs,Ethan Ellsworth,26,397,20,2.9
-DEF,Chadi Riad,Chadi Dnanou,Crystal Palace,Unowned,142,397,20,2.2
-DEF,Worrall,Joe Worrall,Burnley,Unowned,142,397,20,1.8
-DEF,Milosavljević,Veljko Milosavljević,Bournemouth,Unowned,144,400,19,2.7
-DEF,Lewis,Rico Lewis,Man City,Unowned,144,400,19,1.7
-DEF,Hato,Jorrel Hato,Chelsea,Unowned,144,400,19,0.9
-MID,Dibling,Tyler Dibling,Everton,Unowned,182,403,18,1.3
-DEF,Clyne,Nathaniel Clyne,Crystal Palace,Unowned,147,404,17,1.7
-DEF,Dragusin,Radu Dragusin,Spurs,Unowned,147,404,17,1.7
-MID,Bissouma,Yves Bissouma,Spurs,Unowned,183,404,17,1.5
-MID,McAtee,James McAtee,Nott'm Forest,Unowned,183,404,17,1.2
-FWD,Uche,Christantus Uche,Crystal Palace,Unowned,50,404,17,1.2
-FWD,Piroe,Joël Piroe,Leeds,Unowned,50,404,17,1.1
-GKP,Ellborg,Melker Ellborg,Sunderland,Unowned,27,410,16,5.3
-MID,Dowman,Max Dowman,Arsenal,Justin Miller,185,410,16,2.7
-MID,O'Riley,Matt O'Riley,Brighton,Unowned,185,410,16,2.7
-GKP,M.Bizot,Marco Bizot,Aston Villa,Unowned,27,410,16,2.3
-DEF,Stones,John Stones,Man City,Unowned,149,410,16,1.8
-FWD,Tzimas,Stefanos Tzimas,Brighton,Unowned,52,410,16,1.8
-MID,Angel,Angel,Wolves,Unowned,185,410,16,1.3
-MID,George,Tyrique George,Everton,Unowned,185,410,16,1.1
-MID,Reed,Harrison Reed,Fulham,Unowned,189,418,15,2.1
-DEF,Pinnock,Ethan Pinnock,Brentford,Unowned,150,419,14,3.5
-DEF,Cirkin,Dennis Cirkin,Sunderland,Unowned,150,419,14,1.8
-DEF,Doherty,Matt Doherty,Wolves,Unowned,150,419,14,1.3
-MID,Mundle,Romaine Mundle,Sunderland,Unowned,190,419,14,1.0
-GKP,Trafford,James Trafford,Man City,Unowned,29,423,13,3.2
-MID,Carvalho,Fábio Carvalho,Brentford,Unowned,191,423,13,2.2
-DEF,Sonne,Oliver Sonne,Burnley,Unowned,153,423,13,1.9
-MID,Angulo,Nilson Angulo,Sunderland,Unowned,191,423,13,1.6
-DEF,Jair Cunha,Jair Filho,Nott'm Forest,Unowned,153,423,13,1.4
-FWD,Marc Guiu,Marc Paz,Chelsea,Unowned,53,423,13,1.3
-MID,Nelson,Reiss Nelson,Brentford,Unowned,191,423,13,1.3
-MID,Lavia,Roméo Lavia,Chelsea,Unowned,191,423,13,1.1
-MID,Onyeka,Frank Onyeka,Brentford,Unowned,195,431,12,2.0
-MID,Endo,Endo,Liverpool,Unowned,195,431,12,1.5
-FWD,Füllkrug,Niclas Füllkrug,West Ham,Unowned,54,431,12,1.5
-MID,Fer López,Fer González,Wolves,Unowned,195,431,12,1.3
-MID,Harrison,Jack Harrison,Leeds,Unowned,195,431,12,1.1
-GKP,Ortega Moreno,Stefan Ortega Moreno,Nott'm Forest,Unowned,30,436,11,3.7
-GKP,John,John,Nott'm Forest,Unowned,30,436,11,2.2
-GKP,Bayindir,Altay Bayindir,Man Utd,Unowned,30,436,11,1.8
-DEF,Netz,Luca Netz,Nott'm Forest,Unowned,155,436,11,1.6
-MID,Gannon-Doak,Ben Gannon-Doak,Bournemouth,Unowned,199,436,11,1.4
-DEF,Davies,Ben Davies,Spurs,Unowned,156,441,10,3.3
-DEF,Coppola,Diego Coppola,Brighton,Unowned,156,441,10,2.0
-DEF,Hoever,Ki-Jana Hoever,Wolves,Unowned,156,441,10,1.2
-DEF,Pedro Lima,Pedro Lima,Wolves,Unowned,156,441,10,1.1
-FWD,Lucca,Lorenzo Lucca,Nott'm Forest,Unowned,55,445,9,2.2
-GKP,Jörgensen,Filip Jörgensen,Chelsea,Unowned,33,445,9,1.8
-MID,Kovačić,Mateo Kovačić,Man City,Unowned,200,445,9,1.5
-MID,Irving,Andy Irving,West Ham,Unowned,200,445,9,1.3
-FWD,Kalimuendo,Arnaud Kalimuendo,Nott'm Forest,Unowned,55,445,9,1.0
-MID,Mohamadou Kanté,Mohamadou Kanté,West Ham,Unowned,200,445,9,0.8
-DEF,Colwill,Levi Colwill,Chelsea,Unowned,160,451,8,2.7
-MID,Edozie,Tom Edozie,Wolves,Unowned,203,451,8,2.7
-MID,G.Rodriguez,Guido Rodriguez,West Ham,Unowned,203,451,8,1.3
-MID,Nwaneri,Ethan Nwaneri,Arsenal,Unowned,203,451,8,1.3
-MID,Tóth.A,Alex Tóth.A,Bournemouth,Unowned,203,451,8,0.9
-GKP,Benitez,Walter Benitez,Crystal Palace,Unowned,34,456,7,7.0
-GKP,Weiss,Max Weiss,Burnley,Levi Morant,34,456,7,2.3
-DEF,Zinchenko,Oleksandr Zinchenko,Nott'm Forest,Unowned,161,456,7,1.4
-MID,Nørgaard,Christian Nørgaard,Arsenal,Unowned,207,456,7,1.0
-DEF,B.Badiashile,Benoît Badiashile,Chelsea,Unowned,161,456,7,0.9
-GKP,Bentley,Daniel Bentley,Wolves,Unowned,36,461,6,2.0
-GKP,Woodman,Freddie Woodman,Liverpool,Unowned,36,461,6,2.0
-DEF,Igor,Igor,Brighton,Unowned,163,461,6,1.5
-DEF,Mayers,Ezra Mayers,West Ham,Unowned,163,461,6,1.0
-MID,Nyoni,Trey Nyoni,Liverpool,Unowned,208,461,6,1.0
-MID,Trésor,Mike Trésor,Burnley,Unowned,208,461,6,1.0
-FWD,Kusi-Asare,Jonah Kusi-Asare,Fulham,Unowned,57,461,6,0.9
-DEF,Sosa,Borna Sosa,Crystal Palace,Unowned,163,461,6,0.9
-DEF,Alleyne,Max Alleyne,Man City,Unowned,166,469,5,2.5
-DEF,Coleman,Séamus Coleman,Everton,Unowned,166,469,5,1.0
-MID,Elliott,Harvey Elliott,Aston Villa,Unowned,210,469,5,1.0
-MID,L.Guilherme,Luis Guilherme,West Ham,Unowned,210,469,5,1.0
-FWD,Barnes,Ashley Barnes,Burnley,Unowned,58,469,5,0.9
-DEF,A.García,Andrés García,Aston Villa,Unowned,166,469,5,0.8
-MID,Watson,Tom Watson,Brighton,Unowned,210,469,5,0.8
-MID,H.Traorè,Hamed Traorè,Bournemouth,Unowned,213,476,4,4.0
-MID,Howell,Harry Howell,Brighton,Unowned,213,476,4,1.3
-FWD,Amdouni,Zeki Amdouni,Burnley,Unowned,59,476,4,1.0
-MID,Donovan,Romelle Donovan,Brentford,Unowned,213,476,4,1.0
-MID,Esse,Romain Esse,Crystal Palace,Unowned,213,476,4,1.0
-MID,March,Solly March,Brighton,Unowned,213,476,4,1.0
-DEF,N.Aguerd,Nayef Aguerd,West Ham,Unowned,169,482,3,1.5
-DEF,Abbott,Zach Abbott,Nott'm Forest,Unowned,169,482,3,1.0
-MID,Alysson,Alysson,Aston Villa,Unowned,218,482,3,1.0
-MID,J.Fletcher,Jack Fletcher,Man Utd,Unowned,218,482,3,1.0
-MID,Lacey,Shea Lacey,Man Utd,Unowned,218,482,3,1.0
-DEF,M.Sarr,Mamadou Sarr,Chelsea,Unowned,169,482,3,1.0
-MID,Maddison,James Maddison,Spurs,Unowned,218,482,3,1.0
-DEF,Malacia,Tyrell Malacia,Man Utd,Unowned,169,482,3,1.0
-MID,Neil,Dan Neil,Sunderland,Unowned,218,482,3,1.0
-DEF,Soler,Julio Soler,Bournemouth,Unowned,169,482,3,1.0
-MID,Buonanotte,Facundo Buonanotte,Leeds,Unowned,218,482,3,0.8
-DEF,Souza,João Souza,Spurs,Unowned,169,482,3,0.8
-GKP,Arrizabalaga,Kepa Arrizabalaga,Arsenal,Unowned,38,494,2,2.0
-MID,Cardines,Rio Cardines,Crystal Palace,Unowned,224,494,2,2.0
-DEF,A.Murphy,Alex Murphy,Newcastle,Unowned,175,494,2,1.0
-DEF,Byram,Sam Byram,Leeds,Unowned,175,494,2,1.0
-MID,Chirewa,Tawanda Chirewa,Wolves,Unowned,224,494,2,1.0
-MID,Dasilva,Josh Dasilva,Brentford,Unowned,224,494,2,1.0
-MID,Drakes-Thomas,Joél Drakes-Thomas,Crystal Palace,Unowned,224,494,2,1.0
-MID,Fletcher,Tyler Fletcher,Man Utd,Unowned,224,494,2,1.0
-MID,George Hemmings,George Hemmings,Aston Villa,Unowned,224,494,2,1.0
-FWD,Marshall,Callum Marshall,West Ham,Unowned,60,494,2,1.0
-MID,Mukasa,Divine Mukasa,Man City,Unowned,224,494,2,1.0
-FWD,Scarlett,Dane Scarlett,Spurs,Unowned,60,494,2,1.0
-DEF,Seelt,Jenson Seelt,Sunderland,Unowned,175,494,2,1.0
-MID,Abbey,Jerome Abbey,Wolves,Unowned,231,507,1,1.0
-MID,Banel,Jaydon Banel,Burnley,Unowned,231,507,1,1.0
-MID,Bendito Mantato,Bendito Mantato,Man Utd,Unowned,231,507,1,1.0
-MID,Burrowes,Bradley Burrowes,Aston Villa,Unowned,231,507,1,1.0
-DEF,Byfield,Jun'ai Byfield,Spurs,Unowned,178,507,1,1.0
-MID,Derry,Jesse Derry,Chelsea,Unowned,231,507,1,1.0
-MID,Earthy,George Earthy,West Ham,Unowned,231,507,1,1.0
-DEF,Fredricson,Tyler Fredricson,Man Utd,Unowned,178,507,1,1.0
-FWD,Furo,Kaye Furo,Brentford,Unowned,62,507,1,1.0
-GKP,Gunn,Angus Gunn,Nott'm Forest,Unowned,39,507,1,1.0
-MID,Jimoh-Aloba,Jamaldeen Jimoh-Aloba,Aston Villa,Unowned,231,507,1,1.0
-MID,Jocelin.T,Djiamgone Jocelin.T,Sunderland,Unowned,231,507,1,1.0
-MID,Jota,João Jota,Nott'm Forest,Unowned,231,507,1,1.0
-FWD,Kalajdžić,Saša Kalajdžić,Wolves,Unowned,62,507,1,1.0
-MID,Knight,Joe Knight,Brighton,Unowned,231,507,1,1.0
-FWD,Mheuka,Shumaira Mheuka,Chelsea,Unowned,62,507,1,1.0
-MID,Milambo,Antoni Milambo,Brentford,Unowned,231,507,1,1.0
-FWD,Neave,Sean Neave,Newcastle,Unowned,62,507,1,1.0
-MID,Olusesi,Callum Olusesi,Spurs,Unowned,231,507,1,1.0
-MID,Oriola,Nehemiah Oriola,Brighton,Unowned,231,507,1,1.0
-MID,Peart-Harris,Myles Peart-Harris,Brentford,Unowned,231,507,1,1.0
-MID,Roberts,Patrick Roberts,Sunderland,Unowned,231,507,1,1.0
-MID,Rodney,Kaden Rodney,Crystal Palace,Unowned,231,507,1,1.0
-DEF,Rowswell,James Rowswell,Spurs,Unowned,178,507,1,1.0
-GKP,Valdimarsson,Hákon Valdimarsson,Brentford,Unowned,39,507,1,1.0
-MID,Winterburn,Ben Winterburn,Bournemouth,Unowned,231,507,1,1.0
-FWD,Édouard,Odsonne Édouard,Crystal Palace,Unowned,62,507,1,1.0
-DEF,Lascelles,Jamaal Lascelles,Newcastle,Unowned,178,507,1,0.5
-MID,D.Essugo,Dário Essugo,Chelsea,Unowned,231,507,1,0.3
-DEF,Masuaku,Arthur Masuaku,Sunderland,Unowned,178,507,1,0.3
-MID,A.Ramsey,Aaron Ramsey,Burnley,Unowned,249,537,0,0.0
-FWD,Abdullahi,Ahmed Abdullahi,Sunderland,Unowned,67,537,0,0.0
-MID,Adewumi,Oluwaseun Adewumi,Burnley,Unowned,249,537,0,0.0
-FWD,Adu-Adjei,Daniel Adu-Adjei,Bournemouth,Unowned,67,537,0,0.0
-MID,Agbinone,Asher Agbinone,Crystal Palace,Unowned,249,537,0,0.0
-MID,Ahamada,Naouirou Ahamada,Crystal Palace,Unowned,249,537,0,0.0
-DEF,Akanji,Manuel Akanji,Man City,Unowned,183,537,0,0.0
-MID,Akhamrich,Yusuf Akhamrich,Spurs,Unowned,249,537,0,0.0
-DEF,Akinmboni,Matai Akinmboni,Bournemouth,Unowned,183,537,0,0.0
-MID,Alabi,Sam Alabi,Newcastle,Unowned,249,537,0,0.0
-MID,Aleksić,Milan Aleksić,Sunderland,Unowned,249,537,0,0.0
-DEF,Alese,Aji Alese,Sunderland,Unowned,183,537,0,0.0
-DEF,Alex Moreno,Álex Alex Moreno,Aston Villa,Unowned,183,537,0,0.0
-DEF,Amass,Harry Amass,Man Utd,Unowned,183,537,0,0.0
-DEF,Amissah,Samuel Amissah,Fulham,Unowned,183,537,0,0.0
-DEF,Anderson,Joe Anderson,Sunderland,Unowned,183,537,0,0.0
-MID,Andreas,Andreas,Fulham,Unowned,249,537,0,0.0
-DEF,Anselmino,Aarón Anselmino,Chelsea,Unowned,183,537,0,0.0
-MID,Antony,Antony,Man Utd,Unowned,249,537,0,0.0
-MID,Antoñito C.,Antoñito Campillo,Newcastle,Unowned,249,537,0,0.0
-DEF,Arthur,Benjamin Arthur,Brentford,Unowned,183,537,0,0.0
-DEF,Ashby,Harrison Ashby,Newcastle,Unowned,183,537,0,0.0
-GKP,Austin,Brandon Austin,Spurs,Unowned,41,537,0,0.0
-DEF,Aznou,Adam Aznou,Everton,Unowned,183,537,0,0.0
-MID,B.Traore,Boubacar Traore,Wolves,Unowned,249,537,0,0.0
-MID,Ba,Abdoullah Ba,Sunderland,Unowned,249,537,0,0.0
-MID,Bajcetic,Stefan Bajcetic,Liverpool,Unowned,249,537,0,0.0
-GKP,Balcombe,Ellery Balcombe,Brentford,Unowned,41,537,0,0.0
-FWD,Bamford,Patrick Bamford,Leeds,Unowned,67,537,0,0.0
-MID,Barrenechea,Enzo Barrenechea,Aston Villa,Unowned,249,537,0,0.0
-MID,Bates,Callum Bates,Everton,Unowned,249,537,0,0.0
-DEF,Benamar,Dean Benamar,Crystal Palace,Unowned,183,537,0,0.0
-GKP,Benda,Steven Benda,Fulham,Unowned,41,537,0,0.0
-MID,Benson,Manuel Benson,Burnley,Unowned,249,537,0,0.0
-MID,Bentt,Luka Bentt,Brentford,Unowned,249,537,0,0.0
-GKP,Bettinelli,Marcus Bettinelli,Man City,Unowned,41,537,0,0.0
-DEF,Bevan,Owen Bevan,Bournemouth,Unowned,183,537,0,0.0
-MID,Boateng,Enock Boateng,Burnley,Unowned,249,537,0,0.0
-DEF,Boly,Willy Boly,Nott'm Forest,Unowned,183,537,0,0.0
-MID,Brierley,George Brierley,Burnley,Unowned,249,537,0,0.0
-MID,Broggio,Ben Broggio,Aston Villa,Unowned,249,537,0,0.0
-GKP,Brooks,Alfie Brooks,Wolves,Unowned,41,537,0,0.0
-MID,Browne,Alan Browne,Sunderland,Unowned,249,537,0,0.0
-MID,Bryan,Bryan,Spurs,Unowned,249,537,0,0.0
-GKP,C.Miguel,Carlos Miguel,Nott'm Forest,Unowned,41,537,0,0.0
-GKP,Cairns,Alex Cairns,Leeds,Unowned,41,537,0,0.0
-DEF,Campbell,Elijah Campbell,Everton,Unowned,183,537,0,0.0
-DEF,Carroll,TJ Carroll,Aston Villa,Unowned,183,537,0,0.0
-DEF,Casey,Kaelan Casey,West Ham,Unowned,183,537,0,0.0
-FWD,Casey,Ben Casey,Crystal Palace,Unowned,67,537,0,0.0
-DEF,Cashin,Eiran Cashin,Brighton,Unowned,183,537,0,0.0
-MID,Chadwick,Rhys Chadwick,Leeds,Unowned,249,537,0,0.0
-MID,Chambers,Sam Chambers,Leeds,Unowned,249,537,0,0.0
-FWD,Chiwome,Leon Chiwome,Wolves,Unowned,67,537,0,0.0
-MID,Churlinov,Darko Churlinov,Burnley,Unowned,249,537,0,0.0
-DEF,Clarke,Brayden Clarke,Arsenal,Unowned,183,537,0,0.0
-MID,Collyer,Toby Collyer,Man Utd,Unowned,249,537,0,0.0
-MID,Cornet,Maxwel Cornet,West Ham,Unowned,249,537,0,0.0
-GKP,Cox,Matthew Cox,Brentford,Unowned,41,537,0,0.0
-MID,Cresswell,Alfie Cresswell,Leeds,Unowned,249,537,0,0.0
-MID,Crew,Charlie Crew,Leeds,Unowned,249,537,0,0.0
-DEF,Cuiabano,Luis Cuiabano,Nott'm Forest,Unowned,183,537,0,0.0
-DEF,D.Leon,Diego Leon,Man Utd,Unowned,183,537,0,0.0
-MID,Da Silva Moreira,Eric Da Silva Moreira,Nott'm Forest,Unowned,249,537,0,0.0
-MID,DaCosta,Malcom DaCosta,Bournemouth,Unowned,249,537,0,0.0
-FWD,Danns,Jayden Danns,Liverpool,Unowned,67,537,0,0.0
-FWD,Darwin,Darwin,Liverpool,Unowned,67,537,0,0.0
-DEF,David Carmo,David Carmo,Nott'm Forest,Unowned,183,537,0,0.0
-DEF,Delcroix,Hannes Delcroix,Burnley,Unowned,183,537,0,0.0
-MID,Dendoncker,Leander Dendoncker,Aston Villa,Unowned,249,537,0,0.0
-GKP,Dennis,Will Dennis,Bournemouth,Unowned,41,537,0,0.0
-DEF,Dixon,Roman Dixon,Everton,Unowned,183,537,0,0.0
-MID,Dobbin,Lewis Dobbin,Aston Villa,Unowned,249,537,0,0.0
-DEF,Dodgson,Owen Dodgson,Burnley,Unowned,183,537,0,0.0
-MID,Doucouré,Cheick Doucouré,Crystal Palace,Unowned,249,537,0,0.0
-MID,Ebere,Coby Ebere,Everton,Unowned,249,537,0,0.0
-MID,Ebiowei,Malcolm Ebiowei,Crystal Palace,Unowned,249,537,0,0.0
-MID,Eboué,Mathis Eboué,Chelsea,Unowned,249,537,0,0.0
-MID,Echeverri,Claudio Echeverri,Man City,Unowned,249,537,0,0.0
-GKP,Ederson M.,Ederson Moraes,Man City,Unowned,41,537,0,0.0
-MID,Ekwah,Pierre Ekwah,Sunderland,Unowned,249,537,0,0.0
-MID,Emenalo,Landon Emenalo,Chelsea,Unowned,249,537,0,0.0
-DEF,Emerson,Emerson,West Ham,Unowned,183,537,0,0.0
-MID,Enciso,Julio Enciso,Brighton,Unowned,249,537,0,0.0
-DEF,Estupiñan,Pervis Estupiñan,Brighton,Unowned,183,537,0,0.0
-GKP,Eyestone,Julian Eyestone,Brentford,Unowned,41,537,0,0.0
-GKP,Fabianski,Lukasz Fabianski,West Ham,Unowned,41,537,0,0.0
-MID,Faivre,Romain Faivre,Bournemouth,Unowned,249,537,0,0.0
-FWD,Ferguson,Evan Ferguson,Brighton,Unowned,67,537,0,0.0
-MID,Fitzgerald,Jayce Fitzgerald,Man Utd,Unowned,249,537,0,0.0
-GKP,Foderingham,Wes Foderingham,West Ham,Unowned,41,537,0,0.0
-GKP,Forster,Fraser Forster,Bournemouth,Unowned,41,537,0,0.0
-FWD,Fraser,Nathan Fraser,Wolves,Unowned,67,537,0,0.0
-DEF,Fredrick,Benjamin Fredrick,Brentford,Unowned,183,537,0,0.0
-FWD,Fábio Silva,Fábio Silva,Wolves,Unowned,67,537,0,0.0
-MID,Fábio Vieira,Fábio Vieira,Arsenal,Unowned,249,537,0,0.0
-GKP,Gauci,Joe Gauci,Aston Villa,Unowned,41,537,0,0.0
-MID,Gelhardt,Joe Gelhardt,Leeds,Unowned,249,537,0,0.0
-GKP,Gillespie,Mark Gillespie,Newcastle,Unowned,41,537,0,0.0
-MID,Godo,Martial Godo,Fulham,Unowned,249,537,0,0.0
-DEF,Golambeckis,Airidas Golambeckis,West Ham,Unowned,183,537,0,0.0
-MID,Gonzalez,Enso Gonzalez,Wolves,Unowned,249,537,0,0.0
-GKP,Gracey,Josh Gracey,Wolves,Unowned,41,537,0,0.0
-FWD,Graham,Braiden Graham,Everton,Unowned,67,537,0,0.0
-FWD,Gray,Harry Gray,Leeds,Unowned,67,537,0,0.0
-MID,Gray,Charlie Gray,Man City,Unowned,249,537,0,0.0
-GKP,Green,Etienne Green,Burnley,Unowned,41,537,0,0.0
-MID,Greenwood,Sam Greenwood,Leeds,Unowned,249,537,0,0.0
-MID,Guedes,Gonçalo Guedes,Wolves,Unowned,249,537,0,0.0
-MID,Gyabi,Darko Gyabi,Leeds,Unowned,249,537,0,0.0
-MID,Gündoğan,İlkay Gündoğan,Man City,Unowned,249,537,0,0.0
-MID,H.Jones,Harrison Jones,Sunderland,Unowned,249,537,0,0.0
-MID,Harriman-Annous,Andre Harriman-Annous,Arsenal,Unowned,249,537,0,0.0
-MID,Harris,Luke Harris,Fulham,Unowned,249,537,0,0.0
-GKP,Harrison,Elyh Harrison,Man Utd,Unowned,41,537,0,0.0
-MID,Hayden,Isaac Hayden,Newcastle,Unowned,249,537,0,0.0
-MID,Heath,Isaac Heath,Everton,Unowned,249,537,0,0.0
-GKP,Heaton,Tom Heaton,Man Utd,Unowned,41,537,0,0.0
-GKP,Hegyi,Krisztián Hegyi,West Ham,Unowned,41,537,0,0.0
-GKP,Hein,Karl Hein,Arsenal,Unowned,41,537,0,0.0
-GKP,Herrick,Finlay Herrick,West Ham,Unowned,41,537,0,0.0
-MID,Heskey,Reigan Heskey,Man City,Unowned,249,537,0,0.0
-DEF,Hjelde,Leo Hjelde,Sunderland,Unowned,183,537,0,0.0
-GKP,Hladký,Václav Hladký,Burnley,Unowned,41,537,0,0.0
-MID,Hodge,Joe Hodge,Wolves,Unowned,249,537,0,0.0
-DEF,Holding,Rob Holding,Crystal Palace,Unowned,183,537,0,0.0
-GKP,Hollingshead,Ronnie Hollingshead,Aston Villa,Unowned,41,537,0,0.0
-DEF,Huggins,Niall Huggins,Sunderland,Unowned,183,537,0,0.0
-FWD,Højlund,Rasmus Højlund,Man Utd,Unowned,67,537,0,0.0
-MID,Iling Jr,Samuel Iling Jr,Aston Villa,Unowned,249,537,0,0.0
-DEF,Imray,Danny Imray,Crystal Palace,Unowned,183,537,0,0.0
-DEF,J.Araujo,Julián Araujo,Bournemouth,Unowned,183,537,0,0.0
-MID,J.Rak-Sakyi,Jesurun Rak-Sakyi,Crystal Palace,Unowned,249,537,0,0.0
-DEF,Jenson Jones,Jenson Jones,Sunderland,Unowned,183,537,0,0.0
-DEF,Ji-soo,Kim Ji-soo,Brentford,Unowned,183,537,0,0.0
-DEF,Johnson,Zak Johnson,Sunderland,Unowned,183,537,0,0.0
-MID,Jones,Jaydon Jones,Sunderland,Unowned,249,537,0,0.0
-DEF,Jordan,Jordan,Burnley,Unowned,183,537,0,0.0
-MID,Kabia,Ismeal Kabia,Arsenal,Unowned,249,537,0,0.0
-DEF,Kacurri,Maldini Kacurri,Arsenal,Unowned,183,537,0,0.0
-MID,Kavuma-McQueen,Ryan Kavuma-McQueen,Chelsea,Unowned,249,537,0,0.0
-GKP,King,Tom King,Everton,Unowned,41,537,0,0.0
-DEF,King,George King,Crystal Palace,Unowned,183,537,0,0.0
-DEF,Kiwior,Jakub Kiwior,Arsenal,Unowned,183,537,0,0.0
-MID,Koleosho,Luca Koleosho,Burnley,Unowned,249,537,0,0.0
-MID,Konak,Yunus Konak,Brentford,Unowned,249,537,0,0.0
-MID,Kone,Sékou Kone,Man Utd,Unowned,249,537,0,0.0
-DEF,Kporha,Caleb Kporha,Crystal Palace,Unowned,183,537,0,0.0
-DEF,Krafth,Emil Krafth,Newcastle,Unowned,183,537,0,0.0
-DEF,Kukonki,Godwill Kukonki,Man Utd,Unowned,183,537,0,0.0
-MID,Kulusevski,Dejan Kulusevski,Spurs,Unowned,249,537,0,0.0
-MID,Kuol,Garang Kuol,Newcastle,Unowned,249,537,0,0.0
-MID,Kyerematen,Rio Kyerematen,Spurs,Unowned,249,537,0,0.0
-MID,Lamadrid,Keiber Lamadrid,West Ham,Unowned,249,537,0,0.0
-DEF,Lamptey,Tariq Lamptey,Brighton,Unowned,183,537,0,0.0
-FWD,Lankshear,Will Lankshear,Spurs,Unowned,67,537,0,0.0
-GKP,Lecomte,Benjamin Lecomte,Fulham,Unowned,41,537,0,0.0
-DEF,Leon Routh,Leon Routh,Aston Villa,Unowned,183,537,0,0.0
-DEF,Leoni,Giovanni Leoni,Liverpool,Unowned,183,537,0,0.0
-DEF,Lienou,Jayden Lienou,Leeds,Unowned,183,537,0,0.0
-DEF,Lucky,Wellity Lucky,Liverpool,Unowned,183,537,0,0.0
-MID,Luis Díaz,Luis Marulanda,Liverpool,Unowned,249,537,0,0.0
-FWD,Luís Hemir,Luís Hemir,Sunderland,Unowned,67,537,0,0.0
-MID,M.França,Matheus França,Crystal Palace,Unowned,249,537,0,0.0
-MID,Maghoma,Paris Maghoma,Brentford,Unowned,249,537,0,0.0
-GKP,Mandas,Christos Mandas,Bournemouth,Unowned,41,537,0,0.0
-GKP,Marschall,Filip Marschall,Aston Villa,Unowned,41,537,0,0.0
-FWD,Marsh,Zach Marsh,Crystal Palace,Unowned,67,537,0,0.0
-FWD,Mateo Joseph,Mateo Fernández-Regatillo,Leeds,Unowned,67,537,0,0.0
-MID,Matete,Jay Matete,Sunderland,Unowned,249,537,0,0.0
-GKP,Matthews,Remi Matthews,Crystal Palace,Unowned,41,537,0,0.0
-MID,Mazilu,Adrian Mazilu,Brighton,Unowned,249,537,0,0.0
-MID,McAidoo,Ryan McAidoo,Man City,Unowned,249,537,0,0.0
-MID,McConnell,James McConnell,Liverpool,Unowned,249,537,0,0.0
-GKP,McGill,Tom McGill,Brighton,Unowned,41,537,0,0.0
-GKP,McKenna,Callan McKenna,Bournemouth,Unowned,41,537,0,0.0
-MID,McMahon-Brown,Kian McMahon-Brown,Burnley,Unowned,249,537,0,0.0
-DEF,McManus,Conor McManus,Brentford,Unowned,183,537,0,0.0
-GKP,McNally,Alfie McNally,Fulham,Unowned,41,537,0,0.0
-GKP,Mee,Dermot Mee,Man Utd,Unowned,41,537,0,0.0
-DEF,Meghoma,Jayden Meghoma,Brentford,Unowned,183,537,0,0.0
-DEF,Mepham,Chris Mepham,Bournemouth,Unowned,183,537,0,0.0
-GKP,Merrick,Max Merrick,Chelsea,Unowned,41,537,0,0.0
-GKP,Meslier,Illan Meslier,Leeds,Unowned,41,537,0,0.0
-MID,Metcalfe,Jenson Metcalfe,Everton,Unowned,249,537,0,0.0
-DEF,Meupiyou,Bastien Meupiyou,Wolves,Unowned,183,537,0,0.0
-DEF,Mfuni,Stephen Mfuni,Man City,Unowned,183,537,0,0.0
-MID,Min-hyeok,Yang Min-hyeok,Spurs,Unowned,249,537,0,0.0
-GKP,Moore,Simon Moore,Sunderland,Unowned,41,537,0,0.0
-MID,Moore,Mikey Moore,Spurs,Unowned,249,537,0,0.0
-MID,Moorhouse,Jack Moorhouse,Man Utd,Unowned,249,537,0,0.0
-MID,Moran,Andrew Moran,Brighton,Unowned,249,537,0,0.0
-FWD,Morgan,Iwan Morgan,Brentford,Unowned,67,537,0,0.0
-MID,Morrison,Kieran Morrison,Liverpool,Unowned,249,537,0,0.0
-MID,Morton,Tyler Morton,Liverpool,Unowned,249,537,0,0.0
-MID,Mudryk,Mykhailo Mudryk,Chelsea,Unowned,249,537,0,0.0
-FWD,N.Jackson,Nicolas Jackson,Chelsea,Unowned,67,537,0,0.0
-DEF,Nallo,Amara Nallo,Liverpool,Unowned,183,537,0,0.0
-DEF,Ndiaye,Talla Ndiaye,Liverpool,Unowned,183,537,0,0.0
-GKP,Neto,Norberto Neto,Bournemouth,Unowned,41,537,0,0.0
-DEF,Nichols,Josh Nichols,Arsenal,Unowned,183,537,0,0.0
-MID,Nkunku,Christopher Nkunku,Chelsea,Unowned,249,537,0,0.0
-GKP,Nna Noukeu,Blondy Nna Noukeu,Sunderland,Unowned,41,537,0,0.0
-MID,Nunes,Gustavo Nunes,Brentford,Unowned,249,537,0,0.0
-MID,Nypan,Sverre Nypan,Man City,Unowned,249,537,0,0.0
-MID,O'Brien,Lewis O'Brien,Nott'm Forest,Unowned,249,537,0,0.0
-DEF,O.Richards,Omar Richards,Nott'm Forest,Unowned,183,537,0,0.0
-FWD,Obafemi,Michael Obafemi,Burnley,Unowned,67,537,0,0.0
-FWD,Obi,Chido Obi,Man Utd,Unowned,67,537,0,0.0
-GKP,Odysseas,Odysseas,Newcastle,Unowned,41,537,0,0.0
-MID,Ojinnaka,Temple Ojinnaka,Wolves,Unowned,249,537,0,0.0
-DEF,Olagunju,Saheed Olagunju,Wolves,Unowned,183,537,0,0.0
-GKP,Onana,André Onana,Man Utd,Unowned,41,537,0,0.0
-MID,Onyango,Tyler Onyango,Everton,Unowned,249,537,0,0.0
-MID,Orford,Lewis Orford,West Ham,Unowned,249,537,0,0.0
-MID,Owen,Riley Owen,Brentford,Unowned,249,537,0,0.0
-MID,Ozoh,David Ozoh,Crystal Palace,Unowned,249,537,0,0.0
-MID,Paez,Kendry Paez,Chelsea,Unowned,249,537,0,0.0
-GKP,Patterson,Anthony Patterson,Sunderland,Unowned,41,537,0,0.0
-DEF,Patterson,Travis Patterson,Aston Villa,Unowned,183,537,0,0.0
-GKP,Paulsen,Alex Paulsen,Bournemouth,Unowned,41,537,0,0.0
-DEF,Pembele,Timothée Pembele,Sunderland,Unowned,183,537,0,0.0
-GKP,Penders,Mike Penders,Chelsea,Unowned,41,537,0,0.0
-MID,Philip,Philip,Bournemouth,Unowned,249,537,0,0.0
-MID,Phillips,Kalvin Phillips,Man City,Unowned,249,537,0,0.0
-DEF,Phillips,Ashley Phillips,Spurs,Unowned,183,537,0,0.0
-MID,Pimlott,Oliver Pimlott,Burnley,Unowned,249,537,0,0.0
-DEF,Pivas,Miodrag Pivas,Newcastle,Unowned,183,537,0,0.0
-DEF,Pond,Alfie Pond,Wolves,Unowned,183,537,0,0.0
-MID,Poveda,Ian Poveda,Sunderland,Unowned,249,537,0,0.0
-GKP,Proctor,Sam Proctor,Aston Villa,Unowned,41,537,0,0.0
-GKP,Pécsi,Ármin Pécsi,Liverpool,Unowned,41,537,0,0.0
-DEF,R.Williams,Rhys Williams,Liverpool,Unowned,183,537,0,0.0
-MID,Ramazani,Largie Ramazani,Leeds,Unowned,249,537,0,0.0
-DEF,Ramsay,Calvin Ramsay,Liverpool,Unowned,183,537,0,0.0
-MID,Rashford,Marcus Rashford,Man Utd,Unowned,249,537,0,0.0
-MID,Rawlings,Luke Rawlings,Wolves,Unowned,249,537,0,0.0
-FWD,Redmond,Zépiqueno Redmond,Aston Villa,Unowned,67,537,0,0.0
-MID,Rees-Dottin,Remy Rees-Dottin,Bournemouth,Unowned,249,537,0,0.0
-MID,Ridgeon,Seth Ridgeon,Fulham,Unowned,249,537,0,0.0
-DEF,Roberts,Connor Roberts,Burnley,Unowned,183,537,0,0.0
-DEF,Roerslev,Mads Roerslev,Brentford,Unowned,183,537,0,0.0
-DEF,Rowe,Triston Rowe,Aston Villa,Unowned,183,537,0,0.0
-GKP,Ruddy,John Ruddy,Newcastle,Unowned,41,537,0,0.0
-GKP,Rushworth,Carl Rushworth,Brighton,Unowned,41,537,0,0.0
-FWD,Rusyn,Nazarii Rusyn,Sunderland,Unowned,67,537,0,0.0
-MID,Sadi,Dominic Sadi,Bournemouth,Unowned,249,537,0,0.0
-DEF,Salmon,Marli Salmon,Arsenal,Unowned,183,537,0,0.0
-MID,Sambi,Albert Sambi,Arsenal,Unowned,249,537,0,0.0
-DEF,Sambo,Shurandy Sambo,Burnley,Unowned,183,537,0,0.0
-MID,Sarmiento,Jeremy Sarmiento,Brighton,Unowned,249,537,0,0.0
-GKP,Scherpen,Kjell Scherpen,Brighton,Unowned,41,537,0,0.0
-DEF,Schmidt,Isaac Schmidt,Leeds,Unowned,183,537,0,0.0
-GKP,Setford,Tommy Setford,Arsenal,Unowned,41,537,0,0.0
-MID,Seung soo,Seung-Soo Seung soo,Newcastle,Unowned,249,537,0,0.0
-DEF,Shahar,Leo Shahar,Newcastle,Unowned,183,537,0,0.0
-GKP,Sharman-Lowe,Teddy Sharman-Lowe,Chelsea,Unowned,41,537,0,0.0
-FWD,Sherif,Martin Sherif,Everton,Unowned,67,537,0,0.0
-DEF,Shield,Ollie Shield,Brentford,Unowned,183,537,0,0.0
-MID,Silcott-Duberry,Zain Silcott-Duberry,Bournemouth,Unowned,249,537,0,0.0
-FWD,Sillah,Lamin Sillah,Nott'm Forest,Unowned,67,537,0,0.0
-MID,Sima,Abdallah Sima,Brighton,Unowned,249,537,0,0.0
-DEF,Simmonds,Freddie Simmonds,Brighton,Unowned,183,537,0,0.0
-MID,Sinclair,Jimmy Sinclair,Nott'm Forest,Unowned,249,537,0,0.0
-MID,Sinisterra,Luis Sinisterra,Bournemouth,Unowned,249,537,0,0.0
-DEF,Slater,Jacob Slater,Brighton,Unowned,183,537,0,0.0
-GKP,Slonina,Gabriel Slonina,Chelsea,Unowned,41,537,0,0.0
-MID,Solomon,Manor Solomon,Spurs,Unowned,249,537,0,0.0
-MID,Son,Son,Spurs,Unowned,249,537,0,0.0
-DEF,Sousa,Lino Sousa,Aston Villa,Unowned,183,537,0,0.0
-MID,Stamenic,Marko Stamenic,Nott'm Forest,Unowned,249,537,0,0.0
-GKP,Steele,Jason Steele,Brighton,Unowned,41,537,0,0.0
-DEF,Stephenson,Joshua Stephenson,Brentford,Unowned,183,537,0,0.0
-MID,Stevens,Charlie Stevens,Bournemouth,Unowned,249,537,0,0.0
-MID,Sutherland,Ethan Sutherland,Wolves,Unowned,249,537,0,0.0
-DEF,Takai,Takai,Spurs,Unowned,183,537,0,0.0
-DEF,Targett,Matt Targett,Newcastle,Unowned,183,537,0,0.0
-DEF,Tasker,Charlie Tasker,Brighton,Unowned,183,537,0,0.0
-MID,Thwaites,Jim Thwaites,Man Utd,Unowned,249,537,0,0.0
-GKP,Travers,Mark Travers,Everton,Unowned,41,537,0,0.0
-MID,Trevitt,Ryan Trevitt,Brentford,Unowned,249,537,0,0.0
-MID,Triantis,Nectarios Triantis,Sunderland,Unowned,249,537,0,0.0
-DEF,Tsimikas,Konstantinos Tsimikas,Liverpool,Unowned,183,537,0,0.0
-GKP,Turner,Matt Turner,Nott'm Forest,Unowned,41,537,0,0.0
-MID,Tutierov,Tymur Tutierov,Sunderland,Unowned,249,537,0,0.0
-GKP,Tyrer,Harry Tyrer,Everton,Unowned,41,537,0,0.0
-MID,Umeh,Franco Umeh,Crystal Palace,Unowned,249,537,0,0.0
-DEF,Vitor Reis,Vitor Reis,Man City,Unowned,183,537,0,0.0
-DEF,Vuskovic,Luka Vuskovic,Spurs,Unowned,183,537,0,0.0
-DEF,Webster,Adam Webster,Brighton,Unowned,183,537,0,0.0
-DEF,Welch,Reece Welch,Everton,Unowned,183,537,0,0.0
-FWD,Wheatley,Ethan Wheatley,Man Utd,Unowned,67,537,0,0.0
-MID,White,Joe White,Newcastle,Unowned,249,537,0,0.0
-MID,Whitehall,Archie Whitehall,Nott'm Forest,Unowned,249,537,0,0.0
-MID,Whittaker,Jack Whittaker,Sunderland,Unowned,249,537,0,0.0
-MID,Williams-Barnett,Lucá Williams-Barnett,Spurs,Unowned,249,537,0,0.0
-FWD,Wilson,James Wilson,Spurs,Unowned,67,537,0,0.0
-GKP,Wright,James Wright,Aston Villa,Unowned,41,537,0,0.0
-FWD,Wright,Will Wright,Liverpool,Unowned,67,537,0,0.0
-FWD,Y.Chermiti,Youssef Chermiti,Everton,Unowned,67,537,0,0.0
-MID,Yalcouye,Malick Yalcouye,Brighton,Unowned,249,537,0,0.0
-DEF,Yasin,Yasin,Aston Villa,Unowned,183,537,0,0.0
-MID,Young,Kadan Young,Aston Villa,Unowned,249,537,0,0.0
-DEF,Zabarnyi,Illia Zabarnyi,Bournemouth,Unowned,183,537,0,0.0
-MID,Álvarez,Edson Álvarez,West Ham,Unowned,249,537,0,0.0
+element,code,fpl_position,player,full_name,pl_team,roster_owner,status,can_select,position_rank,overall_rank,season_points,points_per_game
+430,223094,FWD,Haaland,Erling Haaland,Man City,Ryan Donlan,a,True,1,1,239,6.8
+449,141746,MID,B.Fernandes,Bruno Fernandes,Man Utd,Drake Byrd,a,True,1,2,235,6.7
+5,226597,DEF,Gabriel,Gabriel,Arsenal,Ryan Houseman,a,True,1,3,209,6.5
+82,437730,MID,Semenyo,Antoine Semenyo,Man City,Dylan Reid,a,True,2,4,202,5.5
+515,222531,MID,Gibbs-White,Morgan Gibbs-White,Nott'm Forest,Ryan Donlan,a,True,3,5,188,5.1
+624,178186,FWD,Bowen,Jarrod Bowen,West Ham,Dylan Reid,a,True,2,6,187,4.9
+21,204480,MID,Rice,Declan Rice,Arsenal,Ryan Houseman,a,True,4,7,184,5.1
+136,502500,FWD,Thiago,Thiago,Brentford,Dylan Reid,a,True,3,8,181,4.8
+517,215379,MID,Anderson,Elliot Anderson,Nott'm Forest,Ryan Houseman,a,True,5,9,180,4.7
+260,209036,DEF,Guéhi,Marc Guéhi,Man City,Luke Lockwood,a,True,2,10,179,5.1
+249,475168,FWD,João Pedro,João Pedro,Chelsea,Dylan Reid,a,True,4,11,177,5.1
+72,221466,DEF,Senesi,Marcos Senesi,Bournemouth,Dylan Reid,a,True,3,12,175,4.7
+373,97032,DEF,Virgil,Virgil,Liverpool,Ryan Donlan,a,True,3,12,175,4.6
+291,17761,DEF,Tarkowski,James Tarkowski,Everton,Justin Miller,a,True,5,14,170,4.6
+47,244850,MID,Rogers,Morgan Rogers,Aston Villa,Alexander Chaban,a,True,6,15,169,4.6
+329,153682,MID,Wilson,Harry Wilson,Fulham,Justin Miller,a,True,7,16,168,4.7
+64,178301,FWD,Watkins,Ollie Watkins,Aston Villa,Justin Miller,a,True,5,17,167,4.5
+457,61256,MID,Casemiro,Carlos Casemiro,Man Utd,Drake Byrd,a,True,8,18,165,4.9
+74,494521,DEF,Truffert,Adrien Truffert,Bournemouth,Julius Long,a,True,6,18,165,4.3
+1,154561,GKP,Raya,David Raya,Arsenal,Ryan Houseman,a,True,1,20,162,4.4
+411,472769,DEF,O'Reilly,Nico O'Reilly,Man City,Justin Miller,a,True,7,21,160,4.7
+387,424876,MID,Szoboszlai,Dominik Szoboszlai,Liverpool,Ryan Houseman,a,True,9,21,160,4.4
+303,232928,MID,Garner,James Garner,Everton,Unowned,a,True,10,23,159,4.2
+16,223340,MID,Saka,Bukayo Saka,Arsenal,Levi Morant,a,True,11,24,157,5.1
+237,448047,MID,Enzo,Enzo,Chelsea,Julius Long,a,True,11,24,157,4.4
+488,208706,MID,Bruno G.,Bruno Moura,Newcastle,Drake Byrd,a,True,13,26,154,5.3
+407,465351,DEF,Matheus N.,Matheus Nunes,Man City,Luke Lockwood,a,True,8,26,154,4.5
+257,437499,DEF,Lacroix,Maxence Lacroix,Crystal Palace,Julius Long,a,True,8,26,154,4.4
+242,215413,MID,Dewsbury-Hall,Kiernan Dewsbury-Hall,Everton,Luke Lockwood,a,True,14,29,151,4.9
+694,200834,DEF,Mukiele,Nordi Mukiele,Sunderland,Ryan Houseman,a,True,10,29,151,4.7
+8,445122,DEF,J.Timber,Jurriën Timber,Arsenal,Unowned,d,True,11,31,149,5.0
+119,446008,MID,Mbeumo,Bryan Mbeumo,Man Utd,Luke Lockwood,a,True,15,32,148,4.5
+151,469142,DEF,Van Hecke,Jan Van Hecke,Brighton,Drake Byrd,a,True,12,32,148,4.1
+547,484420,MID,E.Le Fée,Enzo Le Fée,Sunderland,Dylan Reid,a,True,16,34,147,4.1
+390,441266,MID,Gravenberch,Ryan Gravenberch,Liverpool,Drake Byrd,a,True,17,35,144,4.0
+450,430871,MID,Cunha,Matheus Cunha,Man Utd,Ryan Donlan,a,True,18,36,143,4.3
+101,200720,GKP,Kelleher,Caoimhín Kelleher,Brentford,Ryan Donlan,a,True,2,36,143,3.9
+691,177815,FWD,Calvert-Lewin,Dominic Calvert-Lewin,Leeds,Ryan Donlan,a,True,6,38,142,4.1
+664,466525,MID,Stach,Anton Stach,Leeds,Ryan Houseman,i,True,19,39,137,4.7
+6,462424,DEF,Saliba,William Saliba,Arsenal,Drake Byrd,a,True,13,39,137,4.4
+84,201658,MID,Tavernier,Marcus Tavernier,Bournemouth,Drake Byrd,a,True,19,39,137,4.0
+256,247348,DEF,Muñoz,Daniel Muñoz,Crystal Palace,Drake Byrd,a,True,14,42,136,4.7
+83,533463,MID,O.Dango,Dango Dango,Brentford,Justin Miller,a,True,21,42,136,4.2
+226,180736,DEF,Chalobah,Trevoh Chalobah,Chelsea,Dylan Reid,a,True,14,42,136,4.0
+670,498016,GKP,Roefs,Robin Roefs,Sunderland,Unowned,a,True,3,42,136,3.9
+90,503139,MID,Scott,Alex Scott,Bournemouth,Levi Morant,a,True,21,42,136,3.7
+417,466052,MID,Cherki,Rayan Cherki,Man City,Ethan Ellsworth,a,True,23,47,135,4.1
+728,204936,GKP,Donnarumma,Gianluigi Donnarumma,Man City,Justin Miller,a,True,4,47,135,4.0
+708,551226,MID,M.Fernandes,Mateus Fernandes,West Ham,Alexander Chaban,a,True,23,47,135,3.8
+258,244723,DEF,Mitchell,Tyrick Mitchell,Crystal Palace,Unowned,a,True,16,47,135,3.6
+287,111234,GKP,Pickford,Jordan Pickford,Everton,Julius Long,a,True,4,47,135,3.6
+354,199598,MID,Ampadu,Ethan Ampadu,Leeds,Unowned,a,True,25,52,134,3.8
+26,481655,MID,Zubimendi,Martín Zubimendi,Arsenal,Unowned,a,True,26,53,133,3.5
+414,209244,MID,Foden,Phil Foden,Man City,Julius Long,a,True,27,54,131,4.0
+295,106611,DEF,Keane,Michael Keane,Everton,Ryan Houseman,a,True,17,54,131,4.0
+384,243298,MID,Gakpo,Cody Gakpo,Liverpool,Ethan Ellsworth,a,True,27,54,131,3.6
+253,172649,GKP,Henderson,Dean Henderson,Crystal Palace,Alexander Chaban,a,True,6,54,131,3.5
+139,489639,GKP,Verbruggen,Bart Verbruggen,Brighton,Justin Miller,a,True,7,58,130,3.4
+106,432830,DEF,Collins,Nathan Collins,Brentford,Julius Long,a,True,18,59,129,3.7
+374,204716,DEF,Konaté,Ibrahima Konaté,Liverpool,Luke Lockwood,a,True,18,59,129,3.6
+299,440993,MID,Ndiaye,Iliman Ndiaye,Everton,Justin Miller,a,True,29,61,128,4.0
+261,427623,DEF,Richards,Chris Richards,Crystal Palace,Drake Byrd,i,True,20,61,128,3.9
+661,224117,FWD,Gyökeres,Viktor Gyökeres,Arsenal,Julius Long,a,True,7,61,128,3.6
+508,215136,DEF,N.Williams,Neco Williams,Nott'm Forest,Ethan Ellsworth,a,True,20,61,128,3.5
+200,444180,MID,Anthony,Jaidon Anthony,Burnley,Alexander Chaban,a,True,30,65,127,3.4
+674,154296,MID,J.Palhinha,João Palhinha,Spurs,Unowned,a,True,31,66,126,3.8
+683,465642,DEF,Thiaw,Malick Thiaw,Newcastle,Luke Lockwood,a,True,22,66,126,3.6
+350,427637,MID,Aaronson,Brenden Aaronson,Leeds,Ethan Ellsworth,a,True,31,66,126,3.4
+178,50175,FWD,Welbeck,Danny Welbeck,Brighton,Ryan Houseman,a,True,8,66,126,3.4
+666,510663,FWD,Ekitiké,Hugo Ekitiké,Liverpool,Luke Lockwood,i,True,9,70,125,4.5
+684,201895,DEF,Alderete,Omar Alderete,Sunderland,Dylan Reid,d,True,23,70,125,3.8
+382,494595,MID,Wirtz,Florian Wirtz,Liverpool,Justin Miller,a,True,33,70,125,3.8
+236,247632,MID,Neto,Pedro Neto,Chelsea,Unowned,a,True,33,70,125,3.7
+120,513418,MID,Schade,Kevin Schade,Brentford,Ryan Donlan,a,True,33,70,125,3.6
+667,84450,MID,Xhaka,Granit Xhaka,Sunderland,Unowned,a,True,36,75,124,3.6
+67,457569,GKP,Petrović,Đorđe Petrović,Bournemouth,Drake Byrd,a,True,8,75,124,3.3
+381,118748,MID,M.Salah,Mohamed Salah,Liverpool,Luke Lockwood,a,True,37,77,123,4.6
+317,174874,DEF,Andersen,Joachim Andersen,Fulham,Unowned,s,True,24,77,123,3.7
+606,233963,DEF,Mavropanos,Konstantinos Mavropanos,West Ham,Justin Miller,a,True,25,79,122,3.9
+314,80201,GKP,Leno,Bernd Leno,Fulham,Alexander Chaban,a,True,9,79,122,3.2
+418,248875,MID,Doku,Jérémy Doku,Man City,Alexander Chaban,a,True,38,81,120,4.0
+32,98980,GKP,Martinez,Emiliano Martinez,Aston Villa,Ryan Houseman,a,True,10,81,120,3.8
+20,116216,MID,Trossard,Leandro Trossard,Arsenal,Julius Long,a,True,39,83,119,3.8
+597,212319,FWD,Richarlison,Richarlison,Spurs,Drake Byrd,a,True,10,83,119,3.7
+505,227444,DEF,Milenković,Nikola Milenković,Nott'm Forest,Unowned,a,True,26,83,119,3.1
+148,231416,DEF,F.Kadıoğlu,Ferdi Kadıoğlu,Brighton,Unowned,a,True,27,86,118,3.2
+267,232185,MID,Sarr,Ismaïla Sarr,Crystal Palace,Ethan Ellsworth,a,True,40,87,117,4.2
+160,592031,MID,Minteh,Yankuba Minteh,Brighton,Unowned,a,True,40,87,117,3.4
+568,441164,DEF,Pedro Porro,Pedro Sauceda,Spurs,Levi Morant,a,True,28,87,117,3.4
+36,199796,DEF,Cash,Matty Cash,Aston Villa,Alexander Chaban,a,True,28,87,117,3.3
+531,223827,DEF,Ballard,Daniel Ballard,Sunderland,Ryan Houseman,a,True,30,91,116,4.0
+575,491279,DEF,Van de Ven,Micky Van de Ven,Spurs,Alexander Chaban,a,True,30,91,116,3.3
+293,512462,DEF,O'Brien,Jake O'Brien,Everton,Alexander Chaban,a,True,30,91,116,3.1
+225,225796,DEF,James,Reece James,Chelsea,Alexander Chaban,a,True,33,94,115,4.0
+97,444102,FWD,Evanilson,Evanilson,Bournemouth,Drake Byrd,a,True,11,94,115,3.2
+107,249231,DEF,Lewis-Potter,Keane Lewis-Potter,Brentford,Unowned,a,True,33,94,115,3.2
+235,244851,MID,Palmer,Cole Palmer,Chelsea,Levi Morant,a,True,42,97,114,4.4
+283,231747,FWD,Mateta,Jean-Philippe Mateta,Crystal Palace,Ryan Houseman,a,True,12,97,114,3.6
+526,482973,FWD,Igor Jesus,Igor Jesus,Nott'm Forest,Luke Lockwood,a,True,12,97,114,3.1
+408,171314,DEF,Rúben,Rúben,Man City,Ryan Houseman,a,True,35,100,113,4.3
+113,444765,DEF,Van den Berg,Sepp Van den Berg,Brentford,Julius Long,a,True,35,100,113,3.5
+121,440089,MID,Damsgaard,Mikkel Damsgaard,Brentford,Ethan Ellsworth,a,True,43,100,113,3.4
+266,232413,MID,Eze,Eberechi Eze,Arsenal,Ryan Houseman,a,True,43,100,113,3.4
+100,560262,FWD,Kroupi.Jr,Junior Kroupi.Jr,Bournemouth,Ethan Ellsworth,a,True,14,100,113,3.4
+220,215059,GKP,Sánchez,Robert Sánchez,Chelsea,Luke Lockwood,a,True,11,100,113,3.2
+110,607464,DEF,Kayode,Michael Kayode,Brentford,Alexander Chaban,a,True,35,100,113,3.1
+443,106760,DEF,Shaw,Luke Shaw,Man Utd,Drake Byrd,a,True,35,100,113,3.0
+273,496221,MID,Wharton,Adam Wharton,Crystal Palace,Unowned,a,True,45,108,112,3.3
+337,102057,FWD,Raúl,Raúl,Fulham,Luke Lockwood,a,True,15,108,112,3.1
+679,485711,FWD,Šeško,Benjamin Šeško,Man Utd,Julius Long,d,True,16,110,111,3.7
+440,216051,DEF,Dalot,Diogo Dalot,Man Utd,Ethan Ellsworth,a,True,39,110,111,3.3
+77,463981,DEF,Hill,James Hill,Bournemouth,Ryan Donlan,a,True,40,112,110,3.8
+615,450070,MID,Summerville,Crysencio Summerville,West Ham,Luke Lockwood,a,True,46,112,110,3.5
+241,486672,MID,Caicedo,Moisés Caicedo,Chelsea,Unowned,a,True,46,112,110,3.3
+532,487676,DEF,Hume,Trai Hume,Sunderland,Unowned,a,True,40,112,110,2.9
+7,466075,DEF,Calafiori,Riccardo Calafiori,Arsenal,Luke Lockwood,a,True,42,116,109,4.2
+698,435997,MID,Okafor,Noah Okafor,Leeds,Unowned,i,True,48,116,109,3.9
+729,465247,GKP,Lammens,Senne Lammens,Man Utd,Unowned,a,True,12,116,109,3.4
+348,214225,DEF,Rodon,Joe Rodon,Leeds,Unowned,a,True,42,116,109,3.1
+715,470313,FWD,Woltemade,Nick Woltemade,Newcastle,Julius Long,a,True,17,120,108,3.3
+343,222694,DEF,Struijk,Pascal Struijk,Leeds,Unowned,a,True,44,120,108,3.2
+386,243016,MID,Mac Allister,Alexis Mac Allister,Liverpool,Unowned,a,True,49,120,108,2.9
+646,448089,MID,J.Gomes,João Gomes,Wolves,Unowned,a,True,50,123,107,3.1
+487,201666,MID,Barnes,Harvey Barnes,Newcastle,Alexander Chaban,a,True,51,124,106,2.9
+502,85633,GKP,Sels,Matz Sels,Nott'm Forest,Drake Byrd,a,True,13,125,105,3.4
+603,613804,DEF,Diouf,El Diouf,West Ham,Ethan Ellsworth,a,True,45,126,104,3.2
+224,179268,DEF,Cucurella,Marc Cucurella,Chelsea,Julius Long,a,True,45,126,104,3.1
+311,486385,FWD,Beto,Norberto Beto,Everton,Alexander Chaban,a,True,18,126,104,2.8
+129,508395,MID,Yarmoliuk,Yehor Yarmoliuk,Brentford,Unowned,a,True,52,126,104,2.8
+324,153133,MID,Iwobi,Alex Iwobi,Fulham,Unowned,a,True,53,130,103,3.6
+318,232892,DEF,Bassey,Calvin Bassey,Fulham,Ryan Donlan,a,True,47,130,103,3.4
+54,122806,MID,McGinn,John McGinn,Aston Villa,Unowned,a,True,53,130,103,3.4
+613,215439,MID,Souček,Tomáš Souček,West Ham,Levi Morant,a,True,53,130,103,2.9
+50,195546,MID,Buendía,Emiliano Buendía,Aston Villa,Unowned,a,True,56,134,102,2.8
+416,165809,MID,Bernardo,Bernardo,Man City,Julius Long,a,True,56,134,102,2.7
+485,232826,MID,Gordon,Anthony Gordon,Newcastle,Ryan Donlan,a,True,58,136,101,3.9
+146,83299,DEF,Dunk,Lewis Dunk,Brighton,Unowned,a,True,48,137,100,3.0
+38,199798,DEF,Konsa,Ezri Konsa,Aston Villa,Unowned,a,True,48,137,100,2.9
+344,434752,DEF,Bijol,Jaka Bijol,Leeds,Unowned,a,True,50,139,99,4.0
+215,431639,FWD,Flemming,Zian Flemming,Burnley,Levi Morant,a,True,19,139,99,3.4
+166,509416,MID,Ayari,Yasin Ayari,Brighton,Unowned,a,True,59,141,98,3.4
+126,207283,MID,Jensen,Mathias Jensen,Brentford,Unowned,a,True,59,141,98,2.7
+37,101188,DEF,Digne,Lucas Digne,Aston Villa,Unowned,a,True,51,143,97,3.1
+169,514254,MID,Gomez,Diego Gomez,Brighton,Unowned,a,True,61,143,97,3.0
+675,503714,MID,Ugochukwu,Lesley Ugochukwu,Burnley,Unowned,a,True,61,143,97,2.8
+469,98747,GKP,Pope,Nick Pope,Newcastle,Dylan Reid,a,True,14,146,96,3.6
+342,226182,DEF,Bogle,Jayden Bogle,Leeds,Unowned,a,True,52,146,96,2.8
+228,482609,DEF,Gusto,Malo Gusto,Chelsea,Unowned,a,True,52,146,96,2.8
+643,509291,MID,André,André,Wolves,Unowned,a,True,63,146,96,2.7
+470,67089,GKP,Dúbravka,Martin Dúbravka,Burnley,Levi Morant,a,True,14,146,96,2.7
+441,596777,DEF,Dorgu,Patrick Dorgu,Man Utd,Unowned,a,True,54,151,95,3.7
+328,184349,MID,Sessegnon,Ryan Sessegnon,Fulham,Unowned,a,True,64,151,95,3.5
+292,224967,DEF,Mykolenko,Vitalii Mykolenko,Everton,Unowned,a,True,54,151,95,2.9
+310,586309,FWD,Barry,Thierno Barry,Everton,Alexander Chaban,a,True,20,151,95,2.5
+173,467779,MID,Wieffer,Mats Wieffer,Brighton,Unowned,a,True,65,155,94,3.6
+707,220627,DEF,Justin,James Justin,Leeds,Unowned,a,True,56,155,94,3.2
+476,78916,DEF,Burn,Dan Burn,Newcastle,Levi Morant,a,True,57,157,93,3.2
+427,433036,MID,Reijnders,Tijjani Reijnders,Man City,Unowned,a,True,66,158,92,3.3
+636,231480,DEF,S.Bueno,Santiago Bueno,Wolves,Levi Morant,a,True,58,158,92,3.2
+733,441264,FWD,Brobbey,Brian Brobbey,Sunderland,Alexander Chaban,a,True,21,158,92,3.0
+569,221632,DEF,Romero,Cristian Romero,Spurs,Unowned,i,True,59,161,91,4.0
+366,116535,GKP,A.Becker,Alisson Becker,Liverpool,Luke Lockwood,a,True,16,161,91,3.5
+163,532529,MID,Hinshelwood,Jack Hinshelwood,Brighton,Unowned,a,True,67,161,91,3.4
+452,493250,MID,Amad,Amad,Man Utd,Dylan Reid,a,True,67,161,91,2.8
+330,207189,MID,Berge,Sander Berge,Fulham,Unowned,a,True,67,161,91,2.6
+442,95658,DEF,Maguire,Harry Maguire,Man Utd,Ethan Ellsworth,a,True,60,166,90,3.9
+565,184254,GKP,Vicario,Guglielmo Vicario,Spurs,Unowned,a,True,17,166,90,2.9
+475,220237,DEF,Botman,Sven Botman,Newcastle,Levi Morant,a,True,61,168,89,3.6
+521,210462,MID,Sangaré,Ibrahim Sangaré,Nott'm Forest,Unowned,a,True,70,168,89,3.2
+516,209046,MID,Hudson-Odoi,Callum Hudson-Odoi,Nott'm Forest,Unowned,i,True,71,170,88,2.9
+720,448104,DEF,Hincapie,Piero Hincapie,Arsenal,Levi Morant,a,True,62,171,87,3.5
+158,463067,MID,Georginio,Georginio,Brighton,Unowned,a,True,72,171,87,2.7
+585,202993,MID,Bentancur,Rodrigo Bentancur,Spurs,Unowned,a,True,73,173,86,3.3
+191,477717,DEF,Estève,Maxime Estève,Burnley,Unowned,a,True,63,174,85,2.5
+371,544877,DEF,Kerkez,Milos Kerkez,Liverpool,Unowned,a,True,63,174,85,2.5
+145,465730,DEF,De Cuyper,Maxim De Cuyper,Brighton,Ryan Donlan,a,True,65,176,84,2.8
+721,216055,MID,Florentino,Florentino,Burnley,Unowned,a,True,74,176,84,2.7
+302,80801,MID,Gana,Gana,Everton,Unowned,d,True,75,178,83,3.3
+506,575476,DEF,Murillo,Murillo,Nott'm Forest,Unowned,i,True,66,178,83,3.3
+553,549912,MID,Talbi,Chemsdine Talbi,Sunderland,Unowned,i,True,75,178,83,3.0
+633,490721,DEF,H.Bueno,Hugo Bueno,Wolves,Unowned,a,True,66,178,83,2.4
+693,503301,MID,Hutchinson,Omari Hutchinson,Nott'm Forest,Unowned,a,True,77,182,82,2.6
+489,114243,MID,J.Murphy,Jacob Murphy,Newcastle,Dylan Reid,a,True,77,182,82,2.5
+322,167074,DEF,Tete,Kenny Tete,Fulham,Unowned,a,True,68,184,81,3.7
+388,206915,MID,C.Jones,Curtis Jones,Liverpool,Unowned,a,True,79,184,81,2.4
+491,432422,MID,Tonali,Sandro Tonali,Newcastle,Unowned,d,True,79,184,81,2.3
+718,493362,MID,Xavi,Xavi,Spurs,Unowned,i,True,81,187,80,2.9
+671,75115,FWD,Wilson,Callum Wilson,West Ham,Unowned,a,True,22,187,80,2.5
+552,577669,MID,Sadiki,Noah Sadiki,Sunderland,Unowned,a,True,81,187,80,2.4
+325,209289,MID,Smith Rowe,Emile Smith Rowe,Fulham,Unowned,a,True,81,187,80,2.2
+403,477424,DEF,Gvardiol,Joško Gvardiol,Man City,Unowned,a,True,69,191,79,4.4
+419,114283,MID,Grealish,Jack Grealish,Everton,Unowned,i,True,84,191,79,4.0
+473,487838,DEF,Hall,Lewis Hall,Newcastle,Dylan Reid,a,True,69,191,79,2.6
+784,60307,MID,Groß,Pascal Groß,Brighton,Ryan Donlan,a,True,85,194,78,4.1
+573,232859,DEF,Spence,Djed Spence,Spurs,Unowned,a,True,71,194,78,2.6
+584,511499,MID,Tel,Mathys Tel,Spurs,Levi Morant,a,True,85,194,78,2.5
+85,200785,MID,Adams,Tyler Adams,Bournemouth,Unowned,a,True,87,197,77,3.1
+712,488024,MID,Yeremy,Yéremy Yeremy,Crystal Palace,Unowned,a,True,87,197,77,2.3
+681,467189,GKP,Hermansen,Mads Hermansen,West Ham,Julius Long,a,True,18,199,76,4.2
+500,538207,FWD,Osula,William Osula,Newcastle,Ethan Ellsworth,a,True,23,199,76,3.2
+59,449871,MID,Onana,Amadou Onana,Aston Villa,Unowned,a,True,89,199,76,3.0
+108,191866,DEF,Ajer,Kristoffer Ajer,Brentford,Unowned,a,True,72,199,76,2.8
+124,56979,MID,Henderson,Jordan Henderson,Brentford,Unowned,a,True,89,199,76,2.4
+582,460842,MID,Kudus,Mohammed Kudus,Spurs,Unowned,i,True,91,204,75,3.9
+654,247412,FWD,Strand Larsen,Jørgen Strand Larsen,Crystal Palace,Drake Byrd,a,True,24,204,75,2.1
+17,184029,MID,Ødegaard,Martin Ødegaard,Arsenal,Julius Long,a,True,92,206,74,3.1
+125,204580,MID,Janelt,Vitaly Janelt,Brentford,Unowned,a,True,92,206,74,3.0
+541,434399,DEF,Reinildo,Reinildo,Sunderland,Unowned,a,True,73,206,74,3.0
+752,647671,FWD,Mané,Mateus Mané,Wolves,Levi Morant,a,True,25,206,74,2.7
+714,551483,DEF,A.Jimenez,Álex Jimenez,Bournemouth,Unowned,a,True,73,206,74,2.4
+560,437505,FWD,Isidor,Wilson Isidor,Sunderland,Unowned,a,True,25,206,74,2.3
+490,180974,MID,Joelinton,Joelinton,Newcastle,Unowned,i,True,94,212,73,2.7
+458,516895,MID,Mainoo,Kobbie Mainoo,Man Utd,Luke Lockwood,a,True,94,212,73,2.6
+365,174594,FWD,Nmecha,Lukas Nmecha,Leeds,Ryan Houseman,a,True,27,212,73,2.4
+723,651426,DEF,Canvot,Jaydee Canvot,Crystal Palace,Unowned,a,True,75,215,72,3.6
+497,547719,MID,L.Miley,Lewis Miley,Newcastle,Unowned,i,True,96,215,72,3.1
+18,248857,MID,Madueke,Noni Madueke,Arsenal,Unowned,a,True,96,215,72,2.8
+341,59735,GKP,Darlow,Karl Darlow,Leeds,Ryan Donlan,a,True,19,218,71,3.2
+593,482442,MID,P.M.Sarr,Pape M.Sarr,Spurs,Unowned,a,True,98,218,71,2.7
+205,172567,MID,Cullen,Josh Cullen,Burnley,Unowned,i,True,99,220,70,3.9
+187,58621,DEF,Walker,Kyle Walker,Burnley,Unowned,a,True,76,220,70,1.9
+612,224024,MID,L.Paquetá,Lucas Paquetá,West Ham,Unowned,u,False,100,222,69,3.8
+421,220566,MID,Rodrigo,Rodrigo,Man City,Unowned,a,True,100,222,69,3.3
+272,152551,MID,Lerma,Jefferson Lerma,Crystal Palace,Unowned,a,True,100,222,69,2.2
+628,149065,GKP,José Sá,José Sá,Wolves,Unowned,a,True,20,225,68,3.0
+48,166989,MID,Tielemans,Youri Tielemans,Aston Villa,Unowned,a,True,103,225,68,2.7
+709,431248,DEF,Krejčí,Ladislav Krejčí,Wolves,Unowned,a,True,77,225,68,2.4
+304,490094,MID,Iroegbunam,Tim Iroegbunam,Everton,Unowned,a,True,103,225,68,2.3
+347,243526,DEF,Gudmundsson,Gabriel Gudmundsson,Leeds,Unowned,i,True,77,225,68,2.1
+808,499604,MID,Rayan,Rayan,Bournemouth,Dylan Reid,a,True,105,230,67,4.5
+507,159506,DEF,Aina,Ola Aina,Nott'm Forest,Dylan Reid,d,True,79,230,67,3.7
+406,578153,DEF,Khusanov,Abdukodir Khusanov,Man City,Ethan Ellsworth,a,True,79,230,67,3.2
+22,195384,MID,Merino,Mikel Merino,Arsenal,Unowned,a,True,105,230,67,3.0
+610,214590,DEF,Wan-Bissaka,Aaron Wan-Bissaka,West Ham,Unowned,a,True,79,230,67,2.7
+332,212314,MID,Lukić,Saša Lukić,Fulham,Unowned,a,True,105,230,67,2.6
+271,209400,MID,Kamada,Daichi Kamada,Crystal Palace,Unowned,a,True,105,230,67,2.4
+358,248056,MID,Tanaka,Tanaka,Leeds,Unowned,a,True,105,230,67,2.4
+697,489888,MID,Adli,Amine Adli,Bournemouth,Unowned,a,True,105,230,67,2.2
+736,488213,FWD,Tolu,Tolu,Wolves,Unowned,a,True,28,239,66,2.0
+544,547027,MID,Diarra,Habib Diarra,Sunderland,Unowned,a,True,111,240,65,3.2
+316,169528,DEF,Robinson,Antonee Robinson,Fulham,Unowned,a,True,82,240,65,3.0
+230,444463,DEF,Fofana,Wesley Fofana,Chelsea,Unowned,s,True,82,240,65,2.6
+580,242898,MID,Johnson,Brennan Johnson,Crystal Palace,Unowned,a,True,111,240,65,1.9
+41,244954,DEF,Pau,Pau,Aston Villa,Unowned,a,True,84,244,64,3.0
+370,216094,DEF,Frimpong,Jeremie Frimpong,Liverpool,Unowned,a,True,85,245,63,3.0
+192,494960,DEF,Hartman,Quilindschy Hartman,Burnley,Unowned,a,True,85,245,63,3.0
+570,135720,DEF,Danso,Kevin Danso,Spurs,Unowned,a,True,85,245,63,2.6
+423,465694,MID,N.Gonzalez,Nico Gonzalez,Man City,Unowned,a,True,113,245,63,2.5
+335,577725,MID,King,Josh King,Fulham,Unowned,a,True,113,245,63,2.0
+726,218328,MID,Chukwueze,Samuel Chukwueze,Fulham,Unowned,a,True,115,250,62,2.7
+157,451340,MID,Mitoma,Mitoma,Brighton,Unowned,i,True,115,250,62,2.5
+52,232653,MID,J.Ramsey,Jacob Ramsey,Newcastle,Unowned,a,True,115,250,62,2.2
+58,226944,MID,Kamara,Boubacar Kamara,Aston Villa,Unowned,i,True,118,253,61,3.4
+792,247670,FWD,Taty,Valentín Taty,West Ham,Justin Miller,a,True,29,253,61,3.4
+591,547701,MID,Gray,Archie Gray,Spurs,Unowned,a,True,118,253,61,2.5
+634,501837,DEF,Mosquera,Yerson Mosquera,Wolves,Unowned,a,True,88,253,61,2.3
+319,166477,DEF,Castagne,Timothy Castagne,Fulham,Unowned,a,True,88,253,61,2.0
+402,448514,DEF,Aït-Nouri,Rayan Aït-Nouri,Man City,Unowned,a,True,90,258,60,3.5
+477,441191,DEF,Livramento,Tino Livramento,Newcastle,Unowned,i,True,91,259,59,3.5
+207,465527,MID,Hannibal,Hannibal,Burnley,Unowned,a,True,120,259,59,2.2
+210,469272,MID,Tchaouna,Loum Tchaouna,Burnley,Unowned,a,True,120,259,59,2.0
+86,111317,MID,Brooks,David Brooks,Bournemouth,Unowned,a,True,120,259,59,1.9
+238,624773,MID,Estêvão,Estêvão,Chelsea,Unowned,i,True,123,263,58,2.6
+73,54469,DEF,Smith,Adam Smith,Bournemouth,Justin Miller,a,True,92,263,58,2.6
+455,184341,MID,Mount,Mason Mount,Man Utd,Unowned,a,True,123,263,58,2.5
+217,435973,FWD,Foster,Lyle Foster,Burnley,Unowned,a,True,30,263,58,2.2
+19,444145,MID,Martinelli,Gabriel Martinelli,Arsenal,Unowned,a,True,125,267,57,1.9
+55,88894,MID,Barkley,Ross Barkley,Aston Villa,Unowned,a,True,126,268,56,2.7
+413,438234,MID,Marmoush,Omar Marmoush,Man City,Unowned,a,True,126,268,56,2.7
+356,486520,MID,Gruev,Ilia Gruev,Leeds,Unowned,i,True,126,268,56,2.4
+493,180135,MID,Longstaff,Sean Longstaff,Leeds,Unowned,a,True,126,268,56,2.4
+453,493105,MID,Garnacho,Alejandro Garnacho,Chelsea,Unowned,a,True,126,268,56,2.3
+167,535301,MID,Baleba,Carlos Baleba,Brighton,Unowned,a,True,126,268,56,1.8
+444,550864,DEF,Yoro,Leny Yoro,Man Utd,Unowned,a,True,93,268,56,1.8
+209,167887,MID,Laurent,Josh Laurent,Burnley,Unowned,a,True,126,268,56,1.7
+53,204646,MID,Malen,Donyell Malen,Aston Villa,Unowned,u,False,133,276,55,2.6
+372,122798,DEF,Robertson,Andrew Robertson,Liverpool,Unowned,a,True,94,276,55,2.3
+732,247955,DEF,Geertruida,Lutsharel Geertruida,Sunderland,Unowned,a,True,94,276,55,2.0
+478,77794,DEF,Trippier,Kieran Trippier,Newcastle,Unowned,a,True,96,279,54,2.6
+642,184754,MID,Hee Chan,Hwang Hee Chan,Wolves,Unowned,a,True,134,279,54,2.1
+39,441302,DEF,Maatsen,Ian Maatsen,Aston Villa,Unowned,a,True,96,279,54,1.8
+438,230001,DEF,Mazraoui,Noussair Mazraoui,Man Utd,Unowned,a,True,98,282,53,2.6
+511,485047,DEF,Morato,Felipe Morato,Nott'm Forest,Unowned,a,True,98,282,53,2.5
+300,433154,MID,McNeil,Dwight McNeil,Everton,Unowned,a,True,135,282,53,2.4
+659,158534,DEF,Walker-Peters,Kyle Walker-Peters,West Ham,Unowned,a,True,98,282,53,2.3
+190,478969,DEF,Ekdal,Hjalmar Ekdal,Burnley,Unowned,a,True,101,286,52,2.7
+109,194010,DEF,Henry,Rico Henry,Brentford,Unowned,i,True,101,286,52,2.1
+735,247693,FWD,Kolo Muani,Randal Kolo Muani,Spurs,Levi Morant,a,True,31,286,52,1.7
+696,523705,DEF,Tchatchoua,Jackson Tchatchoua,Wolves,Unowned,a,True,101,286,52,1.7
+474,119471,DEF,Schär,Fabian Schär,Newcastle,Unowned,i,True,104,290,51,3.2
+437,221820,DEF,Martinez,Lisandro Martinez,Man Utd,Unowned,a,True,104,290,51,2.8
+600,84182,GKP,Areola,Alphonse Areola,West Ham,Unowned,a,True,21,290,51,2.5
+206,174592,MID,Edwards,Marcus Edwards,Burnley,Unowned,a,True,136,290,51,2.2
+40,149484,DEF,Mings,Tyrone Mings,Aston Villa,Unowned,a,True,106,294,50,2.9
+669,456512,MID,Ndoye,Dan Ndoye,Nott'm Forest,Unowned,a,True,137,294,50,2.1
+815,220362,DEF,Disasi,Axel Disasi,West Ham,Unowned,a,True,107,296,49,3.5
+586,570526,MID,Bergvall,Lucas Bergvall,Spurs,Unowned,a,True,138,296,49,2.1
+727,560552,MID,Kevin,Kevin,Fulham,Unowned,a,True,138,296,49,1.9
+635,483081,DEF,R.Gomes,Rodrigo Gomes,Wolves,Unowned,a,True,108,299,48,2.2
+519,250199,MID,Dominguez,Nicolás Dominguez,Nott'm Forest,Unowned,a,True,140,299,48,1.8
+486,449434,MID,Elanga,Anthony Elanga,Newcastle,Unowned,a,True,140,299,48,1.5
+193,461188,DEF,Humphreys,Bashir Humphreys,Burnley,Unowned,a,True,109,302,47,2.4
+87,158499,MID,Christie,Ryan Christie,Bournemouth,Unowned,s,True,142,302,47,1.8
+246,532605,MID,Andrey Santos,Andrey Santos,Chelsea,Unowned,a,True,142,302,47,1.7
+682,242882,DEF,Diakité,Bafodé Diakité,Bournemouth,Unowned,a,True,110,305,46,2.6
+609,462116,DEF,Todibo,Jean-Clair Todibo,West Ham,Unowned,a,True,110,305,46,2.0
+588,550839,MID,Odobert,Wilson Odobert,Spurs,Unowned,i,True,144,305,46,1.9
+152,111478,DEF,Veltman,Joël Veltman,Brighton,Unowned,a,True,110,305,46,1.9
+11,198869,DEF,White,Benjamin White,Arsenal,Unowned,i,True,113,309,45,3.8
+668,230376,MID,J.Arias,Jhon Arias,Wolves,Unowned,u,False,145,309,45,2.0
+250,463034,FWD,Delap,Liam Delap,Chelsea,Unowned,a,True,32,309,45,1.6
+270,108413,MID,Hughes,Will Hughes,Crystal Palace,Unowned,a,True,145,309,45,1.5
+796,232787,MID,Gallagher,Conor Gallagher,Spurs,Unowned,a,True,147,313,44,2.8
+677,485337,MID,Guessand,Evann Guessand,Crystal Palace,Unowned,a,True,147,313,44,2.1
+644,231057,MID,Bellegarde,Jean-Ricner Bellegarde,Wolves,Unowned,a,True,147,313,44,1.7
+436,209365,DEF,De Ligt,Matthijs De Ligt,Man Utd,Unowned,i,True,114,316,43,3.3
+665,201595,GKP,Perri,Lucas Perri,Leeds,Unowned,a,True,22,316,43,2.7
+527,210156,FWD,Awoniyi,Taiwo Awoniyi,Nott'm Forest,Unowned,a,True,33,316,43,2.5
+687,611922,MID,Ngumoha,Rio Ngumoha,Liverpool,Unowned,a,True,150,316,43,2.3
+678,440323,FWD,Broja,Armando Broja,Burnley,Unowned,a,True,33,316,43,1.8
+415,510281,MID,Savinho,Sávio Savinho,Man City,Unowned,a,True,150,316,43,1.8
+375,492777,DEF,Bradley,Conor Bradley,Liverpool,Unowned,i,True,115,322,42,2.8
+447,606745,DEF,Heaven,Ayden Heaven,Man Utd,Unowned,a,True,115,322,42,2.5
+719,564940,MID,S.Magassa,Soungoutou Magassa,West Ham,Unowned,a,True,152,322,42,1.9
+424,477555,MID,Bobb,Oscar Bobb,Fulham,Unowned,a,True,152,322,42,1.8
+466,458249,FWD,Zirkzee,Joshua Zirkzee,Man Utd,Unowned,a,True,35,322,42,1.8
+499,219168,FWD,Isak,Alexander Isak,Liverpool,Justin Miller,a,True,36,327,41,2.9
+525,60689,FWD,Wood,Chris Wood,Nott'm Forest,Unowned,a,True,36,327,41,2.7
+637,510362,DEF,Toti,Toti,Wolves,Unowned,a,True,117,327,41,2.2
+81,222683,MID,Kluivert,Justin Kluivert,Bournemouth,Unowned,a,True,154,327,41,2.0
+331,76357,MID,Cairney,Tom Cairney,Fulham,Unowned,a,True,154,327,41,1.7
+202,179458,MID,Bruun Larsen,Jacob Bruun Larsen,Burnley,Unowned,a,True,154,327,41,1.5
+596,154566,FWD,Solanke,Dominic Solanke,Spurs,Ryan Donlan,a,True,38,333,40,2.7
+88,155408,MID,Cook,Lewis Cook,Bournemouth,Unowned,a,True,157,333,40,2.2
+614,101178,MID,Ward-Prowse,James Ward-Prowse,Burnley,Unowned,a,True,157,333,40,2.2
+561,564406,FWD,Mayenda,Eliezer Mayenda,Sunderland,Unowned,a,True,38,333,40,2.0
+660,500040,DEF,Mosquera,Cristhian Mosquera,Arsenal,Ryan Donlan,a,True,118,333,40,2.0
+44,515597,DEF,Bogarde,Lamare Bogarde,Aston Villa,Unowned,a,True,118,333,40,1.4
+143,204120,DEF,Boscagli,Olivier Boscagli,Brighton,Unowned,a,True,120,339,39,3.2
+817,155511,FWD,Armstrong,Adam Armstrong,Wolves,Unowned,a,True,40,339,39,2.8
+717,500151,DEF,Savona,Nicolò Savona,Nott'm Forest,Unowned,i,True,120,339,39,2.8
+321,246301,DEF,J.Cuenca,Jorge Cuenca,Fulham,Unowned,a,True,120,339,39,2.6
+233,577016,DEF,Acheampong,Josh Acheampong,Chelsea,Unowned,a,True,120,339,39,2.3
+648,433312,MID,Munetsi,Marshall Munetsi,Wolves,Unowned,u,False,159,344,38,2.9
+459,232112,MID,Ugarte,Manuel Ugarte,Man Utd,Unowned,a,True,159,344,38,1.7
+494,200089,MID,Willock,Joe Willock,Newcastle,Unowned,a,True,159,344,38,1.6
+116,472713,DEF,Hickey,Aaron Hickey,Brentford,Unowned,a,True,124,347,37,1.8
+623,490142,MID,Potts,Freddie Potts,West Ham,Unowned,a,True,162,347,37,1.7
+456,209243,MID,Sancho,Jadon Sancho,Aston Villa,Unowned,a,True,162,347,37,1.6
+385,223541,MID,Chiesa,Federico Chiesa,Liverpool,Unowned,a,True,162,347,37,1.4
+30,219847,FWD,Havertz,Kai Havertz,Arsenal,Unowned,a,True,41,351,36,3.0
+725,513466,MID,Röhl,Merlin Röhl,Everton,Unowned,a,True,165,351,36,2.2
+405,126184,DEF,Aké,Nathan Aké,Man City,Unowned,a,True,125,351,36,2.0
+551,554197,MID,Rigg,Chris Rigg,Sunderland,Unowned,a,True,165,351,36,2.0
+276,489706,MID,Devenny,Justin Devenny,Crystal Palace,Unowned,a,True,165,351,36,1.7
+605,214048,DEF,Kilman,Maximilian Kilman,West Ham,Unowned,a,True,125,351,36,1.7
+338,244042,FWD,Muniz,Rodrigo Muniz,Fulham,Unowned,a,True,41,351,36,1.7
+162,513433,MID,Gruda,Brajan Gruda,Brighton,Unowned,u,False,168,358,35,1.9
+170,15157,MID,Milner,James Milner,Brighton,Unowned,a,True,168,358,35,1.8
+699,230046,MID,Douglas Luiz,Douglas Luiz,Aston Villa,Unowned,a,True,168,358,35,1.7
+181,647850,FWD,Kostoulas,Charalampos Kostoulas,Brighton,Unowned,a,True,43,358,35,1.7
+685,497949,DEF,Møller Wolfe,David Møller Wolfe,Wolves,Unowned,a,True,127,358,35,1.6
+367,449027,GKP,Mamardashvili,Giorgi Mamardashvili,Liverpool,Ethan Ellsworth,a,True,23,363,34,3.4
+543,535818,MID,Adingra,Simon Adingra,Sunderland,Unowned,u,False,171,363,34,2.4
+198,180804,DEF,Tuanzebe,Axel Tuanzebe,Burnley,Unowned,a,True,128,363,34,2.4
+232,109646,DEF,Tosin,Tosin,Chelsea,Unowned,a,True,128,363,34,2.1
+376,171287,DEF,Gomez,Joe Gomez,Liverpool,Unowned,a,True,130,367,33,1.6
+290,480455,DEF,Branthwaite,Jarrad Branthwaite,Everton,Unowned,i,True,131,368,32,3.2
+351,492859,MID,Gnonto,Wilfried Gnonto,Leeds,Unowned,a,True,172,368,32,1.4
+320,219924,DEF,Diop,Issa Diop,Fulham,Unowned,a,True,132,370,31,2.4
+734,110504,MID,Traoré,Bertrand Traoré,Sunderland,Unowned,a,True,173,371,30,2.5
+522,204968,MID,Yates,Ryan Yates,Nott'm Forest,Unowned,a,True,173,371,30,1.4
+713,184667,DEF,Lindelöf,Victor Lindelöf,Aston Villa,Unowned,a,True,133,373,29,1.7
+301,502697,MID,Alcaraz,Carlos Alcaraz,Everton,Unowned,a,True,175,373,29,1.4
+10,499169,DEF,Lewis-Skelly,Myles Lewis-Skelly,Arsenal,Justin Miller,a,True,133,373,29,1.4
+574,487053,DEF,Udogie,Destiny Udogie,Spurs,Unowned,a,True,133,373,29,1.4
+135,216646,FWD,Wissa,Yoane Wissa,Newcastle,Unowned,a,True,44,377,27,1.4
+98,168636,FWD,Enes Ünal,Enes Ünal,Bournemouth,Unowned,a,True,44,377,27,1.2
+539,167512,DEF,O'Nien,Luke O'Nien,Sunderland,Unowned,a,True,136,379,26,2.2
+731,476887,MID,Bakwa,Dilane Bakwa,Nott'm Forest,Unowned,a,True,176,379,26,1.9
+785,530335,FWD,Pablo,Pablo,West Ham,Ethan Ellsworth,a,True,46,379,26,1.9
+345,437738,DEF,Bornauw,Sebastiaan Bornauw,Leeds,Unowned,a,True,137,382,25,2.1
+673,225321,GKP,Ramsdale,Aaron Ramsdale,Newcastle,Dylan Reid,a,True,24,382,25,2.1
+239,463936,MID,Gittens,Jamie Gittens,Chelsea,Unowned,d,True,177,382,25,1.6
+195,549329,DEF,Lucas Pires,Lucas Silva,Burnley,Unowned,a,True,137,382,25,1.2
+326,159533,MID,Adama,Adama,West Ham,Unowned,d,True,177,382,25,1.0
+31,205651,FWD,G.Jesus,Gabriel Jesus,Arsenal,Unowned,a,True,47,387,24,1.7
+806,173879,FWD,Abraham,Tammy Abraham,Aston Villa,Unowned,a,True,48,388,23,1.9
+284,205533,FWD,Nketiah,Eddie Nketiah,Crystal Palace,Unowned,i,True,48,388,23,1.9
+631,516939,DEF,Agbadou,Emmanuel Agbadou,Wolves,Unowned,u,False,139,388,23,1.6
+353,200617,MID,James,Daniel James,Leeds,Unowned,a,True,179,388,23,1.2
+296,243571,DEF,Patterson,Nathan Patterson,Everton,Unowned,a,True,140,392,22,3.1
+627,101982,GKP,Johnstone,Sam Johnstone,Wolves,Unowned,i,True,25,393,21,1.8
+305,609873,MID,Armstrong,Harrison Armstrong,Everton,Unowned,a,True,180,393,21,1.6
+49,215711,MID,Bailey,Leon Bailey,Aston Villa,Unowned,a,True,180,393,21,1.6
+608,536109,DEF,Scarles,Ollie Scarles,West Ham,Unowned,a,True,141,393,21,1.6
+567,485055,GKP,Kinsky,Antonín Kinsky,Spurs,Ethan Ellsworth,a,True,26,397,20,2.9
+262,515621,DEF,Chadi Riad,Chadi Dnanou,Crystal Palace,Unowned,a,True,142,397,20,2.2
+199,208912,DEF,Worrall,Joe Worrall,Burnley,Unowned,a,True,142,397,20,1.8
+722,620487,DEF,Milosavljević,Veljko Milosavljević,Bournemouth,Unowned,a,True,144,400,19,2.7
+410,477064,DEF,Lewis,Rico Lewis,Man City,Unowned,a,True,144,400,19,1.7
+672,551210,DEF,Hato,Jorrel Hato,Chelsea,Unowned,a,True,144,400,19,0.9
+706,496661,MID,Dibling,Tyler Dibling,Everton,Unowned,a,True,182,403,18,1.3
+263,57328,DEF,Clyne,Nathaniel Clyne,Crystal Palace,Unowned,a,True,147,404,17,1.7
+572,493125,DEF,Dragusin,Radu Dragusin,Spurs,Unowned,a,True,147,404,17,1.7
+587,227127,MID,Bissouma,Yves Bissouma,Spurs,Unowned,a,True,183,404,17,1.5
+426,432714,MID,McAtee,James McAtee,Nott'm Forest,Unowned,a,True,183,404,17,1.2
+724,660392,FWD,Uche,Christantus Uche,Crystal Palace,Unowned,a,True,50,404,17,1.2
+362,235826,FWD,Piroe,Joël Piroe,Leeds,Unowned,a,True,50,404,17,1.1
+813,515046,GKP,Ellborg,Melker Ellborg,Sunderland,Unowned,a,True,27,410,16,5.3
+700,616077,MID,Dowman,Max Dowman,Arsenal,Justin Miller,a,True,185,410,16,2.7
+164,219249,MID,O'Riley,Matt O'Riley,Brighton,Unowned,a,True,185,410,16,2.7
+33,72147,GKP,M.Bizot,Marco Bizot,Aston Villa,Unowned,a,True,27,410,16,2.3
+409,97299,DEF,Stones,John Stones,Man City,Unowned,a,True,149,410,16,1.8
+180,608181,FWD,Tzimas,Stefanos Tzimas,Brighton,Unowned,i,True,52,410,16,1.8
+816,209041,MID,Angel,Angel,Wolves,Unowned,a,True,185,410,16,1.3
+243,550615,MID,George,Tyrique George,Everton,Unowned,a,True,185,410,16,1.1
+336,153366,MID,Reed,Harrison Reed,Fulham,Unowned,a,True,189,418,15,2.1
+111,231065,DEF,Pinnock,Ethan Pinnock,Brentford,Unowned,a,True,150,419,14,3.5
+535,461195,DEF,Cirkin,Dennis Cirkin,Sunderland,Unowned,a,True,150,419,14,1.8
+632,87835,DEF,Doherty,Matt Doherty,Wolves,Unowned,i,True,150,419,14,1.3
+548,461199,MID,Mundle,Romaine Mundle,Sunderland,Unowned,i,True,190,419,14,1.0
+182,432720,GKP,Trafford,James Trafford,Man City,Unowned,a,True,29,423,13,3.2
+123,244858,MID,Carvalho,Fábio Carvalho,Brentford,Unowned,i,True,191,423,13,2.2
+197,519895,DEF,Sonne,Oliver Sonne,Burnley,Unowned,u,False,153,423,13,1.9
+814,536661,MID,Angulo,Nilson Angulo,Sunderland,Unowned,a,True,191,423,13,1.6
+510,575458,DEF,Jair Cunha,Jair Filho,Nott'm Forest,Unowned,a,True,153,423,13,1.4
+252,499309,FWD,Marc Guiu,Marc Paz,Chelsea,Unowned,a,True,53,423,13,1.3
+27,200641,MID,Nelson,Reiss Nelson,Brentford,Unowned,a,True,191,423,13,1.3
+244,514356,MID,Lavia,Roméo Lavia,Chelsea,Unowned,d,True,191,423,13,1.1
+128,428580,MID,Onyeka,Frank Onyeka,Brentford,Unowned,u,False,195,431,12,2.0
+392,158983,MID,Endo,Endo,Liverpool,Unowned,d,True,195,431,12,1.5
+625,91889,FWD,Füllkrug,Niclas Füllkrug,West Ham,Unowned,u,False,54,431,12,1.5
+645,643135,MID,Fer López,Fer González,Wolves,Unowned,u,False,195,431,12,1.3
+352,221399,MID,Harrison,Jack Harrison,Leeds,Unowned,u,False,195,431,12,1.1
+400,88248,GKP,Ortega Moreno,Stefan Ortega Moreno,Nott'm Forest,Unowned,a,True,30,436,11,3.7
+716,221389,GKP,John,John,Nott'm Forest,Unowned,a,True,30,436,11,2.2
+431,451302,GKP,Bayindir,Altay Bayindir,Man Utd,Unowned,a,True,30,436,11,1.8
+812,470315,DEF,Netz,Luca Netz,Nott'm Forest,Unowned,a,True,155,436,11,1.6
+391,496208,MID,Gannon-Doak,Ben Gannon-Doak,Bournemouth,Unowned,a,True,199,436,11,1.4
+571,115556,DEF,Davies,Ben Davies,Spurs,Unowned,i,True,156,441,10,3.3
+144,550090,DEF,Coppola,Diego Coppola,Brighton,Unowned,u,False,156,441,10,2.0
+638,441271,DEF,Hoever,Ki-Jana Hoever,Wolves,Unowned,u,False,156,441,10,1.2
+640,641221,DEF,Pedro Lima,Pedro Lima,Wolves,Unowned,a,True,156,441,10,1.1
+804,469130,FWD,Lucca,Lorenzo Lucca,Nott'm Forest,Unowned,a,True,55,445,9,2.2
+221,508479,GKP,Jörgensen,Filip Jörgensen,Chelsea,Unowned,a,True,33,445,9,1.8
+422,91651,MID,Kovačić,Mateo Kovačić,Man City,Unowned,a,True,200,445,9,1.5
+621,229384,MID,Irving,Andy Irving,West Ham,Unowned,u,False,200,445,9,1.3
+695,465680,FWD,Kalimuendo,Arnaud Kalimuendo,Nott'm Forest,Unowned,u,False,55,445,9,1.0
+758,630699,MID,Mohamadou Kanté,Mohamadou Kanté,West Ham,Unowned,a,True,200,445,9,0.8
+227,460028,DEF,Colwill,Levi Colwill,Chelsea,Unowned,a,True,160,451,8,2.7
+651,596054,MID,Edozie,Tom Edozie,Wolves,Unowned,a,True,203,451,8,2.7
+618,197024,MID,G.Rodriguez,Guido Rodriguez,West Ham,Unowned,u,False,203,451,8,1.3
+25,499175,MID,Nwaneri,Ethan Nwaneri,Arsenal,Unowned,u,False,203,451,8,1.3
+800,614574,MID,Tóth.A,Alex Tóth.A,Bournemouth,Unowned,a,True,203,451,8,0.9
+254,121709,GKP,Benitez,Walter Benitez,Crystal Palace,Unowned,a,True,34,456,7,7.0
+183,518030,GKP,Weiss,Max Weiss,Burnley,Levi Morant,a,True,34,456,7,2.3
+12,206325,DEF,Zinchenko,Oleksandr Zinchenko,Nott'm Forest,Unowned,u,False,161,456,7,1.4
+24,128295,MID,Nørgaard,Christian Nørgaard,Arsenal,Unowned,a,True,207,456,7,1.0
+229,242880,DEF,B.Badiashile,Benoît Badiashile,Chelsea,Unowned,a,True,161,456,7,0.9
+629,79602,GKP,Bentley,Daniel Bentley,Wolves,Unowned,a,True,36,461,6,2.0
+369,155503,GKP,Woodman,Freddie Woodman,Liverpool,Unowned,a,True,36,461,6,2.0
+149,223434,DEF,Igor,Igor,Brighton,Unowned,a,True,163,461,6,1.5
+747,602903,DEF,Mayers,Ezra Mayers,West Ham,Unowned,a,True,163,461,6,1.0
+396,591386,MID,Nyoni,Trey Nyoni,Liverpool,Unowned,a,True,208,461,6,1.0
+214,437748,MID,Trésor,Mike Trésor,Burnley,Unowned,a,True,208,461,6,1.0
+737,631786,FWD,Kusi-Asare,Jonah Kusi-Asare,Fulham,Unowned,i,True,57,461,6,0.9
+259,218364,DEF,Sosa,Borna Sosa,Crystal Palace,Unowned,d,True,163,461,6,0.9
+795,494307,DEF,Alleyne,Max Alleyne,Man City,Unowned,a,True,166,469,5,2.5
+294,59949,DEF,Coleman,Séamus Coleman,Everton,Unowned,a,True,166,469,5,1.0
+389,444884,MID,Elliott,Harvey Elliott,Aston Villa,Unowned,a,True,210,469,5,1.0
+619,577114,MID,L.Guilherme,Luis Guilherme,West Ham,Unowned,u,False,210,469,5,1.0
+218,44699,FWD,Barnes,Ashley Barnes,Burnley,Unowned,a,True,58,469,5,0.9
+42,606798,DEF,A.García,Andrés García,Aston Villa,Unowned,a,True,166,469,5,0.8
+172,549074,MID,Watson,Tom Watson,Brighton,Unowned,u,False,210,469,5,0.8
+93,424044,MID,H.Traorè,Hamed Traorè,Bournemouth,Unowned,u,False,213,476,4,4.0
+793,597320,MID,Howell,Harry Howell,Brighton,Unowned,a,True,213,476,4,1.3
+216,492831,FWD,Amdouni,Zeki Amdouni,Burnley,Unowned,a,True,59,476,4,1.0
+130,606689,MID,Donovan,Romelle Donovan,Brentford,Unowned,a,True,213,476,4,1.0
+269,606921,MID,Esse,Romain Esse,Crystal Palace,Unowned,u,False,213,476,4,1.0
+159,109345,MID,March,Solly March,Brighton,Unowned,a,True,213,476,4,1.0
+607,210494,DEF,N.Aguerd,Nayef Aguerd,West Ham,Unowned,u,False,169,482,3,1.5
+513,549067,DEF,Abbott,Zach Abbott,Nott'm Forest,Unowned,a,True,169,482,3,1.0
+791,653481,MID,Alysson,Alysson,Aston Villa,Unowned,i,True,218,482,3,1.0
+462,547037,MID,J.Fletcher,Jack Fletcher,Man Utd,Unowned,a,True,218,482,3,1.0
+755,576628,MID,Lacey,Shea Lacey,Man Utd,Unowned,a,True,218,482,3,1.0
+231,574458,DEF,M.Sarr,Mamadou Sarr,Chelsea,Unowned,a,True,169,482,3,1.0
+581,172780,MID,Maddison,James Maddison,Spurs,Unowned,a,True,218,482,3,1.0
+448,222690,DEF,Malacia,Tyrell Malacia,Man Utd,Unowned,a,True,169,482,3,1.0
+549,223336,MID,Neil,Dan Neil,Sunderland,Unowned,u,False,218,482,3,1.0
+80,575901,DEF,Soler,Julio Soler,Bournemouth,Unowned,a,True,169,482,3,1.0
+168,536916,MID,Buonanotte,Facundo Buonanotte,Leeds,Unowned,a,True,218,482,3,0.8
+805,616221,DEF,Souza,João Souza,Spurs,Unowned,a,True,169,482,3,0.8
+2,109745,GKP,Arrizabalaga,Kepa Arrizabalaga,Arsenal,Unowned,a,True,38,494,2,2.0
+690,590014,MID,Cardines,Rio Cardines,Crystal Palace,Unowned,a,True,224,494,2,2.0
+481,545477,DEF,A.Murphy,Alex Murphy,Newcastle,Unowned,a,True,175,494,2,1.0
+346,113564,DEF,Byram,Sam Byram,Leeds,Unowned,a,True,175,494,2,1.0
+650,497606,MID,Chirewa,Tawanda Chirewa,Wolves,Unowned,u,False,224,494,2,1.0
+748,183656,MID,Dasilva,Josh Dasilva,Brentford,Unowned,a,True,224,494,2,1.0
+762,672492,MID,Drakes-Thomas,Joél Drakes-Thomas,Crystal Palace,Unowned,a,True,224,494,2,1.0
+771,519913,MID,Fletcher,Tyler Fletcher,Man Utd,Unowned,a,True,224,494,2,1.0
+754,577285,MID,George Hemmings,George Hemmings,Aston Villa,Unowned,a,True,224,494,2,1.0
+626,565431,FWD,Marshall,Callum Marshall,West Ham,Unowned,u,False,60,494,2,1.0
+739,590039,MID,Mukasa,Divine Mukasa,Man City,Unowned,u,False,224,494,2,1.0
+599,490145,FWD,Scarlett,Dane Scarlett,Spurs,Unowned,u,False,60,494,2,1.0
+542,519634,DEF,Seelt,Jenson Seelt,Sunderland,Unowned,u,False,175,494,2,1.0
+809,685628,MID,Abbey,Jerome Abbey,Wolves,Unowned,a,True,231,507,1,1.0
+213,551206,MID,Banel,Jaydon Banel,Burnley,Unowned,u,False,231,507,1,1.0
+769,576620,MID,Bendito Mantato,Bendito Mantato,Man Utd,Unowned,a,True,231,507,1,1.0
+702,645618,MID,Burrowes,Bradley Burrowes,Aston Villa,Unowned,a,True,231,507,1,1.0
+745,640419,DEF,Byfield,Jun'ai Byfield,Spurs,Unowned,a,True,178,507,1,1.0
+829,619734,MID,Derry,Jesse Derry,Chelsea,Unowned,a,True,231,507,1,1.0
+620,490885,MID,Earthy,George Earthy,West Ham,Unowned,u,False,231,507,1,1.0
+446,547676,DEF,Fredricson,Tyler Fredricson,Man Utd,Unowned,a,True,178,507,1,1.0
+797,593174,FWD,Furo,Kaye Furo,Brentford,Unowned,a,True,62,507,1,1.0
+676,107265,GKP,Gunn,Angus Gunn,Nott'm Forest,Unowned,a,True,39,507,1,1.0
+62,559962,MID,Jimoh-Aloba,Jamaldeen Jimoh-Aloba,Aston Villa,Unowned,u,False,231,507,1,1.0
+801,699989,MID,Jocelin.T,Djiamgone Jocelin.T,Sunderland,Unowned,a,True,231,507,1,1.0
+518,510500,MID,Jota,João Jota,Nott'm Forest,Unowned,u,False,231,507,1,1.0
+656,429414,FWD,Kalajdžić,Saša Kalajdžić,Wolves,Unowned,u,False,62,507,1,1.0
+175,567121,MID,Knight,Joe Knight,Brighton,Unowned,u,False,231,507,1,1.0
+840,567119,FWD,Mheuka,Shumaira Mheuka,Chelsea,Unowned,a,True,62,507,1,1.0
+122,543295,MID,Milambo,Antoni Milambo,Brentford,Unowned,i,True,231,507,1,1.0
+501,599303,FWD,Neave,Sean Neave,Newcastle,Unowned,a,True,62,507,1,1.0
+595,499726,MID,Olusesi,Callum Olusesi,Spurs,Unowned,a,True,231,507,1,1.0
+744,556637,MID,Oriola,Nehemiah Oriola,Brighton,Unowned,a,True,231,507,1,1.0
+133,450539,MID,Peart-Harris,Myles Peart-Harris,Brentford,Unowned,u,False,231,507,1,1.0
+545,124165,MID,Roberts,Patrick Roberts,Sunderland,Unowned,u,False,231,507,1,1.0
+281,530318,MID,Rodney,Kaden Rodney,Crystal Palace,Unowned,a,True,231,507,1,1.0
+749,499716,DEF,Rowswell,James Rowswell,Spurs,Unowned,a,True,178,507,1,1.0
+105,507433,GKP,Valdimarsson,Hákon Valdimarsson,Brentford,Unowned,a,True,39,507,1,1.0
+96,606775,MID,Winterburn,Ben Winterburn,Bournemouth,Unowned,u,False,231,507,1,1.0
+285,199670,FWD,Édouard,Odsonne Édouard,Crystal Palace,Unowned,u,False,62,507,1,1.0
+480,101148,DEF,Lascelles,Jamaal Lascelles,Newcastle,Unowned,u,False,178,507,1,0.5
+247,491007,MID,D.Essugo,Dário Essugo,Chelsea,Unowned,a,True,231,507,1,0.3
+680,105717,DEF,Masuaku,Arthur Masuaku,Sunderland,Unowned,u,False,178,507,1,0.3
+211,447715,MID,A.Ramsey,Aaron Ramsey,Burnley,Unowned,u,False,249,537,0,0.0
+562,611975,FWD,Abdullahi,Ahmed Abdullahi,Sunderland,Unowned,a,True,67,537,0,0.0
+212,576323,MID,Adewumi,Oluwaseun Adewumi,Burnley,Unowned,u,False,249,537,0,0.0
+99,590760,FWD,Adu-Adjei,Daniel Adu-Adjei,Bournemouth,Unowned,u,False,67,537,0,0.0
+274,579075,MID,Agbinone,Asher Agbinone,Crystal Palace,Unowned,a,True,249,537,0,0.0
+275,466117,MID,Ahamada,Naouirou Ahamada,Crystal Palace,Unowned,u,False,249,537,0,0.0
+404,211975,DEF,Akanji,Manuel Akanji,Man City,Unowned,u,False,183,537,0,0.0
+750,590035,MID,Akhamrich,Yusuf Akhamrich,Spurs,Unowned,u,False,249,537,0,0.0
+75,541462,DEF,Akinmboni,Matai Akinmboni,Bournemouth,Unowned,a,True,183,537,0,0.0
+772,666607,MID,Alabi,Sam Alabi,Newcastle,Unowned,a,True,249,537,0,0.0
+546,626844,MID,Aleksić,Milan Aleksić,Sunderland,Unowned,a,True,249,537,0,0.0
+533,220684,DEF,Alese,Aji Alese,Sunderland,Unowned,u,False,183,537,0,0.0
+43,106468,DEF,Alex Moreno,Álex Alex Moreno,Aston Villa,Unowned,u,False,183,537,0,0.0
+445,577974,DEF,Amass,Harry Amass,Man Utd,Unowned,u,False,183,537,0,0.0
+323,591385,DEF,Amissah,Samuel Amissah,Fulham,Unowned,a,True,183,537,0,0.0
+534,232820,DEF,Anderson,Joe Anderson,Sunderland,Unowned,u,False,183,537,0,0.0
+327,156689,MID,Andreas,Andreas,Fulham,Unowned,u,False,249,537,0,0.0
+234,622758,DEF,Anselmino,Aarón Anselmino,Chelsea,Unowned,u,False,183,537,0,0.0
+454,467169,MID,Antony,Antony,Man Utd,Unowned,u,False,249,537,0,0.0
+492,640108,MID,Antoñito C.,Antoñito Campillo,Newcastle,Unowned,u,False,249,537,0,0.0
+114,622536,DEF,Arthur,Benjamin Arthur,Brentford,Unowned,u,False,183,537,0,0.0
+482,441024,DEF,Ashby,Harrison Ashby,Newcastle,Unowned,u,False,183,537,0,0.0
+566,214572,GKP,Austin,Brandon Austin,Spurs,Unowned,a,True,41,537,0,0.0
+662,499300,DEF,Aznou,Adam Aznou,Everton,Unowned,a,True,183,537,0,0.0
+649,476502,MID,B.Traore,Boubacar Traore,Wolves,Unowned,u,False,249,537,0,0.0
+554,477851,MID,Ba,Abdoullah Ba,Sunderland,Unowned,a,True,249,537,0,0.0
+393,535928,MID,Bajcetic,Stefan Bajcetic,Liverpool,Unowned,i,True,249,537,0,0.0
+102,235448,GKP,Balcombe,Ellery Balcombe,Brentford,Unowned,a,True,41,537,0,0.0
+363,106617,FWD,Bamford,Patrick Bamford,Leeds,Unowned,u,False,67,537,0,0.0
+56,491287,MID,Barrenechea,Enzo Barrenechea,Aston Villa,Unowned,u,False,249,537,0,0.0
+306,547801,MID,Bates,Callum Bates,Everton,Unowned,a,True,249,537,0,0.0
+773,643426,DEF,Benamar,Dean Benamar,Crystal Palace,Unowned,a,True,183,537,0,0.0
+315,428971,GKP,Benda,Steven Benda,Fulham,Unowned,u,False,41,537,0,0.0
+201,183751,MID,Benson,Manuel Benson,Burnley,Unowned,u,False,249,537,0,0.0
+810,559610,MID,Bentt,Luka Bentt,Brentford,Unowned,a,True,249,537,0,0.0
+401,122074,GKP,Bettinelli,Marcus Bettinelli,Man City,Unowned,a,True,41,537,0,0.0
+76,518906,DEF,Bevan,Owen Bevan,Bournemouth,Unowned,a,True,183,537,0,0.0
+203,578614,MID,Boateng,Enock Boateng,Burnley,Unowned,a,True,249,537,0,0.0
+514,90585,DEF,Boly,Willy Boly,Nott'm Forest,Unowned,i,True,183,537,0,0.0
+782,704232,MID,Brierley,George Brierley,Burnley,Unowned,a,True,249,537,0,0.0
+60,577731,MID,Broggio,Ben Broggio,Aston Villa,Unowned,u,False,249,537,0,0.0
+828,491460,GKP,Brooks,Alfie Brooks,Wolves,Unowned,a,True,41,537,0,0.0
+555,171422,MID,Browne,Alan Browne,Sunderland,Unowned,u,False,249,537,0,0.0
+590,436234,MID,Bryan,Bryan,Spurs,Unowned,u,False,249,537,0,0.0
+503,475123,GKP,C.Miguel,Carlos Miguel,Nott'm Forest,Unowned,u,False,41,537,0,0.0
+340,97846,GKP,Cairns,Alex Cairns,Leeds,Unowned,a,True,41,537,0,0.0
+705,491745,DEF,Campbell,Elijah Campbell,Everton,Unowned,u,False,183,537,0,0.0
+781,618027,DEF,Carroll,TJ Carroll,Aston Villa,Unowned,a,True,183,537,0,0.0
+611,518438,DEF,Casey,Kaelan Casey,West Ham,Unowned,u,False,183,537,0,0.0
+780,631106,FWD,Casey,Ben Casey,Crystal Palace,Unowned,a,True,67,537,0,0.0
+154,439135,DEF,Cashin,Eiran Cashin,Brighton,Unowned,u,False,183,537,0,0.0
+838,577978,MID,Chadwick,Rhys Chadwick,Leeds,Unowned,a,True,249,537,0,0.0
+788,565863,MID,Chambers,Sam Chambers,Leeds,Unowned,a,True,249,537,0,0.0
+657,589507,FWD,Chiwome,Leon Chiwome,Wolves,Unowned,a,True,67,537,0,0.0
+204,250735,MID,Churlinov,Darko Churlinov,Burnley,Unowned,u,False,249,537,0,0.0
+13,563324,DEF,Clarke,Brayden Clarke,Arsenal,Unowned,a,True,183,537,0,0.0
+460,490881,MID,Collyer,Toby Collyer,Man Utd,Unowned,u,False,249,537,0,0.0
+617,149519,MID,Cornet,Maxwel Cornet,West Ham,Unowned,u,False,249,537,0,0.0
+103,503300,GKP,Cox,Matthew Cox,Brentford,Unowned,u,False,41,537,0,0.0
+839,592740,MID,Cresswell,Alfie Cresswell,Leeds,Unowned,a,True,249,537,0,0.0
+359,536119,MID,Crew,Charlie Crew,Leeds,Unowned,u,False,249,537,0,0.0
+730,560441,DEF,Cuiabano,Luis Cuiabano,Nott'm Forest,Unowned,u,False,183,537,0,0.0
+439,661712,DEF,D.Leon,Diego Leon,Man Utd,Unowned,a,True,183,537,0,0.0
+523,569014,MID,Da Silva Moreira,Eric Da Silva Moreira,Nott'm Forest,Unowned,a,True,249,537,0,0.0
+756,678552,MID,DaCosta,Malcom DaCosta,Bournemouth,Unowned,a,True,249,537,0,0.0
+398,500058,FWD,Danns,Jayden Danns,Liverpool,Unowned,i,True,67,537,0,0.0
+397,447203,FWD,Darwin,Darwin,Liverpool,Unowned,u,False,67,537,0,0.0
+509,451432,DEF,David Carmo,David Carmo,Nott'm Forest,Unowned,u,False,183,537,0,0.0
+188,247245,DEF,Delcroix,Hannes Delcroix,Burnley,Unowned,u,False,183,537,0,0.0
+61,151589,MID,Dendoncker,Leander Dendoncker,Aston Villa,Unowned,u,False,249,537,0,0.0
+68,444172,GKP,Dennis,Will Dennis,Bournemouth,Unowned,u,False,41,537,0,0.0
+297,496178,DEF,Dixon,Roman Dixon,Everton,Unowned,u,False,183,537,0,0.0
+57,461421,MID,Dobbin,Lewis Dobbin,Aston Villa,Unowned,u,False,249,537,0,0.0
+189,461567,DEF,Dodgson,Owen Dodgson,Burnley,Unowned,u,False,183,537,0,0.0
+268,438464,MID,Doucouré,Cheick Doucouré,Crystal Palace,Unowned,i,True,249,537,0,0.0
+307,504296,MID,Ebere,Coby Ebere,Everton,Unowned,a,True,249,537,0,0.0
+277,450535,MID,Ebiowei,Malcolm Ebiowei,Crystal Palace,Unowned,u,False,249,537,0,0.0
+833,671606,MID,Eboué,Mathis Eboué,Chelsea,Unowned,a,True,249,537,0,0.0
+425,575204,MID,Echeverri,Claudio Echeverri,Man City,Unowned,u,False,249,537,0,0.0
+399,121160,GKP,Ederson M.,Ederson Moraes,Man City,Unowned,u,False,41,537,0,0.0
+556,458297,MID,Ekwah,Pierre Ekwah,Sunderland,Unowned,u,False,249,537,0,0.0
+743,611912,MID,Emenalo,Landon Emenalo,Chelsea,Unowned,a,True,249,537,0,0.0
+604,109533,DEF,Emerson,Emerson,West Ham,Unowned,u,False,183,537,0,0.0
+161,474120,MID,Enciso,Julio Enciso,Brighton,Unowned,u,False,249,537,0,0.0
+147,204214,DEF,Estupiñan,Pervis Estupiñan,Brighton,Unowned,u,False,183,537,0,0.0
+104,535017,GKP,Eyestone,Julian Eyestone,Brentford,Unowned,a,True,41,537,0,0.0
+738,37096,GKP,Fabianski,Lukasz Fabianski,West Ham,Unowned,a,True,41,537,0,0.0
+92,441240,MID,Faivre,Romain Faivre,Bournemouth,Unowned,u,False,249,537,0,0.0
+179,487117,FWD,Ferguson,Evan Ferguson,Brighton,Unowned,u,False,67,537,0,0.0
+461,556639,MID,Fitzgerald,Jayce Fitzgerald,Man Utd,Unowned,a,True,249,537,0,0.0
+601,82143,GKP,Foderingham,Wes Foderingham,West Ham,Unowned,u,False,41,537,0,0.0
+783,40383,GKP,Forster,Fraser Forster,Bournemouth,Unowned,a,True,41,537,0,0.0
+658,531363,FWD,Fraser,Nathan Fraser,Wolves,Unowned,a,True,67,537,0,0.0
+115,612534,DEF,Fredrick,Benjamin Fredrick,Brentford,Unowned,u,False,183,537,0,0.0
+655,449988,FWD,Fábio Silva,Fábio Silva,Wolves,Unowned,u,False,67,537,0,0.0
+23,438098,MID,Fábio Vieira,Fábio Vieira,Arsenal,Unowned,u,False,249,537,0,0.0
+34,462492,GKP,Gauci,Joe Gauci,Aston Villa,Unowned,u,False,41,537,0,0.0
+360,462635,MID,Gelhardt,Joe Gelhardt,Leeds,Unowned,u,False,249,537,0,0.0
+471,81441,GKP,Gillespie,Mark Gillespie,Newcastle,Unowned,a,True,41,537,0,0.0
+333,573062,MID,Godo,Martial Godo,Fulham,Unowned,u,False,249,537,0,0.0
+751,643473,DEF,Golambeckis,Airidas Golambeckis,West Ham,Unowned,a,True,183,537,0,0.0
+652,593001,MID,Gonzalez,Enso Gonzalez,Wolves,Unowned,a,True,249,537,0,0.0
+831,627888,GKP,Gracey,Josh Gracey,Wolves,Unowned,a,True,41,537,0,0.0
+777,629068,FWD,Graham,Braiden Graham,Everton,Unowned,a,True,67,537,0,0.0
+741,600882,FWD,Gray,Harry Gray,Leeds,Unowned,u,False,67,537,0,0.0
+763,516234,MID,Gray,Charlie Gray,Man City,Unowned,a,True,249,537,0,0.0
+184,489571,GKP,Green,Etienne Green,Burnley,Unowned,u,False,41,537,0,0.0
+355,248937,MID,Greenwood,Sam Greenwood,Leeds,Unowned,u,False,249,537,0,0.0
+647,181284,MID,Guedes,Gonçalo Guedes,Wolves,Unowned,u,False,249,537,0,0.0
+361,470294,MID,Gyabi,Darko Gyabi,Leeds,Unowned,u,False,249,537,0,0.0
+420,59859,MID,Gündoğan,İlkay Gündoğan,Man City,Unowned,u,False,249,537,0,0.0
+557,547410,MID,H.Jones,Harrison Jones,Sunderland,Unowned,a,True,249,537,0,0.0
+710,646243,MID,Harriman-Annous,Andre Harriman-Annous,Arsenal,Unowned,a,True,249,537,0,0.0
+334,515024,MID,Harris,Luke Harris,Fulham,Unowned,u,False,249,537,0,0.0
+433,588555,GKP,Harrison,Elyh Harrison,Man Utd,Unowned,u,False,41,537,0,0.0
+495,153127,MID,Hayden,Isaac Hayden,Newcastle,Unowned,u,False,249,537,0,0.0
+308,496279,MID,Heath,Isaac Heath,Everton,Unowned,u,False,249,537,0,0.0
+434,21205,GKP,Heaton,Tom Heaton,Man Utd,Unowned,a,True,41,537,0,0.0
+602,483364,GKP,Hegyi,Krisztián Hegyi,West Ham,Unowned,u,False,41,537,0,0.0
+3,463748,GKP,Hein,Karl Hein,Arsenal,Unowned,u,False,41,537,0,0.0
+825,553742,GKP,Herrick,Finlay Herrick,West Ham,Unowned,a,True,41,537,0,0.0
+764,580921,MID,Heskey,Reigan Heskey,Man City,Unowned,a,True,249,537,0,0.0
+536,477547,DEF,Hjelde,Leo Hjelde,Sunderland,Unowned,u,False,183,537,0,0.0
+185,51943,GKP,Hladký,Václav Hladký,Burnley,Unowned,a,True,41,537,0,0.0
+653,240299,MID,Hodge,Joe Hodge,Wolves,Unowned,u,False,249,537,0,0.0
+264,156074,DEF,Holding,Rob Holding,Crystal Palace,Unowned,u,False,183,537,0,0.0
+757,516875,GKP,Hollingshead,Ronnie Hollingshead,Aston Villa,Unowned,a,True,41,537,0,0.0
+537,492066,DEF,Huggins,Niall Huggins,Sunderland,Unowned,u,False,183,537,0,0.0
+465,497894,FWD,Højlund,Rasmus Højlund,Man Utd,Unowned,u,False,67,537,0,0.0
+51,469247,MID,Iling Jr,Samuel Iling Jr,Aston Villa,Unowned,u,False,249,537,0,0.0
+798,502988,DEF,Imray,Danny Imray,Crystal Palace,Unowned,u,False,183,537,0,0.0
+78,436893,DEF,J.Araujo,Julián Araujo,Bournemouth,Unowned,u,False,183,537,0,0.0
+278,450542,MID,J.Rak-Sakyi,Jesurun Rak-Sakyi,Crystal Palace,Unowned,u,False,249,537,0,0.0
+774,232356,DEF,Jenson Jones,Jenson Jones,Sunderland,Unowned,a,True,183,537,0,0.0
+117,570241,DEF,Ji-soo,Kim Ji-soo,Brentford,Unowned,u,False,183,537,0,0.0
+538,514613,DEF,Johnson,Zak Johnson,Sunderland,Unowned,u,False,183,537,0,0.0
+822,571087,MID,Jones,Jaydon Jones,Sunderland,Unowned,a,True,249,537,0,0.0
+194,241231,DEF,Jordan,Jordan,Burnley,Unowned,i,True,183,537,0,0.0
+28,588796,MID,Kabia,Ismeal Kabia,Arsenal,Unowned,u,False,249,537,0,0.0
+14,588793,DEF,Kacurri,Maldini Kacurri,Arsenal,Unowned,u,False,183,537,0,0.0
+834,616286,MID,Kavuma-McQueen,Ryan Kavuma-McQueen,Chelsea,Unowned,a,True,249,537,0,0.0
+630,138001,GKP,King,Tom King,Everton,Unowned,a,True,41,537,0,0.0
+794,591384,DEF,King,George King,Crystal Palace,Unowned,a,True,183,537,0,0.0
+9,440854,DEF,Kiwior,Jakub Kiwior,Arsenal,Unowned,u,False,183,537,0,0.0
+208,487702,MID,Koleosho,Luca Koleosho,Burnley,Unowned,u,False,249,537,0,0.0
+131,628204,MID,Konak,Yunus Konak,Brentford,Unowned,u,False,249,537,0,0.0
+463,618873,MID,Kone,Sékou Kone,Man Utd,Unowned,u,False,249,537,0,0.0
+265,590012,DEF,Kporha,Caleb Kporha,Crystal Palace,Unowned,a,True,183,537,0,0.0
+479,111773,DEF,Krafth,Emil Krafth,Newcastle,Unowned,i,True,183,537,0,0.0
+789,576637,DEF,Kukonki,Godwill Kukonki,Man Utd,Unowned,a,True,183,537,0,0.0
+583,445044,MID,Kulusevski,Dejan Kulusevski,Spurs,Unowned,i,True,249,537,0,0.0
+496,564510,MID,Kuol,Garang Kuol,Newcastle,Unowned,u,False,249,537,0,0.0
+811,536134,MID,Kyerematen,Rio Kyerematen,Spurs,Unowned,a,True,249,537,0,0.0
+802,572702,MID,Lamadrid,Keiber Lamadrid,West Ham,Unowned,a,True,249,537,0,0.0
+150,232792,DEF,Lamptey,Tariq Lamptey,Brighton,Unowned,u,False,183,537,0,0.0
+598,552427,FWD,Lankshear,Will Lankshear,Spurs,Unowned,u,False,67,537,0,0.0
+663,86873,GKP,Lecomte,Benjamin Lecomte,Fulham,Unowned,a,True,41,537,0,0.0
+768,664015,DEF,Leon Routh,Leon Routh,Aston Villa,Unowned,a,True,183,537,0,0.0
+692,647681,DEF,Leoni,Giovanni Leoni,Liverpool,Unowned,i,True,183,537,0,0.0
+837,643970,DEF,Lienou,Jayden Lienou,Leeds,Unowned,a,True,183,537,0,0.0
+760,519440,DEF,Lucky,Wellity Lucky,Liverpool,Unowned,a,True,183,537,0,0.0
+383,244731,MID,Luis Díaz,Luis Marulanda,Liverpool,Unowned,u,False,249,537,0,0.0
+563,551153,FWD,Luís Hemir,Luís Hemir,Sunderland,Unowned,u,False,67,537,0,0.0
+279,536694,MID,M.França,Matheus França,Crystal Palace,Unowned,u,False,249,537,0,0.0
+132,220695,MID,Maghoma,Paris Maghoma,Brentford,Unowned,u,False,249,537,0,0.0
+807,436416,GKP,Mandas,Christos Mandas,Bournemouth,Unowned,a,True,41,537,0,0.0
+35,462381,GKP,Marschall,Filip Marschall,Aston Villa,Unowned,u,False,41,537,0,0.0
+286,576980,FWD,Marsh,Zach Marsh,Crystal Palace,Unowned,a,True,67,537,0,0.0
+364,565297,FWD,Mateo Joseph,Mateo Fernández-Regatillo,Leeds,Unowned,u,False,67,537,0,0.0
+558,493837,MID,Matete,Jay Matete,Sunderland,Unowned,u,False,249,537,0,0.0
+255,169593,GKP,Matthews,Remi Matthews,Crystal Palace,Unowned,a,True,41,537,0,0.0
+176,550141,MID,Mazilu,Adrian Mazilu,Brighton,Unowned,u,False,249,537,0,0.0
+742,616288,MID,McAidoo,Ryan McAidoo,Man City,Unowned,a,True,249,537,0,0.0
+394,491501,MID,McConnell,James McConnell,Liverpool,Unowned,u,False,249,537,0,0.0
+140,209288,GKP,McGill,Tom McGill,Brighton,Unowned,a,True,41,537,0,0.0
+69,568791,GKP,McKenna,Callan McKenna,Bournemouth,Unowned,a,True,41,537,0,0.0
+820,644593,MID,McMahon-Brown,Kian McMahon-Brown,Burnley,Unowned,a,True,249,537,0,0.0
+824,587433,DEF,McManus,Conor McManus,Brentford,Unowned,a,True,183,537,0,0.0
+787,505079,GKP,McNally,Alfie McNally,Fulham,Unowned,a,True,41,537,0,0.0
+435,461537,GKP,Mee,Dermot Mee,Man Utd,Unowned,a,True,41,537,0,0.0
+118,499717,DEF,Meghoma,Jayden Meghoma,Brentford,Unowned,u,False,183,537,0,0.0
+79,223911,DEF,Mepham,Chris Mepham,Bournemouth,Unowned,u,False,183,537,0,0.0
+786,518335,GKP,Merrick,Max Merrick,Chelsea,Unowned,a,True,41,537,0,0.0
+339,437495,GKP,Meslier,Illan Meslier,Leeds,Unowned,a,True,41,537,0,0.0
+309,491557,MID,Metcalfe,Jenson Metcalfe,Everton,Unowned,u,False,249,537,0,0.0
+639,560248,DEF,Meupiyou,Bastien Meupiyou,Wolves,Unowned,u,False,183,537,0,0.0
+740,566213,DEF,Mfuni,Stephen Mfuni,Man City,Unowned,u,False,183,537,0,0.0
+594,623095,MID,Min-hyeok,Yang Min-hyeok,Spurs,Unowned,u,False,249,537,0,0.0
+529,74854,GKP,Moore,Simon Moore,Sunderland,Unowned,a,True,41,537,0,0.0
+592,499721,MID,Moore,Mikey Moore,Spurs,Unowned,u,False,249,537,0,0.0
+464,559684,MID,Moorhouse,Jack Moorhouse,Man Utd,Unowned,u,False,249,537,0,0.0
+177,513834,MID,Moran,Andrew Moran,Brighton,Unowned,u,False,249,537,0,0.0
+137,533710,FWD,Morgan,Iwan Morgan,Brentford,Unowned,u,False,67,537,0,0.0
+746,596042,MID,Morrison,Kieran Morrison,Liverpool,Unowned,a,True,249,537,0,0.0
+395,440148,MID,Morton,Tyler Morton,Liverpool,Unowned,u,False,249,537,0,0.0
+245,465920,MID,Mudryk,Mykhailo Mudryk,Chelsea,Unowned,s,True,249,537,0,0.0
+251,517052,FWD,N.Jackson,Nicolas Jackson,Chelsea,Unowned,u,False,67,537,0,0.0
+378,611926,DEF,Nallo,Amara Nallo,Liverpool,Unowned,a,True,183,537,0,0.0
+832,718875,DEF,Ndiaye,Talla Ndiaye,Liverpool,Unowned,a,True,183,537,0,0.0
+66,69752,GKP,Neto,Norberto Neto,Bournemouth,Unowned,u,False,41,537,0,0.0
+15,499167,DEF,Nichols,Josh Nichols,Arsenal,Unowned,a,True,183,537,0,0.0
+240,213198,MID,Nkunku,Christopher Nkunku,Chelsea,Unowned,u,False,249,537,0,0.0
+530,490000,GKP,Nna Noukeu,Blondy Nna Noukeu,Sunderland,Unowned,u,False,41,537,0,0.0
+127,626464,MID,Nunes,Gustavo Nunes,Brentford,Unowned,u,False,249,537,0,0.0
+428,566164,MID,Nypan,Sverre Nypan,Man City,Unowned,a,True,249,537,0,0.0
+520,243345,MID,O'Brien,Lewis O'Brien,Nott'm Forest,Unowned,u,False,249,537,0,0.0
+512,204822,DEF,O.Richards,Omar Richards,Nott'm Forest,Unowned,u,False,183,537,0,0.0
+219,220598,FWD,Obafemi,Michael Obafemi,Burnley,Unowned,u,False,67,537,0,0.0
+467,596047,FWD,Obi,Chido Obi,Man Utd,Unowned,a,True,67,537,0,0.0
+472,111452,GKP,Odysseas,Odysseas,Newcastle,Unowned,u,False,41,537,0,0.0
+778,514362,MID,Ojinnaka,Temple Ojinnaka,Wolves,Unowned,u,False,249,537,0,0.0
+766,601956,DEF,Olagunju,Saheed Olagunju,Wolves,Unowned,a,True,183,537,0,0.0
+432,202641,GKP,Onana,André Onana,Man Utd,Unowned,u,False,41,537,0,0.0
+704,461446,MID,Onyango,Tyler Onyango,Everton,Unowned,u,False,249,537,0,0.0
+622,518442,MID,Orford,Lewis Orford,West Ham,Unowned,u,False,249,537,0,0.0
+826,547671,MID,Owen,Riley Owen,Brentford,Unowned,a,True,249,537,0,0.0
+280,531989,MID,Ozoh,David Ozoh,Crystal Palace,Unowned,u,False,249,537,0,0.0
+248,611134,MID,Paez,Kendry Paez,Chelsea,Unowned,u,False,249,537,0,0.0
+528,232571,GKP,Patterson,Anthony Patterson,Sunderland,Unowned,u,False,41,537,0,0.0
+711,534836,DEF,Patterson,Travis Patterson,Aston Villa,Unowned,a,True,183,537,0,0.0
+70,495145,GKP,Paulsen,Alex Paulsen,Bournemouth,Unowned,u,False,41,537,0,0.0
+540,465702,DEF,Pembele,Timothée Pembele,Sunderland,Unowned,u,False,183,537,0,0.0
+222,549939,GKP,Penders,Mike Penders,Chelsea,Unowned,u,False,41,537,0,0.0
+89,168991,MID,Philip,Philip,Bournemouth,Unowned,u,False,249,537,0,0.0
+429,155405,MID,Phillips,Kalvin Phillips,Man City,Unowned,u,False,249,537,0,0.0
+576,548308,DEF,Phillips,Ashley Phillips,Spurs,Unowned,u,False,183,537,0,0.0
+776,647960,MID,Pimlott,Oliver Pimlott,Burnley,Unowned,a,True,249,537,0,0.0
+483,578512,DEF,Pivas,Miodrag Pivas,Newcastle,Unowned,a,True,183,537,0,0.0
+641,517179,DEF,Pond,Alfie Pond,Wolves,Unowned,u,False,183,537,0,0.0
+550,215460,MID,Poveda,Ian Poveda,Sunderland,Unowned,a,True,249,537,0,0.0
+703,564505,GKP,Proctor,Sam Proctor,Aston Villa,Unowned,a,True,41,537,0,0.0
+368,586268,GKP,Pécsi,Ármin Pécsi,Liverpool,Unowned,a,True,41,537,0,0.0
+379,219937,DEF,R.Williams,Rhys Williams,Liverpool,Unowned,a,True,183,537,0,0.0
+357,433952,MID,Ramazani,Largie Ramazani,Leeds,Unowned,u,False,249,537,0,0.0
+380,489580,DEF,Ramsay,Calvin Ramsay,Liverpool,Unowned,a,True,183,537,0,0.0
+451,176297,MID,Rashford,Marcus Rashford,Man Utd,Unowned,u,False,249,537,0,0.0
+767,605319,MID,Rawlings,Luke Rawlings,Wolves,Unowned,a,True,249,537,0,0.0
+65,576756,FWD,Redmond,Zépiqueno Redmond,Aston Villa,Unowned,u,False,67,537,0,0.0
+686,606774,MID,Rees-Dottin,Remy Rees-Dottin,Bournemouth,Unowned,a,True,249,537,0,0.0
+770,619536,MID,Ridgeon,Seth Ridgeon,Fulham,Unowned,a,True,249,537,0,0.0
+186,192290,DEF,Roberts,Connor Roberts,Burnley,Unowned,a,True,183,537,0,0.0
+112,226956,DEF,Roerslev,Mads Roerslev,Brentford,Unowned,u,False,183,537,0,0.0
+701,569577,DEF,Rowe,Triston Rowe,Aston Villa,Unowned,u,False,183,537,0,0.0
+753,19236,GKP,Ruddy,John Ruddy,Newcastle,Unowned,a,True,41,537,0,0.0
+141,472739,GKP,Rushworth,Carl Rushworth,Brighton,Unowned,u,False,41,537,0,0.0
+564,440955,FWD,Rusyn,Nazarii Rusyn,Sunderland,Unowned,u,False,67,537,0,0.0
+94,550596,MID,Sadi,Dominic Sadi,Bournemouth,Unowned,u,False,249,537,0,0.0
+759,616065,DEF,Salmon,Marli Salmon,Arsenal,Unowned,a,True,183,537,0,0.0
+29,437742,MID,Sambi,Albert Sambi,Arsenal,Unowned,u,False,249,537,0,0.0
+196,450072,DEF,Sambo,Shurandy Sambo,Burnley,Unowned,u,False,183,537,0,0.0
+171,441192,MID,Sarmiento,Jeremy Sarmiento,Brighton,Unowned,u,False,249,537,0,0.0
+142,240514,GKP,Scherpen,Kjell Scherpen,Brighton,Unowned,u,False,41,537,0,0.0
+349,492368,DEF,Schmidt,Isaac Schmidt,Leeds,Unowned,u,False,183,537,0,0.0
+4,551221,GKP,Setford,Tommy Setford,Arsenal,Unowned,a,True,41,537,0,0.0
+689,623110,MID,Seung soo,Seung-Soo Seung soo,Newcastle,Unowned,a,True,249,537,0,0.0
+765,553746,DEF,Shahar,Leo Shahar,Newcastle,Unowned,a,True,183,537,0,0.0
+803,499857,GKP,Sharman-Lowe,Teddy Sharman-Lowe,Chelsea,Unowned,a,True,41,537,0,0.0
+313,536241,FWD,Sherif,Martin Sherif,Everton,Unowned,u,False,67,537,0,0.0
+819,494556,DEF,Shield,Ollie Shield,Brentford,Unowned,a,True,183,537,0,0.0
+95,530121,MID,Silcott-Duberry,Zain Silcott-Duberry,Bournemouth,Unowned,u,False,249,537,0,0.0
+841,687076,FWD,Sillah,Lamin Sillah,Nott'm Forest,Unowned,a,True,67,537,0,0.0
+165,516211,MID,Sima,Abdallah Sima,Brighton,Unowned,u,False,249,537,0,0.0
+761,604988,DEF,Simmonds,Freddie Simmonds,Brighton,Unowned,a,True,183,537,0,0.0
+836,590040,MID,Sinclair,Jimmy Sinclair,Nott'm Forest,Unowned,a,True,249,537,0,0.0
+91,224995,MID,Sinisterra,Luis Sinisterra,Bournemouth,Unowned,u,False,249,537,0,0.0
+155,589100,DEF,Slater,Jacob Slater,Brighton,Unowned,u,False,183,537,0,0.0
+223,471798,GKP,Slonina,Gabriel Slonina,Chelsea,Unowned,a,True,41,537,0,0.0
+589,235674,MID,Solomon,Manor Solomon,Spurs,Unowned,u,False,249,537,0,0.0
+579,85971,MID,Son,Son,Spurs,Unowned,u,False,249,537,0,0.0
+45,514315,DEF,Sousa,Lino Sousa,Aston Villa,Unowned,u,False,183,537,0,0.0
+524,495161,MID,Stamenic,Marko Stamenic,Nott'm Forest,Unowned,u,False,249,537,0,0.0
+138,49262,GKP,Steele,Jason Steele,Brighton,Unowned,a,True,41,537,0,0.0
+823,649240,DEF,Stephenson,Joshua Stephenson,Brentford,Unowned,a,True,183,537,0,0.0
+799,658013,MID,Stevens,Charlie Stevens,Bournemouth,Unowned,a,True,249,537,0,0.0
+779,589121,MID,Sutherland,Ethan Sutherland,Wolves,Unowned,a,True,249,537,0,0.0
+577,553299,DEF,Takai,Takai,Spurs,Unowned,u,False,183,537,0,0.0
+484,169359,DEF,Targett,Matt Targett,Newcastle,Unowned,u,False,183,537,0,0.0
+156,547720,DEF,Tasker,Charlie Tasker,Brighton,Unowned,a,True,183,537,0,0.0
+827,576634,MID,Thwaites,Jim Thwaites,Man Utd,Unowned,a,True,249,537,0,0.0
+288,229600,GKP,Travers,Mark Travers,Everton,Unowned,a,True,41,537,0,0.0
+134,591357,MID,Trevitt,Ryan Trevitt,Brentford,Unowned,u,False,249,537,0,0.0
+559,500696,MID,Triantis,Nectarios Triantis,Sunderland,Unowned,u,False,249,537,0,0.0
+377,214285,DEF,Tsimikas,Konstantinos Tsimikas,Liverpool,Unowned,u,False,183,537,0,0.0
+504,224068,GKP,Turner,Matt Turner,Nott'm Forest,Unowned,u,False,41,537,0,0.0
+775,604211,MID,Tutierov,Tymur Tutierov,Sunderland,Unowned,u,False,249,537,0,0.0
+289,447325,GKP,Tyrer,Harry Tyrer,Everton,Unowned,u,False,41,537,0,0.0
+282,574398,MID,Umeh,Franco Umeh,Crystal Palace,Unowned,u,False,249,537,0,0.0
+412,616222,DEF,Vitor Reis,Vitor Reis,Man City,Unowned,u,False,183,537,0,0.0
+578,610799,DEF,Vuskovic,Luka Vuskovic,Spurs,Unowned,u,False,183,537,0,0.0
+153,110735,DEF,Webster,Adam Webster,Brighton,Unowned,i,True,183,537,0,0.0
+298,474907,DEF,Welch,Reece Welch,Everton,Unowned,a,True,183,537,0,0.0
+468,575034,FWD,Wheatley,Ethan Wheatley,Man Utd,Unowned,u,False,67,537,0,0.0
+498,461484,MID,White,Joe White,Newcastle,Unowned,u,False,249,537,0,0.0
+835,568159,MID,Whitehall,Archie Whitehall,Nott'm Forest,Unowned,a,True,249,537,0,0.0
+821,570929,MID,Whittaker,Jack Whittaker,Sunderland,Unowned,a,True,249,537,0,0.0
+790,611917,MID,Williams-Barnett,Lucá Williams-Barnett,Spurs,Unowned,a,True,249,537,0,0.0
+818,613232,FWD,Wilson,James Wilson,Spurs,Unowned,a,True,67,537,0,0.0
+688,481283,GKP,Wright,James Wright,Aston Villa,Unowned,a,True,41,537,0,0.0
+830,677945,FWD,Wright,Will Wright,Liverpool,Unowned,a,True,67,537,0,0.0
+312,491012,FWD,Y.Chermiti,Youssef Chermiti,Everton,Unowned,u,False,67,537,0,0.0
+174,611695,MID,Yalcouye,Malick Yalcouye,Brighton,Unowned,u,False,249,537,0,0.0
+46,587178,DEF,Yasin,Yasin,Aston Villa,Unowned,u,False,183,537,0,0.0
+63,537403,MID,Young,Kadan Young,Aston Villa,Unowned,u,False,249,537,0,0.0
+71,477580,DEF,Zabarnyi,Illia Zabarnyi,Bournemouth,Unowned,u,False,183,537,0,0.0
+616,213999,MID,Álvarez,Edson Álvarez,West Ham,Unowned,u,False,249,537,0,0.0
