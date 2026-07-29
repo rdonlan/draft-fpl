@@ -41,13 +41,13 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <div class="pick-profile-list">
 <section class="pick-profile is-active" data-pick-profile data-year="2026" data-manager="Donny">
 <div class="pick-profile-heading">
-<div><h3>Donny - 2026</h3><p>8 picks, -5 versus a standard 13-pick draft.</p></div>
+<div><h3>Donny - 2026</h3><p>10 picks, -3 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>8</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>-5</strong></div>
-<div class="pick-stat"><span>Incoming Picks</span><strong>1</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>6</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>10</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-3</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>5</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
@@ -56,7 +56,9 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tbody>
 <tr><td>3rd</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>6th</td><td>Julius</td><td>From Julius</td></tr>
 <tr><td>7th</td><td>Donny</td><td>Own pick</td></tr>
+<tr><td>9th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Ethan</td><td>From Ethan</td></tr>
 <tr><td>11th</td><td>Donny</td><td>Own pick</td></tr>
 <tr><td>13th</td><td>Donny</td><td>Own pick</td></tr>
@@ -72,7 +74,6 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>4th</td><td>Drake</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Donny sent 2026 4th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick" aria-label="2024-25 Postseason: Donny sent 2026 4th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick">via Donny to Drake</span></td></tr>
 <tr><td>6th</td><td>Ethan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 22: Donny sent 6th-round pick to Ethan. Trade: Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)" aria-label="2025-26 GW 22: Donny sent 6th-round pick to Ethan. Trade: Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)">via Donny to Ethan</span></td></tr>
 <tr><td>8th</td><td>Drake</td><td><span class="trade-recap-pill" tabindex="0" title="2024-25 Postseason: Donny sent 2026 8th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick" aria-label="2024-25 Postseason: Donny sent 2026 8th-round pick to Drake. Trade: Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick">via Donny to Drake</span></td></tr>
-<tr><td>9th</td><td>Julius</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)" aria-label="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)">via Donny to Julius</span></td></tr>
 <tr><td>10th</td><td>Dylan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 10th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
 <tr><td>12th</td><td>Dylan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)" aria-label="2025-26 Draft Day: Donny sent 2026 12th-round pick (via Donny) to Dylan. Trade: Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)">via Donny to Dylan</span></td></tr>
 </tbody>
@@ -82,6 +83,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <table>
 <thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
+<tr><td>6th</td><td>Julius</td><td><span class="trade-recap-pill" tabindex="0" title="2026-27 Preseason: Julius sent 2026 Julius 6th-round pick to Donny. Trade: Julius sent 2026 Julius 6th-round pick Note: Julius&#x27;s own pick." aria-label="2026-27 Preseason: Julius sent 2026 Julius 6th-round pick to Donny. Trade: Julius sent 2026 Julius 6th-round pick Note: Julius&#x27;s own pick.">via Julius to Donny</span></td></tr>
 <tr><td>10th</td><td>Ethan</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 Preseason: Ethan sent 10th-round pick (via Ethan) to Donny. Trade: Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)" aria-label="2025-26 Preseason: Ethan sent 10th-round pick (via Ethan) to Donny. Trade: Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)">via Ethan to Donny</span></td></tr>
 </tbody>
 </table>
@@ -292,13 +294,13 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </section>
 <section class="pick-profile" data-pick-profile data-year="2026" data-manager="Julius" hidden>
 <div class="pick-profile-heading">
-<div><h3>Julius - 2026</h3><p>15 picks, +2 versus a standard 13-pick draft.</p></div>
+<div><h3>Julius - 2026</h3><p>13 picks, +0 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>15</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>+2</strong></div>
-<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>13</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+0</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>1</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>1</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
@@ -308,11 +310,9 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>3rd</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>5th</td><td>Julius</td><td>Own pick</td></tr>
-<tr><td>6th</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>6th</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>7th</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Julius</td><td>Own pick</td></tr>
-<tr><td>9th</td><td>Donny</td><td>From Donny</td></tr>
 <tr><td>9th</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Julius</td><td>Own pick</td></tr>
 <tr><td>11th</td><td>Julius</td><td>Own pick</td></tr>
@@ -327,7 +327,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <table>
 <thead><tr><th>Round</th><th>Current Holder</th><th>Trade Recap</th></tr></thead>
 <tbody>
-<tr><td colspan="3">None</td></tr>
+<tr><td>6th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2026-27 Preseason: Julius sent 2026 Julius 6th-round pick to Donny. Trade: Julius sent 2026 Julius 6th-round pick Note: Julius&#x27;s own pick." aria-label="2026-27 Preseason: Julius sent 2026 Julius 6th-round pick to Donny. Trade: Julius sent 2026 Julius 6th-round pick Note: Julius&#x27;s own pick.">via Julius to Donny</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -336,7 +336,6 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <thead><tr><th>Round</th><th>Original Owner</th><th>Trade Recap</th></tr></thead>
 <tbody>
 <tr><td>6th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2026 6th-round pick to Julius. Trade: Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)" aria-label="2025-26 GW 31: Justin sent 2026 6th-round pick to Julius. Trade: Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)">via Justin to Julius</span></td></tr>
-<tr><td>9th</td><td>Donny</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)" aria-label="2025-26 GW 32: Donny sent 2026 9th-round pick to Julius. Trade: Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)">via Donny to Julius</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -1049,7 +1048,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <details>
 <summary><h2>2026 Draft Board</h2></summary>
 
-A draft-board view ordered by reverse 25/26 standings. Each box shows the current owner of that pick.
+A draft-board view ordered by reverse 25/26 standings. Each box shows the current owner of that pick, followed by any supplemental roster-fill selections.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1058,6 +1057,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 - The number at the top of each column is the draft slot in that round.
 - Every box is colored by the manager who currently owns that pick.
 - Grey boxes are surplus picks: each manager can use at most 15 total picks, so after two keeper slots only their first 13 picks shown here are usable. Any 14th+ shown pick is pick 16+ overall and will not be used unless the pick situation changes.
+- Roster Fill rows are automatically added after the normal draft so every manager receives 13 usable selections and finishes with 15 players including two keepers. These supplemental selections are not tradable assets.
 - Rounds `1st` and `2nd` are omitted because those are keeper slots.
 
 </details>
@@ -1119,7 +1119,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">6th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">6.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Julius"><span class="draft-pick-slot">6.01</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">6.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">6.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">6.04</span><span class="draft-pick-holder">Levi</span></td>
@@ -1167,7 +1167,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">9.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">9.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">9.09</span><span class="draft-pick-holder">Justin</span></td>
-<td class="pick-owner-cell is-traded" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Donny"><span class="draft-pick-slot">9.10</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">9.10</span><span class="draft-pick-holder">Donny</span></td>
 </tr>
 <tr>
 <td class="draft-round-cell">10th</td>
@@ -1206,15 +1206,15 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">12.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Luke"><span class="draft-pick-slot">12.08</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">12.09</span><span class="draft-pick-holder">Justin</span></td>
-<td class="pick-owner-cell is-traded is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Donny"><span class="draft-pick-slot">12.10</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-traded is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Donny"><span class="draft-pick-slot">12.10</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 </tr>
 <tr>
 <td class="draft-round-cell">13th</td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">13.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">13.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">13.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">13.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">13.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">13.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">13.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">13.08</span><span class="draft-pick-holder">Luke</span></td>
@@ -1223,29 +1223,81 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">14th</td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" title="Julius owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Julius</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">14.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">14.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 18 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">14.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 18 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">14.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">14.06</span><span class="draft-pick-holder">House</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" title="Drake owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">14.07</span><span class="draft-pick-holder">Drake</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" title="Drake owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">14.07</span><span class="draft-pick-holder">Drake</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">14.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">14.09</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">14.10</span><span class="draft-pick-holder">Donny</span></td>
 </tr>
 <tr>
 <td class="draft-round-cell">15th</td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" title="Julius owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Julius</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" title="Ethan owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Ethan</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Julius</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" title="Ethan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Ethan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">15.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 18 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 18 overall</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this as pick 19 overall, which is beyond the 15-pick cap and will not be used." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">15.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: pick 19 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">15.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">15.06</span><span class="draft-pick-holder">House</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" title="Drake owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">15.07</span><span class="draft-pick-holder">Drake</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" title="Drake owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">15.07</span><span class="draft-pick-holder">Drake</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">15.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">15.09</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">15.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 1<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" title="Supplemental non-tradable selection used only to complete Lukeâ€™s roster" data-holder="Luke" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 1.08</span><span class="draft-pick-holder">Luke</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 1.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" title="Supplemental non-tradable selection used only to complete Donnyâ€™s roster" data-holder="Donny" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 1.10</span><span class="draft-pick-holder">Donny</span><span class="draft-pick-unused">Non-tradable</span></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 2<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" title="Supplemental non-tradable selection used only to complete Lukeâ€™s roster" data-holder="Luke" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 2.08</span><span class="draft-pick-holder">Luke</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 2.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" title="Supplemental non-tradable selection used only to complete Donnyâ€™s roster" data-holder="Donny" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 2.10</span><span class="draft-pick-holder">Donny</span><span class="draft-pick-unused">Non-tradable</span></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 3<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" title="Supplemental non-tradable selection used only to complete Lukeâ€™s roster" data-holder="Luke" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 3.08</span><span class="draft-pick-holder">Luke</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 3.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" title="Supplemental non-tradable selection used only to complete Donnyâ€™s roster" data-holder="Donny" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 3.10</span><span class="draft-pick-holder">Donny</span><span class="draft-pick-unused">Non-tradable</span></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 4<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 4.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="draft-roster-fill-empty"></td>
 </tr>
 </tbody>
 </table>
@@ -1255,7 +1307,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <details>
 <summary><h2>2027 Draft Board</h2></summary>
 
-A draft-board view ordered by reverse 25/26 standings. Each box shows the current owner of that pick.
+A draft-board view ordered by reverse 25/26 standings. Each box shows the current owner of that pick, followed by any supplemental roster-fill selections.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1264,6 +1316,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 - The number at the top of each column is the draft slot in that round.
 - Every box is colored by the manager who currently owns that pick.
 - Grey boxes are surplus picks: each manager can use at most 15 total picks, so after two keeper slots only their first 13 picks shown here are usable. Any 14th+ shown pick is pick 16+ overall and will not be used unless the pick situation changes.
+- Roster Fill rows are automatically added after the normal draft so every manager receives 13 usable selections and finishes with 15 players including two keepers. These supplemental selections are not tradable assets.
 - Rounds `1st` and `2nd` are omitted because those are keeper slots.
 
 </details>
@@ -1432,7 +1485,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">14.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">14.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 16 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 16 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">14.05</span><span class="draft-pick-holder">Dylan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">14.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">14.07</span><span class="draft-pick-holder">Drake</span></td>
@@ -1445,13 +1498,39 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">15.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this as pick 17 overall, which is beyond the 15-pick cap and will not be used." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: pick 17 overall</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">15.05</span><span class="draft-pick-holder">Dylan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">15.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">15.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">15.08</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">15.09</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">15.10</span><span class="draft-pick-holder">Donny</span></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 1<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 1.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="draft-roster-fill-empty"></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 2<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 2.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="draft-roster-fill-empty"></td>
 </tr>
 </tbody>
 </table>

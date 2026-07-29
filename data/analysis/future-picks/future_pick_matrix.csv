@@ -54,7 +54,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,6,6th,House,House,Own,Own
 2026,6,6th,Levi,Levi,Own,Own
 2026,6,6th,Luke,Luke,Own,Own
-2026,6,6th,Julius,Julius,Own,Own
+2026,6,6th,Julius,Donny,Traded,Owed to Donny
 2026,6,6th,Drake,Drake,Own,Own
 2026,6,6th,Chabo,Chabo,Own,Own
 2026,6,6th,Ethan,Ethan,Own,Own
@@ -79,7 +79,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2026,8,8th,Chabo,Chabo,Own,Own
 2026,8,8th,Ethan,Ethan,Own,Own
 2026,8,8th,Dylan,Dylan,Own,Own
-2026,9,9th,Donny,Julius,Traded,Owed to Julius
+2026,9,9th,Donny,Donny,Own,Own
 2026,9,9th,Justin,Justin,Own,Own
 2026,9,9th,House,House,Own,Own
 2026,9,9th,Levi,Levi,Own,Own

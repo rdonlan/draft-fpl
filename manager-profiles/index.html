@@ -673,8 +673,226 @@
     .keeper-simulator-position-counts strong {
       color: var(--accent);
     }
+    .keeper-mock-draft {
+      margin: 16px 0 28px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .keeper-mock-controls {
+      display: grid;
+      grid-template-columns: minmax(180px, 1fr) repeat(3, auto);
+      gap: 8px;
+      align-items: end;
+    }
+    .keeper-mock-controls button,
+    .keeper-mock-draft-player {
+      min-height: 38px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .keeper-mock-controls .keeper-mock-primary {
+      border-color: var(--active);
+      background: var(--active);
+      color: #fff;
+    }
+    .keeper-mock-controls button:disabled,
+    .keeper-mock-draft-player:disabled {
+      cursor: not-allowed;
+      opacity: 0.48;
+    }
+    .keeper-mock-gate {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-weight: 750;
+    }
+    .keeper-mock-gate.is-active {
+      color: var(--accent);
+    }
+    .keeper-mock-current {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 9px;
+      margin: 14px 0;
+    }
+    .keeper-mock-current[hidden],
+    .keeper-mock-manager-grid[hidden] {
+      display: none !important;
+    }
+    .keeper-mock-current > div {
+      display: grid;
+      gap: 3px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--paper);
+    }
+    .keeper-mock-current span {
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .keeper-mock-current strong {
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+    .keeper-mock-manager-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .keeper-mock-manager {
+      min-width: 0;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--manager-accent);
+      border-radius: 7px;
+      background: var(--paper);
+    }
+    .keeper-mock-manager.is-user {
+      box-shadow: inset 0 0 0 2px var(--manager-accent);
+    }
+    .keeper-mock-manager.is-on-clock {
+      background: var(--soft-2);
+      box-shadow: 0 0 0 3px var(--manager-accent);
+    }
+    .keeper-mock-manager h3 {
+      margin: 0 0 4px;
+      color: var(--ink);
+      font-size: 0.9rem;
+    }
+    .keeper-mock-manager p {
+      margin: 0 0 7px;
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 750;
+    }
+    .keeper-mock-manager [data-mock-manager-players] {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .keeper-mock-manager [data-mock-manager-players] span {
+      padding: 3px 5px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      font-size: 0.68rem;
+    }
+    .keeper-mock-manager [data-mock-manager-players] em {
+      color: var(--muted);
+      font-style: normal;
+      font-weight: 800;
+    }
+    .keeper-mock-log {
+      max-height: 286px;
+      margin-bottom: 0;
+      overflow-x: auto;
+      overflow-y: auto;
+      overscroll-behavior-block: contain;
+      scrollbar-width: thin;
+    }
+    .keeper-mock-log table {
+      min-width: 680px;
+    }
+    .keeper-mock-log thead th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .keeper-mock-log tbody tr {
+      height: 45px;
+    }
+    .keeper-mock-upcoming {
+      margin: 18px 0 24px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .keeper-mock-upcoming[hidden] {
+      display: none !important;
+    }
+    .keeper-mock-upcoming-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 9px;
+    }
+    .keeper-mock-upcoming-head strong {
+      color: var(--ink);
+      font-size: 0.9rem;
+    }
+    .keeper-mock-upcoming-head span {
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+    .keeper-mock-upcoming-track {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      padding: 2px 2px 8px;
+      scroll-snap-type: inline proximity;
+      scrollbar-width: thin;
+    }
+    .keeper-mock-upcoming-pick {
+      display: grid;
+      flex: 0 0 145px;
+      gap: 2px;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--paper);
+      scroll-snap-align: start;
+    }
+    .keeper-mock-upcoming-pick.is-current {
+      border-color: var(--active);
+      box-shadow: inset 0 0 0 2px var(--active);
+    }
+    .keeper-mock-upcoming-pick span {
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 850;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .keeper-mock-upcoming-pick strong {
+      color: var(--accent);
+      font-size: 0.84rem;
+    }
+    .keeper-mock-upcoming-pick em {
+      overflow: hidden;
+      color: var(--ink);
+      font-size: 0.72rem;
+      font-style: normal;
+      font-weight: 750;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .keeper-mock-upcoming-complete {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 800;
+    }
+    .keeper-mock-draft-player {
+      min-width: 105px;
+      color: var(--active);
+      white-space: nowrap;
+    }
     .keeper-simulator-pool-table table {
-      min-width: 850px;
+      min-width: 980px;
     }
     .keeper-history-grid {
       display: grid;
@@ -1947,6 +2165,27 @@
       box-shadow: inset 0 0 0 1px #475569;
       opacity: 0.88;
     }
+    .draft-board-table .draft-roster-fill-row td {
+      border-top: 3px solid var(--active);
+    }
+    .draft-board-table .draft-round-cell small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.58rem;
+      font-weight: 850;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+    .draft-board-table .pick-owner-cell.is-roster-fill,
+    .draft-board-table tr:nth-child(even) .pick-owner-cell.is-roster-fill {
+      background: color-mix(in srgb, var(--pick-bg) 72%, var(--paper)) !important;
+      border: 1px dashed var(--pick-border);
+      box-shadow: none;
+    }
+    .draft-board-table .draft-roster-fill-empty {
+      background: var(--soft-2);
+    }
     .draft-pick-slot {
       display: block;
       margin-bottom: 3px;
@@ -2041,6 +2280,18 @@
       }
       .keeper-simulator-controls {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .keeper-mock-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .keeper-mock-controls .keeper-filter-label {
+        grid-column: 1 / -1;
+      }
+      .keeper-mock-current {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .keeper-mock-manager-grid {
+        grid-template-columns: minmax(0, 1fr);
       }
       .keeper-history-mode-toggle {
         display: grid;
@@ -5620,6 +5871,10 @@
   const data = JSON.parse(dataNode.textContent);
   const storageKey = "bms-keeper-simulator";
   const selected = new Set();
+  const usablePicks = data.picks.filter((pick) => pick.usable);
+  const draftHistory = [];
+  let draftActive = false;
+  let savedMock = null;
   const managerPlayers = new Map();
   const playerById = new Map(data.players.map((player) => [Number(player.element), player]));
   const playerButtons = Array.from(app.querySelectorAll("[data-simulator-player]"));
@@ -5635,6 +5890,22 @@
   const club = app.querySelector("[data-simulator-club]");
   const owner = app.querySelector("[data-simulator-owner]");
   const sort = app.querySelector("[data-simulator-sort]");
+  const simulatorSortButtons = Array.from(app.querySelectorAll("[data-simulator-sort-button]"));
+  let activePoolSort = sort?.value || "points-desc";
+  const mockUserManager = app.querySelector("[data-mock-user-manager]");
+  const mockStart = app.querySelector("[data-mock-start]");
+  const mockUndo = app.querySelector("[data-mock-undo]");
+  const mockReset = app.querySelector("[data-mock-reset]");
+  const mockGate = app.querySelector("[data-mock-gate]");
+  const mockCurrent = app.querySelector("[data-mock-current]");
+  const mockCurrentPick = app.querySelector("[data-mock-current-pick]");
+  const mockCurrentHolder = app.querySelector("[data-mock-current-holder]");
+  const mockNextUserPick = app.querySelector("[data-mock-next-user-pick]");
+  const mockProgress = app.querySelector("[data-mock-progress]");
+  const mockManagerGrid = app.querySelector("[data-mock-manager-grid]");
+  const mockLogBody = app.querySelector("[data-mock-log-body]");
+  const mockUpcoming = app.querySelector("[data-mock-upcoming]");
+  const mockUpcomingTrack = app.querySelector("[data-mock-upcoming-track]");
 
   data.managers.forEach((manager) => managerPlayers.set(manager, new Set()));
   playerButtons.forEach((button) => {
@@ -5653,13 +5924,49 @@
   const managerSelections = (manager) => Array.from(selected).filter(
     (element) => managerPlayers.get(manager)?.has(element)
   );
+  const allKeepersComplete = () => data.managers.every(
+    (manager) => managerSelections(manager).length === 2
+  );
+  const draftedElements = () => new Set(
+    draftHistory.map((entry) => Number(entry.element))
+  );
+  const managerRosterElements = (manager) => {
+    const roster = managerSelections(manager);
+    draftHistory.forEach((entry, index) => {
+      if (usablePicks[index]?.holder === manager) roster.push(Number(entry.element));
+    });
+    return roster;
+  };
+  const positionCount = (manager, positionName) => managerRosterElements(manager)
+    .map((element) => playerById.get(Number(element)))
+    .filter((player) => player?.position === positionName)
+    .length;
+  const canDraftPlayer = (player, pick) => Boolean(
+    draftActive
+      && pick
+      && player
+      && positionCount(pick.holder, player.position) < data.position_limits[player.position]
+  );
+  const resetDraft = () => {
+    draftHistory.length = 0;
+    draftActive = false;
+  };
+  const pickLabel = (pick) => pick?.display_label || pick?.id || "â€”";
 
   const save = () => {
     const selections = {};
     data.managers.forEach((manager) => {
       selections[manager] = managerSelections(manager);
     });
-    localStorage.setItem(storageKey, JSON.stringify({ version: data.version, selections }));
+    localStorage.setItem(storageKey, JSON.stringify({
+      version: data.version,
+      selections,
+      mock: {
+        active: draftActive,
+        userManager: mockUserManager?.value || data.managers[0],
+        history: draftHistory,
+      },
+    }));
   };
 
   const load = () => {
@@ -5675,6 +5982,7 @@
           : [];
         valid.forEach((element) => selected.add(element));
       });
+      savedMock = saved.mock || null;
     } catch {
       localStorage.removeItem(storageKey);
     }
@@ -5691,9 +5999,14 @@
     });
   };
 
-  const availablePlayers = () => data.players.filter(
-    (player) => player.draft_eligible && !selected.has(Number(player.element))
-  );
+  const availablePlayers = () => {
+    const drafted = draftedElements();
+    return data.players.filter(
+      (player) => player.draft_eligible
+        && !selected.has(Number(player.element))
+        && !drafted.has(Number(player.element))
+    );
+  };
 
   const renderPool = (available) => {
     const query = search.value.trim().toLowerCase();
@@ -5704,30 +6017,53 @@
         && (!club.value || player.club === club.value)
         && (!owner.value || source === owner.value);
     });
-    const [sortField, direction] = sort.value.split("-");
+    const [sortField, direction] = activePoolSort.split("-");
     const accessors = {
       points: (player) => player.points,
       ppg: (player) => player.ppg,
       overall: (player) => player.overall_rank,
-      position: (player) => player.position_rank,
+      position: (player) => player.position,
+      position_rank: (player) => player.position_rank,
       name: (player) => player.player.toLowerCase(),
+      club: (player) => player.club.toLowerCase(),
+      owner: (player) => (player.owner_name || "Already unowned").toLowerCase(),
     };
     const accessor = accessors[sortField] || accessors.points;
     filtered.sort((a, b) => {
       const valueA = accessor(a);
       const valueB = accessor(b);
       let comparison = 0;
-      if (valueA == null && valueB == null) return 0;
-      if (valueA == null) return 1;
-      if (valueB == null) return -1;
+      const missingA = valueA == null || valueA === "" || Number.isNaN(valueA);
+      const missingB = valueB == null || valueB === "" || Number.isNaN(valueB);
+      if (missingA && missingB) return 0;
+      if (missingA) return 1;
+      if (missingB) return -1;
       comparison = typeof valueA === "string"
         ? valueA.localeCompare(valueB)
         : valueA - valueB;
       return direction === "desc" ? -comparison : comparison;
     });
+    simulatorSortButtons.forEach((button) => {
+      const active = button.dataset.simulatorSortButton === sortField;
+      const header = button.closest("th");
+      header.dataset.sortState = active ? direction : "";
+      header.setAttribute(
+        "aria-sort",
+        active ? (direction === "asc" ? "ascending" : "descending") : "none"
+      );
+    });
+    const currentPick = draftActive ? usablePicks[draftHistory.length] : null;
     poolBody.innerHTML = filtered.map((player) => {
       const source = player.owner_name || "Already unowned";
       const positionClass = `keeper-pos-${player.position.toLowerCase()}`;
+      const allowed = canDraftPlayer(player, currentPick);
+      const draftLabel = !draftActive
+        ? "Start mock draft"
+        : !currentPick
+          ? "Draft complete"
+          : allowed
+            ? `Draft to ${currentPick.holder_name}`
+            : `${player.position} slots full`;
       return `<tr class="${positionClass}">
         <td data-label="Position">${escapeHtml(player.position)}</td>
         <td data-label="Player">${escapeHtml(player.player)}</td>
@@ -5737,9 +6073,112 @@
         <td data-label="PPG">${player.ppg.toFixed(1)}</td>
         <td data-label="Overall Rank">${player.overall_rank ?? "—"}</td>
         <td data-label="Pos Rank">${player.position_rank ?? "—"}</td>
+        <td data-label="Mock Draft"><button type="button" class="keeper-mock-draft-player"
+          data-mock-draft-player="${player.element}" ${allowed ? "" : "disabled"}>
+          ${escapeHtml(draftLabel)}</button></td>
       </tr>`;
     }).join("");
     filteredCount.textContent = `${filtered.length} player${filtered.length === 1 ? "" : "s"} shown`;
+  };
+
+  const managerName = (manager) => {
+    const sample = data.players.find((player) => player.owner === manager);
+    return sample?.owner_name || manager;
+  };
+
+  const renderMockDraft = () => {
+    const keepersComplete = allKeepersComplete();
+    const currentPick = draftActive ? usablePicks[draftHistory.length] : null;
+    const userManager = mockUserManager?.value || data.managers[0];
+    const nextUserPick = draftActive
+      ? usablePicks.slice(draftHistory.length).find((pick) => pick.holder === userManager)
+      : null;
+
+    mockStart.disabled = !keepersComplete || draftActive;
+    mockUndo.disabled = !draftActive || !draftHistory.length;
+    mockReset.disabled = !draftActive && !draftHistory.length;
+      mockGate.textContent = !keepersComplete
+      ? "Complete all 20 keeper selections to unlock the mock draft."
+      : draftActive
+        ? currentPick
+          ? `${currentPick.holder_name} is on the clock at ${pickLabel(currentPick)}.`
+          : "Mock draft complete."
+        : "Keeper scenario complete. Choose your manager and start the manual mock draft.";
+    mockGate.classList.toggle("is-active", draftActive);
+    mockCurrent.toggleAttribute("hidden", !draftActive);
+    mockManagerGrid.toggleAttribute("hidden", !draftActive);
+    mockUpcoming.toggleAttribute("hidden", !draftActive);
+
+    if (draftActive) {
+      mockCurrentPick.textContent = currentPick ? pickLabel(currentPick) : "Complete";
+      mockCurrentHolder.textContent = currentPick?.holder_name || "—";
+      mockNextUserPick.textContent = nextUserPick
+        ? `${pickLabel(nextUserPick)} (${Math.max(0, usablePicks.indexOf(nextUserPick) - draftHistory.length)} picks away)`
+        : "No remaining picks";
+      mockProgress.textContent = `${draftHistory.length} / ${usablePicks.length}`;
+    }
+
+    app.querySelectorAll("[data-mock-manager]").forEach((card) => {
+      const manager = card.dataset.mockManager;
+      const elements = managerRosterElements(manager);
+      const players = elements.map((element) => playerById.get(Number(element))).filter(Boolean);
+      const counts = { GKP: 0, DEF: 0, MID: 0, FWD: 0 };
+      players.forEach((player) => { counts[player.position] += 1; });
+      card.classList.toggle("is-on-clock", currentPick?.holder === manager);
+      card.classList.toggle("is-user", manager === userManager);
+      card.querySelector("[data-mock-manager-counts]").textContent =
+        `${players.length} players · ${Object.entries(counts).map(([pos, count]) => `${pos} ${count}`).join(" · ")}`;
+      card.querySelector("[data-mock-manager-players]").innerHTML = players
+        .map((player) => `<span>${escapeHtml(player.player)} <em>${escapeHtml(player.position)}</em></span>`)
+        .join("");
+    });
+
+    mockLogBody.innerHTML = draftHistory.length
+      ? draftHistory.map((entry, index) => {
+          const pick = usablePicks[index];
+          const player = playerById.get(Number(entry.element));
+          return `<tr>
+            <td data-label="Pick">${escapeHtml(pickLabel(pick))}</td>
+            <td data-label="Manager">${escapeHtml(pick.holder_name)}</td>
+            <td data-label="Player">${escapeHtml(player?.player || "")}</td>
+            <td data-label="Position">${escapeHtml(player?.position || "")}</td>
+            <td data-label="Club">${escapeHtml(player?.club || "")}</td>
+          </tr>`;
+        }).join("")
+      : '<tr><td colspan="5">No mock-draft picks yet.</td></tr>';
+
+    if (draftActive) {
+      const upcomingPicks = usablePicks.slice(draftHistory.length, draftHistory.length + 10);
+      mockUpcomingTrack.innerHTML = upcomingPicks.length
+        ? upcomingPicks.map((pick, index) => `
+          <article class="keeper-mock-upcoming-pick${index === 0 ? " is-current" : ""}">
+            <span>${index === 0 ? "On the clock" : `Next +${index}`}</span>
+            <strong>${escapeHtml(pickLabel(pick))}</strong>
+            <em>${escapeHtml(pick.holder_name)}</em>
+          </article>
+        `).join("")
+        : '<p class="keeper-mock-upcoming-complete">Draft complete</p>';
+      mockUpcomingTrack.scrollLeft = 0;
+    }
+  };
+
+  const restoreSavedMock = () => {
+    if (!savedMock || !allKeepersComplete()) return;
+    if (data.managers.includes(savedMock.userManager)) {
+      mockUserManager.value = savedMock.userManager;
+    }
+    if (!savedMock.active || !Array.isArray(savedMock.history)) return;
+    draftActive = true;
+    for (const entry of savedMock.history) {
+      const pick = usablePicks[draftHistory.length];
+      const player = playerById.get(Number(entry.element));
+      const unavailable = !player
+        || !player.draft_eligible
+        || selected.has(Number(entry.element))
+        || draftedElements().has(Number(entry.element));
+      if (!pick || entry.pickId !== pick.id || unavailable || !canDraftPlayer(player, pick)) break;
+      draftHistory.push({ pickId: pick.id, element: Number(entry.element) });
+    }
   };
 
   const render = () => {
@@ -5751,7 +6190,7 @@
       const eligible = button.dataset.simulatorPlayerEligible === "true";
       button.classList.toggle("is-selected", active);
       button.setAttribute("aria-pressed", active ? "true" : "false");
-      button.disabled = !eligible || (!active && full);
+      button.disabled = !eligible || draftActive || (!active && full);
     });
 
     let completeManagers = 0;
@@ -5779,12 +6218,17 @@
     positionCounts.innerHTML = Object.entries(counts)
       .map(([label, count]) => `<span><strong>${count}</strong> ${label}</span>`)
       .join("");
+    app.querySelectorAll("[data-simulator-reset-manager]").forEach((button) => {
+      button.disabled = draftActive;
+    });
+    renderMockDraft();
     renderPool(available);
     save();
   };
 
   playerButtons.forEach((button) => {
     button.addEventListener("click", () => {
+      resetDraft();
       const element = Number(button.dataset.simulatorPlayer);
       const manager = button.dataset.simulatorPlayerManager;
       if (selected.has(element)) {
@@ -5797,20 +6241,69 @@
   });
   app.querySelectorAll("[data-simulator-reset-manager]").forEach((button) => {
     button.addEventListener("click", () => {
+      resetDraft();
       managerSelections(button.dataset.simulatorResetManager).forEach((element) => selected.delete(element));
       render();
     });
   });
   app.querySelector("[data-simulator-reset-all]")?.addEventListener("click", () => {
+    resetDraft();
     selected.clear();
     render();
   });
-  [search, position, club, owner, sort].forEach((control) => {
+  mockStart?.addEventListener("click", () => {
+    if (!allKeepersComplete()) return;
+    draftHistory.length = 0;
+    draftActive = true;
+    render();
+  });
+  mockUndo?.addEventListener("click", () => {
+    if (draftHistory.length) draftHistory.pop();
+    render();
+  });
+  mockReset?.addEventListener("click", () => {
+    resetDraft();
+    render();
+  });
+  mockUserManager?.addEventListener("change", render);
+  poolBody?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-mock-draft-player]");
+    if (!button || button.disabled || !draftActive) return;
+    const pick = usablePicks[draftHistory.length];
+    const player = playerById.get(Number(button.dataset.mockDraftPlayer));
+    if (!pick || !canDraftPlayer(player, pick)) return;
+    draftHistory.push({ pickId: pick.id, element: Number(player.element) });
+    render();
+  });
+  [search, position, club, owner].forEach((control) => {
     control?.addEventListener(control === search ? "input" : "change", () => renderPool(availablePlayers()));
+  });
+  sort?.addEventListener("change", () => {
+    activePoolSort = sort.value;
+    renderPool(availablePlayers());
+  });
+  simulatorSortButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const field = button.dataset.simulatorSortButton;
+      const [currentField, currentDirection] = activePoolSort.split("-");
+      const direction = currentField === field
+        ? (currentDirection === "asc" ? "desc" : "asc")
+        : button.dataset.sortDefault;
+      activePoolSort = `${field}-${direction}`;
+      let option = Array.from(sort.options).find((item) => item.value === activePoolSort);
+      if (!option) {
+        option = new Option(button.textContent.trim(), activePoolSort);
+        option.hidden = true;
+        sort.add(option);
+      }
+      sort.value = activePoolSort;
+      renderPool(availablePlayers());
+    });
   });
 
   fillFilters();
   load();
+  restoreSavedMock();
   render();
 })();
 </script>
@@ -5857,7 +6350,9 @@
 </script>
   <script>
 (() => {
-  const tables = Array.from(document.querySelectorAll(".keeper-roster-table table, .keeper-history-table table"));
+  const tables = Array.from(
+    document.querySelectorAll(".keeper-roster-table table, .keeper-history-table table")
+  ).filter((table) => !table.closest(".keeper-simulator-pool-table"));
   if (!tables.length) return;
 
   const parseNumber = (text) => {
@@ -5924,9 +6419,9 @@
             if (Number.isNaN(numberA) && Number.isNaN(numberB)) {
               comparison = 0;
             } else if (Number.isNaN(numberA)) {
-              comparison = 1;
+              return 1;
             } else if (Number.isNaN(numberB)) {
-              comparison = -1;
+              return -1;
             } else {
               comparison = numberA - numberB;
             }
