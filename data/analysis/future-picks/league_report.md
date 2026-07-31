@@ -1066,8 +1066,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <table class="draft-board-table">
 <thead><tr>
 <th>Round</th>
-<th><span>1</span><strong>Julius</strong></th>
-<th><span>2</span><strong>Ethan</strong></th>
+<th><span>1</span><strong>Ethan</strong></th>
+<th><span>2</span><strong>Julius</strong></th>
 <th><span>3</span><strong>Chabo</strong></th>
 <th><span>4</span><strong>Levi</strong></th>
 <th><span>5</span><strong>Dylan</strong></th>
@@ -1080,8 +1080,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <tbody>
 <tr>
 <td class="draft-round-cell">3rd</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">3.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">3.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">3.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">3.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">3.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">3.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">3.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1093,8 +1093,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">4th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">4.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">4.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">4.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">4.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">4.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Levi"><span class="draft-pick-slot">4.04</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">4.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1106,8 +1106,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">5th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">5.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">5.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">5.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">5.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">5.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">5.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">5.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1119,8 +1119,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">6th</td>
-<td class="pick-owner-cell is-traded" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Julius"><span class="draft-pick-slot">6.01</span><span class="draft-pick-holder">Donny</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">6.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">6.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Julius"><span class="draft-pick-slot">6.02</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">6.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">6.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">6.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1132,8 +1132,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">7th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">7.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">7.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">7.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">7.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">7.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">7.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">7.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1145,8 +1145,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">8th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">8.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">8.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">8.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">8.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">8.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">8.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">8.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1158,8 +1158,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">9th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">9.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">9.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">9.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">9.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">9.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">9.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">9.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1171,8 +1171,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">10th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">10.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-traded" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Ethan"><span class="draft-pick-slot">10.02</span><span class="draft-pick-holder">Donny</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Ethan"><span class="draft-pick-slot">10.01</span><span class="draft-pick-holder">Donny</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">10.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">10.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-traded" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="Levi"><span class="draft-pick-slot">10.04</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">10.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1184,8 +1184,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">11th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">11.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">11.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">11.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">11.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">11.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">11.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">11.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1197,8 +1197,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">12th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">12.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">12.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">12.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">12.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">12.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">12.04</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">12.05</span><span class="draft-pick-holder">Dylan</span></td>
@@ -1210,8 +1210,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">13th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">13.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">13.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">13.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">13.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">13.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">13.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
@@ -1223,8 +1223,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">14th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">14.02</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">14.01</span><span class="draft-pick-holder">Ethan</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">14.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">14.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
@@ -1236,8 +1236,8 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 </tr>
 <tr>
 <td class="draft-round-cell">15th</td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Julius</span></td>
-<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" title="Ethan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Ethan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" title="Ethan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">15.01</span><span class="draft-pick-holder">Ethan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
+<td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15.02</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">15.03</span><span class="draft-pick-holder">Chabo</span></td>
 <td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" title="Dylan owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">15.05</span><span class="draft-pick-holder">Dylan</span><span class="draft-pick-unused">Unused: roster already full</span></td>
