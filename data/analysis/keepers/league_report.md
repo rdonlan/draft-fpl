@@ -1427,7 +1427,12 @@ For each legal player, the pick score is **Base Rating + Roster Need + Scarcity 
 - **Scarcity (0-10)** measures the drop from the player to roughly the 10th-best remaining option at the same position (up to 8 points), plus league-wide demand relative to the remaining supply (up to 2 points).
 - **Seeded Variation (-1.5 to +1.5)** prevents every mock from following exactly the same order. The same seed and scenario reproduce the same decisions.
 - The algorithm only considers choices within **1.5 points of the best score**, then makes a weighted seeded selection that still favors the highest score.
-### 5. Roster legality
+### 5. Availability at My Picks
+The availability tool runs **100 alternate draft paths** from the current state. Completed mock-draft picks remain fixed; before a mock begins, it starts from the completed keeper scenario. Each path derives a different reproducible seed from the displayed simulation seed.
+- At each of the selected manager's next three picks, a player counts as available only if they are still undrafted **and** legal for that simulated roster.
+- To continue from one user pick to the next, the same balanced algorithm makes a rational simulated selection for the selected manager. This lets earlier choices influence later positional needs and availability.
+- Results show the ten highest-rated players who reached each pick at least once. A percentage is the share of completed paths in which that player was available and legal; it is an estimate from the model, not a guarantee.
+### 6. Roster legality
 Every simulated team must finish with exactly **2 GKP, 5 DEF, 5 MID and 3 FWD**, including its two keepers. A player is rejected if the pick would exceed a position limit or make it impossible to complete the legal roster with that manager's remaining picks.
 ### How to read the results
 Projected Points estimate season production. Base Rating measures pre-draft relative value. The expandable Rating shown beside an algorithm pick is the decision made at that moment: its Base, Need, Scarcity and Variation components explain why that player was selected. Keeper choices change the available pool and the live need/supply calculation, while changing the seed only changes the small variation and the weighted choice among close options.
@@ -1519,6 +1524,12 @@ Projected Points estimate season production. Base Rating measures pre-draft rela
 <tbody data-mock-log-body><tr><td colspan="7">No mock-draft picks yet.</td></tr></tbody>
 </table></div>
 <button type="button" class="keeper-mock-log-resizer" data-mock-log-resizer aria-label="Resize the previous picks table" title="Drag to resize. Use arrow keys for keyboard resizing."><span>Drag to resize previous picks</span></button>
+<section class="keeper-mock-availability" data-mock-availability>
+<div class="keeper-mock-availability-head"><div><strong>Availability at My Picks</strong><span>Estimate who can reach your next three selections</span></div>
+<button type="button" class="keeper-mock-primary" data-mock-availability-run disabled>Run 100 draft paths</button></div>
+<p class="keeper-mock-availability-status" data-mock-availability-status>Complete all keeper selections to unlock availability analysis.</p>
+<div class="keeper-mock-availability-results" data-mock-availability-results hidden></div>
+</section>
 </section>
 <section class="keeper-mock-upcoming" data-mock-upcoming hidden>
 <div class="keeper-mock-upcoming-head"><strong>Next 10 Picks</strong><span>Current pick is shown first</span></div>
