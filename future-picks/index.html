@@ -405,7 +405,7 @@
       border-radius: 8px;
     }
     @supports (content-visibility: auto) {
-      .table-wrap,
+      .table-wrap:not(.keeper-simulator-pool-table),
       .rating-chart-wrap {
         content-visibility: auto;
         contain-intrinsic-size: auto 360px;
@@ -2533,7 +2533,7 @@
         overflow: hidden;
       }
       @supports (content-visibility: auto) {
-        tbody > tr {
+        tbody:not([data-simulator-pool-body]) > tr {
           content-visibility: auto;
           contain-intrinsic-size: auto 96px;
         }
