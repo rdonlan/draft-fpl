@@ -718,6 +718,88 @@
     .keeper-mock-seed {
       min-width: 0;
     }
+    .keeper-mock-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .keeper-mock-toggle input {
+      accent-color: var(--active);
+    }
+    .keeper-mock-toggle:has(input:disabled) {
+      cursor: not-allowed;
+      opacity: 0.48;
+    }
+    .keeper-homer-details {
+      margin-top: 9px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--paper);
+    }
+    .keeper-homer-details summary {
+      padding: 9px 11px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .keeper-homer-details-body {
+      padding: 0 11px 11px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    .keeper-homer-details-body p {
+      margin: 0 0 9px;
+    }
+    .keeper-homer-preference-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 6px;
+    }
+    .keeper-homer-preference-grid > label,
+    .keeper-homer-preference-grid > .is-neutral {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 6px 8px;
+      border-radius: 5px;
+      background: var(--soft);
+      color: var(--ink);
+    }
+    .keeper-homer-preference-grid label > span,
+    .keeper-homer-preference-grid .is-neutral > span {
+      display: grid;
+      gap: 1px;
+    }
+    .keeper-homer-preference-grid small {
+      color: var(--muted);
+      font-size: 0.7rem;
+    }
+    .keeper-homer-preference-grid select {
+      min-width: 76px;
+      padding: 5px 6px;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 750;
+    }
+    .keeper-homer-preference-grid em {
+      color: var(--muted);
+      font-style: normal;
+      font-weight: 750;
+    }
     .keeper-mock-controls button,
     .keeper-mock-draft-player {
       min-height: 38px;
@@ -917,7 +999,8 @@
     }
     .keeper-mock-board-cell > span,
     .keeper-mock-board-cell > strong,
-    .keeper-mock-board-cell > em {
+    .keeper-mock-board-cell > em,
+    .keeper-mock-board-cell > small {
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -943,6 +1026,13 @@
     }
     .keeper-mock-board-cell.is-future em {
       margin-top: 8px;
+    }
+    .keeper-mock-board-homer {
+      margin-top: 2px;
+      color: var(--active);
+      font-size: 0.58rem;
+      font-weight: 850;
+      letter-spacing: 0.02em;
     }
     .keeper-mock-availability {
       margin-top: 18px;
@@ -4819,6 +4909,11 @@
   let activePoolSort = sort?.value || "points-desc";
   const mockUserManager = app.querySelector("[data-mock-user-manager]");
   const mockSeed = app.querySelector("[data-mock-seed]");
+  const mockHomerBias = app.querySelector("[data-mock-homer-bias]");
+  const mockHomerStrengths = new Map(
+    Array.from(app.querySelectorAll("[data-mock-homer-strength]"))
+      .map((control) => [control.dataset.mockHomerStrength, control])
+  );
   const mockNewSeed = app.querySelector("[data-mock-new-seed]");
   const mockStart = app.querySelector("[data-mock-start]");
   const mockAutoCurrent = app.querySelector("[data-mock-auto-current]");
@@ -4878,6 +4973,10 @@
     return roster;
   };
   const managerRosterElements = (manager) => managerRosterElementsFor(manager, draftHistory);
+  const clubCountFor = (manager, clubName, history) => managerRosterElementsFor(manager, history)
+    .map((element) => playerById.get(Number(element)))
+    .filter((player) => player?.club === clubName)
+    .length;
   const positionCountFor = (manager, positionName, history) => managerRosterElementsFor(manager, history)
     .map((element) => playerById.get(Number(element)))
     .filter((player) => player?.position === positionName)
@@ -5044,6 +5143,45 @@
     draftHistory,
     Number(mockSeed?.value) || 26027
   );
+  const baselineSelectionProbabilityFor = (player, pick, history, seed) => {
+    const available = availablePlayersFor(history);
+    const scored = available
+      .map((candidate) => ({
+        player: candidate,
+        score: algorithmScoreFor(candidate, pick, available, history, seed),
+      }))
+      .filter((candidate) => candidate.score)
+      .sort((a, b) => b.score.final - a.score.final);
+    if (!scored.length) return 0;
+    const best = scored[0].score.final;
+    const baselineTier = scored.filter((candidate) => candidate.score.final >= best - 1.5);
+    const baselineWeights = baselineTier.map(
+      (candidate) => Math.exp((candidate.score.final - best) / 0.75)
+    );
+    const candidateIndex = baselineTier.findIndex(
+      (candidate) => Number(candidate.player.element) === Number(player?.element)
+    );
+    const totalWeight = baselineWeights.reduce((total, value) => total + value, 0);
+    return candidateIndex >= 0 && totalWeight > 0
+      ? baselineWeights[candidateIndex] / totalWeight
+      : 0;
+  };
+  const manualHomerContextFor = (player, pick, history, seed) => {
+    const homerStrength = mockHomerStrengths.get(pick?.holder)?.value || "low";
+    const homerClub = mockHomerBias?.checked && homerStrength !== "off"
+      ? data.homer_clubs?.[pick?.holder]
+      : "";
+    if (!homerClub || player?.club !== homerClub) {
+      return { homer: false, baselineProbability: 1 };
+    }
+    const baselineProbability = baselineSelectionProbabilityFor(
+      player, pick, history, seed
+    );
+    return {
+      homer: baselineProbability < 0.50,
+      baselineProbability,
+    };
+  };
   const chooseAlgorithmPlayerFor = (pick, history, seed) => {
     const available = availablePlayersFor(history);
     const scored = available
@@ -5055,15 +5193,74 @@
       .sort((a, b) => b.score.final - a.score.final);
     if (!scored.length) return null;
     const best = scored[0].score.final;
-    const tier = scored.filter((candidate) => candidate.score.final >= best - 1.5);
-    const weights = tier.map((candidate) => Math.exp((candidate.score.final - best) / 0.75));
-    const totalWeight = weights.reduce((total, value) => total + value, 0);
-    let target = seededUnit(seed, pick.id, "tier-choice") * totalWeight;
-    for (let index = 0; index < tier.length; index += 1) {
-      target -= weights[index];
-      if (target <= 0) return tier[index];
-    }
-    return tier[0];
+    const homerStrength = mockHomerStrengths.get(pick.holder)?.value || "low";
+    const homerClub = mockHomerBias?.checked && homerStrength !== "off"
+      ? data.homer_clubs?.[pick.holder]
+      : "";
+    const homerLevel = data.homer_bias_levels?.[homerStrength]
+      || data.homer_bias_levels?.low
+      || { max_gap: 2, multipliers: [1.5, 1.25, 1.1] };
+    const homerGap = Number(homerLevel.max_gap) || 2;
+    const tier = scored.filter((candidate) =>
+      candidate.score.final >= best - 1.5
+      || (
+        homerClub
+        && candidate.player.club === homerClub
+        && candidate.score.final >= best - homerGap
+      )
+    );
+    const existingHomerCount = homerClub ? clubCountFor(pick.holder, homerClub, history) : 0;
+    const homerMultipliers = homerLevel.multipliers || [1.5, 1.25, 1.1];
+    const homerMultiplier = Number(
+      homerMultipliers[Math.min(existingHomerCount, homerMultipliers.length - 1)]
+    ) || 1;
+    const tierChoiceUnit = seededUnit(seed, pick.id, "tier-choice");
+    const selectWeightedChoice = (candidates, candidateWeights) => {
+      const totalWeight = candidateWeights.reduce((total, value) => total + value, 0);
+      let target = tierChoiceUnit * totalWeight;
+      for (let index = 0; index < candidates.length; index += 1) {
+        target -= candidateWeights[index];
+        if (target <= 0) return candidates[index];
+      }
+      return candidates[0];
+    };
+    const baselineTier = scored.filter((candidate) => candidate.score.final >= best - 1.5);
+    const baselineWeights = baselineTier.map(
+      (candidate) => Math.exp((candidate.score.final - best) / 0.75)
+    );
+    const weights = tier.map((candidate) =>
+      Math.exp((candidate.score.final - best) / 0.75)
+      * (homerClub && candidate.player.club === homerClub ? homerMultiplier : 1)
+    );
+    const selectedChoice = selectWeightedChoice(tier, weights);
+    const selectedElement = Number(selectedChoice?.player.element);
+    const baselineIndex = baselineTier.findIndex(
+      (candidate) => Number(candidate.player.element) === selectedElement
+    );
+    const biasedIndex = tier.findIndex(
+      (candidate) => Number(candidate.player.element) === selectedElement
+    );
+    const baselineWeightTotal = baselineWeights.reduce((total, value) => total + value, 0);
+    const biasedWeightTotal = weights.reduce((total, value) => total + value, 0);
+    const baselineProbability = baselineIndex >= 0 && baselineWeightTotal > 0
+      ? baselineWeights[baselineIndex] / baselineWeightTotal
+      : 0;
+    const biasedProbability = biasedIndex >= 0 && biasedWeightTotal > 0
+      ? weights[biasedIndex] / biasedWeightTotal
+      : 0;
+    const qualifiesForHomerTag = baselineProbability < 0.50;
+    const annotateChoice = (candidate) => candidate ? {
+      ...candidate,
+      homer: Boolean(
+        homerClub
+        && candidate.player.club === homerClub
+        && qualifiesForHomerTag
+      ),
+      homerStrength,
+      homerBaselineProbability: baselineProbability,
+      homerBiasedProbability: biasedProbability,
+    } : candidate;
+    return annotateChoice(selectedChoice);
   };
   const chooseAlgorithmPlayer = (pick) => chooseAlgorithmPlayerFor(
     pick, draftHistory, Number(mockSeed?.value) || 26027
@@ -5078,6 +5275,7 @@
       pickId: pick.id,
       element: Number(choice.player.element),
       method: "auto",
+      homer: Boolean(choice.homer),
       rating: Object.fromEntries(
         Object.entries(choice.score).map(([key, value]) => [key, Number(value.toFixed(1))])
       ),
@@ -5113,6 +5311,7 @@
           pickId: pick.id,
           element: Number(choice.player.element),
           method: "auto",
+          homer: Boolean(choice.homer),
           rating: Object.fromEntries(
             Object.entries(choice.score).map(([key, value]) => [key, Number(value.toFixed(1))])
           ),
@@ -5139,6 +5338,10 @@
   const availabilityStateSignature = () => [
     mockUserManager?.value || data.managers[0],
     Number(mockSeed?.value) || 26027,
+    mockHomerBias?.checked ? "homer-on" : "homer-off",
+    Array.from(mockHomerStrengths.entries())
+      .map(([manager, control]) => `${manager}:${control.value}`)
+      .join(","),
     Array.from(selected).sort((a, b) => a - b).join(","),
     draftActive ? "active" : "pre-draft",
     draftHistory.map((entry) => `${entry.pickId}:${entry.element}`).join(","),
@@ -5205,6 +5408,8 @@
     const samples = new Map(targetPicks.map((pick) => [pick.id, 0]));
     const baseSeed = Number(mockSeed?.value) || 26027;
     availabilityRunning = true;
+    if (mockHomerBias) mockHomerBias.disabled = true;
+    mockHomerStrengths.forEach((control) => { control.disabled = true; });
     clearAvailabilityResults();
     mockAvailabilityRun.disabled = true;
     mockAvailabilityRun.textContent = "Analyzing…";
@@ -5274,6 +5479,11 @@
         active: draftActive,
         userManager: mockUserManager?.value || data.managers[0],
         seed: Number(mockSeed?.value) || 26027,
+        homerBias: Boolean(mockHomerBias?.checked),
+        homerStrengths: Object.fromEntries(
+          Array.from(mockHomerStrengths.entries())
+            .map(([manager, control]) => [manager, control.value])
+        ),
         history: draftHistory,
       },
     }));
@@ -5295,6 +5505,14 @@
       });
       savedMock = saved.mock || null;
       if (savedMock?.seed && mockSeed) mockSeed.value = String(savedMock.seed);
+      if (mockHomerBias) mockHomerBias.checked = Boolean(savedMock?.homerBias);
+      mockHomerStrengths.forEach((control, manager) => {
+        const savedStrength = savedMock?.homerStrengths?.[manager];
+        const normalizedStrength = savedStrength === "large" ? "high" : savedStrength;
+        if (["off", "low", "medium", "high"].includes(normalizedStrength)) {
+          control.value = normalizedStrength;
+        }
+      });
       return true;
     } catch {
       localStorage.removeItem(storageKey);
@@ -5412,6 +5630,12 @@
     mockUndo.disabled = fullDraftRunning || !draftActive || !draftHistory.length;
     mockReset.disabled = fullDraftRunning || (!draftActive && !draftHistory.length);
     mockSeed.disabled = draftActive || fullDraftRunning;
+    if (mockHomerBias) {
+      mockHomerBias.disabled = draftActive || fullDraftRunning || availabilityRunning;
+    }
+    mockHomerStrengths.forEach((control) => {
+      control.disabled = draftActive || fullDraftRunning || availabilityRunning;
+    });
     mockNewSeed.disabled = draftActive || fullDraftRunning;
     mockUserManager.disabled = fullDraftRunning;
     mockAutoCurrent.disabled = fullDraftRunning
@@ -5520,6 +5744,7 @@
             <span>${escapeHtml(pickLabel(pick))}</span>
             <strong>${escapeHtml(player?.player || "")}</strong>
             <em>${escapeHtml(pick.holder_name)} · ${escapeHtml(player?.position || "")}</em>
+            ${entry.homer ? '<small class="keeper-mock-board-homer">(homer)</small>' : ""}
           </td>`;
         }).join("");
         return `<tr><th scope="row">${firstOverall}–${lastOverall}</th>${cells}</tr>`;
@@ -5560,6 +5785,7 @@
         pickId: pick.id,
         element: Number(entry.element),
         method: entry.method || "manual",
+        homer: Boolean(entry.homer),
         rating: entry.rating || null,
       });
     }
@@ -5633,6 +5859,16 @@
     mockSeed.value = String(clamp(Number(mockSeed.value) || 26027, 1, 999999));
     render();
   });
+  mockHomerBias?.addEventListener("change", () => {
+    clearAvailabilityResults();
+    render();
+  });
+  mockHomerStrengths.forEach((control) => {
+    control.addEventListener("change", () => {
+      clearAvailabilityResults();
+      render();
+    });
+  });
   mockUndo?.addEventListener("click", () => {
     if (draftHistory.length) draftHistory.pop();
     render();
@@ -5648,10 +5884,17 @@
     const pick = usablePicks[draftHistory.length];
     const player = playerById.get(Number(button.dataset.mockDraftPlayer));
     if (!pick || !canDraftPlayer(player, pick)) return;
+    const manualHomerContext = manualHomerContextFor(
+      player,
+      pick,
+      draftHistory,
+      Number(mockSeed?.value) || 26027
+    );
     draftHistory.push({
       pickId: pick.id,
       element: Number(player.element),
       method: "manual",
+      homer: manualHomerContext.homer,
       rating: null,
     });
     render();
