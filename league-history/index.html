@@ -821,82 +821,124 @@
       font-style: normal;
       font-weight: 800;
     }
-    .keeper-mock-log-head {
+    .keeper-mock-board-head {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
       gap: 12px;
-      margin-top: 4px;
+      margin-top: 16px;
     }
-    .keeper-mock-log-head strong {
+    .keeper-mock-board-head strong {
+      color: var(--ink);
       font-family: "Arial Black", "Franklin Gothic Heavy", sans-serif;
       text-transform: uppercase;
     }
-    .keeper-mock-log-head span {
+    .keeper-mock-board-head span {
       color: var(--muted);
       font-size: 0.72rem;
       font-weight: 700;
     }
-    .keeper-mock-log {
-      height: 286px;
-      min-height: 225px;
-      margin-bottom: 0;
-      overflow-x: auto;
-      overflow-y: auto;
-      overscroll-behavior-block: contain;
+    .keeper-mock-board-wrap {
+      max-height: 720px;
+      margin-top: 7px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      overscroll-behavior: contain;
       scrollbar-width: thin;
     }
-    .keeper-mock-log table {
-      min-width: 920px;
+    .keeper-mock-board-table {
+      width: 100%;
+      min-width: 1480px;
+      table-layout: fixed;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.72rem;
     }
-    .keeper-mock-log thead th {
+    .keeper-mock-board-table th,
+    .keeper-mock-board-table td {
+      width: 138px;
+      padding: 7px 8px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .keeper-mock-board-table tr:last-child > * {
+      border-bottom: 0;
+    }
+    .keeper-mock-board-table tr > *:last-child {
+      border-right: 0;
+    }
+    .keeper-mock-board-table thead th {
       position: sticky;
       top: 0;
-      z-index: 2;
+      z-index: 4;
+      height: 34px;
+      background: var(--accent);
+      color: var(--paper);
+      text-align: center;
     }
-    .keeper-mock-log tbody tr {
-      height: 45px;
+    .keeper-mock-board-table thead th:first-child,
+    .keeper-mock-board-table tbody th {
+      width: 72px;
+      min-width: 72px;
+      max-width: 72px;
     }
-    .keeper-mock-log-resizer {
-      display: grid;
-      place-items: center;
-      width: 100%;
-      min-height: 28px;
-      margin: -1px 0 0;
-      border: 1px solid var(--line);
-      border-radius: 0 0 8px 8px;
-      background: color-mix(in srgb, var(--panel) 90%, var(--accent) 10%);
-      color: var(--muted);
-      cursor: ns-resize;
-      touch-action: none;
-      user-select: none;
+    .keeper-mock-board-table thead th:first-child {
+      left: 0;
+      z-index: 6;
     }
-    .keeper-mock-log-resizer span {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.67rem;
+    .keeper-mock-board-table tbody th {
+      position: sticky;
+      left: 0;
+      z-index: 3;
+      background: var(--soft);
+      color: var(--accent);
       font-weight: 900;
-      letter-spacing: 0.06em;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .keeper-mock-board-cell {
+      height: 88px;
+      box-shadow: inset 0 4px 0 var(--manager-accent, var(--line));
+    }
+    .keeper-mock-board-cell.is-filled {
+      background: var(--paper);
+    }
+    .keeper-mock-board-cell.is-future {
+      background: var(--soft-2);
+      box-shadow: inset 0 2px 0 var(--manager-accent, var(--line));
+    }
+    .keeper-mock-board-cell > span,
+    .keeper-mock-board-cell > strong,
+    .keeper-mock-board-cell > em {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .keeper-mock-board-cell > span {
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 900;
       text-transform: uppercase;
     }
-    .keeper-mock-log-resizer span::before {
-      content: "";
-      width: 42px;
-      height: 4px;
-      border-top: 1px solid currentColor;
-      border-bottom: 1px solid currentColor;
+    .keeper-mock-board-cell > strong {
+      margin-top: 5px;
+      color: var(--ink);
+      font-size: 0.78rem;
     }
-    .keeper-mock-log-resizer:hover,
-    .keeper-mock-log-resizer:focus-visible,
-    .keeper-mock-log-resizer.is-resizing {
-      border-color: var(--accent);
-      color: var(--accent);
-      outline: none;
+    .keeper-mock-board-cell > em {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.65rem;
+      font-style: normal;
+      font-weight: 700;
     }
-    body.keeper-is-resizing-log {
-      cursor: ns-resize;
-      user-select: none;
+    .keeper-mock-board-cell.is-future em {
+      margin-top: 8px;
     }
     .keeper-mock-availability {
       margin-top: 18px;
@@ -2668,7 +2710,7 @@
         overflow: hidden;
       }
       @supports (content-visibility: auto) {
-        tbody:not([data-simulator-pool-body]) > tr {
+        tbody:not([data-simulator-pool-body]):not([data-mock-board-body]) > tr {
           content-visibility: auto;
           contain-intrinsic-size: auto 96px;
         }
@@ -2868,6 +2910,50 @@
         border-bottom: 1px solid var(--line);
       }
       .draft-board-table td::before {
+        content: none;
+      }
+      .keeper-mock-board-table,
+      .keeper-mock-board-table thead,
+      .keeper-mock-board-table tbody,
+      .keeper-mock-board-table tr,
+      .keeper-mock-board-table th,
+      .keeper-mock-board-table td {
+        display: revert;
+        width: auto;
+      }
+      .keeper-mock-board-table {
+        display: table;
+        width: 100%;
+        min-width: 1480px;
+        table-layout: fixed;
+        font-size: 0.72rem;
+      }
+      .keeper-mock-board-table thead {
+        position: static;
+        width: auto;
+        height: auto;
+        clip: auto;
+        overflow: visible;
+        white-space: normal;
+      }
+      .keeper-mock-board-table tbody {
+        display: table-row-group;
+      }
+      .keeper-mock-board-table tr {
+        display: table-row;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        overflow: visible;
+      }
+      .keeper-mock-board-table th,
+      .keeper-mock-board-table td {
+        display: table-cell;
+        width: 138px;
+        padding: 7px 8px;
+        text-align: left;
+      }
+      .keeper-mock-board-table td::before {
         content: none;
       }
       code {
@@ -4863,6 +4949,7 @@
   const mockStart = app.querySelector("[data-mock-start]");
   const mockAutoCurrent = app.querySelector("[data-mock-auto-current]");
   const mockAutoNext = app.querySelector("[data-mock-auto-next]");
+  const mockAutoComplete = app.querySelector("[data-mock-auto-complete]");
   const mockUndo = app.querySelector("[data-mock-undo]");
   const mockReset = app.querySelector("[data-mock-reset]");
   const mockGate = app.querySelector("[data-mock-gate]");
@@ -4872,9 +4959,7 @@
   const mockNextUserPick = app.querySelector("[data-mock-next-user-pick]");
   const mockProgress = app.querySelector("[data-mock-progress]");
   const mockManagerGrid = app.querySelector("[data-mock-manager-grid]");
-  const mockLog = app.querySelector("[data-mock-log]");
-  const mockLogBody = app.querySelector("[data-mock-log-body]");
-  const mockLogResizer = app.querySelector("[data-mock-log-resizer]");
+  const mockBoardBody = app.querySelector("[data-mock-board-body]");
   const mockUpcoming = app.querySelector("[data-mock-upcoming]");
   const mockUpcomingTrack = app.querySelector("[data-mock-upcoming-track]");
   const mockAvailabilityRun = app.querySelector("[data-mock-availability-run]");
@@ -4884,57 +4969,8 @@
   const availabilityPickCount = 3;
   let availabilityRunning = false;
   let availabilityRunToken = 0;
-
-  const mockLogHeightKey = `${storageKey}-previous-picks-height`;
-  const mockLogDefaultHeight = 286;
-  const mockLogHeightLimits = () => ({
-    minimum: 225,
-    maximum: Math.max(mockLogDefaultHeight, Math.floor(window.innerHeight * 0.8)),
-  });
-  const setMockLogHeight = (height, persist = false) => {
-    if (!mockLog) return;
-    const limits = mockLogHeightLimits();
-    const requestedHeight = Number(height) || mockLogDefaultHeight;
-    const nextHeight = Math.max(limits.minimum, Math.min(limits.maximum, requestedHeight));
-    mockLog.style.height = `${Math.round(nextHeight)}px`;
-    if (persist) localStorage.setItem(mockLogHeightKey, String(Math.round(nextHeight)));
-  };
-  const savedMockLogHeight = Number(localStorage.getItem(mockLogHeightKey));
-  if (savedMockLogHeight) setMockLogHeight(savedMockLogHeight);
-  if (mockLog && mockLogResizer) {
-    let resizeStartY = 0;
-    let resizeStartHeight = mockLogDefaultHeight;
-    const finishMockLogResize = (event) => {
-      if (!mockLogResizer.hasPointerCapture?.(event.pointerId)) return;
-      mockLogResizer.releasePointerCapture(event.pointerId);
-      mockLogResizer.classList.remove("is-resizing");
-      document.body.classList.remove("keeper-is-resizing-log");
-      setMockLogHeight(mockLog.getBoundingClientRect().height, true);
-    };
-    mockLogResizer.addEventListener("pointerdown", (event) => {
-      resizeStartY = event.clientY;
-      resizeStartHeight = mockLog.getBoundingClientRect().height;
-      mockLogResizer.setPointerCapture(event.pointerId);
-      mockLogResizer.classList.add("is-resizing");
-      document.body.classList.add("keeper-is-resizing-log");
-      event.preventDefault();
-    });
-    mockLogResizer.addEventListener("pointermove", (event) => {
-      if (!mockLogResizer.hasPointerCapture?.(event.pointerId)) return;
-      setMockLogHeight(resizeStartHeight + event.clientY - resizeStartY);
-    });
-    mockLogResizer.addEventListener("pointerup", finishMockLogResize);
-    mockLogResizer.addEventListener("pointercancel", finishMockLogResize);
-    mockLogResizer.addEventListener("keydown", (event) => {
-      if (!["ArrowUp", "ArrowDown", "Home"].includes(event.key)) return;
-      event.preventDefault();
-      const currentHeight = mockLog.getBoundingClientRect().height;
-      const nextHeight = event.key === "Home"
-        ? mockLogDefaultHeight
-        : currentHeight + (event.key === "ArrowDown" ? 45 : -45);
-      setMockLogHeight(nextHeight, true);
-    });
-  }
+  let fullDraftRunning = false;
+  let fullDraftRunToken = 0;
 
   data.managers.forEach((manager) => managerPlayers.set(manager, new Set()));
   playerButtons.forEach((button) => {
@@ -5014,6 +5050,7 @@
   );
   const canDraftPlayer = (player, pick) => Boolean(
     draftActive
+      && !fullDraftRunning
       && canDraftPlayerFor(player, pick, draftHistory)
   );
   const availablePlayersFor = (history) => {
@@ -5049,18 +5086,39 @@
   const totalPositionDemand = (positionName) => totalPositionDemandFor(
     positionName, draftHistory
   );
+  const rosterNeedSlotWeights = {
+    GKP: [1.0, 0.20],
+    DEF: [1.0, 1.0, 1.0, 1.0, 0.45],
+    MID: [1.0, 1.0, 1.0, 1.0, 0.45],
+    FWD: [1.0, 1.0, 0.45],
+  };
+  const rosterNeedSlotWeight = (positionName, currentCount) => {
+    const weights = rosterNeedSlotWeights[positionName];
+    return weights?.[currentCount] ?? 1.0;
+  };
   const algorithmScoreFor = (player, pick, available, history, seed) => {
     if (!canDraftPlayerFor(player, pick, history)) return null;
     const counts = rosterPositionCountsFor(pick.holder, history);
     const remainingForManager = remainingPicksForHistory(pick.holder, history);
+    const isBackupGoalkeeper = player.position === "GKP" && counts.GKP >= 1;
+    if (isBackupGoalkeeper && remainingForManager > 2) return null;
+    const isThirdForward = player.position === "FWD" && counts.FWD >= 2;
+    const isFifthDefender = player.position === "DEF" && counts.DEF >= 4;
+    const isFifthMidfielder = player.position === "MID" && counts.MID >= 4;
+    const isBenchDepthPick = isThirdForward || isFifthDefender || isFifthMidfielder;
     const missingAtPosition = Math.max(
       0,
       data.position_limits[player.position] - counts[player.position]
     );
     const progress = 1 - remainingForManager / 13;
+    const needWeight = rosterNeedSlotWeight(
+      player.position,
+      counts[player.position]
+    );
     const need = 12
       * (missingAtPosition / data.position_limits[player.position])
-      * (0.35 + 0.65 * clamp(progress, 0, 1));
+      * (0.35 + 0.65 * clamp(progress, 0, 1))
+      * needWeight;
     const positionPool = available
       .filter((candidate) => candidate.position === player.position)
       .sort((a, b) => b.base_rating - a.base_rating);
@@ -5075,14 +5133,22 @@
       0,
       2
     );
-    const scarcity = dropoffBonus + supplyBonus;
+    const scarcity = (dropoffBonus + supplyBonus) * needWeight;
+    const missingCoreSlots = Math.max(0, 1 - counts.GKP)
+      + Math.max(0, 3 - counts.DEF)
+      + Math.max(0, 3 - counts.MID);
+    const benchPenalty = isBenchDepthPick
+      ? clamp(missingCoreSlots * 1.5, 0, 9)
+      : 0;
     const variation = (seededUnit(seed, pick.id, player.element, "variation") * 3) - 1.5;
     return {
       base: player.base_rating,
       need,
+      needWeight,
       scarcity,
+      benchPenalty,
       variation,
-      final: player.base_rating + need + scarcity + variation,
+      final: player.base_rating + need + scarcity - benchPenalty + variation,
     };
   };
   const algorithmScore = (player, pick, available) => algorithmScoreFor(
@@ -5131,6 +5197,56 @@
       ),
     });
     return true;
+  };
+
+  const simulateEntireDraft = async () => {
+    if (fullDraftRunning || availabilityRunning || !allKeepersComplete()) return;
+    if (!draftActive) {
+      draftHistory.length = 0;
+      draftActive = true;
+    }
+    if (!usablePicks[draftHistory.length]) return;
+    const runToken = ++fullDraftRunToken;
+    const seed = Number(mockSeed?.value) || 26027;
+    let stalled = false;
+    fullDraftRunning = true;
+    availabilityRunToken += 1;
+    clearAvailabilityResults();
+    render();
+
+    try {
+      while (draftHistory.length < usablePicks.length) {
+        if (runToken !== fullDraftRunToken) return;
+        const pick = usablePicks[draftHistory.length];
+        const choice = chooseAlgorithmPlayerFor(pick, draftHistory, seed);
+        if (!choice) {
+          stalled = true;
+          break;
+        }
+        draftHistory.push({
+          pickId: pick.id,
+          element: Number(choice.player.element),
+          method: "auto",
+          rating: Object.fromEntries(
+            Object.entries(choice.score).map(([key, value]) => [key, Number(value.toFixed(1))])
+          ),
+        });
+        if (draftHistory.length % 2 === 0 || draftHistory.length === usablePicks.length) {
+          mockGate.textContent =
+            `Simulating entire draft… ${draftHistory.length} / ${usablePicks.length} picks`;
+          await new Promise((resolve) => setTimeout(resolve, 0));
+        }
+      }
+    } finally {
+      if (runToken === fullDraftRunToken) {
+        fullDraftRunning = false;
+        render();
+        if (stalled) {
+          mockGate.textContent =
+            "The full simulation stopped because no legal player was available for the current pick.";
+        }
+      }
+    }
   };
 
   let availabilityResultSignature = "";
@@ -5403,15 +5519,30 @@
       ? usablePicks.slice(draftHistory.length).find((pick) => pick.holder === userManager)
       : null;
 
-    mockStart.disabled = !keepersComplete || draftActive;
-    mockUndo.disabled = !draftActive || !draftHistory.length;
-    mockReset.disabled = !draftActive && !draftHistory.length;
-    mockSeed.disabled = draftActive;
-    mockNewSeed.disabled = draftActive;
-    mockAutoCurrent.disabled = !draftActive || !currentPick || currentPick.holder === userManager;
-    mockAutoNext.disabled = !draftActive || !currentPick || currentPick.holder === userManager;
+    mockStart.disabled = !keepersComplete || draftActive || fullDraftRunning;
+    mockUndo.disabled = fullDraftRunning || !draftActive || !draftHistory.length;
+    mockReset.disabled = fullDraftRunning || (!draftActive && !draftHistory.length);
+    mockSeed.disabled = draftActive || fullDraftRunning;
+    mockNewSeed.disabled = draftActive || fullDraftRunning;
+    mockUserManager.disabled = fullDraftRunning;
+    mockAutoCurrent.disabled = fullDraftRunning
+      || !draftActive
+      || !currentPick
+      || currentPick.holder === userManager;
+    mockAutoNext.disabled = fullDraftRunning
+      || !draftActive
+      || !currentPick
+      || currentPick.holder === userManager;
+    mockAutoComplete.disabled = fullDraftRunning
+      || availabilityRunning
+      || !keepersComplete
+      || (draftActive && !currentPick);
+    mockAutoComplete.textContent = fullDraftRunning
+      ? "Simulating entire draft…"
+      : "Simulate entire draft";
     const availabilityTargets = availabilityTargetPicks();
     mockAvailabilityRun.disabled = availabilityRunning
+      || fullDraftRunning
       || !keepersComplete
       || !availabilityTargets.length;
     if (!availabilityRunning) {
@@ -5422,7 +5553,10 @@
       ) {
         clearAvailabilityResults();
       }
-      if (!keepersComplete) {
+      if (fullDraftRunning) {
+        mockAvailabilityStatus.textContent =
+          "Availability analysis will be available after the full simulation finishes.";
+      } else if (!keepersComplete) {
         mockAvailabilityStatus.textContent =
           "Complete all keeper selections to unlock availability analysis.";
       } else if (!availabilityTargets.length) {
@@ -5435,6 +5569,8 @@
     }
     mockGate.textContent = !keepersComplete
       ? "Complete all 20 keeper selections to unlock the mock draft."
+      : fullDraftRunning
+        ? `Simulating entire draft… ${draftHistory.length} / ${usablePicks.length} picks`
       : draftActive
         ? currentPick
           ? `${currentPick.holder_name} is on the clock at ${pickLabel(currentPick)}.`
@@ -5469,30 +5605,37 @@
         .join("");
     });
 
-    mockLogBody.innerHTML = draftHistory.length
-      ? draftHistory.map((entry, index) => {
+    if (mockBoardBody) {
+      const boardColumns = 10;
+      const boardRows = Math.ceil(usablePicks.length / boardColumns);
+      mockBoardBody.innerHTML = Array.from({ length: boardRows }, (_, rowIndex) => {
+        const firstOverall = rowIndex * boardColumns + 1;
+        const lastOverall = Math.min(usablePicks.length, firstOverall + boardColumns - 1);
+        const cells = Array.from({ length: boardColumns }, (_, columnIndex) => {
+          const index = rowIndex * boardColumns + columnIndex;
           const pick = usablePicks[index];
+          if (!pick) return '<td class="keeper-mock-board-cell is-unused"></td>';
+          const entry = draftHistory[index];
+          const holderCard = app.querySelector(
+            `[data-mock-manager="${CSS.escape(pick.holder)}"]`
+          );
+          const accent = holderCard?.style.getPropertyValue("--manager-accent") || "var(--line)";
+          if (!entry) {
+            return `<td class="keeper-mock-board-cell is-future" style="--manager-accent:${escapeHtml(accent)}">
+              <span>${escapeHtml(pickLabel(pick))}</span>
+              <em>${escapeHtml(pick.holder_name)}</em>
+            </td>`;
+          }
           const player = playerById.get(Number(entry.element));
-          const rating = entry.rating;
-          const ratingDetail = rating
-            ? `<details class="keeper-mock-rating"><summary>${rating.final.toFixed(1)}</summary>
-                <span>Base ${rating.base.toFixed(1)}</span>
-                <span>Need +${rating.need.toFixed(1)}</span>
-                <span>Scarcity +${rating.scarcity.toFixed(1)}</span>
-                <span>Variation ${rating.variation >= 0 ? "+" : ""}${rating.variation.toFixed(1)}</span>
-              </details>`
-            : "—";
-          return `<tr>
-            <td data-label="Pick">${escapeHtml(pickLabel(pick))}</td>
-            <td data-label="Manager">${escapeHtml(pick.holder_name)}</td>
-            <td data-label="Player">${escapeHtml(player?.player || "")}</td>
-            <td data-label="Position">${escapeHtml(player?.position || "")}</td>
-            <td data-label="Club">${escapeHtml(player?.club || "")}</td>
-            <td data-label="Method">${entry.method === "auto" ? "Auto" : "Manual"}</td>
-            <td data-label="Rating">${ratingDetail}</td>
-          </tr>`;
-        }).join("")
-      : '<tr><td colspan="7">No mock-draft picks yet.</td></tr>';
+          return `<td class="keeper-mock-board-cell is-filled" style="--manager-accent:${escapeHtml(accent)}">
+            <span>${escapeHtml(pickLabel(pick))}</span>
+            <strong>${escapeHtml(player?.player || "")}</strong>
+            <em>${escapeHtml(pick.holder_name)} · ${escapeHtml(player?.position || "")}</em>
+          </td>`;
+        }).join("");
+        return `<tr><th scope="row">${firstOverall}–${lastOverall}</th>${cells}</tr>`;
+      }).join("");
+    }
 
     if (draftActive) {
       const upcomingPicks = usablePicks.slice(draftHistory.length, draftHistory.length + 10);
@@ -5617,6 +5760,7 @@
     while (autoDraftCurrentPick() && guard < usablePicks.length) guard += 1;
     render();
   });
+  mockAutoComplete?.addEventListener("click", simulateEntireDraft);
   mockAvailabilityRun?.addEventListener("click", runAvailabilityAnalysis);
   mockNewSeed?.addEventListener("click", () => {
     const values = new Uint32Array(1);
