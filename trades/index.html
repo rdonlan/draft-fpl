@@ -669,6 +669,10 @@
       cursor: not-allowed;
       opacity: 0.48;
     }
+    .keeper-simulator-player.is-selected:disabled {
+      cursor: default;
+      opacity: 1;
+    }
     .keeper-simulator-player.is-unavailable {
       border-style: dashed;
       background: var(--soft-2);
@@ -1216,6 +1220,23 @@
     .keeper-history-card h3 {
       margin: 0 0 10px;
       color: var(--accent);
+      font-size: 1rem;
+    }
+    .keeper-current-options {
+      margin-top: 24px;
+      padding: 0 16px 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .keeper-current-options > summary {
+      margin: 0 -16px;
+      padding: 14px 16px;
+      cursor: pointer;
+    }
+    .keeper-current-options > summary h2 {
+      display: inline;
+      margin: 0;
       font-size: 1rem;
     }
     .keeper-history-picks {
@@ -4202,7 +4223,7 @@
     button.addEventListener("click", () => selectView(button.dataset.keeperViewButton));
   });
 
-  document.querySelectorAll('[data-keeper-view]:not([data-keeper-view="current"])').forEach((panel) => {
+  document.querySelectorAll('[data-keeper-view]:not([data-keeper-view="simulator"])').forEach((panel) => {
     const modeButtons = Array.from(panel.querySelectorAll("[data-keeper-history-mode-button]"));
     const modePanels = Array.from(panel.querySelectorAll("[data-keeper-history-mode-panel]"));
     const selectMode = (mode) => {
@@ -4224,7 +4245,7 @@
     selectMode("cards");
   });
 
-  selectView("current");
+  selectView("simulator");
 })();
 </script>
   <script>
@@ -4236,6 +4257,7 @@
   const data = JSON.parse(dataNode.textContent);
   const storageKey = "bms-keeper-simulator";
   const selected = new Set();
+  const confirmedKeepers = new Set((data.confirmed_keepers || []).map(Number));
   const usablePicks = data.picks.filter((pick) => pick.usable);
   const draftHistory = [];
   let draftActive = false;
@@ -4380,6 +4402,18 @@
     draftHistory.length = 0;
     draftActive = false;
   };
+  const confirmedSelectionsForManager = (manager) => Array.from(confirmedKeepers).filter(
+    (element) => managerPlayers.get(manager)?.has(element)
+  );
+  const resetToConfirmedKeepers = () => {
+    resetDraft();
+    selected.clear();
+    data.managers.forEach((manager) => {
+      confirmedSelectionsForManager(manager).forEach((element) => selected.add(element));
+    });
+  };
+  const isConfirmedKeeperState = () => selected.size === confirmedKeepers.size
+    && Array.from(confirmedKeepers).every((element) => selected.has(element));
   const pickLabel = (pick) => pick?.display_label || pick?.id || "â€”";
   const clamp = (value, minimum, maximum) => Math.max(minimum, Math.min(maximum, value));
   const seededUnit = (...parts) => {
@@ -4710,7 +4744,8 @@
   const load = () => {
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
-      if (saved.version !== data.version || !saved.selections) return;
+      if (saved.version !== data.version || !saved.selections) return false;
+      selected.clear();
       data.managers.forEach((manager) => {
         const valid = Array.isArray(saved.selections[manager])
           ? saved.selections[manager]
@@ -4722,8 +4757,10 @@
       });
       savedMock = saved.mock || null;
       if (savedMock?.seed && mockSeed) mockSeed.value = String(savedMock.seed);
+      return true;
     } catch {
       localStorage.removeItem(storageKey);
+      return false;
     }
   };
 
@@ -4995,11 +5032,9 @@
       const element = Number(button.dataset.simulatorPlayer);
       const manager = button.dataset.simulatorPlayerManager;
       const active = selected.has(element);
-      const full = managerSelections(manager).length >= 2;
-      const eligible = button.dataset.simulatorPlayerEligible === "true";
       button.classList.toggle("is-selected", active);
       button.setAttribute("aria-pressed", active ? "true" : "false");
-      button.disabled = !eligible || draftActive || (!active && full);
+      button.disabled = true;
     });
 
     let completeManagers = 0;
@@ -5018,7 +5053,9 @@
     managerCount.textContent = `${completeManagers} / ${data.managers.length}`;
     poolCount.textContent = String(available.length);
     status.textContent = completeManagers === data.managers.length
-      ? "Scenario complete: the projected draft pool is finalized."
+      ? isConfirmedKeeperState()
+        ? "Confirmed 2026–27 keepers loaded: the projected draft pool is ready."
+        : "Scenario complete: the projected draft pool is finalized."
       : `Incomplete scenario: ${data.managers.length - completeManagers} manager${data.managers.length - completeManagers === 1 ? "" : "s"} still need keeper selections.`;
     status.classList.toggle("is-complete", completeManagers === data.managers.length);
 
@@ -5027,39 +5064,11 @@
     positionCounts.innerHTML = Object.entries(counts)
       .map(([label, count]) => `<span><strong>${count}</strong> ${label}</span>`)
       .join("");
-    app.querySelectorAll("[data-simulator-reset-manager]").forEach((button) => {
-      button.disabled = draftActive;
-    });
     renderMockDraft();
     renderPool(available);
     save();
   };
 
-  playerButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      resetDraft();
-      const element = Number(button.dataset.simulatorPlayer);
-      const manager = button.dataset.simulatorPlayerManager;
-      if (selected.has(element)) {
-        selected.delete(element);
-      } else if (managerSelections(manager).length < 2) {
-        selected.add(element);
-      }
-      render();
-    });
-  });
-  app.querySelectorAll("[data-simulator-reset-manager]").forEach((button) => {
-    button.addEventListener("click", () => {
-      resetDraft();
-      managerSelections(button.dataset.simulatorResetManager).forEach((element) => selected.delete(element));
-      render();
-    });
-  });
-  app.querySelector("[data-simulator-reset-all]")?.addEventListener("click", () => {
-    resetDraft();
-    selected.clear();
-    render();
-  });
   mockStart?.addEventListener("click", () => {
     if (!allKeepersComplete()) return;
     draftHistory.length = 0;
@@ -5136,7 +5145,7 @@
   });
 
   fillFilters();
-  load();
+  if (!load()) resetToConfirmedKeepers();
   restoreSavedMock();
   render();
 })();
