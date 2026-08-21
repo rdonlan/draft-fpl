@@ -475,6 +475,9 @@
       flex-wrap: wrap;
       gap: 8px;
     }
+    .keeper-view-button-end {
+      margin-left: auto;
+    }
     .keeper-view-button {
       display: inline-flex;
       align-items: center;
@@ -506,6 +509,267 @@
     }
     .keeper-view-panel[hidden] {
       display: none !important;
+    }
+    .keeper-year-panel[hidden],
+    .keeper-manager-profile[hidden] {
+      display: none !important;
+    }
+    .keeper-manager-view {
+      margin-top: 18px;
+    }
+    .keeper-manager-select-label,
+    .keeper-year-select-label {
+      display: grid;
+      grid-template-columns: auto minmax(180px, 300px);
+      gap: 10px;
+      align-items: center;
+      width: fit-content;
+      margin: 16px 0 20px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .keeper-manager-select-label select,
+    .keeper-year-select-label select {
+      min-height: 42px;
+      padding: 8px 34px 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: normal;
+      text-transform: none;
+    }
+    .keeper-manager-profile {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--soft);
+    }
+    .keeper-manager-profile-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+    .keeper-manager-profile-head h3 {
+      margin: 0;
+    }
+    .keeper-manager-profile-head span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+    .keeper-manager-season-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .keeper-manager-season-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .keeper-manager-season-card > header {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft-2);
+    }
+    .keeper-manager-season-card > header span {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+    .keeper-manager-season-card.is-current > header {
+      border-left: 4px solid var(--active);
+    }
+    .keeper-manager-pick-list {
+      display: grid;
+      gap: 9px;
+      padding: 11px;
+    }
+    .keeper-manager-pick {
+      display: grid;
+      gap: 2px;
+      padding: 9px 10px;
+      border-left: 5px solid var(--keeper-position-color, var(--line));
+      border-radius: 5px;
+      background: var(--soft);
+    }
+    .keeper-manager-pick.keeper-pos-gkp,
+    .keeper-path-player-label.keeper-pos-gkp,
+    .keeper-path-cell.keeper-pos-gkp { --keeper-position-color: #0284c7; }
+    .keeper-manager-pick.keeper-pos-def,
+    .keeper-path-player-label.keeper-pos-def,
+    .keeper-path-cell.keeper-pos-def { --keeper-position-color: #16a34a; }
+    .keeper-manager-pick.keeper-pos-mid,
+    .keeper-path-player-label.keeper-pos-mid,
+    .keeper-path-cell.keeper-pos-mid { --keeper-position-color: #d97706; }
+    .keeper-manager-pick.keeper-pos-fwd,
+    .keeper-path-player-label.keeper-pos-fwd,
+    .keeper-path-cell.keeper-pos-fwd { --keeper-position-color: #e11d48; }
+    .keeper-manager-pick > span {
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    .keeper-manager-pick > em {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-style: normal;
+    }
+    .keeper-year-panel-list {
+      margin-top: 8px;
+    }
+    .keeper-manager-continuity {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .keeper-manager-continuity-title {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      font-weight: 850;
+    }
+    .keeper-manager-continuity-summary {
+      display: grid;
+      grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .keeper-manager-continuity-summary > div {
+      display: grid;
+      gap: 3px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--paper);
+    }
+    .keeper-manager-continuity-summary span {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .keeper-manager-continuity-summary strong {
+      color: var(--accent);
+      font-size: 1.08rem;
+    }
+    .keeper-manager-continuity-summary small {
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 750;
+    }
+    .keeper-path-chart {
+      overflow-x: auto;
+      padding: 4px 0;
+    }
+    .keeper-path-grid {
+      display: grid;
+      grid-template-columns: minmax(170px, 1.35fr) repeat(var(--keeper-season-count), minmax(120px, 1fr));
+      min-width: calc(190px + var(--keeper-season-count) * 130px);
+      align-items: center;
+    }
+    .keeper-path-head {
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--line);
+    }
+    .keeper-path-head .keeper-path-player-label,
+    .keeper-path-season {
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 850;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .keeper-path-head .keeper-path-player-label {
+      text-align: left;
+    }
+    .keeper-path-row {
+      min-height: 58px;
+      border-bottom: 1px solid var(--line);
+    }
+    .keeper-path-row:last-child {
+      border-bottom: 0;
+    }
+    .keeper-path-player-label {
+      display: grid;
+      gap: 2px;
+      padding-right: 12px;
+    }
+    .keeper-path-row .keeper-path-player-label {
+      padding-left: 10px;
+      border-left: 5px solid var(--keeper-position-color, var(--line));
+    }
+    .keeper-path-player-label > strong {
+      color: var(--ink);
+      font-size: 0.86rem;
+    }
+    .keeper-path-player-label > span {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 750;
+    }
+    .keeper-path-cell {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 48px;
+    }
+    .keeper-path-cell.is-kept > span {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      width: 32px;
+      height: 32px;
+      place-items: center;
+      border: 3px solid var(--paper);
+      border-radius: 50%;
+      background: var(--keeper-position-color, var(--active));
+      color: #fff;
+      box-shadow: 0 0 0 2px var(--keeper-position-color, var(--active));
+      font-size: 0.72rem;
+      font-weight: 900;
+    }
+    .keeper-path-cell.connects-next::after {
+      position: absolute;
+      z-index: 1;
+      top: calc(50% - 2px);
+      left: 50%;
+      width: 100%;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--keeper-position-color, var(--active));
+      content: "";
+    }
+    .keeper-manager-breakdown {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .keeper-breakdown-title {
+      margin-bottom: 12px;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 850;
+      text-align: center;
+    }
+    .keeper-breakdown-card-title {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 850;
     }
     .keeper-simulator-summary {
       display: grid;
@@ -708,6 +972,28 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--soft);
+    }
+    .keeper-simulator.is-locked .keeper-simulator-app {
+      display: none;
+    }
+    .keeper-mock-locked {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 16px 0 8px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--active);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .keeper-mock-locked strong {
+      color: var(--accent);
+      font-size: 1rem;
+    }
+    .keeper-mock-locked span {
+      color: var(--muted);
+      font-size: 0.88rem;
     }
     .keeper-mock-controls {
       display: grid;
@@ -2642,6 +2928,29 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      .keeper-view-button-end {
+        grid-column: 2;
+        margin-left: 0;
+      }
+      .keeper-manager-season-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .keeper-manager-continuity-summary {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .keeper-manager-profile-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .keeper-manager-select-label,
+      .keeper-year-select-label {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+      }
+      .keeper-manager-select-label select,
+      .keeper-year-select-label select {
+        width: 100%;
+      }
       .keeper-history-grid {
         grid-template-columns: minmax(0, 1fr);
       }
@@ -3687,7 +3996,27 @@
     button.addEventListener("click", () => selectView(button.dataset.keeperViewButton));
   });
 
-  document.querySelectorAll('[data-keeper-view]:not([data-keeper-view="simulator"])').forEach((panel) => {
+  const managerSelect = document.querySelector("[data-keeper-manager-select]");
+  const managerPanels = Array.from(document.querySelectorAll("[data-keeper-manager-panel]"));
+  const selectManager = (manager) => {
+    managerPanels.forEach((panel) => {
+      panel.toggleAttribute("hidden", panel.dataset.keeperManagerPanel !== manager);
+    });
+  };
+  managerSelect?.addEventListener("change", () => selectManager(managerSelect.value));
+  if (managerSelect) selectManager(managerSelect.value);
+
+  const yearSelect = document.querySelector("[data-keeper-year-select]");
+  const yearPanels = Array.from(document.querySelectorAll("[data-keeper-year-panel]"));
+  const selectYear = (year) => {
+    yearPanels.forEach((panel) => {
+      panel.toggleAttribute("hidden", panel.dataset.keeperYearPanel !== year);
+    });
+  };
+  yearSelect?.addEventListener("change", () => selectYear(yearSelect.value));
+  if (yearSelect) selectYear(yearSelect.value);
+
+  yearPanels.forEach((panel) => {
     const modeButtons = Array.from(panel.querySelectorAll("[data-keeper-history-mode-button]"));
     const modePanels = Array.from(panel.querySelectorAll("[data-keeper-history-mode-panel]"));
     const selectMode = (mode) => {
@@ -3709,7 +4038,8 @@
     selectMode("cards");
   });
 
-  selectView("simulator");
+  const initialButton = buttons.find((button) => button.classList.contains("is-active")) || buttons[0];
+  if (initialButton) selectView(initialButton.dataset.keeperViewButton);
 })();
 </script>
   <script>

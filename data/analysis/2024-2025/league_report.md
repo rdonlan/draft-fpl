@@ -27,7 +27,7 @@ Use the season tabs above to switch between this archive-backed 2024-2025 page a
 <details open>
 <summary><h2>Standings</h2></summary>
 
-Use this table for the plain 2024-2025 league table: record, league points, scoring totals, and simple weekly highs and lows.
+Use this table for the plain 2024-2025 league table, using the same compact columns as the 2025-2026 standings view.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -38,22 +38,21 @@ Use this table for the plain 2024-2025 league table: record, league points, scor
 - **Avg**: PF divided by 38 gameweeks.
 - **Top Scores**: weeks where that manager tied or held the league's highest weekly score.
 - **Bottom Scores**: weeks where that manager tied or held the league's lowest weekly score.
-- **Best GW (Score)** and **Worst GW (Score)**: that manager's highest and lowest scoring gameweeks.
 
 </details>
 
-| Final Rank | Manager | Record | H2H Pts | PF | PA | Avg | Top Scores | Bottom Scores | Best GW (Score) | Worst GW (Score) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Ryan Donlan | 27-1-10 | 82 | 1757 | 1452 | 46.2 | 5 | 2 | 24 (83) | 8 (19) |
-| 2 | Justin Miller | 26-1-11 | 79 | 1800 | 1557 | 47.4 | 11 | 2 | 24 (80) | 29 (24) |
-| 3 | Ryan Houseman | 21-0-17 | 63 | 1478 | 1445 | 38.9 | 2 | 5 | 22 (81) | 6 (22) |
-| 4 | Levi Morant | 19-0-19 | 57 | 1557 | 1586 | 41.0 | 6 | 4 | 32 (75) | 29 (23) |
-| 5 | Luke Lockwood | 18-2-18 | 56 | 1534 | 1518 | 40.4 | 2 | 5 | 33 (76) | 15 (22) |
-| 6 | Julius Long | 18-1-19 | 55 | 1533 | 1522 | 40.3 | 5 | 1 | 7 (73) | 35 (24) |
-| 7 | Drake Byrd | 16-1-21 | 49 | 1467 | 1525 | 38.6 | 3 | 1 | 29 (69) | 32 (18) |
-| 8 | Ethan Ellsworth | 15-0-23 | 45 | 1450 | 1570 | 38.2 | 3 | 7 | 26 (76) | 29 (13) |
-| 9 | Alexander Chaban | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 | 2 (69) | 15 (17) |
-| 10 | Dylan Reid | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 | 2 (53) | 3 (20) |
+| Rank | Team | Record | H2H Pts | PF | PA | Avg | Top Scores | Bottom Scores |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Ryan Donlan | 27-1-10 | 82 | 1757 | 1452 | 46.2 | 5 | 2 |
+| 2 | Justin Miller | 26-1-11 | 79 | 1800 | 1557 | 47.4 | 11 | 2 |
+| 3 | Ryan Houseman | 21-0-17 | 63 | 1478 | 1445 | 38.9 | 2 | 5 |
+| 4 | Levi Morant | 19-0-19 | 57 | 1557 | 1586 | 41.0 | 6 | 4 |
+| 5 | Luke Lockwood | 18-2-18 | 56 | 1534 | 1518 | 40.4 | 2 | 5 |
+| 6 | Julius Long | 18-1-19 | 55 | 1533 | 1522 | 40.3 | 5 | 1 |
+| 7 | Drake Byrd | 16-1-21 | 49 | 1467 | 1525 | 38.6 | 3 | 1 |
+| 8 | Ethan Ellsworth | 15-0-23 | 45 | 1450 | 1570 | 38.2 | 3 | 7 |
+| 9 | Alexander Chaban | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 |
+| 10 | Dylan Reid | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 |
 
 </details>
 <details>
@@ -532,50 +531,79 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 <details>
 <summary><h2>Position Scoring</h2></summary>
 
-FantasyFooty's archive has aggregate points by manager and position. This is not the same as the live report's starter/team/free-agent weekly average view, because the archive does not include starter slots or roster snapshots.
+FantasyFooty's archive has aggregate points by manager and position. The four position dropdowns mirror the cleaner 2025-2026 layout, while retaining the historical Points and Points/GW measures available from the archive.
 
-| Position | Rank | Manager | Points | Points / GW |
-|---|---|---|---|---|
-| Goalkeeper | 1 | Julius Long | 179 | 4.7 |
-| Defender | 1 | Ryan Donlan | 532 | 14.0 |
-| Midfielder | 1 | Justin Miller | 830 | 21.8 |
-| Forward | 1 | Ryan Donlan | 414 | 10.9 |
-| Goalkeeper | 2 | Luke Lockwood | 154 | 4.1 |
-| Defender | 2 | Justin Miller | 510 | 13.4 |
-| Midfielder | 2 | Luke Lockwood | 719 | 18.9 |
-| Forward | 2 | Ryan Houseman | 407 | 10.7 |
-| Goalkeeper | 3 | Levi Morant | 143 | 3.8 |
-| Defender | 3 | Drake Byrd | 503 | 13.2 |
-| Midfielder | 3 | Ryan Donlan | 692 | 18.2 |
-| Forward | 3 | Ethan Ellsworth | 395 | 10.4 |
-| Goalkeeper | 4 | Dylan Reid | 141 | 3.7 |
-| Defender | 4 | Alexander Chaban | 493 | 13.0 |
-| Midfielder | 4 | Levi Morant | 675 | 17.8 |
-| Forward | 4 | Julius Long | 335 | 8.8 |
-| Goalkeeper | 5 | Ryan Houseman | 138 | 3.6 |
-| Defender | 5 | Levi Morant | 476 | 12.5 |
-| Midfielder | 5 | Drake Byrd | 642 | 16.9 |
-| Forward | 5 | Justin Miller | 323 | 8.5 |
-| Goalkeeper | 6 | Justin Miller | 137 | 3.6 |
-| Defender | 6 | Julius Long | 413 | 10.9 |
-| Midfielder | 6 | Julius Long | 606 | 15.9 |
-| Forward | 6 | Luke Lockwood | 292 | 7.7 |
-| Goalkeeper | 7 | Alexander Chaban | 125 | 3.3 |
-| Defender | 7 | Ryan Houseman | 390 | 10.3 |
-| Midfielder | 7 | Alexander Chaban | 593 | 15.6 |
-| Forward | 7 | Dylan Reid | 287 | 7.6 |
-| Goalkeeper | 8 | Drake Byrd | 121 | 3.2 |
-| Defender | 8 | Ethan Ellsworth | 386 | 10.2 |
-| Midfielder | 8 | Ethan Ellsworth | 570 | 15.0 |
-| Forward | 8 | Alexander Chaban | 283 | 7.4 |
-| Goalkeeper | 9 | Ryan Donlan | 119 | 3.1 |
-| Defender | 9 | Luke Lockwood | 369 | 9.7 |
-| Midfielder | 9 | Ryan Houseman | 543 | 14.3 |
-| Forward | 9 | Levi Morant | 263 | 6.9 |
-| Goalkeeper | 10 | Ethan Ellsworth | 99 | 2.6 |
-| Defender | 10 | Dylan Reid | 359 | 9.4 |
-| Midfielder | 10 | Dylan Reid | 516 | 13.6 |
-| Forward | 10 | Drake Byrd | 201 | 5.3 |
+<details class="position-group">
+<summary>GKP - Goalkeepers</summary>
+
+| Team | Points | Points/GW |
+|---|---|---|
+| Julius Long | 179 | 4.7 |
+| Luke Lockwood | 154 | 4.1 |
+| Levi Morant | 143 | 3.8 |
+| Dylan Reid | 141 | 3.7 |
+| Ryan Houseman | 138 | 3.6 |
+| Justin Miller | 137 | 3.6 |
+| Alexander Chaban | 125 | 3.3 |
+| Drake Byrd | 121 | 3.2 |
+| Ryan Donlan | 119 | 3.1 |
+| Ethan Ellsworth | 99 | 2.6 |
+
+</details>
+
+<details class="position-group">
+<summary>DEF - Defenders</summary>
+
+| Team | Points | Points/GW |
+|---|---|---|
+| Ryan Donlan | 532 | 14.0 |
+| Justin Miller | 510 | 13.4 |
+| Drake Byrd | 503 | 13.2 |
+| Alexander Chaban | 493 | 13.0 |
+| Levi Morant | 476 | 12.5 |
+| Julius Long | 413 | 10.9 |
+| Ryan Houseman | 390 | 10.3 |
+| Ethan Ellsworth | 386 | 10.2 |
+| Luke Lockwood | 369 | 9.7 |
+| Dylan Reid | 359 | 9.4 |
+
+</details>
+
+<details class="position-group">
+<summary>MID - Midfielders</summary>
+
+| Team | Points | Points/GW |
+|---|---|---|
+| Justin Miller | 830 | 21.8 |
+| Luke Lockwood | 719 | 18.9 |
+| Ryan Donlan | 692 | 18.2 |
+| Levi Morant | 675 | 17.8 |
+| Drake Byrd | 642 | 16.9 |
+| Julius Long | 606 | 15.9 |
+| Alexander Chaban | 593 | 15.6 |
+| Ethan Ellsworth | 570 | 15.0 |
+| Ryan Houseman | 543 | 14.3 |
+| Dylan Reid | 516 | 13.6 |
+
+</details>
+
+<details class="position-group">
+<summary>FWD - Forwards</summary>
+
+| Team | Points | Points/GW |
+|---|---|---|
+| Ryan Donlan | 414 | 10.9 |
+| Ryan Houseman | 407 | 10.7 |
+| Ethan Ellsworth | 395 | 10.4 |
+| Julius Long | 335 | 8.8 |
+| Justin Miller | 323 | 8.5 |
+| Luke Lockwood | 292 | 7.7 |
+| Dylan Reid | 287 | 7.6 |
+| Alexander Chaban | 283 | 7.4 |
+| Levi Morant | 263 | 6.9 |
+| Drake Byrd | 201 | 5.3 |
+
+</details>
 
 </details>
 <details>

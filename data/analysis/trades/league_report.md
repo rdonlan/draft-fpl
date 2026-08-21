@@ -38,7 +38,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2026-27 | Preseason | Draft Day</span>
+<span class="trade-kicker">2026-27 | Preseason</span>
 <span class="trade-title">Donny &lt;-&gt; Julius</span>
 <span class="trade-description">Donny sent Cunha; Julius sent 2026 Julius 6th-round pick, 2026 Donny 9th-round pick</span>
 </span>
@@ -152,7 +152,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 10 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 10</span>
 <span class="trade-title">Levi &lt;-&gt; Luke</span>
 <span class="trade-description">Levi sent Simons (TOT); Luke sent Cullen (BUR), 12th-round pick</span>
 </span>
@@ -171,7 +171,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 22 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 22</span>
 <span class="trade-title">Donny &lt;-&gt; Ethan</span>
 <span class="trade-description">Donny sent Kushannov (MCI), 6th-round pick; Ethan sent Timber (ARS)</span>
 </span>
@@ -190,7 +190,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 24 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 24</span>
 <span class="trade-title">Levi &lt;-&gt; Ethan</span>
 <span class="trade-description">Levi sent Damsgaard (BRE), 4th-round pick; Ethan sent Mbuemo (MU)</span>
 </span>
@@ -209,7 +209,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 26 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 26</span>
 <span class="trade-title">Levi &lt;-&gt; Justin</span>
 <span class="trade-description">Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick</span>
 </span>
@@ -228,7 +228,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 31</span>
 <span class="trade-title">Levi &lt;-&gt; Justin</span>
 <span class="trade-description">Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped</span>
 </span>
@@ -247,7 +247,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 31</span>
 <span class="trade-title">Levi &lt;-&gt; Luke</span>
 <span class="trade-description">Levi sent Konate (LIV), Salah (LIV), Summerville (WHU), Armstrong (WOL); Luke sent 2026 7th-round pick, matching players to be dropped</span>
 </span>
@@ -266,7 +266,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 31</span>
 <span class="trade-title">Levi &lt;-&gt; Luke</span>
 <span class="trade-description">Levi sent Mbuemo (MU); Luke sent 2026 3rd-round pick, matching players to be dropped</span>
 </span>
@@ -285,7 +285,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 31</span>
 <span class="trade-title">Levi &lt;-&gt; Justin</span>
 <span class="trade-description">Levi sent O&#x27;Reilly (MC); Justin sent 2026 8th-round pick, matching players to be dropped</span>
 </span>
@@ -304,7 +304,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 31 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 31</span>
 <span class="trade-title">Julius &lt;-&gt; Justin</span>
 <span class="trade-description">Julius sent Garner (EVE); Justin sent 2026 6th-round pick, João Gomes (WOL)</span>
 </span>
@@ -323,7 +323,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | GW 32 | In-season</span>
+<span class="trade-kicker">2025-26 | GW 32</span>
 <span class="trade-title">Julius &lt;-&gt; Donny</span>
 <span class="trade-description">Julius sent Calvert-Lewin (LEE); Donny sent 2026 9th-round pick, Muniz (FUL)</span>
 </span>
@@ -342,7 +342,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 1 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 1</span>
 <span class="trade-title">Levi &lt;-&gt; Julius</span>
 <span class="trade-description">Levi sent Onana (MUN), Estupinan (BHA), Wissa (BRE); Julius sent Raya (ARS), Gabriel (ARS), Welbeck (BHA)</span>
 </span>
@@ -361,7 +361,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 1 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 1</span>
 <span class="trade-title">Levi &lt;-&gt; Chabo</span>
 <span class="trade-description">Levi sent Pope (NEW), Romero (TOT), Quansah (LIV), Van de Ven (TOT), Semenyo (BOU), Welbeck (BHA); Chabo sent Ortega Moreno (MCI), White (ARS), Munoz (CRY), Cancelo (MCI), Sterling (CHE), J. Alvarez (MCI), 2024 4th-round pick</span>
 </span>
@@ -380,7 +380,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 3 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 3</span>
 <span class="trade-title">Levi &lt;-&gt; Ethan</span>
 <span class="trade-description">Levi sent Kudus (WHU); Ethan sent Rashford (MUN), 2024 4th-round pick</span>
 </span>
@@ -399,7 +399,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 4 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 4</span>
 <span class="trade-title">Levi &lt;-&gt; Justin</span>
 <span class="trade-description">Levi sent Nketiah (CP), Barnes (NEW), Bowen (WHU), Lewis (MC); Justin sent Havertz (ARS), Gundogan (MC), Andreas (FUL), Zabarnyi (BOU), 2024 5th-round pick</span>
 </span>
@@ -418,7 +418,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 4 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 4</span>
 <span class="trade-title">Levi &lt;-&gt; Luke</span>
 <span class="trade-description">Levi sent Armstrong (SOU), Ramsdale (SOU), Gundogan (MC); Luke sent Toney (N/A), Dubravka (NEW), Onana (AVL)</span>
 </span>
@@ -437,7 +437,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 4 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 4</span>
 <span class="trade-title">Levi &lt;-&gt; Ryan Houseman</span>
 <span class="trade-description">Levi sent Tavernier (BOU), Livramento (NEW); Ryan Houseman sent Trossard (ARS), Veltman (BHA)</span>
 </span>
@@ -456,7 +456,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 5 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 5</span>
 <span class="trade-title">Levi &lt;-&gt; Drake</span>
 <span class="trade-description">Levi sent Johnstone (WOL), Munoz (CP), Andeas (FUL), Onana (AVL); Drake sent Sa (WOL), Trippier (NEW), Rice (ARS), Mainoo (MU), 2024 4th-round pick</span>
 </span>
@@ -475,7 +475,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 10 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 10</span>
 <span class="trade-title">Donny &lt;-&gt; Chabo</span>
 <span class="trade-description">Donny sent Flekken (BRE), Udogie (TOT); Chabo sent Pope (NEW), Maatsen (AVL)</span>
 </span>
@@ -494,7 +494,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 13 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 13</span>
 <span class="trade-title">Levi &lt;-&gt; Luke</span>
 <span class="trade-description">Levi sent Raya (ARS), Gabriel (ARS), Hudson-Odoi (NOT), McNeil (EVE), Damsgaard (BRE), Havertz (ARS), 3rd-5th-round picks for 2025 (3rd conditional, converys to 6th if no trophies won for Levi); Luke sent Sels (NOT), Bassey (FUL), Janelt (BRE), Savio (MC), Palmer (CHE), Archer (SOU)</span>
 </span>
@@ -513,7 +513,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 14 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 14</span>
 <span class="trade-title">Levi &lt;-&gt; Julius</span>
 <span class="trade-description">Levi sent Hojlund (MU), Paqueta (WHU), Davis (IPS); Julius sent Antonio (WHU), Newcastle (NEW), Estupinan (BHA) - 2025 5th-round pick</span>
 </span>
@@ -532,7 +532,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 14 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 14</span>
 <span class="trade-title">Levi &lt;-&gt; Dylan</span>
 <span class="trade-description">Levi sent Enzo (CHE), Fullkrug (WHU); Dylan sent Doku (MC), Muniz (FUL), 2025 5th-round pick</span>
 </span>
@@ -551,7 +551,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 16 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 16</span>
 <span class="trade-title">Donny &lt;-&gt; Dylan</span>
 <span class="trade-description">Donny sent Smith Rowe (FUL), Pope (NEW), 4th-round pick; Dylan sent Son (TOT), Kelleher (LIV)</span>
 </span>
@@ -570,7 +570,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 16 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 16</span>
 <span class="trade-title">Donny &lt;-&gt; Luke</span>
 <span class="trade-description">Donny sent Hermansen (LEI), Mitoma (BHA); Luke sent Becker (LIV), McNeil (EVE)</span>
 </span>
@@ -589,7 +589,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 18 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 18</span>
 <span class="trade-title">Levi &lt;-&gt; Ethan</span>
 <span class="trade-description">Levi sent Ortega Moreno (MC), Hall (NEW), Sarr (CP), 8th-round pick; Ethan sent Vicario (TOT), de Ligt (MU), Jones (LIV), 3rd-round pick</span>
 </span>
@@ -608,7 +608,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 18 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 18</span>
 <span class="trade-title">Levi &lt;-&gt; Justin</span>
 <span class="trade-description">Levi sent Sels (NOT), Livramento (NEW), Colwill (CHE), Kluivert (BOU), 7th-round pick, remove restrictions on previously traded Nketiah pick; Justin sent Fabianksi (WHU), Tsimikas (LIV), Castangne (FUL), Barnes (NEW), 4th-round pick</span>
 </span>
@@ -627,7 +627,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 23 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 23</span>
 <span class="trade-title">Donny &lt;-&gt; Chabo</span>
 <span class="trade-description">Donny sent Ake (MCI), 5th-round pick; Chabo sent Aina (NFO)</span>
 </span>
@@ -646,7 +646,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 24 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 24</span>
 <span class="trade-title">Levi &lt;-&gt; Ryan Houseman</span>
 <span class="trade-description">Levi sent Williams (NOT), Dango (BOU), Ndiaye (EVE), 9th-round pick; Ryan Houseman sent Young (EVE), Wilson (FUL), Archer (SOU), 3rd-round pick</span>
 </span>
@@ -665,7 +665,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 24 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 24</span>
 <span class="trade-title">Justin &lt;-&gt; Julius</span>
 <span class="trade-description">Justin sent Maddison (TOT), 3rd-round pick; Julius sent Salah (LIV)</span>
 </span>
@@ -684,7 +684,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 27 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 27</span>
 <span class="trade-title">Donny &lt;-&gt; Levi</span>
 <span class="trade-description">Donny sent Mbuemo (BRE), Son (TOT), TAA (LIV), 7th-round pick; Levi sent White (ARS), Merino (ARS), Rice (ARS), 3rd-round pick, 4th-round pick, 4th-round pick, 5th-round pick</span>
 </span>
@@ -703,7 +703,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 27 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 27</span>
 <span class="trade-title">Levi &lt;-&gt; Drake</span>
 <span class="trade-description">Levi sent Rashford (AVL), de Ligt (MU), 4th-round pick; Drake sent Diaz (LIV), Konsa (AVL)</span>
 </span>
@@ -722,7 +722,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 28 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 28</span>
 <span class="trade-title">Donny &lt;-&gt; Dylan</span>
 <span class="trade-description">Donny sent Merino (ARS), White (ARS), 6th-round pick, 9th-round pick; Dylan sent Neto (CHE), Porro (TOT)</span>
 </span>
@@ -741,7 +741,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 28 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 28</span>
 <span class="trade-title">Levi &lt;-&gt; Ethan</span>
 <span class="trade-description">Levi sent Armstrong (SOU), 7th-round pick; Ethan sent Pedro (BHA)</span>
 </span>
@@ -760,7 +760,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 30 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 30</span>
 <span class="trade-title">Levi &lt;-&gt; Chabo</span>
 <span class="trade-description">Levi sent Son (TOT); Chabo sent Minteh (BHA), 6th-round pick</span>
 </span>
@@ -779,7 +779,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 30 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 30</span>
 <span class="trade-title">Levi &lt;-&gt; Dylan</span>
 <span class="trade-description">Levi sent Minteh (BHA), 6th-round pick; Dylan sent Merino (ARS)</span>
 </span>
@@ -798,7 +798,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | GW 30 | In-season</span>
+<span class="trade-kicker">2024-25 | GW 30</span>
 <span class="trade-title">Donny &lt;-&gt; Ethan</span>
 <span class="trade-description">Donny sent Daka (LEI), 4th-round pick (5th if doesn&#x27;t Donny win league); Ethan sent Evanilson (BOU)</span>
 </span>
