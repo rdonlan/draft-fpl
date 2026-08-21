@@ -600,13 +600,13 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </section>
 <section class="pick-profile" data-pick-profile data-year="2027" data-manager="Justin" hidden>
 <div class="pick-profile-heading">
-<div><h3>Justin - 2027</h3><p>11 picks, -2 versus a standard 13-pick draft.</p></div>
+<div><h3>Justin - 2027</h3><p>10 picks, -3 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>11</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>-2</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>10</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>-3</strong></div>
 <div class="pick-stat"><span>Incoming Picks</span><strong>0</strong></div>
-<div class="pick-stat"><span>Own Picks Missing</span><strong>2</strong></div>
+<div class="pick-stat"><span>Own Picks Missing</span><strong>3</strong></div>
 </div>
 <div class="pick-profile-grid">
 <div class="pick-panel pick-panel-have"><div class="pick-panel-title">Picks They Have</div>
@@ -615,7 +615,6 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tbody>
 <tr><td>3rd</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>4th</td><td>Justin</td><td>Own pick</td></tr>
-<tr><td>7th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Justin</td><td>Own pick</td></tr>
 <tr><td>10th</td><td>Justin</td><td>Own pick</td></tr>
@@ -633,6 +632,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tbody>
 <tr><td>5th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped">via Justin to Levi</span></td></tr>
 <tr><td>6th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick" aria-label="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick">via Justin to Levi</span></td></tr>
+<tr><td>7th</td><td>Levi</td><td><span class="trade-recap-pill" tabindex="0" title="2026-27 Draft Day: Justin sent 2027 Justin 7th-round pick to Levi. Trade: Justin sent 2027 Justin 7th-round pick" aria-label="2026-27 Draft Day: Justin sent 2027 Justin 7th-round pick to Levi. Trade: Justin sent 2027 Justin 7th-round pick">via Justin to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -697,12 +697,12 @@ Choose a year and manager to see exactly which future picks they hold and which 
 </section>
 <section class="pick-profile" data-pick-profile data-year="2027" data-manager="Levi" hidden>
 <div class="pick-profile-heading">
-<div><h3>Levi - 2027</h3><p>15 picks, +2 versus a standard 13-pick draft.</p></div>
+<div><h3>Levi - 2027</h3><p>16 picks, +3 versus a standard 13-pick draft.</p></div>
 </div>
 <div class="pick-profile-stats">
-<div class="pick-stat"><span>Total Picks</span><strong>15</strong></div>
-<div class="pick-stat"><span>Net vs 13</span><strong>+2</strong></div>
-<div class="pick-stat"><span>Incoming Picks</span><strong>2</strong></div>
+<div class="pick-stat"><span>Total Picks</span><strong>16</strong></div>
+<div class="pick-stat"><span>Net vs 13</span><strong>+3</strong></div>
+<div class="pick-stat"><span>Incoming Picks</span><strong>3</strong></div>
 <div class="pick-stat"><span>Own Picks Missing</span><strong>0</strong></div>
 </div>
 <div class="pick-profile-grid">
@@ -716,6 +716,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tr><td>5th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>6th</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>6th</td><td>Levi</td><td>Own pick</td></tr>
+<tr><td>7th</td><td>Justin</td><td>From Justin</td></tr>
 <tr><td>7th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>8th</td><td>Levi</td><td>Own pick</td></tr>
 <tr><td>9th</td><td>Levi</td><td>Own pick</td></tr>
@@ -742,6 +743,7 @@ Choose a year and manager to see exactly which future picks they hold and which 
 <tbody>
 <tr><td>5th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped" aria-label="2025-26 GW 31: Justin sent 2027 5th-round pick to Levi. Trade: Levi sent Havertz (ARS), Watkins (AVL); Justin sent 2027 5th-round pick, matching players to be dropped">via Justin to Levi</span></td></tr>
 <tr><td>6th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick" aria-label="2025-26 GW 26: Justin sent 2027 6th-round pick to Levi. Trade: Levi sent Wissa (NEW); Justin sent Pablo (WHU), 2026 7th-round pick, 2027 6th-round pick">via Justin to Levi</span></td></tr>
+<tr><td>7th</td><td>Justin</td><td><span class="trade-recap-pill" tabindex="0" title="2026-27 Draft Day: Justin sent 2027 Justin 7th-round pick to Levi. Trade: Justin sent 2027 Justin 7th-round pick" aria-label="2026-27 Draft Day: Justin sent 2027 Justin 7th-round pick to Levi. Trade: Justin sent 2027 Justin 7th-round pick">via Justin to Levi</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -1399,7 +1401,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">7.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">7.07</span><span class="draft-pick-holder">Drake</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">7.08</span><span class="draft-pick-holder">Luke</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">7.09</span><span class="draft-pick-holder">Justin</span></td>
+<td class="pick-owner-cell is-traded" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Justin"><span class="draft-pick-slot">7.09</span><span class="draft-pick-holder">Levi</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">7.10</span><span class="draft-pick-holder">Donny</span></td>
 </tr>
 <tr>
@@ -1472,7 +1474,7 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">13.01</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ccfbf1; --pick-ink: #134e4a; --pick-border: #2dd4bf" data-holder="Ethan" data-original-owner="Ethan"><span class="draft-pick-slot">13.02</span><span class="draft-pick-holder">Ethan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fce7f3; --pick-ink: #831843; --pick-border: #f472b6" data-holder="Chabo" data-original-owner="Chabo"><span class="draft-pick-slot">13.03</span><span class="draft-pick-holder">Chabo</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi owns this pick, but it is beyond that manager&#x27;s 13 usable selections after keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13.04</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster already full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #ffedd5; --pick-ink: #7c2d12; --pick-border: #fb923c" data-holder="Dylan" data-original-owner="Dylan"><span class="draft-pick-slot">13.05</span><span class="draft-pick-holder">Dylan</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">13.06</span><span class="draft-pick-holder">House</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">13.07</span><span class="draft-pick-holder">Drake</span></td>
@@ -1530,6 +1532,19 @@ A draft-board view ordered by reverse 25/26 standings. Each box shows the curren
 <td class="draft-roster-fill-empty"></td>
 <td class="draft-roster-fill-empty"></td>
 <td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 2.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
+<td class="draft-roster-fill-empty"></td>
+</tr>
+<tr class="draft-roster-fill-row">
+<td class="draft-round-cell">Roster Fill 3<small>Non-tradable</small></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="draft-roster-fill-empty"></td>
+<td class="pick-owner-cell is-roster-fill" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" title="Supplemental non-tradable selection used only to complete Justinâ€™s roster" data-holder="Justin" data-roster-fill="true"><span class="draft-pick-slot">Roster Fill 3.09</span><span class="draft-pick-holder">Justin</span><span class="draft-pick-unused">Non-tradable</span></td>
 <td class="draft-roster-fill-empty"></td>
 </tr>
 </tbody>

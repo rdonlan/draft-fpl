@@ -4,14 +4,14 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 <section class="trades-page" data-trades-page>
 <div class="trade-stat-grid">
-<div class="trade-stat"><span>Total trades</span><strong>49</strong></div>
-<div class="trade-stat"><span>Most active trader</span><strong>Levi</strong><em>33 trades</em></div>
-<div class="trade-stat"><span>Pick/condition trades</span><strong>41</strong></div>
+<div class="trade-stat"><span>Total trades</span><strong>50</strong></div>
+<div class="trade-stat"><span>Most active trader</span><strong>Levi</strong><em>34 trades</em></div>
+<div class="trade-stat"><span>Pick/condition trades</span><strong>42</strong></div>
 <div class="trade-stat"><span>Biggest trade</span><strong>13 assets</strong><em>Levi &lt;-&gt; Chabo</em></div>
 </div>
 <div class="trade-controls">
 <div class="trade-season-tabs" aria-label="Trade seasons">
-<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>1</span></button>
+<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>2</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2025-26" aria-pressed="false">2025-26 <span>14</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2024-25" aria-pressed="false">2024-25 <span>34</span></button>
 </div>
@@ -53,11 +53,30 @@ A searchable ledger of player, pick, and conditional trades from the league work
 </div>
 </details>
 </article>
+<article class="trade-card" data-season="2026-27" data-managers="levi|justin" data-search="2026-27 draft day draft day levi, justin levi sent rights to barcola; justin sent 2027 justin 7th-round pick rights become active only if barcola joins the premier league.">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2026-27 | Draft Day</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Rights to Barcola; Justin sent 2027 Justin 7th-round pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">2 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Rights to Barcola</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>2027 Justin 7th-round pick</p></div>
+</div>
+<p class="trade-note"><strong>Note:</strong> Rights become active only if Barcola joins the Premier League.</p>
+</div>
+</details>
+</article>
 <article class="trade-card" data-season="2025-26" data-managers="donny|dylan" data-search="2025-26 draft day draft day donny, dylan donny sent 2026 10th-round pick (via donny), 2026 12th-round pick (via donny); dylan sent 9th-round pick (1st)">
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | Draft Day | Draft Day</span>
+<span class="trade-kicker">2025-26 | Draft Day</span>
 <span class="trade-title">Donny &lt;-&gt; Dylan</span>
 <span class="trade-description">Donny sent 2026 10th-round pick (via Donny), 2026 12th-round pick (via Donny); Dylan sent 9th-round pick (1st)</span>
 </span>
@@ -76,7 +95,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | Preseason | Preseason</span>
+<span class="trade-kicker">2025-26 | Preseason</span>
 <span class="trade-title">Donny &lt;-&gt; Ethan</span>
 <span class="trade-description">Donny sent Mamardashvili (LIV); Ethan sent 10th-round pick (via Ethan), Vicario (TOT)</span>
 </span>
@@ -95,7 +114,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | Preseason | Preseason</span>
+<span class="trade-kicker">2025-26 | Preseason</span>
 <span class="trade-title">Levi &lt;-&gt; Julius</span>
 <span class="trade-description">Levi sent Sesko (MU), Gyokeres (ARS), Wirtz (LIV); Julius sent Salah (LIV), Isak (NEW)</span>
 </span>
@@ -114,7 +133,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2025-26 | Preseason | Preseason</span>
+<span class="trade-kicker">2025-26 | Preseason</span>
 <span class="trade-title">Levi &lt;-&gt; Justin</span>
 <span class="trade-description">Levi sent Isak (NEW), Flemming (BUR); Justin sent Watkins (AVL), Wissa (BRE)</span>
 </span>
@@ -798,7 +817,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Levi &lt;-&gt; Luke</span>
 <span class="trade-description">Levi sent Diaz (LIV), Amad (MU), Conditional 5th-round picks (3) if Diaz leaves the Prem before draft; Luke sent Marmoush (MC), 8th-round pick</span>
 </span>
@@ -817,7 +836,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Levi &lt;-&gt; Ethan</span>
 <span class="trade-description">Levi sent Mbeumo (BRE), Marmoush (MC); Ethan sent Isak (NEW)</span>
 </span>
@@ -836,7 +855,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Levi &lt;-&gt; Julius</span>
 <span class="trade-description">Levi sent 3rd-round pick (5th), 3rd-round pick (9th); Julius sent Isak (NEW)</span>
 </span>
@@ -855,7 +874,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Justin &lt;-&gt; Dylan</span>
 <span class="trade-description">Justin sent Bowen (WHU); Dylan sent 6th-round pick (1st)</span>
 </span>
@@ -874,7 +893,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Levi &lt;-&gt; Luke &lt;-&gt; Ryan Houseman</span>
 <span class="trade-description">Levi sent 5th-round pick (1st), 10th-round pick (7th), 11th-round pick (7th); Luke sent 7th-round pick (5th); Ryan Houseman sent Wood (NF), 2026 5th-round pick</span>
 </span>
@@ -894,7 +913,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Levi &lt;-&gt; Dylan</span>
 <span class="trade-description">Levi sent 3rd-round pick (5th), 3rd-round pick (9th), 5th-round pick (5th), 5th-round pick (9th), 2026 3rd-round pick, 2026 5th-round pick; Dylan sent 3rd-round pick (1st), 11th-round pick, 12th-round pick, 13th-round pick, 14th-round pick, 15th-round pick</span>
 </span>
@@ -913,7 +932,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Drake &lt;-&gt; Donny</span>
 <span class="trade-description">Drake sent 4th-round pick (2nd); Donny sent 2026 4th-round pick, 2026 8th-round pick</span>
 </span>
@@ -932,7 +951,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Justin &lt;-&gt; Chabo</span>
 <span class="trade-description">Justin sent Rogers (AVL); Chabo sent 8th-round pick</span>
 </span>
@@ -951,7 +970,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <details>
 <summary>
 <span class="trade-summary-main">
-<span class="trade-kicker">2024-25 | Postseason | Postseason</span>
+<span class="trade-kicker">2024-25 | Postseason</span>
 <span class="trade-title">Levi &lt;-&gt; Ryan Houseman</span>
 <span class="trade-description">Levi sent 2026 10th-round pick; Ryan Houseman sent 2025 12th-round pick, 13th-round pick, 14th-round pick</span>
 </span>
@@ -974,7 +993,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Season | Trades | Managers | In-Season | Postseason | Preseason/Draft | Multi-Team | Pick/Condition Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-27 | 1 | 2 | 0 | 0 | 1 | 0 | 1 |
+| 2026-27 | 2 | 4 | 0 | 0 | 2 | 0 | 2 |
 | 2025-26 | 14 | 7 | 10 | 0 | 4 | 0 | 12 |
 | 2024-25 | 34 | 10 | 25 | 9 | 0 | 1 | 28 |
 
@@ -985,9 +1004,9 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Manager | Trades | Assets Sent | Pick/Condition Trades | Most Common Partner |
 | --- | --- | --- | --- | --- |
-| Levi | 33 | 98 | 27 | Luke (7) |
+| Levi | 34 | 99 | 28 | Justin (7) |
 | Donny | 13 | 29 | 11 | Dylan (3) |
-| Justin | 10 | 25 | 9 | Levi (6) |
+| Justin | 11 | 26 | 10 | Levi (7) |
 | Ethan | 8 | 13 | 7 | Levi (5) |
 | Julius | 8 | 14 | 6 | Levi (4) |
 | Luke | 8 | 20 | 6 | Levi (7) |
@@ -1003,8 +1022,8 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Manager 1 | Manager 2 | Trades |
 | --- | --- | --- |
+| Justin | Levi | 7 |
 | Levi | Luke | 7 |
-| Justin | Levi | 6 |
 | Ethan | Levi | 5 |
 | Julius | Levi | 4 |
 | Levi | Ryan Houseman | 4 |
