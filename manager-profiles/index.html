@@ -398,6 +398,105 @@
     .league-year-panel.is-active {
       display: block;
     }
+    .current-roster-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 14px 0 24px;
+    }
+    .current-roster-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .current-roster-card-head {
+      display: grid;
+      gap: 3px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft-2);
+    }
+    .current-roster-card-head strong {
+      color: var(--ink);
+    }
+    .current-roster-card-head span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+    .current-roster-card .table-wrap {
+      margin: 0;
+      overflow: hidden;
+      border: 0;
+      border-radius: 0;
+    }
+    .current-roster-card table {
+      min-width: 0;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+    .current-roster-card th,
+    .current-roster-card td {
+      padding: 7px 9px;
+    }
+    .current-roster-card th:first-child,
+    .current-roster-card td:first-child {
+      width: 52px;
+    }
+    .current-roster-card th:last-child,
+    .current-roster-card td:last-child {
+      width: 60px;
+    }
+    .current-roster-pos-gkp td:first-child {
+      border-left: 5px solid #0284c7;
+    }
+    .current-roster-pos-def td:first-child {
+      border-left: 5px solid #16a34a;
+    }
+    .current-roster-pos-mid td:first-child {
+      border-left: 5px solid #d97706;
+    }
+    .current-roster-pos-fwd td:first-child {
+      border-left: 5px solid #e11d48;
+    }
+    .manager-draft-view {
+      max-width: 760px;
+      margin: 14px 0 24px;
+    }
+    .manager-draft-tabs {
+      display: inline-flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .manager-draft-button {
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .manager-draft-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .manager-draft-panel[hidden] {
+      display: none !important;
+    }
+    .manager-draft-card {
+      width: 100%;
+    }
     .table-wrap {
       overflow-x: auto;
       margin: 14px 0 24px;
@@ -3093,6 +3192,21 @@
       .league-year-button {
         min-height: 42px;
       }
+      .current-roster-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .manager-draft-view {
+        max-width: none;
+      }
+      .manager-draft-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+      }
+      .manager-draft-button {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
       .table-wrap {
         overflow: visible;
         border: 0;
@@ -3283,6 +3397,57 @@
       .pick-panel tr:last-child td {
         border-bottom: 0;
       }
+      .current-roster-card .table-wrap {
+        overflow: hidden;
+        border: 0;
+      }
+      .current-roster-card table,
+      .current-roster-card thead,
+      .current-roster-card tbody,
+      .current-roster-card tr,
+      .current-roster-card th,
+      .current-roster-card td {
+        display: revert;
+        width: auto;
+      }
+      .current-roster-card table {
+        display: table;
+        width: 100%;
+        min-width: 0;
+        font-size: 0.82rem;
+      }
+      .current-roster-card thead {
+        position: static;
+        width: auto;
+        height: auto;
+        clip: auto;
+        overflow: visible;
+        white-space: normal;
+      }
+      .current-roster-card tbody {
+        display: table-row-group;
+      }
+      .current-roster-card tr {
+        display: table-row;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        overflow: visible;
+      }
+      .current-roster-card th,
+      .current-roster-card td {
+        display: table-cell;
+        width: auto;
+        padding: 7px 9px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+      }
+      .current-roster-card td::before {
+        content: none;
+      }
+      .current-roster-card tr:last-child td {
+        border-bottom: 0;
+      }
       .draft-board-wrap {
         overflow-x: auto;
         border: 1px solid var(--line);
@@ -3407,6 +3572,9 @@
 <a href="../data/analysis/manager-profiles/manager_h2h_records.csv">Manager H2H CSV</a>
 <a href="../data/analysis/manager-profiles/manager_signature_games.csv">Signature Games CSV</a>
 <a href="../data/analysis/manager-profiles/manager_rivalries.csv">Rivalries CSV</a>
+<a href="../data/analysis/2024-2025/draft_results.csv">24/25 Draft CSV</a>
+<a href="../data/analysis/draft_results.csv">25/26 Draft CSV</a>
+<a href="../data/analysis/2026-2027/draft_results.csv">26/27 Draft CSV</a>
     </div>
     <h1>BMS FPL Draft Manager Profiles</h1>
 <p>Each dropdown collects that manager&#x27;s two-year record, scoring profile, power-ranking history, streaks, belt history, opponent records, and signature games.</p>
@@ -3786,7 +3954,7 @@
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">3 (Justin Miller 2-0-1, Levi Morant 1-0-2)</td></tr>
 <tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Justin Miller 2-1-0, Levi Morant 0-1-2)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">6</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">7</td></tr>
 </tbody></table></div>
 </article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Drake Byrd" data-manager-b="Alexander Chaban" hidden>
@@ -5082,7 +5250,7 @@
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">3 (Ryan Donlan 2-0-1, Julius Long 1-0-2)</td></tr>
 <tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Donlan 2-0-0, Julius Long 0-0-2)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">1</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
 </tbody></table></div>
 </article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Levi Morant" data-manager-b="Julius Long" hidden>
@@ -5640,6 +5808,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">1</td><td data-label="Record">27-1-10</td><td data-label="H2H Pts">82</td><td data-label="PF">1757</td><td data-label="PA">1452</td><td data-label="PF/GW">46.2</td><td data-label="Top Scores">5</td><td data-label="Bottom Scores">2</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">1</td><td data-label="Record">27-0-11</td><td data-label="H2H Pts">81</td><td data-label="PF">1764</td><td data-label="PA">1444</td><td data-label="PF/GW">46.4</td><td data-label="Top Scores">4</td><td data-label="Bottom Scores">2</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Mark Flekken</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Norberto Murara Neto</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Trent Alexander-Arnold</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>William Saliba</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Destiny Udogie</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Leif Davis</strong></td><td data-label="Club">IPS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Rayan Aït-Nouri</strong></td><td data-label="Club">WOL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bryan Mbeumo</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mitoma Kaoru</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Justin Kluivert</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alex Iwobi</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Emile Smith Rowe</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Erling Haaland</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Matheus Santos Carneiro Da Cunha</strong></td><td data-label="Club">WOL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Gabriel Fernando de Jesus</strong></td><td data-label="Club">ARS</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>**Cunha Believe it?!</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Caoimhín Kelleher</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Guglielmo Vicario</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Virgil van Dijk</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Levi Samuels Colwill</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Maximilian Kilman</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Emmanuel Agbadou</strong></td><td data-label="Club">WOL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Nikola Milenković</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Matheus Santos Carneiro da Cunha</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Anthony Gordon</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Gibbs-White</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kevin Schade</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Donyell Malen</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Erling Haaland</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Joël Piroe</strong></td><td data-label="Club">LEE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Rodrigo Muniz Carvalho</strong></td><td data-label="Club">FUL</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>***NoHaalandNoParty</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Caoimhín Kelleher</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Giorgi Mamardashvili</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>James Hill</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Cristhian Mosquera</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>James Tarkowski</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Rúben dos Santos Gato Alves Dias</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Joško Gvardiol</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>James Garner</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Gibbs-White</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Pascal Groß</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alex Iwobi</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Justin Kluivert</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Erling Haaland</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Taiwo Awoniyi</strong></td><td data-label="Club">COV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Calvert-Lewin</strong></td><td data-label="Club">LEE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -5712,6 +5961,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">2</td><td data-label="Record">26-1-11</td><td data-label="H2H Pts">79</td><td data-label="PF">1800</td><td data-label="PA">1557</td><td data-label="PF/GW">47.4</td><td data-label="Top Scores">11</td><td data-label="Bottom Scores">2</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">2</td><td data-label="Record">24-0-14</td><td data-label="H2H Pts">72</td><td data-label="PF">1681</td><td data-label="PA">1642</td><td data-label="PF/GW">44.2</td><td data-label="Top Scores">8</td><td data-label="Bottom Scores">3</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Bernd Leno</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Dean Henderson</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Virgil van Dijk</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Rúben Gato Alves Dias</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Fabian Schär</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Malo Gusto</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jarrad Branthwaite</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>James Maddison</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Gibbs-White</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bruno Guimarães Rodriguez Moura</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Andreas Hoelgebaum Pereira</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Ollie Watkins</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Kai Havertz</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Liam Delap</strong></td><td data-label="Club">IPS</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>Sue-nited FC*</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Bernd Leno</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Ederson Santana de Moraes</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ibrahima Konaté</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Myles Lewis-Skelly</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>James Tarkowski</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Andrew Robertson</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Manuel Akanji</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Martin Ødegaard</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Brennan Johnson</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mikkel Damsgaard</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jacob Murphy</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Iliman Ndiaye</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Ollie Watkins</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Yoane Wissa</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Ahmed Abdullahi</strong></td><td data-label="Club">SUN</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Sue-nited FC*</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Matz Sels</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Dean Henderson</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ola Aina</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>António João Pereira de Albuquerque Tavares da Silva</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Levi Samuels Colwill</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Diogo Dalot Teixeira</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jeremy Jacquet</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Elliot Anderson</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Anton Stach</strong></td><td data-label="Club">LEE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Marcus Tavernier</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Johan Manzambi</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mitoma Kaoru</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Alexander Isak</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Ollie Watkins</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Richarlison de Andrade</strong></td><td data-label="Club">TOT</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -5784,6 +6114,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">3</td><td data-label="Record">21-0-17</td><td data-label="H2H Pts">63</td><td data-label="PF">1478</td><td data-label="PA">1445</td><td data-label="PF/GW">38.9</td><td data-label="Top Scores">2</td><td data-label="Bottom Scores">5</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">5</td><td data-label="Record">20-0-18</td><td data-label="H2H Pts">60</td><td data-label="PF">1659</td><td data-label="PA">1566</td><td data-label="PF/GW">43.7</td><td data-label="Top Scores">6</td><td data-label="Bottom Scores">4</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Alphonse Areola</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>John Ruddy</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Manuel Akanji</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marcos Senesi</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ian Maatsen</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Reece James</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Tosin Adarabioyo</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Phil Foden</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Eberechi Eze</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Leandro Trossard</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Rodrigo &#x27;Rodri&#x27; Hernandez</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Omari Giraud-Hutchinson</strong></td><td data-label="Club">IPS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jean-Philippe Mateta</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Chris Wood</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Taiwo Awoniyi</strong></td><td data-label="Club">NFO</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>eze as u like b*%chs</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>David Raya Martín</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Emiliano Martínez Romero</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Gabriel dos Santos Magalhães</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Murillo Costa dos Santos</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Nathan Collins</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Cristian Romero</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Adrien Truffert</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Eberechi Eze</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Justin Kluivert</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Declan Rice</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Dominik Szoboszlai</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Callum Hudson-Odoi</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jean-Philippe Mateta</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Danny Welbeck</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Liam Delap</strong></td><td data-label="Club">CHE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Szoboszlickin good</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Jordan Pickford</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>James Trafford</strong></td><td data-label="Club">LEE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Gabriel dos Santos Magalhães</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ronald Araujo</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Neco Williams</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Piero Hincapié</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Tyrick Mitchell</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Dominik Szoboszlai</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Enzo Fernández</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Pedro Lomba Neto</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Diego Gómez Amarilla</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Eberechi Eze</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jean-Philippe Mateta</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jørgen Strand Larsen</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Hugo Ekitiké</strong></td><td data-label="Club">LIV</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -5856,6 +6267,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">5</td><td data-label="Record">18-2-18</td><td data-label="H2H Pts">56</td><td data-label="PF">1534</td><td data-label="PA">1518</td><td data-label="PF/GW">40.4</td><td data-label="Top Scores">2</td><td data-label="Bottom Scores">5</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">3</td><td data-label="Record">21-2-15</td><td data-label="H2H Pts">65</td><td data-label="PF">1527</td><td data-label="PA">1468</td><td data-label="PF/GW">40.2</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">2</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Alisson Ramses Becker</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Martin Dúbravka</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Nathan Aké</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Diogo Dalot Teixeira</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Joachim Andersen</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Timothy Castagne</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Lewis Dunk</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Cole Palmer</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alejandro Garnacho</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jérémy Doku</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>James Ward-Prowse</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Brennan Johnson</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Ivan Toney</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Darwin Núñez Ribeiro</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Richarlison de Andrade</strong></td><td data-label="Club">TOT</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>Into the WOODwork*</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Bart Verbruggen</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Stefan Ortega Moreno</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Joško Gvardiol</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marc Guéhi</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Neco Williams</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Maxim De Cuyper</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Matheus Nunes</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Pedro Lomba Neto</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Dejan Kulusevski</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bernardo Mota Veiga de Carvalho e Silva</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mitoma Kaoru</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Emile Smith Rowe</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Chris Wood</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Raúl Jiménez Rodríguez</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Nicolas Jackson</strong></td><td data-label="Club">CHE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Into the WOODwork*</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Bart Verbruggen</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Emiliano Martínez Romero</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marc Guéhi</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Benjamin White</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Malick Thiaw</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Kristoffer Ajer</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jaydee Canvot</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bryan Mbeumo</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kiernan Dewsbury-Hall</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Enzo Le Fée</strong></td><td data-label="Club">SUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Iliman Ndiaye</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mamadou Sangaré</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>William Osula</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Thierno Barry</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -5928,6 +6420,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">7</td><td data-label="Record">16-1-21</td><td data-label="H2H Pts">49</td><td data-label="PF">1467</td><td data-label="PA">1525</td><td data-label="PF/GW">38.6</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">1</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">4</td><td data-label="Record">20-1-17</td><td data-label="H2H Pts">61</td><td data-label="PF">1656</td><td data-label="PA">1672</td><td data-label="PF/GW">43.6</td><td data-label="Top Scores">6</td><td data-label="Bottom Scores">3</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Emiliano Martínez Romero</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>José Malheiro de Sá</strong></td><td data-label="Club">WOL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Kieran Trippier</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Tyrick Mitchell</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Antonee Robinson</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ezri Konsa Ngoyo</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jurriën Timber</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bruno Borges Fernandes</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Luis Díaz</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kobbie Mainoo</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jadon Sancho</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Declan Rice</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Joshua Zirkzee</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Niclas Füllkrug</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jørgen Strand Larsen</strong></td><td data-label="Club">WOL</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>Grand-Larseny</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Matz Sels</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Norberto Murara Neto</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Daniel Muñoz Mejía</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>William Saliba</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Reece James</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Chris Richards</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Patrick Dorgu</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bruno Borges Fernandes</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohammed Kudus</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Sávio Moreira de Oliveira</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bruno Guimarães Rodriguez Moura</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Moisés Caicedo Corozo</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jørgen Strand Larsen</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Rasmus Højlund</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Francisco Evanilson de Lima Barbosa</strong></td><td data-label="Club">BOU</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Grand-Larseny</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Robin Roefs</strong></td><td data-label="Club">SUN</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Karl Darlow</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Daniel Ballard</strong></td><td data-label="Club">SUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Daniel Muñoz Mejía</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Lewis Hall</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Matty Cash</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Riccardo Calafiori</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bruno Borges Fernandes</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Martin Ødegaard</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Anthony Elanga</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Cody Gakpo</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Youri Tielemans</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Francisco Evanilson de Lima Barbosa</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Oli McBurnie</strong></td><td data-label="Club">HUL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Benjamin Sesko</strong></td><td data-label="Club">MUN</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -6000,6 +6573,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">4</td><td data-label="Record">19-0-19</td><td data-label="H2H Pts">57</td><td data-label="PF">1557</td><td data-label="PA">1586</td><td data-label="PF/GW">41.0</td><td data-label="Top Scores">6</td><td data-label="Bottom Scores">4</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">7</td><td data-label="Record">16-0-22</td><td data-label="H2H Pts">48</td><td data-label="PF">1495</td><td data-label="PA">1572</td><td data-label="PF/GW">39.3</td><td data-label="Top Scores">4</td><td data-label="Bottom Scores">8</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>André Onana</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Nick Pope</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Riccardo Calafiori</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Cristian Romero</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Micky van de Ven</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jarell Quansah</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pervis Estupiñán</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bukayo Saka</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jarrod Bowen</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohammed Kudus</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Hwang Hee-chan</strong></td><td data-label="Club">WOL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Antoine Semenyo</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Rasmus Højlund</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Yoane Wissa</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Hwang Ui-jo</strong></td><td data-label="Club">NFO</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>*Saka It To Me Baby</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>James Trafford</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Mark Gillespie</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Benjamin White</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Vitalii Mykolenko</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ezri Konsa Ngoyo</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jarrad Branthwaite</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Conor Bradley</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bukayo Saka</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Cole Palmer</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Florian Wirtz</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Gabriel Martinelli Silva</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Noni Madueke</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Viktor Gyökeres</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Norberto Bercique Gomes Betuncal</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jayden Danns</strong></td><td data-label="Club">LIV</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>*Saka It To Me Baby</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Alisson Becker</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Lukás Hornícek</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jeremie Frimpong</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marco Palestra</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Leny Yoro</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jurriën Timber</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Nikola Milenković</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Dango Ouattara</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bukayo Saka</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Cole Palmer</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Christos Tzolis</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Harvey Barnes</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Kai Havertz</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Omar Marmoush</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Georginio Rutter</strong></td><td data-label="Club">BHA</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -6072,6 +6726,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">6</td><td data-label="Record">18-1-19</td><td data-label="H2H Pts">55</td><td data-label="PF">1533</td><td data-label="PA">1522</td><td data-label="PF/GW">40.3</td><td data-label="Top Scores">5</td><td data-label="Bottom Scores">1</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">10</td><td data-label="Record">13-1-24</td><td data-label="H2H Pts">40</td><td data-label="PF">1453</td><td data-label="PA">1645</td><td data-label="PF/GW">38.2</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">9</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>David Raya Martin</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Jordan Pickford</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Gabriel dos Santos Magalhães</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marc Cucurella Saseta</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marc Guéhi</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Vitalii Mykolenko</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>John Stones</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohamed Salah</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Diogo Teixeira da Silva</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Lucas Tolentino Coelho de Lima</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Leon Bailey</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Gabriel Martinelli Silva</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Michail Antonio</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Danny Welbeck</strong></td><td data-label="Club">BHW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jhon Durán</strong></td><td data-label="Club">AVL</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>Amorim de mi vida</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Jordan Pickford</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Alphonse Areola</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Dan Burn</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Maxence Lacroix</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Diogo Dalot Teixeira</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Rúben dos Santos Gato Alves Dias</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Riccardo Calafiori</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohamed Salah</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jérémy Doku</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Harry Wilson</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Sandro Tonali</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Youri Tielemans</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Alexander Isak</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Kai Havertz</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Zian Flemming</strong></td><td data-label="Club">BUR</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Amorim de mi vida</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Gianluigi Donnarumma</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Nick Pope</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ferdi Kadıoğlu</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ian Maatsen</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Harry Maguire</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marcos Senesi Barón</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Michael Kayode</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>James Maddison</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mateus Fernandes</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Antoine Semenyo</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Matheus Santos Carneiro da Cunha</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bruno Guimarães Rodriguez Moura</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Viktor Gyökeres</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Norberto Bercique Gomes Betuncal</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Chris Wood</strong></td><td data-label="Club">NFO</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -6144,6 +6879,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">10</td><td data-label="Record">12-2-24</td><td data-label="H2H Pts">38</td><td data-label="PF">1303</td><td data-label="PA">1613</td><td data-label="PF/GW">34.3</td><td data-label="Top Scores">1</td><td data-label="Bottom Scores">5</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">6</td><td data-label="Record">19-0-19</td><td data-label="H2H Pts">57</td><td data-label="PF">1577</td><td data-label="PA">1536</td><td data-label="PF/GW">41.5</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">3</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Ederson Santana de Moraes</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Filip Jørgensen</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Kyle Walker</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>James Tarkowski</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Dan Burn</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Joe Gomez</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Son Heung-min</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Anthony Gordon</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Christopher Nkunku</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>John McGinn</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jack Harrison</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Nicolas Jackson</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Rodrigo Muniz Carvalho</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Adam Armstrong</strong></td><td data-label="Club">SOU</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>Bowen Arrows</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Nick Pope</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Robert Lynch Sánchez</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jeremie Frimpong</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Rayan Aït-Nouri</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Antonee Robinson</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Lewis Hall</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Aaron Wan-Bissaka</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Antoine Semenyo</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alex Iwobi</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Amad Diallo</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Rayan Cherki</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Anthony Elanga</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Jarrod Bowen</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>João Pedro Junqueira de Jesus</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Igor Thiago Nascimento Rodrigues</strong></td><td data-label="Club">BRE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Bowen Arrows</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Robert Lynch Sánchez</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Nico O&#x27;Reilly</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Adrien Truffert</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Nordi Mukiele</strong></td><td data-label="Club">SUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jan Paul van Hecke</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Maxence Lacroix</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Marcus Rashford</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Phil Foden</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Ryan Gravenberch</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Declan Rice</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Harry Wilson</strong></td><td data-label="Club">LEE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>João Pedro Junqueira de Jesus</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Igor Thiago Nascimento Rodrigues</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Nick Woltemade</strong></td><td data-label="Club">NEW</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -6216,6 +7032,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">8</td><td data-label="Record">15-0-23</td><td data-label="H2H Pts">45</td><td data-label="PF">1450</td><td data-label="PA">1570</td><td data-label="PF/GW">38.2</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">7</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">9</td><td data-label="Record">13-2-23</td><td data-label="H2H Pts">41</td><td data-label="PF">1506</td><td data-label="PA">1566</td><td data-label="PF/GW">39.6</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">3</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Guglielmo Vicario</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Bart Verbruggen</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Joško Gvardiol</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Andrew Robertson</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Luke Shaw</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pau Torres</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Lisandro Martínez</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Martin Ødegaard</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Dejan Kulusevski</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Marcus Rashford</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Dominik Szoboszlai</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Simon Adingra</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Alexander Isak</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>João Pedro Junqueira de Jesus</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Calvert-Lewin</strong></td><td data-label="Club">EVE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>Santa’s reijnders</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Alisson Becker</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Giorgi Mamardashvili</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Milos Kerkez</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Marc Cucurella Saseta</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jurriën Timber</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ian Maatsen</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Fabian Schär</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Omar Marmoush</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bryan Mbeumo</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Ismaïla Sarr</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Tijjani Reijnders</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Cody Gakpo</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Niclas Füllkrug</strong></td><td data-label="Club">WHU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Thierno Barry</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Charalampos Kostoulas</strong></td><td data-label="Club">BHA</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>Thanksgiving Cherki</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Antonín Kinský</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Senne Lammens</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Reece James</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Milos Kerkez</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Matheus Nunes</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Micky van de Ven</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Jarrad Branthwaite</strong></td><td data-label="Club">EVE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Emiliano Buendía Stati</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Rayan Cherki</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Ismaïla Sarr</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Florian Wirtz</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kevin Schade</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Gonzalo García</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Igor Jesus Maciel da Cruz</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Yoane Wissa</strong></td><td data-label="Club">NEW</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -6288,6 +7185,87 @@
 <tr><td data-label="Season">2024-25</td><td data-label="Rank">9</td><td data-label="Record">14-0-24</td><td data-label="H2H Pts">42</td><td data-label="PF">1494</td><td data-label="PA">1585</td><td data-label="PF/GW">39.3</td><td data-label="Top Scores">4</td><td data-label="Bottom Scores">8</td></tr>
 <tr><td data-label="Season">2025-26</td><td data-label="Rank">8</td><td data-label="Record">14-0-24</td><td data-label="H2H Pts">42</td><td data-label="PF">1485</td><td data-label="PA">1692</td><td data-label="PF/GW">39.1</td><td data-label="Top Scores">3</td><td data-label="Bottom Scores">5</td></tr>
 </tbody></table></div>
+<h3>Drafted Team</h3>
+<p>Choose a season to see this manager&#x27;s complete draft-day roster, grouped by position.</p>
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Stefan Ortega Moreno</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Benjamin White</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Daniel Muñoz</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Oleksandr Zinchenko</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>João Cavaco Cancelo</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Harry Maguire</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kevin De Bruyne</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bernardo Veiga de Carvalho e Silva</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Pedro Lomba Neto</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Raheem Sterling</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alexis Mac Allister</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Cody Gakpo</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Julián Álvarez</strong></td><td data-label="Club">MCI</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>ChabosSpurs@Law</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Dean Henderson</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ola Aina</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Tino Livramento</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Micky van de Ven</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro Sauceda</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Trevoh Chalobah</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Phil Foden</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Enzo Fernández</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alexis Mac Allister</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Harvey Barnes</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Hugo Ekitiké</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Marc Guiu Paz</strong></td><td data-label="Club">CHE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>ChabosSpurs@Law</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>David Raya Martín</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Marco Bizot</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Virgil van Dijk</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro Sauceda</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ezri Konsa Ngoyo</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Antonee Robinson</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Luka Vušković</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jérémy Doku</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohammed Kudus</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mikkel Damsgaard</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Rayan Vitor Simplício Rocha</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Brian Brobbey</strong></td><td data-label="Club">SUN</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Brian Madjo</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Liam Delap</strong></td><td data-label="Club">CHE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
 <h3>Power Rankings History</h3>
 <p>Power ratings reset to 1500 at the start of each season, so these rows compare the manager&#x27;s power-ranking path within each year.</p>
 <div class="table-wrap"><table>
@@ -6621,6 +7599,31 @@
 
   const initialButton = buttons.find((button) => button.classList.contains("is-active")) || buttons[0];
   if (initialButton) selectView(initialButton.dataset.keeperViewButton);
+})();
+</script>
+  <script>
+(() => {
+  document.querySelectorAll("[data-manager-draft-view]").forEach((view) => {
+    const buttons = Array.from(view.querySelectorAll("[data-manager-draft-year]"));
+    const panels = Array.from(view.querySelectorAll("[data-manager-draft-panel]"));
+    const selectYear = (year) => {
+      buttons.forEach((button) => {
+        const active = button.dataset.managerDraftYear === year;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      panels.forEach((panel) => {
+        const active = panel.dataset.managerDraftPanel === year;
+        panel.classList.toggle("is-active", active);
+        panel.toggleAttribute("hidden", !active);
+      });
+    };
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => selectYear(button.dataset.managerDraftYear));
+    });
+    const initial = buttons.find((button) => button.classList.contains("is-active")) || buttons[0];
+    if (initial) selectYear(initial.dataset.managerDraftYear);
+  });
 })();
 </script>
   <script>
@@ -7892,7 +8895,7 @@
   const buttons = Array.from(page.querySelectorAll("[data-league-year-button]"));
   const panels = Array.from(page.querySelectorAll("[data-league-year-panel]"));
   const toolbars = Array.from(document.querySelectorAll("[data-league-year-toolbar]"));
-  const defaultYear = page.dataset.defaultYear || "2025-2026";
+  const defaultYear = page.dataset.defaultYear || "2026-2027";
   const validYears = new Set(buttons.map((button) => button.dataset.leagueYearButton));
 
   const setYear = (year, updateUrl = false) => {

@@ -398,6 +398,105 @@
     .league-year-panel.is-active {
       display: block;
     }
+    .current-roster-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 14px 0 24px;
+    }
+    .current-roster-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .current-roster-card-head {
+      display: grid;
+      gap: 3px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft-2);
+    }
+    .current-roster-card-head strong {
+      color: var(--ink);
+    }
+    .current-roster-card-head span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+    .current-roster-card .table-wrap {
+      margin: 0;
+      overflow: hidden;
+      border: 0;
+      border-radius: 0;
+    }
+    .current-roster-card table {
+      min-width: 0;
+      table-layout: auto;
+      font-size: 0.82rem;
+    }
+    .current-roster-card th,
+    .current-roster-card td {
+      padding: 7px 9px;
+    }
+    .current-roster-card th:first-child,
+    .current-roster-card td:first-child {
+      width: 52px;
+    }
+    .current-roster-card th:last-child,
+    .current-roster-card td:last-child {
+      width: 60px;
+    }
+    .current-roster-pos-gkp td:first-child {
+      border-left: 5px solid #0284c7;
+    }
+    .current-roster-pos-def td:first-child {
+      border-left: 5px solid #16a34a;
+    }
+    .current-roster-pos-mid td:first-child {
+      border-left: 5px solid #d97706;
+    }
+    .current-roster-pos-fwd td:first-child {
+      border-left: 5px solid #e11d48;
+    }
+    .manager-draft-view {
+      max-width: 760px;
+      margin: 14px 0 24px;
+    }
+    .manager-draft-tabs {
+      display: inline-flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft-2);
+    }
+    .manager-draft-button {
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--tab-ink);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .manager-draft-button.is-active {
+      border-color: var(--active);
+      background: var(--active);
+      color: #ffffff;
+    }
+    .manager-draft-panel[hidden] {
+      display: none !important;
+    }
+    .manager-draft-card {
+      width: 100%;
+    }
     .table-wrap {
       overflow-x: auto;
       margin: 14px 0 24px;
@@ -3093,6 +3192,21 @@
       .league-year-button {
         min-height: 42px;
       }
+      .current-roster-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .manager-draft-view {
+        max-width: none;
+      }
+      .manager-draft-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+      }
+      .manager-draft-button {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
       .table-wrap {
         overflow: visible;
         border: 0;
@@ -3281,6 +3395,57 @@
         border-bottom: 1px solid var(--line);
       }
       .pick-panel tr:last-child td {
+        border-bottom: 0;
+      }
+      .current-roster-card .table-wrap {
+        overflow: hidden;
+        border: 0;
+      }
+      .current-roster-card table,
+      .current-roster-card thead,
+      .current-roster-card tbody,
+      .current-roster-card tr,
+      .current-roster-card th,
+      .current-roster-card td {
+        display: revert;
+        width: auto;
+      }
+      .current-roster-card table {
+        display: table;
+        width: 100%;
+        min-width: 0;
+        font-size: 0.82rem;
+      }
+      .current-roster-card thead {
+        position: static;
+        width: auto;
+        height: auto;
+        clip: auto;
+        overflow: visible;
+        white-space: normal;
+      }
+      .current-roster-card tbody {
+        display: table-row-group;
+      }
+      .current-roster-card tr {
+        display: table-row;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        overflow: visible;
+      }
+      .current-roster-card th,
+      .current-roster-card td {
+        display: table-cell;
+        width: auto;
+        padding: 7px 9px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+      }
+      .current-roster-card td::before {
+        content: none;
+      }
+      .current-roster-card tr:last-child td {
         border-bottom: 0;
       }
       .draft-board-wrap {
@@ -3742,6 +3907,31 @@
 
   const initialButton = buttons.find((button) => button.classList.contains("is-active")) || buttons[0];
   if (initialButton) selectView(initialButton.dataset.keeperViewButton);
+})();
+</script>
+  <script>
+(() => {
+  document.querySelectorAll("[data-manager-draft-view]").forEach((view) => {
+    const buttons = Array.from(view.querySelectorAll("[data-manager-draft-year]"));
+    const panels = Array.from(view.querySelectorAll("[data-manager-draft-panel]"));
+    const selectYear = (year) => {
+      buttons.forEach((button) => {
+        const active = button.dataset.managerDraftYear === year;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      panels.forEach((panel) => {
+        const active = panel.dataset.managerDraftPanel === year;
+        panel.classList.toggle("is-active", active);
+        panel.toggleAttribute("hidden", !active);
+      });
+    };
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => selectYear(button.dataset.managerDraftYear));
+    });
+    const initial = buttons.find((button) => button.classList.contains("is-active")) || buttons[0];
+    if (initial) selectYear(initial.dataset.managerDraftYear);
+  });
 })();
 </script>
   <script>
@@ -5013,7 +5203,7 @@
   const buttons = Array.from(page.querySelectorAll("[data-league-year-button]"));
   const panels = Array.from(page.querySelectorAll("[data-league-year-panel]"));
   const toolbars = Array.from(document.querySelectorAll("[data-league-year-toolbar]"));
-  const defaultYear = page.dataset.defaultYear || "2025-2026";
+  const defaultYear = page.dataset.defaultYear || "2026-2027";
   const validYears = new Set(buttons.map((button) => button.dataset.leagueYearButton));
 
   const setYear = (year, updateUrl = false) => {

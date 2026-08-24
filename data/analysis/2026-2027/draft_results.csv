@@ -1,0 +1,151 @@
+overall_pick,round,manager,team,player,club,position,auto_pick
+1,1,Justin Miller,Sue-nited FC*,Matz Sels,NFO,GKP,True
+2,1,Ryan Donlan,***NoHaalandNoParty,Erling Haaland,MCI,FWD,True
+3,1,Dylan Reid,Bowen Arrows,João Pedro Junqueira de Jesus,CHE,FWD,True
+4,1,Drake Byrd,Grand-Larseny,Bruno Borges Fernandes,MUN,MID,True
+5,1,Levi Morant,*Saka It To Me Baby,Alisson Becker,LIV,GKP,True
+6,1,Alexander Chaban,ChabosSpurs@Law,Morgan Rogers,CHE,MID,True
+7,1,Julius Long,Amorim de mi vida,Gianluigi Donnarumma,MCI,GKP,True
+8,1,Luke Lockwood,Into the WOODwork*,Bryan Mbeumo,MUN,MID,True
+9,1,Ryan Houseman,Szoboszlickin good,Gabriel dos Santos Magalhães,ARS,DEF,True
+10,1,Ethan Ellsworth,Thanksgiving Cherki,Antonín Kinský,TOT,GKP,True
+11,2,Ethan Ellsworth,Thanksgiving Cherki,Senne Lammens,MUN,GKP,True
+12,2,Ryan Houseman,Szoboszlickin good,Dominik Szoboszlai,LIV,MID,True
+13,2,Luke Lockwood,Into the WOODwork*,Kiernan Dewsbury-Hall,EVE,MID,True
+14,2,Julius Long,Amorim de mi vida,Nick Pope,NEW,GKP,True
+15,2,Alexander Chaban,ChabosSpurs@Law,Jérémy Doku,MCI,MID,True
+16,2,Levi Morant,*Saka It To Me Baby,Jeremie Frimpong,LIV,DEF,True
+17,2,Drake Byrd,Grand-Larseny,Martin Ødegaard,ARS,MID,True
+18,2,Dylan Reid,Bowen Arrows,Igor Thiago Nascimento Rodrigues,BRE,FWD,True
+19,2,Ryan Donlan,***NoHaalandNoParty,Caoimhín Kelleher,BRE,GKP,True
+20,2,Justin Miller,Sue-nited FC*,Dean Henderson,CRY,GKP,True
+21,3,Justin Miller,Sue-nited FC*,Ola Aina,NFO,DEF,True
+22,3,Ryan Donlan,***NoHaalandNoParty,Giorgi Mamardashvili,LIV,GKP,True
+23,3,Dylan Reid,Bowen Arrows,Marcus Rashford,MUN,MID,True
+24,3,Drake Byrd,Grand-Larseny,Anthony Elanga,NEW,MID,True
+25,3,Levi Morant,*Saka It To Me Baby,Marco Palestra,CHE,DEF,True
+26,3,Alexander Chaban,ChabosSpurs@Law,Virgil van Dijk,LIV,DEF,True
+27,3,Julius Long,Amorim de mi vida,Ferdi Kadıoğlu,BHA,DEF,True
+28,3,Luke Lockwood,Into the WOODwork*,Marc Guéhi,MCI,DEF,True
+29,3,Ryan Houseman,Szoboszlickin good,Jordan Pickford,EVE,GKP,True
+30,3,Ethan Ellsworth,Thanksgiving Cherki,Reece James,CHE,DEF,True
+31,4,Ethan Ellsworth,Thanksgiving Cherki,Milos Kerkez,LIV,DEF,True
+32,4,Ryan Houseman,Szoboszlickin good,Ronald Araujo,LIV,DEF,True
+33,4,Luke Lockwood,Into the WOODwork*,Enzo Le Fée,SUN,MID,True
+34,4,Julius Long,Amorim de mi vida,Ian Maatsen,AVL,DEF,True
+35,4,Alexander Chaban,ChabosSpurs@Law,Mohammed Kudus,TOT,MID,True
+36,4,Levi Morant,*Saka It To Me Baby,Leny Yoro,MUN,DEF,True
+37,4,Drake Byrd,Grand-Larseny,Cody Gakpo,LIV,MID,True
+38,4,Dylan Reid,Bowen Arrows,Phil Foden,MCI,MID,True
+39,4,Ryan Donlan,***NoHaalandNoParty,James Hill,BOU,DEF,True
+40,4,Justin Miller,Sue-nited FC*,António João Pereira de Albuquerque Tavares da Silva,BOU,DEF,True
+41,5,Justin Miller,Sue-nited FC*,Levi Samuels Colwill,CHE,DEF,True
+42,5,Ryan Donlan,***NoHaalandNoParty,Cristhian Mosquera,ARS,DEF,True
+43,5,Dylan Reid,Bowen Arrows,Ryan Gravenberch,LIV,MID,True
+44,5,Drake Byrd,Grand-Larseny,Youri Tielemans,MUN,MID,True
+45,5,Levi Morant,*Saka It To Me Baby,Jurriën Timber,ARS,DEF,True
+46,5,Alexander Chaban,ChabosSpurs@Law,Brian Brobbey,SUN,FWD,True
+47,5,Julius Long,Amorim de mi vida,Harry Maguire,MUN,DEF,True
+48,5,Luke Lockwood,Into the WOODwork*,Iliman Ndiaye,EVE,MID,True
+49,5,Ryan Houseman,Szoboszlickin good,Neco Williams,NFO,DEF,True
+50,5,Ethan Ellsworth,Thanksgiving Cherki,Matheus Nunes,MCI,DEF,True
+51,6,Ethan Ellsworth,Thanksgiving Cherki,Micky van de Ven,TOT,DEF,True
+52,6,Ryan Houseman,Szoboszlickin good,Jean-Philippe Mateta,CRY,FWD,True
+53,6,Luke Lockwood,Into the WOODwork*,William Osula,NEW,FWD,True
+54,6,Julius Long,Amorim de mi vida,Marcos Senesi Barón,TOT,DEF,True
+55,6,Alexander Chaban,ChabosSpurs@Law,Pedro Porro Sauceda,TOT,DEF,True
+56,6,Levi Morant,*Saka It To Me Baby,Nikola Milenković,NFO,DEF,True
+57,6,Drake Byrd,Grand-Larseny,Francisco Evanilson de Lima Barbosa,BOU,FWD,True
+58,6,Dylan Reid,Bowen Arrows,Declan Rice,ARS,MID,True
+59,6,Ryan Donlan,***NoHaalandNoParty,James Tarkowski,EVE,DEF,True
+60,6,Justin Miller,Sue-nited FC*,Diogo Dalot Teixeira,MUN,DEF,True
+61,7,Justin Miller,Sue-nited FC*,Jeremy Jacquet,LIV,DEF,True
+62,7,Ryan Donlan,***NoHaalandNoParty,Rúben dos Santos Gato Alves Dias,MCI,DEF,True
+63,7,Dylan Reid,Bowen Arrows,Nico O'Reilly,MCI,DEF,True
+64,7,Drake Byrd,Grand-Larseny,Oli McBurnie,HUL,FWD,True
+65,7,Levi Morant,*Saka It To Me Baby,Dango Ouattara,BRE,MID,True
+66,7,Alexander Chaban,ChabosSpurs@Law,Mikkel Damsgaard,BRE,MID,True
+67,7,Julius Long,Amorim de mi vida,Michael Kayode,BRE,DEF,True
+68,7,Luke Lockwood,Into the WOODwork*,Thierno Barry,EVE,FWD,True
+69,7,Ryan Houseman,Szoboszlickin good,Jørgen Strand Larsen,CRY,FWD,True
+70,7,Ethan Ellsworth,Thanksgiving Cherki,Jarrad Branthwaite,EVE,DEF,True
+71,8,Ethan Ellsworth,Thanksgiving Cherki,Emiliano Buendía Stati,AVL,MID,True
+72,8,Ryan Houseman,Szoboszlickin good,Hugo Ekitiké,LIV,FWD,True
+73,8,Luke Lockwood,Into the WOODwork*,Benjamin White,ARS,DEF,True
+74,8,Julius Long,Amorim de mi vida,James Maddison,TOT,MID,True
+75,8,Alexander Chaban,ChabosSpurs@Law,Rayan Vitor Simplício Rocha,BOU,MID,True
+76,8,Levi Morant,*Saka It To Me Baby,Bukayo Saka,ARS,MID,True
+77,8,Drake Byrd,Grand-Larseny,Benjamin Sesko,MUN,FWD,True
+78,8,Dylan Reid,Bowen Arrows,Nick Woltemade,NEW,FWD,True
+79,8,Ryan Donlan,***NoHaalandNoParty,Joško Gvardiol,MCI,DEF,True
+80,8,Justin Miller,Sue-nited FC*,Elliot Anderson,MCI,MID,True
+81,9,Justin Miller,Sue-nited FC*,Anton Stach,LEE,MID,True
+82,9,Ryan Donlan,***NoHaalandNoParty,James Garner,EVE,MID,True
+83,9,Dylan Reid,Bowen Arrows,Adrien Truffert,BOU,DEF,True
+84,9,Drake Byrd,Grand-Larseny,Daniel Ballard,SUN,DEF,True
+85,9,Levi Morant,*Saka It To Me Baby,Cole Palmer,CHE,MID,True
+86,9,Alexander Chaban,ChabosSpurs@Law,David Raya Martín,ARS,GKP,True
+87,9,Julius Long,Amorim de mi vida,Mateus Fernandes,TOT,MID,True
+88,9,Luke Lockwood,Into the WOODwork*,Mamadou Sangaré,BRE,MID,True
+89,9,Ryan Houseman,Szoboszlickin good,Enzo Fernández,CHE,MID,True
+90,9,Ethan Ellsworth,Thanksgiving Cherki,Rayan Cherki,MCI,MID,True
+91,10,Ethan Ellsworth,Thanksgiving Cherki,Ismaïla Sarr,CRY,MID,True
+92,10,Ryan Houseman,Szoboszlickin good,Pedro Lomba Neto,CHE,MID,True
+93,10,Luke Lockwood,Into the WOODwork*,Malick Thiaw,NEW,DEF,True
+94,10,Julius Long,Amorim de mi vida,Antoine Semenyo,MCI,MID,True
+95,10,Alexander Chaban,ChabosSpurs@Law,Ezri Konsa Ngoyo,ARS,DEF,True
+96,10,Levi Morant,*Saka It To Me Baby,Christos Tzolis,ARS,MID,True
+97,10,Drake Byrd,Grand-Larseny,Daniel Muñoz Mejía,CRY,DEF,True
+98,10,Dylan Reid,Bowen Arrows,Nordi Mukiele,SUN,DEF,True
+99,10,Ryan Donlan,***NoHaalandNoParty,Morgan Gibbs-White,NFO,MID,True
+100,10,Justin Miller,Sue-nited FC*,Marcus Tavernier,BOU,MID,True
+101,11,Justin Miller,Sue-nited FC*,Johan Manzambi,AVL,MID,True
+102,11,Ryan Donlan,***NoHaalandNoParty,Pascal Groß,BHA,MID,True
+103,11,Dylan Reid,Bowen Arrows,Robert Lynch Sánchez,CHE,GKP,True
+104,11,Drake Byrd,Grand-Larseny,Lewis Hall,NEW,DEF,True
+105,11,Levi Morant,*Saka It To Me Baby,Harvey Barnes,NEW,MID,True
+106,11,Alexander Chaban,ChabosSpurs@Law,Antonee Robinson,FUL,DEF,True
+107,11,Julius Long,Amorim de mi vida,Matheus Santos Carneiro da Cunha,MUN,MID,True
+108,11,Luke Lockwood,Into the WOODwork*,Dominic Solanke-Mitchell,TOT,FWD,True
+109,11,Ryan Houseman,Szoboszlickin good,Diego Gómez Amarilla,BHA,MID,True
+110,11,Ethan Ellsworth,Thanksgiving Cherki,Florian Wirtz,LIV,MID,True
+111,12,Ethan Ellsworth,Thanksgiving Cherki,Kevin Schade,BRE,MID,True
+112,12,Ryan Houseman,Szoboszlickin good,James Trafford,LEE,GKP,True
+113,12,Luke Lockwood,Into the WOODwork*,Kristoffer Ajer,BRE,DEF,True
+114,12,Julius Long,Amorim de mi vida,Bruno Guimarães Rodriguez Moura,ARS,MID,True
+115,12,Alexander Chaban,ChabosSpurs@Law,Marco Bizot,AVL,GKP,True
+116,12,Levi Morant,*Saka It To Me Baby,Kai Havertz,ARS,FWD,True
+117,12,Drake Byrd,Grand-Larseny,Matty Cash,AVL,DEF,True
+118,12,Dylan Reid,Bowen Arrows,Đorđe Petrović,BOU,GKP,True
+119,12,Ryan Donlan,***NoHaalandNoParty,Alex Iwobi,FUL,MID,True
+120,12,Justin Miller,Sue-nited FC*,Alexander Isak,LIV,FWD,True
+121,13,Justin Miller,Sue-nited FC*,Ollie Watkins,AVL,FWD,True
+122,13,Ryan Donlan,***NoHaalandNoParty,Justin Kluivert,BOU,MID,True
+123,13,Dylan Reid,Bowen Arrows,Harry Wilson,LEE,MID,True
+124,13,Drake Byrd,Grand-Larseny,Riccardo Calafiori,ARS,DEF,True
+125,13,Levi Morant,*Saka It To Me Baby,Omar Marmoush,MCI,FWD,True
+126,13,Alexander Chaban,ChabosSpurs@Law,Brian Madjo,AVL,FWD,True
+127,13,Julius Long,Amorim de mi vida,Viktor Gyökeres,ARS,FWD,True
+128,13,Luke Lockwood,Into the WOODwork*,Bart Verbruggen,BHA,GKP,True
+129,13,Ryan Houseman,Szoboszlickin good,Piero Hincapié,ARS,DEF,True
+130,13,Ethan Ellsworth,Thanksgiving Cherki,Gonzalo García,FUL,FWD,True
+131,14,Ethan Ellsworth,Thanksgiving Cherki,Igor Jesus Maciel da Cruz,NFO,FWD,True
+132,14,Ryan Houseman,Szoboszlickin good,Eberechi Eze,ARS,MID,True
+133,14,Luke Lockwood,Into the WOODwork*,Emiliano Martínez Romero,AVL,GKP,True
+134,14,Julius Long,Amorim de mi vida,Norberto Bercique Gomes Betuncal,EVE,FWD,True
+135,14,Alexander Chaban,ChabosSpurs@Law,Luka Vušković,BHA,DEF,True
+136,14,Levi Morant,*Saka It To Me Baby,Georginio Rutter,BHA,FWD,True
+137,14,Drake Byrd,Grand-Larseny,Robin Roefs,SUN,GKP,True
+138,14,Dylan Reid,Bowen Arrows,Jan Paul van Hecke,TOT,DEF,True
+139,14,Ryan Donlan,***NoHaalandNoParty,Taiwo Awoniyi,COV,FWD,True
+140,14,Justin Miller,Sue-nited FC*,Richarlison de Andrade,TOT,FWD,True
+141,15,Justin Miller,Sue-nited FC*,Mitoma Kaoru,BHA,MID,True
+142,15,Ryan Donlan,***NoHaalandNoParty,Dominic Calvert-Lewin,LEE,FWD,True
+143,15,Dylan Reid,Bowen Arrows,Maxence Lacroix,CHE,DEF,True
+144,15,Drake Byrd,Grand-Larseny,Karl Darlow,MUN,GKP,True
+145,15,Levi Morant,*Saka It To Me Baby,Lukás Hornícek,NEW,GKP,True
+146,15,Alexander Chaban,ChabosSpurs@Law,Liam Delap,CHE,FWD,True
+147,15,Julius Long,Amorim de mi vida,Chris Wood,NFO,FWD,True
+148,15,Luke Lockwood,Into the WOODwork*,Jaydee Canvot,CRY,DEF,True
+149,15,Ryan Houseman,Szoboszlickin good,Tyrick Mitchell,CRY,DEF,True
+150,15,Ethan Ellsworth,Thanksgiving Cherki,Yoane Wissa,NEW,FWD,True
