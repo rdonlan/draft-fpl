@@ -759,3 +759,13 @@ season,week,week_label,manager,rank,rating,rating_before,rating_change,opponent,
 2025-26,38,2025-26 38,Ethan Ellsworth,8,1437.16,1443.15,-5.99,Ryan Donlan,L,29,37
 2025-26,38,2025-26 38,Julius Long,9,1419.03,1427.99,-8.96,Ryan Houseman,L,23,24
 2025-26,38,2025-26 38,Alexander Chaban,10,1394.97,1403.45,-8.48,Drake Byrd,L,35,44
+2026-27,1,2026-27 1,Drake Byrd,1,1512.0,1500.0,12.0,Ethan Ellsworth,W,45,34
+2026-27,1,2026-27 1,Levi Morant,2,1512.0,1500.0,12.0,Alexander Chaban,W,48,27
+2026-27,1,2026-27 1,Luke Lockwood,3,1512.0,1500.0,12.0,Julius Long,W,75,28
+2026-27,1,2026-27 1,Ryan Donlan,4,1512.0,1500.0,12.0,Justin Miller,W,42,40
+2026-27,1,2026-27 1,Ryan Houseman,5,1512.0,1500.0,12.0,Dylan Reid,W,35,31
+2026-27,1,2026-27 1,Alexander Chaban,6,1488.0,1500.0,-12.0,Levi Morant,L,27,48
+2026-27,1,2026-27 1,Dylan Reid,7,1488.0,1500.0,-12.0,Ryan Houseman,L,31,35
+2026-27,1,2026-27 1,Ethan Ellsworth,8,1488.0,1500.0,-12.0,Drake Byrd,L,34,45
+2026-27,1,2026-27 1,Julius Long,9,1488.0,1500.0,-12.0,Luke Lockwood,L,28,75
+2026-27,1,2026-27 1,Justin Miller,10,1488.0,1500.0,-12.0,Ryan Donlan,L,40,42

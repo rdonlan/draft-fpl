@@ -4,7 +4,7 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 
 ## Best Quick Hits
 
-- **Latest Season Power #1**: Ryan Donlan (1640.3 in 2025-26).
+- **Latest Season Power #1**: Drake Byrd (1512.0 in 2026-27).
 - **Highest Single-Season Peak**: Ryan Donlan reached 1645.6 after 2024-25 33.
 - **Most Weeks At #1 In A Season**: Ryan Donlan (26 weeks in 2024-25).
 
@@ -26,12 +26,116 @@ Use the tabs to switch between seasons. Each season has its own rating chart, fi
 </details>
 
 <div class="power-tabs">
-<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2025-26" checked>
+<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2026-27" checked>
+<input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2025-26">
 <input class="power-tab-input" type="radio" name="power-season-tabs" id="power-season-2024-25">
 <div class="power-tab-list" role="tablist" aria-label="Power rankings seasons">
+<label class="power-tab-label" id="power-season-2026-27-label" role="tab" for="power-season-2026-27">2026-27</label>
 <label class="power-tab-label" id="power-season-2025-26-label" role="tab" for="power-season-2025-26">2025-26</label>
 <label class="power-tab-label" id="power-season-2024-25-label" role="tab" for="power-season-2024-25">2024-25</label>
 </div>
+<section class="power-tab-panel" id="power-panel-2026-27" role="tabpanel" aria-labelledby="power-season-2026-27-label">
+### 2026-27 Power Rating Movement
+<div class="rating-chart-wrap" role="img" aria-label="2026-27 power rating movement chart">
+<svg class="rating-chart" viewBox="0 0 1060 520" xmlns="http://www.w3.org/2000/svg">
+<text class="chart-title" x="64" y="18">2026-27 Power Rating Movement</text>
+<line class="axis-line" x1="64" y1="398" x2="884" y2="398" />
+<line class="axis-line" x1="64" y1="28" x2="64" y2="398" />
+<line class="grid-line" x1="64" y1="398.0" x2="884" y2="398.0" />
+<text class="axis-label" x="54" y="402.0" text-anchor="end">1450</text>
+<line class="grid-line" x1="64" y1="305.5" x2="884" y2="305.5" />
+<text class="axis-label" x="54" y="309.5" text-anchor="end">1475</text>
+<line class="grid-line" x1="64" y1="213.0" x2="884" y2="213.0" />
+<text class="axis-label" x="54" y="217.0" text-anchor="end">1500</text>
+<line class="grid-line" x1="64" y1="120.5" x2="884" y2="120.5" />
+<text class="axis-label" x="54" y="124.5" text-anchor="end">1525</text>
+<line class="grid-line" x1="64" y1="28.0" x2="884" y2="28.0" />
+<text class="axis-label" x="54" y="32.0" text-anchor="end">1550</text>
+<line class="tick-line" x1="64.0" y1="398" x2="64.0" y2="404" />
+<text class="axis-label" x="64.0" y="422" text-anchor="middle">Start</text>
+<line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
+<text class="axis-label" x="884.0" y="422" text-anchor="middle">1</text>
+<text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
+<text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Power rating</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,168.6" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="168.6" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
+<line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
+<text class="legend-label" x="940" y="48">Ryan Donlan</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,257.4" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="257.4" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
+<line class="legend-swatch" x1="910" y1="72" x2="932" y2="72" stroke="hsl(352 76% 38%)" />
+<text class="legend-label" x="940" y="76">Justin Miller</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,168.6" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="168.6" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
+<line class="legend-swatch" x1="910" y1="100" x2="932" y2="100" stroke="hsl(12 76% 38%)" />
+<text class="legend-label" x="940" y="104">Ryan Houseman</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,168.6" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="168.6" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
+<line class="legend-swatch" x1="910" y1="128" x2="932" y2="128" stroke="hsl(266 76% 38%)" />
+<text class="legend-label" x="940" y="132">Luke Lockwood</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,168.6" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="168.6" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
+<line class="legend-swatch" x1="910" y1="156" x2="932" y2="156" stroke="hsl(154 76% 38%)" />
+<text class="legend-label" x="940" y="160">Drake Byrd</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,168.6" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="168.6" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
+<line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
+<text class="legend-label" x="940" y="188">Levi Morant</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,257.4" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="257.4" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
+<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
+<text class="legend-label" x="940" y="216">Julius Long</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,257.4" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="257.4" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
+<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
+<text class="legend-label" x="940" y="244">Dylan Reid</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,257.4" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="257.4" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
+<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
+<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
+<polyline class="rating-line" points="64.0,213.0 884.0,257.4" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="257.4" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
+<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
+<text class="legend-label" x="940" y="300">Alexander Chaban</text>
+<rect class="rating-hover-zone" x="474.0" y="28" width="410.0" height="370" data-tooltip="Week 1&#10;1. Drake Byrd: 1512.0&#10;2. Levi Morant: 1512.0&#10;3. Luke Lockwood: 1512.0&#10;4. Ryan Donlan: 1512.0&#10;5. Ryan Houseman: 1512.0&#10;6. Alexander Chaban: 1488.0&#10;7. Dylan Reid: 1488.0&#10;8. Ethan Ellsworth: 1488.0&#10;9. Julius Long: 1488.0&#10;10. Justin Miller: 1488.0" data-week="1" />
+</svg>
+</div>
+### 2026-27 Power Rankings
+| Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | Drake Byrd | 1512.0 | +12.0 | 1512.0 | 1 | 1512.0 | 1 | 1.00 | 1 | 1 | 0 |
+| 2 | Levi Morant | 1512.0 | +12.0 | 1512.0 | 1 | 1512.0 | 1 | 2.00 | 0 | 1 | 0 |
+| 3 | Luke Lockwood | 1512.0 | +12.0 | 1512.0 | 1 | 1512.0 | 1 | 3.00 | 0 | 1 | 0 |
+| 4 | Ryan Donlan | 1512.0 | +12.0 | 1512.0 | 1 | 1512.0 | 1 | 4.00 | 0 | 0 | 0 |
+| 5 | Ryan Houseman | 1512.0 | +12.0 | 1512.0 | 1 | 1512.0 | 1 | 5.00 | 0 | 0 | 0 |
+| 6 | Alexander Chaban | 1488.0 | -12.0 | 1488.0 | 1 | 1488.0 | 1 | 6.00 | 0 | 0 | 0 |
+| 7 | Dylan Reid | 1488.0 | -12.0 | 1488.0 | 1 | 1488.0 | 1 | 7.00 | 0 | 0 | 0 |
+| 8 | Ethan Ellsworth | 1488.0 | -12.0 | 1488.0 | 1 | 1488.0 | 1 | 8.00 | 0 | 0 | 1 |
+| 9 | Julius Long | 1488.0 | -12.0 | 1488.0 | 1 | 1488.0 | 1 | 9.00 | 0 | 0 | 1 |
+| 10 | Justin Miller | 1488.0 | -12.0 | 1488.0 | 1 | 1488.0 | 1 | 10.00 | 0 | 0 | 1 |
+
+### 2026-27 Time At The Top And Bottom
+| Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
+|---|---:|---:|---:|---:|---:|
+| Drake Byrd | 1 | 1 | 0 | 1.00 | 1 |
+| Levi Morant | 0 | 1 | 0 | 2.00 | 2 |
+| Luke Lockwood | 0 | 1 | 0 | 3.00 | 3 |
+| Ryan Donlan | 0 | 0 | 0 | 4.00 | 4 |
+| Ryan Houseman | 0 | 0 | 0 | 5.00 | 5 |
+| Alexander Chaban | 0 | 0 | 0 | 6.00 | 6 |
+| Dylan Reid | 0 | 0 | 0 | 7.00 | 7 |
+| Ethan Ellsworth | 0 | 0 | 1 | 8.00 | 8 |
+| Julius Long | 0 | 0 | 1 | 9.00 | 9 |
+| Justin Miller | 0 | 0 | 1 | 10.00 | 10 |
+
+### 2026-27 Biggest Upsets
+
+These are the largest pre-game rating gaps where the lower-rated manager beat the higher-rated manager. The score is shown from the underdog winner's perspective.
+
+| Week | Underdog Winner | Favorite | Rating Gap | Underdog Rating | Favorite Rating | Score |
+|---|---:|---:|---:|---:|---:|---:|
+
+</section>
 <section class="power-tab-panel" id="power-panel-2025-26" role="tabpanel" aria-labelledby="power-season-2025-26-label">
 ### 2025-26 Power Rating Movement
 <div class="rating-chart-wrap" role="img" aria-label="2025-26 power rating movement chart">
