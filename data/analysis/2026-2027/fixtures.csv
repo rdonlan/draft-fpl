@@ -1,9 +1,9 @@
 gameweek,manager_1,team_1,score_1,manager_2,team_2,score_2,started,finished
-1,Justin Miller,Sue-nited FC*,0,Ryan Donlan,***NoHaalandNoParty,0,False,False
-1,Ethan Ellsworth,Thanksgiving Cherki,0,Drake Byrd,Grand-Larseny,0,False,False
-1,Julius Long,Amorim de mi vida,0,Luke Lockwood,Into the WOODwork*,0,False,False
-1,Ryan Houseman,Szoboszlickin good,0,Dylan Reid,Bowen Arrows,0,False,False
-1,Alexander Chaban,ChabosSpurs@Law,0,Levi Morant,*Saka It To Me Baby,0,False,False
+1,Justin Miller,Sue-nited FC*,40,Ryan Donlan,***NoHaalandNoParty,42,True,True
+1,Ethan Ellsworth,Thanksgiving Cherki,34,Drake Byrd,Grand-Larseny,45,True,True
+1,Julius Long,Amorim de mi vida,28,Luke Lockwood,Into the WOODwork*,75,True,True
+1,Ryan Houseman,Szoboszlickin good,35,Dylan Reid,Bowen Arrows,31,True,True
+1,Alexander Chaban,ChabosSpurs@Law,27,Levi Morant,*Saka It To Me Baby,48,True,True
 2,Ryan Donlan,***NoHaalandNoParty,0,Alexander Chaban,ChabosSpurs@Law,0,False,False
 2,Levi Morant,*Saka It To Me Baby,0,Ryan Houseman,Szoboszlickin good,0,False,False
 2,Dylan Reid,Bowen Arrows,0,Julius Long,Amorim de mi vida,0,False,False
