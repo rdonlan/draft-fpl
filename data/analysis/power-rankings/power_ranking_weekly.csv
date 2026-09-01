@@ -769,3 +769,13 @@ season,week,week_label,manager,rank,rating,rating_before,rating_change,opponent,
 2026-27,1,2026-27 1,Ethan Ellsworth,8,1488.0,1500.0,-12.0,Drake Byrd,L,34,45
 2026-27,1,2026-27 1,Julius Long,9,1488.0,1500.0,-12.0,Luke Lockwood,L,28,75
 2026-27,1,2026-27 1,Justin Miller,10,1488.0,1500.0,-12.0,Ryan Donlan,L,40,42
+2026-27,2,2026-27 2,Ryan Houseman,1,1524.0,1512.0,12.0,Levi Morant,W,36,31
+2026-27,2,2026-27 2,Drake Byrd,2,1523.17,1512.0,11.17,Justin Miller,W,82,40
+2026-27,2,2026-27 2,Ryan Donlan,3,1523.17,1512.0,11.17,Alexander Chaban,W,83,23
+2026-27,2,2026-27 2,Ethan Ellsworth,4,1500.83,1488.0,12.83,Luke Lockwood,W,47,44
+2026-27,2,2026-27 2,Dylan Reid,5,1500.0,1488.0,12.0,Julius Long,W,47,25
+2026-27,2,2026-27 2,Levi Morant,6,1500.0,1512.0,-12.0,Ryan Houseman,L,31,36
+2026-27,2,2026-27 2,Luke Lockwood,7,1499.17,1512.0,-12.83,Ethan Ellsworth,L,44,47
+2026-27,2,2026-27 2,Alexander Chaban,8,1476.83,1488.0,-11.17,Ryan Donlan,L,23,83
+2026-27,2,2026-27 2,Justin Miller,9,1476.83,1488.0,-11.17,Drake Byrd,L,40,82
+2026-27,2,2026-27 2,Julius Long,10,1476.0,1488.0,-12.0,Dylan Reid,L,25,47

@@ -1,151 +1,301 @@
-gameweek,manager,team,slot,starter,player,club,position,points
-1,Ryan Donlan,***NoHaalandNoParty,1,True,Kelleher,BRE,GKP,7
-1,Ryan Donlan,***NoHaalandNoParty,2,True,Rúben,MCI,DEF,2
-1,Ryan Donlan,***NoHaalandNoParty,3,True,Mosquera,ARS,DEF,6
-1,Ryan Donlan,***NoHaalandNoParty,4,True,Tarkowski,EVE,DEF,6
-1,Ryan Donlan,***NoHaalandNoParty,5,True,Gvardiol,MCI,DEF,9
-1,Ryan Donlan,***NoHaalandNoParty,6,True,Gibbs-White,NFO,MID,2
-1,Ryan Donlan,***NoHaalandNoParty,7,True,Groß,BHA,MID,2
-1,Ryan Donlan,***NoHaalandNoParty,8,True,Iwobi,FUL,MID,2
-1,Ryan Donlan,***NoHaalandNoParty,9,True,Kluivert,BOU,MID,3
-1,Ryan Donlan,***NoHaalandNoParty,10,True,Calvert-Lewin,LEE,FWD,1
-1,Ryan Donlan,***NoHaalandNoParty,11,True,Haaland,MCI,FWD,2
-1,Ryan Donlan,***NoHaalandNoParty,12,False,Mamardashvili,LIV,GKP,0
-1,Ryan Donlan,***NoHaalandNoParty,13,False,Hill,BOU,DEF,1
-1,Ryan Donlan,***NoHaalandNoParty,14,False,Awoniyi,COV,FWD,1
-1,Ryan Donlan,***NoHaalandNoParty,15,False,Garner,EVE,MID,1
-1,Alexander Chaban,ChabosSpurs@Law,1,True,Raya,ARS,GKP,6
-1,Alexander Chaban,ChabosSpurs@Law,2,True,Virgil,LIV,DEF,2
-1,Alexander Chaban,ChabosSpurs@Law,3,True,Robinson,FUL,DEF,1
-1,Alexander Chaban,ChabosSpurs@Law,4,True,Vuskovic,BHA,DEF,6
-1,Alexander Chaban,ChabosSpurs@Law,5,True,Pedro Porro,TOT,DEF,0
-1,Alexander Chaban,ChabosSpurs@Law,6,True,Rogers,CHE,MID,8
-1,Alexander Chaban,ChabosSpurs@Law,7,True,Amad,MUN,MID,0
-1,Alexander Chaban,ChabosSpurs@Law,8,True,Savinho,TOT,MID,0
-1,Alexander Chaban,ChabosSpurs@Law,9,True,Rayan,BOU,MID,2
-1,Alexander Chaban,ChabosSpurs@Law,10,True,David,BHA,FWD,0
-1,Alexander Chaban,ChabosSpurs@Law,11,True,Brobbey,SUN,FWD,2
-1,Alexander Chaban,ChabosSpurs@Law,12,False,M.Bizot,AVL,GKP,1
-1,Alexander Chaban,ChabosSpurs@Law,13,False,Doku,MCI,MID,0
-1,Alexander Chaban,ChabosSpurs@Law,14,False,Konsa,ARS,DEF,0
-1,Alexander Chaban,ChabosSpurs@Law,15,False,N.Jackson,CHE,FWD,0
-1,Levi Morant,*Saka It To Me Baby,1,True,A.Becker,LIV,GKP,2
-1,Levi Morant,*Saka It To Me Baby,2,True,Frimpong,LIV,DEF,0
-1,Levi Morant,*Saka It To Me Baby,3,True,Yoro,MUN,DEF,0
-1,Levi Morant,*Saka It To Me Baby,4,True,Milenković,NFO,DEF,2
-1,Levi Morant,*Saka It To Me Baby,5,True,O.Dango,BRE,MID,3
-1,Levi Morant,*Saka It To Me Baby,6,True,Saka,ARS,MID,9
-1,Levi Morant,*Saka It To Me Baby,7,True,Palmer,CHE,MID,13
-1,Levi Morant,*Saka It To Me Baby,8,True,Tzolis,ARS,MID,6
-1,Levi Morant,*Saka It To Me Baby,9,True,Barnes,NEW,MID,2
-1,Levi Morant,*Saka It To Me Baby,10,True,Georginio,BHA,FWD,5
-1,Levi Morant,*Saka It To Me Baby,11,True,Havertz,ARS,FWD,6
-1,Levi Morant,*Saka It To Me Baby,12,False,Horníček,NEW,GKP,1
-1,Levi Morant,*Saka It To Me Baby,13,False,Palestra,CHE,DEF,0
-1,Levi Morant,*Saka It To Me Baby,14,False,Marmoush,MCI,FWD,0
-1,Levi Morant,*Saka It To Me Baby,15,False,J.Timber,ARS,DEF,0
-1,Dylan Reid,Bowen Arrows,1,True,Sánchez,CHE,GKP,2
-1,Dylan Reid,Bowen Arrows,2,True,O'Reilly,MCI,DEF,2
-1,Dylan Reid,Bowen Arrows,3,True,Truffert,BOU,DEF,1
-1,Dylan Reid,Bowen Arrows,4,True,Van Hecke,TOT,DEF,1
-1,Dylan Reid,Bowen Arrows,5,True,Lacroix,CHE,DEF,6
-1,Dylan Reid,Bowen Arrows,6,True,Rashford,MUN,MID,1
-1,Dylan Reid,Bowen Arrows,7,True,Foden,MCI,MID,1
-1,Dylan Reid,Bowen Arrows,8,True,Rice,ARS,MID,3
-1,Dylan Reid,Bowen Arrows,9,True,Wilson,LEE,MID,3
-1,Dylan Reid,Bowen Arrows,10,True,João Pedro,CHE,FWD,11
-1,Dylan Reid,Bowen Arrows,11,True,Thiago,BRE,FWD,0
-1,Dylan Reid,Bowen Arrows,12,False,Petrović,BOU,GKP,2
-1,Dylan Reid,Bowen Arrows,13,False,Woltemade,NEW,FWD,0
-1,Dylan Reid,Bowen Arrows,14,False,Mukiele,SUN,DEF,0
-1,Dylan Reid,Bowen Arrows,15,False,Gravenberch,LIV,MID,5
-1,Luke Lockwood,Into the WOODwork*,1,True,Verbruggen,BHA,GKP,6
-1,Luke Lockwood,Into the WOODwork*,2,True,Thiaw,NEW,DEF,3
-1,Luke Lockwood,Into the WOODwork*,3,True,White,ARS,DEF,11
-1,Luke Lockwood,Into the WOODwork*,4,True,Canvot,CRY,DEF,1
-1,Luke Lockwood,Into the WOODwork*,5,True,Ajer,BRE,DEF,8
-1,Luke Lockwood,Into the WOODwork*,6,True,Mbeumo,MUN,MID,2
-1,Luke Lockwood,Into the WOODwork*,7,True,Dewsbury-Hall,EVE,MID,11
-1,Luke Lockwood,Into the WOODwork*,8,True,E.Le Fée,SUN,MID,2
-1,Luke Lockwood,Into the WOODwork*,9,True,Ndiaye,EVE,MID,9
-1,Luke Lockwood,Into the WOODwork*,10,True,M.Sangaré,BRE,MID,14
-1,Luke Lockwood,Into the WOODwork*,11,True,Barry,EVE,FWD,8
-1,Luke Lockwood,Into the WOODwork*,12,False,Martinez,AVL,GKP,0
-1,Luke Lockwood,Into the WOODwork*,13,False,Guéhi,MCI,DEF,10
-1,Luke Lockwood,Into the WOODwork*,14,False,Osula,NEW,FWD,4
-1,Luke Lockwood,Into the WOODwork*,15,False,Solanke,TOT,FWD,1
-1,Drake Byrd,Grand-Larseny,1,True,Roefs,SUN,GKP,1
-1,Drake Byrd,Grand-Larseny,2,True,Ballard,SUN,DEF,0
-1,Drake Byrd,Grand-Larseny,3,True,Muñoz,CRY,DEF,0
-1,Drake Byrd,Grand-Larseny,4,True,Cash,AVL,DEF,-1
-1,Drake Byrd,Grand-Larseny,5,True,Calafiori,ARS,DEF,9
-1,Drake Byrd,Grand-Larseny,6,True,Gakpo,LIV,MID,12
-1,Drake Byrd,Grand-Larseny,7,True,B.Fernandes,MUN,MID,2
-1,Drake Byrd,Grand-Larseny,8,True,Ødegaard,ARS,MID,11
-1,Drake Byrd,Grand-Larseny,9,True,Tielemans,MUN,MID,2
-1,Drake Byrd,Grand-Larseny,10,True,Evanilson,BOU,FWD,4
-1,Drake Byrd,Grand-Larseny,11,True,McBurnie,HUL,FWD,5
-1,Drake Byrd,Grand-Larseny,12,False,Darlow,MUN,GKP,0
-1,Drake Byrd,Grand-Larseny,13,False,Šeško,MUN,FWD,1
-1,Drake Byrd,Grand-Larseny,14,False,Hall,NEW,DEF,3
-1,Drake Byrd,Grand-Larseny,15,False,Elanga,NEW,MID,9
-1,Justin Miller,Sue-nited FC*,1,True,Sels,NFO,GKP,2
-1,Justin Miller,Sue-nited FC*,2,True,Aina,NFO,DEF,5
-1,Justin Miller,Sue-nited FC*,3,True,Silva,BOU,DEF,2
-1,Justin Miller,Sue-nited FC*,4,True,Colwill,CHE,DEF,0
-1,Justin Miller,Sue-nited FC*,5,True,Dalot,MUN,DEF,1
-1,Justin Miller,Sue-nited FC*,6,True,Jacquet,LIV,DEF,1
-1,Justin Miller,Sue-nited FC*,7,True,Anderson,MCI,MID,2
-1,Justin Miller,Sue-nited FC*,8,True,Stach,LEE,MID,13
-1,Justin Miller,Sue-nited FC*,9,True,Tavernier,BOU,MID,10
-1,Justin Miller,Sue-nited FC*,10,True,Isak,LIV,FWD,2
-1,Justin Miller,Sue-nited FC*,11,True,Richarlison,TOT,FWD,2
-1,Justin Miller,Sue-nited FC*,12,False,Henderson,CRY,GKP,2
-1,Justin Miller,Sue-nited FC*,13,False,Watkins,AVL,FWD,0
-1,Justin Miller,Sue-nited FC*,14,False,Manzambi,AVL,MID,0
-1,Justin Miller,Sue-nited FC*,15,False,Mitoma,BHA,MID,0
-1,Ethan Ellsworth,Thanksgiving Cherki,1,True,Lammens,MUN,GKP,1
-1,Ethan Ellsworth,Thanksgiving Cherki,2,True,James,CHE,DEF,0
-1,Ethan Ellsworth,Thanksgiving Cherki,3,True,Kerkez,LIV,DEF,0
-1,Ethan Ellsworth,Thanksgiving Cherki,4,True,Branthwaite,EVE,DEF,6
-1,Ethan Ellsworth,Thanksgiving Cherki,5,True,Buendía,AVL,MID,2
-1,Ethan Ellsworth,Thanksgiving Cherki,6,True,Cherki,MCI,MID,8
-1,Ethan Ellsworth,Thanksgiving Cherki,7,True,Wirtz,LIV,MID,2
-1,Ethan Ellsworth,Thanksgiving Cherki,8,True,Schade,BRE,MID,3
-1,Ethan Ellsworth,Thanksgiving Cherki,9,True,Wissa,NEW,FWD,4
-1,Ethan Ellsworth,Thanksgiving Cherki,10,True,Gonzalo,FUL,FWD,6
-1,Ethan Ellsworth,Thanksgiving Cherki,11,True,Igor Jesus,NFO,FWD,2
-1,Ethan Ellsworth,Thanksgiving Cherki,12,False,Kinsky,TOT,GKP,2
-1,Ethan Ellsworth,Thanksgiving Cherki,13,False,Sarr,CRY,MID,0
-1,Ethan Ellsworth,Thanksgiving Cherki,14,False,Matheus N.,MCI,DEF,1
-1,Ethan Ellsworth,Thanksgiving Cherki,15,False,Van de Ven,TOT,DEF,0
-1,Julius Long,Amorim de mi vida,1,True,Donnarumma,MCI,GKP,3
-1,Julius Long,Amorim de mi vida,2,True,Kayode,BRE,DEF,13
-1,Julius Long,Amorim de mi vida,3,True,Maguire,MUN,DEF,1
-1,Julius Long,Amorim de mi vida,4,True,Senesi,TOT,DEF,3
-1,Julius Long,Amorim de mi vida,5,True,Maatsen,AVL,DEF,0
-1,Julius Long,Amorim de mi vida,6,True,Maddison,TOT,MID,1
-1,Julius Long,Amorim de mi vida,7,True,Fernandes,TOT,MID,1
-1,Julius Long,Amorim de mi vida,8,True,Semenyo,MCI,MID,2
-1,Julius Long,Amorim de mi vida,9,True,Cunha,MUN,MID,2
-1,Julius Long,Amorim de mi vida,10,True,Beto,EVE,FWD,1
-1,Julius Long,Amorim de mi vida,11,True,Wood,NFO,FWD,1
-1,Julius Long,Amorim de mi vida,12,False,Pope,NEW,GKP,0
-1,Julius Long,Amorim de mi vida,13,False,Bruno G.,ARS,MID,0
-1,Julius Long,Amorim de mi vida,14,False,F.Kadıoğlu,BHA,DEF,0
-1,Julius Long,Amorim de mi vida,15,False,Gyökeres,ARS,FWD,0
-1,Ryan Houseman,Szoboszlickin good,1,True,Pickford,EVE,GKP,7
-1,Ryan Houseman,Szoboszlickin good,2,True,Gabriel,ARS,DEF,5
-1,Ryan Houseman,Szoboszlickin good,3,True,Hincapie,ARS,DEF,1
-1,Ryan Houseman,Szoboszlickin good,4,True,N.Williams,NFO,DEF,2
-1,Ryan Houseman,Szoboszlickin good,5,True,Szoboszlai,LIV,MID,8
-1,Ryan Houseman,Szoboszlickin good,6,True,Enzo,CHE,MID,1
-1,Ryan Houseman,Szoboszlickin good,7,True,Neto,CHE,MID,1
-1,Ryan Houseman,Szoboszlickin good,8,True,Gomez,BHA,MID,6
-1,Ryan Houseman,Szoboszlickin good,9,True,Eze,ARS,MID,1
-1,Ryan Houseman,Szoboszlickin good,10,True,Mateta,CRY,FWD,2
-1,Ryan Houseman,Szoboszlickin good,11,True,Strand Larsen,CRY,FWD,1
-1,Ryan Houseman,Szoboszlickin good,12,False,Trafford,LEE,GKP,9
-1,Ryan Houseman,Szoboszlickin good,13,False,Mitchell,CRY,DEF,1
-1,Ryan Houseman,Szoboszlickin good,14,False,Araujo,LIV,DEF,1
-1,Ryan Houseman,Szoboszlickin good,15,False,Ekitiké,LIV,FWD,0
+gameweek,manager,team,slot,starter,element,player,club,position,points
+1,Ryan Donlan,***NoHaalandNoParty,1,True,82,Kelleher,BRE,GKP,7
+1,Ryan Donlan,***NoHaalandNoParty,2,True,390,Rúben,MCI,DEF,2
+1,Ryan Donlan,***NoHaalandNoParty,3,True,11,Mosquera,ARS,DEF,6
+1,Ryan Donlan,***NoHaalandNoParty,4,True,229,Tarkowski,EVE,DEF,6
+1,Ryan Donlan,***NoHaalandNoParty,5,True,391,Gvardiol,MCI,DEF,9
+1,Ryan Donlan,***NoHaalandNoParty,6,True,480,Gibbs-White,NFO,MID,2
+1,Ryan Donlan,***NoHaalandNoParty,7,True,124,Groß,BHA,MID,2
+1,Ryan Donlan,***NoHaalandNoParty,8,True,261,Iwobi,FUL,MID,2
+1,Ryan Donlan,***NoHaalandNoParty,9,True,70,Kluivert,BOU,MID,3
+1,Ryan Donlan,***NoHaalandNoParty,10,True,346,Calvert-Lewin,LEE,FWD,1
+1,Ryan Donlan,***NoHaalandNoParty,11,True,411,Haaland,MCI,FWD,2
+1,Ryan Donlan,***NoHaalandNoParty,12,False,351,Mamardashvili,LIV,GKP,0
+1,Ryan Donlan,***NoHaalandNoParty,13,False,60,Hill,BOU,DEF,1
+1,Ryan Donlan,***NoHaalandNoParty,14,False,492,Awoniyi,COV,FWD,1
+1,Ryan Donlan,***NoHaalandNoParty,15,False,239,Garner,EVE,MID,1
+1,Alexander Chaban,ChabosSpurs@Law,1,True,1,Raya,ARS,GKP,6
+1,Alexander Chaban,ChabosSpurs@Law,2,True,356,Virgil,LIV,DEF,2
+1,Alexander Chaban,ChabosSpurs@Law,3,True,254,Robinson,FUL,DEF,1
+1,Alexander Chaban,ChabosSpurs@Law,4,True,504,Vuskovic,BHA,DEF,6
+1,Alexander Chaban,ChabosSpurs@Law,5,True,499,Pedro Porro,TOT,DEF,0
+1,Alexander Chaban,ChabosSpurs@Law,6,True,40,Rogers,CHE,MID,8
+1,Alexander Chaban,ChabosSpurs@Law,7,True,431,Amad,MUN,MID,0
+1,Alexander Chaban,ChabosSpurs@Law,8,True,403,Sávio,TOT,MID,0
+1,Alexander Chaban,ChabosSpurs@Law,9,True,67,Rayan,BOU,MID,2
+1,Alexander Chaban,ChabosSpurs@Law,10,True,593,David,BHA,FWD,0
+1,Alexander Chaban,ChabosSpurs@Law,11,True,552,Brobbey,SUN,FWD,2
+1,Alexander Chaban,ChabosSpurs@Law,12,False,29,M.Bizot,AVL,GKP,1
+1,Alexander Chaban,ChabosSpurs@Law,13,False,400,Doku,MCI,MID,0
+1,Alexander Chaban,ChabosSpurs@Law,14,False,31,Konsa,ARS,DEF,0
+1,Alexander Chaban,ChabosSpurs@Law,15,False,166,N.Jackson,AVL,FWD,0
+1,Levi Morant,*Saka It To Me Baby,1,True,350,A.Becker,LIV,GKP,2
+1,Levi Morant,*Saka It To Me Baby,2,True,357,Frimpong,LIV,DEF,0
+1,Levi Morant,*Saka It To Me Baby,3,True,420,Yoro,MUN,DEF,0
+1,Levi Morant,*Saka It To Me Baby,4,True,471,Milenković,NFO,DEF,2
+1,Levi Morant,*Saka It To Me Baby,5,True,95,O.Dango,BRE,MID,3
+1,Levi Morant,*Saka It To Me Baby,6,True,12,Saka,ARS,MID,9
+1,Levi Morant,*Saka It To Me Baby,7,True,154,Palmer,CHE,MID,13
+1,Levi Morant,*Saka It To Me Baby,8,True,554,Tzolis,ARS,MID,6
+1,Levi Morant,*Saka It To Me Baby,9,True,453,Barnes,NEW,MID,2
+1,Levi Morant,*Saka It To Me Baby,10,True,125,Georginio,BHA,FWD,5
+1,Levi Morant,*Saka It To Me Baby,11,True,26,Havertz,ARS,FWD,6
+1,Levi Morant,*Saka It To Me Baby,12,False,566,Horníček,NEW,GKP,1
+1,Levi Morant,*Saka It To Me Baby,13,False,152,Palestra,CHE,DEF,0
+1,Levi Morant,*Saka It To Me Baby,14,False,401,Marmoush,TOT,FWD,0
+1,Levi Morant,*Saka It To Me Baby,15,False,5,J.Timber,ARS,DEF,0
+1,Dylan Reid,Bowen Arrows,1,True,140,Sánchez,CHE,GKP,2
+1,Dylan Reid,Bowen Arrows,2,True,387,O'Reilly,MCI,DEF,2
+1,Dylan Reid,Bowen Arrows,3,True,61,Truffert,BOU,DEF,1
+1,Dylan Reid,Bowen Arrows,4,True,112,Van Hecke,TOT,DEF,1
+1,Dylan Reid,Bowen Arrows,5,True,200,Lacroix,CHE,DEF,6
+1,Dylan Reid,Bowen Arrows,6,True,429,Rashford,MUN,MID,1
+1,Dylan Reid,Bowen Arrows,7,True,398,Foden,MCI,MID,1
+1,Dylan Reid,Bowen Arrows,8,True,13,Rice,ARS,MID,3
+1,Dylan Reid,Bowen Arrows,9,True,260,Wilson,LEE,MID,3
+1,Dylan Reid,Bowen Arrows,10,True,165,João Pedro,CHE,FWD,11
+1,Dylan Reid,Bowen Arrows,11,True,106,Thiago,BRE,FWD,0
+1,Dylan Reid,Bowen Arrows,12,False,57,Petrović,BOU,GKP,2
+1,Dylan Reid,Bowen Arrows,13,False,463,Woltemade,NEW,FWD,0
+1,Dylan Reid,Bowen Arrows,14,False,533,Mukiele,SUN,DEF,0
+1,Dylan Reid,Bowen Arrows,15,False,371,Gravenberch,LIV,MID,5
+1,Luke Lockwood,Into the WOODwork*,1,True,109,Verbruggen,BHA,GKP,6
+1,Luke Lockwood,Into the WOODwork*,2,True,445,Thiaw,NEW,DEF,3
+1,Luke Lockwood,Into the WOODwork*,3,True,10,White,ARS,DEF,11
+1,Luke Lockwood,Into the WOODwork*,4,True,203,Canvot,CRY,DEF,1
+1,Luke Lockwood,Into the WOODwork*,5,True,87,Ajer,BRE,DEF,8
+1,Luke Lockwood,Into the WOODwork*,6,True,427,Mbeumo,MUN,MID,2
+1,Luke Lockwood,Into the WOODwork*,7,True,236,Dewsbury-Hall,EVE,MID,11
+1,Luke Lockwood,Into the WOODwork*,8,True,542,E.Le Fée,SUN,MID,2
+1,Luke Lockwood,Into the WOODwork*,9,True,237,Ndiaye,EVE,MID,9
+1,Luke Lockwood,Into the WOODwork*,10,True,556,M.Sangaré,BRE,MID,14
+1,Luke Lockwood,Into the WOODwork*,11,True,249,Barry,EVE,FWD,8
+1,Luke Lockwood,Into the WOODwork*,12,False,28,Martinez,CHE,GKP,0
+1,Luke Lockwood,Into the WOODwork*,13,False,388,Guéhi,MCI,DEF,10
+1,Luke Lockwood,Into the WOODwork*,14,False,465,Osula,NEW,FWD,4
+1,Luke Lockwood,Into the WOODwork*,15,False,526,Solanke,TOT,FWD,1
+1,Drake Byrd,Grand-Larseny,1,True,529,Roefs,SUN,GKP,1
+1,Drake Byrd,Grand-Larseny,2,True,532,Ballard,SUN,DEF,0
+1,Drake Byrd,Grand-Larseny,3,True,201,Muñoz,NFO,DEF,0
+1,Drake Byrd,Grand-Larseny,4,True,32,Cash,AVL,DEF,-1
+1,Drake Byrd,Grand-Larseny,5,True,8,Calafiori,ARS,DEF,9
+1,Drake Byrd,Grand-Larseny,6,True,367,Gakpo,LIV,MID,12
+1,Drake Byrd,Grand-Larseny,7,True,426,B.Fernandes,MUN,MID,2
+1,Drake Byrd,Grand-Larseny,8,True,15,Ødegaard,ARS,MID,11
+1,Drake Byrd,Grand-Larseny,9,True,43,Tielemans,MUN,MID,2
+1,Drake Byrd,Grand-Larseny,10,True,79,Evanilson,BOU,FWD,4
+1,Drake Byrd,Grand-Larseny,11,True,295,McBurnie,HUL,FWD,5
+1,Drake Byrd,Grand-Larseny,12,False,325,Darlow,MUN,GKP,0
+1,Drake Byrd,Grand-Larseny,13,False,439,Šeško,MUN,FWD,1
+1,Drake Byrd,Grand-Larseny,14,False,449,Hall,NEW,DEF,3
+1,Drake Byrd,Grand-Larseny,15,False,454,Elanga,NEW,MID,9
+1,Justin Miller,Sue-nited FC*,1,True,467,Sels,NFO,GKP,2
+1,Justin Miller,Sue-nited FC*,2,True,473,Aina,NFO,DEF,5
+1,Justin Miller,Sue-nited FC*,3,True,555,Silva,BOU,DEF,2
+1,Justin Miller,Sue-nited FC*,4,True,149,Colwill,CHE,DEF,0
+1,Justin Miller,Sue-nited FC*,5,True,417,Dalot,MUN,DEF,1
+1,Justin Miller,Sue-nited FC*,6,True,362,Jacquet,LIV,DEF,1
+1,Justin Miller,Sue-nited FC*,7,True,481,Anderson,MCI,MID,2
+1,Justin Miller,Sue-nited FC*,8,True,335,Stach,LEE,MID,13
+1,Justin Miller,Sue-nited FC*,9,True,68,Tavernier,BOU,MID,10
+1,Justin Miller,Sue-nited FC*,10,True,379,Isak,LIV,FWD,2
+1,Justin Miller,Sue-nited FC*,11,True,527,Richarlison,TOT,FWD,2
+1,Justin Miller,Sue-nited FC*,12,False,198,Henderson,CRY,GKP,2
+1,Justin Miller,Sue-nited FC*,13,False,55,Watkins,AVL,FWD,0
+1,Justin Miller,Sue-nited FC*,14,False,53,Manzambi,AVL,MID,0
+1,Justin Miller,Sue-nited FC*,15,False,121,Mitoma,BHA,MID,0
+1,Ethan Ellsworth,Thanksgiving Cherki,1,True,412,Lammens,MUN,GKP,1
+1,Ethan Ellsworth,Thanksgiving Cherki,2,True,142,James,CHE,DEF,0
+1,Ethan Ellsworth,Thanksgiving Cherki,3,True,358,Kerkez,LIV,DEF,0
+1,Ethan Ellsworth,Thanksgiving Cherki,4,True,230,Branthwaite,EVE,DEF,6
+1,Ethan Ellsworth,Thanksgiving Cherki,5,True,41,Buendía,AVL,MID,2
+1,Ethan Ellsworth,Thanksgiving Cherki,6,True,399,Cherki,MCI,MID,8
+1,Ethan Ellsworth,Thanksgiving Cherki,7,True,366,Wirtz,LIV,MID,2
+1,Ethan Ellsworth,Thanksgiving Cherki,8,True,94,Schade,BRE,MID,3
+1,Ethan Ellsworth,Thanksgiving Cherki,9,True,464,Wissa,NEW,FWD,4
+1,Ethan Ellsworth,Thanksgiving Cherki,10,True,569,Gonzalo,FUL,FWD,6
+1,Ethan Ellsworth,Thanksgiving Cherki,11,True,491,Igor Jesus,NFO,FWD,2
+1,Ethan Ellsworth,Thanksgiving Cherki,12,False,496,Kinsky,TOT,GKP,2
+1,Ethan Ellsworth,Thanksgiving Cherki,13,False,208,Sarr,CRY,MID,0
+1,Ethan Ellsworth,Thanksgiving Cherki,14,False,389,Matheus N.,MCI,DEF,1
+1,Ethan Ellsworth,Thanksgiving Cherki,15,False,503,Van de Ven,TOT,DEF,0
+1,Julius Long,Amorim de mi vida,1,True,384,Donnarumma,MCI,GKP,3
+1,Julius Long,Amorim de mi vida,2,True,88,Kayode,BRE,DEF,13
+1,Julius Long,Amorim de mi vida,3,True,418,Maguire,MUN,DEF,1
+1,Julius Long,Amorim de mi vida,4,True,498,Senesi,TOT,DEF,3
+1,Julius Long,Amorim de mi vida,5,True,36,Maatsen,AVL,DEF,0
+1,Julius Long,Amorim de mi vida,6,True,515,Maddison,TOT,MID,1
+1,Julius Long,Amorim de mi vida,7,True,525,Fernandes,TOT,MID,1
+1,Julius Long,Amorim de mi vida,8,True,397,Semenyo,MCI,MID,2
+1,Julius Long,Amorim de mi vida,9,True,428,Cunha,MUN,MID,2
+1,Julius Long,Amorim de mi vida,10,True,248,Beto,EVE,FWD,1
+1,Julius Long,Amorim de mi vida,11,True,490,Wood,NFO,FWD,1
+1,Julius Long,Amorim de mi vida,12,False,442,Pope,NEW,GKP,0
+1,Julius Long,Amorim de mi vida,13,False,452,Bruno G.,ARS,MID,0
+1,Julius Long,Amorim de mi vida,14,False,113,F.Kadıoğlu,BHA,DEF,0
+1,Julius Long,Amorim de mi vida,15,False,25,Gyökeres,ARS,FWD,0
+1,Ryan Houseman,Szoboszlickin good,1,True,226,Pickford,EVE,GKP,7
+1,Ryan Houseman,Szoboszlickin good,2,True,4,Gabriel,ARS,DEF,5
+1,Ryan Houseman,Szoboszlickin good,3,True,9,Hincapie,ARS,DEF,1
+1,Ryan Houseman,Szoboszlickin good,4,True,469,N.Williams,NFO,DEF,2
+1,Ryan Houseman,Szoboszlickin good,5,True,368,Szoboszlai,LIV,MID,8
+1,Ryan Houseman,Szoboszlickin good,6,True,155,Enzo,CHE,MID,1
+1,Ryan Houseman,Szoboszlickin good,7,True,156,Neto,CHE,MID,1
+1,Ryan Houseman,Szoboszlickin good,8,True,127,Gomez,BHA,MID,6
+1,Ryan Houseman,Szoboszlickin good,9,True,14,Eze,ARS,MID,1
+1,Ryan Houseman,Szoboszlickin good,10,True,223,Mateta,CRY,FWD,2
+1,Ryan Houseman,Szoboszlickin good,11,True,222,Strand Larsen,CRY,FWD,1
+1,Ryan Houseman,Szoboszlickin good,12,False,385,Trafford,LEE,GKP,9
+1,Ryan Houseman,Szoboszlickin good,13,False,204,Mitchell,CRY,DEF,1
+1,Ryan Houseman,Szoboszlickin good,14,False,580,Araujo,LIV,DEF,1
+1,Ryan Houseman,Szoboszlickin good,15,False,380,Ekitiké,LIV,FWD,0
+2,Ryan Donlan,***NoHaalandNoParty,1,True,82,Kelleher,BRE,GKP,2
+2,Ryan Donlan,***NoHaalandNoParty,2,True,390,Rúben,MCI,DEF,2
+2,Ryan Donlan,***NoHaalandNoParty,3,True,391,Gvardiol,MCI,DEF,5
+2,Ryan Donlan,***NoHaalandNoParty,4,True,229,Tarkowski,EVE,DEF,12
+2,Ryan Donlan,***NoHaalandNoParty,5,True,11,Mosquera,ARS,DEF,6
+2,Ryan Donlan,***NoHaalandNoParty,6,True,258,Castagne,FUL,DEF,6
+2,Ryan Donlan,***NoHaalandNoParty,7,True,480,Gibbs-White,NFO,MID,13
+2,Ryan Donlan,***NoHaalandNoParty,8,True,124,Groß,BHA,MID,13
+2,Ryan Donlan,***NoHaalandNoParty,9,True,70,Kluivert,BOU,MID,3
+2,Ryan Donlan,***NoHaalandNoParty,10,True,346,Calvert-Lewin,LEE,FWD,8
+2,Ryan Donlan,***NoHaalandNoParty,11,True,411,Haaland,MCI,FWD,13
+2,Ryan Donlan,***NoHaalandNoParty,12,False,351,Mamardashvili,LIV,GKP,0
+2,Ryan Donlan,***NoHaalandNoParty,13,False,492,Awoniyi,COV,FWD,2
+2,Ryan Donlan,***NoHaalandNoParty,14,False,261,Iwobi,FUL,MID,2
+2,Ryan Donlan,***NoHaalandNoParty,15,False,239,Garner,EVE,MID,1
+2,Alexander Chaban,ChabosSpurs@Law,1,True,1,Raya,ARS,GKP,6
+2,Alexander Chaban,ChabosSpurs@Law,2,True,356,Virgil,LIV,DEF,1
+2,Alexander Chaban,ChabosSpurs@Law,3,True,499,Pedro Porro,TOT,DEF,1
+2,Alexander Chaban,ChabosSpurs@Law,4,True,504,Vuskovic,BHA,DEF,0
+2,Alexander Chaban,ChabosSpurs@Law,5,True,31,Konsa,ARS,DEF,1
+2,Alexander Chaban,ChabosSpurs@Law,6,True,254,Robinson,FUL,DEF,2
+2,Alexander Chaban,ChabosSpurs@Law,7,True,40,Rogers,CHE,MID,5
+2,Alexander Chaban,ChabosSpurs@Law,8,True,268,King,FUL,MID,2
+2,Alexander Chaban,ChabosSpurs@Law,9,True,67,Rayan,BOU,MID,2
+2,Alexander Chaban,ChabosSpurs@Law,10,True,167,Delap,NFO,FWD,1
+2,Alexander Chaban,ChabosSpurs@Law,11,True,552,Brobbey,SUN,FWD,2
+2,Alexander Chaban,ChabosSpurs@Law,12,False,597,Suzuki,AVL,GKP,2
+2,Alexander Chaban,ChabosSpurs@Law,13,False,512,Kudus,TOT,MID,1
+2,Alexander Chaban,ChabosSpurs@Law,14,False,400,Doku,MCI,MID,0
+2,Alexander Chaban,ChabosSpurs@Law,15,False,224,Nketiah,CRY,FWD,2
+2,Levi Morant,*Saka It To Me Baby,1,True,350,A.Becker,LIV,GKP,0
+2,Levi Morant,*Saka It To Me Baby,2,True,357,Frimpong,LIV,DEF,1
+2,Levi Morant,*Saka It To Me Baby,3,True,471,Milenković,NFO,DEF,3
+2,Levi Morant,*Saka It To Me Baby,4,True,420,Yoro,MUN,DEF,1
+2,Levi Morant,*Saka It To Me Baby,5,True,95,O.Dango,BRE,MID,1
+2,Levi Morant,*Saka It To Me Baby,6,True,12,Saka,ARS,MID,11
+2,Levi Morant,*Saka It To Me Baby,7,True,154,Palmer,CHE,MID,7
+2,Levi Morant,*Saka It To Me Baby,8,True,554,Tzolis,ARS,MID,0
+2,Levi Morant,*Saka It To Me Baby,9,True,453,Barnes,NEW,MID,3
+2,Levi Morant,*Saka It To Me Baby,10,True,26,Havertz,ARS,FWD,2
+2,Levi Morant,*Saka It To Me Baby,11,True,401,Marmoush,TOT,FWD,2
+2,Levi Morant,*Saka It To Me Baby,12,False,566,Horníček,NEW,GKP,7
+2,Levi Morant,*Saka It To Me Baby,13,False,152,Palestra,CHE,DEF,0
+2,Levi Morant,*Saka It To Me Baby,14,False,125,Georginio,BHA,FWD,0
+2,Levi Morant,*Saka It To Me Baby,15,False,5,J.Timber,ARS,DEF,0
+2,Dylan Reid,Bowen Arrows,1,True,57,Petrović,BOU,GKP,3
+2,Dylan Reid,Bowen Arrows,2,True,387,O'Reilly,MCI,DEF,2
+2,Dylan Reid,Bowen Arrows,3,True,61,Truffert,BOU,DEF,4
+2,Dylan Reid,Bowen Arrows,4,True,533,Mukiele,SUN,DEF,9
+2,Dylan Reid,Bowen Arrows,5,True,200,Lacroix,CHE,DEF,1
+2,Dylan Reid,Bowen Arrows,6,True,429,Rashford,MUN,MID,2
+2,Dylan Reid,Bowen Arrows,7,True,398,Foden,MCI,MID,9
+2,Dylan Reid,Bowen Arrows,8,True,13,Rice,ARS,MID,5
+2,Dylan Reid,Bowen Arrows,9,True,260,Wilson,LEE,MID,1
+2,Dylan Reid,Bowen Arrows,10,True,165,João Pedro,CHE,FWD,9
+2,Dylan Reid,Bowen Arrows,11,True,106,Thiago,BRE,FWD,2
+2,Dylan Reid,Bowen Arrows,12,False,140,Sánchez,CHE,GKP,0
+2,Dylan Reid,Bowen Arrows,13,False,463,Woltemade,NEW,FWD,4
+2,Dylan Reid,Bowen Arrows,14,False,112,Van Hecke,TOT,DEF,1
+2,Dylan Reid,Bowen Arrows,15,False,591,Enciso,IPS,MID,5
+2,Luke Lockwood,Into the WOODwork*,1,True,109,Verbruggen,BHA,GKP,0
+2,Luke Lockwood,Into the WOODwork*,2,True,10,White,ARS,DEF,7
+2,Luke Lockwood,Into the WOODwork*,3,True,388,Guéhi,MCI,DEF,2
+2,Luke Lockwood,Into the WOODwork*,4,True,87,Ajer,BRE,DEF,3
+2,Luke Lockwood,Into the WOODwork*,5,True,445,Thiaw,NEW,DEF,6
+2,Luke Lockwood,Into the WOODwork*,6,True,427,Mbeumo,MUN,MID,11
+2,Luke Lockwood,Into the WOODwork*,7,True,236,Dewsbury-Hall,EVE,MID,2
+2,Luke Lockwood,Into the WOODwork*,8,True,542,E.Le Fée,SUN,MID,3
+2,Luke Lockwood,Into the WOODwork*,9,True,237,Ndiaye,EVE,MID,4
+2,Luke Lockwood,Into the WOODwork*,10,True,556,M.Sangaré,BRE,MID,4
+2,Luke Lockwood,Into the WOODwork*,11,True,249,Barry,EVE,FWD,2
+2,Luke Lockwood,Into the WOODwork*,12,False,28,Martinez,CHE,GKP,2
+2,Luke Lockwood,Into the WOODwork*,13,False,332,Justin,LEE,DEF,2
+2,Luke Lockwood,Into the WOODwork*,14,False,526,Solanke,TOT,FWD,1
+2,Luke Lockwood,Into the WOODwork*,15,False,465,Osula,NEW,FWD,0
+2,Drake Byrd,Grand-Larseny,1,True,529,Roefs,SUN,GKP,6
+2,Drake Byrd,Grand-Larseny,2,True,532,Ballard,SUN,DEF,8
+2,Drake Byrd,Grand-Larseny,3,True,449,Hall,NEW,DEF,11
+2,Drake Byrd,Grand-Larseny,4,True,8,Calafiori,ARS,DEF,11
+2,Drake Byrd,Grand-Larseny,5,True,426,B.Fernandes,MUN,MID,23
+2,Drake Byrd,Grand-Larseny,6,True,15,Ødegaard,ARS,MID,3
+2,Drake Byrd,Grand-Larseny,7,True,454,Elanga,NEW,MID,8
+2,Drake Byrd,Grand-Larseny,8,True,367,Gakpo,LIV,MID,5
+2,Drake Byrd,Grand-Larseny,9,True,439,Šeško,MUN,FWD,1
+2,Drake Byrd,Grand-Larseny,10,True,79,Evanilson,BOU,FWD,5
+2,Drake Byrd,Grand-Larseny,11,True,295,McBurnie,HUL,FWD,1
+2,Drake Byrd,Grand-Larseny,12,False,325,Darlow,MUN,GKP,0
+2,Drake Byrd,Grand-Larseny,13,False,201,Muñoz,NFO,DEF,0
+2,Drake Byrd,Grand-Larseny,14,False,43,Tielemans,MUN,MID,4
+2,Drake Byrd,Grand-Larseny,15,False,32,Cash,AVL,DEF,2
+2,Justin Miller,Sue-nited FC*,1,True,467,Sels,NFO,GKP,1
+2,Justin Miller,Sue-nited FC*,2,True,473,Aina,NFO,DEF,0
+2,Justin Miller,Sue-nited FC*,3,True,555,Silva,BOU,DEF,4
+2,Justin Miller,Sue-nited FC*,4,True,149,Colwill,CHE,DEF,1
+2,Justin Miller,Sue-nited FC*,5,True,277,Egan,HUL,DEF,9
+2,Justin Miller,Sue-nited FC*,6,True,362,Jacquet,LIV,DEF,3
+2,Justin Miller,Sue-nited FC*,7,True,481,Anderson,MCI,MID,3
+2,Justin Miller,Sue-nited FC*,8,True,335,Stach,LEE,MID,4
+2,Justin Miller,Sue-nited FC*,9,True,68,Tavernier,BOU,MID,1
+2,Justin Miller,Sue-nited FC*,10,True,86,Lewis-Potter,BRE,MID,6
+2,Justin Miller,Sue-nited FC*,11,True,379,Isak,LIV,FWD,8
+2,Justin Miller,Sue-nited FC*,12,False,198,Henderson,CRY,GKP,1
+2,Justin Miller,Sue-nited FC*,13,False,544,Xhaka,SUN,MID,6
+2,Justin Miller,Sue-nited FC*,14,False,527,Richarlison,TOT,FWD,0
+2,Justin Miller,Sue-nited FC*,15,False,55,Watkins,AVL,FWD,0
+2,Ethan Ellsworth,Thanksgiving Cherki,1,True,412,Lammens,MUN,GKP,2
+2,Ethan Ellsworth,Thanksgiving Cherki,2,True,142,James,CHE,DEF,1
+2,Ethan Ellsworth,Thanksgiving Cherki,3,True,358,Kerkez,LIV,DEF,1
+2,Ethan Ellsworth,Thanksgiving Cherki,4,True,503,Van de Ven,TOT,DEF,0
+2,Ethan Ellsworth,Thanksgiving Cherki,5,True,230,Branthwaite,EVE,DEF,4
+2,Ethan Ellsworth,Thanksgiving Cherki,6,True,399,Cherki,MCI,MID,14
+2,Ethan Ellsworth,Thanksgiving Cherki,7,True,366,Wirtz,LIV,MID,4
+2,Ethan Ellsworth,Thanksgiving Cherki,8,True,94,Schade,BRE,MID,10
+2,Ethan Ellsworth,Thanksgiving Cherki,9,True,569,Gonzalo,FUL,FWD,2
+2,Ethan Ellsworth,Thanksgiving Cherki,10,True,491,Igor Jesus,NFO,FWD,1
+2,Ethan Ellsworth,Thanksgiving Cherki,11,True,464,Wissa,NEW,FWD,8
+2,Ethan Ellsworth,Thanksgiving Cherki,12,False,496,Kinsky,TOT,GKP,1
+2,Ethan Ellsworth,Thanksgiving Cherki,13,False,389,Matheus N.,MCI,DEF,0
+2,Ethan Ellsworth,Thanksgiving Cherki,14,False,41,Buendía,AVL,MID,2
+2,Ethan Ellsworth,Thanksgiving Cherki,15,False,208,Sarr,CRY,MID,0
+2,Julius Long,Amorim de mi vida,1,True,384,Donnarumma,MCI,GKP,0
+2,Julius Long,Amorim de mi vida,2,True,115,De Cuyper,BHA,DEF,0
+2,Julius Long,Amorim de mi vida,3,True,418,Maguire,MUN,DEF,4
+2,Julius Long,Amorim de mi vida,4,True,36,Maatsen,AVL,DEF,1
+2,Julius Long,Amorim de mi vida,5,True,88,Kayode,BRE,DEF,2
+2,Julius Long,Amorim de mi vida,6,True,525,Fernandes,TOT,MID,2
+2,Julius Long,Amorim de mi vida,7,True,397,Semenyo,MCI,MID,5
+2,Julius Long,Amorim de mi vida,8,True,428,Cunha,MUN,MID,9
+2,Julius Long,Amorim de mi vida,9,True,452,Bruno G.,ARS,MID,1
+2,Julius Long,Amorim de mi vida,10,True,25,Gyökeres,ARS,FWD,0
+2,Julius Long,Amorim de mi vida,11,True,248,Beto,EVE,FWD,1
+2,Julius Long,Amorim de mi vida,12,False,442,Pope,NEW,GKP,0
+2,Julius Long,Amorim de mi vida,13,False,490,Wood,NFO,FWD,0
+2,Julius Long,Amorim de mi vida,14,False,498,Senesi,TOT,DEF,0
+2,Julius Long,Amorim de mi vida,15,False,515,Maddison,TOT,MID,0
+2,Ryan Houseman,Szoboszlickin good,1,True,226,Pickford,EVE,GKP,3
+2,Ryan Houseman,Szoboszlickin good,2,True,4,Gabriel,ARS,DEF,8
+2,Ryan Houseman,Szoboszlickin good,3,True,469,N.Williams,NFO,DEF,6
+2,Ryan Houseman,Szoboszlickin good,4,True,586,Mendy,HUL,DEF,1
+2,Ryan Houseman,Szoboszlickin good,5,True,580,Araujo,LIV,DEF,0
+2,Ryan Houseman,Szoboszlickin good,6,True,368,Szoboszlai,LIV,MID,4
+2,Ryan Houseman,Szoboszlickin good,7,True,156,Neto,CHE,MID,7
+2,Ryan Houseman,Szoboszlickin good,8,True,127,Gomez,BHA,MID,5
+2,Ryan Houseman,Szoboszlickin good,9,True,14,Eze,ARS,MID,1
+2,Ryan Houseman,Szoboszlickin good,10,True,223,Mateta,CRY,FWD,0
+2,Ryan Houseman,Szoboszlickin good,11,True,316,Emersonn,IPS,FWD,1
+2,Ryan Houseman,Szoboszlickin good,12,False,385,Trafford,LEE,GKP,3
+2,Ryan Houseman,Szoboszlickin good,13,False,9,Hincapie,ARS,DEF,0
+2,Ryan Houseman,Szoboszlickin good,14,False,155,Enzo,CHE,MID,0
+2,Ryan Houseman,Szoboszlickin good,15,False,380,Ekitiké,LIV,FWD,0
