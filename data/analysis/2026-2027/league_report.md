@@ -56,30 +56,30 @@ Current holder: Ryan Donlan.
 | Team | Manager | Number of Reigns | Longest Defense Run | Current Holder |
 |---|---|---|---|---|
 | `***NoHaalandNoParty` | Ryan Donlan | 1 | 2 | Yes |
-| `Grand-Larseny` | Drake Byrd | 0 | 0 |  |
-| `ChabosSpurs@Law` | Alexander Chaban | 0 | 0 |  |
-| `Thanksgiving Cherki` | Ethan Ellsworth | 0 | 0 |  |
-| `Szoboszlickin good` | Ryan Houseman | 0 | 0 |  |
-| `Into the WOODwork*` | Luke Lockwood | 0 | 0 |  |
-| `Amorim de mi vida` | Julius Long | 0 | 0 |  |
-| `Sue-nited FC*` | Justin Miller | 0 | 0 |  |
 | `*Saka It To Me Baby` | Levi Morant | 0 | 0 |  |
+| `Amorim de mi vida` | Julius Long | 0 | 0 |  |
 | `Bowen Arrows` | Dylan Reid | 0 | 0 |  |
+| `ChabosSpurs@Law` | Alexander Chaban | 0 | 0 |  |
+| `Grand-Larseny` | Drake Byrd | 0 | 0 |  |
+| `Into the WOODwork*` | Luke Lockwood | 0 | 0 |  |
+| `Sue-nited FC*` | Justin Miller | 0 | 0 |  |
+| `Szoboszlickin good` | Ryan Houseman | 0 | 0 |  |
+| `Thanksgiving Cherki` | Ethan Ellsworth | 0 | 0 |  |
 
 ### Belt Fight Records
 
 | Team | Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
 |---|---|---|---|---|
 | `***NoHaalandNoParty` | Ryan Donlan | 2-0 | 62.5 | — |
+| `Sue-nited FC*` | Justin Miller | 0-1 | 40.0 | — |
 | `ChabosSpurs@Law` | Alexander Chaban | 0-1 | 23.0 | — |
 | `*Saka It To Me Baby` | Levi Morant | 0-0 | — | — |
-| `Bowen Arrows` | Dylan Reid | 0-0 | — | — |
-| `Into the WOODwork*` | Luke Lockwood | 0-0 | — | — |
-| `Grand-Larseny` | Drake Byrd | 0-0 | — | — |
-| `Sue-nited FC*` | Justin Miller | 0-1 | 40.0 | — |
-| `Thanksgiving Cherki` | Ethan Ellsworth | 0-0 | — | — |
 | `Amorim de mi vida` | Julius Long | 0-0 | — | — |
+| `Bowen Arrows` | Dylan Reid | 0-0 | — | — |
+| `Grand-Larseny` | Drake Byrd | 0-0 | — | — |
+| `Into the WOODwork*` | Luke Lockwood | 0-0 | — | — |
 | `Szoboszlickin good` | Ryan Houseman | 0-0 | — | — |
+| `Thanksgiving Cherki` | Ethan Ellsworth | 0-0 | — | — |
 
 ### Week-By-Week Belt Path
 
@@ -335,16 +335,16 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Longest Win Streak | Win GW(s) | Longest Loss Streak | Loss GW(s) |
 |---|---|---|---|---|
-| `Grand-Larseny` | 2 | 1-2 | 0 | — |
 | `***NoHaalandNoParty` | 2 | 1-2 | 0 | — |
+| `Grand-Larseny` | 2 | 1-2 | 0 | — |
 | `Szoboszlickin good` | 2 | 1-2 | 0 | — |
-| `Into the WOODwork*` | 1 | 1 | 1 | 2 |
-| `Thanksgiving Cherki` | 1 | 2 | 1 | 1 |
 | `*Saka It To Me Baby` | 1 | 1 | 1 | 2 |
 | `Bowen Arrows` | 1 | 2 | 1 | 1 |
-| `Sue-nited FC*` | 0 | — | 2 | 1-2 |
+| `Into the WOODwork*` | 1 | 1 | 1 | 2 |
+| `Thanksgiving Cherki` | 1 | 2 | 1 | 1 |
 | `Amorim de mi vida` | 0 | — | 2 | 1-2 |
 | `ChabosSpurs@Law` | 0 | — | 2 | 1-2 |
+| `Sue-nited FC*` | 0 | — | 2 | 1-2 |
 
 </details>
 
@@ -362,15 +362,15 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
 |---|---|---|---|---|---|---|
-| `Grand-Larseny` | 0% | 100% | 100% | 0% | 0% | 0% |
 | `***NoHaalandNoParty` | 50% | 50% | 100% | 0% | 0% | 0% |
-| `Szoboszlickin good` | 0% | 0% | 0% | 100% | 0% | 0% |
 | `Into the WOODwork*` | 50% | 50% | 100% | 0% | 0% | 0% |
-| `Thanksgiving Cherki` | 0% | 50% | 50% | 50% | 0% | 0% |
+| `Grand-Larseny` | 0% | 100% | 100% | 0% | 0% | 0% |
 | `*Saka It To Me Baby` | 0% | 50% | 50% | 50% | 50% | 0% |
 | `Bowen Arrows` | 0% | 50% | 50% | 50% | 50% | 0% |
+| `Thanksgiving Cherki` | 0% | 50% | 50% | 50% | 0% | 0% |
 | `Sue-nited FC*` | 0% | 0% | 50% | 50% | 0% | 0% |
 | `Amorim de mi vida` | 0% | 0% | 0% | 100% | 100% | 0% |
+| `Szoboszlickin good` | 0% | 0% | 0% | 100% | 0% | 0% |
 | `ChabosSpurs@Law` | 0% | 0% | 0% | 100% | 100% | 100% |
 
 </details>
@@ -479,16 +479,16 @@ Average, median, standard deviation, best/worst scores, and weekly extremes matc
 
 | Team | Avg | Median | Stdev | Best | Worst | Top Scores | Bottom Scores |
 |---|---|---|---|---|---|---|---|
-| `Grand-Larseny` | 63.5 | 63.5 | 18.5 | 82 | 45 | 0 | 0 |
 | `***NoHaalandNoParty` | 62.5 | 62.5 | 20.5 | 83 | 42 | 1 | 0 |
-| `Szoboszlickin good` | 35.5 | 35.5 | 0.5 | 36 | 35 | 0 | 0 |
+| `Grand-Larseny` | 63.5 | 63.5 | 18.5 | 82 | 45 | 0 | 0 |
 | `Into the WOODwork*` | 59.5 | 59.5 | 15.5 | 75 | 44 | 1 | 0 |
-| `Thanksgiving Cherki` | 40.5 | 40.5 | 6.5 | 47 | 34 | 0 | 0 |
 | `*Saka It To Me Baby` | 39.5 | 39.5 | 8.5 | 48 | 31 | 0 | 0 |
 | `Bowen Arrows` | 39.0 | 39.0 | 8.0 | 47 | 31 | 0 | 0 |
-| `Sue-nited FC*` | 40.0 | 40.0 | 0.0 | 40 | 40 | 0 | 0 |
-| `Amorim de mi vida` | 26.5 | 26.5 | 1.5 | 28 | 25 | 0 | 0 |
+| `Thanksgiving Cherki` | 40.5 | 40.5 | 6.5 | 47 | 34 | 0 | 0 |
 | `ChabosSpurs@Law` | 25.0 | 25.0 | 2.0 | 27 | 23 | 0 | 2 |
+| `Amorim de mi vida` | 26.5 | 26.5 | 1.5 | 28 | 25 | 0 | 0 |
+| `Szoboszlickin good` | 35.5 | 35.5 | 0.5 | 36 | 35 | 0 | 0 |
+| `Sue-nited FC*` | 40.0 | 40.0 | 0.0 | 40 | 40 | 0 | 0 |
 
 ### Biggest Single-Week Scores
 
