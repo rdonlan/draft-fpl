@@ -1,13 +1,13 @@
 # BMS FPL Draft 26/27 League
 
-Official FPL Draft data last refreshed September 01, 2026 at 10:01 AM Eastern Daylight Time.
+Official FPL Draft data last refreshed September 08, 2026 at 01:02 PM Eastern Daylight Time.
 
 This page uses the same season-analysis layout as 2025–26 and 2024–25. Statistics update from completed official gameweeks.
 
 ## Best Quick Hits
 
-- 2 gameweeks are complete.
-- Top GW2 score: Ryan Donlan with 83 points.
+- 3 gameweeks are complete.
+- Top GW3 score: Justin Miller with 55 points.
 - The current lineal belt holder is Ryan Donlan.
 
 <details open>
@@ -24,16 +24,16 @@ Record, H2H points, points for/against, weekly average, and top/bottom score cou
 
 | Rank | Team | Record | H2H Pts | PF | PA | Avg | Top Scores | Bottom Scores |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `Grand-Larseny` | 2-0-0 | 6 | 127 | 74 | 63.5 | 0 | 0 |
-| 2 | `***NoHaalandNoParty` | 2-0-0 | 6 | 125 | 63 | 62.5 | 1 | 0 |
-| 3 | `Szoboszlickin good` | 2-0-0 | 6 | 71 | 62 | 35.5 | 0 | 0 |
-| 4 | `Into the WOODwork*` | 1-0-1 | 3 | 119 | 75 | 59.5 | 1 | 0 |
-| 5 | `Thanksgiving Cherki` | 1-0-1 | 3 | 81 | 89 | 40.5 | 0 | 0 |
-| 6 | `*Saka It To Me Baby` | 1-0-1 | 3 | 79 | 63 | 39.5 | 0 | 0 |
-| 7 | `Bowen Arrows` | 1-0-1 | 3 | 78 | 60 | 39.0 | 0 | 0 |
-| 8 | `Sue-nited FC*` | 0-0-2 | 0 | 80 | 124 | 40.0 | 0 | 0 |
-| 9 | `Amorim de mi vida` | 0-0-2 | 0 | 53 | 122 | 26.5 | 0 | 0 |
-| 10 | `ChabosSpurs@Law` | 0-0-2 | 0 | 50 | 131 | 25.0 | 0 | 2 |
+| 1 | `***NoHaalandNoParty` | 3-0-0 | 9 | 170 | 87 | 56.7 | 1 | 0 |
+| 2 | `Bruno’s Balebas` | 3-0-0 | 9 | 166 | 108 | 55.3 | 0 | 0 |
+| 3 | `*Saka It To Me Baby` | 2-0-1 | 6 | 122 | 91 | 40.7 | 0 | 0 |
+| 4 | `Szoboszlickin good` | 2-0-1 | 6 | 105 | 101 | 35.0 | 0 | 0 |
+| 5 | `Into the WOODwork*` | 1-0-2 | 3 | 150 | 127 | 50.0 | 1 | 0 |
+| 6 | `Sue-nited FC*` | 1-0-2 | 3 | 135 | 160 | 45.0 | 1 | 0 |
+| 7 | `Joao Bonito` | 1-0-2 | 3 | 106 | 103 | 35.3 | 0 | 0 |
+| 8 | `Thanksgiving Cherki` | 1-0-2 | 3 | 105 | 134 | 35.0 | 0 | 1 |
+| 9 | `ChabosSpurs@Law` | 1-0-2 | 3 | 102 | 162 | 34.0 | 0 | 2 |
+| 10 | `Amorim de mi vida` | 0-0-3 | 0 | 89 | 177 | 29.7 | 0 | 0 |
 
 </details>
 
@@ -55,13 +55,13 @@ Current holder: Ryan Donlan.
 
 | Team | Manager | Number of Reigns | Longest Defense Run | Current Holder |
 |---|---|---|---|---|
-| `***NoHaalandNoParty` | Ryan Donlan | 1 | 2 | Yes |
+| `***NoHaalandNoParty` | Ryan Donlan | 1 | 3 | Yes |
 | `*Saka It To Me Baby` | Levi Morant | 0 | 0 |  |
 | `Amorim de mi vida` | Julius Long | 0 | 0 |  |
-| `Bowen Arrows` | Dylan Reid | 0 | 0 |  |
+| `Bruno’s Balebas` | Drake Byrd | 0 | 0 |  |
 | `ChabosSpurs@Law` | Alexander Chaban | 0 | 0 |  |
-| `Grand-Larseny` | Drake Byrd | 0 | 0 |  |
 | `Into the WOODwork*` | Luke Lockwood | 0 | 0 |  |
+| `Joao Bonito` | Dylan Reid | 0 | 0 |  |
 | `Sue-nited FC*` | Justin Miller | 0 | 0 |  |
 | `Szoboszlickin good` | Ryan Houseman | 0 | 0 |  |
 | `Thanksgiving Cherki` | Ethan Ellsworth | 0 | 0 |  |
@@ -70,16 +70,16 @@ Current holder: Ryan Donlan.
 
 | Team | Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
 |---|---|---|---|---|
-| `***NoHaalandNoParty` | Ryan Donlan | 2-0 | 62.5 | — |
+| `***NoHaalandNoParty` | Ryan Donlan | 3-0 | 56.7 | — |
 | `Sue-nited FC*` | Justin Miller | 0-1 | 40.0 | — |
+| `Thanksgiving Cherki` | Ethan Ellsworth | 0-1 | 24.0 | — |
 | `ChabosSpurs@Law` | Alexander Chaban | 0-1 | 23.0 | — |
 | `*Saka It To Me Baby` | Levi Morant | 0-0 | — | — |
 | `Amorim de mi vida` | Julius Long | 0-0 | — | — |
-| `Bowen Arrows` | Dylan Reid | 0-0 | — | — |
-| `Grand-Larseny` | Drake Byrd | 0-0 | — | — |
+| `Bruno’s Balebas` | Drake Byrd | 0-0 | — | — |
 | `Into the WOODwork*` | Luke Lockwood | 0-0 | — | — |
+| `Joao Bonito` | Dylan Reid | 0-0 | — | — |
 | `Szoboszlickin good` | Ryan Houseman | 0-0 | — | — |
-| `Thanksgiving Cherki` | Ethan Ellsworth | 0-0 | — | — |
 
 ### Week-By-Week Belt Path
 
@@ -87,7 +87,8 @@ Current holder: Ryan Donlan.
 |---|---|---|---|---|
 | 1 | Ryan Donlan | Justin Miller | 42-40 | Ryan Donlan |
 | 2 | Ryan Donlan | Alexander Chaban | 83-23 | Ryan Donlan |
-| 3 | Ryan Donlan | Ethan Ellsworth | — | Pending |
+| 3 | Ryan Donlan | Ethan Ellsworth | 45-24 | Ryan Donlan |
+| 4 | Ryan Donlan | Levi Morant | — | Pending |
 
 </details>
 
@@ -164,7 +165,7 @@ Each manager's complete 15-player roster, grouped by position.
 </tbody></table></div>
 </article>
 <article class="current-roster-card">
-<header class="current-roster-card-head"><strong>Dylan Reid</strong><span>Bowen Arrows</span></header>
+<header class="current-roster-card-head"><strong>Dylan Reid</strong><span>Joao Bonito</span></header>
 <div class="table-wrap"><table>
 <thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
 <tbody>
@@ -208,7 +209,7 @@ Each manager's complete 15-player roster, grouped by position.
 </tbody></table></div>
 </article>
 <article class="current-roster-card">
-<header class="current-roster-card-head"><strong>Drake Byrd</strong><span>Grand-Larseny</span></header>
+<header class="current-roster-card-head"><strong>Drake Byrd</strong><span>Bruno’s Balebas</span></header>
 <div class="table-wrap"><table>
 <thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
 <tbody>
@@ -324,7 +325,7 @@ Each manager's complete 15-player roster, grouped by position.
 <details>
 <summary><h2>Winning And Losing Streaks</h2></summary>
 
-Calculated through GW2.
+Calculated through GW3.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -335,23 +336,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Longest Win Streak | Win GW(s) | Longest Loss Streak | Loss GW(s) |
 |---|---|---|---|---|
-| `***NoHaalandNoParty` | 2 | 1-2 | 0 | — |
-| `Grand-Larseny` | 2 | 1-2 | 0 | — |
-| `Szoboszlickin good` | 2 | 1-2 | 0 | — |
-| `*Saka It To Me Baby` | 1 | 1 | 1 | 2 |
-| `Bowen Arrows` | 1 | 2 | 1 | 1 |
-| `Into the WOODwork*` | 1 | 1 | 1 | 2 |
-| `Thanksgiving Cherki` | 1 | 2 | 1 | 1 |
-| `Amorim de mi vida` | 0 | — | 2 | 1-2 |
-| `ChabosSpurs@Law` | 0 | — | 2 | 1-2 |
-| `Sue-nited FC*` | 0 | — | 2 | 1-2 |
+| `***NoHaalandNoParty` | 3 | 1-3 | 0 | — |
+| `Bruno’s Balebas` | 3 | 1-3 | 0 | — |
+| `Szoboszlickin good` | 2 | 1-2 | 1 | 3 |
+| `*Saka It To Me Baby` | 1 | 1, 3 | 1 | 2 |
+| `Joao Bonito` | 1 | 2 | 1 | 1, 3 |
+| `Thanksgiving Cherki` | 1 | 2 | 1 | 1, 3 |
+| `ChabosSpurs@Law` | 1 | 3 | 2 | 1-2 |
+| `Into the WOODwork*` | 1 | 1 | 2 | 2-3 |
+| `Sue-nited FC*` | 1 | 3 | 2 | 1-2 |
+| `Amorim de mi vida` | 0 | — | 3 | 1-3 |
 
 </details>
 
 <details>
 <summary><h2>Score Bands</h2></summary>
 
-Calculated through GW2.
+Calculated through GW3.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -362,23 +363,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
 |---|---|---|---|---|---|---|
-| `***NoHaalandNoParty` | 50% | 50% | 100% | 0% | 0% | 0% |
-| `Into the WOODwork*` | 50% | 50% | 100% | 0% | 0% | 0% |
-| `Grand-Larseny` | 0% | 100% | 100% | 0% | 0% | 0% |
-| `*Saka It To Me Baby` | 0% | 50% | 50% | 50% | 50% | 0% |
-| `Bowen Arrows` | 0% | 50% | 50% | 50% | 50% | 0% |
-| `Thanksgiving Cherki` | 0% | 50% | 50% | 50% | 0% | 0% |
-| `Sue-nited FC*` | 0% | 0% | 50% | 50% | 0% | 0% |
-| `Amorim de mi vida` | 0% | 0% | 0% | 100% | 100% | 0% |
+| `***NoHaalandNoParty` | 33% | 67% | 100% | 0% | 0% | 0% |
+| `Into the WOODwork*` | 33% | 33% | 67% | 33% | 33% | 0% |
+| `Sue-nited FC*` | 33% | 33% | 67% | 33% | 0% | 0% |
+| `Bruno’s Balebas` | 0% | 67% | 100% | 0% | 0% | 0% |
+| `*Saka It To Me Baby` | 0% | 33% | 67% | 33% | 33% | 0% |
+| `Joao Bonito` | 0% | 33% | 33% | 67% | 67% | 0% |
+| `Thanksgiving Cherki` | 0% | 33% | 33% | 67% | 33% | 33% |
+| `ChabosSpurs@Law` | 0% | 33% | 33% | 67% | 67% | 67% |
+| `Amorim de mi vida` | 0% | 0% | 0% | 100% | 67% | 0% |
 | `Szoboszlickin good` | 0% | 0% | 0% | 100% | 0% | 0% |
-| `ChabosSpurs@Law` | 0% | 0% | 0% | 100% | 100% | 100% |
 
 </details>
 
 <details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
-Calculated through GW2.
+Calculated through GW3.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -389,23 +390,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | True Rank | Team | xPts | Real H2H Pts | PF | Avg Weekly Rank |
 |---|---|---|---|---|---|
-| 1 | `Grand-Larseny` | 5.0 | 6 | 127 | 2.50 |
-| 2 | `***NoHaalandNoParty` | 5.0 | 6 | 125 | 2.50 |
-| 3 | `Into the WOODwork*` | 4.7 | 3 | 119 | 3.00 |
-| 4 | `*Saka It To Me Baby` | 3.3 | 3 | 79 | 5.00 |
-| 5 | `Thanksgiving Cherki` | 3.1 | 3 | 81 | 5.00 |
-| 6 | `Sue-nited FC*` | 3.0 | 0 | 80 | 5.50 |
-| 7 | `Bowen Arrows` | 2.8 | 3 | 78 | 5.50 |
-| 8 | `Szoboszlickin good` | 2.3 | 6 | 71 | 6.50 |
-| 9 | `Amorim de mi vida` | 0.7 | 0 | 53 | 9.00 |
-| 10 | `ChabosSpurs@Law` | 0.0 | 0 | 50 | 10.00 |
+| 1 | `***NoHaalandNoParty` | 7.3 | 9 | 170 | 2.67 |
+| 2 | `Bruno’s Balebas` | 6.7 | 9 | 166 | 3.33 |
+| 3 | `Sue-nited FC*` | 6.0 | 3 | 135 | 4.00 |
+| 4 | `Into the WOODwork*` | 5.3 | 3 | 150 | 4.67 |
+| 5 | `*Saka It To Me Baby` | 5.3 | 6 | 122 | 4.67 |
+| 6 | `Szoboszlickin good` | 3.3 | 6 | 105 | 6.67 |
+| 7 | `Joao Bonito` | 3.1 | 3 | 106 | 6.67 |
+| 8 | `Thanksgiving Cherki` | 3.1 | 3 | 105 | 6.67 |
+| 9 | `ChabosSpurs@Law` | 2.7 | 3 | 102 | 7.33 |
+| 10 | `Amorim de mi vida` | 2.0 | 0 | 89 | 8.00 |
 
 </details>
 
 <details>
 <summary><h2>Schedule Luck</h2></summary>
 
-Calculated through GW2.
+Calculated through GW3.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -416,23 +417,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Actual H2H Pts | xPts | Luck | PA |
 |---|---|---|---|---|
-| `Szoboszlickin good` | 6 | 2.3 | +3.7 | 62 |
-| `***NoHaalandNoParty` | 6 | 5.0 | +1.0 | 63 |
-| `Grand-Larseny` | 6 | 5.0 | +1.0 | 74 |
-| `Bowen Arrows` | 3 | 2.8 | +0.2 | 60 |
-| `ChabosSpurs@Law` | 0 | 0.0 | +0.0 | 131 |
-| `Thanksgiving Cherki` | 3 | 3.1 | -0.1 | 89 |
-| `*Saka It To Me Baby` | 3 | 3.3 | -0.3 | 63 |
-| `Amorim de mi vida` | 0 | 0.7 | -0.7 | 122 |
-| `Into the WOODwork*` | 3 | 4.7 | -1.7 | 75 |
-| `Sue-nited FC*` | 0 | 3.0 | -3.0 | 124 |
+| `Szoboszlickin good` | 6 | 3.3 | +2.7 | 101 |
+| `Bruno’s Balebas` | 9 | 6.7 | +2.3 | 108 |
+| `***NoHaalandNoParty` | 9 | 7.3 | +1.7 | 87 |
+| `*Saka It To Me Baby` | 6 | 5.3 | +0.7 | 91 |
+| `ChabosSpurs@Law` | 3 | 2.7 | +0.3 | 162 |
+| `Joao Bonito` | 3 | 3.1 | -0.1 | 103 |
+| `Thanksgiving Cherki` | 3 | 3.1 | -0.1 | 134 |
+| `Amorim de mi vida` | 0 | 2.0 | -2.0 | 177 |
+| `Into the WOODwork*` | 3 | 5.3 | -2.3 | 127 |
+| `Sue-nited FC*` | 3 | 6.0 | -3.0 | 160 |
 
 </details>
 
 <details>
 <summary><h2>Bad Beats And Soft Wins</h2></summary>
 
-Calculated through GW2.
+Calculated through GW3.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -448,9 +449,9 @@ This section uses the same definitions and calculations as the prior season page
 | `***NoHaalandNoParty` | 0 | 0 | 0 |
 | `*Saka It To Me Baby` | 0 | 0 | 0 |
 | `Amorim de mi vida` | 0 | 0 | 0 |
-| `Bowen Arrows` | 0 | 0 | 0 |
+| `Bruno’s Balebas` | 0 | 0 | 0 |
 | `ChabosSpurs@Law` | 0 | 0 | 0 |
-| `Grand-Larseny` | 0 | 0 | 0 |
+| `Joao Bonito` | 0 | 0 | 0 |
 | `Thanksgiving Cherki` | 0 | 0 | 0 |
 | `Szoboszlickin good` | 0 | 2 | 2 |
 
@@ -468,7 +469,7 @@ This section uses the same definitions and calculations as the prior season page
 <details>
 <summary><h2>Weekly Scoring And Boom/Bust</h2></summary>
 
-Calculated through GW2.
+Calculated through GW3.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -479,48 +480,48 @@ Average, median, standard deviation, best/worst scores, and weekly extremes matc
 
 | Team | Avg | Median | Stdev | Best | Worst | Top Scores | Bottom Scores |
 |---|---|---|---|---|---|---|---|
-| `***NoHaalandNoParty` | 62.5 | 62.5 | 20.5 | 83 | 42 | 1 | 0 |
-| `Grand-Larseny` | 63.5 | 63.5 | 18.5 | 82 | 45 | 0 | 0 |
-| `Into the WOODwork*` | 59.5 | 59.5 | 15.5 | 75 | 44 | 1 | 0 |
-| `*Saka It To Me Baby` | 39.5 | 39.5 | 8.5 | 48 | 31 | 0 | 0 |
-| `Bowen Arrows` | 39.0 | 39.0 | 8.0 | 47 | 31 | 0 | 0 |
-| `Thanksgiving Cherki` | 40.5 | 40.5 | 6.5 | 47 | 34 | 0 | 0 |
-| `ChabosSpurs@Law` | 25.0 | 25.0 | 2.0 | 27 | 23 | 0 | 2 |
-| `Amorim de mi vida` | 26.5 | 26.5 | 1.5 | 28 | 25 | 0 | 0 |
-| `Szoboszlickin good` | 35.5 | 35.5 | 0.5 | 36 | 35 | 0 | 0 |
-| `Sue-nited FC*` | 40.0 | 40.0 | 0.0 | 40 | 40 | 0 | 0 |
+| `Bruno’s Balebas` | 55.3 | 45.0 | 19.0 | 82 | 39 | 0 | 0 |
+| `***NoHaalandNoParty` | 56.7 | 45.0 | 18.7 | 83 | 42 | 1 | 0 |
+| `Into the WOODwork*` | 50.0 | 44.0 | 18.5 | 75 | 31 | 1 | 0 |
+| `ChabosSpurs@Law` | 34.0 | 27.0 | 12.8 | 52 | 23 | 0 | 2 |
+| `Thanksgiving Cherki` | 35.0 | 34.0 | 9.4 | 47 | 24 | 0 | 1 |
+| `Joao Bonito` | 35.3 | 31.0 | 8.3 | 47 | 28 | 0 | 0 |
+| `*Saka It To Me Baby` | 40.7 | 43.0 | 7.1 | 48 | 31 | 0 | 0 |
+| `Sue-nited FC*` | 45.0 | 40.0 | 7.1 | 55 | 40 | 1 | 0 |
+| `Amorim de mi vida` | 29.7 | 28.0 | 4.6 | 36 | 25 | 0 | 0 |
+| `Szoboszlickin good` | 35.0 | 35.0 | 0.8 | 36 | 34 | 0 | 0 |
 
 ### Biggest Single-Week Scores
 
 | GW | Team | Points | Double-Digit Starters | Starter Zeroes |
 |---|---|---|---|---|
 | 2 | `***NoHaalandNoParty` | 83 | 4 | 0 |
-| 2 | `Grand-Larseny` | 82 | 3 | 0 |
+| 2 | `Bruno’s Balebas` | 82 | 3 | 0 |
 | 1 | `Into the WOODwork*` | 75 | 3 | 0 |
+| 3 | `Sue-nited FC*` | 55 | 2 | 0 |
+| 3 | `ChabosSpurs@Law` | 52 | 2 | 0 |
 | 1 | `*Saka It To Me Baby` | 48 | 1 | 2 |
-| 2 | `Bowen Arrows` | 47 | 0 | 0 |
+| 2 | `Joao Bonito` | 47 | 0 | 0 |
 | 2 | `Thanksgiving Cherki` | 47 | 2 | 1 |
-| 1 | `Grand-Larseny` | 45 | 2 | 2 |
+| 1 | `Bruno’s Balebas` | 45 | 2 | 2 |
+| 3 | `***NoHaalandNoParty` | 45 | 0 | 0 |
 | 2 | `Into the WOODwork*` | 44 | 1 | 1 |
+| 3 | `*Saka It To Me Baby` | 43 | 1 | 0 |
 | 1 | `***NoHaalandNoParty` | 42 | 0 | 0 |
 | 1 | `Sue-nited FC*` | 40 | 2 | 1 |
 | 2 | `Sue-nited FC*` | 40 | 0 | 1 |
+| 3 | `Bruno’s Balebas` | 39 | 2 | 0 |
 | 2 | `Szoboszlickin good` | 36 | 0 | 2 |
+| 3 | `Amorim de mi vida` | 36 | 0 | 1 |
 | 1 | `Szoboszlickin good` | 35 | 0 | 0 |
 | 1 | `Thanksgiving Cherki` | 34 | 0 | 2 |
-| 1 | `Bowen Arrows` | 31 | 1 | 1 |
-| 2 | `*Saka It To Me Baby` | 31 | 1 | 2 |
-| 1 | `Amorim de mi vida` | 28 | 1 | 1 |
-| 1 | `ChabosSpurs@Law` | 27 | 0 | 4 |
-| 2 | `Amorim de mi vida` | 25 | 0 | 3 |
-| 2 | `ChabosSpurs@Law` | 23 | 0 | 1 |
 
 </details>
 
 <details>
 <summary><h2>Positional Scoring</h2></summary>
 
-Official starting-lineup and roster scoring through GW2. The 4+ week free-agent pool metric begins in GW4.
+Official starting-lineup and roster scoring through GW3. The 4+ week free-agent pool metric begins in GW4.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -533,19 +534,19 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Position | Starter Weekly Avg | Rostered Weekly Avg | 4+ Week Pool Weekly Avg |
 |---|---|---|---|
-| GKP | 3.00 | 2.33 | — |
-| DEF | 3.35 | 2.87 | — |
-| MID | 4.99 | 4.40 | — |
-| FWD | 3.35 | 2.50 | — |
+| GKP | 3.20 | 2.72 | — |
+| DEF | 3.60 | 3.11 | — |
+| MID | 4.40 | 3.87 | — |
+| FWD | 3.20 | 2.48 | — |
 
 ### Position Points/Start Leaders
 
 | Position | Points/Start Leader | Starter Points | Starts | Points/Start |
 |---|---|---|---|---|
-| GKP | Raya | 12 | 2 | 6.00 |
-| DEF | Hall | 11 | 1 | 11.00 |
-| MID | B.Fernandes | 25 | 2 | 12.50 |
-| FWD | João Pedro | 20 | 2 | 10.00 |
+| GKP | Suzuki | 10 | 1 | 10.00 |
+| DEF | Murillo | 8 | 1 | 8.00 |
+| MID | Gakpo | 28 | 3 | 9.33 |
+| FWD | Haaland | 24 | 3 | 8.00 |
 
 ### Team-By-Position Starter Scoring
 
@@ -554,16 +555,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `ChabosSpurs@Law` | 12 | 2 | 6.00 |
-| `Szoboszlickin good` | 10 | 2 | 5.00 |
-| `***NoHaalandNoParty` | 9 | 2 | 4.50 |
-| `Grand-Larseny` | 7 | 2 | 3.50 |
-| `Into the WOODwork*` | 6 | 2 | 3.00 |
-| `Bowen Arrows` | 5 | 2 | 2.50 |
-| `Amorim de mi vida` | 3 | 2 | 1.50 |
-| `Sue-nited FC*` | 3 | 2 | 1.50 |
-| `Thanksgiving Cherki` | 3 | 2 | 1.50 |
-| `*Saka It To Me Baby` | 2 | 2 | 1.00 |
+| `ChabosSpurs@Law` | 22 | 3 | 7.33 |
+| `***NoHaalandNoParty` | 11 | 3 | 3.67 |
+| `Szoboszlickin good` | 11 | 3 | 3.67 |
+| `Amorim de mi vida` | 10 | 3 | 3.33 |
+| `Bruno’s Balebas` | 9 | 3 | 3.00 |
+| `Into the WOODwork*` | 9 | 3 | 3.00 |
+| `Sue-nited FC*` | 9 | 3 | 3.00 |
+| `Joao Bonito` | 6 | 3 | 2.00 |
+| `Thanksgiving Cherki` | 5 | 3 | 1.67 |
+| `*Saka It To Me Baby` | 4 | 3 | 1.33 |
 
 </details>
 
@@ -572,16 +573,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `***NoHaalandNoParty` | 54 | 9 | 6.00 |
-| `Grand-Larseny` | 38 | 7 | 5.43 |
-| `Into the WOODwork*` | 41 | 8 | 5.12 |
-| `Szoboszlickin good` | 23 | 7 | 3.29 |
-| `Bowen Arrows` | 26 | 8 | 3.25 |
-| `Amorim de mi vida` | 24 | 8 | 3.00 |
-| `Sue-nited FC*` | 26 | 10 | 2.60 |
-| `Thanksgiving Cherki` | 12 | 7 | 1.71 |
-| `ChabosSpurs@Law` | 14 | 9 | 1.56 |
-| `*Saka It To Me Baby` | 7 | 6 | 1.17 |
+| `***NoHaalandNoParty` | 79 | 13 | 6.08 |
+| `Bruno’s Balebas` | 45 | 10 | 4.50 |
+| `Into the WOODwork*` | 56 | 13 | 4.31 |
+| `Szoboszlickin good` | 46 | 12 | 3.83 |
+| `Joao Bonito` | 38 | 11 | 3.45 |
+| `Amorim de mi vida` | 38 | 12 | 3.17 |
+| `Sue-nited FC*` | 47 | 15 | 3.13 |
+| `ChabosSpurs@Law` | 40 | 13 | 3.08 |
+| `Thanksgiving Cherki` | 19 | 10 | 1.90 |
+| `*Saka It To Me Baby` | 17 | 9 | 1.89 |
 
 </details>
 
@@ -590,16 +591,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `Grand-Larseny` | 66 | 8 | 8.25 |
-| `Into the WOODwork*` | 62 | 10 | 6.20 |
-| `Thanksgiving Cherki` | 43 | 7 | 6.14 |
-| `Sue-nited FC*` | 39 | 7 | 5.57 |
-| `*Saka It To Me Baby` | 55 | 10 | 5.50 |
-| `***NoHaalandNoParty` | 38 | 7 | 5.43 |
-| `Szoboszlickin good` | 34 | 9 | 3.78 |
-| `Bowen Arrows` | 25 | 8 | 3.12 |
-| `Amorim de mi vida` | 23 | 8 | 2.88 |
-| `ChabosSpurs@Law` | 19 | 7 | 2.71 |
+| `Bruno’s Balebas` | 92 | 13 | 7.08 |
+| `Into the WOODwork*` | 73 | 14 | 5.21 |
+| `*Saka It To Me Baby` | 76 | 15 | 5.07 |
+| `Sue-nited FC*` | 54 | 11 | 4.91 |
+| `Thanksgiving Cherki` | 54 | 11 | 4.91 |
+| `***NoHaalandNoParty` | 46 | 11 | 4.18 |
+| `Szoboszlickin good` | 44 | 13 | 3.38 |
+| `Joao Bonito` | 35 | 12 | 2.92 |
+| `Amorim de mi vida` | 32 | 11 | 2.91 |
+| `ChabosSpurs@Law` | 31 | 11 | 2.82 |
 
 </details>
 
@@ -608,16 +609,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `***NoHaalandNoParty` | 24 | 4 | 6.00 |
-| `Bowen Arrows` | 22 | 4 | 5.50 |
-| `Into the WOODwork*` | 10 | 2 | 5.00 |
-| `Sue-nited FC*` | 12 | 3 | 4.00 |
-| `Thanksgiving Cherki` | 23 | 6 | 3.83 |
-| `*Saka It To Me Baby` | 15 | 4 | 3.75 |
-| `Grand-Larseny` | 16 | 5 | 3.20 |
-| `ChabosSpurs@Law` | 5 | 4 | 1.25 |
-| `Szoboszlickin good` | 4 | 4 | 1.00 |
-| `Amorim de mi vida` | 3 | 4 | 0.75 |
+| `Sue-nited FC*` | 25 | 4 | 6.25 |
+| `***NoHaalandNoParty` | 34 | 6 | 5.67 |
+| `*Saka It To Me Baby` | 25 | 6 | 4.17 |
+| `Into the WOODwork*` | 12 | 3 | 4.00 |
+| `Joao Bonito` | 27 | 7 | 3.86 |
+| `Thanksgiving Cherki` | 27 | 9 | 3.00 |
+| `Bruno’s Balebas` | 20 | 7 | 2.86 |
+| `ChabosSpurs@Law` | 9 | 6 | 1.50 |
+| `Amorim de mi vida` | 9 | 7 | 1.29 |
+| `Szoboszlickin good` | 4 | 5 | 0.80 |
 
 </details>
 
@@ -626,7 +627,7 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 <details>
 <summary><h2>Waiver-Inspired Wins</h2></summary>
 
-Calculated through GW2 from accepted waiver/free-agent moves, official lineups, and the dropped players' counterfactual scores.
+Calculated through GW3 from accepted waiver/free-agent moves, official lineups, and the dropped players' counterfactual scores.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -639,14 +640,14 @@ A win is waiver-inspired when the winner's positive replacement delta, net of th
 
 | Team | Waiver-Inspired Wins | Total Wins | Share of Wins | Avg Waiver-Inspired Win Margin |
 |---|---|---|---|---|
-| `***NoHaalandNoParty` | 0 | 2 | 0% | — |
-| `*Saka It To Me Baby` | 0 | 1 | 0% | — |
+| `***NoHaalandNoParty` | 0 | 3 | 0% | — |
+| `*Saka It To Me Baby` | 0 | 2 | 0% | — |
 | `Amorim de mi vida` | 0 | 0 | 0% | — |
-| `Bowen Arrows` | 0 | 1 | 0% | — |
-| `ChabosSpurs@Law` | 0 | 0 | 0% | — |
-| `Grand-Larseny` | 0 | 2 | 0% | — |
+| `Bruno’s Balebas` | 0 | 3 | 0% | — |
+| `ChabosSpurs@Law` | 0 | 1 | 0% | — |
 | `Into the WOODwork*` | 0 | 1 | 0% | — |
-| `Sue-nited FC*` | 0 | 0 | 0% | — |
+| `Joao Bonito` | 0 | 1 | 0% | — |
+| `Sue-nited FC*` | 0 | 1 | 0% | — |
 | `Szoboszlickin good` | 0 | 2 | 0% | — |
 | `Thanksgiving Cherki` | 0 | 1 | 0% | — |
 
@@ -656,14 +657,14 @@ A win is waiver-inspired when the winner's positive replacement delta, net of th
 |---|---|---|---|---|
 | `***NoHaalandNoParty` | 0 | 0 | 0% | — |
 | `*Saka It To Me Baby` | 0 | 1 | 0% | — |
-| `Amorim de mi vida` | 0 | 2 | 0% | — |
-| `Bowen Arrows` | 0 | 1 | 0% | — |
+| `Amorim de mi vida` | 0 | 3 | 0% | — |
+| `Bruno’s Balebas` | 0 | 0 | 0% | — |
 | `ChabosSpurs@Law` | 0 | 2 | 0% | — |
-| `Grand-Larseny` | 0 | 0 | 0% | — |
-| `Into the WOODwork*` | 0 | 1 | 0% | — |
+| `Into the WOODwork*` | 0 | 2 | 0% | — |
+| `Joao Bonito` | 0 | 2 | 0% | — |
 | `Sue-nited FC*` | 0 | 2 | 0% | — |
-| `Szoboszlickin good` | 0 | 0 | 0% | — |
-| `Thanksgiving Cherki` | 0 | 1 | 0% | — |
+| `Szoboszlickin good` | 0 | 1 | 0% | — |
+| `Thanksgiving Cherki` | 0 | 2 | 0% | — |
 
 </details>
 
