@@ -1,5 +1,5 @@
 overall_pick,round,manager,team,player,club,position,auto_pick
-1,1,Justin Miller,Sue-nited FC*,Matz Sels,NFO,GKP,True
+1,1,Justin Miller,Sue-nited FC**,Matz Sels,NFO,GKP,True
 2,1,Ryan Donlan,***NoHaalandNoParty,Erling Haaland,MCI,FWD,True
 3,1,Dylan Reid,Joao Bonito,João Pedro Junqueira de Jesus,CHE,FWD,True
 4,1,Drake Byrd,Bruno’s Balebas,Bruno Borges Fernandes,MUN,MID,True
@@ -18,8 +18,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 17,2,Drake Byrd,Bruno’s Balebas,Martin Ødegaard,ARS,MID,True
 18,2,Dylan Reid,Joao Bonito,Igor Thiago Nascimento Rodrigues,BRE,FWD,True
 19,2,Ryan Donlan,***NoHaalandNoParty,Caoimhín Kelleher,BRE,GKP,True
-20,2,Justin Miller,Sue-nited FC*,Dean Henderson,CRY,GKP,True
-21,3,Justin Miller,Sue-nited FC*,Ola Aina,NFO,DEF,True
+20,2,Justin Miller,Sue-nited FC**,Dean Henderson,CRY,GKP,True
+21,3,Justin Miller,Sue-nited FC**,Ola Aina,NFO,DEF,True
 22,3,Ryan Donlan,***NoHaalandNoParty,Giorgi Mamardashvili,LIV,GKP,True
 23,3,Dylan Reid,Joao Bonito,Marcus Rashford,MUN,MID,True
 24,3,Drake Byrd,Bruno’s Balebas,Anthony Elanga,NEW,MID,True
@@ -38,8 +38,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 37,4,Drake Byrd,Bruno’s Balebas,Cody Gakpo,LIV,MID,True
 38,4,Dylan Reid,Joao Bonito,Phil Foden,MCI,MID,True
 39,4,Ryan Donlan,***NoHaalandNoParty,James Hill,BOU,DEF,True
-40,4,Justin Miller,Sue-nited FC*,António João Pereira de Albuquerque Tavares da Silva,BOU,DEF,True
-41,5,Justin Miller,Sue-nited FC*,Levi Samuels Colwill,CHE,DEF,True
+40,4,Justin Miller,Sue-nited FC**,António João Pereira de Albuquerque Tavares da Silva,BOU,DEF,True
+41,5,Justin Miller,Sue-nited FC**,Levi Samuels Colwill,CHE,DEF,True
 42,5,Ryan Donlan,***NoHaalandNoParty,Cristhian Mosquera,ARS,DEF,True
 43,5,Dylan Reid,Joao Bonito,Ryan Gravenberch,LIV,MID,True
 44,5,Drake Byrd,Bruno’s Balebas,Youri Tielemans,MUN,MID,True
@@ -58,8 +58,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 57,6,Drake Byrd,Bruno’s Balebas,Francisco Evanilson de Lima Barbosa,BOU,FWD,True
 58,6,Dylan Reid,Joao Bonito,Declan Rice,ARS,MID,True
 59,6,Ryan Donlan,***NoHaalandNoParty,James Tarkowski,EVE,DEF,True
-60,6,Justin Miller,Sue-nited FC*,Diogo Dalot Teixeira,MUN,DEF,True
-61,7,Justin Miller,Sue-nited FC*,Jeremy Jacquet,LIV,DEF,True
+60,6,Justin Miller,Sue-nited FC**,Diogo Dalot Teixeira,MUN,DEF,True
+61,7,Justin Miller,Sue-nited FC**,Jeremy Jacquet,LIV,DEF,True
 62,7,Ryan Donlan,***NoHaalandNoParty,Rúben dos Santos Gato Alves Dias,MCI,DEF,True
 63,7,Dylan Reid,Joao Bonito,Nico O'Reilly,MCI,DEF,True
 64,7,Drake Byrd,Bruno’s Balebas,Oli McBurnie,HUL,FWD,True
@@ -78,8 +78,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 77,8,Drake Byrd,Bruno’s Balebas,Benjamin Sesko,MUN,FWD,True
 78,8,Dylan Reid,Joao Bonito,Nick Woltemade,NEW,FWD,True
 79,8,Ryan Donlan,***NoHaalandNoParty,Joško Gvardiol,MCI,DEF,True
-80,8,Justin Miller,Sue-nited FC*,Elliot Anderson,MCI,MID,True
-81,9,Justin Miller,Sue-nited FC*,Anton Stach,LEE,MID,True
+80,8,Justin Miller,Sue-nited FC**,Elliot Anderson,MCI,MID,True
+81,9,Justin Miller,Sue-nited FC**,Anton Stach,LEE,MID,True
 82,9,Ryan Donlan,***NoHaalandNoParty,James Garner,EVE,MID,True
 83,9,Dylan Reid,Joao Bonito,Adrien Truffert,BOU,DEF,True
 84,9,Drake Byrd,Bruno’s Balebas,Daniel Ballard,SUN,DEF,True
@@ -98,8 +98,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 97,10,Drake Byrd,Bruno’s Balebas,Daniel Muñoz Mejía,CRY,DEF,True
 98,10,Dylan Reid,Joao Bonito,Nordi Mukiele,SUN,DEF,True
 99,10,Ryan Donlan,***NoHaalandNoParty,Morgan Gibbs-White,NFO,MID,True
-100,10,Justin Miller,Sue-nited FC*,Marcus Tavernier,BOU,MID,True
-101,11,Justin Miller,Sue-nited FC*,Johan Manzambi,AVL,MID,True
+100,10,Justin Miller,Sue-nited FC**,Marcus Tavernier,BOU,MID,True
+101,11,Justin Miller,Sue-nited FC**,Johan Manzambi,AVL,MID,True
 102,11,Ryan Donlan,***NoHaalandNoParty,Pascal Groß,BHA,MID,True
 103,11,Dylan Reid,Joao Bonito,Robert Lynch Sánchez,CHE,GKP,True
 104,11,Drake Byrd,Bruno’s Balebas,Lewis Hall,NEW,DEF,True
@@ -118,8 +118,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 117,12,Drake Byrd,Bruno’s Balebas,Matty Cash,AVL,DEF,True
 118,12,Dylan Reid,Joao Bonito,Đorđe Petrović,BOU,GKP,True
 119,12,Ryan Donlan,***NoHaalandNoParty,Alex Iwobi,FUL,MID,True
-120,12,Justin Miller,Sue-nited FC*,Alexander Isak,LIV,FWD,True
-121,13,Justin Miller,Sue-nited FC*,Ollie Watkins,AVL,FWD,True
+120,12,Justin Miller,Sue-nited FC**,Alexander Isak,LIV,FWD,True
+121,13,Justin Miller,Sue-nited FC**,Ollie Watkins,AVL,FWD,True
 122,13,Ryan Donlan,***NoHaalandNoParty,Justin Kluivert,BOU,MID,True
 123,13,Dylan Reid,Joao Bonito,Harry Wilson,LEE,MID,True
 124,13,Drake Byrd,Bruno’s Balebas,Riccardo Calafiori,ARS,DEF,True
@@ -138,8 +138,8 @@ overall_pick,round,manager,team,player,club,position,auto_pick
 137,14,Drake Byrd,Bruno’s Balebas,Robin Roefs,SUN,GKP,True
 138,14,Dylan Reid,Joao Bonito,Jan Paul van Hecke,TOT,DEF,True
 139,14,Ryan Donlan,***NoHaalandNoParty,Taiwo Awoniyi,COV,FWD,True
-140,14,Justin Miller,Sue-nited FC*,Richarlison de Andrade,TOT,FWD,True
-141,15,Justin Miller,Sue-nited FC*,Mitoma Kaoru,BHA,MID,True
+140,14,Justin Miller,Sue-nited FC**,Richarlison de Andrade,TOT,FWD,True
+141,15,Justin Miller,Sue-nited FC**,Mitoma Kaoru,BHA,MID,True
 142,15,Ryan Donlan,***NoHaalandNoParty,Dominic Calvert-Lewin,LEE,FWD,True
 143,15,Dylan Reid,Joao Bonito,Maxence Lacroix,CHE,DEF,True
 144,15,Drake Byrd,Bruno’s Balebas,Karl Darlow,MUN,GKP,True

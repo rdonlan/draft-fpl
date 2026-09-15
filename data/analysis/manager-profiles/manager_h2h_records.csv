@@ -1,5 +1,5 @@
 manager,opponent,record,wins,draws,losses,h2h_points,games,points_for,points_against,pf_per_gw,pa_per_gw,margin_per_gw
-Alexander Chaban,Dylan Reid,7-0-2,7,0,2,21,9,413,299,45.89,33.22,12.67
+Alexander Chaban,Dylan Reid,8-0-2,8,0,2,24,10,475,334,47.5,33.4,14.1
 Alexander Chaban,Drake Byrd,5-0-4,5,0,4,15,9,354,342,39.33,38.0,1.33
 Alexander Chaban,Levi Morant,3-0-7,3,0,7,9,10,379,411,37.9,41.1,-3.2
 Alexander Chaban,Luke Lockwood,3-0-6,3,0,6,9,9,344,392,38.22,43.56,-5.33
@@ -10,7 +10,7 @@ Alexander Chaban,Justin Miller,2-0-7,2,0,7,6,9,353,416,39.22,46.22,-7.0
 Alexander Chaban,Ryan Houseman,1-0-7,1,0,7,3,8,290,419,36.25,52.38,-16.12
 Drake Byrd,Dylan Reid,8-0-0,8,0,0,24,8,349,261,43.62,32.62,11.0
 Drake Byrd,Ethan Ellsworth,7-0-3,7,0,3,21,10,427,344,42.7,34.4,8.3
-Drake Byrd,Julius Long,5-0-3,5,0,3,15,8,390,358,48.75,44.75,4.0
+Drake Byrd,Julius Long,5-0-4,5,0,4,15,9,418,417,46.44,46.33,0.11
 Drake Byrd,Justin Miller,4-1-4,4,1,4,13,9,426,364,47.33,40.44,6.89
 Drake Byrd,Alexander Chaban,4-0-5,4,0,5,12,9,342,354,38.0,39.33,-1.33
 Drake Byrd,Levi Morant,3-0-5,3,0,5,9,8,307,339,38.38,42.38,-4.0
@@ -22,7 +22,7 @@ Dylan Reid,Levi Morant,6-0-4,6,0,4,18,10,408,375,40.8,37.5,3.3
 Dylan Reid,Julius Long,6-0-3,6,0,3,18,9,387,360,43.0,40.0,3.0
 Dylan Reid,Luke Lockwood,4-1-4,4,1,4,13,9,313,312,34.78,34.67,0.11
 Dylan Reid,Ryan Houseman,4-0-5,4,0,5,12,9,366,398,40.67,44.22,-3.56
-Dylan Reid,Alexander Chaban,2-0-7,2,0,7,6,9,299,413,33.22,45.89,-12.67
+Dylan Reid,Alexander Chaban,2-0-8,2,0,8,6,10,334,475,33.4,47.5,-14.1
 Dylan Reid,Ryan Donlan,1-1-7,1,1,7,4,9,314,402,34.89,44.67,-9.78
 Dylan Reid,Justin Miller,1-0-7,1,0,7,3,8,301,374,37.62,46.75,-9.12
 Dylan Reid,Drake Byrd,0-0-8,0,0,8,0,8,261,349,32.62,43.62,-11.0
@@ -31,15 +31,15 @@ Ethan Ellsworth,Julius Long,5-1-4,5,1,4,16,10,386,444,38.6,44.4,-5.8
 Ethan Ellsworth,Alexander Chaban,5-0-3,5,0,3,15,8,359,303,44.88,37.88,7.0
 Ethan Ellsworth,Luke Lockwood,3-1-5,3,1,5,10,9,337,377,37.44,41.89,-4.44
 Ethan Ellsworth,Ryan Donlan,3-0-7,3,0,7,9,10,363,395,36.3,39.5,-3.2
-Ethan Ellsworth,Justin Miller,3-0-5,3,0,5,9,8,318,350,39.75,43.75,-4.0
+Ethan Ellsworth,Justin Miller,3-0-6,3,0,6,9,9,365,405,40.56,45.0,-4.44
 Ethan Ellsworth,Drake Byrd,3-0-7,3,0,7,9,10,344,427,34.4,42.7,-8.3
 Ethan Ellsworth,Ryan Houseman,1-0-7,1,0,7,3,8,301,349,37.62,43.62,-6.0
 Ethan Ellsworth,Dylan Reid,0-0-8,0,0,8,0,8,269,337,33.62,42.12,-8.5
 Julius Long,Ryan Houseman,7-0-3,7,0,3,21,10,372,343,37.2,34.3,2.9
 Julius Long,Alexander Chaban,6-0-2,6,0,2,18,8,338,315,42.25,39.38,2.88
 Julius Long,Ethan Ellsworth,4-1-5,4,1,5,13,10,444,386,44.4,38.6,5.8
+Julius Long,Drake Byrd,4-0-5,4,0,5,12,9,417,418,46.33,46.44,-0.11
 Julius Long,Dylan Reid,3-0-6,3,0,6,9,9,360,387,40.0,43.0,-3.0
-Julius Long,Drake Byrd,3-0-5,3,0,5,9,8,358,390,44.75,48.75,-4.0
 Julius Long,Levi Morant,3-0-5,3,0,5,9,8,261,324,32.62,40.5,-7.88
 Julius Long,Luke Lockwood,2-1-6,2,1,6,7,9,289,378,32.11,42.0,-9.89
 Julius Long,Justin Miller,2-0-7,2,0,7,6,9,371,482,41.22,53.56,-12.33
@@ -49,7 +49,7 @@ Justin Miller,Julius Long,7-0-2,7,0,2,21,9,482,371,53.56,41.22,12.33
 Justin Miller,Luke Lockwood,7-0-2,7,0,2,21,9,451,360,50.11,40.0,10.11
 Justin Miller,Dylan Reid,7-0-1,7,0,1,21,8,374,301,46.75,37.62,9.12
 Justin Miller,Alexander Chaban,7-0-2,7,0,2,21,9,416,353,46.22,39.22,7.0
-Justin Miller,Ethan Ellsworth,5-0-3,5,0,3,15,8,350,318,43.75,39.75,4.0
+Justin Miller,Ethan Ellsworth,6-0-3,6,0,3,18,9,405,365,45.0,40.56,4.44
 Justin Miller,Levi Morant,5-0-4,5,0,4,15,9,352,364,39.11,40.44,-1.33
 Justin Miller,Drake Byrd,4-1-4,4,1,4,13,9,364,426,40.44,47.33,-6.89
 Justin Miller,Ryan Donlan,0-0-9,0,0,9,0,9,366,521,40.67,57.89,-17.22
@@ -59,8 +59,8 @@ Levi Morant,Drake Byrd,5-0-3,5,0,3,15,8,339,307,42.38,38.38,4.0
 Levi Morant,Justin Miller,4-0-5,4,0,5,12,9,364,352,40.44,39.11,1.33
 Levi Morant,Luke Lockwood,4-0-5,4,0,5,12,9,383,376,42.56,41.78,0.78
 Levi Morant,Dylan Reid,4-0-6,4,0,6,12,10,375,408,37.5,40.8,-3.3
-Levi Morant,Ryan Donlan,3-0-5,3,0,5,9,8,366,404,45.75,50.5,-4.75
 Levi Morant,Ryan Houseman,3-0-6,3,0,6,9,9,324,378,36.0,42.0,-6.0
+Levi Morant,Ryan Donlan,3-0-6,3,0,6,9,9,409,485,45.44,53.89,-8.44
 Levi Morant,Ethan Ellsworth,2-0-6,2,0,6,6,8,288,384,36.0,48.0,-12.0
 Luke Lockwood,Julius Long,6-1-2,6,1,2,19,9,378,289,42.0,32.11,9.89
 Luke Lockwood,Alexander Chaban,6-0-3,6,0,3,18,9,392,344,43.56,38.22,5.33
@@ -68,7 +68,7 @@ Luke Lockwood,Drake Byrd,5-1-2,5,1,2,16,8,374,300,46.75,37.5,9.25
 Luke Lockwood,Ethan Ellsworth,5-1-3,5,1,3,16,9,377,337,41.89,37.44,4.44
 Luke Lockwood,Levi Morant,5-0-4,5,0,4,15,9,376,383,41.78,42.56,-0.78
 Luke Lockwood,Dylan Reid,4-1-4,4,1,4,13,9,312,313,34.67,34.78,-0.11
-Luke Lockwood,Ryan Houseman,4-0-4,4,0,4,12,8,300,290,37.5,36.25,1.25
+Luke Lockwood,Ryan Houseman,4-0-5,4,0,5,12,9,327,345,36.33,38.33,-2.0
 Luke Lockwood,Ryan Donlan,3-0-6,3,0,6,9,9,342,406,38.0,45.11,-7.11
 Luke Lockwood,Justin Miller,2-0-7,2,0,7,6,9,360,451,40.0,50.11,-10.11
 Ryan Donlan,Justin Miller,9-0-0,9,0,0,27,9,521,366,57.89,40.67,17.22
@@ -77,15 +77,15 @@ Ryan Donlan,Julius Long,7-0-1,7,0,1,21,8,339,282,42.38,35.25,7.12
 Ryan Donlan,Ethan Ellsworth,7-0-3,7,0,3,21,10,395,363,39.5,36.3,3.2
 Ryan Donlan,Alexander Chaban,6-0-3,6,0,3,18,9,463,330,51.44,36.67,14.78
 Ryan Donlan,Drake Byrd,6-0-3,6,0,3,18,9,457,354,50.78,39.33,11.44
+Ryan Donlan,Levi Morant,6-0-3,6,0,3,18,9,485,409,53.89,45.44,8.44
 Ryan Donlan,Luke Lockwood,6-0-3,6,0,3,18,9,406,342,45.11,38.0,7.11
-Ryan Donlan,Levi Morant,5-0-3,5,0,3,15,8,404,366,50.5,45.75,4.75
 Ryan Donlan,Ryan Houseman,4-0-4,4,0,4,12,8,304,266,38.0,33.25,4.75
 Ryan Houseman,Alexander Chaban,7-0-1,7,0,1,21,8,419,290,52.38,36.25,16.12
 Ryan Houseman,Drake Byrd,7-0-3,7,0,3,21,10,454,394,45.4,39.4,6.0
 Ryan Houseman,Ethan Ellsworth,7-0-1,7,0,1,21,8,349,301,43.62,37.62,6.0
 Ryan Houseman,Levi Morant,6-0-3,6,0,3,18,9,378,324,42.0,36.0,6.0
 Ryan Houseman,Dylan Reid,5-0-4,5,0,4,15,9,398,366,44.22,40.67,3.56
-Ryan Houseman,Luke Lockwood,4-0-4,4,0,4,12,8,290,300,36.25,37.5,-1.25
+Ryan Houseman,Luke Lockwood,5-0-4,5,0,4,15,9,345,327,38.33,36.33,2.0
 Ryan Houseman,Ryan Donlan,4-0-4,4,0,4,12,8,266,304,33.25,38.0,-4.75
 Ryan Houseman,Julius Long,3-0-7,3,0,7,9,10,343,372,34.3,37.2,-2.9
 Ryan Houseman,Justin Miller,0-0-9,0,0,9,0,9,345,461,38.33,51.22,-12.89

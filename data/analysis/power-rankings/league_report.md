@@ -4,7 +4,7 @@ Tracks a simple Elo-style rating within each season. Every manager starts at 150
 
 ## Best Quick Hits
 
-- **Latest Season Power #1**: Drake Byrd (1535.2 in 2026-27).
+- **Latest Season Power #1**: Ryan Donlan (1545.6 in 2026-27).
 - **Highest Single-Season Peak**: Ryan Donlan reached 1645.6 after 2024-25 33.
 - **Most Weeks At #1 In A Season**: Ryan Donlan (26 weeks in 2024-25).
 
@@ -58,81 +58,82 @@ Use the tabs to switch between seasons. Each season has its own rating chart, fi
 <line class="tick-line" x1="64.0" y1="398" x2="64.0" y2="404" />
 <text class="axis-label" x="64.0" y="422" text-anchor="middle">Start</text>
 <line class="tick-line" x1="884.0" y1="398" x2="884.0" y2="404" />
-<text class="axis-label" x="884.0" y="422" text-anchor="middle">3</text>
+<text class="axis-label" x="884.0" y="422" text-anchor="middle">4</text>
 <text class="axis-caption" x="474.0" y="446" text-anchor="middle">Week</text>
 <text class="axis-caption" transform="translate(18 213.0) rotate(-90)" text-anchor="middle">Power rating</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,183.4 610.7,155.8 884.0,128.1" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="128.1" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
+<polyline class="rating-line" points="64.0,213.0 269.0,183.4 474.0,155.8 679.0,128.1 884.0,100.4" stroke="hsl(44 76% 38%)"><title>Ryan Donlan</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="100.4" r="3.5" fill="hsl(44 76% 38%)"><title>Ryan Donlan</title></circle>
 <line class="legend-swatch" x1="910" y1="44" x2="932" y2="44" stroke="hsl(44 76% 38%)" />
 <text class="legend-label" x="940" y="48">Ryan Donlan</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,242.6 610.7,270.2 884.0,240.6" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="240.6" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
+<polyline class="rating-line" points="64.0,213.0 269.0,242.6 474.0,270.2 679.0,240.6 884.0,211.0" stroke="hsl(352 76% 38%)"><title>Justin Miller</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="211.0" r="3.5" fill="hsl(352 76% 38%)"><title>Justin Miller</title></circle>
 <line class="legend-swatch" x1="910" y1="72" x2="932" y2="72" stroke="hsl(352 76% 38%)" />
 <text class="legend-label" x="940" y="76">Justin Miller</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,183.4 610.7,153.8 884.0,183.5" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="183.5" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
+<polyline class="rating-line" points="64.0,213.0 269.0,183.4 474.0,153.8 679.0,183.5 884.0,156.0" stroke="hsl(12 76% 38%)"><title>Ryan Houseman</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="156.0" r="3.5" fill="hsl(12 76% 38%)"><title>Ryan Houseman</title></circle>
 <line class="legend-swatch" x1="910" y1="100" x2="932" y2="100" stroke="hsl(12 76% 38%)" />
 <text class="legend-label" x="940" y="104">Ryan Houseman</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,183.4 610.7,215.0 884.0,246.5" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="246.5" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
+<polyline class="rating-line" points="64.0,213.0 269.0,183.4 474.0,215.0 679.0,246.5 884.0,274.0" stroke="hsl(266 76% 38%)"><title>Luke Lockwood</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="274.0" r="3.5" fill="hsl(266 76% 38%)"><title>Luke Lockwood</title></circle>
 <line class="legend-swatch" x1="910" y1="128" x2="932" y2="128" stroke="hsl(266 76% 38%)" />
 <text class="legend-label" x="940" y="132">Luke Lockwood</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,183.4 610.7,155.8 884.0,126.2" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="126.2" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
+<polyline class="rating-line" points="64.0,213.0 269.0,183.4 474.0,155.8 679.0,126.2 884.0,161.7" stroke="hsl(154 76% 38%)"><title>Drake Byrd</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="161.7" r="3.5" fill="hsl(154 76% 38%)"><title>Drake Byrd</title></circle>
 <line class="legend-swatch" x1="910" y1="156" x2="932" y2="156" stroke="hsl(154 76% 38%)" />
 <text class="legend-label" x="940" y="160">Drake Byrd</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,183.4 610.7,213.0 884.0,183.4" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="183.4" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
+<polyline class="rating-line" points="64.0,213.0 269.0,183.4 474.0,213.0 679.0,183.4 884.0,211.1" stroke="hsl(118 76% 38%)"><title>Levi Morant</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="211.1" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
 <line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
 <text class="legend-label" x="940" y="188">Levi Morant</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,242.6 610.7,213.0 884.0,242.6" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="242.6" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
-<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(292 76% 38%)" />
-<text class="legend-label" x="940" y="216">Dylan Reid</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,242.6 610.7,272.2 884.0,301.7" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="301.7" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
-<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(224 76% 38%)" />
-<text class="legend-label" x="940" y="244">Julius Long</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,242.6 610.7,211.0 884.0,238.7" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="238.7" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
-<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
-<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
-<polyline class="rating-line" points="64.0,213.0 337.3,242.6 610.7,270.2 884.0,238.7" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="238.7" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
-<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
-<text class="legend-label" x="940" y="300">Alexander Chaban</text>
-<rect class="rating-hover-zone" x="200.7" y="28" width="273.3" height="370" data-tooltip="Week 1&#10;1. Drake Byrd: 1512.0&#10;2. Levi Morant: 1512.0&#10;3. Luke Lockwood: 1512.0&#10;4. Ryan Donlan: 1512.0&#10;5. Ryan Houseman: 1512.0&#10;6. Alexander Chaban: 1488.0&#10;7. Dylan Reid: 1488.0&#10;8. Ethan Ellsworth: 1488.0&#10;9. Julius Long: 1488.0&#10;10. Justin Miller: 1488.0" data-week="1" />
-<rect class="rating-hover-zone" x="474.0" y="28" width="273.3" height="370" data-tooltip="Week 2&#10;1. Ryan Houseman: 1524.0&#10;2. Drake Byrd: 1523.2&#10;3. Ryan Donlan: 1523.2&#10;4. Ethan Ellsworth: 1500.8&#10;5. Dylan Reid: 1500.0&#10;6. Levi Morant: 1500.0&#10;7. Luke Lockwood: 1499.2&#10;8. Alexander Chaban: 1476.8&#10;9. Justin Miller: 1476.8&#10;10. Julius Long: 1476.0" data-week="2" />
-<rect class="rating-hover-zone" x="747.3" y="28" width="136.7" height="370" data-tooltip="Week 3&#10;1. Drake Byrd: 1535.2&#10;2. Ryan Donlan: 1534.4&#10;3. Levi Morant: 1512.0&#10;4. Ryan Houseman: 1512.0&#10;5. Alexander Chaban: 1489.6&#10;6. Ethan Ellsworth: 1489.6&#10;7. Justin Miller: 1488.8&#10;8. Dylan Reid: 1488.0&#10;9. Luke Lockwood: 1486.4&#10;10. Julius Long: 1464.0" data-week="3" />
+<polyline class="rating-line" points="64.0,213.0 269.0,242.6 474.0,272.2 679.0,301.7 884.0,266.2" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="266.2" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
+<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
+<text class="legend-label" x="940" y="216">Julius Long</text>
+<polyline class="rating-line" points="64.0,213.0 269.0,242.6 474.0,213.0 679.0,242.6 884.0,272.1" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="272.1" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
+<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
+<text class="legend-label" x="940" y="244">Dylan Reid</text>
+<polyline class="rating-line" points="64.0,213.0 269.0,242.6 474.0,270.2 679.0,238.7 884.0,209.2" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="209.2" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
+<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(28 76% 38%)" />
+<text class="legend-label" x="940" y="272">Alexander Chaban</text>
+<polyline class="rating-line" points="64.0,213.0 269.0,242.6 474.0,211.0 679.0,238.7 884.0,268.3" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="268.3" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
+<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(78 76% 38%)" />
+<text class="legend-label" x="940" y="300">Ethan Ellsworth</text>
+<rect class="rating-hover-zone" x="166.5" y="28" width="205.0" height="370" data-tooltip="Week 1&#10;1. Drake Byrd: 1512.0&#10;2. Levi Morant: 1512.0&#10;3. Luke Lockwood: 1512.0&#10;4. Ryan Donlan: 1512.0&#10;5. Ryan Houseman: 1512.0&#10;6. Alexander Chaban: 1488.0&#10;7. Dylan Reid: 1488.0&#10;8. Ethan Ellsworth: 1488.0&#10;9. Julius Long: 1488.0&#10;10. Justin Miller: 1488.0" data-week="1" />
+<rect class="rating-hover-zone" x="371.5" y="28" width="205.0" height="370" data-tooltip="Week 2&#10;1. Ryan Houseman: 1524.0&#10;2. Drake Byrd: 1523.2&#10;3. Ryan Donlan: 1523.2&#10;4. Ethan Ellsworth: 1500.8&#10;5. Dylan Reid: 1500.0&#10;6. Levi Morant: 1500.0&#10;7. Luke Lockwood: 1499.2&#10;8. Alexander Chaban: 1476.8&#10;9. Justin Miller: 1476.8&#10;10. Julius Long: 1476.0" data-week="2" />
+<rect class="rating-hover-zone" x="576.5" y="28" width="205.0" height="370" data-tooltip="Week 3&#10;1. Drake Byrd: 1535.2&#10;2. Ryan Donlan: 1534.4&#10;3. Levi Morant: 1512.0&#10;4. Ryan Houseman: 1512.0&#10;5. Alexander Chaban: 1489.6&#10;6. Ethan Ellsworth: 1489.6&#10;7. Justin Miller: 1488.8&#10;8. Dylan Reid: 1488.0&#10;9. Luke Lockwood: 1486.4&#10;10. Julius Long: 1464.0" data-week="3" />
+<rect class="rating-hover-zone" x="781.5" y="28" width="102.5" height="370" data-tooltip="Week 4&#10;1. Ryan Donlan: 1545.6&#10;2. Ryan Houseman: 1523.1&#10;3. Drake Byrd: 1520.8&#10;4. Alexander Chaban: 1501.5&#10;5. Justin Miller: 1500.8&#10;6. Levi Morant: 1500.8&#10;7. Julius Long: 1478.5&#10;8. Ethan Ellsworth: 1477.6&#10;9. Dylan Reid: 1476.1&#10;10. Luke Lockwood: 1475.3" data-week="4" />
 </svg>
 </div>
 ### 2026-27 Power Rankings
 | Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | Drake Byrd | 1535.2 | +35.2 | 1535.2 | 3 | 1512.0 | 1 | 1.33 | 2 | 3 | 0 |
-| 2 | Ryan Donlan | 1534.4 | +34.4 | 1534.4 | 3 | 1512.0 | 1 | 3.00 | 0 | 2 | 0 |
-| 3 | Levi Morant | 1512.0 | +12.0 | 1512.0 | 1 | 1500.0 | 2 | 3.67 | 0 | 2 | 0 |
-| 4 | Ryan Houseman | 1512.0 | +12.0 | 1524.0 | 2 | 1512.0 | 3 | 3.33 | 1 | 1 | 0 |
-| 5 | Alexander Chaban | 1489.6 | -10.4 | 1489.6 | 3 | 1476.8 | 2 | 6.33 | 0 | 0 | 1 |
-| 6 | Ethan Ellsworth | 1489.6 | -10.4 | 1500.8 | 2 | 1488.0 | 1 | 6.00 | 0 | 0 | 1 |
-| 7 | Justin Miller | 1488.8 | -11.2 | 1488.8 | 3 | 1476.8 | 2 | 8.67 | 0 | 0 | 2 |
-| 8 | Dylan Reid | 1488.0 | -12.0 | 1500.0 | 2 | 1488.0 | 1 | 6.67 | 0 | 0 | 1 |
-| 9 | Luke Lockwood | 1486.4 | -13.6 | 1512.0 | 1 | 1486.4 | 3 | 6.33 | 0 | 1 | 1 |
-| 10 | Julius Long | 1464.0 | -36.0 | 1488.0 | 1 | 1464.0 | 3 | 9.67 | 0 | 0 | 3 |
+| 1 | Ryan Donlan | 1545.6 | +45.6 | 1545.6 | 4 | 1512.0 | 1 | 2.50 | 1 | 3 | 0 |
+| 2 | Ryan Houseman | 1523.1 | +23.1 | 1524.0 | 2 | 1512.0 | 3 | 3.00 | 1 | 2 | 0 |
+| 3 | Drake Byrd | 1520.8 | +20.8 | 1535.2 | 3 | 1512.0 | 1 | 1.75 | 2 | 4 | 0 |
+| 4 | Alexander Chaban | 1501.5 | +1.5 | 1501.5 | 4 | 1476.8 | 2 | 5.75 | 0 | 0 | 1 |
+| 5 | Justin Miller | 1500.8 | +0.8 | 1500.8 | 4 | 1476.8 | 2 | 7.75 | 0 | 0 | 2 |
+| 6 | Levi Morant | 1500.8 | +0.8 | 1512.0 | 1 | 1500.0 | 2 | 4.25 | 0 | 2 | 0 |
+| 7 | Julius Long | 1478.5 | -21.6 | 1488.0 | 1 | 1464.0 | 3 | 9.00 | 0 | 0 | 3 |
+| 8 | Ethan Ellsworth | 1477.6 | -22.4 | 1500.8 | 2 | 1477.6 | 4 | 6.50 | 0 | 0 | 2 |
+| 9 | Dylan Reid | 1476.1 | -23.9 | 1500.0 | 2 | 1476.1 | 4 | 7.25 | 0 | 0 | 2 |
+| 10 | Luke Lockwood | 1475.3 | -24.7 | 1512.0 | 1 | 1475.3 | 4 | 7.25 | 0 | 1 | 2 |
 
 ### 2026-27 Time At The Top And Bottom
 | Manager | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Avg Rank | Final Rank |
 |---|---:|---:|---:|---:|---:|
-| Drake Byrd | 2 | 3 | 0 | 1.33 | 1 |
-| Ryan Houseman | 1 | 1 | 0 | 3.33 | 4 |
-| Ryan Donlan | 0 | 2 | 0 | 3.00 | 2 |
-| Levi Morant | 0 | 2 | 0 | 3.67 | 3 |
-| Luke Lockwood | 0 | 1 | 1 | 6.33 | 9 |
-| Ethan Ellsworth | 0 | 0 | 1 | 6.00 | 6 |
-| Alexander Chaban | 0 | 0 | 1 | 6.33 | 5 |
-| Dylan Reid | 0 | 0 | 1 | 6.67 | 8 |
-| Justin Miller | 0 | 0 | 2 | 8.67 | 7 |
-| Julius Long | 0 | 0 | 3 | 9.67 | 10 |
+| Drake Byrd | 2 | 4 | 0 | 1.75 | 3 |
+| Ryan Donlan | 1 | 3 | 0 | 2.50 | 1 |
+| Ryan Houseman | 1 | 2 | 0 | 3.00 | 2 |
+| Levi Morant | 0 | 2 | 0 | 4.25 | 6 |
+| Luke Lockwood | 0 | 1 | 2 | 7.25 | 10 |
+| Alexander Chaban | 0 | 0 | 1 | 5.75 | 4 |
+| Ethan Ellsworth | 0 | 0 | 2 | 6.50 | 8 |
+| Dylan Reid | 0 | 0 | 2 | 7.25 | 9 |
+| Justin Miller | 0 | 0 | 2 | 7.75 | 5 |
+| Julius Long | 0 | 0 | 3 | 9.00 | 7 |
 
 ### 2026-27 Biggest Upsets
 
@@ -140,9 +141,11 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 
 | Week | Underdog Winner | Favorite | Rating Gap | Underdog Rating | Favorite Rating | Score |
 |---|---:|---:|---:|---:|---:|---:|
+| 4 | Julius Long | Drake Byrd | 71.2 | 1464.0 | 1535.2 | 59-28 |
 | 2 | Ethan Ellsworth | Luke Lockwood | 24.0 | 1488.0 | 1512.0 | 47-44 |
 | 3 | Alexander Chaban | Luke Lockwood | 22.3 | 1476.8 | 1499.2 | 52-31 |
 | 3 | Drake Byrd | Ryan Houseman | 0.8 | 1523.2 | 1524.0 | 39-34 |
+| 4 | Justin Miller | Ethan Ellsworth | 0.8 | 1488.8 | 1489.6 | 55-47 |
 
 </section>
 <section class="power-tab-panel" id="power-panel-2025-26" role="tabpanel" aria-labelledby="power-season-2025-26-label">
@@ -224,22 +227,22 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 <circle class="rating-endpoint" cx="884.0" cy="259.3" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
 <line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
 <text class="legend-label" x="940" y="188">Levi Morant</text>
-<polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,200.9 128.7,214.5 150.3,228.2 171.9,213.6 193.5,200.8 215.1,214.5 236.6,201.8 258.2,218.0 279.8,232.4 301.4,219.2 322.9,233.7 344.5,217.3 366.1,205.4 387.7,192.5 409.3,205.5 430.8,194.9 452.4,209.9 474.0,223.1 495.6,210.3 517.2,225.4 538.7,210.2 560.3,198.9 581.9,214.7 603.5,229.6 625.1,217.2 646.6,202.9 668.2,215.6 689.8,203.1 711.4,190.8 732.9,205.0 754.5,195.7 776.1,183.0 797.7,198.3 819.3,216.2 840.8,227.5 862.4,236.4 884.0,251.4" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="251.4" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
-<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(292 76% 38%)" />
-<text class="legend-label" x="940" y="216">Dylan Reid</text>
 <polyline class="rating-line" points="64.0,227.2 85.6,240.9 107.2,227.2 128.7,240.9 150.3,255.4 171.9,241.6 193.5,227.8 215.1,240.7 236.6,253.4 258.2,267.3 279.8,252.8 301.4,237.2 322.9,249.4 344.5,262.1 366.1,275.6 387.7,288.1 409.3,297.1 430.8,307.7 452.4,291.8 474.0,276.9 495.6,261.9 517.2,246.9 538.7,257.6 560.3,272.2 581.9,282.8 603.5,266.2 625.1,278.6 646.6,262.3 668.2,263.9 689.8,276.0 711.4,288.1 732.9,297.0 754.5,309.3 776.1,317.8 797.7,326.5 819.3,308.6 840.8,295.2 862.4,309.2 884.0,319.4" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
 <circle class="rating-endpoint" cx="884.0" cy="319.4" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
-<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(224 76% 38%)" />
-<text class="legend-label" x="940" y="244">Julius Long</text>
-<polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,200.9 128.7,188.1 150.3,202.6 171.9,217.2 193.5,232.4 215.1,218.8 236.6,231.5 258.2,244.8 279.8,259.3 301.4,271.7 322.9,284.9 344.5,267.8 366.1,279.7 387.7,264.8 409.3,277.6 430.8,273.0 452.4,258.1 474.0,272.9 495.6,283.6 517.2,266.7 538.7,279.4 560.3,290.7 581.9,276.3 603.5,287.2 625.1,298.4 646.6,309.2 668.2,307.6 689.8,316.5 711.4,325.8 732.9,335.9 754.5,345.2 776.1,328.1 797.7,313.2 819.3,294.4 840.8,306.0 862.4,292.0 884.0,298.8" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="298.8" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
-<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
-<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
+<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
+<text class="legend-label" x="940" y="216">Julius Long</text>
+<polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,200.9 128.7,214.5 150.3,228.2 171.9,213.6 193.5,200.8 215.1,214.5 236.6,201.8 258.2,218.0 279.8,232.4 301.4,219.2 322.9,233.7 344.5,217.3 366.1,205.4 387.7,192.5 409.3,205.5 430.8,194.9 452.4,209.9 474.0,223.1 495.6,210.3 517.2,225.4 538.7,210.2 560.3,198.9 581.9,214.7 603.5,229.6 625.1,217.2 646.6,202.9 668.2,215.6 689.8,203.1 711.4,190.8 732.9,205.0 754.5,195.7 776.1,183.0 797.7,198.3 819.3,216.2 840.8,227.5 862.4,236.4 884.0,251.4" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="251.4" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
+<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
+<text class="legend-label" x="940" y="244">Dylan Reid</text>
 <polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,199.9 128.7,186.3 150.3,202.7 171.9,218.1 193.5,231.7 215.1,245.4 236.6,258.7 258.2,244.9 279.8,259.2 301.4,242.7 322.9,228.2 344.5,243.4 366.1,228.6 387.7,239.9 409.3,227.1 430.8,241.6 452.4,257.5 474.0,269.8 495.6,254.0 517.2,238.8 538.7,226.3 560.3,210.0 581.9,195.4 603.5,184.5 625.1,199.8 646.6,216.1 668.2,229.7 689.8,243.9 711.4,256.2 732.9,270.4 754.5,279.5 776.1,289.7 797.7,304.7 819.3,316.3 840.8,329.7 862.4,337.1 884.0,346.8" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
 <circle class="rating-endpoint" cx="884.0" cy="346.8" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
-<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
-<text class="legend-label" x="940" y="300">Alexander Chaban</text>
+<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(28 76% 38%)" />
+<text class="legend-label" x="940" y="272">Alexander Chaban</text>
+<polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,200.9 128.7,188.1 150.3,202.6 171.9,217.2 193.5,232.4 215.1,218.8 236.6,231.5 258.2,244.8 279.8,259.3 301.4,271.7 322.9,284.9 344.5,267.8 366.1,279.7 387.7,264.8 409.3,277.6 430.8,273.0 452.4,258.1 474.0,272.9 495.6,283.6 517.2,266.7 538.7,279.4 560.3,290.7 581.9,276.3 603.5,287.2 625.1,298.4 646.6,309.2 668.2,307.6 689.8,316.5 711.4,325.8 732.9,335.9 754.5,345.2 776.1,328.1 797.7,313.2 819.3,294.4 840.8,306.0 862.4,292.0 884.0,298.8" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="298.8" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
+<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(78 76% 38%)" />
+<text class="legend-label" x="940" y="300">Ethan Ellsworth</text>
 <rect class="rating-hover-zone" x="74.8" y="28" width="21.6" height="370" data-tooltip="Week 1&#10;1. Alexander Chaban: 1512.0&#10;2. Drake Byrd: 1512.0&#10;3. Dylan Reid: 1512.0&#10;4. Ethan Ellsworth: 1512.0&#10;5. Luke Lockwood: 1512.0&#10;6. Julius Long: 1488.0&#10;7. Justin Miller: 1488.0&#10;8. Levi Morant: 1488.0&#10;9. Ryan Donlan: 1488.0&#10;10. Ryan Houseman: 1488.0" data-week="1" />
 <rect class="rating-hover-zone" x="96.4" y="28" width="21.6" height="370" data-tooltip="Week 2&#10;1. Alexander Chaban: 1524.0&#10;2. Dylan Reid: 1523.2&#10;3. Ethan Ellsworth: 1523.2&#10;4. Justin Miller: 1500.8&#10;5. Drake Byrd: 1500.0&#10;6. Julius Long: 1500.0&#10;7. Luke Lockwood: 1499.2&#10;8. Levi Morant: 1476.8&#10;9. Ryan Donlan: 1476.8&#10;10. Ryan Houseman: 1476.0" data-week="2" />
 <rect class="rating-hover-zone" x="117.9" y="28" width="21.6" height="370" data-tooltip="Week 3&#10;1. Alexander Chaban: 1536.0&#10;2. Ethan Ellsworth: 1534.4&#10;3. Drake Byrd: 1512.0&#10;4. Dylan Reid: 1511.2&#10;5. Luke Lockwood: 1510.4&#10;6. Justin Miller: 1489.6&#10;7. Ryan Houseman: 1488.0&#10;8. Julius Long: 1488.0&#10;9. Ryan Donlan: 1465.6&#10;10. Levi Morant: 1464.8" data-week="3" />
@@ -415,22 +418,22 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 <circle class="rating-endpoint" cx="884.0" cy="212.3" r="3.5" fill="hsl(118 76% 38%)"><title>Levi Morant</title></circle>
 <line class="legend-swatch" x1="910" y1="184" x2="932" y2="184" stroke="hsl(118 76% 38%)" />
 <text class="legend-label" x="940" y="188">Levi Morant</text>
-<polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,228.2 128.7,240.9 150.3,252.7 171.9,239.0 193.5,225.3 215.1,237.4 236.6,251.6 258.2,264.8 279.8,250.0 301.4,237.1 322.9,222.3 344.5,220.3 366.1,206.8 387.7,221.1 409.3,206.0 430.8,221.5 452.4,234.6 474.0,236.5 495.6,252.1 517.2,239.1 538.7,248.6 560.3,234.5 581.9,246.8 603.5,260.7 625.1,274.5 646.6,284.1 668.2,296.8 689.8,311.0 711.4,324.1 732.9,330.4 754.5,314.6 776.1,325.0 797.7,308.8 819.3,320.9 840.8,327.3 862.4,336.6 884.0,348.9" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="348.9" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
-<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(292 76% 38%)" />
-<text class="legend-label" x="940" y="216">Dylan Reid</text>
 <polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,200.9 128.7,214.5 150.3,201.3 171.9,189.5 193.5,177.1 215.1,165.1 236.6,182.0 258.2,167.5 279.8,185.1 301.4,172.8 322.9,186.6 344.5,175.5 366.1,165.4 387.7,180.8 409.3,195.8 430.8,185.4 452.4,201.7 474.0,216.6 495.6,230.0 517.2,211.8 538.7,226.2 560.3,242.4 581.9,254.0 603.5,240.1 625.1,241.2 646.6,229.2 668.2,243.3 689.8,227.5 711.4,236.8 732.9,251.5 754.5,239.3 776.1,248.8 797.7,265.1 819.3,276.1 840.8,289.1 862.4,275.7 884.0,258.8" stroke="hsl(224 76% 38%)"><title>Julius Long</title></polyline>
 <circle class="rating-endpoint" cx="884.0" cy="258.8" r="3.5" fill="hsl(224 76% 38%)"><title>Julius Long</title></circle>
-<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(224 76% 38%)" />
-<text class="legend-label" x="940" y="244">Julius Long</text>
-<polyline class="rating-line" points="64.0,227.2 85.6,240.9 107.2,254.6 128.7,239.9 150.3,253.1 171.9,266.8 193.5,281.3 215.1,293.9 236.6,275.2 258.2,285.7 279.8,268.1 301.4,253.3 322.9,240.7 344.5,225.2 366.1,238.7 387.7,226.0 409.3,239.2 430.8,225.9 452.4,236.0 474.0,221.1 495.6,236.3 517.2,224.1 538.7,236.4 560.3,250.5 581.9,264.9 603.5,275.8 625.1,262.1 646.6,242.2 668.2,228.0 689.8,243.2 711.4,258.7 732.9,267.5 754.5,283.3 776.1,293.8 797.7,304.5 819.3,316.9 840.8,296.5 862.4,309.9 884.0,294.0" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
-<circle class="rating-endpoint" cx="884.0" cy="294.0" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
-<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(78 76% 38%)" />
-<text class="legend-label" x="940" y="272">Ethan Ellsworth</text>
+<line class="legend-swatch" x1="910" y1="212" x2="932" y2="212" stroke="hsl(224 76% 38%)" />
+<text class="legend-label" x="940" y="216">Julius Long</text>
+<polyline class="rating-line" points="64.0,227.2 85.6,213.6 107.2,228.2 128.7,240.9 150.3,252.7 171.9,239.0 193.5,225.3 215.1,237.4 236.6,251.6 258.2,264.8 279.8,250.0 301.4,237.1 322.9,222.3 344.5,220.3 366.1,206.8 387.7,221.1 409.3,206.0 430.8,221.5 452.4,234.6 474.0,236.5 495.6,252.1 517.2,239.1 538.7,248.6 560.3,234.5 581.9,246.8 603.5,260.7 625.1,274.5 646.6,284.1 668.2,296.8 689.8,311.0 711.4,324.1 732.9,330.4 754.5,314.6 776.1,325.0 797.7,308.8 819.3,320.9 840.8,327.3 862.4,336.6 884.0,348.9" stroke="hsl(292 76% 38%)"><title>Dylan Reid</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="348.9" r="3.5" fill="hsl(292 76% 38%)"><title>Dylan Reid</title></circle>
+<line class="legend-swatch" x1="910" y1="240" x2="932" y2="240" stroke="hsl(292 76% 38%)" />
+<text class="legend-label" x="940" y="244">Dylan Reid</text>
 <polyline class="rating-line" points="64.0,227.2 85.6,240.9 107.2,226.3 128.7,240.9 150.3,254.6 171.9,266.4 193.5,251.4 215.1,262.5 236.6,275.9 258.2,288.4 279.8,270.9 301.4,283.9 322.9,296.5 344.5,280.3 366.1,290.4 387.7,304.0 409.3,312.3 430.8,294.5 452.4,308.5 474.0,292.7 495.6,277.1 517.2,289.3 538.7,299.5 560.3,283.4 581.9,268.0 603.5,275.8 625.1,285.6 646.6,298.7 668.2,312.4 689.8,298.2 711.4,282.7 732.9,294.0 754.5,306.2 776.1,318.3 797.7,296.8 819.3,304.1 840.8,286.2 862.4,298.4 884.0,286.0" stroke="hsl(28 76% 38%)"><title>Alexander Chaban</title></polyline>
 <circle class="rating-endpoint" cx="884.0" cy="286.0" r="3.5" fill="hsl(28 76% 38%)"><title>Alexander Chaban</title></circle>
-<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(28 76% 38%)" />
-<text class="legend-label" x="940" y="300">Alexander Chaban</text>
+<line class="legend-swatch" x1="910" y1="268" x2="932" y2="268" stroke="hsl(28 76% 38%)" />
+<text class="legend-label" x="940" y="272">Alexander Chaban</text>
+<polyline class="rating-line" points="64.0,227.2 85.6,240.9 107.2,254.6 128.7,239.9 150.3,253.1 171.9,266.8 193.5,281.3 215.1,293.9 236.6,275.2 258.2,285.7 279.8,268.1 301.4,253.3 322.9,240.7 344.5,225.2 366.1,238.7 387.7,226.0 409.3,239.2 430.8,225.9 452.4,236.0 474.0,221.1 495.6,236.3 517.2,224.1 538.7,236.4 560.3,250.5 581.9,264.9 603.5,275.8 625.1,262.1 646.6,242.2 668.2,228.0 689.8,243.2 711.4,258.7 732.9,267.5 754.5,283.3 776.1,293.8 797.7,304.5 819.3,316.9 840.8,296.5 862.4,309.9 884.0,294.0" stroke="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></polyline>
+<circle class="rating-endpoint" cx="884.0" cy="294.0" r="3.5" fill="hsl(78 76% 38%)"><title>Ethan Ellsworth</title></circle>
+<line class="legend-swatch" x1="910" y1="296" x2="932" y2="296" stroke="hsl(78 76% 38%)" />
+<text class="legend-label" x="940" y="300">Ethan Ellsworth</text>
 <rect class="rating-hover-zone" x="74.8" y="28" width="21.6" height="370" data-tooltip="Week 1&#10;1. Dylan Reid: 1512.0&#10;2. Julius Long: 1512.0&#10;3. Justin Miller: 1512.0&#10;4. Levi Morant: 1512.0&#10;5. Ryan Donlan: 1512.0&#10;6. Alexander Chaban: 1488.0&#10;7. Drake Byrd: 1488.0&#10;8. Ethan Ellsworth: 1488.0&#10;9. Luke Lockwood: 1488.0&#10;10. Ryan Houseman: 1488.0" data-week="1" />
 <rect class="rating-hover-zone" x="96.4" y="28" width="21.6" height="370" data-tooltip="Week 2&#10;1. Levi Morant: 1524.0&#10;2. Julius Long: 1523.2&#10;3. Ryan Donlan: 1523.2&#10;4. Alexander Chaban: 1500.8&#10;5. Drake Byrd: 1500.0&#10;6. Justin Miller: 1500.0&#10;7. Dylan Reid: 1499.2&#10;8. Luke Lockwood: 1476.8&#10;9. Ryan Houseman: 1476.8&#10;10. Ethan Ellsworth: 1476.0" data-week="2" />
 <rect class="rating-hover-zone" x="117.9" y="28" width="21.6" height="370" data-tooltip="Week 3&#10;1. Ryan Donlan: 1535.2&#10;2. Levi Morant: 1535.1&#10;3. Julius Long: 1511.2&#10;4. Drake Byrd: 1500.0&#10;5. Justin Miller: 1500.0&#10;6. Ethan Ellsworth: 1488.9&#10;7. Ryan Houseman: 1488.8&#10;8. Dylan Reid: 1488.0&#10;9. Alexander Chaban: 1488.0&#10;10. Luke Lockwood: 1464.8" data-week="3" />
