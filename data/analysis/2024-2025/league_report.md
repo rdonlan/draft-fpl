@@ -380,35 +380,6 @@ Source: the Draft sheet in 2024-25 Season.xlsx, with names normalized against th
 </section>
 
 </details>
-<details open>
-<summary><h2>Data Source and Limits</h2></summary>
-
-This page uses FantasyFooty's static 2024-2025 archive, which contains league `45384` and confirms Ryan Donlan, Luke Lockwood, Dylan Reid, Levi Morant, Ryan Houseman, Ethan Ellsworth, Drake Byrd, Julius Long, Justin Miller, and Alexander Chaban.
-
-<details class="notes">
-<summary>What the archive includes</summary>
-
-- Weekly cumulative team scoring and final H2H records.
-- Weekly standings progression.
-- Aggregate head-to-head records by opponent.
-- An inferred weekly fixture schedule, reconstructed from the 5-match opponent pairs, standings progression, weekly scores, and final H2H matrix.
-- Position, player, club, action-category, and transfer-summary tables.
-- It does not include raw lineups, starters, bench slots, transactions, or dropped-player details.
-
-</details>
-
-| Field | Value |
-|---|---|
-| Archive URL | https://fantasyfooty.xyz/fantasy-footy-2024-2025-archive.json |
-| Archive leagues | 422 |
-| Archive total records | 258275 |
-| League records | 790 |
-| League files processed | 11 |
-| Missing files | None |
-| Inferred fixture schedule | Unique solution |
-| Schedule validation errors | 0 |
-
-</details>
 <details>
 <summary><h2>Winning And Losing Streaks</h2></summary>
 
@@ -515,58 +486,6 @@ Use this table to see who gained or lost league-table points from the weekly opp
 | Levi Morant | 57 | 61.3 | -4.3 | 1586 |
 | Ethan Ellsworth | 45 | 50.4 | -5.4 | 1570 |
 | Alexander Chaban | 42 | 53.4 | -11.4 | 1585 |
-
-</details>
-<details>
-<summary><h2>Weekly Scoring And Boom/Bust</h2></summary>
-
-Use this table to see which managers were steady, volatile, explosive, or prone to weekly floor games.
-
-<details class="notes">
-<summary>Definitions and calculation notes</summary>
-
-- **Boom/bust** is measured with the standard deviation of weekly scores. Higher stdev means a wider spread between explosive weeks and quiet weeks.
-- **Stdev**: standard deviation of weekly points.
-- **Best** and **Worst**: highest and lowest weekly scores.
-- **Top Scores**: number of weeks where the manager led the league in points.
-- **Bottom Scores**: number of weeks where the manager had the league's lowest score.
-
-</details>
-
-| Manager | Avg | Median | Stdev | Best | Worst | Top Scores | Bottom Scores |
-|---|---|---|---|---|---|---|---|
-| Ryan Houseman | 38.9 | 36.5 | 13.7 | 81 | 22 | 2 | 5 |
-| Ryan Donlan | 46.2 | 45.0 | 13.5 | 83 | 19 | 5 | 2 |
-| Alexander Chaban | 39.3 | 39.5 | 12.5 | 69 | 17 | 4 | 8 |
-| Justin Miller | 47.4 | 46.5 | 12.3 | 80 | 24 | 11 | 2 |
-| Levi Morant | 41.0 | 39.0 | 12.0 | 75 | 23 | 6 | 4 |
-| Luke Lockwood | 40.4 | 38.0 | 11.7 | 76 | 22 | 2 | 5 |
-| Ethan Ellsworth | 38.2 | 38.5 | 11.6 | 76 | 13 | 3 | 7 |
-| Julius Long | 40.3 | 39.5 | 10.3 | 73 | 24 | 5 | 1 |
-| Drake Byrd | 38.6 | 36.5 | 10.2 | 69 | 18 | 3 | 1 |
-| Dylan Reid | 34.3 | 34.0 | 8.7 | 53 | 20 | 1 | 5 |
-
-### Biggest Single-Week Scores
-
-Use this table to find the league's biggest weekly spikes.
-
-| GW | Manager | Score | Weekly Rank | Above League Avg |
-|---|---|---|---|---|
-| 24 | Ryan Donlan | 83 | 1.0 | 33.8 |
-| 22 | Ryan Houseman | 81 | 1.0 | 37.9 |
-| 24 | Justin Miller | 80 | 2.0 | 30.8 |
-| 26 | Ethan Ellsworth | 76 | 1.0 | 31.9 |
-| 33 | Luke Lockwood | 76 | 1.0 | 26.3 |
-| 32 | Levi Morant | 75 | 1.0 | 28.7 |
-| 7 | Julius Long | 73 | 1.0 | 30.1 |
-| 27 | Justin Miller | 71 | 1.0 | 28.1 |
-| 24 | Ryan Houseman | 70 | 3.0 | 20.8 |
-| 2 | Alexander Chaban | 69 | 1.0 | 25.2 |
-| 13 | Levi Morant | 69 | 1.0 | 23.6 |
-| 29 | Drake Byrd | 69 | 1.0 | 36.8 |
-| 2 | Ryan Donlan | 66 | 2.0 | 22.2 |
-| 4 | Levi Morant | 66 | 1.0 | 26.6 |
-| 10 | Alexander Chaban | 66 | 1.0 | 30.2 |
 
 </details>
 <details>
@@ -761,7 +680,59 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 
 </details>
 <details>
-<summary><h2>Position Scoring</h2></summary>
+<summary><h2>Weekly Scoring And Boom/Bust</h2></summary>
+
+Use this table to see which managers were steady, volatile, explosive, or prone to weekly floor games.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- **Boom/bust** is measured with the standard deviation of weekly scores. Higher stdev means a wider spread between explosive weeks and quiet weeks.
+- **Stdev**: standard deviation of weekly points.
+- **Best** and **Worst**: highest and lowest weekly scores.
+- **Top Scores**: number of weeks where the manager led the league in points.
+- **Bottom Scores**: number of weeks where the manager had the league's lowest score.
+
+</details>
+
+| Manager | Avg | Median | Stdev | Best | Worst | Top Scores | Bottom Scores |
+|---|---|---|---|---|---|---|---|
+| Ryan Houseman | 38.9 | 36.5 | 13.7 | 81 | 22 | 2 | 5 |
+| Ryan Donlan | 46.2 | 45.0 | 13.5 | 83 | 19 | 5 | 2 |
+| Alexander Chaban | 39.3 | 39.5 | 12.5 | 69 | 17 | 4 | 8 |
+| Justin Miller | 47.4 | 46.5 | 12.3 | 80 | 24 | 11 | 2 |
+| Levi Morant | 41.0 | 39.0 | 12.0 | 75 | 23 | 6 | 4 |
+| Luke Lockwood | 40.4 | 38.0 | 11.7 | 76 | 22 | 2 | 5 |
+| Ethan Ellsworth | 38.2 | 38.5 | 11.6 | 76 | 13 | 3 | 7 |
+| Julius Long | 40.3 | 39.5 | 10.3 | 73 | 24 | 5 | 1 |
+| Drake Byrd | 38.6 | 36.5 | 10.2 | 69 | 18 | 3 | 1 |
+| Dylan Reid | 34.3 | 34.0 | 8.7 | 53 | 20 | 1 | 5 |
+
+### Biggest Single-Week Scores
+
+Use this table to find the league's biggest weekly spikes.
+
+| GW | Manager | Score | Weekly Rank | Above League Avg |
+|---|---|---|---|---|
+| 24 | Ryan Donlan | 83 | 1.0 | 33.8 |
+| 22 | Ryan Houseman | 81 | 1.0 | 37.9 |
+| 24 | Justin Miller | 80 | 2.0 | 30.8 |
+| 26 | Ethan Ellsworth | 76 | 1.0 | 31.9 |
+| 33 | Luke Lockwood | 76 | 1.0 | 26.3 |
+| 32 | Levi Morant | 75 | 1.0 | 28.7 |
+| 7 | Julius Long | 73 | 1.0 | 30.1 |
+| 27 | Justin Miller | 71 | 1.0 | 28.1 |
+| 24 | Ryan Houseman | 70 | 3.0 | 20.8 |
+| 2 | Alexander Chaban | 69 | 1.0 | 25.2 |
+| 13 | Levi Morant | 69 | 1.0 | 23.6 |
+| 29 | Drake Byrd | 69 | 1.0 | 36.8 |
+| 2 | Ryan Donlan | 66 | 2.0 | 22.2 |
+| 4 | Levi Morant | 66 | 1.0 | 26.6 |
+| 10 | Alexander Chaban | 66 | 1.0 | 30.2 |
+
+</details>
+<details>
+<summary><h2>Positional Scoring</h2></summary>
 
 FantasyFooty's archive has aggregate points by manager and position. The four position dropdowns mirror the cleaner 2025-2026 layout, while retaining the historical Points and Points/GW measures available from the archive.
 
@@ -836,6 +807,35 @@ FantasyFooty's archive has aggregate points by manager and position. The four po
 | Drake Byrd | 201 | 5.3 |
 
 </details>
+
+</details>
+<details open>
+<summary><h2>Data Source and Limits</h2></summary>
+
+This page uses FantasyFooty's static 2024-2025 archive, which contains league `45384` and confirms Ryan Donlan, Luke Lockwood, Dylan Reid, Levi Morant, Ryan Houseman, Ethan Ellsworth, Drake Byrd, Julius Long, Justin Miller, and Alexander Chaban.
+
+<details class="notes">
+<summary>What the archive includes</summary>
+
+- Weekly cumulative team scoring and final H2H records.
+- Weekly standings progression.
+- Aggregate head-to-head records by opponent.
+- An inferred weekly fixture schedule, reconstructed from the 5-match opponent pairs, standings progression, weekly scores, and final H2H matrix.
+- Position, player, club, action-category, and transfer-summary tables.
+- It does not include raw lineups, starters, bench slots, transactions, or dropped-player details.
+
+</details>
+
+| Field | Value |
+|---|---|
+| Archive URL | https://fantasyfooty.xyz/fantasy-footy-2024-2025-archive.json |
+| Archive leagues | 422 |
+| Archive total records | 258275 |
+| League records | 790 |
+| League files processed | 11 |
+| Missing files | None |
+| Inferred fixture schedule | Unique solution |
+| Schedule validation errors | 0 |
 
 </details>
 <details>
