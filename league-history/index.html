@@ -412,6 +412,7 @@
     }
     .league-year-panel {
       display: none;
+      min-width: 0;
     }
     .league-year-panel.is-active {
       display: block;
@@ -661,6 +662,9 @@
     .section-anchor-target:target {
       outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent);
       outline-offset: 3px;
+    }
+    .table-scroll-hint {
+      display: none;
     }
     .table-wrap {
       overflow-x: auto;
@@ -3461,137 +3465,93 @@
         font-size: 0.72rem;
       }
       .table-wrap {
-        overflow: visible;
-        border: 0;
-        border-radius: 0;
-      }
-      table,
-      thead,
-      tbody,
-      th,
-      td,
-      tr {
-        display: block;
-        width: 100%;
-      }
-      table {
-        min-width: 0;
-        font-size: 0.92rem;
-      }
-      thead {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        white-space: nowrap;
-      }
-      tbody {
-        display: grid;
-        gap: 10px;
-      }
-      tr {
+        overflow-x: auto;
+        overflow-y: hidden;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: var(--paper);
-        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-inline: contain;
       }
-      @supports (content-visibility: auto) {
-        tbody:not([data-simulator-pool-body]):not([data-mock-board-body]) > tr {
-          content-visibility: auto;
-          contain-intrinsic-size: auto 96px;
-        }
+      .table-wrap table {
+        display: table;
+        width: 100%;
+        min-width: 700px;
+        font-size: 0.82rem;
       }
-      tr:nth-child(even) td {
+      .table-wrap thead {
+        display: table-header-group;
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+      }
+      .table-wrap tbody {
+        display: table-row-group;
+      }
+      .table-wrap tr {
+        display: table-row;
+        width: auto;
+        border: 0;
+        border-radius: 0;
         background: transparent;
+        overflow: visible;
       }
-      .keeper-roster-table tr.keeper-pos-gkp {
-        background: #e0f2fe;
-        border-left: 6px solid #0284c7;
-      }
-      .keeper-roster-table tr.keeper-pos-def {
-        background: #dcfce7;
-        border-left: 6px solid #16a34a;
-      }
-      .keeper-roster-table tr.keeper-pos-mid {
-        background: #fef3c7;
-        border-left: 6px solid #d97706;
-      }
-      .keeper-roster-table tr.keeper-pos-fwd {
-        background: #ffe4e6;
-        border-left: 6px solid #e11d48;
-      }
-      .keeper-roster-table tr.keeper-pos-gkp td,
-      .keeper-roster-table tr.keeper-pos-def td,
-      .keeper-roster-table tr.keeper-pos-mid td,
-      .keeper-roster-table tr.keeper-pos-fwd td,
-      .keeper-roster-table tr:nth-child(even).keeper-pos-gkp td,
-      .keeper-roster-table tr:nth-child(even).keeper-pos-def td,
-      .keeper-roster-table tr:nth-child(even).keeper-pos-mid td,
-      .keeper-roster-table tr:nth-child(even).keeper-pos-fwd td {
-        background: transparent;
-      }
-      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-gkp {
-        background: #0f2a3a;
-      }
-      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-def {
-        background: #12351f;
-      }
-      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-mid {
-        background: #3b2d12;
-      }
-      html[data-theme="dark"] .keeper-roster-table tr.keeper-pos-fwd {
-        background: #3d1720;
-      }
-      tr.cup-eliminated-row td,
-      tr:nth-child(even).cup-eliminated-row td {
-        background: #fee2e2;
-        color: #7f1d1d;
-      }
-      html[data-theme="dark"] tr.cup-eliminated-row td,
-      html[data-theme="dark"] tr:nth-child(even).cup-eliminated-row td {
-        background: #4c1d24;
-        color: #fecdd3;
-      }
-      tr.belt-winner-row {
-        background: var(--belt-bg);
-        border-left: 6px solid var(--belt-accent);
-      }
-      html[data-theme="dark"] tr.belt-winner-row {
-        background: var(--belt-bg-dark);
-      }
-      tr.belt-winner-row td,
-      tr:nth-child(even).belt-winner-row td {
-        background: transparent;
-      }
-      tr.belt-winner-row td:first-child {
-        border-left: 0;
-      }
-      tr.belt-winner-row td:last-child {
-        box-shadow: none;
-      }
-      td,
-      td:nth-child(n+3),
-      .belt-path-table td:nth-child(n+3),
-      .belt-path-table td:first-child,
-      .belt-path-table td:nth-child(4) {
-        display: grid;
-        grid-template-columns: minmax(96px, 42%) minmax(0, 1fr);
-        gap: 12px;
-        align-items: start;
-        padding: 9px 10px;
-        text-align: right;
+      .table-wrap th,
+      .table-wrap td,
+      .table-wrap td:nth-child(n+3),
+      .table-wrap .belt-path-table td:nth-child(n+3),
+      .table-wrap .belt-path-table td:first-child,
+      .table-wrap .belt-path-table td:nth-child(4) {
+        display: table-cell;
+        width: auto;
+        padding: 8px 9px;
+        text-align: left;
+        vertical-align: top;
         border-bottom: 1px solid var(--line);
         font-variant-numeric: tabular-nums;
       }
-      td:last-child {
-        border-bottom: 0;
+      .table-wrap td::before {
+        content: none;
       }
-      td::before {
-        content: attr(data-label);
+      .table-wrap th:first-child,
+      .table-wrap td:first-child {
+        position: sticky;
+        left: 0;
+      }
+      .table-wrap th:first-child {
+        z-index: 4;
+        background: var(--table-head);
+        box-shadow: 1px 0 0 var(--line);
+      }
+      .table-wrap td:first-child {
+        z-index: 2;
+        background: var(--paper);
+        box-shadow: 1px 0 0 var(--line);
+      }
+      .table-wrap tr:nth-child(even) td:first-child {
+        background: var(--row-alt);
+      }
+      .table-wrap tr.belt-winner-row td:first-child,
+      .table-wrap tr:nth-child(even).belt-winner-row td:first-child {
+        background: var(--belt-bg);
+      }
+      html[data-theme="dark"] .table-wrap tr.belt-winner-row td:first-child,
+      html[data-theme="dark"] .table-wrap tr:nth-child(even).belt-winner-row td:first-child {
+        background: var(--belt-bg-dark);
+      }
+      .table-scroll-hint.is-active {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2px 10px -8px;
         color: var(--muted);
-        font-weight: 750;
-        text-align: left;
+        font-size: 0.72rem;
+        font-weight: 800;
+        transition: opacity 160ms ease;
+      }
+      .table-scroll-hint.is-hidden {
+        opacity: 0;
       }
       .pick-panel {
         overflow: visible;
@@ -11696,6 +11656,53 @@
   main.querySelectorAll("details").forEach(enhanceSection);
   revealHashTarget();
   window.addEventListener("hashchange", revealHashTarget);
+})();
+</script>
+  <script>
+(() => {
+  const main = document.querySelector("main");
+  if (!main) return;
+  const phone = window.matchMedia("(max-width: 760px)");
+  const selector = ".table-wrap, .draft-board-wrap, .keeper-mock-board-wrap";
+  const tracked = new Set();
+
+  const update = (wrap) => {
+    const hint = wrap.previousElementSibling?.classList.contains("table-scroll-hint")
+      ? wrap.previousElementSibling
+      : null;
+    if (!hint) return;
+    const overflows = phone.matches && wrap.clientWidth > 0 && wrap.scrollWidth > wrap.clientWidth + 4;
+    hint.classList.toggle("is-active", overflows);
+    hint.classList.toggle("is-hidden", overflows && wrap.scrollLeft > 12);
+  };
+
+  const enhance = (wrap) => {
+    if (tracked.has(wrap)) return;
+    tracked.add(wrap);
+    const hint = document.createElement("div");
+    hint.className = "table-scroll-hint";
+    hint.setAttribute("aria-hidden", "true");
+    hint.textContent = "Swipe table to see more →";
+    wrap.parentNode.insertBefore(hint, wrap);
+    wrap.addEventListener("scroll", () => update(wrap), { passive: true });
+    update(wrap);
+  };
+
+  const updateAll = () => tracked.forEach(update);
+  main.querySelectorAll(selector).forEach(enhance);
+  phone.addEventListener?.("change", updateAll);
+  window.addEventListener("resize", updateAll, { passive: true });
+  window.addEventListener("load", updateAll, { once: true });
+  document.fonts?.ready.then(updateAll);
+  main.addEventListener("toggle", (event) => {
+    if (event.target instanceof HTMLDetailsElement && event.target.open) {
+      window.setTimeout(updateAll, 0);
+    }
+  }, true);
+  if (window.ResizeObserver) {
+    const observer = new ResizeObserver((entries) => entries.forEach((entry) => update(entry.target)));
+    tracked.forEach((wrap) => observer.observe(wrap));
+  }
 })();
 </script>
 </body>
