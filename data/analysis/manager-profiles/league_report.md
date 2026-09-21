@@ -2441,7 +2441,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 16 | 2025-26 28 to 2026-27 5 | 4 | 2024-25 34-37 | 7 | 27-6 | 81.8% | 5 | 27 |
+| 16 | 2025-26 28 to 2026-27 5 | 4 | 2024-25 34-37 | 7 | 27-6 | 81.8% | 8 | 27 |
 
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |

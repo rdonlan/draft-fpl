@@ -35,7 +35,10 @@ Record, H2H points, points for/against, weekly average, and top/bottom score cou
 | 9 | `Amorim de mi vida` | 1-0-4 | 3 | 203 | 262 | 40.6 | 0 | 0 |
 | 10 | `Joao Bonito` | 1-0-4 | 3 | 175 | 205 | 35.0 | 0 | 1 |
 
-### Global Rankings
+</details>
+
+<details>
+<summary><h2>Global Rankings</h2></summary>
 
 **Verified against official FPL:** All ten team totals and the league total match official FPL.
 

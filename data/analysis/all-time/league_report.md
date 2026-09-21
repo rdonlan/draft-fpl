@@ -64,7 +64,7 @@ Use this as the live combined belt record book: total reigns, fight records, def
 
 | Manager | Reigns | Belt Fight Record | Win % | Longest Defense Run | Weeks Holding | Avg Belt Fight Score | Current Holder |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Donlan | 7 | 27-6 | 81.8% | 5 | 27 | 48.97 | Yes |
+| Ryan Donlan | 7 | 27-6 | 81.8% | 8 | 27 | 48.97 | Yes |
 | Drake Byrd | 6 | 10-11 | 47.6% | 3 | 10 | 39.81 |  |
 | Justin Miller | 4 | 14-8 | 63.6% | 6 | 14 | 48.32 |  |
 | Ethan Ellsworth | 4 | 6-15 | 28.6% | 2 | 6 | 37.52 |  |

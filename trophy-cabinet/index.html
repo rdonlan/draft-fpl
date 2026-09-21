@@ -611,6 +611,57 @@
     .manager-best-xi-pos-def { --xi-position-color: #16a34a; }
     .manager-best-xi-pos-mid { --xi-position-color: #d97706; }
     .manager-best-xi-pos-fwd { --xi-position-color: #e11d48; }
+    .section-link-summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-link-summary > h2 {
+      flex: 1 1 auto;
+    }
+    .section-link-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      width: 32px;
+      min-height: 30px;
+      padding: 5px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--soft);
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .section-link-button svg {
+      width: 17px;
+      height: 17px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .section-link-button:hover,
+    .section-link-button:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .section-link-button.is-copied {
+      border-color: var(--accent);
+      background: var(--soft-2);
+      color: var(--accent);
+    }
+    .section-anchor-target {
+      scroll-margin-top: 18px;
+    }
+    .section-anchor-target:target {
+      outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent);
+      outline-offset: 3px;
+    }
     .table-wrap {
       overflow-x: auto;
       margin: 14px 0 24px;
@@ -5456,6 +5507,143 @@
 
   const params = new URLSearchParams(window.location.search);
   setYear(params.get("year") || defaultYear, false);
+})();
+</script>
+  <script>
+(() => {
+  const main = document.querySelector("main");
+  if (!main) return;
+
+  const usedIds = new Set(Array.from(document.querySelectorAll("[id]"), (node) => node.id));
+  const linkIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>';
+  const slugify = (value) => String(value || "section")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 72) || "section";
+
+  const sectionIdentity = (details, label) => {
+    const parts = [];
+    const leagueYear = details.closest("[data-league-year-panel]")?.dataset.leagueYearPanel;
+    const keeperView = details.closest("[data-keeper-view]")?.dataset.keeperView;
+    const keeperManager = details.closest("[data-keeper-manager-panel]")?.dataset.keeperManagerPanel;
+    const keeperYear = details.closest("[data-keeper-year-panel]")?.dataset.keeperYearPanel;
+    [leagueYear, keeperView, keeperManager, keeperYear, label]
+      .filter(Boolean)
+      .forEach((part) => parts.push(part));
+    return parts.join(" ") || "section";
+  };
+
+  const uniqueId = (label) => {
+    const root = `section-${slugify(label)}`;
+    let candidate = root;
+    let suffix = 2;
+    while (usedIds.has(candidate)) {
+      candidate = `${root}-${suffix}`;
+      suffix += 1;
+    }
+    usedIds.add(candidate);
+    return candidate;
+  };
+
+  const writeClipboard = async (value) => {
+    if (navigator.clipboard?.writeText) {
+      try {
+        await navigator.clipboard.writeText(value);
+        return;
+      } catch (error) {
+        // Fall through to the selection-based copy method below.
+      }
+    }
+    const fallback = document.createElement("textarea");
+    fallback.value = value;
+    fallback.setAttribute("readonly", "");
+    fallback.style.position = "fixed";
+    fallback.style.opacity = "0";
+    document.body.appendChild(fallback);
+    fallback.select();
+    document.execCommand("copy");
+    fallback.remove();
+  };
+
+  const enhanceSection = (details) => {
+    const summary = details.querySelector(":scope > summary");
+    const heading = summary?.querySelector("h2");
+    if (!summary || !heading || details.dataset.copyLinkReady === "true") return;
+    details.dataset.copyLinkReady = "true";
+    const label = heading.textContent.trim();
+    const identity = sectionIdentity(details, label);
+    if (!details.id) details.id = uniqueId(identity);
+    else usedIds.add(details.id);
+    details.classList.add("section-anchor-target");
+    summary.classList.add("section-link-summary");
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "section-link-button";
+    button.innerHTML = linkIcon;
+    button.setAttribute("aria-label", `Copy link to ${label}`);
+    button.title = `Copy link to ${label}`;
+    button.addEventListener("click", async (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const url = new URL(window.location.href);
+      url.hash = details.id;
+      await writeClipboard(url.toString());
+      button.innerHTML = '<span aria-hidden="true">✓</span>';
+      button.classList.add("is-copied");
+      window.setTimeout(() => {
+        button.innerHTML = linkIcon;
+        button.classList.remove("is-copied");
+      }, 1400);
+    });
+    summary.appendChild(button);
+  };
+
+  const revealHashTarget = () => {
+    if (!window.location.hash) return;
+    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if (!target) return;
+
+    let parentDetails = target.closest("details");
+    while (parentDetails) {
+      parentDetails.open = true;
+      parentDetails = parentDetails.parentElement?.closest("details");
+    }
+
+    const leaguePanel = target.closest("[data-league-year-panel]");
+    if (leaguePanel) {
+      document.querySelector(`[data-league-year-button="${leaguePanel.dataset.leagueYearPanel}"]`)?.click();
+    }
+    const keeperView = target.closest("[data-keeper-view]");
+    if (keeperView) {
+      document.querySelector(`[data-keeper-view-button="${keeperView.dataset.keeperView}"]`)?.click();
+    }
+    const keeperManager = target.closest("[data-keeper-manager-panel]");
+    if (keeperManager) {
+      const select = document.querySelector("[data-keeper-manager-select]");
+      if (select) {
+        select.value = keeperManager.dataset.keeperManagerPanel;
+        select.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+    }
+    const keeperYear = target.closest("[data-keeper-year-panel]");
+    if (keeperYear) {
+      const select = document.querySelector("[data-keeper-year-select]");
+      if (select) {
+        select.value = keeperYear.dataset.keeperYearPanel;
+        select.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+    }
+
+    window.setTimeout(() => target.scrollIntoView({ block: "start" }), 0);
+  };
+
+  main.querySelectorAll("details").forEach(enhanceSection);
+  revealHashTarget();
+  window.addEventListener("hashchange", revealHashTarget);
 })();
 </script>
 </body>
