@@ -25,6 +25,8 @@ Use the season tabs above to switch between this archive-backed 2024-2025 page a
 
 
 
+
+
 <details open>
 <summary><h2>Standings</h2></summary>
 
@@ -732,6 +734,21 @@ Use this table to find the league's biggest weekly spikes.
 
 </details>
 <details>
+<summary><h2>Lineup Efficiency</h2></summary>
+
+Lineup efficiency cannot be reconstructed accurately for 2024-2025 from the available archive.
+
+<details class="notes">
+<summary>Why this season is unavailable</summary>
+
+- The archive includes weekly team scores, season-level player totals, and a season-long best XI for each manager.
+- It does not include each manager's 15-player squad, starter/bench assignments, and player-by-player points for every gameweek.
+- Those weekly inputs are required to identify the highest-scoring legal XI and compare it with the lineup actually fielded. Team totals alone cannot supply that counterfactual without inventing data.
+
+</details>
+
+</details>
+<details>
 <summary><h2>Positional Scoring</h2></summary>
 
 FantasyFooty's archive has aggregate points by manager and position. The four position dropdowns mirror the cleaner 2025-2026 layout, while retaining the historical Points and Points/GW measures available from the archive.
@@ -805,6 +822,791 @@ FantasyFooty's archive has aggregate points by manager and position. The four po
 | Alexander Chaban | 283 | 7.4 |
 | Levi Morant | 263 | 6.9 |
 | Drake Byrd | 201 | 5.3 |
+
+</details>
+
+</details>
+<details>
+<summary><h2>Manager Best XIs</h2></summary>
+
+Each manager's highest-scoring legal XI using FantasyFooty's archived player contribution totals across the full season.
+
+<details class="notes">
+<summary>Definitions and calculation notes</summary>
+
+- Each XI maximizes the points contributed to that manager's official starting lineup during this season.
+- Every valid FPL formation is evaluated: one goalkeeper, 3–5 defenders, 2–5 midfielders, and 1–3 forwards.
+- Bench points are excluded. If a player moved between teams, only points scored while starting for the listed manager count.
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Ryan Donlan — 3-5-2 · 1,135 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Ryan Donlan" data-formation="3-5-2" data-total="1135">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>1,135 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Erling Haaland</strong>
+<span class="manager-best-xi-points">181 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Matheus Santos Carneiro Da Cunha</strong>
+<span class="manager-best-xi-points">171 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Bryan Mbeumo</strong>
+<span class="manager-best-xi-points">166 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Jacob Murphy</strong>
+<span class="manager-best-xi-points">117 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Emile Smith Rowe</strong>
+<span class="manager-best-xi-points">60 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mitoma Kaoru</strong>
+<span class="manager-best-xi-points">57 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Son Heung-min</strong>
+<span class="manager-best-xi-points">52 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Trent Alexander-Arnold</strong>
+<span class="manager-best-xi-points">127 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>William Saliba</strong>
+<span class="manager-best-xi-points">117 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Jarrad Branthwaite</strong>
+<span class="manager-best-xi-points">29 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Alisson Ramses Becker</strong>
+<span class="manager-best-xi-points">58 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Justin Miller — 3-5-2 · 1,329 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Justin Miller" data-formation="3-5-2" data-total="1329">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>1,329 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Ollie Watkins</strong>
+<span class="manager-best-xi-points">186 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Liam Delap</strong>
+<span class="manager-best-xi-points">103 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Jarrod Bowen</strong>
+<span class="manager-best-xi-points">168 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Morgan Rogers</strong>
+<span class="manager-best-xi-points">159 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Morgan Gibbs-White</strong>
+<span class="manager-best-xi-points">148 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mohamed Salah</strong>
+<span class="manager-best-xi-points">122 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>James Maddison</strong>
+<span class="manager-best-xi-points">102 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Virgil van Dijk</strong>
+<span class="manager-best-xi-points">136 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Murillo Santiago Costa dos Santos</strong>
+<span class="manager-best-xi-points">100 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Tino Livramento</strong>
+<span class="manager-best-xi-points">38 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Matz Sels</strong>
+<span class="manager-best-xi-points">67 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Ryan Houseman — 3-5-2 · 1,119 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Ryan Houseman" data-formation="3-5-2" data-total="1119">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>1,119 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Chris Wood</strong>
+<span class="manager-best-xi-points">200 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Jean-Philippe Mateta</strong>
+<span class="manager-best-xi-points">148 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Eberechi Eze</strong>
+<span class="manager-best-xi-points">136 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Phil Foden</strong>
+<span class="manager-best-xi-points">104 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Bruno Guimarães Rodriguez Moura</strong>
+<span class="manager-best-xi-points">78 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Noni Madueke</strong>
+<span class="manager-best-xi-points">78 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Marcus Tavernier</strong>
+<span class="manager-best-xi-points">50 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Nikola Milenković</strong>
+<span class="manager-best-xi-points">123 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Dean Huijsen</strong>
+<span class="manager-best-xi-points">54 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Neco Williams</strong>
+<span class="manager-best-xi-points">54 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Dean Henderson</strong>
+<span class="manager-best-xi-points">94 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Levi Morant — 3-4-3 · 700 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Levi Morant" data-formation="3-4-3" data-total="700">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-4-3</span>
+<strong>700 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Norberto Bercique Gomes Betuncal</strong>
+<span class="manager-best-xi-points">61 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Iliman Ndiaye</strong>
+<span class="manager-best-xi-points">56 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Danny Welbeck</strong>
+<span class="manager-best-xi-points">51 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Cole Palmer</strong>
+<span class="manager-best-xi-points">128 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Bukayo Saka</strong>
+<span class="manager-best-xi-points">116 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Bryan Mbeumo</strong>
+<span class="manager-best-xi-points">70 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Luis Díaz</strong>
+<span class="manager-best-xi-points">59 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Gabriel dos Santos Magalhães</strong>
+<span class="manager-best-xi-points">51 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Lewis Hall</strong>
+<span class="manager-best-xi-points">37 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Benjamin White</strong>
+<span class="manager-best-xi-points">28 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>David Raya Martin</strong>
+<span class="manager-best-xi-points">43 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Luke Lockwood — 3-5-2 · 924 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Luke Lockwood" data-formation="3-5-2" data-total="924">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>924 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Raúl Jiménez</strong>
+<span class="manager-best-xi-points">131 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Omar Marmoush</strong>
+<span class="manager-best-xi-points">69 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Alex Iwobi</strong>
+<span class="manager-best-xi-points">137 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Leandro Trossard</strong>
+<span class="manager-best-xi-points">104 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Cole Palmer</strong>
+<span class="manager-best-xi-points">86 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mitoma Kaoru</strong>
+<span class="manager-best-xi-points">73 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mikkel Damsgaard</strong>
+<span class="manager-best-xi-points">66 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Ibrahima Konaté</strong>
+<span class="manager-best-xi-points">59 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Diogo Dalot Teixeira</strong>
+<span class="manager-best-xi-points">56 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Fabian Schär</strong>
+<span class="manager-best-xi-points">51 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>David Raya Martin</strong>
+<span class="manager-best-xi-points">92 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Julius Long — 3-4-3 · 1,210 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Julius Long" data-formation="3-4-3" data-total="1210">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-4-3</span>
+<strong>1,210 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Yoane Wissa</strong>
+<span class="manager-best-xi-points">184 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Jhon Durán</strong>
+<span class="manager-best-xi-points">46 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Rasmus Højlund</strong>
+<span class="manager-best-xi-points">45 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mohamed Salah</strong>
+<span class="manager-best-xi-points">222 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Gabriel Martinelli Silva</strong>
+<span class="manager-best-xi-points">89 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Diogo Teixeira da Silva</strong>
+<span class="manager-best-xi-points">79 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Lucas Tolentino Coelho de Lima</strong>
+<span class="manager-best-xi-points">65 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Marc Cucurella Saseta</strong>
+<span class="manager-best-xi-points">133 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Nathan Collins</strong>
+<span class="manager-best-xi-points">120 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Marc Guéhi</strong>
+<span class="manager-best-xi-points">109 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Jordan Pickford</strong>
+<span class="manager-best-xi-points">118 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Drake Byrd — 4-4-2 · 1,222 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Drake Byrd" data-formation="4-4-2" data-total="1222">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 4-4-2</span>
+<strong>1,222 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Jørgen Strand Larsen</strong>
+<span class="manager-best-xi-points">125 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Joshua Zirkzee</strong>
+<span class="manager-best-xi-points">45 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Bruno Borges Fernandes</strong>
+<span class="manager-best-xi-points">162 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Luis Díaz</strong>
+<span class="manager-best-xi-points">124 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Amad Diallo</strong>
+<span class="manager-best-xi-points">107 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Kevin Schade</strong>
+<span class="manager-best-xi-points">107 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Daniel Muñoz</strong>
+<span class="manager-best-xi-points">128 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Tyrick Mitchell</strong>
+<span class="manager-best-xi-points">120 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Antonee Robinson</strong>
+<span class="manager-best-xi-points">106 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Jurriën Timber</strong>
+<span class="manager-best-xi-points">101 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Emiliano Martínez Romero</strong>
+<span class="manager-best-xi-points">97 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Ethan Ellsworth — 3-5-2 · 1,164 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Ethan Ellsworth" data-formation="3-5-2" data-total="1164">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>1,164 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Alexander Isak</strong>
+<span class="manager-best-xi-points">200 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Francisco Evanilson de Lima Barbosa</strong>
+<span class="manager-best-xi-points">95 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Dejan Kulusevski</strong>
+<span class="manager-best-xi-points">116 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Martin Ødegaard</strong>
+<span class="manager-best-xi-points">116 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Brennan Johnson</strong>
+<span class="manager-best-xi-points">107 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mohammed Kudus</strong>
+<span class="manager-best-xi-points">98 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Ismaïla Sarr</strong>
+<span class="manager-best-xi-points">86 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Joško Gvardiol</strong>
+<span class="manager-best-xi-points">145 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Andrew Robertson</strong>
+<span class="manager-best-xi-points">90 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Malo Gusto</strong>
+<span class="manager-best-xi-points">51 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Bart Verbruggen</strong>
+<span class="manager-best-xi-points">60 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Alexander Chaban — 4-4-2 · 1,000 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Alexander Chaban" data-formation="4-4-2" data-total="1000">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 4-4-2</span>
+<strong>1,000 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Cody Gakpo</strong>
+<span class="manager-best-xi-points">120 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Dominic Solanke-Mitchell</strong>
+<span class="manager-best-xi-points">100 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Antoine Semenyo</strong>
+<span class="manager-best-xi-points">165 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Anthony Elanga</strong>
+<span class="manager-best-xi-points">97 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Kevin De Bruyne</strong>
+<span class="manager-best-xi-points">97 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Bernardo Veiga de Carvalho e Silva</strong>
+<span class="manager-best-xi-points">72 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Milos Kerkez</strong>
+<span class="manager-best-xi-points">87 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Ola Aina</strong>
+<span class="manager-best-xi-points">79 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Maxence Lacroix</strong>
+<span class="manager-best-xi-points">66 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Rayan Aït-Nouri</strong>
+<span class="manager-best-xi-points">64 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Mark Flekken</strong>
+<span class="manager-best-xi-points">53 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Dylan Reid — 3-5-2 · 896 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Dylan Reid" data-formation="3-5-2" data-total="896">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>896 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Nicolas Jackson</strong>
+<span class="manager-best-xi-points">121 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Jamie Vardy</strong>
+<span class="manager-best-xi-points">116 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Anthony Gordon</strong>
+<span class="manager-best-xi-points">121 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Dominik Szoboszlai</strong>
+<span class="manager-best-xi-points">79 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Son Heung-min</strong>
+<span class="manager-best-xi-points">63 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Christopher Nkunku</strong>
+<span class="manager-best-xi-points">53 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Enzo Fernández</strong>
+<span class="manager-best-xi-points">47 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Dan Burn</strong>
+<span class="manager-best-xi-points">100 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Pedro Porro</strong>
+<span class="manager-best-xi-points">82 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>James Tarkowski</strong>
+<span class="manager-best-xi-points">60 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Nick Pope</strong>
+<span class="manager-best-xi-points">54 pts</span>
+</article>
+</div>
+</div>
+</section>
 
 </details>
 

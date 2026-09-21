@@ -1,41 +1,41 @@
 manager,team,position,starter_points,starts,points_per_start,rostered_points,rostered_slots
-Alexander Chaban,ChabosSpurs@Law,DEF,66,17,3.88,70,20
-Alexander Chaban,ChabosSpurs@Law,FWD,15,8,1.88,21,12
-Alexander Chaban,ChabosSpurs@Law,GKP,36,4,9.0,44,8
-Alexander Chaban,ChabosSpurs@Law,MID,47,15,3.13,48,20
-Drake Byrd,Bruno’s Balebas,DEF,53,13,4.08,68,20
-Drake Byrd,Bruno’s Balebas,FWD,30,10,3.0,36,12
-Drake Byrd,Bruno’s Balebas,GKP,11,4,2.75,19,8
-Drake Byrd,Bruno’s Balebas,MID,100,17,5.88,113,20
-Dylan Reid,Joao Bonito,DEF,48,14,3.43,54,20
-Dylan Reid,Joao Bonito,FWD,40,10,4.0,44,12
-Dylan Reid,Joao Bonito,GKP,7,4,1.75,19,8
-Dylan Reid,Joao Bonito,MID,46,16,2.88,54,20
-Ethan Ellsworth,Thanksgiving Cherki,DEF,36,15,2.4,40,20
-Ethan Ellsworth,Thanksgiving Cherki,FWD,29,10,2.9,38,12
-Ethan Ellsworth,Thanksgiving Cherki,GKP,12,4,3.0,23,8
-Ethan Ellsworth,Thanksgiving Cherki,MID,75,15,5.0,77,20
-Julius Long,Amorim de mi vida,DEF,57,16,3.56,58,20
-Julius Long,Amorim de mi vida,FWD,29,9,3.22,29,12
-Julius Long,Amorim de mi vida,GKP,17,4,4.25,18,8
-Julius Long,Amorim de mi vida,MID,45,15,3.0,46,20
-Justin Miller,Sue-nited FC**,DEF,72,19,3.79,74,20
-Justin Miller,Sue-nited FC**,FWD,37,6,6.17,40,12
-Justin Miller,Sue-nited FC**,GKP,12,4,3.0,17,8
-Justin Miller,Sue-nited FC**,MID,69,15,4.6,79,20
-Levi Morant,*Saka It To Me Baby,DEF,29,12,2.42,30,20
-Levi Morant,*Saka It To Me Baby,FWD,28,8,3.5,28,12
-Levi Morant,*Saka It To Me Baby,GKP,13,4,3.25,30,8
-Levi Morant,*Saka It To Me Baby,MID,95,20,4.75,95,20
-Luke Lockwood,Into the WOODwork*,DEF,66,17,3.88,80,20
-Luke Lockwood,Into the WOODwork*,FWD,14,4,3.5,23,12
-Luke Lockwood,Into the WOODwork*,GKP,11,4,2.75,24,8
-Luke Lockwood,Into the WOODwork*,MID,86,19,4.53,89,20
-Ryan Donlan,***NoHaalandNoParty,DEF,104,17,6.12,112,20
-Ryan Donlan,***NoHaalandNoParty,FWD,53,8,6.62,56,12
-Ryan Donlan,***NoHaalandNoParty,GKP,14,4,3.5,16,8
-Ryan Donlan,***NoHaalandNoParty,MID,80,15,5.33,86,20
-Ryan Houseman,Szoboszlickin good,DEF,80,16,5.0,83,20
-Ryan Houseman,Szoboszlickin good,FWD,5,6,0.83,6,12
-Ryan Houseman,Szoboszlickin good,GKP,17,4,4.25,35,8
-Ryan Houseman,Szoboszlickin good,MID,58,18,3.22,58,20
+Alexander Chaban,ChabosSpurs@Law,DEF,84,21,4.0,90,25
+Alexander Chaban,ChabosSpurs@Law,FWD,33,10,3.3,40,15
+Alexander Chaban,ChabosSpurs@Law,GKP,37,5,7.4,47,10
+Alexander Chaban,ChabosSpurs@Law,MID,54,19,2.84,56,25
+Drake Byrd,Bruno’s Balebas,DEF,71,17,4.18,88,25
+Drake Byrd,Bruno’s Balebas,FWD,33,12,2.75,39,15
+Drake Byrd,Bruno’s Balebas,GKP,17,5,3.4,25,10
+Drake Byrd,Bruno’s Balebas,MID,111,21,5.29,124,25
+Dylan Reid,Joao Bonito,DEF,62,18,3.44,68,25
+Dylan Reid,Joao Bonito,FWD,51,12,4.25,55,15
+Dylan Reid,Joao Bonito,GKP,10,5,2.0,24,10
+Dylan Reid,Joao Bonito,MID,52,20,2.6,60,25
+Ethan Ellsworth,Thanksgiving Cherki,DEF,51,18,2.83,55,25
+Ethan Ellsworth,Thanksgiving Cherki,FWD,31,12,2.58,41,15
+Ethan Ellsworth,Thanksgiving Cherki,GKP,16,5,3.2,29,10
+Ethan Ellsworth,Thanksgiving Cherki,MID,111,20,5.55,113,25
+Julius Long,Amorim de mi vida,DEF,73,19,3.84,75,25
+Julius Long,Amorim de mi vida,FWD,33,11,3.0,34,15
+Julius Long,Amorim de mi vida,GKP,19,5,3.8,20,10
+Julius Long,Amorim de mi vida,MID,78,20,3.9,79,25
+Justin Miller,Sue-nited FC**,DEF,85,22,3.86,93,25
+Justin Miller,Sue-nited FC**,FWD,57,9,6.33,60,15
+Justin Miller,Sue-nited FC**,GKP,14,5,2.8,19,10
+Justin Miller,Sue-nited FC**,MID,82,19,4.32,94,25
+Levi Morant,*Saka It To Me Baby,DEF,42,15,2.8,43,25
+Levi Morant,*Saka It To Me Baby,FWD,33,11,3.0,33,15
+Levi Morant,*Saka It To Me Baby,GKP,16,5,3.2,41,10
+Levi Morant,*Saka It To Me Baby,MID,111,24,4.62,113,25
+Luke Lockwood,Into the WOODwork*,DEF,89,22,4.05,103,25
+Luke Lockwood,Into the WOODwork*,FWD,22,6,3.67,31,15
+Luke Lockwood,Into the WOODwork*,GKP,13,5,2.6,32,10
+Luke Lockwood,Into the WOODwork*,MID,93,22,4.23,101,25
+Ryan Donlan,***NoHaalandNoParty,DEF,127,21,6.05,135,25
+Ryan Donlan,***NoHaalandNoParty,FWD,63,11,5.73,66,15
+Ryan Donlan,***NoHaalandNoParty,GKP,20,5,4.0,28,10
+Ryan Donlan,***NoHaalandNoParty,MID,98,18,5.44,104,25
+Ryan Houseman,Szoboszlickin good,DEF,89,20,4.45,92,25
+Ryan Houseman,Szoboszlickin good,FWD,6,7,0.86,7,15
+Ryan Houseman,Szoboszlickin good,GKP,25,5,5.0,53,10
+Ryan Houseman,Szoboszlickin good,MID,80,23,3.48,80,25

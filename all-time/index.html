@@ -515,6 +515,102 @@
     .manager-draft-card {
       width: 100%;
     }
+    .manager-best-xi {
+      max-width: 860px;
+      margin: 14px 0 26px;
+    }
+    .manager-best-xi-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 11px 14px;
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      border-radius: 9px 9px 0 0;
+      background: var(--soft-2);
+      color: var(--ink);
+      font-size: 0.9rem;
+    }
+    .manager-best-xi-pitch {
+      position: relative;
+      display: grid;
+      gap: 20px;
+      min-height: 470px;
+      padding: 24px 18px;
+      overflow: hidden;
+      border: 1px solid #166534;
+      border-radius: 0 0 9px 9px;
+      background:
+        linear-gradient(90deg, transparent 49.7%, rgba(255,255,255,0.5) 49.7%, rgba(255,255,255,0.5) 50.3%, transparent 50.3%),
+        repeating-linear-gradient(90deg, #15803d 0, #15803d 12.5%, #168741 12.5%, #168741 25%);
+      box-shadow: inset 0 0 0 3px rgba(255,255,255,0.36);
+    }
+    .manager-best-xi-pitch::before {
+      content: "";
+      position: absolute;
+      inset: 50% 3px auto;
+      border-top: 2px solid rgba(255,255,255,0.5);
+    }
+    .manager-best-xi-pitch::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 82px;
+      height: 82px;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .manager-best-xi-line {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(var(--xi-count), minmax(0, 1fr));
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .manager-best-xi-line-gkp {
+      width: min(190px, 42%);
+      justify-self: center;
+    }
+    .manager-best-xi-player {
+      display: grid;
+      min-width: 0;
+      min-height: 76px;
+      padding: 7px 6px 8px;
+      border: 1px solid rgba(15,23,42,0.18);
+      border-top: 5px solid var(--xi-position-color);
+      border-radius: 7px;
+      background: rgba(255,255,255,0.95);
+      color: #0f172a;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(15,23,42,0.22);
+    }
+    .manager-best-xi-player > span {
+      color: var(--xi-position-color);
+      font-size: 0.64rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+    .manager-best-xi-player > strong {
+      align-self: center;
+      overflow-wrap: anywhere;
+      font-size: clamp(0.72rem, 1.6vw, 0.9rem);
+      line-height: 1.15;
+    }
+    .manager-best-xi-points {
+      align-self: end;
+      color: #475569;
+      font-size: 0.7rem;
+      font-weight: 800;
+    }
+    .manager-best-xi-pos-gkp { --xi-position-color: #0284c7; }
+    .manager-best-xi-pos-def { --xi-position-color: #16a34a; }
+    .manager-best-xi-pos-mid { --xi-position-color: #d97706; }
+    .manager-best-xi-pos-fwd { --xi-position-color: #e11d48; }
     .table-wrap {
       overflow-x: auto;
       margin: 14px 0 24px;
@@ -3288,6 +3384,31 @@
         padding-left: 8px;
         padding-right: 8px;
       }
+      .manager-best-xi {
+        max-width: none;
+      }
+      .manager-best-xi-head {
+        display: grid;
+        gap: 4px;
+      }
+      .manager-best-xi-pitch {
+        gap: 14px;
+        min-height: 430px;
+        padding: 20px 7px;
+      }
+      .manager-best-xi-line {
+        gap: 5px;
+      }
+      .manager-best-xi-line-gkp {
+        width: min(170px, 48%);
+      }
+      .manager-best-xi-player {
+        min-height: 74px;
+        padding: 6px 3px 7px;
+      }
+      .manager-best-xi-player > strong {
+        font-size: 0.72rem;
+      }
       .table-wrap {
         overflow: visible;
         border: 0;
@@ -3660,14 +3781,14 @@
     </div>
     <h1>BMS FPL Draft Cumulative Stats</h1>
 <p>Live career totals covering every recorded season through the latest completed gameweek.</p>
-<div class="live-career-warning" role="alert"><strong>LIVE CAREER TOTALS — THROUGH GW4 OF 2026/27</strong><span>The active season is incomplete. Career totals, ranks, averages, streaks, head-to-head records, belt records, and power ratings will change after each refresh.</span></div>
+<div class="live-career-warning" role="alert"><strong>LIVE CAREER TOTALS — THROUGH GW5 OF 2026/27</strong><span>The active season is incomplete. Career totals, ranks, averages, streaks, head-to-head records, belt records, and power ratings will change after each refresh.</span></div>
 <p>Use the dropdown sections below to open or hide each metric.</p>
 <h2>Best Quick Hits</h2>
 <ul>
-<li><strong>Cumulative Table Leader</strong>: Ryan Donlan (175).</li>
-<li><strong>Most Wins</strong>: Ryan Donlan (58).</li>
-<li><strong>Total PF King</strong>: Ryan Donlan (3772).</li>
-<li><strong>Best PF/GW</strong>: Ryan Donlan (47.15).</li>
+<li><strong>Cumulative Table Leader</strong>: Ryan Donlan (178).</li>
+<li><strong>Most Wins</strong>: Ryan Donlan (59).</li>
+<li><strong>Total PF King</strong>: Ryan Donlan (3829).</li>
+<li><strong>Best PF/GW</strong>: Ryan Donlan (47.27).</li>
 <li><strong>Most Weekly Top Scores</strong>: Justin Miller (20).</li>
 </ul>
 <details open>
@@ -3686,16 +3807,16 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Rank</th><th>Manager</th><th>Seasons</th><th>Record</th><th>H2H Pts</th><th>Pts/GW</th><th>PF</th><th>PA</th><th>PF/GW</th><th>PA/GW</th><th>Avg Weekly Rank</th></tr></thead>
 <tbody>
-<tr><td data-label="Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Seasons">3</td><td data-label="Record">58-1-21</td><td data-label="H2H Pts">175</td><td data-label="Pts/GW">2.19</td><td data-label="PF">3772</td><td data-label="PA">3026</td><td data-label="PF/GW">47.15</td><td data-label="PA/GW">37.83</td><td data-label="Avg Weekly Rank">4.31</td></tr>
-<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Seasons">3</td><td data-label="Record">52-1-27</td><td data-label="H2H Pts">157</td><td data-label="Pts/GW">1.96</td><td data-label="PF">3671</td><td data-label="PA">3406</td><td data-label="PF/GW">45.89</td><td data-label="PA/GW">42.58</td><td data-label="Avg Weekly Rank">4.21</td></tr>
-<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Seasons">3</td><td data-label="Record">44-0-36</td><td data-label="H2H Pts">132</td><td data-label="Pts/GW">1.65</td><td data-label="PF">3297</td><td data-label="PA">3139</td><td data-label="PF/GW">41.21</td><td data-label="PA/GW">39.24</td><td data-label="Avg Weekly Rank">5.49</td></tr>
-<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Seasons">3</td><td data-label="Record">40-4-36</td><td data-label="H2H Pts">124</td><td data-label="Pts/GW">1.55</td><td data-label="PF">3238</td><td data-label="PA">3168</td><td data-label="PF/GW">40.48</td><td data-label="PA/GW">39.60</td><td data-label="Avg Weekly Rank">5.71</td></tr>
-<tr><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Seasons">3</td><td data-label="Record">39-2-39</td><td data-label="H2H Pts">119</td><td data-label="Pts/GW">1.49</td><td data-label="PF">3317</td><td data-label="PA">3364</td><td data-label="PF/GW">41.46</td><td data-label="PA/GW">42.05</td><td data-label="Avg Weekly Rank">5.28</td></tr>
-<tr><td data-label="Rank">6</td><td data-label="Manager">Levi Morant</td><td data-label="Seasons">3</td><td data-label="Record">37-0-43</td><td data-label="H2H Pts">111</td><td data-label="Pts/GW">1.39</td><td data-label="PF">3217</td><td data-label="PA">3330</td><td data-label="PF/GW">40.21</td><td data-label="PA/GW">41.62</td><td data-label="Avg Weekly Rank">5.66</td></tr>
-<tr><td data-label="Rank">7</td><td data-label="Manager">Julius Long</td><td data-label="Seasons">3</td><td data-label="Record">32-2-46</td><td data-label="H2H Pts">98</td><td data-label="Pts/GW">1.23</td><td data-label="PF">3134</td><td data-label="PA">3372</td><td data-label="PF/GW">39.17</td><td data-label="PA/GW">42.15</td><td data-label="Avg Weekly Rank">6.17</td></tr>
-<tr><td data-label="Rank">8</td><td data-label="Manager">Dylan Reid</td><td data-label="Seasons">3</td><td data-label="Record">32-2-46</td><td data-label="H2H Pts">98</td><td data-label="Pts/GW">1.23</td><td data-label="PF">3021</td><td data-label="PA">3314</td><td data-label="PF/GW">37.76</td><td data-label="PA/GW">41.42</td><td data-label="Avg Weekly Rank">6.32</td></tr>
-<tr><td data-label="Rank">9</td><td data-label="Manager">Alexander Chaban</td><td data-label="Seasons">3</td><td data-label="Record">30-0-50</td><td data-label="H2H Pts">90</td><td data-label="Pts/GW">1.12</td><td data-label="PF">3143</td><td data-label="PA">3474</td><td data-label="PF/GW">39.29</td><td data-label="PA/GW">43.42</td><td data-label="Avg Weekly Rank">5.91</td></tr>
-<tr><td data-label="Rank">10</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Seasons">3</td><td data-label="Record">29-2-49</td><td data-label="H2H Pts">89</td><td data-label="Pts/GW">1.11</td><td data-label="PF">3108</td><td data-label="PA">3325</td><td data-label="PF/GW">38.85</td><td data-label="PA/GW">41.56</td><td data-label="Avg Weekly Rank">5.96</td></tr>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Seasons">3</td><td data-label="Record">59-1-21</td><td data-label="H2H Pts">178</td><td data-label="Pts/GW">2.20</td><td data-label="PF">3829</td><td data-label="PA">3081</td><td data-label="PF/GW">47.27</td><td data-label="PA/GW">38.04</td><td data-label="Avg Weekly Rank">4.27</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Seasons">3</td><td data-label="Record">53-1-27</td><td data-label="H2H Pts">160</td><td data-label="Pts/GW">1.98</td><td data-label="PF">3719</td><td data-label="PA">3450</td><td data-label="PF/GW">45.91</td><td data-label="PA/GW">42.59</td><td data-label="Avg Weekly Rank">4.20</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Seasons">3</td><td data-label="Record">44-0-37</td><td data-label="H2H Pts">132</td><td data-label="Pts/GW">1.63</td><td data-label="PF">3337</td><td data-label="PA">3196</td><td data-label="PF/GW">41.20</td><td data-label="PA/GW">39.46</td><td data-label="Avg Weekly Rank">5.51</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Seasons">3</td><td data-label="Record">41-4-36</td><td data-label="H2H Pts">127</td><td data-label="Pts/GW">1.57</td><td data-label="PF">3278</td><td data-label="PA">3202</td><td data-label="PF/GW">40.47</td><td data-label="PA/GW">39.53</td><td data-label="Avg Weekly Rank">5.72</td></tr>
+<tr><td data-label="Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Seasons">3</td><td data-label="Record">40-2-39</td><td data-label="H2H Pts">122</td><td data-label="Pts/GW">1.51</td><td data-label="PF">3355</td><td data-label="PA">3401</td><td data-label="PF/GW">41.42</td><td data-label="PA/GW">41.99</td><td data-label="Avg Weekly Rank">5.31</td></tr>
+<tr><td data-label="Rank">6</td><td data-label="Manager">Levi Morant</td><td data-label="Seasons">3</td><td data-label="Record">37-0-44</td><td data-label="H2H Pts">111</td><td data-label="Pts/GW">1.37</td><td data-label="PF">3254</td><td data-label="PA">3368</td><td data-label="PF/GW">40.17</td><td data-label="PA/GW">41.58</td><td data-label="Avg Weekly Rank">5.70</td></tr>
+<tr><td data-label="Rank">7</td><td data-label="Manager">Julius Long</td><td data-label="Seasons">3</td><td data-label="Record">32-2-47</td><td data-label="H2H Pts">98</td><td data-label="Pts/GW">1.21</td><td data-label="PF">3189</td><td data-label="PA">3429</td><td data-label="PF/GW">39.37</td><td data-label="PA/GW">42.33</td><td data-label="Avg Weekly Rank">6.13</td></tr>
+<tr><td data-label="Rank">8</td><td data-label="Manager">Dylan Reid</td><td data-label="Seasons">3</td><td data-label="Record">32-2-47</td><td data-label="H2H Pts">98</td><td data-label="Pts/GW">1.21</td><td data-label="PF">3055</td><td data-label="PA">3354</td><td data-label="PF/GW">37.72</td><td data-label="PA/GW">41.41</td><td data-label="Avg Weekly Rank">6.36</td></tr>
+<tr><td data-label="Rank">9</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Seasons">3</td><td data-label="Record">30-2-49</td><td data-label="H2H Pts">92</td><td data-label="Pts/GW">1.14</td><td data-label="PF">3165</td><td data-label="PA">3365</td><td data-label="PF/GW">39.07</td><td data-label="PA/GW">41.54</td><td data-label="Avg Weekly Rank">5.91</td></tr>
+<tr><td data-label="Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Seasons">3</td><td data-label="Record">30-0-51</td><td data-label="H2H Pts">90</td><td data-label="Pts/GW">1.11</td><td data-label="PF">3187</td><td data-label="PA">3522</td><td data-label="PF/GW">39.35</td><td data-label="PA/GW">43.48</td><td data-label="Avg Weekly Rank">5.90</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -3708,14 +3829,14 @@
 <li><strong>Reigns</strong> sums each manager&#x27;s distinct career belt reigns.</li>
 <li><strong>Belt Fight Record</strong> is wins-losses across every matchup where that manager appeared in a belt fight.</li>
 <li><strong>Weeks Holding</strong> counts gameweeks where the manager finished the week holding the belt.</li>
-<li><strong>Current Holder</strong> refers to the latest holder through GW4 of 2026-27.</li>
+<li><strong>Current Holder</strong> refers to the latest holder through GW5 of 2026-27.</li>
 <li>In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.</li>
 </ul>
 </details>
 <div class="table-wrap"><table>
 <thead><tr><th>Manager</th><th>Reigns</th><th>Belt Fight Record</th><th>Win %</th><th>Longest Defense Run</th><th>Weeks Holding</th><th>Avg Belt Fight Score</th><th>Current Holder</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Reigns">7</td><td data-label="Belt Fight Record">26-6</td><td data-label="Win %">81.2%</td><td data-label="Longest Defense Run">5</td><td data-label="Weeks Holding">26</td><td data-label="Avg Belt Fight Score">48.72</td><td data-label="Current Holder">Yes</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Reigns">7</td><td data-label="Belt Fight Record">27-6</td><td data-label="Win %">81.8%</td><td data-label="Longest Defense Run">5</td><td data-label="Weeks Holding">27</td><td data-label="Avg Belt Fight Score">48.97</td><td data-label="Current Holder">Yes</td></tr>
 <tr><td data-label="Manager">Drake Byrd</td><td data-label="Reigns">6</td><td data-label="Belt Fight Record">10-11</td><td data-label="Win %">47.6%</td><td data-label="Longest Defense Run">3</td><td data-label="Weeks Holding">10</td><td data-label="Avg Belt Fight Score">39.81</td><td data-label="Current Holder"></td></tr>
 <tr><td data-label="Manager">Justin Miller</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">14-8</td><td data-label="Win %">63.6%</td><td data-label="Longest Defense Run">6</td><td data-label="Weeks Holding">14</td><td data-label="Avg Belt Fight Score">48.32</td><td data-label="Current Holder"></td></tr>
 <tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Reigns">4</td><td data-label="Belt Fight Record">6-15</td><td data-label="Win %">28.6%</td><td data-label="Longest Defense Run">2</td><td data-label="Weeks Holding">6</td><td data-label="Avg Belt Fight Score">37.52</td><td data-label="Current Holder"></td></tr>
@@ -3724,7 +3845,7 @@
 <tr><td data-label="Manager">Alexander Chaban</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">4-7</td><td data-label="Win %">36.4%</td><td data-label="Longest Defense Run">2</td><td data-label="Weeks Holding">4</td><td data-label="Avg Belt Fight Score">35.45</td><td data-label="Current Holder"></td></tr>
 <tr><td data-label="Manager">Dylan Reid</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">3-7</td><td data-label="Win %">30.0%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">3</td><td data-label="Avg Belt Fight Score">34.60</td><td data-label="Current Holder"></td></tr>
 <tr><td data-label="Manager">Luke Lockwood</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">3-6</td><td data-label="Win %">33.3%</td><td data-label="Longest Defense Run">1</td><td data-label="Weeks Holding">3</td><td data-label="Avg Belt Fight Score">37.67</td><td data-label="Current Holder"></td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">2-6</td><td data-label="Win %">25.0%</td><td data-label="Longest Defense Run">0</td><td data-label="Weeks Holding">2</td><td data-label="Avg Belt Fight Score">42.75</td><td data-label="Current Holder"></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Reigns">2</td><td data-label="Belt Fight Record">2-7</td><td data-label="Win %">22.2%</td><td data-label="Longest Defense Run">0</td><td data-label="Weeks Holding">2</td><td data-label="Avg Belt Fight Score">44.11</td><td data-label="Current Holder"></td></tr>
 </tbody></table></div>
 <h3>Week-By-Week Belt Path</h3>
 <div class="table-wrap belt-path-table"><table>
@@ -3810,6 +3931,7 @@
 <tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">2</td><td data-label="Season">2026-27</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Alexander Chaban</td><td data-label="Score">83-23</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
 <tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">3</td><td data-label="Season">2026-27</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Ethan Ellsworth</td><td data-label="Score">45-24</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
 <tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">4</td><td data-label="Season">2026-27</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Levi Morant</td><td data-label="Score">81-43</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
+<tr class="belt-winner-row" style="--belt-bg: hsl(44 92% 94%); --belt-bg-dark: hsl(44 56% 17%); --belt-accent: hsl(44 76% 39%);" data-belt-holder="Ryan Donlan"><td data-label="GW">5</td><td data-label="Season">2026-27</td><td data-label="Holder Entering">Ryan Donlan</td><td data-label="Challenger">Julius Long</td><td data-label="Score">57-55</td><td data-label="Belt After GW">Ryan Donlan</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -3829,16 +3951,16 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Power Rank</th><th>Manager</th><th>Avg Final Rating</th><th>Latest Rating</th><th>Latest Rank</th><th>Best Peak</th><th>Best Peak Week</th><th>Avg Power Rank</th><th>Weeks #1</th><th>Top 3 Weeks</th><th>Bottom 3 Weeks</th><th>Total Net</th></tr></thead>
 <tbody>
-<tr><td data-label="Power Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Avg Final Rating">1591.2</td><td data-label="Latest Rating">1545.6</td><td data-label="Latest Rank">1</td><td data-label="Best Peak">1645.6</td><td data-label="Best Peak Week">2024-25 33</td><td data-label="Avg Power Rank">2.30</td><td data-label="Weeks #1">45</td><td data-label="Top 3 Weeks">62</td><td data-label="Bottom 3 Weeks">4</td><td data-label="Total Net">+273.8</td></tr>
-<tr><td data-label="Power Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Avg Final Rating">1572.9</td><td data-label="Latest Rating">1500.8</td><td data-label="Latest Rank">5</td><td data-label="Best Peak">1637.4</td><td data-label="Best Peak Week">2024-25 37</td><td data-label="Avg Power Rank">3.88</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">47</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+218.7</td></tr>
-<tr><td data-label="Power Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Avg Final Rating">1525.7</td><td data-label="Latest Rating">1523.1</td><td data-label="Latest Rank">2</td><td data-label="Best Peak">1551.4</td><td data-label="Best Peak Week">2024-25 36</td><td data-label="Avg Power Rank">5.01</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">22</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+77.0</td></tr>
-<tr><td data-label="Power Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Avg Final Rating">1506.1</td><td data-label="Latest Rating">1475.3</td><td data-label="Latest Rank">10</td><td data-label="Best Peak">1583.9</td><td data-label="Best Peak Week">2025-26 18</td><td data-label="Avg Power Rank">4.99</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">36</td><td data-label="Bottom 3 Weeks">22</td><td data-label="Total Net">+18.4</td></tr>
-<tr><td data-label="Power Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Avg Final Rating">1502.6</td><td data-label="Latest Rating">1520.8</td><td data-label="Latest Rank">3</td><td data-label="Best Peak">1558.1</td><td data-label="Best Peak Week">2025-26 16</td><td data-label="Avg Power Rank">4.89</td><td data-label="Weeks #1">8</td><td data-label="Top 3 Weeks">21</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+7.8</td></tr>
-<tr><td data-label="Power Rank">6</td><td data-label="Manager">Levi Morant</td><td data-label="Avg Final Rating">1495.2</td><td data-label="Latest Rating">1500.8</td><td data-label="Latest Rank">6</td><td data-label="Best Peak">1576.5</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Power Rank">6.66</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">11</td><td data-label="Bottom 3 Weeks">35</td><td data-label="Total Net">-14.3</td></tr>
-<tr><td data-label="Power Rank">7</td><td data-label="Manager">Julius Long</td><td data-label="Avg Final Rating">1456.6</td><td data-label="Latest Rating">1478.5</td><td data-label="Latest Rank">7</td><td data-label="Best Peak">1554.6</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Power Rank">6.40</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">38</td><td data-label="Total Net">-130.2</td></tr>
-<tr><td data-label="Power Rank">8</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Avg Final Rating">1452.0</td><td data-label="Latest Rating">1477.6</td><td data-label="Latest Rank">8</td><td data-label="Best Peak">1534.4</td><td data-label="Best Peak Week">2025-26 3</td><td data-label="Avg Power Rank">7.72</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">50</td><td data-label="Total Net">-143.9</td></tr>
-<tr><td data-label="Power Rank">9</td><td data-label="Manager">Dylan Reid</td><td data-label="Avg Final Rating">1449.3</td><td data-label="Latest Rating">1476.1</td><td data-label="Latest Rank">9</td><td data-label="Best Peak">1538.9</td><td data-label="Best Peak Week">2025-26 33</td><td data-label="Avg Power Rank">5.63</td><td data-label="Weeks #1">2</td><td data-label="Top 3 Weeks">14</td><td data-label="Bottom 3 Weeks">19</td><td data-label="Total Net">-152.1</td></tr>
-<tr><td data-label="Power Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Avg Final Rating">1448.3</td><td data-label="Latest Rating">1501.5</td><td data-label="Latest Rank">4</td><td data-label="Best Peak">1537.5</td><td data-label="Best Peak Week">2025-26 25</td><td data-label="Avg Power Rank">7.53</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">48</td><td data-label="Total Net">-155.1</td></tr>
+<tr><td data-label="Power Rank">1</td><td data-label="Manager">Ryan Donlan</td><td data-label="Avg Final Rating">1594.5</td><td data-label="Latest Rating">1555.3</td><td data-label="Latest Rank">1</td><td data-label="Best Peak">1645.6</td><td data-label="Best Peak Week">2024-25 33</td><td data-label="Avg Power Rank">2.28</td><td data-label="Weeks #1">46</td><td data-label="Top 3 Weeks">63</td><td data-label="Bottom 3 Weeks">4</td><td data-label="Total Net">+283.5</td></tr>
+<tr><td data-label="Power Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Avg Final Rating">1576.9</td><td data-label="Latest Rating">1512.8</td><td data-label="Latest Rank">3</td><td data-label="Best Peak">1637.4</td><td data-label="Best Peak Week">2024-25 37</td><td data-label="Avg Power Rank">3.87</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">48</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+230.7</td></tr>
+<tr><td data-label="Power Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Avg Final Rating">1521.2</td><td data-label="Latest Rating">1509.5</td><td data-label="Latest Rank">4</td><td data-label="Best Peak">1551.4</td><td data-label="Best Peak Week">2024-25 36</td><td data-label="Avg Power Rank">5.00</td><td data-label="Weeks #1">1</td><td data-label="Top 3 Weeks">22</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+63.5</td></tr>
+<tr><td data-label="Power Rank">4</td><td data-label="Manager">Luke Lockwood</td><td data-label="Avg Final Rating">1510.2</td><td data-label="Latest Rating">1487.3</td><td data-label="Latest Rank">8</td><td data-label="Best Peak">1583.9</td><td data-label="Best Peak Week">2025-26 18</td><td data-label="Avg Power Rank">5.03</td><td data-label="Weeks #1">10</td><td data-label="Top 3 Weeks">36</td><td data-label="Bottom 3 Weeks">23</td><td data-label="Total Net">+30.5</td></tr>
+<tr><td data-label="Power Rank">5</td><td data-label="Manager">Drake Byrd</td><td data-label="Avg Final Rating">1506.4</td><td data-label="Latest Rating">1532.1</td><td data-label="Latest Rank">2</td><td data-label="Best Peak">1558.1</td><td data-label="Best Peak Week">2025-26 16</td><td data-label="Avg Power Rank">4.85</td><td data-label="Weeks #1">8</td><td data-label="Top 3 Weeks">22</td><td data-label="Bottom 3 Weeks">8</td><td data-label="Total Net">+19.1</td></tr>
+<tr><td data-label="Power Rank">6</td><td data-label="Manager">Levi Morant</td><td data-label="Avg Final Rating">1491.5</td><td data-label="Latest Rating">1489.5</td><td data-label="Latest Rank">7</td><td data-label="Best Peak">1576.5</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Power Rank">6.67</td><td data-label="Weeks #1">4</td><td data-label="Top 3 Weeks">11</td><td data-label="Bottom 3 Weeks">35</td><td data-label="Total Net">-25.7</td></tr>
+<tr><td data-label="Power Rank">7</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Avg Final Rating">1456.5</td><td data-label="Latest Rating">1491.1</td><td data-label="Latest Rank">5</td><td data-label="Best Peak">1534.4</td><td data-label="Best Peak Week">2025-26 3</td><td data-label="Avg Power Rank">7.69</td><td data-label="Weeks #1">0</td><td data-label="Top 3 Weeks">4</td><td data-label="Bottom 3 Weeks">50</td><td data-label="Total Net">-130.4</td></tr>
+<tr><td data-label="Power Rank">8</td><td data-label="Manager">Julius Long</td><td data-label="Avg Final Rating">1453.4</td><td data-label="Latest Rating">1468.7</td><td data-label="Latest Rank">9</td><td data-label="Best Peak">1554.6</td><td data-label="Best Peak Week">2024-25 7</td><td data-label="Avg Power Rank">6.43</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">17</td><td data-label="Bottom 3 Weeks">39</td><td data-label="Total Net">-139.9</td></tr>
+<tr><td data-label="Power Rank">9</td><td data-label="Manager">Dylan Reid</td><td data-label="Avg Final Rating">1445.3</td><td data-label="Latest Rating">1464.0</td><td data-label="Latest Rank">10</td><td data-label="Best Peak">1538.9</td><td data-label="Best Peak Week">2025-26 33</td><td data-label="Avg Power Rank">5.68</td><td data-label="Weeks #1">2</td><td data-label="Top 3 Weeks">14</td><td data-label="Bottom 3 Weeks">20</td><td data-label="Total Net">-164.1</td></tr>
+<tr><td data-label="Power Rank">10</td><td data-label="Manager">Alexander Chaban</td><td data-label="Avg Final Rating">1444.3</td><td data-label="Latest Rating">1489.5</td><td data-label="Latest Rank">6</td><td data-label="Best Peak">1537.5</td><td data-label="Best Peak Week">2025-26 25</td><td data-label="Avg Power Rank">7.51</td><td data-label="Weeks #1">3</td><td data-label="Top 3 Weeks">6</td><td data-label="Bottom 3 Weeks">48</td><td data-label="Total Net">-167.2</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -3849,22 +3971,22 @@
 <ul>
 <li>Records are shown as <code>wins-draws-losses</code> from the row manager&#x27;s perspective.</li>
 <li>The diagonal is shown as <code>-</code> because a manager cannot play themselves.</li>
-<li>This combines the complete 2024-25 and 2025-26 schedules with 2026-27 through GW4.</li>
+<li>This combines the complete 2024-25 and 2025-26 schedules with 2026-27 through GW5.</li>
 </ul>
 </details>
 <div class="table-wrap"><table>
-<thead><tr><th>Manager</th><th>Ryan Donlan</th><th>Justin Miller</th><th>Ryan Houseman</th><th>Luke Lockwood</th><th>Drake Byrd</th><th>Levi Morant</th><th>Julius Long</th><th>Dylan Reid</th><th>Alexander Chaban</th><th>Ethan Ellsworth</th></tr></thead>
+<thead><tr><th>Manager</th><th>Ryan Donlan</th><th>Justin Miller</th><th>Ryan Houseman</th><th>Luke Lockwood</th><th>Drake Byrd</th><th>Levi Morant</th><th>Julius Long</th><th>Dylan Reid</th><th>Ethan Ellsworth</th><th>Alexander Chaban</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Ryan Donlan">-</td><td data-label="Justin Miller">9-0-0</td><td data-label="Ryan Houseman">4-0-4</td><td data-label="Luke Lockwood">6-0-3</td><td data-label="Drake Byrd">6-0-3</td><td data-label="Levi Morant">6-0-3</td><td data-label="Julius Long">7-0-1</td><td data-label="Dylan Reid">7-1-1</td><td data-label="Alexander Chaban">6-0-3</td><td data-label="Ethan Ellsworth">7-0-3</td></tr>
-<tr><td data-label="Manager">Justin Miller</td><td data-label="Ryan Donlan">0-0-9</td><td data-label="Justin Miller">-</td><td data-label="Ryan Houseman">9-0-0</td><td data-label="Luke Lockwood">7-0-2</td><td data-label="Drake Byrd">4-1-4</td><td data-label="Levi Morant">5-0-4</td><td data-label="Julius Long">7-0-2</td><td data-label="Dylan Reid">7-0-1</td><td data-label="Alexander Chaban">7-0-2</td><td data-label="Ethan Ellsworth">6-0-3</td></tr>
-<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Ryan Donlan">4-0-4</td><td data-label="Justin Miller">0-0-9</td><td data-label="Ryan Houseman">-</td><td data-label="Luke Lockwood">5-0-4</td><td data-label="Drake Byrd">7-0-3</td><td data-label="Levi Morant">6-0-3</td><td data-label="Julius Long">3-0-7</td><td data-label="Dylan Reid">5-0-4</td><td data-label="Alexander Chaban">7-0-1</td><td data-label="Ethan Ellsworth">7-0-1</td></tr>
-<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">2-0-7</td><td data-label="Ryan Houseman">4-0-5</td><td data-label="Luke Lockwood">-</td><td data-label="Drake Byrd">5-1-2</td><td data-label="Levi Morant">5-0-4</td><td data-label="Julius Long">6-1-2</td><td data-label="Dylan Reid">4-1-4</td><td data-label="Alexander Chaban">6-0-3</td><td data-label="Ethan Ellsworth">5-1-3</td></tr>
-<tr><td data-label="Manager">Drake Byrd</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">4-1-4</td><td data-label="Ryan Houseman">3-0-7</td><td data-label="Luke Lockwood">2-1-5</td><td data-label="Drake Byrd">-</td><td data-label="Levi Morant">3-0-5</td><td data-label="Julius Long">5-0-4</td><td data-label="Dylan Reid">8-0-0</td><td data-label="Alexander Chaban">4-0-5</td><td data-label="Ethan Ellsworth">7-0-3</td></tr>
-<tr><td data-label="Manager">Levi Morant</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">4-0-5</td><td data-label="Ryan Houseman">3-0-6</td><td data-label="Luke Lockwood">4-0-5</td><td data-label="Drake Byrd">5-0-3</td><td data-label="Levi Morant">-</td><td data-label="Julius Long">5-0-3</td><td data-label="Dylan Reid">4-0-6</td><td data-label="Alexander Chaban">7-0-3</td><td data-label="Ethan Ellsworth">2-0-6</td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Ryan Donlan">1-0-7</td><td data-label="Justin Miller">2-0-7</td><td data-label="Ryan Houseman">7-0-3</td><td data-label="Luke Lockwood">2-1-6</td><td data-label="Drake Byrd">4-0-5</td><td data-label="Levi Morant">3-0-5</td><td data-label="Julius Long">-</td><td data-label="Dylan Reid">3-0-6</td><td data-label="Alexander Chaban">6-0-2</td><td data-label="Ethan Ellsworth">4-1-5</td></tr>
-<tr><td data-label="Manager">Dylan Reid</td><td data-label="Ryan Donlan">1-1-7</td><td data-label="Justin Miller">1-0-7</td><td data-label="Ryan Houseman">4-0-5</td><td data-label="Luke Lockwood">4-1-4</td><td data-label="Drake Byrd">0-0-8</td><td data-label="Levi Morant">6-0-4</td><td data-label="Julius Long">6-0-3</td><td data-label="Dylan Reid">-</td><td data-label="Alexander Chaban">2-0-8</td><td data-label="Ethan Ellsworth">8-0-0</td></tr>
-<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">2-0-7</td><td data-label="Ryan Houseman">1-0-7</td><td data-label="Luke Lockwood">3-0-6</td><td data-label="Drake Byrd">5-0-4</td><td data-label="Levi Morant">3-0-7</td><td data-label="Julius Long">2-0-6</td><td data-label="Dylan Reid">8-0-2</td><td data-label="Alexander Chaban">-</td><td data-label="Ethan Ellsworth">3-0-5</td></tr>
-<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Ryan Donlan">3-0-7</td><td data-label="Justin Miller">3-0-6</td><td data-label="Ryan Houseman">1-0-7</td><td data-label="Luke Lockwood">3-1-5</td><td data-label="Drake Byrd">3-0-7</td><td data-label="Levi Morant">6-0-2</td><td data-label="Julius Long">5-1-4</td><td data-label="Dylan Reid">0-0-8</td><td data-label="Alexander Chaban">5-0-3</td><td data-label="Ethan Ellsworth">-</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Ryan Donlan">-</td><td data-label="Justin Miller">9-0-0</td><td data-label="Ryan Houseman">4-0-4</td><td data-label="Luke Lockwood">6-0-3</td><td data-label="Drake Byrd">6-0-3</td><td data-label="Levi Morant">6-0-3</td><td data-label="Julius Long">8-0-1</td><td data-label="Dylan Reid">7-1-1</td><td data-label="Ethan Ellsworth">7-0-3</td><td data-label="Alexander Chaban">6-0-3</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Ryan Donlan">0-0-9</td><td data-label="Justin Miller">-</td><td data-label="Ryan Houseman">9-0-0</td><td data-label="Luke Lockwood">7-0-2</td><td data-label="Drake Byrd">4-1-4</td><td data-label="Levi Morant">5-0-4</td><td data-label="Julius Long">7-0-2</td><td data-label="Dylan Reid">7-0-1</td><td data-label="Ethan Ellsworth">6-0-3</td><td data-label="Alexander Chaban">8-0-2</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Ryan Donlan">4-0-4</td><td data-label="Justin Miller">0-0-9</td><td data-label="Ryan Houseman">-</td><td data-label="Luke Lockwood">5-0-4</td><td data-label="Drake Byrd">7-0-3</td><td data-label="Levi Morant">6-0-3</td><td data-label="Julius Long">3-0-7</td><td data-label="Dylan Reid">5-0-4</td><td data-label="Ethan Ellsworth">7-0-2</td><td data-label="Alexander Chaban">7-0-1</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">2-0-7</td><td data-label="Ryan Houseman">4-0-5</td><td data-label="Luke Lockwood">-</td><td data-label="Drake Byrd">5-1-2</td><td data-label="Levi Morant">5-0-4</td><td data-label="Julius Long">6-1-2</td><td data-label="Dylan Reid">5-1-4</td><td data-label="Ethan Ellsworth">5-1-3</td><td data-label="Alexander Chaban">6-0-3</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">4-1-4</td><td data-label="Ryan Houseman">3-0-7</td><td data-label="Luke Lockwood">2-1-5</td><td data-label="Drake Byrd">-</td><td data-label="Levi Morant">4-0-5</td><td data-label="Julius Long">5-0-4</td><td data-label="Dylan Reid">8-0-0</td><td data-label="Ethan Ellsworth">7-0-3</td><td data-label="Alexander Chaban">4-0-5</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">4-0-5</td><td data-label="Ryan Houseman">3-0-6</td><td data-label="Luke Lockwood">4-0-5</td><td data-label="Drake Byrd">5-0-4</td><td data-label="Levi Morant">-</td><td data-label="Julius Long">5-0-3</td><td data-label="Dylan Reid">4-0-6</td><td data-label="Ethan Ellsworth">2-0-6</td><td data-label="Alexander Chaban">7-0-3</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Ryan Donlan">1-0-8</td><td data-label="Justin Miller">2-0-7</td><td data-label="Ryan Houseman">7-0-3</td><td data-label="Luke Lockwood">2-1-6</td><td data-label="Drake Byrd">4-0-5</td><td data-label="Levi Morant">3-0-5</td><td data-label="Julius Long">-</td><td data-label="Dylan Reid">3-0-6</td><td data-label="Ethan Ellsworth">4-1-5</td><td data-label="Alexander Chaban">6-0-2</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Ryan Donlan">1-1-7</td><td data-label="Justin Miller">1-0-7</td><td data-label="Ryan Houseman">4-0-5</td><td data-label="Luke Lockwood">4-1-5</td><td data-label="Drake Byrd">0-0-8</td><td data-label="Levi Morant">6-0-4</td><td data-label="Julius Long">6-0-3</td><td data-label="Dylan Reid">-</td><td data-label="Ethan Ellsworth">8-0-0</td><td data-label="Alexander Chaban">2-0-8</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Ryan Donlan">3-0-7</td><td data-label="Justin Miller">3-0-6</td><td data-label="Ryan Houseman">2-0-7</td><td data-label="Luke Lockwood">3-1-5</td><td data-label="Drake Byrd">3-0-7</td><td data-label="Levi Morant">6-0-2</td><td data-label="Julius Long">5-1-4</td><td data-label="Dylan Reid">0-0-8</td><td data-label="Ethan Ellsworth">-</td><td data-label="Alexander Chaban">5-0-3</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Ryan Donlan">3-0-6</td><td data-label="Justin Miller">2-0-8</td><td data-label="Ryan Houseman">1-0-7</td><td data-label="Luke Lockwood">3-0-6</td><td data-label="Drake Byrd">5-0-4</td><td data-label="Levi Morant">3-0-7</td><td data-label="Julius Long">2-0-6</td><td data-label="Dylan Reid">8-0-2</td><td data-label="Ethan Ellsworth">3-0-5</td><td data-label="Alexander Chaban">-</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -3882,16 +4004,16 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Manager</th><th>PF</th><th>PF/GW</th><th>Avg Weekly Rank</th><th>Top Scores</th><th>Bottom Scores</th><th>Best Week</th><th>Worst Week</th><th>Score Stdev</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="PF">3772</td><td data-label="PF/GW">47.15</td><td data-label="Avg Weekly Rank">4.31</td><td data-label="Top Scores">11</td><td data-label="Bottom Scores">4</td><td data-label="Best Week">2025-26 33 (103)</td><td data-label="Worst Week">2024-25 8 (19)</td><td data-label="Score Stdev">15.09</td></tr>
-<tr><td data-label="Manager">Justin Miller</td><td data-label="PF">3671</td><td data-label="PF/GW">45.89</td><td data-label="Avg Weekly Rank">4.21</td><td data-label="Top Scores">20</td><td data-label="Bottom Scores">5</td><td data-label="Best Week">2024-25 24 (80)</td><td data-label="Worst Week">2025-26 14 (22)</td><td data-label="Score Stdev">11.64</td></tr>
-<tr><td data-label="Manager">Drake Byrd</td><td data-label="PF">3317</td><td data-label="PF/GW">41.46</td><td data-label="Avg Weekly Rank">5.28</td><td data-label="Top Scores">9</td><td data-label="Bottom Scores">4</td><td data-label="Best Week">2026-27 2 (82)</td><td data-label="Worst Week">2025-26 18 (16)</td><td data-label="Score Stdev">12.13</td></tr>
-<tr><td data-label="Manager">Ryan Houseman</td><td data-label="PF">3297</td><td data-label="PF/GW">41.21</td><td data-label="Avg Weekly Rank">5.49</td><td data-label="Top Scores">8</td><td data-label="Bottom Scores">9</td><td data-label="Best Week">2024-25 22 (81)</td><td data-label="Worst Week">2024-25 6 (22)</td><td data-label="Score Stdev">13.21</td></tr>
-<tr><td data-label="Manager">Luke Lockwood</td><td data-label="PF">3238</td><td data-label="PF/GW">40.48</td><td data-label="Avg Weekly Rank">5.71</td><td data-label="Top Scores">6</td><td data-label="Bottom Scores">8</td><td data-label="Best Week">2024-25 33 (76)</td><td data-label="Worst Week">2025-26 5 (21)</td><td data-label="Score Stdev">12.11</td></tr>
-<tr><td data-label="Manager">Levi Morant</td><td data-label="PF">3217</td><td data-label="PF/GW">40.21</td><td data-label="Avg Weekly Rank">5.66</td><td data-label="Top Scores">10</td><td data-label="Bottom Scores">12</td><td data-label="Best Week">2024-25 32 (75)</td><td data-label="Worst Week">2025-26 5 (20)</td><td data-label="Score Stdev">11.91</td></tr>
-<tr><td data-label="Manager">Alexander Chaban</td><td data-label="PF">3143</td><td data-label="PF/GW">39.29</td><td data-label="Avg Weekly Rank">5.91</td><td data-label="Top Scores">7</td><td data-label="Bottom Scores">15</td><td data-label="Best Week">2024-25 2 (69)</td><td data-label="Worst Week">2024-25 15 (17)</td><td data-label="Score Stdev">12.20</td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="PF">3134</td><td data-label="PF/GW">39.17</td><td data-label="Avg Weekly Rank">6.17</td><td data-label="Top Scores">8</td><td data-label="Bottom Scores">10</td><td data-label="Best Week">2025-26 19 (75)</td><td data-label="Worst Week">2025-26 34 (18)</td><td data-label="Score Stdev">11.86</td></tr>
-<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="PF">3108</td><td data-label="PF/GW">38.85</td><td data-label="Avg Weekly Rank">5.96</td><td data-label="Top Scores">6</td><td data-label="Bottom Scores">11</td><td data-label="Best Week">2024-25 26 (76)</td><td data-label="Worst Week">2024-25 29 (13)</td><td data-label="Score Stdev">10.45</td></tr>
-<tr><td data-label="Manager">Dylan Reid</td><td data-label="PF">3021</td><td data-label="PF/GW">37.76</td><td data-label="Avg Weekly Rank">6.32</td><td data-label="Top Scores">4</td><td data-label="Bottom Scores">8</td><td data-label="Best Week">2025-26 17 (57)</td><td data-label="Worst Week">2024-25 3 (20)</td><td data-label="Score Stdev">9.78</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="PF">3829</td><td data-label="PF/GW">47.27</td><td data-label="Avg Weekly Rank">4.27</td><td data-label="Top Scores">12</td><td data-label="Bottom Scores">4</td><td data-label="Best Week">2025-26 33 (103)</td><td data-label="Worst Week">2024-25 8 (19)</td><td data-label="Score Stdev">15.04</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="PF">3719</td><td data-label="PF/GW">45.91</td><td data-label="Avg Weekly Rank">4.20</td><td data-label="Top Scores">20</td><td data-label="Bottom Scores">5</td><td data-label="Best Week">2024-25 24 (80)</td><td data-label="Worst Week">2025-26 14 (22)</td><td data-label="Score Stdev">11.57</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="PF">3355</td><td data-label="PF/GW">41.42</td><td data-label="Avg Weekly Rank">5.31</td><td data-label="Top Scores">9</td><td data-label="Bottom Scores">4</td><td data-label="Best Week">2026-27 2 (82)</td><td data-label="Worst Week">2025-26 18 (16)</td><td data-label="Score Stdev">12.07</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="PF">3337</td><td data-label="PF/GW">41.20</td><td data-label="Avg Weekly Rank">5.51</td><td data-label="Top Scores">8</td><td data-label="Bottom Scores">9</td><td data-label="Best Week">2024-25 22 (81)</td><td data-label="Worst Week">2024-25 6 (22)</td><td data-label="Score Stdev">13.13</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="PF">3278</td><td data-label="PF/GW">40.47</td><td data-label="Avg Weekly Rank">5.72</td><td data-label="Top Scores">6</td><td data-label="Bottom Scores">8</td><td data-label="Best Week">2024-25 33 (76)</td><td data-label="Worst Week">2025-26 5 (21)</td><td data-label="Score Stdev">12.04</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="PF">3254</td><td data-label="PF/GW">40.17</td><td data-label="Avg Weekly Rank">5.70</td><td data-label="Top Scores">10</td><td data-label="Bottom Scores">12</td><td data-label="Best Week">2024-25 32 (75)</td><td data-label="Worst Week">2025-26 5 (20)</td><td data-label="Score Stdev">11.85</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="PF">3189</td><td data-label="PF/GW">39.37</td><td data-label="Avg Weekly Rank">6.13</td><td data-label="Top Scores">8</td><td data-label="Bottom Scores">10</td><td data-label="Best Week">2025-26 19 (75)</td><td data-label="Worst Week">2025-26 34 (18)</td><td data-label="Score Stdev">11.91</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="PF">3187</td><td data-label="PF/GW">39.35</td><td data-label="Avg Weekly Rank">5.90</td><td data-label="Top Scores">7</td><td data-label="Bottom Scores">15</td><td data-label="Best Week">2024-25 2 (69)</td><td data-label="Worst Week">2024-25 15 (17)</td><td data-label="Score Stdev">12.13</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="PF">3165</td><td data-label="PF/GW">39.07</td><td data-label="Avg Weekly Rank">5.91</td><td data-label="Top Scores">7</td><td data-label="Bottom Scores">11</td><td data-label="Best Week">2024-25 26 (76)</td><td data-label="Worst Week">2024-25 29 (13)</td><td data-label="Score Stdev">10.58</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="PF">3055</td><td data-label="PF/GW">37.72</td><td data-label="Avg Weekly Rank">6.36</td><td data-label="Top Scores">4</td><td data-label="Bottom Scores">9</td><td data-label="Best Week">2025-26 17 (57)</td><td data-label="Worst Week">2024-25 3 (20)</td><td data-label="Score Stdev">9.72</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -3910,16 +4032,16 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Manager</th><th>Top 1</th><th>Top 3</th><th>Top 5</th><th>Bottom 5</th><th>Bottom 3</th><th>Bottom 1</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Justin Miller</td><td data-label="Top 1">25.0%</td><td data-label="Top 3">45.0%</td><td data-label="Top 5">73.8%</td><td data-label="Bottom 5">30.0%</td><td data-label="Bottom 3">16.2%</td><td data-label="Bottom 1">6.2%</td></tr>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Top 1">13.8%</td><td data-label="Top 3">46.2%</td><td data-label="Top 5">71.2%</td><td data-label="Bottom 5">31.2%</td><td data-label="Bottom 3">17.5%</td><td data-label="Bottom 1">5.0%</td></tr>
-<tr><td data-label="Manager">Levi Morant</td><td data-label="Top 1">12.5%</td><td data-label="Top 3">25.0%</td><td data-label="Top 5">48.8%</td><td data-label="Bottom 5">53.8%</td><td data-label="Bottom 3">28.7%</td><td data-label="Bottom 1">15.0%</td></tr>
-<tr><td data-label="Manager">Drake Byrd</td><td data-label="Top 1">11.2%</td><td data-label="Top 3">31.2%</td><td data-label="Top 5">53.8%</td><td data-label="Bottom 5">48.8%</td><td data-label="Bottom 3">25.0%</td><td data-label="Bottom 1">5.0%</td></tr>
-<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Top 1">10.0%</td><td data-label="Top 3">31.2%</td><td data-label="Top 5">53.8%</td><td data-label="Bottom 5">48.8%</td><td data-label="Bottom 3">30.0%</td><td data-label="Bottom 1">11.2%</td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Top 1">10.0%</td><td data-label="Top 3">20.0%</td><td data-label="Top 5">40.0%</td><td data-label="Bottom 5">65.0%</td><td data-label="Bottom 3">40.0%</td><td data-label="Bottom 1">12.5%</td></tr>
-<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Top 1">8.8%</td><td data-label="Top 3">28.7%</td><td data-label="Top 5">45.0%</td><td data-label="Bottom 5">56.2%</td><td data-label="Bottom 3">36.2%</td><td data-label="Bottom 1">18.8%</td></tr>
-<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Top 1">7.5%</td><td data-label="Top 3">32.5%</td><td data-label="Top 5">48.8%</td><td data-label="Bottom 5">56.2%</td><td data-label="Bottom 3">35.0%</td><td data-label="Bottom 1">10.0%</td></tr>
-<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Top 1">7.5%</td><td data-label="Top 3">23.8%</td><td data-label="Top 5">46.2%</td><td data-label="Bottom 5">60.0%</td><td data-label="Bottom 3">36.2%</td><td data-label="Bottom 1">13.8%</td></tr>
-<tr><td data-label="Manager">Dylan Reid</td><td data-label="Top 1">5.0%</td><td data-label="Top 3">26.2%</td><td data-label="Top 5">35.0%</td><td data-label="Bottom 5">67.5%</td><td data-label="Bottom 3">46.2%</td><td data-label="Bottom 1">10.0%</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Top 1">24.7%</td><td data-label="Top 3">44.4%</td><td data-label="Top 5">74.1%</td><td data-label="Bottom 5">29.6%</td><td data-label="Bottom 3">16.0%</td><td data-label="Bottom 1">6.2%</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Top 1">14.8%</td><td data-label="Top 3">46.9%</td><td data-label="Top 5">71.6%</td><td data-label="Bottom 5">30.9%</td><td data-label="Bottom 3">17.3%</td><td data-label="Bottom 1">4.9%</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Top 1">12.3%</td><td data-label="Top 3">24.7%</td><td data-label="Top 5">48.1%</td><td data-label="Bottom 5">54.3%</td><td data-label="Bottom 3">29.6%</td><td data-label="Bottom 1">14.8%</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Top 1">11.1%</td><td data-label="Top 3">30.9%</td><td data-label="Top 5">53.1%</td><td data-label="Bottom 5">49.4%</td><td data-label="Bottom 3">25.9%</td><td data-label="Bottom 1">4.9%</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Top 1">9.9%</td><td data-label="Top 3">30.9%</td><td data-label="Top 5">53.1%</td><td data-label="Bottom 5">49.4%</td><td data-label="Bottom 3">29.6%</td><td data-label="Bottom 1">11.1%</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Top 1">9.9%</td><td data-label="Top 3">21.0%</td><td data-label="Top 5">40.7%</td><td data-label="Bottom 5">64.2%</td><td data-label="Bottom 3">39.5%</td><td data-label="Bottom 1">12.3%</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Top 1">8.6%</td><td data-label="Top 3">28.4%</td><td data-label="Top 5">45.7%</td><td data-label="Bottom 5">55.6%</td><td data-label="Bottom 3">35.8%</td><td data-label="Bottom 1">18.5%</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Top 1">8.6%</td><td data-label="Top 3">24.7%</td><td data-label="Top 5">46.9%</td><td data-label="Bottom 5">59.3%</td><td data-label="Bottom 3">35.8%</td><td data-label="Bottom 1">13.6%</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Top 1">7.4%</td><td data-label="Top 3">32.1%</td><td data-label="Top 5">48.1%</td><td data-label="Bottom 5">56.8%</td><td data-label="Bottom 3">34.6%</td><td data-label="Bottom 1">9.9%</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Top 1">4.9%</td><td data-label="Top 3">25.9%</td><td data-label="Top 5">34.6%</td><td data-label="Bottom 5">67.9%</td><td data-label="Bottom 3">46.9%</td><td data-label="Bottom 1">11.1%</td></tr>
 </tbody></table></div>
 </details>
 <details>
@@ -3936,7 +4058,7 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Manager</th><th>Longest Win Streak</th><th>Win Week(s)</th><th>Longest Loss Streak</th><th>Loss Week(s)</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Longest Win Streak">15</td><td data-label="Win Week(s)">2025-26 28 to 2026-27 4</td><td data-label="Longest Loss Streak">4</td><td data-label="Loss Week(s)">2024-25 34-37</td></tr>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Longest Win Streak">16</td><td data-label="Win Week(s)">2025-26 28 to 2026-27 5</td><td data-label="Longest Loss Streak">4</td><td data-label="Loss Week(s)">2024-25 34-37</td></tr>
 <tr><td data-label="Manager">Justin Miller</td><td data-label="Longest Win Streak">8</td><td data-label="Win Week(s)">2024-25 24-31</td><td data-label="Longest Loss Streak">4</td><td data-label="Loss Week(s)">2025-26 5-8</td></tr>
 <tr><td data-label="Manager">Levi Morant</td><td data-label="Longest Win Streak">7</td><td data-label="Win Week(s)">2024-25 1-7</td><td data-label="Longest Loss Streak">5</td><td data-label="Loss Week(s)">2024-25 8-12</td></tr>
 <tr><td data-label="Manager">Luke Lockwood</td><td data-label="Longest Win Streak">7</td><td data-label="Win Week(s)">2024-25 27-33</td><td data-label="Longest Loss Streak">5</td><td data-label="Loss Week(s)">2024-25 1-5</td></tr>
@@ -3980,7 +4102,7 @@
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 <ul>
-<li>Awards include 2026-27 results through GW4 and will change as the season progresses.</li>
+<li>Awards include 2026-27 results through GW5 and will change as the season progresses.</li>
 <li>Ties are shown as multiple managers in the same row.</li>
 <li>Raw totals and rate statistics include every completed career gameweek currently available.</li>
 </ul>
@@ -3988,15 +4110,15 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Award</th><th>Manager</th><th>Value</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td data-label="Award">Cumulative Table Leader</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">175</td><td data-label="Notes">Most combined H2H table points.</td></tr>
-<tr><td data-label="Award">Most Wins</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">58</td><td data-label="Notes">Most combined H2H wins.</td></tr>
-<tr><td data-label="Award">Total PF King</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">3772</td><td data-label="Notes">Most total starter points scored.</td></tr>
-<tr><td data-label="Award">Best PF/GW</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">47.15</td><td data-label="Notes">Best live career scoring average.</td></tr>
+<tr><td data-label="Award">Cumulative Table Leader</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">178</td><td data-label="Notes">Most combined H2H table points.</td></tr>
+<tr><td data-label="Award">Most Wins</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">59</td><td data-label="Notes">Most combined H2H wins.</td></tr>
+<tr><td data-label="Award">Total PF King</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">3829</td><td data-label="Notes">Most total starter points scored.</td></tr>
+<tr><td data-label="Award">Best PF/GW</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">47.27</td><td data-label="Notes">Best live career scoring average.</td></tr>
 <tr><td data-label="Award">Most Weekly Top Scores</td><td data-label="Manager">Justin Miller</td><td data-label="Value">20</td><td data-label="Notes">Most weeks finishing as the league&#x27;s top scorer.</td></tr>
-<tr><td data-label="Award">Most Top-5 Weeks</td><td data-label="Manager">Justin Miller</td><td data-label="Value">73.8% (59/80)</td><td data-label="Notes">Best broad week-to-week scoring band.</td></tr>
-<tr><td data-label="Award">Longest Win Streak</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">15</td><td data-label="Notes">Longest run of consecutive H2H wins, allowing streaks to span seasons.</td></tr>
+<tr><td data-label="Award">Most Top-5 Weeks</td><td data-label="Manager">Justin Miller</td><td data-label="Value">74.1% (60/81)</td><td data-label="Notes">Best broad week-to-week scoring band.</td></tr>
+<tr><td data-label="Award">Longest Win Streak</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">16</td><td data-label="Notes">Longest run of consecutive H2H wins, allowing streaks to span seasons.</td></tr>
 <tr><td data-label="Award">Lineal Belt Reigns</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">7</td><td data-label="Notes">Most distinct career lineal belt reigns.</td></tr>
-<tr><td data-label="Award">Boom/Bust Scorer</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">15.09</td><td data-label="Notes">Highest weekly scoring standard deviation.</td></tr>
+<tr><td data-label="Award">Boom/Bust Scorer</td><td data-label="Manager">Ryan Donlan</td><td data-label="Value">15.04</td><td data-label="Notes">Highest weekly scoring standard deviation.</td></tr>
 <tr><td data-label="Award">Most Improved PF/GW</td><td data-label="Manager">Dylan Reid</td><td data-label="Value">+7.2</td><td data-label="Notes">Largest scoring-average gain from 2024-25 to 2025-26.</td></tr>
 <tr><td data-label="Award">Biggest Rank Jump</td><td data-label="Manager">Dylan Reid</td><td data-label="Value">+4</td><td data-label="Notes">Positive means the 2025-26 rank is better than the 2024-25 rank.</td></tr>
 </tbody></table></div>

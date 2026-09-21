@@ -1,0 +1,51 @@
+gameweek,manager,team,actual_points,optimal_points,missed_points,efficiency_pct,raw_bench_points,best_unused,optimal_changes,opponent,opponent_points,actual_result,optimal_result,result_improved,result_impact
+1,Alexander Chaban,ChabosSpurs@Law,27,27,0,100.0,1,M.Bizot (1),Perfect lineup,Levi Morant,48,L,L,False,No change
+1,Drake Byrd,Bruno’s Balebas,45,58,13,77.6,13,Elanga (9),"In: Elanga (9), Hall (3); Out: Cash (-1), Muñoz (0)",Ethan Ellsworth,34,W,W,False,No change
+1,Dylan Reid,Joao Bonito,31,36,5,86.1,7,Gravenberch (5),In: Gravenberch (5); Out: Thiago (0),Ryan Houseman,35,L,W,True,L→W vs Ryan Houseman
+1,Ethan Ellsworth,Thanksgiving Cherki,34,36,2,94.4,3,Kinsky (2),"In: Kinsky (2), Matheus N. (1); Out: Kerkez (0), Lammens (1)",Drake Byrd,45,L,L,False,No change
+1,Julius Long,Amorim de mi vida,28,28,0,100.0,0,—,Perfect lineup,Luke Lockwood,75,L,L,False,No change
+1,Justin Miller,Sue-nited FC**,40,40,0,100.0,2,Henderson (2),Perfect lineup,Ryan Donlan,42,L,L,False,No change
+1,Levi Morant,*Saka It To Me Baby,48,48,0,100.0,1,Horníček (1),Perfect lineup,Alexander Chaban,27,W,W,False,No change
+1,Luke Lockwood,Into the WOODwork*,75,86,11,87.2,15,Guéhi (10),"In: Guéhi (10), Osula (4); Out: Canvot (1), E.Le Fée (2)",Julius Long,28,W,W,False,No change
+1,Ryan Donlan,***NoHaalandNoParty,42,42,0,100.0,3,Hill (1),Perfect lineup,Justin Miller,40,W,W,False,No change
+1,Ryan Houseman,Szoboszlickin good,35,37,2,94.6,11,Trafford (9),In: Trafford (9); Out: Pickford (7),Dylan Reid,31,W,W,False,No change
+2,Alexander Chaban,ChabosSpurs@Law,23,25,2,92.0,5,Suzuki (2),In: Nketiah (2); Out: Vuskovic (0),Ryan Donlan,83,L,L,False,No change
+2,Drake Byrd,Bruno’s Balebas,82,86,4,95.3,6,Tielemans (4),"In: Tielemans (4), Cash (2); Out: Šeško (1), McBurnie (1)",Justin Miller,40,W,W,False,No change
+2,Dylan Reid,Joao Bonito,47,54,7,87.0,10,Enciso (5),"In: Enciso (5), Woltemade (4); Out: Lacroix (1), Wilson (1)",Julius Long,25,W,W,False,No change
+2,Ethan Ellsworth,Thanksgiving Cherki,47,49,2,95.9,3,Buendía (2),In: Buendía (2); Out: Van de Ven (0),Luke Lockwood,44,W,W,False,No change
+2,Julius Long,Amorim de mi vida,25,25,0,100.0,0,—,Perfect lineup,Dylan Reid,47,L,L,False,No change
+2,Justin Miller,Sue-nited FC**,40,46,6,87.0,7,Xhaka (6),In: Xhaka (6); Out: Aina (0),Drake Byrd,82,L,L,False,No change
+2,Levi Morant,*Saka It To Me Baby,31,38,7,81.6,7,Horníček (7),In: Horníček (7); Out: A.Becker (0),Ryan Houseman,36,L,W,True,L→W vs Ryan Houseman
+2,Luke Lockwood,Into the WOODwork*,44,46,2,95.7,5,Martinez (2),In: Martinez (2); Out: Verbruggen (0),Ethan Ellsworth,47,L,L,False,No change
+2,Ryan Donlan,***NoHaalandNoParty,83,83,0,100.0,5,Awoniyi (2),Perfect lineup,Alexander Chaban,23,W,W,False,No change
+2,Ryan Houseman,Szoboszlickin good,36,36,0,100.0,3,Trafford (3),Perfect lineup,Levi Morant,31,W,W,False,No change
+3,Alexander Chaban,ChabosSpurs@Law,52,58,6,89.7,11,Konsa (4),"In: Konsa (4), Nketiah (4); Out: Robinson (1), Kudus (1)",Luke Lockwood,31,W,W,False,No change
+3,Drake Byrd,Bruno’s Balebas,39,54,15,72.2,21,Tzolakis (6),"In: Tzolakis (6), Cash (6), Šeško (5), Ballard (4); Out: Muñoz (1), Elanga (1), Roefs (2), McBurnie (2)",Ryan Houseman,34,W,W,False,No change
+3,Dylan Reid,Joao Bonito,28,30,2,93.3,3,Lacroix (2),In: Lacroix (2); Out: Truffert (0),Levi Morant,43,L,L,False,No change
+3,Ethan Ellsworth,Thanksgiving Cherki,24,30,6,80.0,9,Kinsky (6),"In: Kinsky (6), Branthwaite (3); Out: Wissa (1), Lammens (2)",Ryan Donlan,45,L,L,False,No change
+3,Julius Long,Amorim de mi vida,36,36,0,100.0,0,—,Perfect lineup,Justin Miller,55,L,L,False,No change
+3,Justin Miller,Sue-nited FC**,55,58,3,94.8,7,Xhaka (3),"In: Xhaka (3), Kostoulas (2); Out: Silva (1), Barcola (1)",Julius Long,36,W,W,False,No change
+3,Levi Morant,*Saka It To Me Baby,43,49,6,87.8,8,A.Becker (8),In: A.Becker (8); Out: Horníček (2),Dylan Reid,28,W,W,False,No change
+3,Luke Lockwood,Into the WOODwork*,31,36,5,86.1,7,Martinez (3),"In: Ndiaye (3), Solanke (1); Out: Thiaw (-1), M.Sangaré (0)",Alexander Chaban,52,L,L,False,No change
+3,Ryan Donlan,***NoHaalandNoParty,45,46,1,97.8,6,Rushworth (2),In: Awoniyi (2); Out: Calvert-Lewin (1),Ethan Ellsworth,24,W,W,False,No change
+3,Ryan Houseman,Szoboszlickin good,34,37,3,91.9,4,Trafford (3),"In: Trafford (3), Abraham (1); Out: David (0), Pickford (1)",Drake Byrd,39,L,L,False,No change
+4,Alexander Chaban,ChabosSpurs@Law,62,62,0,100.0,2,Suzuki (2),Perfect lineup,Dylan Reid,35,W,W,False,No change
+4,Drake Byrd,Bruno’s Balebas,28,28,0,100.0,2,Roefs (2),Perfect lineup,Julius Long,59,L,L,False,No change
+4,Dylan Reid,Joao Bonito,35,46,11,76.1,10,Leno (9),"In: Leno (9), Truffert (3); Out: N.Jackson (0), Petrović (1)",Alexander Chaban,62,L,L,False,No change
+4,Ethan Ellsworth,Thanksgiving Cherki,47,55,8,85.5,11,Igor Jesus (7),"In: Igor Jesus (7), Gonzalo (2); Out: Dedić (0), Cherki (1)",Justin Miller,55,L,D,True,L→D vs Justin Miller
+4,Julius Long,Amorim de mi vida,59,59,0,100.0,3,Scherpen (1),Perfect lineup,Drake Byrd,28,W,W,False,No change
+4,Justin Miller,Sue-nited FC**,55,56,1,98.2,4,Botman (2),In: Botman (2); Out: Lewis-Potter (1),Ethan Ellsworth,47,W,W,False,No change
+4,Levi Morant,*Saka It To Me Baby,43,44,1,97.7,2,Horníček (1),In: J.Timber (1); Out: Thomas (0),Ryan Donlan,81,L,L,False,No change
+4,Luke Lockwood,Into the WOODwork*,27,35,8,77.1,12,Verbruggen (8),"In: Verbruggen (8), Justin (2), Solanke (2); Out: Ajer (1), Ndiaye (1), Martinez (2)",Ryan Houseman,55,L,L,False,No change
+4,Ryan Donlan,***NoHaalandNoParty,81,87,6,93.1,5,Rúben (6),In: Rúben (6); Out: Hato (0),Levi Morant,43,W,W,False,No change
+4,Ryan Houseman,Szoboszlickin good,55,55,0,100.0,4,Trafford (3),Perfect lineup,Luke Lockwood,27,W,W,False,No change
+5,Alexander Chaban,ChabosSpurs@Law,44,46,2,95.7,6,Suzuki (2),"In: Suzuki (2), Robinson (2); Out: Raya (1), Delap (1)",Justin Miller,48,L,L,False,No change
+5,Drake Byrd,Bruno’s Balebas,38,39,1,97.4,2,Ballard (2),In: Ballard (2); Out: McBurnie (1),Levi Morant,37,W,W,False,No change
+5,Dylan Reid,Joao Bonito,34,34,0,100.0,2,Petrović (2),Perfect lineup,Luke Lockwood,40,L,L,False,No change
+5,Ethan Ellsworth,Thanksgiving Cherki,57,58,1,98.3,3,Kinsky (2),In: Igor Jesus (1); Out: Wissa (0),Ryan Houseman,40,W,W,False,No change
+5,Julius Long,Amorim de mi vida,55,55,0,100.0,2,Gyökeres (1),Perfect lineup,Ryan Donlan,57,L,L,False,No change
+5,Justin Miller,Sue-nited FC**,48,53,5,90.6,8,Khalaili (6),In: Khalaili (6); Out: Egan (1),Alexander Chaban,44,W,W,False,No change
+5,Levi Morant,*Saka It To Me Baby,37,43,6,86.0,10,A.Becker (8),"In: A.Becker (8), Tzolis (2); Out: Georginio (1), Horníček (3)",Drake Byrd,38,L,W,True,L→W vs Drake Byrd
+5,Luke Lockwood,Into the WOODwork*,40,49,9,81.6,11,Verbruggen (6),"In: Verbruggen (6), Ndiaye (5); Out: Giles (0), Martinez (2)",Dylan Reid,34,W,W,False,No change
+5,Ryan Donlan,***NoHaalandNoParty,57,57,0,100.0,6,Benitez (6),Perfect lineup,Julius Long,55,W,W,False,No change
+5,Ryan Houseman,Szoboszlickin good,40,42,2,95.2,10,Trafford (10),In: Trafford (10); Out: Pickford (8),Ethan Ellsworth,57,L,L,False,No change

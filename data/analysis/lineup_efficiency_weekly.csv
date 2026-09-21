@@ -1,0 +1,381 @@
+gameweek,manager,team,actual_points,optimal_points,missed_points,efficiency_pct,raw_bench_points,best_unused,optimal_changes,opponent,opponent_points,actual_result,optimal_result,result_improved,result_impact
+1,Ryan Donlan,**Cunha Believe it?!,43,52,9,82.7,13,Muniz (7),"In: Muniz (7), Yoro (4); Out: Diouf (1), Malen (1)",Bowen Arrows,51,L,W,True,L→W vs Bowen Arrows
+1,Levi Morant,*Saka It To Me Baby,36,36,0,100.0,0,—,Perfect lineup,Into the WOODwork*,42,L,L,False,No change
+1,Julius Long,Amorim de mi vida,34,43,9,79.1,11,Spence (6),"In: Spence (6), Wilson (5); Out: Havertz (1), Gyökeres (1)",Santa’s reijnders,42,L,W,True,L→W vs Santa’s reijnders
+1,Dylan Reid,Bowen Arrows,51,56,5,91.1,8,Thiago (6),In: Thiago (6); Out: Amad (1),**Cunha Believe it?!,43,W,W,False,No change
+1,Alexander Chaban,ChabosSpurs@Law,59,64,5,92.2,8,Chalobah (6),In: Chalobah (6); Out: Solanke (1),Sue-nited FC*,39,W,W,False,No change
+1,Drake Byrd,Grand-Larseny,46,50,4,92.0,5,Caicedo (5),In: Caicedo (5); Out: Evanilson (1),eze as u like b*%chs,34,W,W,False,No change
+1,Luke Lockwood,Into the WOODwork*,42,42,0,100.0,0,—,Perfect lineup,*Saka It To Me Baby,36,W,W,False,No change
+1,Ethan Ellsworth,Santa’s reijnders,42,43,1,97.7,1,Barry (1),In: Barry (1); Out: J.Timber (0),Amorim de mi vida,34,W,W,False,No change
+1,Justin Miller,Sue-nited FC*,39,39,0,100.0,0,—,Perfect lineup,ChabosSpurs@Law,59,L,L,False,No change
+1,Ryan Houseman,eze as u like b*%chs,34,40,6,85.0,6,Romero (6),In: Romero (6); Out: Collins (0),Grand-Larseny,46,L,L,False,No change
+2,Ryan Donlan,**Cunha Believe it?!,20,33,13,60.6,16,Vicario (9),"In: Vicario (9), Yoro (6), Piroe (1); Out: Gordon (-2), Muniz (0), Kelleher (5)",Santa’s reijnders,57,L,L,False,No change
+2,Levi Morant,*Saka It To Me Baby,35,35,0,100.0,0,—,Perfect lineup,Bowen Arrows,41,L,L,False,No change
+2,Julius Long,Amorim de mi vida,51,56,5,91.1,6,Spence (6),In: Spence (6); Out: Šeško (1),eze as u like b*%chs,45,W,W,False,No change
+2,Dylan Reid,Bowen Arrows,41,42,1,97.6,3,Verbruggen (1),In: Robinson (1); Out: Wan-Bissaka (0),*Saka It To Me Baby,35,W,W,False,No change
+2,Alexander Chaban,ChabosSpurs@Law,55,61,6,90.2,11,Van de Ven (6),"In: Van de Ven (6), Barnes (2); Out: Foden (1), Solanke (1)",Grand-Larseny,39,W,W,False,No change
+2,Drake Byrd,Grand-Larseny,39,40,1,97.5,2,Richards (2),In: Richards (2); Out: James (1),ChabosSpurs@Law,55,L,L,False,No change
+2,Luke Lockwood,Into the WOODwork*,24,33,9,72.7,12,Dúbravka (6),"In: Dúbravka (6), Smith Rowe (6); Out: De Cuyper (0), Sánchez (3)",Sue-nited FC*,42,L,L,False,No change
+2,Ethan Ellsworth,Santa’s reijnders,57,58,1,98.3,3,Barry (2),In: Barry (2); Out: Füllkrug (1),**Cunha Believe it?!,20,W,W,False,No change
+2,Justin Miller,Sue-nited FC*,42,43,1,97.7,1,Mitchell (1),In: Mitchell (1); Out: Konaté (0),Into the WOODwork*,24,W,W,False,No change
+2,Ryan Houseman,eze as u like b*%chs,45,57,12,78.9,15,Romero (7),"In: Romero (7), Truffert (6); Out: Welbeck (0), Kluivert (1)",Amorim de mi vida,51,L,W,True,L→W vs Amorim de mi vida
+3,Ryan Donlan,**Cunha Believe it?!,39,42,3,92.9,4,Vicario (3),"In: Vicario (3), Muniz (1); Out: Schade (0), Kelleher (1)",Into the WOODwork*,40,L,W,True,L→W vs Into the WOODwork*
+3,Levi Morant,*Saka It To Me Baby,23,23,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,42,L,L,False,No change
+3,Julius Long,Amorim de mi vida,43,45,2,95.6,3,Tonali (3),In: Tonali (3); Out: Gyökeres (1),Grand-Larseny,56,L,L,False,No change
+3,Dylan Reid,Bowen Arrows,40,40,0,100.0,2,Verbruggen (2),Perfect lineup,ChabosSpurs@Law,48,L,L,False,No change
+3,Alexander Chaban,ChabosSpurs@Law,48,48,0,100.0,6,Petrović (5),Perfect lineup,Bowen Arrows,40,W,W,False,No change
+3,Drake Byrd,Grand-Larseny,56,58,2,96.6,4,Bruno G. (3),In: Bruno G. (3); Out: James (1),Amorim de mi vida,43,W,W,False,No change
+3,Luke Lockwood,Into the WOODwork*,40,45,5,88.9,8,Gusto (6),In: Gusto (6); Out: Raúl (1),**Cunha Believe it?!,39,W,W,False,No change
+3,Ethan Ellsworth,Santa’s reijnders,49,54,5,90.7,7,Kerkez (6),In: Kerkez (6); Out: Barry (1),Sue-nited FC*,30,W,W,False,No change
+3,Justin Miller,Sue-nited FC*,30,40,10,75.0,14,Perri (6),"In: Perri (6), Mitchell (6), Mayenda (2); Out: Ødegaard (1), Johnson (1), Leno (2)",Santa’s reijnders,49,L,L,False,No change
+3,Ryan Houseman,eze as u like b*%chs,42,43,1,97.7,4,Welbeck (2),In: Welbeck (2); Out: Eze (1),*Saka It To Me Baby,23,W,W,False,No change
+4,Ryan Donlan,**Cunha Believe it?!,55,55,0,100.0,3,Kelleher (2),Perfect lineup,Amorim de mi vida,44,W,W,False,No change
+4,Levi Morant,*Saka It To Me Baby,62,62,0,100.0,0,—,Perfect lineup,ChabosSpurs@Law,59,W,W,False,No change
+4,Julius Long,Amorim de mi vida,44,51,7,86.3,8,Schär (8),In: Schär (8); Out: Tielemans (1),**Cunha Believe it?!,55,L,L,False,No change
+4,Dylan Reid,Bowen Arrows,41,42,1,97.6,4,Verbruggen (2),In: Dewsbury-Hall (2); Out: Thiago (1),Into the WOODwork*,42,L,D,True,L→D vs Into the WOODwork*
+4,Alexander Chaban,ChabosSpurs@Law,59,59,0,100.0,3,Petrović (2),Perfect lineup,*Saka It To Me Baby,62,L,L,False,No change
+4,Drake Byrd,Grand-Larseny,41,42,1,97.6,2,Bayindir (2),In: Bayindir (2); Out: Sels (1),Santa’s reijnders,39,W,W,False,No change
+4,Luke Lockwood,Into the WOODwork*,42,43,1,97.7,3,Dúbravka (3),In: Dúbravka (3); Out: Sánchez (2),Bowen Arrows,41,W,W,False,No change
+4,Ethan Ellsworth,Santa’s reijnders,39,39,0,100.0,0,—,Perfect lineup,Grand-Larseny,41,L,L,False,No change
+4,Justin Miller,Sue-nited FC*,56,56,0,100.0,6,Donnarumma (6),Perfect lineup,eze as u like b*%chs,47,W,W,False,No change
+4,Ryan Houseman,eze as u like b*%chs,47,49,2,95.9,10,Martinez (6),In: Murillo (3); Out: Hudson-Odoi (1),Sue-nited FC*,56,L,L,False,No change
+5,Ryan Donlan,**Cunha Believe it?!,55,56,1,98.2,4,Milenković (2),In: Milenković (2); Out: Yeremy (1),ChabosSpurs@Law,34,W,W,False,No change
+5,Levi Morant,*Saka It To Me Baby,20,22,2,90.9,3,Calafiori (2),In: Calafiori (2); Out: R.Gomes (0),Amorim de mi vida,22,L,D,True,L→D vs Amorim de mi vida
+5,Julius Long,Amorim de mi vida,22,23,1,95.7,2,Areola (1),In: Igor Jesus (1); Out: Wirtz (0),*Saka It To Me Baby,20,W,W,False,No change
+5,Dylan Reid,Bowen Arrows,47,47,0,100.0,2,Verbruggen (1),Perfect lineup,Santa’s reijnders,33,W,W,False,No change
+5,Alexander Chaban,ChabosSpurs@Law,34,39,5,87.2,6,Petrović (6),In: Petrović (6); Out: Henderson (1),**Cunha Believe it?!,55,L,L,False,No change
+5,Drake Byrd,Grand-Larseny,47,54,7,87.0,12,Dorgu (5),"In: Dorgu (5), Diakité (5); Out: Strand Larsen (1), Evanilson (2)",Sue-nited FC*,46,W,W,False,No change
+5,Luke Lockwood,Into the WOODwork*,21,28,7,75.0,5,Dúbravka (4),In: Dúbravka (4); Out: Sánchez (-3),eze as u like b*%chs,31,L,L,False,No change
+5,Ethan Ellsworth,Santa’s reijnders,33,34,1,97.1,1,Barry (1),In: Barry (1); Out: Cucurella (0),Bowen Arrows,47,L,L,False,No change
+5,Justin Miller,Sue-nited FC*,46,57,11,80.7,14,Calvert-Lewin (11),"In: Calvert-Lewin (11), Rúben (2); Out: Johnson (1), Isak (1)",Grand-Larseny,47,L,W,True,L→W vs Grand-Larseny
+5,Ryan Houseman,eze as u like b*%chs,31,33,2,93.9,4,Martinez (3),"In: Martinez (3), Kluivert (1); Out: Collins (0), Raya (2)",Into the WOODwork*,21,W,W,False,No change
+6,Ryan Donlan,**Cunha Believe it?!,47,56,9,83.9,13,Kelleher (8),"In: Kelleher (8), Yeremy (3), Cash (2); Out: N.Williams (1), Gibbs-White (1), Vicario (2)",Grand-Larseny,18,W,W,False,No change
+6,Levi Morant,*Saka It To Me Baby,36,42,6,85.7,6,Anthony (6),In: Anthony (6); Out: Trippier (0),Santa’s reijnders,26,W,W,False,No change
+6,Julius Long,Amorim de mi vida,46,51,5,90.2,8,Lacroix (4),"In: Lacroix (4), Areola (3); Out: Burn (0), Pickford (2)",Sue-nited FC*,28,W,W,False,No change
+6,Dylan Reid,Bowen Arrows,56,56,0,100.0,2,Verbruggen (2),Perfect lineup,eze as u like b*%chs,51,W,W,False,No change
+6,Alexander Chaban,ChabosSpurs@Law,20,23,3,87.0,3,Henderson (3),In: Solanke (0); Out: Chalobah (-3),Into the WOODwork*,55,L,L,False,No change
+6,Drake Byrd,Grand-Larseny,18,24,6,75.0,8,Bayindir (2),"In: Strand Larsen (2), Caicedo (2), Bruno G. (2); Out: B.Fernandes (-1), Dorgu (0), Tavernier (1)",**Cunha Believe it?!,47,L,L,False,No change
+6,Luke Lockwood,Into the WOODwork*,55,55,0,100.0,1,Dúbravka (1),Perfect lineup,ChabosSpurs@Law,20,W,W,False,No change
+6,Ethan Ellsworth,Santa’s reijnders,26,28,2,92.9,3,Foster (2),In: Foster (2); Out: Cucurella (0),*Saka It To Me Baby,36,L,L,False,No change
+6,Justin Miller,Sue-nited FC*,28,31,3,90.3,8,Ødegaard (4),In: Ødegaard (4); Out: Tarkowski (1),Amorim de mi vida,46,L,L,False,No change
+6,Ryan Houseman,eze as u like b*%chs,51,52,1,98.1,4,Martinez (3),In: Martinez (3); Out: Raya (2),Bowen Arrows,56,L,L,False,No change
+7,Ryan Donlan,**Cunha Believe it?!,34,38,4,89.5,9,O'Reilly (5),In: O'Reilly (5); Out: Yeremy (1),eze as u like b*%chs,45,L,L,False,No change
+7,Levi Morant,*Saka It To Me Baby,41,43,2,95.3,5,Diouf (3),In: Diouf (3); Out: Beto (1),Sue-nited FC*,40,W,W,False,No change
+7,Julius Long,Amorim de mi vida,38,38,0,100.0,3,Areola (2),Perfect lineup,Into the WOODwork*,40,L,L,False,No change
+7,Dylan Reid,Bowen Arrows,39,39,0,100.0,1,Verbruggen (1),Perfect lineup,Grand-Larseny,44,L,L,False,No change
+7,Alexander Chaban,ChabosSpurs@Law,34,35,1,97.1,3,Petrović (3),In: Petrović (3); Out: Henderson (2),Santa’s reijnders,53,L,L,False,No change
+7,Drake Byrd,Grand-Larseny,44,66,22,66.7,26,Bruno G. (14),"In: Bruno G. (14), Caicedo (10); Out: Dorgu (1), Isidor (1)",Bowen Arrows,39,W,W,False,No change
+7,Luke Lockwood,Into the WOODwork*,40,40,0,100.0,2,Sánchez (2),Perfect lineup,Amorim de mi vida,38,W,W,False,No change
+7,Ethan Ellsworth,Santa’s reijnders,53,53,0,100.0,1,Barry (1),Perfect lineup,ChabosSpurs@Law,34,W,W,False,No change
+7,Justin Miller,Sue-nited FC*,40,43,3,93.0,8,Andersen (3),"In: Andersen (3), Damsgaard (2); Out: Ødegaard (1), Richarlison (1)",*Saka It To Me Baby,41,L,W,True,L→W vs *Saka It To Me Baby
+7,Ryan Houseman,eze as u like b*%chs,45,51,6,88.2,8,Kluivert (7),In: Kluivert (7); Out: Welbeck (1),**Cunha Believe it?!,34,W,W,False,No change
+8,Ryan Donlan,**Cunha Believe it?!,72,72,0,100.0,3,Vicario (1),Perfect lineup,Sue-nited FC*,29,W,W,False,No change
+8,Levi Morant,*Saka It To Me Baby,29,32,3,90.6,3,Beto (2),In: Beto (2); Out: Krejčí (-1),Grand-Larseny,44,L,L,False,No change
+8,Julius Long,Amorim de mi vida,22,22,0,100.0,3,Pickford (2),Perfect lineup,Bowen Arrows,34,L,L,False,No change
+8,Dylan Reid,Bowen Arrows,34,34,0,100.0,3,Verbruggen (2),Perfect lineup,Amorim de mi vida,22,W,W,False,No change
+8,Alexander Chaban,ChabosSpurs@Law,32,33,1,97.0,2,Petrović (2),In: Petrović (2); Out: Henderson (1),eze as u like b*%chs,79,L,L,False,No change
+8,Drake Byrd,Grand-Larseny,44,45,1,97.8,3,Bruno G. (2),In: Bruno G. (2); Out: Dorgu (1),*Saka It To Me Baby,29,W,W,False,No change
+8,Luke Lockwood,Into the WOODwork*,54,58,4,93.1,9,Dúbravka (9),In: Dúbravka (9); Out: Sánchez (5),Santa’s reijnders,37,W,W,False,No change
+8,Ethan Ellsworth,Santa’s reijnders,37,37,0,100.0,0,—,Perfect lineup,Into the WOODwork*,54,L,L,False,No change
+8,Justin Miller,Sue-nited FC*,29,33,4,87.9,9,Leno (3),"In: Konaté (3), Tarkowski (3); Out: Wirtz (1), Richarlison (1)",**Cunha Believe it?!,72,L,L,False,No change
+8,Ryan Houseman,eze as u like b*%chs,79,79,0,100.0,3,Martinez (2),Perfect lineup,ChabosSpurs@Law,32,W,W,False,No change
+9,Ryan Donlan,**Cunha Believe it?!,40,41,1,97.6,5,Kelleher (2),In: Acheampong (2); Out: Tosin (1),*Saka It To Me Baby,46,L,L,False,No change
+9,Levi Morant,*Saka It To Me Baby,46,47,1,97.9,4,Johnstone (2),In: Beto (2); Out: Diouf (1),**Cunha Believe it?!,40,W,W,False,No change
+9,Julius Long,Amorim de mi vida,40,40,0,100.0,3,Pickford (1),Perfect lineup,ChabosSpurs@Law,55,L,L,False,No change
+9,Dylan Reid,Bowen Arrows,23,24,1,95.8,3,Dewsbury-Hall (2),In: Dewsbury-Hall (2); Out: Elanga (1),Sue-nited FC*,31,L,L,False,No change
+9,Alexander Chaban,ChabosSpurs@Law,55,56,1,98.2,4,Henderson (2),In: Hume (2); Out: Barnes (1),Amorim de mi vida,40,W,W,False,No change
+9,Drake Byrd,Grand-Larseny,50,51,1,98.0,2,Van Hecke (2),In: Van Hecke (2); Out: Saliba (1),Into the WOODwork*,27,W,W,False,No change
+9,Luke Lockwood,Into the WOODwork*,27,28,1,96.4,2,Dúbravka (2),In: Dúbravka (2); Out: Sánchez (1),Grand-Larseny,50,L,L,False,No change
+9,Ethan Ellsworth,Santa’s reijnders,45,50,5,90.0,6,Kroupi.Jr (6),In: Kroupi.Jr (6); Out: Marmoush (1),eze as u like b*%chs,69,L,L,False,No change
+9,Justin Miller,Sue-nited FC*,31,34,3,91.2,6,Richarlison (4),In: Richarlison (4); Out: Tarkowski (1),Bowen Arrows,23,W,W,False,No change
+9,Ryan Houseman,eze as u like b*%chs,69,71,2,97.2,9,Martinez (8),In: Martinez (8); Out: Raya (6),Santa’s reijnders,45,W,W,False,No change
+10,Ryan Donlan,**Cunha Believe it?!,47,49,2,95.9,5,Yeremy (3),In: Yeremy (3); Out: Woltemade (1),Bowen Arrows,32,W,W,False,No change
+10,Levi Morant,*Saka It To Me Baby,40,40,0,100.0,2,Johnstone (2),Perfect lineup,Into the WOODwork*,55,L,L,False,No change
+10,Julius Long,Amorim de mi vida,52,55,3,94.5,9,Igor Jesus (5),In: Igor Jesus (5); Out: Šeško (2),Santa’s reijnders,32,W,W,False,No change
+10,Dylan Reid,Bowen Arrows,32,36,4,88.9,8,Verbruggen (6),"In: Verbruggen (6), Dewsbury-Hall (2); Out: Gittens (1), Pope (3)",**Cunha Believe it?!,47,L,L,False,No change
+10,Alexander Chaban,ChabosSpurs@Law,26,30,4,86.7,7,Henderson (6),In: Henderson (6); Out: Petrović (2),Sue-nited FC*,49,L,L,False,No change
+10,Drake Byrd,Grand-Larseny,51,52,1,98.1,4,Tavernier (2),In: Tavernier (2); Out: Kudus (1),eze as u like b*%chs,61,L,L,False,No change
+10,Luke Lockwood,Into the WOODwork*,55,55,0,100.0,4,Dúbravka (2),Perfect lineup,*Saka It To Me Baby,40,W,W,False,No change
+10,Ethan Ellsworth,Santa’s reijnders,32,33,1,97.0,0,—,In: Foster (0); Out: Botman (-1),Amorim de mi vida,52,L,L,False,No change
+10,Justin Miller,Sue-nited FC*,49,56,7,87.5,10,Konaté (8),In: Konaté (8); Out: Richarlison (1),ChabosSpurs@Law,26,W,W,False,No change
+10,Ryan Houseman,eze as u like b*%chs,61,64,3,95.3,5,Murillo (3),In: Murillo (3); Out: Kluivert (0),Grand-Larseny,51,W,W,False,No change
+11,Ryan Donlan,**Cunha Believe it?!,44,45,1,97.8,3,Kelleher (2),In: Kelleher (2); Out: Vicario (1),Santa’s reijnders,32,W,W,False,No change
+11,Levi Morant,*Saka It To Me Baby,32,32,0,100.0,1,Lammens (1),Perfect lineup,Bowen Arrows,52,L,L,False,No change
+11,Julius Long,Amorim de mi vida,36,41,5,87.8,7,Zubimendi (5),In: Zubimendi (5); Out: Burn (0),eze as u like b*%chs,31,W,W,False,No change
+11,Dylan Reid,Bowen Arrows,52,64,12,81.2,15,Dewsbury-Hall (9),"In: Dewsbury-Hall (9), Verbruggen (6); Out: Semenyo (0), Pope (3)",*Saka It To Me Baby,32,W,W,False,No change
+11,Alexander Chaban,ChabosSpurs@Law,42,42,0,100.0,2,Petrović (1),Perfect lineup,Grand-Larseny,39,W,W,False,No change
+11,Drake Byrd,Grand-Larseny,39,40,1,97.5,2,Strand Larsen (2),In: Strand Larsen (2); Out: Saliba (1),ChabosSpurs@Law,42,L,L,False,No change
+11,Luke Lockwood,Into the WOODwork*,59,71,12,83.1,15,Matheus N. (13),In: Matheus N. (13); Out: Raúl (1),Sue-nited FC*,53,W,W,False,No change
+11,Ethan Ellsworth,Santa’s reijnders,32,32,0,100.0,0,—,Perfect lineup,**Cunha Believe it?!,44,L,L,False,No change
+11,Justin Miller,Sue-nited FC*,53,66,13,80.3,18,Donnarumma (6),"In: Donnarumma (6), Richarlison (6), Rúben (6); Out: Konaté (1), Leno (2), J.Murphy (2)",Into the WOODwork*,59,L,W,True,L→W vs Into the WOODwork*
+11,Ryan Houseman,eze as u like b*%chs,31,46,15,67.4,18,Martinez (14),"In: Martinez (14), Kluivert (2), Murillo (1); Out: Truffert (0), Raya (1), Szoboszlai (1)",Amorim de mi vida,36,L,W,True,L→W vs Amorim de mi vida
+12,Ryan Donlan,**Cunha Believe it?!,36,36,0,100.0,1,Vicario (1),Perfect lineup,Into the WOODwork*,53,L,L,False,No change
+12,Levi Morant,*Saka It To Me Baby,31,32,1,96.9,3,Roefs (3),In: Roefs (3); Out: Lammens (2),eze as u like b*%chs,59,L,L,False,No change
+12,Julius Long,Amorim de mi vida,43,43,0,100.0,9,Areola (9),Perfect lineup,Grand-Larseny,59,L,L,False,No change
+12,Dylan Reid,Bowen Arrows,39,43,4,90.7,7,Verbruggen (7),In: Verbruggen (7); Out: Pope (3),ChabosSpurs@Law,52,L,L,False,No change
+12,Alexander Chaban,ChabosSpurs@Law,52,54,2,96.3,3,Livramento (2),In: Livramento (2); Out: Van de Ven (0),Bowen Arrows,39,W,W,False,No change
+12,Drake Byrd,Grand-Larseny,59,59,0,100.0,2,Strand Larsen (2),Perfect lineup,Amorim de mi vida,43,W,W,False,No change
+12,Luke Lockwood,Into the WOODwork*,53,54,1,98.1,5,Dúbravka (2),In: Flemming (2); Out: Matheus N. (1),**Cunha Believe it?!,36,W,W,False,No change
+12,Ethan Ellsworth,Santa’s reijnders,31,31,0,100.0,2,Foster (1),Perfect lineup,Sue-nited FC*,54,L,L,False,No change
+12,Justin Miller,Sue-nited FC*,54,67,13,80.6,15,Tarkowski (8),"In: Tarkowski (8), Richarlison (6); Out: Konaté (0), Gusto (1)",Santa’s reijnders,31,W,W,False,No change
+12,Ryan Houseman,eze as u like b*%chs,59,77,18,76.6,20,Murillo (17),"In: Murillo (17), Martinez (3); Out: Truffert (0), Raya (2)",*Saka It To Me Baby,31,W,W,False,No change
+13,Ryan Donlan,**Cunha Believe it?!,34,37,3,91.9,6,Fofana (4),In: Fofana (4); Out: Gordon (1),Amorim de mi vida,24,W,W,False,No change
+13,Levi Morant,*Saka It To Me Baby,43,44,1,97.7,2,Lammens (2),In: Lammens (2); Out: Roefs (1),ChabosSpurs@Law,29,W,W,False,No change
+13,Julius Long,Amorim de mi vida,24,26,2,92.3,2,Areola (2),"In: Areola (2), Spence (0); Out: L.Paquetá (-1), Pickford (1)",**Cunha Believe it?!,34,L,L,False,No change
+13,Dylan Reid,Bowen Arrows,45,51,6,88.2,7,Dewsbury-Hall (7),In: Dewsbury-Hall (7); Out: João Pedro (1),Into the WOODwork*,38,W,W,False,No change
+13,Alexander Chaban,ChabosSpurs@Law,29,38,9,76.3,11,Chalobah (9),In: Chalobah (9); Out: Hume (0),*Saka It To Me Baby,43,L,L,False,No change
+13,Drake Byrd,Grand-Larseny,39,43,4,90.7,3,Strand Larsen (2),In: Strand Larsen (2); Out: Caicedo (-2),Santa’s reijnders,41,L,W,True,L→W vs Santa’s reijnders
+13,Luke Lockwood,Into the WOODwork*,38,39,1,97.4,2,Dúbravka (1),In: Xavi (1); Out: Guéhi (0),Bowen Arrows,45,L,L,False,No change
+13,Ethan Ellsworth,Santa’s reijnders,41,41,0,100.0,1,Füllkrug (1),Perfect lineup,Grand-Larseny,39,W,W,False,No change
+13,Justin Miller,Sue-nited FC*,45,48,3,93.8,6,Wirtz (3),"In: Wirtz (3), Gusto (2); Out: Rúben (1), Richarlison (1)",eze as u like b*%chs,29,W,W,False,No change
+13,Ryan Houseman,eze as u like b*%chs,29,34,5,85.3,9,Anderson (6),In: Anderson (6); Out: Delap (1),Sue-nited FC*,45,L,L,False,No change
+14,Ryan Donlan,**Cunha Believe it?!,46,48,2,95.8,4,Kelleher (2),"In: Kelleher (2), Kolo Muani (2); Out: Ramsdale (1), Schade (1)",ChabosSpurs@Law,55,L,L,False,No change
+14,Levi Morant,*Saka It To Me Baby,55,58,3,94.8,5,Roefs (3),"In: Roefs (3), Nmecha (2); Out: O'Reilly (0), Lammens (2)",Amorim de mi vida,36,W,W,False,No change
+14,Julius Long,Amorim de mi vida,36,37,1,97.3,4,Areola (3),In: Adams (1); Out: Estêvão (0),*Saka It To Me Baby,55,L,L,False,No change
+14,Dylan Reid,Bowen Arrows,30,36,6,83.3,7,Iwobi (7),In: Iwobi (7); Out: Thiago (1),Santa’s reijnders,28,W,W,False,No change
+14,Alexander Chaban,ChabosSpurs@Law,55,55,0,100.0,2,Petrović (2),Perfect lineup,**Cunha Believe it?!,46,W,W,False,No change
+14,Drake Byrd,Grand-Larseny,64,67,3,95.5,4,Diakité (4),In: Diakité (4); Out: Isidor (1),Sue-nited FC*,22,W,W,False,No change
+14,Luke Lockwood,Into the WOODwork*,44,45,1,97.8,2,Dúbravka (2),In: Dúbravka (2); Out: Sánchez (1),eze as u like b*%chs,40,W,W,False,No change
+14,Ethan Ellsworth,Santa’s reijnders,28,29,1,96.6,1,F.Kadıoğlu (1),In: F.Kadıoğlu (1); Out: Cherki (0),Bowen Arrows,30,L,L,False,No change
+14,Justin Miller,Sue-nited FC*,22,41,19,53.7,20,Tarkowski (10),"In: Tarkowski (10), Wirtz (7), Ndiaye (3); Out: Rúben (0), Richarlison (0), Gusto (1)",Grand-Larseny,64,L,L,False,No change
+14,Ryan Houseman,eze as u like b*%chs,40,40,0,100.0,0,—,Perfect lineup,Into the WOODwork*,44,L,L,False,No change
+15,Ryan Donlan,**Cunha Believe it?!,41,49,8,83.7,14,Cash (9),In: Cash (9); Out: Schade (1),Grand-Larseny,57,L,L,False,No change
+15,Levi Morant,*Saka It To Me Baby,31,31,0,100.0,3,Roefs (1),Perfect lineup,Santa’s reijnders,41,L,L,False,No change
+15,Julius Long,Amorim de mi vida,35,35,0,100.0,3,Areola (3),Perfect lineup,Sue-nited FC*,60,L,L,False,No change
+15,Dylan Reid,Bowen Arrows,50,52,2,96.2,2,Garnacho (3),In: Garnacho (3); Out: João Pedro (1),eze as u like b*%chs,42,W,W,False,No change
+15,Alexander Chaban,ChabosSpurs@Law,58,62,4,93.5,7,Petrović (7),In: Petrović (7); Out: Henderson (3),Into the WOODwork*,60,L,W,True,L→W vs Into the WOODwork*
+15,Drake Byrd,Grand-Larseny,57,57,0,100.0,0,—,Perfect lineup,**Cunha Believe it?!,41,W,W,False,No change
+15,Luke Lockwood,Into the WOODwork*,60,64,4,93.8,11,James (6),In: James (6); Out: Neto (2),ChabosSpurs@Law,58,W,W,False,No change
+15,Ethan Ellsworth,Santa’s reijnders,41,41,0,100.0,0,—,Perfect lineup,*Saka It To Me Baby,31,W,W,False,No change
+15,Justin Miller,Sue-nited FC*,60,63,3,95.2,7,Wilson (4),In: Wilson (4); Out: Isak (1),Amorim de mi vida,35,W,W,False,No change
+15,Ryan Houseman,eze as u like b*%chs,42,49,7,85.7,10,Rice (6),"In: Rice (6), Martinez (4); Out: Delap (1), Raya (2)",Bowen Arrows,50,L,L,False,No change
+16,Ryan Donlan,**Cunha Believe it?!,40,41,1,97.6,3,Ramsdale (2),In: Senesi (1); Out: Woltemade (0),eze as u like b*%chs,22,W,W,False,No change
+16,Levi Morant,*Saka It To Me Baby,48,53,5,90.6,7,O'Reilly (6),In: O'Reilly (6); Out: Wissa (1),Sue-nited FC*,57,L,L,False,No change
+16,Julius Long,Amorim de mi vida,19,22,3,86.4,6,Šeško (4),In: Šeško (4); Out: Zirkzee (1),Into the WOODwork*,49,L,L,False,No change
+16,Dylan Reid,Bowen Arrows,37,40,3,92.5,6,Gomez (4),In: Gomez (4); Out: Wan-Bissaka (1),Grand-Larseny,40,L,D,True,L→D vs Grand-Larseny
+16,Alexander Chaban,ChabosSpurs@Law,57,58,1,98.3,3,Henderson (1),In: Hume (1); Out: Pedro Porro (0),Santa’s reijnders,52,W,W,False,No change
+16,Drake Byrd,Grand-Larseny,40,40,0,100.0,0,—,Perfect lineup,Bowen Arrows,37,W,W,False,No change
+16,Luke Lockwood,Into the WOODwork*,49,49,0,100.0,2,Dúbravka (1),Perfect lineup,Amorim de mi vida,19,W,W,False,No change
+16,Ethan Ellsworth,Santa’s reijnders,52,56,4,92.9,7,Kroupi.Jr (5),In: Kroupi.Jr (5); Out: F.Kadıoğlu (1),ChabosSpurs@Law,57,L,L,False,No change
+16,Justin Miller,Sue-nited FC*,57,68,11,83.8,17,Rúben (8),"In: Rúben (8), Donnarumma (7); Out: Tarkowski (1), Leno (3)",*Saka It To Me Baby,48,W,W,False,No change
+16,Ryan Houseman,eze as u like b*%chs,22,23,1,95.7,1,Keane (1),In: Keane (1); Out: Truffert (0),**Cunha Believe it?!,40,L,L,False,No change
+17,Ryan Donlan,**Cunha Believe it?!,90,104,14,86.5,20,Gordon (10),"In: Gordon (10), Andersen (7); Out: Mitoma (1), Nketiah (2)",Sue-nited FC*,43,W,W,False,No change
+17,Levi Morant,*Saka It To Me Baby,45,45,0,100.0,2,Lammens (1),Perfect lineup,Grand-Larseny,23,W,W,False,No change
+17,Julius Long,Amorim de mi vida,20,22,2,90.9,3,Pickford (2),"In: Pickford (2), Spence (1); Out: Schär (0), John (1)",Bowen Arrows,57,L,L,False,No change
+17,Dylan Reid,Bowen Arrows,57,57,0,100.0,0,—,Perfect lineup,Amorim de mi vida,20,W,W,False,No change
+17,Alexander Chaban,ChabosSpurs@Law,46,47,1,97.9,1,Vicario (1),In: Vicario (1); Out: Henderson (0),eze as u like b*%chs,47,L,D,True,L→D vs eze as u like b*%chs
+17,Drake Byrd,Grand-Larseny,23,24,1,95.8,1,Isidor (1),In: Isidor (1); Out: Strand Larsen (0),*Saka It To Me Baby,45,L,L,False,No change
+17,Luke Lockwood,Into the WOODwork*,48,48,0,100.0,4,Dúbravka (2),Perfect lineup,Santa’s reijnders,48,D,D,False,No change
+17,Ethan Ellsworth,Santa’s reijnders,48,48,0,100.0,0,—,Perfect lineup,Into the WOODwork*,48,D,D,False,No change
+17,Justin Miller,Sue-nited FC*,43,45,2,95.6,8,Leno (7),In: Wilson (1); Out: Gusto (-1),**Cunha Believe it?!,90,L,L,False,No change
+17,Ryan Houseman,eze as u like b*%chs,47,47,0,100.0,3,Martinez (3),Perfect lineup,ChabosSpurs@Law,46,W,W,False,No change
+18,Ryan Donlan,**Cunha Believe it?!,45,45,0,100.0,3,Perri (2),Perfect lineup,*Saka It To Me Baby,36,W,W,False,No change
+18,Levi Morant,*Saka It To Me Baby,36,42,6,85.7,9,Lammens (9),In: Lammens (9); Out: Roefs (3),**Cunha Believe it?!,45,L,L,False,No change
+18,Julius Long,Amorim de mi vida,43,44,1,97.7,6,Areola (3),In: Beto (2); Out: Šeško (1),ChabosSpurs@Law,32,W,W,False,No change
+18,Dylan Reid,Bowen Arrows,42,42,0,100.0,0,—,Perfect lineup,Sue-nited FC*,45,L,L,False,No change
+18,Alexander Chaban,ChabosSpurs@Law,32,36,4,88.9,7,Vicario (7),In: Vicario (7); Out: Henderson (3),Amorim de mi vida,43,L,L,False,No change
+18,Drake Byrd,Grand-Larseny,16,17,1,94.1,0,—,In: Sels (0); Out: Petrović (-1),Into the WOODwork*,52,L,L,False,No change
+18,Luke Lockwood,Into the WOODwork*,52,65,13,80.0,18,Dúbravka (11),"In: Dúbravka (11), Mykolenko (6); Out: Flemming (1), Sánchez (3)",Grand-Larseny,16,W,W,False,No change
+18,Ethan Ellsworth,Santa’s reijnders,59,59,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,30,W,W,False,No change
+18,Justin Miller,Sue-nited FC*,45,49,4,91.8,6,Leno (6),In: Leno (6); Out: Donnarumma (2),Bowen Arrows,42,W,W,False,No change
+18,Ryan Houseman,eze as u like b*%chs,30,30,0,100.0,2,Martinez (2),Perfect lineup,Santa’s reijnders,59,L,L,False,No change
+19,Ryan Donlan,**Cunha Believe it?!,34,44,10,77.3,17,Perri (10),"In: Perri (10), Lewis-Potter (6); Out: De Cuyper (0), Kelleher (6)",Bowen Arrows,29,W,W,False,No change
+19,Levi Morant,*Saka It To Me Baby,48,52,4,92.3,7,Roefs (7),In: Roefs (7); Out: Lammens (3),Into the WOODwork*,45,W,W,False,No change
+19,Julius Long,Amorim de mi vida,75,82,7,91.5,12,Collins (9),In: Collins (9); Out: Gyökeres (2),Santa’s reijnders,41,W,W,False,No change
+19,Dylan Reid,Bowen Arrows,29,29,0,100.0,1,Verbruggen (1),Perfect lineup,**Cunha Believe it?!,34,L,L,False,No change
+19,Alexander Chaban,ChabosSpurs@Law,32,34,2,94.1,6,Vicario (5),In: Vicario (5); Out: Henderson (3),Sue-nited FC*,47,L,L,False,No change
+19,Drake Byrd,Grand-Larseny,23,23,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,54,L,L,False,No change
+19,Luke Lockwood,Into the WOODwork*,45,48,3,93.8,7,G.Jesus (4),In: G.Jesus (4); Out: Neto (1),*Saka It To Me Baby,48,L,D,True,L→D vs *Saka It To Me Baby
+19,Ethan Ellsworth,Santa’s reijnders,41,41,0,100.0,0,—,Perfect lineup,Amorim de mi vida,75,L,L,False,No change
+19,Justin Miller,Sue-nited FC*,47,47,0,100.0,2,Leno (2),Perfect lineup,ChabosSpurs@Law,32,W,W,False,No change
+19,Ryan Houseman,eze as u like b*%chs,54,54,0,100.0,1,Martinez (1),Perfect lineup,Grand-Larseny,23,W,W,False,No change
+20,Ryan Donlan,**Cunha Believe it?!,44,54,10,81.5,13,Gibbs-White (8),"In: Gibbs-White (8), Andersen (3); Out: Lewis-Potter (0), Woltemade (1)",Santa’s reijnders,37,W,W,False,No change
+20,Levi Morant,*Saka It To Me Baby,27,28,1,96.4,3,Roefs (3),In: Roefs (3); Out: Lammens (2),Bowen Arrows,47,L,L,False,No change
+20,Julius Long,Amorim de mi vida,25,37,12,67.6,16,Enzo (11),"In: Enzo (11), Lacroix (3); Out: Digne (1), Trossard (1)",eze as u like b*%chs,24,W,W,False,No change
+20,Dylan Reid,Bowen Arrows,47,48,1,97.9,7,Verbruggen (7),In: Verbruggen (7); Out: Pope (6),*Saka It To Me Baby,27,W,W,False,No change
+20,Alexander Chaban,ChabosSpurs@Law,48,48,0,100.0,3,Vicario (2),Perfect lineup,Grand-Larseny,29,W,W,False,No change
+20,Drake Byrd,Grand-Larseny,29,29,0,100.0,1,Sels (1),Perfect lineup,ChabosSpurs@Law,48,L,L,False,No change
+20,Luke Lockwood,Into the WOODwork*,26,27,1,96.3,2,G.Jesus (1),In: G.Jesus (1); Out: Mykolenko (0),Sue-nited FC*,45,L,L,False,No change
+20,Ethan Ellsworth,Santa’s reijnders,37,37,0,100.0,0,—,Perfect lineup,**Cunha Believe it?!,44,L,L,False,No change
+20,Justin Miller,Sue-nited FC*,45,45,0,100.0,1,Leno (1),Perfect lineup,Into the WOODwork*,26,W,W,False,No change
+20,Ryan Houseman,eze as u like b*%chs,24,44,20,54.5,21,Rice (17),"In: Rice (17), Martinez (3), Ballard (1); Out: J.Palhinha (0), Delap (0), Raya (1)",Amorim de mi vida,25,L,W,True,L→W vs Amorim de mi vida
+21,Ryan Donlan,**Cunha Believe it?!,46,68,22,67.6,24,Mané (9),"In: Mané (9), Mitoma (8), Virgil (6); Out: Thiaw (-1), Martinez (1), Gordon (1)",Into the WOODwork*,38,W,W,False,No change
+21,Levi Morant,*Saka It To Me Baby,30,31,1,96.8,2,Roefs (2),In: Roefs (2); Out: Lammens (1),eze as u like b*%chs,44,L,L,False,No change
+21,Julius Long,Amorim de mi vida,53,66,13,80.3,17,Digne (9),"In: Digne (9), Senesi (6); Out: Rodrigo (1), Enzo (1)",Grand-Larseny,49,W,W,False,No change
+21,Dylan Reid,Bowen Arrows,32,33,1,97.0,3,Verbruggen (3),In: Verbruggen (3); Out: Pope (2),ChabosSpurs@Law,36,L,L,False,No change
+21,Alexander Chaban,ChabosSpurs@Law,36,38,2,94.7,2,Vicario (1),In: Livramento (1); Out: Grealish (-1),Bowen Arrows,32,W,W,False,No change
+21,Drake Byrd,Grand-Larseny,49,51,2,96.1,3,Sels (3),In: Sels (3); Out: Petrović (1),Amorim de mi vida,53,L,L,False,No change
+21,Luke Lockwood,Into the WOODwork*,38,40,2,95.0,6,Dúbravka (3),"In: Dúbravka (3), Broja (2); Out: James (1), Sánchez (2)",**Cunha Believe it?!,46,L,L,False,No change
+21,Ethan Ellsworth,Santa’s reijnders,51,51,0,100.0,-3,—,Perfect lineup,Sue-nited FC*,35,W,W,False,No change
+21,Justin Miller,Sue-nited FC*,35,37,2,94.6,3,Leno (3),In: Leno (3); Out: Donnarumma (1),Santa’s reijnders,51,L,L,False,No change
+21,Ryan Houseman,eze as u like b*%chs,44,52,8,84.6,12,J.Palhinha (9),In: J.Palhinha (9); Out: Welbeck (1),*Saka It To Me Baby,30,W,W,False,No change
+22,Ryan Donlan,**Cunha Believe it?!,28,33,5,84.8,8,Gibbs-White (3),"In: Gibbs-White (3), Khusanov (3); Out: Mitchell (0), Schade (1)",Amorim de mi vida,26,W,W,False,No change
+22,Levi Morant,*Saka It To Me Baby,29,34,5,85.3,6,Lammens (6),"In: Lammens (6), Havertz (0); Out: O'Reilly (-1), Roefs (2)",ChabosSpurs@Law,34,L,D,True,L→D vs ChabosSpurs@Law
+22,Julius Long,Amorim de mi vida,26,33,7,78.8,12,Pickford (10),In: Pickford (10); Out: Areola (3),**Cunha Believe it?!,28,L,W,True,L→W vs **Cunha Believe it?!
+22,Dylan Reid,Bowen Arrows,40,43,3,93.0,7,Wan-Bissaka (4),In: Wan-Bissaka (4); Out: Georginio (1),Into the WOODwork*,32,W,W,False,No change
+22,Alexander Chaban,ChabosSpurs@Law,34,43,9,79.1,11,Brobbey (9),"In: Brobbey (9), Henderson (2); Out: Vicario (1), Solanke (1)",*Saka It To Me Baby,29,W,W,False,No change
+22,Drake Byrd,Grand-Larseny,48,56,8,85.7,10,Sels (10),In: Sels (10); Out: Petrović (2),Santa’s reijnders,30,W,W,False,No change
+22,Luke Lockwood,Into the WOODwork*,32,32,0,100.0,5,Dúbravka (5),Perfect lineup,Bowen Arrows,40,L,L,False,No change
+22,Ethan Ellsworth,Santa’s reijnders,30,42,12,71.4,14,Mbeumo (9),"In: Mbeumo (9), Dalot (5); Out: Reijnders (1), Cherki (1)",Grand-Larseny,48,L,L,False,No change
+22,Justin Miller,Sue-nited FC*,50,52,2,96.2,5,Leno (3),"In: Leno (3), Igor Jesus (2); Out: O.Dango (1), Donnarumma (2)",eze as u like b*%chs,40,W,W,False,No change
+22,Ryan Houseman,eze as u like b*%chs,40,44,4,90.9,6,Truffert (4),In: Truffert (4); Out: Szoboszlai (0),Sue-nited FC*,50,L,L,False,No change
+23,Ryan Donlan,**Cunha Believe it?!,34,49,15,69.4,19,Cunha (9),"In: Cunha (9), Andersen (8); Out: Woltemade (1), Haaland (1)",ChabosSpurs@Law,36,L,W,True,L→W vs ChabosSpurs@Law
+23,Levi Morant,*Saka It To Me Baby,43,44,1,97.7,2,Lammens (2),In: Lammens (2); Out: Roefs (1),Amorim de mi vida,28,W,W,False,No change
+23,Julius Long,Amorim de mi vida,28,30,2,93.3,7,Digne (3),In: Digne (3); Out: Gyökeres (1),*Saka It To Me Baby,43,L,L,False,No change
+23,Dylan Reid,Bowen Arrows,47,51,4,92.2,8,Aaronson (4),"In: Aaronson (4), Pope (3); Out: Verbruggen (1), Thiago (2)",Santa’s reijnders,36,W,W,False,No change
+23,Alexander Chaban,ChabosSpurs@Law,36,42,6,85.7,8,Brobbey (7),In: Brobbey (7); Out: Ekitiké (1),**Cunha Believe it?!,34,W,W,False,No change
+23,Drake Byrd,Grand-Larseny,35,35,0,100.0,1,Petrović (1),Perfect lineup,Sue-nited FC*,48,L,L,False,No change
+23,Luke Lockwood,Into the WOODwork*,47,50,3,94.0,8,Dúbravka (5),"In: Dúbravka (5), Broja (2); Out: Doku (1), Sánchez (3)",eze as u like b*%chs,32,W,W,False,No change
+23,Ethan Ellsworth,Santa’s reijnders,36,38,2,94.7,3,Sarr (2),"In: Sarr (2), Dalot (1); Out: Kerkez (0), Kroupi.Jr (1)",Bowen Arrows,47,L,L,False,No change
+23,Justin Miller,Sue-nited FC*,48,49,1,98.0,4,Leno (3),In: O.Dango (1); Out: Hume (0),Grand-Larseny,35,W,W,False,No change
+23,Ryan Houseman,eze as u like b*%chs,32,44,12,72.7,13,Martinez (10),"In: Martinez (10), Truffert (3); Out: Eze (0), Raya (1)",Into the WOODwork*,47,L,L,False,No change
+24,Ryan Donlan,**Cunha Believe it?!,53,56,3,94.6,2,José Sá (1),In: Woltemade (1); Out: Schade (-2),Grand-Larseny,51,W,W,False,No change
+24,Levi Morant,*Saka It To Me Baby,44,44,0,100.0,3,Lammens (2),Perfect lineup,Santa’s reijnders,47,L,L,False,No change
+24,Julius Long,Amorim de mi vida,41,45,4,91.1,8,Šeško (6),In: Šeško (6); Out: Taty (2),Sue-nited FC*,43,L,W,True,L→W vs Sue-nited FC*
+24,Dylan Reid,Bowen Arrows,54,56,2,96.4,8,Hall (3),In: Hall (3); Out: Robinson (1),eze as u like b*%chs,59,L,L,False,No change
+24,Alexander Chaban,ChabosSpurs@Law,37,45,8,82.2,8,M.Fernandes (4),"In: M.Fernandes (4), Milenković (3); Out: N.Williams (-2), Foden (1)",Into the WOODwork*,25,W,W,False,No change
+24,Drake Byrd,Grand-Larseny,51,51,0,100.0,2,Sels (1),Perfect lineup,**Cunha Believe it?!,53,L,L,False,No change
+24,Luke Lockwood,Into the WOODwork*,25,29,4,86.2,6,G.Jesus (5),In: G.Jesus (5); Out: Broja (1),ChabosSpurs@Law,37,L,L,False,No change
+24,Ethan Ellsworth,Santa’s reijnders,47,48,1,97.9,2,Calvert-Lewin (2),In: Calvert-Lewin (2); Out: Reijnders (1),*Saka It To Me Baby,44,W,W,False,No change
+24,Justin Miller,Sue-nited FC*,43,43,0,100.0,2,Leno (2),Perfect lineup,Amorim de mi vida,41,W,W,False,No change
+24,Ryan Houseman,eze as u like b*%chs,59,60,1,98.3,4,Martinez (2),In: Keane (2); Out: Eze (1),Bowen Arrows,54,W,W,False,No change
+25,Ryan Donlan,**Cunha Believe it?!,30,37,7,81.1,8,Mitchell (6),"In: Mitchell (6), José Sá (2); Out: Virgil (0), Kelleher (1)",eze as u like b*%chs,39,L,L,False,No change
+25,Levi Morant,*Saka It To Me Baby,66,66,0,100.0,4,O'Reilly (2),Perfect lineup,Sue-nited FC*,28,W,W,False,No change
+25,Julius Long,Amorim de mi vida,49,53,4,92.5,6,Digne (4),"In: Digne (4), Smith Rowe (2); Out: Buendía (1), Šeško (1)",Into the WOODwork*,34,W,W,False,No change
+25,Dylan Reid,Bowen Arrows,36,40,4,90.0,8,Iwobi (4),"In: Iwobi (4), Verbruggen (3), Alderete (1); Out: Hall (0), Pope (2), Bowen (2)",Grand-Larseny,61,L,L,False,No change
+25,Alexander Chaban,ChabosSpurs@Law,41,41,0,100.0,4,Vicario (3),Perfect lineup,Santa’s reijnders,40,W,W,False,No change
+25,Drake Byrd,Grand-Larseny,61,61,0,100.0,1,Strand Larsen (1),Perfect lineup,Bowen Arrows,36,W,W,False,No change
+25,Luke Lockwood,Into the WOODwork*,34,37,3,91.9,1,Dúbravka (1),In: James (0); Out: Romero (-3),Amorim de mi vida,49,L,L,False,No change
+25,Ethan Ellsworth,Santa’s reijnders,40,40,0,100.0,0,—,Perfect lineup,ChabosSpurs@Law,41,L,L,False,No change
+25,Justin Miller,Sue-nited FC*,28,32,4,87.5,3,Donnarumma (3),In: Donnarumma (3); Out: Leno (-1),*Saka It To Me Baby,66,L,L,False,No change
+25,Ryan Houseman,eze as u like b*%chs,39,39,0,100.0,8,Martinez (6),Perfect lineup,**Cunha Believe it?!,30,W,W,False,No change
+26,Ryan Donlan,**Cunha Believe it?!,61,66,5,92.4,9,Gordon (5),"In: Gordon (5), Andersen (2); Out: Caicedo (1), Woltemade (1)",Sue-nited FC*,40,W,W,False,No change
+26,Levi Morant,*Saka It To Me Baby,71,71,0,100.0,2,Roefs (2),Perfect lineup,Grand-Larseny,33,W,W,False,No change
+26,Julius Long,Amorim de mi vida,33,33,0,100.0,0,—,Perfect lineup,Bowen Arrows,50,L,L,False,No change
+26,Dylan Reid,Bowen Arrows,50,52,2,96.2,6,Verbruggen (2),"In: Iwobi (2), Alderete (2); Out: Hall (1), Xavi (1)",Amorim de mi vida,33,W,W,False,No change
+26,Alexander Chaban,ChabosSpurs@Law,30,38,8,78.9,12,Foden (5),"In: Foden (5), Van de Ven (3), Vicario (2); Out: Gusto (0), Henderson (1), Yeremy (1)",eze as u like b*%chs,44,L,L,False,No change
+26,Drake Byrd,Grand-Larseny,33,38,5,86.8,6,Van Hecke (5),In: Van Hecke (5); Out: Richards (0),*Saka It To Me Baby,71,L,L,False,No change
+26,Luke Lockwood,Into the WOODwork*,26,29,3,89.7,2,Dúbravka (1),In: Foster (1); Out: O'Brien (-2),Santa’s reijnders,23,W,W,False,No change
+26,Ethan Ellsworth,Santa’s reijnders,23,23,0,100.0,1,Abraham (1),Perfect lineup,Into the WOODwork*,26,L,L,False,No change
+26,Justin Miller,Sue-nited FC*,40,40,0,100.0,1,Leno (1),Perfect lineup,**Cunha Believe it?!,61,L,L,False,No change
+26,Ryan Houseman,eze as u like b*%chs,44,52,8,84.6,12,Martinez (8),"In: Martinez (8), Ballard (4); Out: Delap (1), Raya (3)",ChabosSpurs@Law,30,W,W,False,No change
+27,Ryan Donlan,**Cunha Believe it?!,48,51,3,94.1,8,Thiaw (3),"In: Thiaw (3), Gibbs-White (2); Out: Schade (1), Woltemade (1)",*Saka It To Me Baby,66,L,L,False,No change
+27,Levi Morant,*Saka It To Me Baby,66,66,0,100.0,3,Armstrong (2),Perfect lineup,**Cunha Believe it?!,48,W,W,False,No change
+27,Julius Long,Amorim de mi vida,44,47,3,93.6,5,Van den Berg (3),"In: Van den Berg (3), Smith Rowe (2); Out: Collins (1), Buendía (1)",ChabosSpurs@Law,37,W,W,False,No change
+27,Dylan Reid,Bowen Arrows,40,47,7,85.1,12,Verbruggen (7),"In: Verbruggen (7), Aaronson (3); Out: Amad (1), Pope (2)",Sue-nited FC*,25,W,W,False,No change
+27,Alexander Chaban,ChabosSpurs@Law,37,38,1,97.4,1,Foden (1),In: Foden (1); Out: Barnes (0),Amorim de mi vida,44,L,L,False,No change
+27,Drake Byrd,Grand-Larseny,47,55,8,85.5,10,Van Hecke (9),In: Van Hecke (9); Out: Wilson (1),Into the WOODwork*,52,L,W,True,L→W vs Into the WOODwork*
+27,Luke Lockwood,Into the WOODwork*,52,52,0,100.0,2,Dúbravka (2),Perfect lineup,Grand-Larseny,47,W,W,False,No change
+27,Ethan Ellsworth,Santa’s reijnders,40,40,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,46,L,L,False,No change
+27,Justin Miller,Sue-nited FC*,25,26,1,96.2,2,Leno (2),In: Wissa (0); Out: Fofana (-1),Bowen Arrows,40,L,L,False,No change
+27,Ryan Houseman,eze as u like b*%chs,46,51,5,90.2,9,J.Palhinha (4),"In: J.Palhinha (4), Keane (2); Out: Rúben (0), Delap (1)",Santa’s reijnders,40,W,W,False,No change
+28,Ryan Donlan,**Cunha Believe it?!,48,55,7,87.3,9,J.Timber (8),In: J.Timber (8); Out: Thiaw (1),Bowen Arrows,43,W,W,False,No change
+28,Levi Morant,*Saka It To Me Baby,23,24,1,95.8,4,Roefs (2),In: Summerville (1); Out: Cash (0),Into the WOODwork*,38,L,L,False,No change
+28,Julius Long,Amorim de mi vida,35,38,3,92.1,5,Lacroix (3),"In: Lacroix (3), Calvert-Lewin (2); Out: Buendía (1), Trossard (1)",Santa’s reijnders,35,D,W,True,D→W vs Santa’s reijnders
+28,Dylan Reid,Bowen Arrows,43,47,4,91.5,7,Alderete (4),"In: Alderete (4), Aaronson (2); Out: Amad (1), Xavi (1)",**Cunha Believe it?!,48,L,L,False,No change
+28,Alexander Chaban,ChabosSpurs@Law,34,38,4,89.5,4,Henderson (3),"In: Henderson (3), Gusto (1); Out: Kayode (-1), Vicario (1)",Sue-nited FC*,44,L,L,False,No change
+28,Drake Byrd,Grand-Larseny,55,55,0,100.0,3,Sels (2),Perfect lineup,eze as u like b*%chs,47,W,W,False,No change
+28,Luke Lockwood,Into the WOODwork*,38,47,9,80.9,8,James (6),"In: James (6), Sánchez (2); Out: Neto (-1), Dúbravka (0)",*Saka It To Me Baby,23,W,W,False,No change
+28,Ethan Ellsworth,Santa’s reijnders,35,35,0,100.0,1,Abraham (1),Perfect lineup,Amorim de mi vida,35,D,D,False,No change
+28,Justin Miller,Sue-nited FC*,44,50,6,88.0,9,Taty (7),In: Taty (7); Out: Wissa (1),ChabosSpurs@Law,34,W,W,False,No change
+28,Ryan Houseman,eze as u like b*%chs,47,49,2,95.9,4,Raya (3),In: Raya (3); Out: Martinez (1),Grand-Larseny,55,L,L,False,No change
+29,Ryan Donlan,**Cunha Believe it?!,47,57,10,82.5,15,Hill (8),"In: Hill (8), Thiaw (4); Out: Virgil (1), Estève (1)",Santa’s reijnders,38,W,W,False,No change
+29,Levi Morant,*Saka It To Me Baby,46,46,0,100.0,0,Armstrong (1),Perfect lineup,Bowen Arrows,57,L,L,False,No change
+29,Julius Long,Amorim de mi vida,46,56,10,82.1,18,Hermansen (9),"In: Hermansen (9), Truffert (8); Out: Gyökeres (1), Pickford (6)",eze as u like b*%chs,57,L,L,False,No change
+29,Dylan Reid,Bowen Arrows,57,59,2,96.6,5,Aaronson (2),"In: Aaronson (2), Hall (2); Out: Amad (1), Xavi (1)",*Saka It To Me Baby,46,W,W,False,No change
+29,Alexander Chaban,ChabosSpurs@Law,24,35,11,68.6,10,Gusto (5),"In: Gusto (5), Henderson (3), Chalobah (2); Out: Van de Ven (-3), Vicario (1), Barnes (1)",Grand-Larseny,39,L,L,False,No change
+29,Drake Byrd,Grand-Larseny,39,40,1,97.5,2,Sels (1),In: Shaw (1); Out: Gravenberch (0),ChabosSpurs@Law,24,W,W,False,No change
+29,Luke Lockwood,Into the WOODwork*,31,31,0,100.0,1,Doku (1),Perfect lineup,Sue-nited FC*,50,L,L,False,No change
+29,Ethan Ellsworth,Santa’s reijnders,38,38,0,100.0,2,Abraham (1),Perfect lineup,**Cunha Believe it?!,47,L,L,False,No change
+29,Justin Miller,Sue-nited FC*,50,52,2,96.2,3,Leno (3),In: Leno (3); Out: Donnarumma (1),Into the WOODwork*,31,W,W,False,No change
+29,Ryan Houseman,eze as u like b*%chs,57,57,0,100.0,2,Martinez (1),Perfect lineup,Amorim de mi vida,46,W,W,False,No change
+30,Ryan Donlan,**Cunha Believe it?!,42,53,11,79.2,15,Thiaw (9),"In: Thiaw (9), Ellborg (3), Woltemade (2); Out: Kelleher (1), J.Timber (1), Caicedo (1)",Into the WOODwork*,28,W,W,False,No change
+30,Levi Morant,*Saka It To Me Baby,24,24,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,50,L,L,False,No change
+30,Julius Long,Amorim de mi vida,52,53,1,98.1,3,Hermansen (3),In: Hermansen (3); Out: Pickford (2),Grand-Larseny,64,L,L,False,No change
+30,Dylan Reid,Bowen Arrows,34,47,13,72.3,16,Aina (10),"In: Aina (10), Hall (5); Out: Aït-Nouri (1), Xavi (1)",ChabosSpurs@Law,30,W,W,False,No change
+30,Alexander Chaban,ChabosSpurs@Law,30,31,1,96.8,3,Brobbey (2),In: Brobbey (2); Out: Ekitiké (1),Bowen Arrows,34,L,L,False,No change
+30,Drake Byrd,Grand-Larseny,64,64,0,100.0,6,Sels (6),Perfect lineup,Amorim de mi vida,52,W,W,False,No change
+30,Luke Lockwood,Into the WOODwork*,28,31,3,90.3,7,Dúbravka (6),In: Dúbravka (6); Out: Sánchez (3),**Cunha Believe it?!,42,L,L,False,No change
+30,Ethan Ellsworth,Santa’s reijnders,29,29,0,100.0,2,Reijnders (1),Perfect lineup,Sue-nited FC*,51,L,L,False,No change
+30,Justin Miller,Sue-nited FC*,51,56,5,91.1,7,Leno (7),In: Leno (7); Out: Donnarumma (2),Santa’s reijnders,29,W,W,False,No change
+30,Ryan Houseman,eze as u like b*%chs,50,50,0,100.0,3,Martinez (2),Perfect lineup,*Saka It To Me Baby,24,W,W,False,No change
+31,Ryan Donlan,**Cunha Believe it?!,47,48,1,97.9,3,Ellborg (3),In: Mings (0); Out: Hill (-1),Amorim de mi vida,28,W,W,False,No change
+31,Levi Morant,*Saka It To Me Baby,38,38,0,100.0,0,—,Perfect lineup,ChabosSpurs@Law,33,W,W,False,No change
+31,Julius Long,Amorim de mi vida,28,28,0,100.0,2,Hermansen (2),Perfect lineup,**Cunha Believe it?!,47,L,L,False,No change
+31,Dylan Reid,Bowen Arrows,23,24,1,95.8,1,Alderete (1),In: Alderete (1); Out: Wan-Bissaka (0),Into the WOODwork*,24,L,D,True,L→D vs Into the WOODwork*
+31,Alexander Chaban,ChabosSpurs@Law,33,33,0,100.0,0,—,Perfect lineup,*Saka It To Me Baby,38,L,L,False,No change
+31,Drake Byrd,Grand-Larseny,35,40,5,87.5,7,Sels (7),In: Sels (7); Out: Petrović (2),Santa’s reijnders,29,W,W,False,No change
+31,Luke Lockwood,Into the WOODwork*,24,24,0,100.0,2,Dúbravka (2),Perfect lineup,Bowen Arrows,23,W,W,False,No change
+31,Ethan Ellsworth,Santa’s reijnders,29,29,0,100.0,0,—,Perfect lineup,Grand-Larseny,35,L,L,False,No change
+31,Justin Miller,Sue-nited FC*,51,51,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,39,W,W,False,No change
+31,Ryan Houseman,eze as u like b*%chs,39,39,0,100.0,0,—,Perfect lineup,Sue-nited FC*,51,L,L,False,No change
+32,Ryan Donlan,**Cunha Believe it?!,43,48,5,89.6,9,Darlow (4),"In: Darlow (4), Bijol (4); Out: Cunha (1), Kelleher (2)",ChabosSpurs@Law,22,W,W,False,No change
+32,Levi Morant,*Saka It To Me Baby,42,51,9,82.4,11,Roefs (11),In: Roefs (11); Out: Lammens (2),Amorim de mi vida,29,W,W,False,No change
+32,Julius Long,Amorim de mi vida,29,38,9,76.3,11,Hermansen (7),"In: Hermansen (7), Muniz (2), J.Gomes (2); Out: Pickford (0), Trossard (1), Damsgaard (1)",*Saka It To Me Baby,42,L,L,False,No change
+32,Dylan Reid,Bowen Arrows,48,50,2,96.0,4,Rayan (2),"In: Rayan (2), Aina (2); Out: Aït-Nouri (1), Xavi (1)",Santa’s reijnders,41,W,W,False,No change
+32,Alexander Chaban,ChabosSpurs@Law,22,22,0,100.0,0,—,Perfect lineup,**Cunha Believe it?!,43,L,L,False,No change
+32,Drake Byrd,Grand-Larseny,37,39,2,94.9,5,Petrović (2),In: Richards (2); Out: Shaw (0),Sue-nited FC*,50,L,L,False,No change
+32,Luke Lockwood,Into the WOODwork*,53,58,5,91.4,9,Matheus N. (6),In: Matheus N. (6); Out: Mbeumo (1),eze as u like b*%chs,47,W,W,False,No change
+32,Ethan Ellsworth,Santa’s reijnders,41,43,2,95.3,1,Abraham (1),In: Abraham (1); Out: Murillo (-1),Bowen Arrows,48,L,L,False,No change
+32,Justin Miller,Sue-nited FC*,50,53,3,94.3,13,Donnarumma (7),In: Senesi (4); Out: Havertz (1),Grand-Larseny,37,W,W,False,No change
+32,Ryan Houseman,eze as u like b*%chs,47,47,0,100.0,0,—,Perfect lineup,Into the WOODwork*,53,L,L,False,No change
+33,Ryan Donlan,**Cunha Believe it?!,103,103,0,100.0,7,Kelleher (6),Perfect lineup,Grand-Larseny,64,W,W,False,No change
+33,Levi Morant,*Saka It To Me Baby,34,52,18,65.4,20,Lammens (10),"In: Lammens (10), Pedro Porro (10); Out: Roefs (1), Mané (1)",Santa’s reijnders,60,L,L,False,No change
+33,Julius Long,Amorim de mi vida,54,66,12,81.8,16,Collins (6),"In: Collins (6), Damsgaard (5), Branthwaite (4); Out: Foden (1), Trossard (1), Gyökeres (1)",Sue-nited FC*,68,L,L,False,No change
+33,Dylan Reid,Bowen Arrows,48,48,0,100.0,1,Alderete (1),Perfect lineup,eze as u like b*%chs,24,W,W,False,No change
+33,Alexander Chaban,ChabosSpurs@Law,44,54,10,81.5,19,Leno (10),"In: Leno (10), Doku (8); Out: Van de Ven (1), Henderson (7)",Into the WOODwork*,58,L,L,False,No change
+33,Drake Byrd,Grand-Larseny,64,69,5,92.8,9,Richards (6),In: Richards (6); Out: Strand Larsen (1),**Cunha Believe it?!,103,L,L,False,No change
+33,Luke Lockwood,Into the WOODwork*,58,63,5,92.1,14,Dewsbury-Hall (6),"In: Dewsbury-Hall (6), Mykolenko (3); Out: Fofana (2), Wood (2)",ChabosSpurs@Law,44,W,W,False,No change
+33,Ethan Ellsworth,Santa’s reijnders,60,64,4,93.8,6,Abraham (5),In: Abraham (5); Out: Sarr (1),*Saka It To Me Baby,34,W,W,False,No change
+33,Justin Miller,Sue-nited FC*,68,74,6,91.9,18,Donnarumma (8),"In: Havertz (6), Garner (3); Out: Frimpong (1), Isak (2)",Amorim de mi vida,54,W,W,False,No change
+33,Ryan Houseman,eze as u like b*%chs,24,25,1,96.0,1,Raya (1),In: Ballard (0); Out: Mukiele (-1),Bowen Arrows,48,L,L,False,No change
+34,Ryan Donlan,**Cunha Believe it?!,43,43,0,100.0,0,—,Perfect lineup,eze as u like b*%chs,32,W,W,False,No change
+34,Levi Morant,*Saka It To Me Baby,35,38,3,92.1,3,Lammens (3),In: Lammens (3); Out: Roefs (0),Sue-nited FC*,38,L,D,True,L→D vs Sue-nited FC*
+34,Julius Long,Amorim de mi vida,18,19,1,94.7,2,Hermansen (2),In: Hermansen (2); Out: Pickford (1),Into the WOODwork*,43,L,L,False,No change
+34,Dylan Reid,Bowen Arrows,28,28,0,100.0,0,—,Perfect lineup,Grand-Larseny,51,L,L,False,No change
+34,Alexander Chaban,ChabosSpurs@Law,18,25,7,72.0,7,Leno (7),In: Leno (7); Out: Henderson (0),Santa’s reijnders,30,L,L,False,No change
+34,Drake Byrd,Grand-Larseny,51,51,0,100.0,0,—,Perfect lineup,Bowen Arrows,28,W,W,False,No change
+34,Luke Lockwood,Into the WOODwork*,43,43,0,100.0,0,—,Perfect lineup,Amorim de mi vida,18,W,W,False,No change
+34,Ethan Ellsworth,Santa’s reijnders,30,30,0,100.0,0,—,Perfect lineup,ChabosSpurs@Law,18,W,W,False,No change
+34,Justin Miller,Sue-nited FC*,38,40,2,95.0,3,Garner (3),In: Garner (3); Out: O.Dango (1),*Saka It To Me Baby,35,W,W,False,No change
+34,Ryan Houseman,eze as u like b*%chs,32,39,7,82.1,10,Raya (10),In: Raya (10); Out: Martinez (3),**Cunha Believe it?!,43,L,L,False,No change
+35,Ryan Donlan,**Cunha Believe it?!,38,46,8,82.6,10,Kelleher (8),"In: Kelleher (8), Armstrong (2); Out: Canvot (0), Darlow (2)",Sue-nited FC*,30,W,W,False,No change
+35,Levi Morant,*Saka It To Me Baby,29,29,0,100.0,2,Lammens (2),Perfect lineup,Grand-Larseny,42,L,L,False,No change
+35,Julius Long,Amorim de mi vida,59,59,0,100.0,2,Pickford (1),Perfect lineup,Bowen Arrows,52,W,W,False,No change
+35,Dylan Reid,Bowen Arrows,52,53,1,98.1,2,Semenyo (2),In: Semenyo (2); Out: Amad (1),Amorim de mi vida,59,L,L,False,No change
+35,Alexander Chaban,ChabosSpurs@Law,47,53,6,88.7,8,Cash (5),"In: Cash (5), Leno (3); Out: Gusto (0), Henderson (2)",eze as u like b*%chs,50,L,W,True,L→W vs eze as u like b*%chs
+35,Drake Byrd,Grand-Larseny,42,52,10,80.8,19,Richarlison (9),"In: Richarlison (9), Shaw (2); Out: Muñoz (0), Richards (1)",*Saka It To Me Baby,29,W,W,False,No change
+35,Luke Lockwood,Into the WOODwork*,21,28,7,75.0,10,Calafiori (6),"In: Calafiori (6), Dúbravka (2), Raúl (2); Out: Sánchez (1), Summerville (1), Wood (1)",Santa’s reijnders,42,L,L,False,No change
+35,Ethan Ellsworth,Santa’s reijnders,42,42,0,100.0,2,Maguire (1),Perfect lineup,Into the WOODwork*,21,W,W,False,No change
+35,Justin Miller,Sue-nited FC*,30,30,0,100.0,1,Donnarumma (1),Perfect lineup,**Cunha Believe it?!,38,L,L,False,No change
+35,Ryan Houseman,eze as u like b*%chs,50,63,13,79.4,14,Stach (10),"In: Stach (10), Raya (6); Out: Nmecha (1), Martinez (2)",ChabosSpurs@Law,47,W,W,False,No change
+36,Ryan Donlan,**Cunha Believe it?!,49,50,1,98.0,3,Kelleher (3),In: Kelleher (3); Out: Darlow (2),*Saka It To Me Baby,28,W,W,False,No change
+36,Levi Morant,*Saka It To Me Baby,28,33,5,84.8,10,Roefs (6),"In: Mané (2), Garner (1); Out: Andersen (-2), Mitoma (0)",**Cunha Believe it?!,49,L,L,False,No change
+36,Julius Long,Amorim de mi vida,57,57,0,100.0,2,Hermansen (2),Perfect lineup,ChabosSpurs@Law,40,W,W,False,No change
+36,Dylan Reid,Bowen Arrows,54,55,1,98.2,3,E.Le Fée (3),In: E.Le Fée (3); Out: Thiago (2),Sue-nited FC*,70,L,L,False,No change
+36,Alexander Chaban,ChabosSpurs@Law,40,40,0,100.0,4,Leno (3),Perfect lineup,Amorim de mi vida,57,L,L,False,No change
+36,Drake Byrd,Grand-Larseny,38,54,16,70.4,22,Gravenberch (10),"In: Gravenberch (10), Petrović (6), Shaw (6); Out: Evanilson (1), Richarlison (2), Sels (3)",Into the WOODwork*,38,D,W,True,D→W vs Into the WOODwork*
+36,Luke Lockwood,Into the WOODwork*,38,38,0,100.0,1,Summerville (1),Perfect lineup,Grand-Larseny,38,D,D,False,No change
+36,Ethan Ellsworth,Santa’s reijnders,43,43,0,100.0,2,Mamardashvili (2),Perfect lineup,eze as u like b*%chs,54,L,L,False,No change
+36,Justin Miller,Sue-nited FC*,70,70,0,100.0,7,Verbruggen (6),Perfect lineup,Bowen Arrows,54,W,W,False,No change
+36,Ryan Houseman,eze as u like b*%chs,54,57,3,94.7,10,Raya (9),In: Raya (9); Out: Martinez (6),Santa’s reijnders,43,W,W,False,No change
+37,Ryan Donlan,**Cunha Believe it?!,61,71,10,85.9,14,Darlow (11),"In: Darlow (11), Bassey (2); Out: Schade (1), Kelleher (2)",Bowen Arrows,22,W,W,False,No change
+37,Levi Morant,*Saka It To Me Baby,37,41,4,90.2,8,Roefs (3),"In: Roefs (3), Dunk (2), Kolo Muani (2); Out: Lammens (1), Mykolenko (1), Garner (1)",Into the WOODwork*,32,W,W,False,No change
+37,Julius Long,Amorim de mi vida,30,40,10,75.0,13,Hermansen (5),"In: Hermansen (5), Truffert (4), Van den Berg (4); Out: Pickford (1), Bernardo (1), Gyökeres (1)",Santa’s reijnders,40,L,D,True,L→D vs Santa’s reijnders
+37,Dylan Reid,Bowen Arrows,22,34,12,64.7,13,E.Le Fée (13),In: E.Le Fée (13); Out: J.Murphy (1),**Cunha Believe it?!,61,L,L,False,No change
+37,Alexander Chaban,ChabosSpurs@Law,34,36,2,94.4,3,Beto (2),In: Beto (2); Out: Kayode (0),Sue-nited FC*,51,L,L,False,No change
+37,Drake Byrd,Grand-Larseny,38,51,13,74.5,18,Richarlison (7),"In: Richarlison (7), Shaw (6), Petrović (3); Out: Richards (0), Casemiro (1), Sels (2)",eze as u like b*%chs,49,L,W,True,L→W vs eze as u like b*%chs
+37,Luke Lockwood,Into the WOODwork*,32,34,2,94.1,4,Summerville (2),In: Summerville (2); Out: Konaté (0),*Saka It To Me Baby,37,L,L,False,No change
+37,Ethan Ellsworth,Santa’s reijnders,40,41,1,97.6,3,Damsgaard (2),In: Damsgaard (2); Out: Pablo (1),Amorim de mi vida,30,W,W,False,No change
+37,Justin Miller,Sue-nited FC*,51,51,0,100.0,1,Donnarumma (1),Perfect lineup,ChabosSpurs@Law,34,W,W,False,No change
+37,Ryan Houseman,eze as u like b*%chs,49,53,4,92.5,7,Raya (6),In: Raya (6); Out: Martinez (2),Grand-Larseny,38,W,W,False,No change
+38,Ryan Donlan,**Cunha Believe it?!,37,41,4,90.2,6,Kelleher (6),In: Kelleher (6); Out: Darlow (2),Santa’s reijnders,29,W,W,False,No change
+38,Levi Morant,*Saka It To Me Baby,46,46,0,100.0,1,Burn (1),Perfect lineup,Bowen Arrows,37,W,W,False,No change
+38,Julius Long,Amorim de mi vida,23,28,5,82.1,7,Hermansen (7),In: Hermansen (7); Out: Pickford (2),eze as u like b*%chs,24,L,W,True,L→W vs eze as u like b*%chs
+38,Dylan Reid,Bowen Arrows,37,41,4,90.2,5,E.Le Fée (5),In: E.Le Fée (5); Out: João Pedro (1),*Saka It To Me Baby,46,L,L,False,No change
+38,Alexander Chaban,ChabosSpurs@Law,35,36,1,97.2,5,Henderson (2),In: Barry (2); Out: Barnes (1),Grand-Larseny,44,L,L,False,No change
+38,Drake Byrd,Grand-Larseny,44,44,0,100.0,3,Petrović (3),Perfect lineup,ChabosSpurs@Law,35,W,W,False,No change
+38,Luke Lockwood,Into the WOODwork*,33,33,0,100.0,2,A.Becker (2),Perfect lineup,Sue-nited FC*,48,L,L,False,No change
+38,Ethan Ellsworth,Santa’s reijnders,29,29,0,100.0,1,Aaronson (1),Perfect lineup,**Cunha Believe it?!,37,L,L,False,No change
+38,Justin Miller,Sue-nited FC*,48,49,1,98.0,2,Lewis-Skelly (2),In: Lewis-Skelly (2); Out: Wirtz (1),Into the WOODwork*,33,W,W,False,No change
+38,Ryan Houseman,eze as u like b*%chs,24,24,0,100.0,0,—,Perfect lineup,Amorim de mi vida,23,W,W,False,No change
