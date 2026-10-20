@@ -418,24 +418,24 @@ Use this table to see how often each team landed in the top, middle, or bottom s
 
 - Percentages are based on completed gameweeks.
 - **Top 1** is the share of gameweeks where the team tied or held the highest score.
-- **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included.
-- **Bottom 5**, **Bottom 3**, and **Bottom 1** work the same way from the bottom of that week's scores.
-- Because tied cutoff scores are included, **Top 5** and **Bottom 5** can add to more than 100% for a team when tied scores straddle the middle of a week.
+- **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included in the higher band.
+- **Bottom 5**, **Bottom 3**, and **Bottom 1** include cutoff ties unless that score already qualifies for the corresponding higher band.
+- A score can never count in both **Top 5** and **Bottom 5**; a tie spanning the middle is awarded to **Top 5**.
 
 </details>
 
 | Team | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
 |---|---:|---:|---:|---:|---:|---:|
-| `Sue-nited FC*` | 21.1% | 47.4% | 68.4% | 34.2% | 23.7% | 7.9% |
-| `Grand-Larseny` | 15.8% | 39.5% | 63.2% | 39.5% | 18.4% | 7.9% |
+| `Sue-nited FC*` | 21.1% | 47.4% | 68.4% | 31.6% | 23.7% | 7.9% |
+| `Grand-Larseny` | 15.8% | 39.5% | 63.2% | 36.8% | 18.4% | 7.9% |
 | `eze as u like b*%chs` | 15.8% | 39.5% | 63.2% | 36.8% | 23.7% | 10.5% |
 | `**Cunha Believe it?!` | 10.5% | 31.6% | 63.2% | 36.8% | 21.1% | 5.3% |
-| `*Saka It To Me Baby` | 10.5% | 21.1% | 39.5% | 63.2% | 39.5% | 21.1% |
+| `*Saka It To Me Baby` | 10.5% | 21.1% | 39.5% | 60.5% | 39.5% | 21.1% |
 | `Bowen Arrows` | 7.9% | 39.5% | 47.4% | 52.6% | 28.9% | 7.9% |
-| `Into the WOODwork*` | 7.9% | 28.9% | 47.4% | 57.9% | 34.2% | 5.3% |
-| `ChabosSpurs@Law` | 7.9% | 23.7% | 42.1% | 60.5% | 36.8% | 13.2% |
-| `Amorim de mi vida` | 7.9% | 21.1% | 31.6% | 71.1% | 47.4% | 23.7% |
-| `Santa’s reijnders` | 7.9% | 18.4% | 47.4% | 60.5% | 34.2% | 7.9% |
+| `Into the WOODwork*` | 7.9% | 28.9% | 47.4% | 52.6% | 34.2% | 5.3% |
+| `ChabosSpurs@Law` | 7.9% | 23.7% | 42.1% | 57.9% | 36.8% | 13.2% |
+| `Amorim de mi vida` | 7.9% | 21.1% | 31.6% | 68.4% | 47.4% | 23.7% |
+| `Santa’s reijnders` | 7.9% | 18.4% | 47.4% | 52.6% | 34.2% | 7.9% |
 
 </details>
 
@@ -508,11 +508,11 @@ Use this table to compare the painful and fortunate matchup-timing moments for e
 <summary>Definitions and calculation notes</summary>
 
 - These are timing metrics. They do not say a team is good or bad; they say whether a weekly score met an unusually strong or weak opponent.
-- **Bad Beat**: a team lost while scoring above that gameweek's league median.
-- **Soft Win**: a team won while scoring below that gameweek's league median.
+- **Bad Beat**: a team lost while scoring in that gameweek's top half. A tie spanning the middle is classified in the top half.
+- **Soft Win**: a team won while scoring in that gameweek's bottom half.
 - **Timing Balance**: soft wins minus bad beats. Positive means a manager got more schedule help in these specific timing spots; negative means more painful timing.
 - In the manager details, **Score** is that manager's weekly score, **Opp Score** is the opponent's weekly score, and **Margin** is shown from that manager's perspective.
-- **GW Median** is the league median score for that gameweek, which is the cutoff used to tag bad beats and soft wins.
+- **GW Median** is shown for context; the tie-aware Top 5 classification determines bad beats and soft wins.
 
 </details>
 
@@ -520,13 +520,13 @@ Use this table to compare the painful and fortunate matchup-timing moments for e
 |---|---:|---:|---:|
 | `Grand-Larseny` | 7 | 3 | -4 |
 | `eze as u like b*%chs` | 7 | 3 | -4 |
-| `Santa’s reijnders` | 5 | 2 | -3 |
+| `Santa’s reijnders` | 6 | 2 | -4 |
 | `Bowen Arrows` | 5 | 6 | +1 |
 | `ChabosSpurs@Law` | 4 | 2 | -2 |
-| `Sue-nited FC*` | 3 | 2 | -1 |
+| `Sue-nited FC*` | 4 | 2 | -2 |
+| `*Saka It To Me Baby` | 3 | 4 | +1 |
+| `Amorim de mi vida` | 3 | 4 | +1 |
 | `**Cunha Believe it?!` | 3 | 6 | +3 |
-| `*Saka It To Me Baby` | 2 | 4 | +2 |
-| `Amorim de mi vida` | 2 | 4 | +2 |
 | `Into the WOODwork*` | 1 | 5 | +4 |
 
 ### Manager Timing Details
@@ -570,7 +570,7 @@ Use the manager dropdowns below to see the exact weeks behind the bad-beat and s
 </details>
 
 <details class="notes">
-<summary>Santa’s reijnders: 5 bad beats, 2 soft wins</summary>
+<summary>Santa’s reijnders: 6 bad beats, 2 soft wins</summary>
 
 | GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
 |---:|---|---|---:|---:|---:|---:|
@@ -579,6 +579,7 @@ Use the manager dropdowns below to see the exact weeks behind the bad-beat and s
 | 15 | Soft Win | `*Saka It To Me Baby` | 41 | 31 | +10 | 46.0 |
 | 16 | Bad Beat | `ChabosSpurs@Law` | 52 | 57 | -5 | 44.0 |
 | 20 | Bad Beat | `**Cunha Believe it?!` | 37 | 44 | -7 | 33.0 |
+| 23 | Bad Beat | `Bowen Arrows` | 36 | 47 | -11 | 36.0 |
 | 25 | Bad Beat | `ChabosSpurs@Law` | 40 | 41 | -1 | 39.5 |
 | 34 | Soft Win | `ChabosSpurs@Law` | 30 | 18 | +12 | 33.5 |
 
@@ -618,15 +619,46 @@ Use the manager dropdowns below to see the exact weeks behind the bad-beat and s
 </details>
 
 <details class="notes">
-<summary>Sue-nited FC*: 3 bad beats, 2 soft wins</summary>
+<summary>Sue-nited FC*: 4 bad beats, 2 soft wins</summary>
 
 | GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
 |---:|---|---|---:|---:|---:|---:|
 | 5 | Bad Beat | `Grand-Larseny` | 46 | 47 | -1 | 33.5 |
+| 7 | Bad Beat | `*Saka It To Me Baby` | 40 | 41 | -1 | 40.0 |
 | 9 | Soft Win | `Bowen Arrows` | 31 | 23 | +8 | 42.5 |
 | 11 | Bad Beat | `Into the WOODwork*` | 53 | 59 | -6 | 40.5 |
 | 24 | Soft Win | `Amorim de mi vida` | 43 | 41 | +2 | 45.5 |
 | 26 | Bad Beat | `**Cunha Believe it?!` | 40 | 61 | -21 | 36.5 |
+
+</details>
+
+<details class="notes">
+<summary>*Saka It To Me Baby: 3 bad beats, 4 soft wins</summary>
+
+| GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
+|---:|---|---|---:|---:|---:|---:|
+| 6 | Soft Win | `Santa’s reijnders` | 36 | 26 | +10 | 41.0 |
+| 16 | Bad Beat | `Sue-nited FC*` | 48 | 57 | -9 | 44.0 |
+| 17 | Soft Win | `Grand-Larseny` | 45 | 23 | +22 | 46.5 |
+| 29 | Bad Beat | `Bowen Arrows` | 46 | 57 | -11 | 46.0 |
+| 32 | Soft Win | `Amorim de mi vida` | 42 | 29 | +13 | 42.5 |
+| 34 | Bad Beat | `Sue-nited FC*` | 35 | 38 | -3 | 33.5 |
+| 37 | Soft Win | `Into the WOODwork*` | 37 | 32 | +5 | 37.5 |
+
+</details>
+
+<details class="notes">
+<summary>Amorim de mi vida: 3 bad beats, 4 soft wins</summary>
+
+| GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
+|---:|---|---|---:|---:|---:|---:|
+| 3 | Bad Beat | `Grand-Larseny` | 43 | 56 | -13 | 41.0 |
+| 5 | Soft Win | `*Saka It To Me Baby` | 22 | 20 | +2 | 33.5 |
+| 11 | Soft Win | `eze as u like b*%chs` | 36 | 31 | +5 | 40.5 |
+| 20 | Soft Win | `eze as u like b*%chs` | 25 | 24 | +1 | 33.0 |
+| 27 | Soft Win | `ChabosSpurs@Law` | 44 | 37 | +7 | 45.0 |
+| 29 | Bad Beat | `eze as u like b*%chs` | 46 | 57 | -11 | 46.0 |
+| 30 | Bad Beat | `Grand-Larseny` | 52 | 64 | -12 | 38.0 |
 
 </details>
 
@@ -644,34 +676,6 @@ Use the manager dropdowns below to see the exact weeks behind the bad-beat and s
 | 22 | Soft Win | `Amorim de mi vida` | 28 | 26 | +2 | 33.0 |
 | 27 | Bad Beat | `*Saka It To Me Baby` | 48 | 66 | -18 | 45.0 |
 | 35 | Soft Win | `Sue-nited FC*` | 38 | 30 | +8 | 42.0 |
-
-</details>
-
-<details class="notes">
-<summary>*Saka It To Me Baby: 2 bad beats, 4 soft wins</summary>
-
-| GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
-|---:|---|---|---:|---:|---:|---:|
-| 6 | Soft Win | `Santa’s reijnders` | 36 | 26 | +10 | 41.0 |
-| 16 | Bad Beat | `Sue-nited FC*` | 48 | 57 | -9 | 44.0 |
-| 17 | Soft Win | `Grand-Larseny` | 45 | 23 | +22 | 46.5 |
-| 32 | Soft Win | `Amorim de mi vida` | 42 | 29 | +13 | 42.5 |
-| 34 | Bad Beat | `Sue-nited FC*` | 35 | 38 | -3 | 33.5 |
-| 37 | Soft Win | `Into the WOODwork*` | 37 | 32 | +5 | 37.5 |
-
-</details>
-
-<details class="notes">
-<summary>Amorim de mi vida: 2 bad beats, 4 soft wins</summary>
-
-| GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
-|---:|---|---|---:|---:|---:|---:|
-| 3 | Bad Beat | `Grand-Larseny` | 43 | 56 | -13 | 41.0 |
-| 5 | Soft Win | `*Saka It To Me Baby` | 22 | 20 | +2 | 33.5 |
-| 11 | Soft Win | `eze as u like b*%chs` | 36 | 31 | +5 | 40.5 |
-| 20 | Soft Win | `eze as u like b*%chs` | 25 | 24 | +1 | 33.0 |
-| 27 | Soft Win | `ChabosSpurs@Law` | 44 | 37 | +7 | 45.0 |
-| 30 | Bad Beat | `Grand-Larseny` | 52 | 64 | -12 | 38.0 |
 
 </details>
 
@@ -2072,10 +2076,10 @@ Use this section to see who won or lost matchup points through replacement-adjus
 <summary>Definitions and calculation notes</summary>
 
 - This replaces the old transaction-volume metric with a stricter counterfactual question: which matchups plausibly depended on waiver or free-agent pickups after accounting for the players dropped?
-- **Pickup players**: players acquired through an accepted waiver or free-agent transaction. Trades and drafted players are not counted as pickups for this metric.
+- **Pickup players**: players acquired through an accepted waiver or free-agent transaction recorded for that gameweek. Trades, drafted players, and pickups from earlier gameweeks are not counted for that matchup.
 - **Pickup starter points**: points scored by those pickup players only when they were in the manager's starting XI.
 - **Replacement Delta**: pickup starter points minus the points scored that same gameweek by the player dropped to make that pickup. This handles the case where the dropped player would also have scored enough to matter.
-- If a pickup is not started, it contributes `0` to this metric. The dropped player's score is only used as a counterfactual for pickup players who actually entered the manager's starting XI.
+- If a pickup is not started in its acquisition gameweek, it contributes `0` to this metric. The dropped player's score is only used as a counterfactual for a same-gameweek pickup who entered the manager's starting XI.
 - **Waiver-Inspired Win**: a H2H win where the winner's replacement delta minus the opponent's replacement delta was at least the victory margin. The winner must also have a positive replacement delta.
 - **Waiver-Inspired Loss**: the reverse view of the same matchup. If a manager loses a game that qualifies as a waiver-inspired win for the opponent, it also counts as a waiver-inspired loss for that manager.
 - **Share of Wins**: waiver-inspired wins divided by total wins.
@@ -2091,16 +2095,16 @@ Use this table to see who beat opponents at the waiver game often enough to swin
 
 | Team | Waiver-Inspired Wins | Total Wins | Share of Wins | Avg Waiver-Inspired Win Margin |
 |---|---:|---:|---:|---:|
-| `Sue-nited FC*` | 11 | 24 | 45.8% | 11.9 |
-| `*Saka It To Me Baby` | 9 | 16 | 56.2% | 9.6 |
-| `Into the WOODwork*` | 8 | 21 | 38.1% | 9.8 |
-| `**Cunha Believe it?!` | 6 | 27 | 22.2% | 10.5 |
-| `Amorim de mi vida` | 5 | 13 | 38.5% | 9.0 |
-| `Grand-Larseny` | 4 | 20 | 20.0% | 7.2 |
-| `Santa’s reijnders` | 3 | 13 | 23.1% | 14.3 |
-| `eze as u like b*%chs` | 3 | 20 | 15.0% | 8.3 |
-| `Bowen Arrows` | 2 | 19 | 10.5% | 12.5 |
-| `ChabosSpurs@Law` | 1 | 14 | 7.1% | 5.0 |
+| `*Saka It To Me Baby` | 5 | 16 | 31.2% | 5.4 |
+| `Into the WOODwork*` | 4 | 21 | 19.0% | 2.8 |
+| `Amorim de mi vida` | 3 | 13 | 23.1% | 4.0 |
+| `Bowen Arrows` | 3 | 19 | 15.8% | 11.0 |
+| `**Cunha Believe it?!` | 3 | 27 | 11.1% | 8.0 |
+| `Sue-nited FC*` | 2 | 24 | 8.3% | 6.0 |
+| `Santa’s reijnders` | 1 | 13 | 7.7% | 12.0 |
+| `ChabosSpurs@Law` | 1 | 14 | 7.1% | 2.0 |
+| `eze as u like b*%chs` | 1 | 20 | 5.0% | 1.0 |
+| `Grand-Larseny` | 0 | 20 | 0.0% | 0.0 |
 
 ### Waiver-Inspired Losses
 
@@ -2108,16 +2112,16 @@ Use this table to see who was on the wrong end of those waiver swings, meaning t
 
 | Team | Waiver-Inspired Losses | Total Losses | Share of Losses | Avg Waiver-Inspired Loss Margin |
 |---|---:|---:|---:|---:|
-| `eze as u like b*%chs` | 8 | 18 | 44.4% | 8.5 |
-| `Bowen Arrows` | 8 | 19 | 42.1% | 5.4 |
-| `ChabosSpurs@Law` | 7 | 24 | 29.2% | 11.3 |
-| `Santa’s reijnders` | 6 | 23 | 26.1% | 13.0 |
-| `Amorim de mi vida` | 6 | 24 | 25.0% | 11.5 |
-| `*Saka It To Me Baby` | 5 | 22 | 22.7% | 10.6 |
-| `**Cunha Believe it?!` | 4 | 11 | 36.4% | 8.5 |
-| `Grand-Larseny` | 4 | 17 | 23.5% | 16.0 |
-| `Into the WOODwork*` | 3 | 15 | 20.0% | 13.7 |
+| `ChabosSpurs@Law` | 4 | 24 | 16.7% | 5.2 |
+| `Grand-Larseny` | 3 | 17 | 17.6% | 3.7 |
+| `eze as u like b*%chs` | 3 | 18 | 16.7% | 7.3 |
+| `*Saka It To Me Baby` | 3 | 22 | 13.6% | 10.3 |
+| `Amorim de mi vida` | 3 | 24 | 12.5% | 8.7 |
+| `Into the WOODwork*` | 2 | 15 | 13.3% | 6.5 |
+| `Bowen Arrows` | 2 | 19 | 10.5% | 2.0 |
+| `**Cunha Believe it?!` | 1 | 11 | 9.1% | 2.0 |
 | `Sue-nited FC*` | 1 | 14 | 7.1% | 1.0 |
+| `Santa’s reijnders` | 1 | 23 | 4.3% | 3.0 |
 
 </details>
 

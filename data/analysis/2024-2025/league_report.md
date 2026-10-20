@@ -422,24 +422,24 @@ Use this table to see how often each manager landed in the top, middle, or botto
 
 - Percentages are based on completed gameweeks.
 - **Top 1** is the share of gameweeks where the manager tied or held the highest score.
-- **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included.
-- **Bottom 5**, **Bottom 3**, and **Bottom 1** work the same way from the bottom of that week's scores.
-- Because tied cutoff scores are included, **Top 5** and **Bottom 5** can add to more than 100% for a manager when tied scores straddle the middle of a week.
+- **Top 3** and **Top 5** use weekly score cutoffs, so ties at the cutoff are included in the higher band.
+- **Bottom 5**, **Bottom 3**, and **Bottom 1** include cutoff ties unless that score already qualifies for the corresponding higher band.
+- A score can never count in both **Top 5** and **Bottom 5**; a tie spanning the middle is awarded to **Top 5**.
 
 </details>
 
 | Manager | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
 |---|---|---|---|---|---|---|
-| Justin Miller | 28.9% | 44.7% | 78.9% | 26.3% | 10.5% | 5.3% |
-| Levi Morant | 15.8% | 28.9% | 57.9% | 44.7% | 18.4% | 10.5% |
-| Ryan Donlan | 13.2% | 57.9% | 76.3% | 28.9% | 15.8% | 5.3% |
-| Julius Long | 13.2% | 18.4% | 50.0% | 57.9% | 31.6% | 2.6% |
+| Justin Miller | 28.9% | 44.7% | 78.9% | 21.1% | 10.5% | 5.3% |
+| Levi Morant | 15.8% | 28.9% | 57.9% | 42.1% | 18.4% | 10.5% |
+| Ryan Donlan | 13.2% | 57.9% | 76.3% | 23.7% | 15.8% | 5.3% |
+| Julius Long | 13.2% | 18.4% | 50.0% | 50.0% | 31.6% | 2.6% |
 | Alexander Chaban | 10.5% | 31.6% | 47.4% | 52.6% | 34.2% | 21.1% |
-| Ethan Ellsworth | 7.9% | 28.9% | 47.4% | 57.9% | 39.5% | 18.4% |
-| Drake Byrd | 7.9% | 21.1% | 42.1% | 60.5% | 31.6% | 2.6% |
-| Luke Lockwood | 5.3% | 36.8% | 50.0% | 55.3% | 34.2% | 13.2% |
-| Ryan Houseman | 5.3% | 26.3% | 47.4% | 57.9% | 39.5% | 13.2% |
-| Dylan Reid | 2.6% | 13.2% | 23.7% | 81.6% | 60.5% | 13.2% |
+| Ethan Ellsworth | 7.9% | 28.9% | 47.4% | 52.6% | 39.5% | 18.4% |
+| Drake Byrd | 7.9% | 21.1% | 42.1% | 57.9% | 31.6% | 2.6% |
+| Luke Lockwood | 5.3% | 36.8% | 50.0% | 50.0% | 34.2% | 13.2% |
+| Ryan Houseman | 5.3% | 26.3% | 47.4% | 52.6% | 39.5% | 13.2% |
+| Dylan Reid | 2.6% | 13.2% | 23.7% | 76.3% | 60.5% | 13.2% |
 
 </details>
 <details>
@@ -498,27 +498,27 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 
-- **Bad Beats**: losses where the losing score was above that gameweek's league median.
-- **Soft Wins**: wins where the winning score was below that gameweek's league median.
+- **Bad Beats**: losses where the losing score was in that gameweek's top half. A tie spanning the middle is classified in the top half.
+- **Soft Wins**: wins where the winning score was in that gameweek's bottom half.
 - **Timing Balance**: soft wins minus bad beats.
 
 </details>
 
 | Manager | Bad Beats | Soft Wins | Timing Balance |
 |---|---|---|---|
-| Levi Morant | 6 | 4 | -2 |
-| Drake Byrd | 6 | 7 | +1 |
-| Julius Long | 6 | 7 | +1 |
+| Levi Morant | 7 | 4 | -3 |
+| Drake Byrd | 7 | 7 | +0 |
+| Julius Long | 7 | 7 | +0 |
 | Alexander Chaban | 5 | 1 | -4 |
 | Justin Miller | 5 | 1 | -4 |
-| Ethan Ellsworth | 4 | 2 | -2 |
+| Ethan Ellsworth | 5 | 2 | -3 |
+| Luke Lockwood | 4 | 4 | +0 |
 | Ryan Donlan | 3 | 1 | -2 |
-| Luke Lockwood | 3 | 4 | +1 |
 | Dylan Reid | 3 | 6 | +3 |
 | Ryan Houseman | 3 | 6 | +3 |
 
 <details class="notes">
-<summary>Levi Morant: 6 bad beats, 4 soft wins</summary>
+<summary>Levi Morant: 7 bad beats, 4 soft wins</summary>
 
 | GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
 |---|---|---|---|---|---|---|
@@ -528,6 +528,7 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 | 10 | Bad Beat | Alexander Chaban | 40 | 66 | -26 | 31.0 |
 | 12 | Bad Beat | Dylan Reid | 40 | 53 | -13 | 36.0 |
 | 15 | Bad Beat | Ryan Donlan | 45 | 49 | -4 | 38.0 |
+| 16 | Bad Beat | Drake Byrd | 39 | 55 | -16 | 39.0 |
 | 24 | Bad Beat | Ryan Donlan | 45 | 83 | -38 | 42.0 |
 | 33 | Bad Beat | Ryan Donlan | 53 | 63 | -10 | 52.0 |
 | 34 | Soft Win | Drake Byrd | 34 | 27 | +7 | 40.5 |
@@ -536,7 +537,7 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 </details>
 
 <details class="notes">
-<summary>Drake Byrd: 6 bad beats, 7 soft wins</summary>
+<summary>Drake Byrd: 7 bad beats, 7 soft wins</summary>
 
 | GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
 |---|---|---|---|---|---|---|
@@ -552,18 +553,20 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 | 30 | Bad Beat | Justin Miller | 44 | 54 | -10 | 39.0 |
 | 31 | Soft Win | Julius Long | 35 | 34 | +1 | 37.5 |
 | 33 | Soft Win | Alexander Chaban | 51 | 40 | +11 | 52.0 |
+| 36 | Bad Beat | Ryan Houseman | 40 | 47 | -7 | 40.0 |
 | 37 | Soft Win | Ryan Donlan | 35 | 34 | +1 | 37.5 |
 
 </details>
 
 <details class="notes">
-<summary>Julius Long: 6 bad beats, 7 soft wins</summary>
+<summary>Julius Long: 7 bad beats, 7 soft wins</summary>
 
 | GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
 |---|---|---|---|---|---|---|
 | 2 | Soft Win | Ryan Houseman | 32 | 25 | +7 | 39.5 |
 | 3 | Bad Beat | Ryan Donlan | 50 | 59 | -9 | 30.5 |
 | 9 | Soft Win | Levi Morant | 32 | 24 | +8 | 32.5 |
+| 12 | Bad Beat | Ryan Donlan | 36 | 46 | -10 | 36.0 |
 | 15 | Bad Beat | Justin Miller | 40 | 51 | -11 | 38.0 |
 | 18 | Bad Beat | Levi Morant | 40 | 56 | -16 | 39.0 |
 | 19 | Bad Beat | Ethan Ellsworth | 48 | 54 | -6 | 40.5 |
@@ -606,7 +609,7 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 </details>
 
 <details class="notes">
-<summary>Ethan Ellsworth: 4 bad beats, 2 soft wins</summary>
+<summary>Ethan Ellsworth: 5 bad beats, 2 soft wins</summary>
 
 | GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
 |---|---|---|---|---|---|---|
@@ -616,6 +619,23 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 | 28 | Soft Win | Julius Long | 34 | 33 | +1 | 34.5 |
 | 30 | Bad Beat | Alexander Chaban | 43 | 47 | -4 | 39.0 |
 | 31 | Bad Beat | Justin Miller | 46 | 52 | -6 | 37.5 |
+| 35 | Bad Beat | Levi Morant | 38 | 45 | -7 | 38.0 |
+
+</details>
+
+<details class="notes">
+<summary>Luke Lockwood: 4 bad beats, 4 soft wins</summary>
+
+| GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
+|---|---|---|---|---|---|---|
+| 4 | Bad Beat | Levi Morant | 38 | 66 | -28 | 38.0 |
+| 5 | Bad Beat | Drake Byrd | 46 | 49 | -3 | 40.0 |
+| 21 | Bad Beat | Ryan Houseman | 53 | 59 | -6 | 46.5 |
+| 24 | Soft Win | Ethan Ellsworth | 39 | 26 | +13 | 42.0 |
+| 25 | Bad Beat | Justin Miller | 61 | 66 | -5 | 48.5 |
+| 27 | Soft Win | Alexander Chaban | 36 | 24 | +12 | 43.5 |
+| 30 | Soft Win | Ryan Houseman | 31 | 24 | +7 | 39.0 |
+| 35 | Soft Win | Julius Long | 28 | 24 | +4 | 38.0 |
 
 </details>
 
@@ -628,21 +648,6 @@ Using the inferred schedule, this shows who got punished or helped by weekly mat
 | 29 | Bad Beat | Luke Lockwood | 33 | 47 | -14 | 27.0 |
 | 30 | Soft Win | Julius Long | 38 | 28 | +10 | 39.0 |
 | 34 | Bad Beat | Alexander Chaban | 54 | 58 | -4 | 40.5 |
-
-</details>
-
-<details class="notes">
-<summary>Luke Lockwood: 3 bad beats, 4 soft wins</summary>
-
-| GW | Type | Opponent | Score | Opp Score | Margin | GW Median |
-|---|---|---|---|---|---|---|
-| 5 | Bad Beat | Drake Byrd | 46 | 49 | -3 | 40.0 |
-| 21 | Bad Beat | Ryan Houseman | 53 | 59 | -6 | 46.5 |
-| 24 | Soft Win | Ethan Ellsworth | 39 | 26 | +13 | 42.0 |
-| 25 | Bad Beat | Justin Miller | 61 | 66 | -5 | 48.5 |
-| 27 | Soft Win | Alexander Chaban | 36 | 24 | +12 | 43.5 |
-| 30 | Soft Win | Ryan Houseman | 31 | 24 | +7 | 39.0 |
-| 35 | Soft Win | Julius Long | 28 | 24 | +4 | 38.0 |
 
 </details>
 

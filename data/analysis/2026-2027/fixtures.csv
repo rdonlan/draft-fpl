@@ -24,16 +24,16 @@ gameweek,manager_1,team_1,score_1,manager_2,team_2,score_2,started,finished
 5,Alexander Chaban,ChabosSpurs@Law,44,Justin Miller,Sue-nited FC**,48,True,True
 5,Levi Morant,*Saka It To Me Baby,37,Drake Byrd,Bruno’s Balebas,38,True,True
 5,Dylan Reid,Joao Bonito,34,Luke Lockwood,Into the WOODwork*,40,True,True
-6,Ryan Donlan,***NoHaalandNoParty,0,Dylan Reid,Joao Bonito,0,False,False
-6,Luke Lockwood,Into the WOODwork*,0,Levi Morant,*Saka It To Me Baby,0,False,False
-6,Drake Byrd,Bruno’s Balebas,0,Alexander Chaban,ChabosSpurs@Law,0,False,False
-6,Justin Miller,Sue-nited FC**,0,Ryan Houseman,Szoboszlickin good,0,False,False
-6,Ethan Ellsworth,Thanksgiving Cherki,0,Julius Long,Amorim de mi vida,0,False,False
-7,Ryan Houseman,Szoboszlickin good,0,Ryan Donlan,***NoHaalandNoParty,0,False,False
-7,Alexander Chaban,ChabosSpurs@Law,0,Julius Long,Amorim de mi vida,0,False,False
-7,Levi Morant,*Saka It To Me Baby,0,Ethan Ellsworth,Thanksgiving Cherki,0,False,False
-7,Dylan Reid,Joao Bonito,0,Justin Miller,Sue-nited FC**,0,False,False
-7,Luke Lockwood,Into the WOODwork*,0,Drake Byrd,Bruno’s Balebas,0,False,False
+6,Ryan Donlan,***NoHaalandNoParty,34,Dylan Reid,Joao Bonito,49,True,True
+6,Luke Lockwood,Into the WOODwork*,60,Levi Morant,*Saka It To Me Baby,34,True,True
+6,Drake Byrd,Bruno’s Balebas,26,Alexander Chaban,ChabosSpurs@Law,44,True,True
+6,Justin Miller,Sue-nited FC**,25,Ryan Houseman,Szoboszlickin good,24,True,True
+6,Ethan Ellsworth,Thanksgiving Cherki,34,Julius Long,Amorim de mi vida,65,True,True
+7,Ryan Houseman,Szoboszlickin good,46,Ryan Donlan,***NoHaalandNoParty,36,True,True
+7,Alexander Chaban,ChabosSpurs@Law,49,Julius Long,Amorim de mi vida,26,True,True
+7,Levi Morant,*Saka It To Me Baby,37,Ethan Ellsworth,Thanksgiving Cherki,31,True,True
+7,Dylan Reid,Joao Bonito,54,Justin Miller,Sue-nited FC**,53,True,True
+7,Luke Lockwood,Into the WOODwork*,35,Drake Byrd,Bruno’s Balebas,40,True,True
 8,Ryan Donlan,***NoHaalandNoParty,0,Luke Lockwood,Into the WOODwork*,0,False,False
 8,Drake Byrd,Bruno’s Balebas,0,Dylan Reid,Joao Bonito,0,False,False
 8,Justin Miller,Sue-nited FC**,0,Levi Morant,*Saka It To Me Baby,0,False,False

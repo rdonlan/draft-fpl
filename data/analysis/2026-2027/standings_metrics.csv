@@ -1,11 +1,11 @@
 rank,team,manager,record,h2h_points,points_for,points_against,avg,avg_weekly_rank,expected_h2h_points,schedule_luck,top_score_weeks,bottom_score_weeks
-1,***NoHaalandNoParty,Ryan Donlan,5-0-0,15,308,185,61.6,2,13.11,1.89,3,0
-2,Bruno’s Balebas,Drake Byrd,4-0-1,12,232,204,46.4,5.4,7.67,4.33,0,0
-3,Sue-nited FC**,Justin Miller,3-0-2,9,238,251,47.6,4,9.78,-0.78,1,0
-4,Szoboszlickin good,Ryan Houseman,3-0-2,9,200,185,40.0,6,6.22,2.78,0,0
-5,Into the WOODwork*,Luke Lockwood,2-0-3,6,217,216,43.4,6,6.44,-0.44,1,1
-6,Thanksgiving Cherki,Ethan Ellsworth,2-0-3,6,209,229,41.8,5.4,7.22,-1.22,1,1
-7,ChabosSpurs@Law,Alexander Chaban,2-0-3,6,208,245,41.6,5.8,7.0,-1.0,0,2
-8,*Saka It To Me Baby,Levi Morant,2-0-3,6,202,210,40.4,6,6.67,-0.67,0,0
-9,Amorim de mi vida,Julius Long,1-0-4,3,203,262,40.6,6,6.67,-3.67,0,0
-10,Joao Bonito,Dylan Reid,1-0-4,3,175,205,35.0,7.6,3.78,-0.78,0,1
+1,***NoHaalandNoParty,Ryan Donlan,5-0-2,15,378,280,54.0,3.14,15.33,-0.33,3,0
+2,Bruno’s Balebas,Drake Byrd,5-0-2,15,298,283,42.57,5.71,10.0,5.0,0,0
+3,Sue-nited FC**,Justin Miller,4-0-3,12,316,329,45.14,4.43,12.78,-0.78,1,0
+4,ChabosSpurs@Law,Alexander Chaban,4-0-3,12,301,297,43.0,5.14,11.33,0.67,0,2
+5,Szoboszlickin good,Ryan Houseman,4-0-3,12,270,246,38.57,6.29,8.22,3.78,0,1
+6,Into the WOODwork*,Luke Lockwood,3-0-4,9,312,290,44.57,5.71,9.78,-0.78,1,1
+7,Joao Bonito,Dylan Reid,3-0-4,9,278,292,39.71,6,9.11,-0.11,1,1
+8,*Saka It To Me Baby,Levi Morant,3-0-4,9,273,301,39.0,5.86,9.22,-0.22,0,0
+9,Amorim de mi vida,Julius Long,2-0-5,6,294,345,42.0,5.86,9.67,-3.67,1,1
+10,Thanksgiving Cherki,Ethan Ellsworth,2-0-5,6,274,331,39.14,5.86,8.78,-2.78,1,1

@@ -33,7 +33,7 @@ event,winner,winner_points,winner_week_rank,loser,loser_points,loser_week_rank,m
 7,Santa’s reijnders,53,1,ChabosSpurs@Law,34,9,19,8,40.0,False,False
 7,Into the WOODwork*,40,5,Amorim de mi vida,38,8,2,3,40.0,False,False
 7,Grand-Larseny,44,3,Bowen Arrows,39,7,5,4,40.0,False,False
-7,*Saka It To Me Baby,41,4,Sue-nited FC*,40,5,1,1,40.0,False,False
+7,*Saka It To Me Baby,41,4,Sue-nited FC*,40,5,1,1,40.0,True,False
 8,**Cunha Believe it?!,72,2,Sue-nited FC*,29,8,43,6,35.5,False,False
 8,Grand-Larseny,44,4,*Saka It To Me Baby,29,8,15,4,35.5,False,False
 8,Bowen Arrows,34,6,Amorim de mi vida,22,10,12,4,35.5,False,True
@@ -110,7 +110,7 @@ event,winner,winner_points,winner_week_rank,loser,loser_points,loser_week_rank,m
 22,Bowen Arrows,40,3,Into the WOODwork*,32,6,8,3,33.0,False,False
 23,ChabosSpurs@Law,36,5,**Cunha Believe it?!,34,8,2,3,36.0,False,False
 23,Into the WOODwork*,47,2,eze as u like b*%chs,32,9,15,7,36.0,False,False
-23,Bowen Arrows,47,2,Santa’s reijnders,36,5,11,3,36.0,False,False
+23,Bowen Arrows,47,2,Santa’s reijnders,36,5,11,3,36.0,True,False
 23,*Saka It To Me Baby,43,4,Amorim de mi vida,28,10,15,6,36.0,False,False
 23,Sue-nited FC*,48,1,Grand-Larseny,35,7,13,6,36.0,False,False
 24,**Cunha Believe it?!,53,3,Grand-Larseny,51,4,2,1,45.5,True,False
@@ -138,10 +138,10 @@ event,winner,winner_points,winner_week_rank,loser,loser_points,loser_week_rank,m
 28,Sue-nited FC*,44,4,ChabosSpurs@Law,34,9,10,5,40.5,False,False
 28,Grand-Larseny,55,1,eze as u like b*%chs,47,3,8,2,40.5,True,False
 29,**Cunha Believe it?!,47,4,Santa’s reijnders,38,8,9,4,46.0,False,False
-29,eze as u like b*%chs,57,1,Amorim de mi vida,46,5,11,4,46.0,False,False
+29,eze as u like b*%chs,57,1,Amorim de mi vida,46,5,11,4,46.0,True,False
 29,Grand-Larseny,39,7,ChabosSpurs@Law,24,10,15,3,46.0,False,True
 29,Sue-nited FC*,50,3,Into the WOODwork*,31,9,19,6,46.0,False,False
-29,Bowen Arrows,57,1,*Saka It To Me Baby,46,5,11,4,46.0,False,False
+29,Bowen Arrows,57,1,*Saka It To Me Baby,46,5,11,4,46.0,True,False
 30,**Cunha Believe it?!,42,5,Into the WOODwork*,28,9,14,4,38.0,False,False
 30,Bowen Arrows,34,6,ChabosSpurs@Law,30,7,4,1,38.0,False,True
 30,eze as u like b*%chs,50,4,*Saka It To Me Baby,24,10,26,6,38.0,False,False
