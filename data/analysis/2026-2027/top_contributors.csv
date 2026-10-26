@@ -1,203 +1,218 @@
 season,manager,rank,player_code,player,position,club,points
-2026-27,Alexander Chaban,1,610799,Luka Vušković,DEF,BHA,51
-2026-27,Alexander Chaban,2,244850,Morgan Rogers,MID,CHE,40
-2026-27,Alexander Chaban,3,154561,David Raya Martín,GKP,ARS,39
-2026-27,Alexander Chaban,4,97032,Virgil van Dijk,DEF,LIV,29
-2026-27,Alexander Chaban,5,441264,Brian Brobbey,FWD,SUN,24
-2026-27,Alexander Chaban,6,199798,Ezri Konsa Ngoyo,DEF,ARS,21
-2026-27,Alexander Chaban,7,248875,Jérémy Doku,MID,MCI,18
-2026-27,Alexander Chaban,8,499604,Rayan Vitor Simplício Rocha,MID,BOU,15
-2026-27,Alexander Chaban,9,463034,Liam Delap,FWD,NFO,13
+2026-27,Alexander Chaban,1,610799,Luka Vušković,DEF,BHA,52
+2026-27,Alexander Chaban,2,154561,David Raya Martín,GKP,ARS,46
+2026-27,Alexander Chaban,3,244850,Morgan Rogers,MID,CHE,41
+2026-27,Alexander Chaban,4,97032,Virgil van Dijk,DEF,LIV,38
+2026-27,Alexander Chaban,5,199798,Ezri Konsa Ngoyo,DEF,ARS,35
+2026-27,Alexander Chaban,6,441264,Brian Brobbey,FWD,SUN,26
+2026-27,Alexander Chaban,7,499604,Rayan Vitor Simplício Rocha,MID,BOU,25
+2026-27,Alexander Chaban,8,248875,Jérémy Doku,MID,MCI,20
+2026-27,Alexander Chaban,9,463034,Liam Delap,FWD,NFO,15
 2026-27,Alexander Chaban,10,169528,Antonee Robinson,DEF,FUL,10
-2026-27,Alexander Chaban,11,510281,Sávio Moreira de Oliveira,MID,TOT,10
-2026-27,Alexander Chaban,12,433969,Zion Suzuki,GKP,AVL,10
-2026-27,Alexander Chaban,13,441164,Pedro Porro Sauceda,DEF,TOT,9
+2026-27,Alexander Chaban,11,441164,Pedro Porro Sauceda,DEF,TOT,10
+2026-27,Alexander Chaban,12,510281,Sávio Moreira de Oliveira,MID,TOT,10
+2026-27,Alexander Chaban,13,433969,Zion Suzuki,GKP,AVL,10
 2026-27,Alexander Chaban,14,550615,Tyrique George,MID,EVE,6
-2026-27,Alexander Chaban,15,205533,Eddie Nketiah,FWD,CRY,2
-2026-27,Alexander Chaban,16,577725,Josh King,MID,FUL,2
-2026-27,Alexander Chaban,17,607464,Michael Kayode,DEF,BRE,1
+2026-27,Alexander Chaban,15,607464,Michael Kayode,DEF,BRE,5
+2026-27,Alexander Chaban,16,205533,Eddie Nketiah,FWD,CRY,2
+2026-27,Alexander Chaban,17,577725,Josh King,MID,FUL,2
 2026-27,Alexander Chaban,18,460842,Mohammed Kudus,MID,TOT,1
 2026-27,Alexander Chaban,19,493250,Amad Diallo,MID,MUN,0
 2026-27,Alexander Chaban,20,538007,Promise David,FWD,BHA,0
-2026-27,Drake Byrd,1,466075,Riccardo Calafiori,DEF,ARS,44
-2026-27,Drake Byrd,2,444102,Francisco Evanilson de Lima Barbosa,FWD,BOU,37
-2026-27,Drake Byrd,3,141746,Bruno Borges Fernandes,MID,MUN,33
-2026-27,Drake Byrd,4,184029,Martin Ødegaard,MID,ARS,33
-2026-27,Drake Byrd,5,243298,Cody Gakpo,MID,LIV,32
-2026-27,Drake Byrd,6,487838,Lewis Hall,DEF,NEW,32
-2026-27,Drake Byrd,7,166989,Youri Tielemans,MID,MUN,20
-2026-27,Drake Byrd,8,169432,Oli McBurnie,FWD,HUL,16
-2026-27,Drake Byrd,9,473284,Konstantinos Tzolakis,GKP,HUL,13
-2026-27,Drake Byrd,10,449434,Anthony Elanga,MID,NEW,9
-2026-27,Drake Byrd,11,498016,Robin Roefs,GKP,SUN,9
-2026-27,Drake Byrd,12,223827,Daniel Ballard,DEF,SUN,8
-2026-27,Drake Byrd,13,247348,Daniel Muñoz Mejía,DEF,NFO,8
-2026-27,Drake Byrd,14,455084,Leif Davis,DEF,IPS,3
+2026-27,Drake Byrd,1,466075,Riccardo Calafiori,DEF,ARS,45
+2026-27,Drake Byrd,2,444102,Francisco Evanilson de Lima Barbosa,FWD,BOU,43
+2026-27,Drake Byrd,3,487838,Lewis Hall,DEF,NEW,37
+2026-27,Drake Byrd,4,184029,Martin Ødegaard,MID,ARS,36
+2026-27,Drake Byrd,5,243298,Cody Gakpo,MID,LIV,35
+2026-27,Drake Byrd,6,141746,Bruno Borges Fernandes,MID,MUN,33
+2026-27,Drake Byrd,7,169432,Oli McBurnie,FWD,HUL,24
+2026-27,Drake Byrd,8,166989,Youri Tielemans,MID,MUN,20
+2026-27,Drake Byrd,9,473284,Konstantinos Tzolakis,GKP,HUL,16
+2026-27,Drake Byrd,10,247348,Daniel Muñoz Mejía,DEF,NFO,15
+2026-27,Drake Byrd,11,449434,Anthony Elanga,MID,NEW,9
+2026-27,Drake Byrd,12,498016,Robin Roefs,GKP,SUN,9
+2026-27,Drake Byrd,13,223827,Daniel Ballard,DEF,SUN,8
+2026-27,Drake Byrd,14,455084,Leif Davis,DEF,IPS,5
 2026-27,Drake Byrd,15,485711,Benjamin Sesko,FWD,MUN,2
-2026-27,Drake Byrd,16,199796,Matty Cash,DEF,AVL,-1
+2026-27,Drake Byrd,16,83299,Lewis Dunk,DEF,BHA,1
+2026-27,Drake Byrd,17,199796,Matty Cash,DEF,AVL,-1
 2026-27,Dylan Reid,1,475168,João Pedro Junqueira de Jesus,FWD,CHE,47
-2026-27,Dylan Reid,2,204480,Declan Rice,MID,ARS,36
-2026-27,Dylan Reid,3,469142,Jan Paul van Hecke,DEF,TOT,30
-2026-27,Dylan Reid,4,209244,Phil Foden,MID,MCI,20
-2026-27,Dylan Reid,5,517052,Nicolas Jackson,FWD,AVL,19
-2026-27,Dylan Reid,6,200834,Nordi Mukiele,DEF,SUN,19
-2026-27,Dylan Reid,7,502500,Igor Thiago Nascimento Rodrigues,FWD,BRE,18
-2026-27,Dylan Reid,8,472769,Nico O'Reilly,DEF,MCI,13
-2026-27,Dylan Reid,9,80201,Bernd Leno,GKP,FUL,12
-2026-27,Dylan Reid,10,614071,Johan Manzambi,MID,AVL,11
-2026-27,Dylan Reid,11,176297,Marcus Rashford,MID,MUN,11
-2026-27,Dylan Reid,12,226182,Jayden Bogle,DEF,LEE,8
-2026-27,Dylan Reid,13,437499,Maxence Lacroix,DEF,CHE,8
-2026-27,Dylan Reid,14,494521,Adrien Truffert,DEF,BOU,7
-2026-27,Dylan Reid,15,474120,Julio Enciso,MID,IPS,7
+2026-27,Dylan Reid,2,204480,Declan Rice,MID,ARS,39
+2026-27,Dylan Reid,3,469142,Jan Paul van Hecke,DEF,TOT,37
+2026-27,Dylan Reid,4,517052,Nicolas Jackson,FWD,AVL,32
+2026-27,Dylan Reid,5,502500,Igor Thiago Nascimento Rodrigues,FWD,BRE,23
+2026-27,Dylan Reid,6,209244,Phil Foden,MID,MCI,21
+2026-27,Dylan Reid,7,80201,Bernd Leno,GKP,FUL,20
+2026-27,Dylan Reid,8,200834,Nordi Mukiele,DEF,SUN,20
+2026-27,Dylan Reid,9,494521,Adrien Truffert,DEF,BOU,17
+2026-27,Dylan Reid,10,474120,Julio Enciso,MID,IPS,17
+2026-27,Dylan Reid,11,226182,Jayden Bogle,DEF,LEE,13
+2026-27,Dylan Reid,12,472769,Nico O'Reilly,DEF,MCI,13
+2026-27,Dylan Reid,13,614071,Johan Manzambi,MID,AVL,12
+2026-27,Dylan Reid,14,176297,Marcus Rashford,MID,MUN,11
+2026-27,Dylan Reid,15,437499,Maxence Lacroix,DEF,CHE,8
 2026-27,Dylan Reid,16,153682,Harry Wilson,MID,LEE,5
 2026-27,Dylan Reid,17,457569,Đorđe Petrović,GKP,BOU,4
 2026-27,Dylan Reid,18,215059,Robert Lynch Sánchez,GKP,CHE,2
 2026-27,Dylan Reid,19,611695,Malick Yalcouyé,MID,BHA,1
 2026-27,Ethan Ellsworth,1,466052,Rayan Cherki,MID,MCI,44
-2026-27,Ethan Ellsworth,2,513418,Kevin Schade,MID,BRE,40
-2026-27,Ethan Ellsworth,3,480455,Jarrad Branthwaite,DEF,EVE,28
-2026-27,Ethan Ellsworth,4,195546,Emiliano Buendía Stati,MID,AVL,26
-2026-27,Ethan Ellsworth,5,494595,Florian Wirtz,MID,LIV,25
-2026-27,Ethan Ellsworth,6,465351,Matheus Nunes,DEF,MCI,18
-2026-27,Ethan Ellsworth,7,216646,Yoane Wissa,FWD,NEW,18
-2026-27,Ethan Ellsworth,8,551466,Gonzalo García,FWD,FUL,16
-2026-27,Ethan Ellsworth,9,544877,Milos Kerkez,DEF,LIV,16
-2026-27,Ethan Ellsworth,10,465247,Senne Lammens,GKP,MUN,11
-2026-27,Ethan Ellsworth,11,485055,Antonín Kinský,GKP,TOT,9
-2026-27,Ethan Ellsworth,12,463981,James Hill,DEF,BOU,7
-2026-27,Ethan Ellsworth,13,231416,Ferdi Kadıoğlu,DEF,BHA,6
+2026-27,Ethan Ellsworth,2,513418,Kevin Schade,MID,BRE,42
+2026-27,Ethan Ellsworth,3,494595,Florian Wirtz,MID,LIV,31
+2026-27,Ethan Ellsworth,4,480455,Jarrad Branthwaite,DEF,EVE,28
+2026-27,Ethan Ellsworth,5,195546,Emiliano Buendía Stati,MID,AVL,26
+2026-27,Ethan Ellsworth,6,544877,Milos Kerkez,DEF,LIV,22
+2026-27,Ethan Ellsworth,7,216646,Yoane Wissa,FWD,NEW,19
+2026-27,Ethan Ellsworth,8,551466,Gonzalo García,FWD,FUL,18
+2026-27,Ethan Ellsworth,9,463981,James Hill,DEF,BOU,18
+2026-27,Ethan Ellsworth,10,465351,Matheus Nunes,DEF,MCI,18
+2026-27,Ethan Ellsworth,11,465247,Senne Lammens,GKP,MUN,12
+2026-27,Ethan Ellsworth,12,485055,Antonín Kinský,GKP,TOT,9
+2026-27,Ethan Ellsworth,13,231416,Ferdi Kadıoğlu,DEF,BHA,7
 2026-27,Ethan Ellsworth,14,482973,Igor Jesus Maciel da Cruz,FWD,NFO,4
-2026-27,Ethan Ellsworth,15,225796,Reece James,DEF,CHE,3
-2026-27,Ethan Ellsworth,16,232185,Ismaïla Sarr,MID,CRY,2
-2026-27,Ethan Ellsworth,17,463726,Amar Dedic,DEF,NEW,1
-2026-27,Ethan Ellsworth,18,491279,Micky van de Ven,DEF,TOT,0
-2026-27,Julius Long,1,465730,Maxim De Cuyper,DEF,BHA,42
-2026-27,Julius Long,2,437730,Antoine Semenyo,MID,MCI,37
-2026-27,Julius Long,3,430871,Matheus Santos Carneiro da Cunha,MID,MUN,37
+2026-27,Ethan Ellsworth,15,460842,Mohammed Kudus,MID,TOT,3
+2026-27,Ethan Ellsworth,16,225796,Reece James,DEF,CHE,3
+2026-27,Ethan Ellsworth,17,232185,Ismaïla Sarr,MID,CRY,2
+2026-27,Ethan Ellsworth,18,463726,Amar Dedic,DEF,NEW,1
+2026-27,Ethan Ellsworth,19,491279,Micky van de Ven,DEF,TOT,0
+2026-27,Julius Long,1,465730,Maxim De Cuyper,DEF,BHA,43
+2026-27,Julius Long,2,430871,Matheus Santos Carneiro da Cunha,MID,MUN,38
+2026-27,Julius Long,3,437730,Antoine Semenyo,MID,MCI,37
 2026-27,Julius Long,4,204936,Gianluigi Donnarumma,GKP,MCI,29
-2026-27,Julius Long,5,208706,Bruno Guimarães Rodriguez Moura,MID,ARS,21
-2026-27,Julius Long,6,543968,Emersonn Correia da Silva,FWD,IPS,18
+2026-27,Julius Long,5,208706,Bruno Guimarães Rodriguez Moura,MID,ARS,22
+2026-27,Julius Long,6,543968,Emersonn Correia da Silva,FWD,IPS,19
 2026-27,Julius Long,7,247412,Jørgen Strand Larsen,FWD,CRY,18
 2026-27,Julius Long,8,607464,Michael Kayode,DEF,BRE,17
-2026-27,Julius Long,9,540324,Mohamed Belloumi,MID,HUL,12
-2026-27,Julius Long,10,95658,Harry Maguire,DEF,MUN,11
-2026-27,Julius Long,11,441302,Ian Maatsen,DEF,AVL,9
-2026-27,Julius Long,12,154043,Ainsley Maitland-Niles,DEF,EVE,8
-2026-27,Julius Long,13,491279,Micky van de Ven,DEF,TOT,8
-2026-27,Julius Long,14,437499,Maxence Lacroix,DEF,CHE,6
-2026-27,Julius Long,15,437505,Wilson Isidor,FWD,SUN,4
-2026-27,Julius Long,16,221466,Marcos Senesi Barón,DEF,TOT,3
-2026-27,Julius Long,17,551226,Mateus Fernandes,MID,TOT,3
-2026-27,Julius Long,18,606930,Nobel Mendy,DEF,HUL,3
-2026-27,Julius Long,19,172780,James Maddison,MID,TOT,2
-2026-27,Julius Long,20,486385,Norberto Bercique Gomes Betuncal,FWD,EVE,2
-2026-27,Julius Long,21,224117,Viktor Gyökeres,FWD,ARS,2
-2026-27,Julius Long,22,60689,Chris Wood,FWD,NFO,1
-2026-27,Julius Long,23,200089,Joe Willock,MID,NEW,1
-2026-27,Julius Long,24,173878,Jay Dasilva,DEF,COV,0
-2026-27,Justin Miller,1,201658,Marcus Tavernier,MID,BOU,42
-2026-27,Justin Miller,2,219168,Alexander Isak,FWD,LIV,33
-2026-27,Justin Miller,3,647850,Charalampos Kostoulas,FWD,BHA,33
-2026-27,Justin Miller,4,466525,Anton Stach,MID,LEE,31
-2026-27,Justin Miller,5,606702,Jeremy Jacquet,DEF,LIV,27
-2026-27,Justin Miller,6,522047,Tarik Muharemović,DEF,LEE,24
-2026-27,Justin Miller,7,108416,John Egan,DEF,HUL,23
-2026-27,Justin Miller,8,85633,Matz Sels,GKP,NFO,18
-2026-27,Justin Miller,9,483067,António João Pereira de Albuquerque Tavares da Silva,DEF,BOU,15
-2026-27,Justin Miller,10,249231,Keane Lewis-Potter,MID,BRE,14
-2026-27,Justin Miller,11,482616,Bradley Barcola,MID,LIV,13
+2026-27,Julius Long,9,540324,Mohamed Belloumi,MID,HUL,16
+2026-27,Julius Long,10,491279,Micky van de Ven,DEF,TOT,13
+2026-27,Julius Long,11,95658,Harry Maguire,DEF,MUN,11
+2026-27,Julius Long,12,441302,Ian Maatsen,DEF,AVL,9
+2026-27,Julius Long,13,437499,Maxence Lacroix,DEF,CHE,9
+2026-27,Julius Long,14,154043,Ainsley Maitland-Niles,DEF,EVE,8
+2026-27,Julius Long,15,166477,Timothy Castagne,DEF,FUL,7
+2026-27,Julius Long,16,224117,Viktor Gyökeres,FWD,ARS,7
+2026-27,Julius Long,17,437505,Wilson Isidor,FWD,SUN,4
+2026-27,Julius Long,18,108813,Christian Walton,GKP,IPS,3
+2026-27,Julius Long,19,221466,Marcos Senesi Barón,DEF,TOT,3
+2026-27,Julius Long,20,551226,Mateus Fernandes,MID,TOT,3
+2026-27,Julius Long,21,606930,Nobel Mendy,DEF,HUL,3
+2026-27,Julius Long,22,172780,James Maddison,MID,TOT,2
+2026-27,Julius Long,23,486385,Norberto Bercique Gomes Betuncal,FWD,EVE,2
+2026-27,Julius Long,24,60689,Chris Wood,FWD,NFO,1
+2026-27,Julius Long,25,200089,Joe Willock,MID,NEW,1
+2026-27,Julius Long,26,435997,Noah Okafor,MID,LEE,1
+2026-27,Julius Long,27,173878,Jay Dasilva,DEF,COV,0
+2026-27,Justin Miller,1,201658,Marcus Tavernier,MID,BOU,52
+2026-27,Justin Miller,2,219168,Alexander Isak,FWD,LIV,42
+2026-27,Justin Miller,3,647850,Charalampos Kostoulas,FWD,BHA,35
+2026-27,Justin Miller,4,522047,Tarik Muharemović,DEF,LEE,33
+2026-27,Justin Miller,5,466525,Anton Stach,MID,LEE,31
+2026-27,Justin Miller,6,606702,Jeremy Jacquet,DEF,LIV,27
+2026-27,Justin Miller,7,108416,John Egan,DEF,HUL,27
+2026-27,Justin Miller,8,483067,António João Pereira de Albuquerque Tavares da Silva,DEF,BOU,23
+2026-27,Justin Miller,9,85633,Matz Sels,GKP,NFO,20
+2026-27,Justin Miller,10,482616,Bradley Barcola,MID,LIV,19
+2026-27,Justin Miller,11,249231,Keane Lewis-Potter,MID,BRE,14
 2026-27,Justin Miller,12,570794,Anan Khalaili,DEF,CRY,9
 2026-27,Justin Miller,13,220237,Sven Botman,DEF,NEW,8
-2026-27,Justin Miller,14,215379,Elliot Anderson,MID,MCI,6
-2026-27,Justin Miller,15,159506,Ola Aina,DEF,NFO,5
-2026-27,Justin Miller,16,146426,Semi Ajayi,DEF,HUL,5
-2026-27,Justin Miller,17,84450,Granit Xhaka,MID,SUN,4
-2026-27,Justin Miller,18,613221,Matias Fernandez-Pardo,FWD,NEW,2
-2026-27,Justin Miller,19,212319,Richarlison de Andrade,FWD,TOT,2
-2026-27,Justin Miller,20,216051,Diogo Dalot Teixeira,DEF,MUN,1
-2026-27,Justin Miller,21,460028,Levi Samuels Colwill,DEF,CHE,1
-2026-27,Levi Morant,1,244851,Cole Palmer,MID,CHE,38
+2026-27,Justin Miller,14,84450,Granit Xhaka,MID,SUN,7
+2026-27,Justin Miller,15,215379,Elliot Anderson,MID,MCI,6
+2026-27,Justin Miller,16,159506,Ola Aina,DEF,NFO,5
+2026-27,Justin Miller,17,146426,Semi Ajayi,DEF,HUL,5
+2026-27,Justin Miller,18,153133,Alex Iwobi,MID,FUL,3
+2026-27,Justin Miller,19,613221,Matias Fernandez-Pardo,FWD,NEW,2
+2026-27,Justin Miller,20,212319,Richarlison de Andrade,FWD,TOT,2
+2026-27,Justin Miller,21,216051,Diogo Dalot Teixeira,DEF,MUN,1
+2026-27,Justin Miller,22,460028,Levi Samuels Colwill,DEF,CHE,1
+2026-27,Justin Miller,23,575476,Murillo Costa dos Santos,DEF,NFO,1
+2026-27,Levi Morant,1,201666,Harvey Barnes,MID,NEW,40
 2026-27,Levi Morant,2,223340,Bukayo Saka,MID,ARS,37
-2026-27,Levi Morant,3,201666,Harvey Barnes,MID,NEW,32
-2026-27,Levi Morant,4,219847,Kai Havertz,FWD,ARS,23
-2026-27,Levi Morant,5,204120,Olivier Boscagli,DEF,BHA,18
-2026-27,Levi Morant,6,438234,Omar Marmoush,FWD,TOT,18
-2026-27,Levi Morant,7,439509,Christos Tzolis,MID,ARS,14
-2026-27,Levi Morant,8,445087,Ronald Araujo,DEF,LIV,14
-2026-27,Levi Morant,9,209400,Daichi Kamada,MID,CRY,12
-2026-27,Levi Morant,10,227444,Nikola Milenković,DEF,NFO,12
-2026-27,Levi Morant,11,116535,Alisson Becker,GKP,LIV,11
-2026-27,Levi Morant,12,230730,Brandon Thomas-Asante,FWD,COV,10
+2026-27,Levi Morant,3,244851,Cole Palmer,MID,CHE,37
+2026-27,Levi Morant,4,219847,Kai Havertz,FWD,ARS,24
+2026-27,Levi Morant,5,445087,Ronald Araujo,DEF,LIV,24
+2026-27,Levi Morant,6,438234,Omar Marmoush,FWD,TOT,20
+2026-27,Levi Morant,7,204120,Olivier Boscagli,DEF,BHA,18
+2026-27,Levi Morant,8,116535,Alisson Becker,GKP,LIV,17
+2026-27,Levi Morant,9,439509,Christos Tzolis,MID,ARS,14
+2026-27,Levi Morant,10,209400,Daichi Kamada,MID,CRY,14
+2026-27,Levi Morant,11,230730,Brandon Thomas-Asante,FWD,COV,12
+2026-27,Levi Morant,12,227444,Nikola Milenković,DEF,NFO,12
 2026-27,Levi Morant,13,470551,Lukás Hornícek,GKP,NEW,7
 2026-27,Levi Morant,14,533463,Dango Ouattara,MID,BRE,6
 2026-27,Levi Morant,15,463067,Georginio Rutter,FWD,BHA,6
-2026-27,Levi Morant,16,122798,Andrew Robertson,DEF,TOT,4
-2026-27,Levi Morant,17,244723,Tyrick Mitchell,DEF,CRY,4
-2026-27,Levi Morant,18,568420,Ousmane Diomande,DEF,NFO,3
-2026-27,Levi Morant,19,216094,Jeremie Frimpong,DEF,LIV,1
-2026-27,Levi Morant,20,445122,Jurriën Timber,DEF,ARS,1
-2026-27,Levi Morant,21,550864,Leny Yoro,DEF,MUN,1
-2026-27,Levi Morant,22,432830,Nathan Collins,DEF,BRE,1
-2026-27,Levi Morant,23,461102,Bobby Thomas,DEF,COV,0
-2026-27,Luke Lockwood,1,446008,Bryan Mbeumo,MID,MUN,41
-2026-27,Luke Lockwood,2,215413,Kiernan Dewsbury-Hall,MID,EVE,35
-2026-27,Luke Lockwood,3,191866,Kristoffer Ajer,DEF,BRE,30
-2026-27,Luke Lockwood,4,586309,Thierno Barry,FWD,EVE,28
+2026-27,Levi Morant,16,244723,Tyrick Mitchell,DEF,CRY,5
+2026-27,Levi Morant,17,122798,Andrew Robertson,DEF,TOT,4
+2026-27,Levi Morant,18,248857,Noni Madueke,MID,ARS,3
+2026-27,Levi Morant,19,568420,Ousmane Diomande,DEF,NFO,3
+2026-27,Levi Morant,20,216616,Dara O'Shea,DEF,IPS,2
+2026-27,Levi Morant,21,216094,Jeremie Frimpong,DEF,LIV,1
+2026-27,Levi Morant,22,445122,Jurriën Timber,DEF,ARS,1
+2026-27,Levi Morant,23,550864,Leny Yoro,DEF,MUN,1
+2026-27,Levi Morant,24,432830,Nathan Collins,DEF,BRE,1
+2026-27,Levi Morant,25,461102,Bobby Thomas,DEF,COV,0
+2026-27,Luke Lockwood,1,446008,Bryan Mbeumo,MID,MUN,43
+2026-27,Luke Lockwood,2,215413,Kiernan Dewsbury-Hall,MID,EVE,37
+2026-27,Luke Lockwood,3,191866,Kristoffer Ajer,DEF,BRE,32
+2026-27,Luke Lockwood,4,586309,Thierno Barry,FWD,EVE,30
 2026-27,Luke Lockwood,5,209036,Marc Guéhi,DEF,MCI,27
-2026-27,Luke Lockwood,6,489639,Bart Verbruggen,GKP,BHA,24
-2026-27,Luke Lockwood,7,513545,Mamadou Sangaré,MID,BRE,22
-2026-27,Luke Lockwood,8,198869,Benjamin White,DEF,ARS,21
-2026-27,Luke Lockwood,9,440993,Iliman Ndiaye,MID,MCI,20
-2026-27,Luke Lockwood,10,465642,Malick Thiaw,DEF,NEW,15
-2026-27,Luke Lockwood,11,220627,James Justin,DEF,LEE,14
-2026-27,Luke Lockwood,12,484420,Enzo Le Fée,MID,SUN,11
+2026-27,Luke Lockwood,6,489639,Bart Verbruggen,GKP,BHA,26
+2026-27,Luke Lockwood,7,440993,Iliman Ndiaye,MID,MCI,25
+2026-27,Luke Lockwood,8,513545,Mamadou Sangaré,MID,BRE,22
+2026-27,Luke Lockwood,9,198869,Benjamin White,DEF,ARS,21
+2026-27,Luke Lockwood,10,220627,James Justin,DEF,LEE,20
+2026-27,Luke Lockwood,11,465642,Malick Thiaw,DEF,NEW,16
+2026-27,Luke Lockwood,12,484420,Enzo Le Fée,MID,SUN,14
 2026-27,Luke Lockwood,13,154566,Dominic Solanke-Mitchell,FWD,TOT,9
 2026-27,Luke Lockwood,14,503139,Alex Scott,MID,BOU,6
-2026-27,Luke Lockwood,15,98980,Emiliano Martínez Romero,GKP,CHE,4
-2026-27,Luke Lockwood,16,232351,Ryan Giles,DEF,HUL,3
-2026-27,Luke Lockwood,17,456512,Dan Ndoye,MID,NFO,1
-2026-27,Luke Lockwood,18,651426,Jaydee Canvot,DEF,CRY,1
-2026-27,Ryan Donlan,1,223094,Erling Haaland,FWD,MCI,58
+2026-27,Luke Lockwood,15,122806,John McGinn,MID,AVL,6
+2026-27,Luke Lockwood,16,98980,Emiliano Martínez Romero,GKP,CHE,4
+2026-27,Luke Lockwood,17,232351,Ryan Giles,DEF,HUL,3
+2026-27,Luke Lockwood,18,456512,Dan Ndoye,MID,NFO,1
+2026-27,Luke Lockwood,19,651426,Jaydee Canvot,DEF,CRY,1
+2026-27,Ryan Donlan,1,223094,Erling Haaland,FWD,MCI,66
 2026-27,Ryan Donlan,2,60307,Pascal Groß,MID,BHA,58
-2026-27,Ryan Donlan,3,17761,James Tarkowski,DEF,EVE,46
-2026-27,Ryan Donlan,4,477424,Joško Gvardiol,DEF,MCI,41
+2026-27,Ryan Donlan,3,17761,James Tarkowski,DEF,EVE,48
+2026-27,Ryan Donlan,4,477424,Joško Gvardiol,DEF,MCI,42
 2026-27,Ryan Donlan,5,177815,Dominic Calvert-Lewin,FWD,LEE,33
-2026-27,Ryan Donlan,6,222531,Morgan Gibbs-White,MID,NFO,30
-2026-27,Ryan Donlan,7,200720,Caoimhín Kelleher,GKP,BRE,24
+2026-27,Ryan Donlan,6,222531,Morgan Gibbs-White,MID,NFO,32
+2026-27,Ryan Donlan,7,200720,Caoimhín Kelleher,GKP,BRE,26
 2026-27,Ryan Donlan,8,575476,Murillo Costa dos Santos,DEF,NFO,20
 2026-27,Ryan Donlan,9,222683,Justin Kluivert,MID,BOU,15
-2026-27,Ryan Donlan,10,500040,Cristhian Mosquera,DEF,ARS,12
-2026-27,Ryan Donlan,11,171314,Rúben dos Santos Gato Alves Dias,DEF,MCI,12
-2026-27,Ryan Donlan,12,577725,Josh King,MID,FUL,6
+2026-27,Ryan Donlan,10,171314,Rúben dos Santos Gato Alves Dias,DEF,MCI,13
+2026-27,Ryan Donlan,11,500040,Cristhian Mosquera,DEF,ARS,12
+2026-27,Ryan Donlan,12,577725,Josh King,MID,FUL,12
 2026-27,Ryan Donlan,13,166477,Timothy Castagne,DEF,FUL,6
-2026-27,Ryan Donlan,14,516895,Kobbie Mainoo,MID,MUN,4
-2026-27,Ryan Donlan,15,551499,Victor Munoz,MID,LIV,4
-2026-27,Ryan Donlan,16,461102,Bobby Thomas,DEF,COV,3
+2026-27,Ryan Donlan,14,461102,Bobby Thomas,DEF,COV,4
+2026-27,Ryan Donlan,15,516895,Kobbie Mainoo,MID,MUN,4
+2026-27,Ryan Donlan,16,551499,Victor Munoz,MID,LIV,4
 2026-27,Ryan Donlan,17,50175,Danny Welbeck,FWD,CHE,3
 2026-27,Ryan Donlan,18,153133,Alex Iwobi,MID,FUL,2
-2026-27,Ryan Donlan,19,613221,Matias Fernandez-Pardo,FWD,NEW,1
-2026-27,Ryan Donlan,20,551210,Jorrel Hato,DEF,CHE,0
-2026-27,Ryan Houseman,1,514254,Diego Gómez Amarilla,MID,BHA,37
-2026-27,Ryan Houseman,2,226597,Gabriel dos Santos Magalhães,DEF,ARS,35
-2026-27,Ryan Houseman,3,247632,Pedro Lomba Neto,MID,CHE,34
-2026-27,Ryan Houseman,4,111234,Jordan Pickford,GKP,EVE,28
-2026-27,Ryan Houseman,5,215136,Neco Williams,DEF,NFO,23
+2026-27,Ryan Donlan,19,172780,James Maddison,MID,TOT,1
+2026-27,Ryan Donlan,20,560262,Junior Kroupi,MID,BOU,1
+2026-27,Ryan Donlan,21,613221,Matias Fernandez-Pardo,FWD,NEW,1
+2026-27,Ryan Donlan,22,551210,Jorrel Hato,DEF,CHE,0
+2026-27,Ryan Houseman,1,226597,Gabriel dos Santos Magalhães,DEF,ARS,52
+2026-27,Ryan Houseman,2,514254,Diego Gómez Amarilla,MID,BHA,39
+2026-27,Ryan Houseman,3,247632,Pedro Lomba Neto,MID,CHE,37
+2026-27,Ryan Houseman,4,215136,Neco Williams,DEF,NFO,31
+2026-27,Ryan Houseman,5,111234,Jordan Pickford,GKP,EVE,28
 2026-27,Ryan Houseman,6,424876,Dominik Szoboszlai,MID,LIV,20
-2026-27,Ryan Houseman,7,83299,Lewis Dunk,DEF,BHA,18
-2026-27,Ryan Houseman,8,224967,Vitalii Mykolenko,DEF,EVE,18
-2026-27,Ryan Houseman,9,448047,Enzo Fernández,MID,MCI,17
-2026-27,Ryan Houseman,10,606930,Nobel Mendy,DEF,HUL,9
-2026-27,Ryan Houseman,11,204580,Vitaly Janelt,MID,BRE,9
-2026-27,Ryan Houseman,12,198869,Benjamin White,DEF,ARS,6
-2026-27,Ryan Houseman,13,146426,Semi Ajayi,DEF,HUL,4
-2026-27,Ryan Houseman,14,437505,Wilson Isidor,FWD,SUN,3
-2026-27,Ryan Houseman,15,232413,Eberechi Eze,MID,ARS,2
-2026-27,Ryan Houseman,16,231747,Jean-Philippe Mateta,FWD,CRY,2
-2026-27,Ryan Houseman,17,543968,Emersonn Correia da Silva,FWD,IPS,1
-2026-27,Ryan Houseman,18,463067,Georginio Rutter,FWD,BHA,1
-2026-27,Ryan Houseman,19,247412,Jørgen Strand Larsen,FWD,CRY,1
-2026-27,Ryan Houseman,20,448104,Piero Hincapié,DEF,ARS,1
-2026-27,Ryan Houseman,21,173879,Tammy Abraham,FWD,AVL,1
-2026-27,Ryan Houseman,22,538007,Promise David,FWD,BHA,0
-2026-27,Ryan Houseman,23,445087,Ronald Araujo,DEF,LIV,0
+2026-27,Ryan Houseman,7,448047,Enzo Fernández,MID,MCI,19
+2026-27,Ryan Houseman,8,83299,Lewis Dunk,DEF,BHA,18
+2026-27,Ryan Houseman,9,224967,Vitalii Mykolenko,DEF,EVE,18
+2026-27,Ryan Houseman,10,198869,Benjamin White,DEF,ARS,16
+2026-27,Ryan Houseman,11,432720,James Trafford,GKP,LEE,10
+2026-27,Ryan Houseman,12,606930,Nobel Mendy,DEF,HUL,9
+2026-27,Ryan Houseman,13,204580,Vitaly Janelt,MID,BRE,9
+2026-27,Ryan Houseman,14,232892,Calvin Bassey,DEF,FUL,8
+2026-27,Ryan Houseman,15,146426,Semi Ajayi,DEF,HUL,8
+2026-27,Ryan Houseman,16,231747,Jean-Philippe Mateta,FWD,CRY,4
+2026-27,Ryan Houseman,17,437505,Wilson Isidor,FWD,SUN,3
+2026-27,Ryan Houseman,18,456512,Dan Ndoye,MID,NFO,2
+2026-27,Ryan Houseman,19,232413,Eberechi Eze,MID,ARS,2
+2026-27,Ryan Houseman,20,543968,Emersonn Correia da Silva,FWD,IPS,1
+2026-27,Ryan Houseman,21,463067,Georginio Rutter,FWD,BHA,1
+2026-27,Ryan Houseman,22,247412,Jørgen Strand Larsen,FWD,CRY,1
+2026-27,Ryan Houseman,23,448104,Piero Hincapié,DEF,ARS,1
+2026-27,Ryan Houseman,24,173879,Tammy Abraham,FWD,AVL,1
+2026-27,Ryan Houseman,25,538007,Promise David,FWD,BHA,0
+2026-27,Ryan Houseman,26,445087,Ronald Araujo,DEF,LIV,0
