@@ -13,7 +13,7 @@ Use this as the fast read on who won each cup and how the final finished.
 - **2023-24** records the known cup winner and finalist only; detailed group and knockout data starts in 2024-25.
 - **2024-25** comes from `2024-25 Season.xlsx`, tab `BMS does FPL Cup`.
 - **2025-26** comes from the `BMS Does FPL.xlsx` cup workbook, using `Group Schedule`, `Group Standings`, and `Knockout Schedule`.
-- **2026-27** results are commissioner-provided through cup round 2 (GW8); group membership and standings are not yet confirmed.
+- **2026-27** results and groups are commissioner-provided through cup round 2 (GW8).
 - Manager names are normalized to the same names used across the rest of the website.
 </details>
 
@@ -60,7 +60,33 @@ This table summarizes each manager's record across tracked BMS FPL Cup matchups.
 
 Open this section for the group tables, knockout path, and final from that season.
 
-Results through cup round 2 (GW8). Group memberships and standings have not yet been provided.
+Results through cup round 2 (GW8). Standings use three points for a win and one for a draw; ties are provisionally ordered by points difference, then points scored, pending confirmation of the official tiebreaker.
+
+### Group Stage Standings
+
+### Group A Standings
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Luke Lockwood</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">106</td><td data-label="PA">96</td><td data-label="GD">10</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Julius Long</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">108</td><td data-label="PA">103</td><td data-label="GD">5</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Ryan Houseman</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">98</td><td data-label="PA">113</td><td data-label="GD">-15</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Levi Morant</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">71</td><td data-label="PA">108</td><td data-label="GD">-37</td></tr>
+<tr><td data-label="Rank">5</td><td data-label="Manager">Dylan Reid</td><td data-label="Pts">0</td><td data-label="W">0</td><td data-label="D">0</td><td data-label="L">2</td><td data-label="PF">130</td><td data-label="PA">144</td><td data-label="GD">-14</td></tr>
+</tbody></table></div>
+
+### Group B Standings
+<div class="table-wrap cup-group-table">
+<table>
+<thead><tr><th>Rank</th><th>Manager</th><th>Pts</th><th>W</th><th>D</th><th>L</th><th>PF</th><th>PA</th><th>GD</th></tr></thead>
+<tbody>
+<tr><td data-label="Rank">1</td><td data-label="Manager">Alexander Chaban</td><td data-label="Pts">6</td><td data-label="W">2</td><td data-label="D">0</td><td data-label="L">0</td><td data-label="PF">101</td><td data-label="PA">59</td><td data-label="GD">42</td></tr>
+<tr><td data-label="Rank">2</td><td data-label="Manager">Justin Miller</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">93</td><td data-label="PA">77</td><td data-label="GD">16</td></tr>
+<tr><td data-label="Rank">3</td><td data-label="Manager">Ethan Ellsworth</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">77</td><td data-label="PA">68</td><td data-label="GD">9</td></tr>
+<tr><td data-label="Rank">4</td><td data-label="Manager">Drake Byrd</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">76</td><td data-label="PA">73</td><td data-label="GD">3</td></tr>
+<tr><td data-label="Rank">5</td><td data-label="Manager">Ryan Donlan</td><td data-label="Pts">3</td><td data-label="W">1</td><td data-label="D">0</td><td data-label="L">1</td><td data-label="PF">73</td><td data-label="PA">92</td><td data-label="GD">-19</td></tr>
+</tbody></table></div>
 
 ### Group Stage Results
 | GW | Manager A | Score A | Manager B | Score B | Winner |
