@@ -13,6 +13,7 @@ Use this as the fast read on who won each cup and how the final finished.
 - **2023-24** records the known cup winner and finalist only; detailed group and knockout data starts in 2024-25.
 - **2024-25** comes from `2024-25 Season.xlsx`, tab `BMS does FPL Cup`.
 - **2025-26** comes from the `BMS Does FPL.xlsx` cup workbook, using `Group Schedule`, `Group Standings`, and `Knockout Schedule`.
+- **2026-27** results are commissioner-provided through cup round 2 (GW8); group membership and standings are not yet confirmed.
 - Manager names are normalized to the same names used across the rest of the website.
 </details>
 
@@ -41,16 +42,39 @@ This table summarizes each manager's record across tracked BMS FPL Cup matchups.
 
 | Manager | Overall Record | Record In Knockout Ties |
 | --- | --- | --- |
-| Justin Miller | 11-1-4 | 6-0-0 |
-| Dylan Reid | 7-1-5 | 2-0-1 |
-| Luke Lockwood | 7-0-7 | 2-0-2 |
-| Ethan Ellsworth | 7-0-5 | 1-0-1 |
-| Levi Morant | 6-1-6 | 1-0-2 |
-| Ryan Donlan | 6-1-6 | 0-0-3 |
-| Ryan Houseman | 6-0-7 | 2-0-1 |
-| Julius Long | 6-0-7 | 1-0-2 |
-| Alexander Chaban | 4-0-8 | 0-0-2 |
-| Drake Byrd | 3-0-8 | 0-0-1 |
+| Justin Miller | 12-1-5 | 6-0-0 |
+| Luke Lockwood | 8-0-8 | 2-0-2 |
+| Ethan Ellsworth | 8-0-6 | 1-0-1 |
+| Dylan Reid | 7-1-7 | 2-0-1 |
+| Levi Morant | 7-1-7 | 1-0-2 |
+| Ryan Donlan | 7-1-7 | 0-0-3 |
+| Ryan Houseman | 7-0-8 | 2-0-1 |
+| Julius Long | 7-0-8 | 1-0-2 |
+| Alexander Chaban | 6-0-8 | 0-0-2 |
+| Drake Byrd | 4-0-9 | 0-0-1 |
+
+</details>
+
+<details>
+<summary><h2>2026-27 Cup</h2></summary>
+
+Open this section for the group tables, knockout path, and final from that season.
+
+Results through cup round 2 (GW8). Group memberships and standings have not yet been provided.
+
+### Group Stage Results
+| GW | Manager A | Score A | Manager B | Score B | Winner |
+| --- | --- | --- | --- | --- | --- |
+| 6 | Luke Lockwood | 73 | Dylan Reid | 61 | Luke Lockwood |
+| 6 | Levi Morant | 36 | Julius Long | 75 | Julius Long |
+| 6 | Ryan Houseman | 27 | Ethan Ellsworth | 44 | Ethan Ellsworth |
+| 6 | Ryan Donlan | 40 | Drake Byrd | 35 | Ryan Donlan |
+| 6 | Alexander Chaban | 44 | Justin Miller | 26 | Alexander Chaban |
+| 8 | Luke Lockwood | 33 | Levi Morant | 35 | Levi Morant |
+| 8 | Dylan Reid | 69 | Ryan Houseman | 71 | Ryan Houseman |
+| 8 | Julius Long | 33 | Justin Miller | 67 | Justin Miller |
+| 8 | Ryan Donlan | 33 | Alexander Chaban | 57 | Alexander Chaban |
+| 8 | Drake Byrd | 41 | Ethan Ellsworth | 33 | Drake Byrd |
 
 </details>
 

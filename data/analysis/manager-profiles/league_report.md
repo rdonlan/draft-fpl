@@ -194,7 +194,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">0</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Luke Lockwood 1-0-0, Dylan Reid 0-0-1)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -292,7 +292,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">1 (Luke Lockwood 1-0-0, Levi Morant 0-0-1)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Luke Lockwood 0-0-2, Levi Morant 2-0-0)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Luke Lockwood 0-0-3, Levi Morant 3-0-0)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">7</td></tr>
 </tbody></table></div>
 </article>
@@ -635,7 +635,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">2 (Justin Miller 2-0-0, Alexander Chaban 0-0-2)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">0</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Justin Miller 0-0-1, Alexander Chaban 1-0-0)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">1</td></tr>
 </tbody></table></div>
 </article>
@@ -782,7 +782,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">4 (Drake Byrd 2-0-2, Ethan Ellsworth 2-0-2)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Drake Byrd 1-0-0, Ethan Ellsworth 0-0-1)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Drake Byrd 2-0-0, Ethan Ellsworth 0-0-2)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -831,7 +831,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">4 (Ryan Donlan 3-0-1, Drake Byrd 1-0-3)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Donlan 1-0-1, Drake Byrd 1-0-1)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Donlan 2-0-1, Drake Byrd 1-0-2)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">1</td></tr>
 </tbody></table></div>
 </article>
@@ -1272,7 +1272,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">3 (Ryan Houseman 3-0-0, Ethan Ellsworth 0-0-3)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Houseman 0-0-2, Ethan Ellsworth 2-0-0)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Houseman 0-0-3, Ethan Ellsworth 3-0-0)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -1321,7 +1321,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">2 (Ryan Houseman 1-0-1, Dylan Reid 1-0-1)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Houseman 1-0-1, Dylan Reid 1-0-1)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Houseman 2-0-1, Dylan Reid 1-0-2)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -1664,7 +1664,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">0</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Levi Morant 0-0-1, Julius Long 1-0-0)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">4</td></tr>
 </tbody></table></div>
 </article>
@@ -2105,7 +2105,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">1 (Justin Miller 1-0-0, Julius Long 0-0-1)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Justin Miller 0-0-1, Julius Long 1-0-0)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Justin Miller 1-0-1, Julius Long 1-0-1)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
 </tbody></table></div>
 </article>
@@ -2203,7 +2203,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">3 (Ryan Donlan 1-0-2, Alexander Chaban 2-0-1)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Donlan 2-0-0, Alexander Chaban 0-0-2)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Donlan 2-0-1, Alexander Chaban 1-0-2)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
 </tbody></table></div>
 </article>
