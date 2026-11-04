@@ -40,26 +40,26 @@ Record, H2H points, points for/against, weekly average, and top/bottom score cou
 <details>
 <summary><h2>Global Rankings</h2></summary>
 
-**Verified against official FPL:** All ten team totals and the league total match official FPL through GW8. The latest completed gameweek is GW9; DraftFPL.live has not published that ranking snapshot yet.
+**Verified against official FPL:** All ten team totals and the league total match official FPL.
 
-Ranking snapshot through GW8. League rank compares total points-for with other 10-team official FPL Draft leagues. Individual rank compares each manager with all teams in those leagues, using points-for only.
+Ranking snapshot through GW9. League rank compares total points-for with other 10-team official FPL Draft leagues. Individual rank compares each manager with all teams in those leagues, using points-for only.
 
 | League PF | Global League Rank | Percentile | Top League PF | Gap To Top |
 |---|---|---|---|---|
-| 3,432 | 222 of 4,003 | 94.5% | 3,569 | 137 |
+| 3,853 | 180 of 4,003 | 95.5% | 3,997 | 144 |
 
 | Global Rank (40,030 teams) | Team | Manager | PF | Percentile |
 |---|---|---|---|---|
-| 1,350 | `***NoHaalandNoParty` | Ryan Donlan | 403 | 96.6% |
-| 5,298 | `Sue-nited FC**` | Justin Miller | 373 | 86.8% |
-| 10,308 | `ChabosSpurs@Law` | Alexander Chaban | 354 | 74.3% |
-| 13,860 | `Into the WOODwork*` | Luke Lockwood | 343 | 65.4% |
-| 14,210 | `Joao Bonito` | Dylan Reid | 342 | 64.5% |
-| 15,655 | `Szoboszlickin good` | Ryan Houseman | 338 | 60.9% |
-| 16,030 | `Bruno’s Balebas` | Drake Byrd | 337 | 60.0% |
-| 20,093 | `Amorim de mi vida` | Julius Long | 326 | 49.8% |
-| 26,243 | `*Saka It To Me Baby` | Levi Morant | 309 | 34.4% |
-| 26,919 | `Thanksgiving Cherki` | Ethan Ellsworth | 307 | 32.8% |
+| 2,428 | `***NoHaalandNoParty` | Ryan Donlan | 436 | 93.9% |
+| 6,097 | `Joao Bonito` | Dylan Reid | 413 | 84.8% |
+| 7,453 | `Sue-nited FC**` | Justin Miller | 407 | 81.4% |
+| 10,649 | `ChabosSpurs@Law` | Alexander Chaban | 395 | 73.4% |
+| 11,875 | `Into the WOODwork*` | Luke Lockwood | 391 | 70.3% |
+| 14,986 | `Bruno’s Balebas` | Drake Byrd | 381 | 62.6% |
+| 20,004 | `Amorim de mi vida` | Julius Long | 366 | 50.0% |
+| 20,382 | `Szoboszlickin good` | Ryan Houseman | 365 | 49.1% |
+| 24,356 | `Thanksgiving Cherki` | Ethan Ellsworth | 353 | 39.2% |
+| 26,565 | `*Saka It To Me Baby` | Levi Morant | 346 | 33.6% |
 
 Percentile is the share of the comparison population at or below that global standing, rounded to one decimal place.
 
