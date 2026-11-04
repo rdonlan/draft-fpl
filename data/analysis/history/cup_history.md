@@ -2,7 +2,7 @@
 
 A dedicated history page for the BMS FPL Cup using the manual cup workbooks. League scoring stats still live on the season and all-time pages; this page is just the cup competition.
 
-<details open>
+<details>
 <summary><h2>Cup Overview</h2></summary>
 
 Use this as the fast read on who won each cup and how the final finished.
@@ -25,7 +25,7 @@ Use this as the fast read on who won each cup and how the final finished.
 
 </details>
 
-<details open>
+<details>
 <summary><h2>All-Time Cup Records</h2></summary>
 
 This table summarizes each manager's record across tracked BMS FPL Cup matchups.
@@ -55,7 +55,7 @@ This table summarizes each manager's record across tracked BMS FPL Cup matchups.
 
 </details>
 
-<details>
+<details open>
 <summary><h2>2026-27 Cup</h2></summary>
 
 Open this section for the group tables, knockout path, and final from that season.
