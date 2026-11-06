@@ -1,6 +1,6 @@
 # BMS FPL Draft 26/27 League
 
-Official FPL Draft data last refreshed November 03, 2026 at 10:13 AM Eastern Standard Time.
+Official FPL Draft data last refreshed November 06, 2026 at 08:30 AM Eastern Standard Time.
 
 This page uses the same season-analysis layout as 2025–26 and 2024–25. Statistics update from completed official gameweeks.
 
