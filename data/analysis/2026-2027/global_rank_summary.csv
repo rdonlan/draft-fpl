@@ -1,2 +1,2 @@
 season,coverage_gameweek,generated_at,league_id,league_size,start_event,league_points,official_points_for,global_rank,comparison_leagues,percentile,top_league_points,points_behind_top,verified,verification_note,source_url
-2026-27,9,2026-11-03T15:40:34.828Z,69137,10,1,3853,3853,180,4003,95.5,3997,144,True,All ten team totals and the league total match official FPL.,https://api.draftfpl.live/fpl/global-rank?season=2026-27&shard=529
+2026-27,10,2026-11-09T09:51:02.685Z,69137,10,1,4278,4278,208,4003,94.8,4442,164,True,All ten team totals and the league total match official FPL.,https://api.draftfpl.live/fpl/global-rank?season=2026-27&shard=529

@@ -2,7 +2,7 @@
 
 Each dropdown collects that manager's live career record, All-Time Best XI, scoring profile, power-ranking history, streaks, belt history, opponent records, and signature games.
 
-<div class="live-career-warning" role="alert"><strong>LIVE MANAGER TOTALS — THROUGH GW9 OF 2026/27</strong><span>The active season is incomplete. Every manager snapshot and rivalry total includes completed 2026/27 results and will change after each refresh.</span></div>
+<div class="live-career-warning" role="alert"><strong>LIVE MANAGER TOTALS — THROUGH GW10 OF 2026/27</strong><span>The active season is incomplete. Every manager snapshot and rivalry total includes completed 2026/27 results and will change after each refresh.</span></div>
 
 Use this page when you want the story of one manager instead of another league-wide leaderboard.
 
@@ -22,7 +22,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 
 </details>
 
-<section class="rivalry-hub" data-rivalry-hub data-manager-order="Ryan Donlan|Justin Miller|Ryan Houseman|Luke Lockwood|Drake Byrd|Levi Morant|Dylan Reid|Julius Long|Alexander Chaban|Ethan Ellsworth">
+<section class="rivalry-hub" data-rivalry-hub data-manager-order="Ryan Donlan|Justin Miller|Ryan Houseman|Luke Lockwood|Drake Byrd|Levi Morant|Dylan Reid|Alexander Chaban|Julius Long|Ethan Ellsworth">
 <div class="rivalry-controls">
 <label class="rivalry-filter-label"><span>Manager 1</span><select class="rivalry-select" data-rivalry-manager-a>
 <option value="Ryan Donlan" selected>Ryan Donlan</option>
@@ -32,8 +32,8 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <option value="Drake Byrd">Drake Byrd</option>
 <option value="Levi Morant">Levi Morant</option>
 <option value="Dylan Reid">Dylan Reid</option>
-<option value="Julius Long">Julius Long</option>
 <option value="Alexander Chaban">Alexander Chaban</option>
+<option value="Julius Long">Julius Long</option>
 <option value="Ethan Ellsworth">Ethan Ellsworth</option>
 </select></label>
 <label class="rivalry-filter-label"><span>Manager 2</span><select class="rivalry-select" data-rivalry-manager-b>
@@ -44,8 +44,8 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <option value="Drake Byrd">Drake Byrd</option>
 <option value="Levi Morant">Levi Morant</option>
 <option value="Dylan Reid">Dylan Reid</option>
-<option value="Julius Long">Julius Long</option>
 <option value="Alexander Chaban">Alexander Chaban</option>
+<option value="Julius Long">Julius Long</option>
 <option value="Ethan Ellsworth">Ethan Ellsworth</option>
 </select></label>
 <div class="rivalry-status" data-rivalry-status></div>
@@ -100,6 +100,55 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
+<article class="rivalry-card" data-rivalry-card data-manager-a="Levi Morant" data-manager-b="Alexander Chaban" hidden>
+<div class="rivalry-card-title">Levi Morant vs Alexander Chaban</div>
+<div class="rivalry-card-kpis">
+<div class="rivalry-kpi">
+<span>Series Leader</span>
+<strong>Levi Morant (7-0-4)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Scoring Edge</span>
+<strong>Levi Morant +13 total (+1.18/GW)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Games</span>
+<strong>11</strong>
+</div>
+</div>
+<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Record">7-0-4</td><td data-label="H2H Pts">21</td><td data-label="PF">451</td><td data-label="Avg Score">41.00</td><td data-label="Point Diff">+13</td><td data-label="Last 5">W L W W L</td><td data-label="Current Streak">1 Loss</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Record">4-0-7</td><td data-label="H2H Pts">12</td><td data-label="PF">438</td><td data-label="Avg Score">39.82</td><td data-label="Point Diff">-13</td><td data-label="Last 5">L W L L W</td><td data-label="Current Streak">1 Win</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Season Splits</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Season</th><th>Levi Morant Record</th><th>Alexander Chaban Record</th><th>Levi Morant PF</th><th>Alexander Chaban PF</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2024-25</td><td data-label="Levi Morant Record">3-0-2</td><td data-label="Alexander Chaban Record">2-0-3</td><td data-label="Levi Morant PF">191</td><td data-label="Alexander Chaban PF">197</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Levi Morant Record">3-0-1</td><td data-label="Alexander Chaban Record">1-0-3</td><td data-label="Levi Morant PF">172</td><td data-label="Alexander Chaban PF">155</td></tr>
+<tr><td data-label="Season">2026-27</td><td data-label="Levi Morant Record">1-0-1</td><td data-label="Alexander Chaban Record">1-0-1</td><td data-label="Levi Morant PF">88</td><td data-label="Alexander Chaban PF">86</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Big Moments</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 19: Alexander Chaban 36, Levi Morant 34 (2)</td></tr>
+<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2024-25 10: Alexander Chaban 66, Levi Morant 40 (26)</td></tr>
+<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2025-26 4: Levi Morant 62, Alexander Chaban 59 (3); 121 combined</td></tr>
+<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 10: Alexander Chaban 59, Levi Morant 40 (19)</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Extra Context</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Levi Morant 2-0-0, Alexander Chaban 0-0-2)</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
+</tbody></table></div>
+</article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Julius Long" data-manager-b="Ethan Ellsworth" hidden>
 <div class="rivalry-card-title">Julius Long vs Ethan Ellsworth</div>
 <div class="rivalry-card-kpis">
@@ -146,6 +195,55 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
 <tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Julius Long 0-0-1, Ethan Ellsworth 1-0-0)</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
+</tbody></table></div>
+</article>
+<article class="rivalry-card" data-rivalry-card data-manager-a="Drake Byrd" data-manager-b="Ethan Ellsworth" hidden>
+<div class="rivalry-card-title">Drake Byrd vs Ethan Ellsworth</div>
+<div class="rivalry-card-kpis">
+<div class="rivalry-kpi">
+<span>Series Leader</span>
+<strong>Drake Byrd (8-0-3)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Scoring Edge</span>
+<strong>Drake Byrd +99 total (+9.00/GW)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Games</span>
+<strong>11</strong>
+</div>
+</div>
+<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Record">8-0-3</td><td data-label="H2H Pts">24</td><td data-label="PF">486</td><td data-label="Avg Score">44.18</td><td data-label="Point Diff">+99</td><td data-label="Last 5">L W W W W</td><td data-label="Current Streak">4 Wins</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Record">3-0-8</td><td data-label="H2H Pts">9</td><td data-label="PF">387</td><td data-label="Avg Score">35.18</td><td data-label="Point Diff">-99</td><td data-label="Last 5">W L L L L</td><td data-label="Current Streak">4 Losses</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Season Splits</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Season</th><th>Drake Byrd Record</th><th>Ethan Ellsworth Record</th><th>Drake Byrd PF</th><th>Ethan Ellsworth PF</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2024-25</td><td data-label="Drake Byrd Record">3-0-2</td><td data-label="Ethan Ellsworth Record">2-0-3</td><td data-label="Drake Byrd PF">219</td><td data-label="Ethan Ellsworth PF">171</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Drake Byrd Record">3-0-1</td><td data-label="Ethan Ellsworth Record">1-0-3</td><td data-label="Drake Byrd PF">163</td><td data-label="Ethan Ellsworth PF">139</td></tr>
+<tr><td data-label="Season">2026-27</td><td data-label="Drake Byrd Record">2-0-0</td><td data-label="Ethan Ellsworth Record">0-0-2</td><td data-label="Drake Byrd PF">104</td><td data-label="Ethan Ellsworth PF">77</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Big Moments</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 2: Drake Byrd 40, Ethan Ellsworth 39 (1)</td></tr>
+<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2024-25 29: Drake Byrd 69, Ethan Ellsworth 13 (56)</td></tr>
+<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2026-27 10: Drake Byrd 59, Ethan Ellsworth 43 (16); 102 combined</td></tr>
+<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 10: Drake Byrd 59, Ethan Ellsworth 43 (16)</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Extra Context</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">4 (Drake Byrd 2-0-2, Ethan Ellsworth 2-0-2)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Drake Byrd 2-0-0, Ethan Ellsworth 0-0-2)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -394,55 +492,6 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">3</td></tr>
 </tbody></table></div>
 </article>
-<article class="rivalry-card" data-rivalry-card data-manager-a="Levi Morant" data-manager-b="Alexander Chaban" hidden>
-<div class="rivalry-card-title">Levi Morant vs Alexander Chaban</div>
-<div class="rivalry-card-kpis">
-<div class="rivalry-kpi">
-<span>Series Leader</span>
-<strong>Levi Morant (7-0-3)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Scoring Edge</span>
-<strong>Levi Morant +32 total (+3.20/GW)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Games</span>
-<strong>10</strong>
-</div>
-</div>
-<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
-<tbody>
-<tr><td data-label="Manager">Levi Morant</td><td data-label="Record">7-0-3</td><td data-label="H2H Pts">21</td><td data-label="PF">411</td><td data-label="Avg Score">41.10</td><td data-label="Point Diff">+32</td><td data-label="Last 5">W W L W W</td><td data-label="Current Streak">2 Wins</td></tr>
-<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Record">3-0-7</td><td data-label="H2H Pts">9</td><td data-label="PF">379</td><td data-label="Avg Score">37.90</td><td data-label="Point Diff">-32</td><td data-label="Last 5">L L W L L</td><td data-label="Current Streak">2 Losses</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Season Splits</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Season</th><th>Levi Morant Record</th><th>Alexander Chaban Record</th><th>Levi Morant PF</th><th>Alexander Chaban PF</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Levi Morant Record">3-0-2</td><td data-label="Alexander Chaban Record">2-0-3</td><td data-label="Levi Morant PF">191</td><td data-label="Alexander Chaban PF">197</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Levi Morant Record">3-0-1</td><td data-label="Alexander Chaban Record">1-0-3</td><td data-label="Levi Morant PF">172</td><td data-label="Alexander Chaban PF">155</td></tr>
-<tr><td data-label="Season">2026-27</td><td data-label="Levi Morant Record">1-0-0</td><td data-label="Alexander Chaban Record">0-0-1</td><td data-label="Levi Morant PF">48</td><td data-label="Alexander Chaban PF">27</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Big Moments</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 19: Alexander Chaban 36, Levi Morant 34 (2)</td></tr>
-<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2024-25 10: Alexander Chaban 66, Levi Morant 40 (26)</td></tr>
-<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2025-26 4: Levi Morant 62, Alexander Chaban 59 (3); 121 combined</td></tr>
-<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 1: Levi Morant 48, Alexander Chaban 27 (21)</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Extra Context</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Levi Morant 2-0-0, Alexander Chaban 0-0-2)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
-</tbody></table></div>
-</article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Levi Morant" data-manager-b="Dylan Reid" hidden>
 <div class="rivalry-card-title">Levi Morant vs Dylan Reid</div>
 <div class="rivalry-card-kpis">
@@ -490,6 +539,55 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
 <tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Levi Morant 0-0-1, Dylan Reid 1-0-0)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">3</td></tr>
+</tbody></table></div>
+</article>
+<article class="rivalry-card" data-rivalry-card data-manager-a="Ryan Houseman" data-manager-b="Dylan Reid" hidden>
+<div class="rivalry-card-title">Ryan Houseman vs Dylan Reid</div>
+<div class="rivalry-card-kpis">
+<div class="rivalry-kpi">
+<span>Series Leader</span>
+<strong>Ryan Houseman (6-0-4)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Scoring Edge</span>
+<strong>Ryan Houseman +37 total (+3.70/GW)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Games</span>
+<strong>10</strong>
+</div>
+</div>
+<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Record">6-0-4</td><td data-label="H2H Pts">18</td><td data-label="PF">435</td><td data-label="Avg Score">43.50</td><td data-label="Point Diff">+37</td><td data-label="Last 5">L W L W W</td><td data-label="Current Streak">2 Wins</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Record">4-0-6</td><td data-label="H2H Pts">12</td><td data-label="PF">398</td><td data-label="Avg Score">39.80</td><td data-label="Point Diff">-37</td><td data-label="Last 5">W L W L L</td><td data-label="Current Streak">2 Losses</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Season Splits</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Season</th><th>Ryan Houseman Record</th><th>Dylan Reid Record</th><th>Ryan Houseman PF</th><th>Dylan Reid PF</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2024-25</td><td data-label="Ryan Houseman Record">3-0-1</td><td data-label="Dylan Reid Record">1-0-3</td><td data-label="Ryan Houseman PF">187</td><td data-label="Dylan Reid PF">127</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Ryan Houseman Record">1-0-3</td><td data-label="Dylan Reid Record">3-0-1</td><td data-label="Ryan Houseman PF">176</td><td data-label="Dylan Reid PF">208</td></tr>
+<tr><td data-label="Season">2026-27</td><td data-label="Ryan Houseman Record">2-0-0</td><td data-label="Dylan Reid Record">0-0-2</td><td data-label="Ryan Houseman PF">72</td><td data-label="Dylan Reid PF">63</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Big Moments</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 15: Ryan Houseman 31, Dylan Reid 27 (4)</td></tr>
+<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2024-25 33: Ryan Houseman 64, Dylan Reid 26 (38)</td></tr>
+<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2025-26 24: Ryan Houseman 59, Dylan Reid 54 (5); 113 combined</td></tr>
+<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 10: Ryan Houseman 37, Dylan Reid 32 (5)</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Extra Context</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">3 (Ryan Houseman 2-0-1, Dylan Reid 1-0-2)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Houseman 2-0-1, Dylan Reid 1-0-2)</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Ryan Donlan" data-manager-b="Luke Lockwood" hidden>
@@ -737,55 +835,6 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
-<article class="rivalry-card" data-rivalry-card data-manager-a="Drake Byrd" data-manager-b="Ethan Ellsworth" hidden>
-<div class="rivalry-card-title">Drake Byrd vs Ethan Ellsworth</div>
-<div class="rivalry-card-kpis">
-<div class="rivalry-kpi">
-<span>Series Leader</span>
-<strong>Drake Byrd (7-0-3)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Scoring Edge</span>
-<strong>Drake Byrd +83 total (+8.30/GW)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Games</span>
-<strong>10</strong>
-</div>
-</div>
-<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
-<tbody>
-<tr><td data-label="Manager">Drake Byrd</td><td data-label="Record">7-0-3</td><td data-label="H2H Pts">21</td><td data-label="PF">427</td><td data-label="Avg Score">42.70</td><td data-label="Point Diff">+83</td><td data-label="Last 5">W L W W W</td><td data-label="Current Streak">3 Wins</td></tr>
-<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Record">3-0-7</td><td data-label="H2H Pts">9</td><td data-label="PF">344</td><td data-label="Avg Score">34.40</td><td data-label="Point Diff">-83</td><td data-label="Last 5">L W L L L</td><td data-label="Current Streak">3 Losses</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Season Splits</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Season</th><th>Drake Byrd Record</th><th>Ethan Ellsworth Record</th><th>Drake Byrd PF</th><th>Ethan Ellsworth PF</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Drake Byrd Record">3-0-2</td><td data-label="Ethan Ellsworth Record">2-0-3</td><td data-label="Drake Byrd PF">219</td><td data-label="Ethan Ellsworth PF">171</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Drake Byrd Record">3-0-1</td><td data-label="Ethan Ellsworth Record">1-0-3</td><td data-label="Drake Byrd PF">163</td><td data-label="Ethan Ellsworth PF">139</td></tr>
-<tr><td data-label="Season">2026-27</td><td data-label="Drake Byrd Record">1-0-0</td><td data-label="Ethan Ellsworth Record">0-0-1</td><td data-label="Drake Byrd PF">45</td><td data-label="Ethan Ellsworth PF">34</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Big Moments</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 2: Drake Byrd 40, Ethan Ellsworth 39 (1)</td></tr>
-<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2024-25 29: Drake Byrd 69, Ethan Ellsworth 13 (56)</td></tr>
-<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2024-25 11: Ethan Ellsworth 51, Drake Byrd 43 (8); 94 combined</td></tr>
-<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 1: Drake Byrd 45, Ethan Ellsworth 34 (11)</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Extra Context</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">4 (Drake Byrd 2-0-2, Ethan Ellsworth 2-0-2)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Drake Byrd 2-0-0, Ethan Ellsworth 0-0-2)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
-</tbody></table></div>
-</article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Ryan Donlan" data-manager-b="Drake Byrd" hidden>
 <div class="rivalry-card-title">Ryan Donlan vs Drake Byrd</div>
 <div class="rivalry-card-kpis">
@@ -884,6 +933,55 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
+<article class="rivalry-card" data-rivalry-card data-manager-a="Luke Lockwood" data-manager-b="Julius Long" hidden>
+<div class="rivalry-card-title">Luke Lockwood vs Julius Long</div>
+<div class="rivalry-card-kpis">
+<div class="rivalry-kpi">
+<span>Series Leader</span>
+<strong>Luke Lockwood (7-1-2)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Scoring Edge</span>
+<strong>Luke Lockwood +124 total (+12.40/GW)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Games</span>
+<strong>10</strong>
+</div>
+</div>
+<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Record">7-1-2</td><td data-label="H2H Pts">22</td><td data-label="PF">437</td><td data-label="Avg Score">43.70</td><td data-label="Point Diff">+124</td><td data-label="Last 5">W L W W W</td><td data-label="Current Streak">3 Wins</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Record">2-1-7</td><td data-label="H2H Pts">7</td><td data-label="PF">313</td><td data-label="Avg Score">31.30</td><td data-label="Point Diff">-124</td><td data-label="Last 5">L W L L L</td><td data-label="Current Streak">3 Losses</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Season Splits</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Season</th><th>Luke Lockwood Record</th><th>Julius Long Record</th><th>Luke Lockwood PF</th><th>Julius Long PF</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2024-25</td><td data-label="Luke Lockwood Record">2-1-1</td><td data-label="Julius Long Record">1-1-2</td><td data-label="Luke Lockwood PF">137</td><td data-label="Julius Long PF">137</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Luke Lockwood Record">3-0-1</td><td data-label="Julius Long Record">1-0-3</td><td data-label="Luke Lockwood PF">166</td><td data-label="Julius Long PF">124</td></tr>
+<tr><td data-label="Season">2026-27</td><td data-label="Luke Lockwood Record">2-0-0</td><td data-label="Julius Long Record">0-0-2</td><td data-label="Luke Lockwood PF">134</td><td data-label="Julius Long PF">52</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Big Moments</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 26: Luke Lockwood 42, Julius Long 42 (draw)</td></tr>
+<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2026-27 1: Luke Lockwood 75, Julius Long 28 (47)</td></tr>
+<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2026-27 1: Luke Lockwood 75, Julius Long 28 (47); 103 combined</td></tr>
+<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 10: Luke Lockwood 59, Julius Long 24 (35)</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Extra Context</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Luke Lockwood 1-0-1, Julius Long 1-0-1)</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
+</tbody></table></div>
+</article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Dylan Reid" data-manager-b="Alexander Chaban" hidden>
 <div class="rivalry-card-title">Dylan Reid vs Alexander Chaban</div>
 <div class="rivalry-card-kpis">
@@ -933,8 +1031,57 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
-<article class="rivalry-card" data-rivalry-card data-manager-a="Julius Long" data-manager-b="Alexander Chaban" hidden>
-<div class="rivalry-card-title">Julius Long vs Alexander Chaban</div>
+<article class="rivalry-card is-active" data-rivalry-card data-manager-a="Ryan Donlan" data-manager-b="Justin Miller">
+<div class="rivalry-card-title">Ryan Donlan vs Justin Miller</div>
+<div class="rivalry-card-kpis">
+<div class="rivalry-kpi">
+<span>Series Leader</span>
+<strong>Ryan Donlan (9-0-1)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Scoring Edge</span>
+<strong>Ryan Donlan +143 total (+14.30/GW)</strong>
+</div>
+<div class="rivalry-kpi">
+<span>Games</span>
+<strong>10</strong>
+</div>
+</div>
+<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
+<tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Record">9-0-1</td><td data-label="H2H Pts">27</td><td data-label="PF">551</td><td data-label="Avg Score">55.10</td><td data-label="Point Diff">+143</td><td data-label="Last 5">W W W W L</td><td data-label="Current Streak">1 Loss</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Record">1-0-9</td><td data-label="H2H Pts">3</td><td data-label="PF">408</td><td data-label="Avg Score">40.80</td><td data-label="Point Diff">-143</td><td data-label="Last 5">L L L L W</td><td data-label="Current Streak">1 Win</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Season Splits</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Season</th><th>Ryan Donlan Record</th><th>Justin Miller Record</th><th>Ryan Donlan PF</th><th>Justin Miller PF</th></tr></thead>
+<tbody>
+<tr><td data-label="Season">2024-25</td><td data-label="Ryan Donlan Record">4-0-0</td><td data-label="Justin Miller Record">0-0-4</td><td data-label="Ryan Donlan PF">218</td><td data-label="Justin Miller PF">184</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Ryan Donlan Record">4-0-0</td><td data-label="Justin Miller Record">0-0-4</td><td data-label="Ryan Donlan PF">261</td><td data-label="Justin Miller PF">142</td></tr>
+<tr><td data-label="Season">2026-27</td><td data-label="Ryan Donlan Record">1-0-1</td><td data-label="Justin Miller Record">1-0-1</td><td data-label="Ryan Donlan PF">72</td><td data-label="Justin Miller PF">82</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Big Moments</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2026-27 1: Ryan Donlan 42, Justin Miller 40 (2)</td></tr>
+<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2025-26 17: Ryan Donlan 90, Justin Miller 43 (47)</td></tr>
+<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2025-26 17: Ryan Donlan 90, Justin Miller 43 (47); 133 combined</td></tr>
+<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 10: Justin Miller 42, Ryan Donlan 30 (12)</td></tr>
+</tbody></table></div>
+<div class="rivalry-card-subtitle">Extra Context</div>
+<div class="table-wrap rivalry-summary-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">4 (Ryan Donlan 4-0-0, Justin Miller 0-0-4)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Donlan 0-0-2, Justin Miller 2-0-0)</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
+</tbody></table></div>
+</article>
+<article class="rivalry-card" data-rivalry-card data-manager-a="Alexander Chaban" data-manager-b="Julius Long" hidden>
+<div class="rivalry-card-title">Alexander Chaban vs Julius Long</div>
 <div class="rivalry-card-kpis">
 <div class="rivalry-kpi">
 <span>Series Leader</span>
@@ -953,16 +1100,16 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <div class="table-wrap rivalry-summary-table"><table>
 <thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
 <tbody>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Record">6-0-3</td><td data-label="H2H Pts">18</td><td data-label="PF">364</td><td data-label="Avg Score">40.44</td><td data-label="Point Diff">+0</td><td data-label="Last 5">L W W W L</td><td data-label="Current Streak">1 Loss</td></tr>
 <tr><td data-label="Manager">Alexander Chaban</td><td data-label="Record">3-0-6</td><td data-label="H2H Pts">9</td><td data-label="PF">364</td><td data-label="Avg Score">40.44</td><td data-label="Point Diff">+0</td><td data-label="Last 5">W L L L W</td><td data-label="Current Streak">1 Win</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Record">6-0-3</td><td data-label="H2H Pts">18</td><td data-label="PF">364</td><td data-label="Avg Score">40.44</td><td data-label="Point Diff">+0</td><td data-label="Last 5">L W W W L</td><td data-label="Current Streak">1 Loss</td></tr>
 </tbody></table></div>
 <div class="rivalry-card-subtitle">Season Splits</div>
 <div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Season</th><th>Julius Long Record</th><th>Alexander Chaban Record</th><th>Julius Long PF</th><th>Alexander Chaban PF</th></tr></thead>
+<thead><tr><th>Season</th><th>Alexander Chaban Record</th><th>Julius Long Record</th><th>Alexander Chaban PF</th><th>Julius Long PF</th></tr></thead>
 <tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Julius Long Record">3-0-1</td><td data-label="Alexander Chaban Record">1-0-3</td><td data-label="Julius Long PF">154</td><td data-label="Alexander Chaban PF">151</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Julius Long Record">3-0-1</td><td data-label="Alexander Chaban Record">1-0-3</td><td data-label="Julius Long PF">184</td><td data-label="Alexander Chaban PF">164</td></tr>
-<tr><td data-label="Season">2026-27</td><td data-label="Julius Long Record">0-0-1</td><td data-label="Alexander Chaban Record">1-0-0</td><td data-label="Julius Long PF">26</td><td data-label="Alexander Chaban PF">49</td></tr>
+<tr><td data-label="Season">2024-25</td><td data-label="Alexander Chaban Record">1-0-3</td><td data-label="Julius Long Record">3-0-1</td><td data-label="Alexander Chaban PF">151</td><td data-label="Julius Long PF">154</td></tr>
+<tr><td data-label="Season">2025-26</td><td data-label="Alexander Chaban Record">1-0-3</td><td data-label="Julius Long Record">3-0-1</td><td data-label="Alexander Chaban PF">164</td><td data-label="Julius Long PF">184</td></tr>
+<tr><td data-label="Season">2026-27</td><td data-label="Alexander Chaban Record">1-0-0</td><td data-label="Julius Long Record">0-0-1</td><td data-label="Alexander Chaban PF">49</td><td data-label="Julius Long PF">26</td></tr>
 </tbody></table></div>
 <div class="rivalry-card-subtitle">Big Moments</div>
 <div class="table-wrap rivalry-summary-table"><table>
@@ -978,7 +1125,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Julius Long 1-0-1, Alexander Chaban 1-0-1)</td></tr>
+<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Alexander Chaban 1-0-1, Julius Long 1-0-1)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -1273,55 +1420,6 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">3 (Ryan Houseman 3-0-0, Ethan Ellsworth 0-0-3)</td></tr>
 <tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Houseman 0-0-3, Ethan Ellsworth 3-0-0)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
-</tbody></table></div>
-</article>
-<article class="rivalry-card" data-rivalry-card data-manager-a="Ryan Houseman" data-manager-b="Dylan Reid" hidden>
-<div class="rivalry-card-title">Ryan Houseman vs Dylan Reid</div>
-<div class="rivalry-card-kpis">
-<div class="rivalry-kpi">
-<span>Series Leader</span>
-<strong>Ryan Houseman (5-0-4)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Scoring Edge</span>
-<strong>Ryan Houseman +32 total (+3.56/GW)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Games</span>
-<strong>9</strong>
-</div>
-</div>
-<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
-<tbody>
-<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Record">5-0-4</td><td data-label="H2H Pts">15</td><td data-label="PF">398</td><td data-label="Avg Score">44.22</td><td data-label="Point Diff">+32</td><td data-label="Last 5">L L W L W</td><td data-label="Current Streak">1 Win</td></tr>
-<tr><td data-label="Manager">Dylan Reid</td><td data-label="Record">4-0-5</td><td data-label="H2H Pts">12</td><td data-label="PF">366</td><td data-label="Avg Score">40.67</td><td data-label="Point Diff">-32</td><td data-label="Last 5">W W L W L</td><td data-label="Current Streak">1 Loss</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Season Splits</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Season</th><th>Ryan Houseman Record</th><th>Dylan Reid Record</th><th>Ryan Houseman PF</th><th>Dylan Reid PF</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Ryan Houseman Record">3-0-1</td><td data-label="Dylan Reid Record">1-0-3</td><td data-label="Ryan Houseman PF">187</td><td data-label="Dylan Reid PF">127</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Ryan Houseman Record">1-0-3</td><td data-label="Dylan Reid Record">3-0-1</td><td data-label="Ryan Houseman PF">176</td><td data-label="Dylan Reid PF">208</td></tr>
-<tr><td data-label="Season">2026-27</td><td data-label="Ryan Houseman Record">1-0-0</td><td data-label="Dylan Reid Record">0-0-1</td><td data-label="Ryan Houseman PF">35</td><td data-label="Dylan Reid PF">31</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Big Moments</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 15: Ryan Houseman 31, Dylan Reid 27 (4)</td></tr>
-<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2024-25 33: Ryan Houseman 64, Dylan Reid 26 (38)</td></tr>
-<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2025-26 24: Ryan Houseman 59, Dylan Reid 54 (5); 113 combined</td></tr>
-<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 1: Ryan Houseman 35, Dylan Reid 31 (4)</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Extra Context</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">2 (Ryan Houseman 1-0-1, Dylan Reid 1-0-1)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">3 (Ryan Houseman 2-0-1, Dylan Reid 1-0-2)</td></tr>
 <tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
 </tbody></table></div>
 </article>
@@ -1913,55 +2011,6 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">1</td></tr>
 </tbody></table></div>
 </article>
-<article class="rivalry-card" data-rivalry-card data-manager-a="Luke Lockwood" data-manager-b="Julius Long" hidden>
-<div class="rivalry-card-title">Luke Lockwood vs Julius Long</div>
-<div class="rivalry-card-kpis">
-<div class="rivalry-kpi">
-<span>Series Leader</span>
-<strong>Luke Lockwood (6-1-2)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Scoring Edge</span>
-<strong>Luke Lockwood +89 total (+9.89/GW)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Games</span>
-<strong>9</strong>
-</div>
-</div>
-<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
-<tbody>
-<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Record">6-1-2</td><td data-label="H2H Pts">19</td><td data-label="PF">378</td><td data-label="Avg Score">42.00</td><td data-label="Point Diff">+89</td><td data-label="Last 5">W W L W W</td><td data-label="Current Streak">2 Wins</td></tr>
-<tr><td data-label="Manager">Julius Long</td><td data-label="Record">2-1-6</td><td data-label="H2H Pts">7</td><td data-label="PF">289</td><td data-label="Avg Score">32.11</td><td data-label="Point Diff">-89</td><td data-label="Last 5">L L W L L</td><td data-label="Current Streak">2 Losses</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Season Splits</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Season</th><th>Luke Lockwood Record</th><th>Julius Long Record</th><th>Luke Lockwood PF</th><th>Julius Long PF</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Luke Lockwood Record">2-1-1</td><td data-label="Julius Long Record">1-1-2</td><td data-label="Luke Lockwood PF">137</td><td data-label="Julius Long PF">137</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Luke Lockwood Record">3-0-1</td><td data-label="Julius Long Record">1-0-3</td><td data-label="Luke Lockwood PF">166</td><td data-label="Julius Long PF">124</td></tr>
-<tr><td data-label="Season">2026-27</td><td data-label="Luke Lockwood Record">1-0-0</td><td data-label="Julius Long Record">0-0-1</td><td data-label="Luke Lockwood PF">75</td><td data-label="Julius Long PF">28</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Big Moments</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2024-25 26: Luke Lockwood 42, Julius Long 42 (draw)</td></tr>
-<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2026-27 1: Luke Lockwood 75, Julius Long 28 (47)</td></tr>
-<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2026-27 1: Luke Lockwood 75, Julius Long 28 (47); 103 combined</td></tr>
-<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 1: Luke Lockwood 75, Julius Long 28 (47)</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Extra Context</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">0</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Luke Lockwood 1-0-1, Julius Long 1-0-1)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
-</tbody></table></div>
-</article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Levi Morant" data-manager-b="Ethan Ellsworth" hidden>
 <div class="rivalry-card-title">Levi Morant vs Ethan Ellsworth</div>
 <div class="rivalry-card-kpis">
@@ -2207,55 +2256,6 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
 </tbody></table></div>
 </article>
-<article class="rivalry-card is-active" data-rivalry-card data-manager-a="Ryan Donlan" data-manager-b="Justin Miller">
-<div class="rivalry-card-title">Ryan Donlan vs Justin Miller</div>
-<div class="rivalry-card-kpis">
-<div class="rivalry-kpi">
-<span>Series Leader</span>
-<strong>Ryan Donlan (9-0-0)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Scoring Edge</span>
-<strong>Ryan Donlan +155 total (+17.22/GW)</strong>
-</div>
-<div class="rivalry-kpi">
-<span>Games</span>
-<strong>9</strong>
-</div>
-</div>
-<div class="rivalry-card-subtitle">Rivalry Scoreboard</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Manager</th><th>Record</th><th>H2H Pts</th><th>PF</th><th>Avg Score</th><th>Point Diff</th><th>Last 5</th><th>Current Streak</th></tr></thead>
-<tbody>
-<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Record">9-0-0</td><td data-label="H2H Pts">27</td><td data-label="PF">521</td><td data-label="Avg Score">57.89</td><td data-label="Point Diff">+155</td><td data-label="Last 5">W W W W W</td><td data-label="Current Streak">9 Wins</td></tr>
-<tr><td data-label="Manager">Justin Miller</td><td data-label="Record">0-0-9</td><td data-label="H2H Pts">0</td><td data-label="PF">366</td><td data-label="Avg Score">40.67</td><td data-label="Point Diff">-155</td><td data-label="Last 5">L L L L L</td><td data-label="Current Streak">9 Losses</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Season Splits</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Season</th><th>Ryan Donlan Record</th><th>Justin Miller Record</th><th>Ryan Donlan PF</th><th>Justin Miller PF</th></tr></thead>
-<tbody>
-<tr><td data-label="Season">2024-25</td><td data-label="Ryan Donlan Record">4-0-0</td><td data-label="Justin Miller Record">0-0-4</td><td data-label="Ryan Donlan PF">218</td><td data-label="Justin Miller PF">184</td></tr>
-<tr><td data-label="Season">2025-26</td><td data-label="Ryan Donlan Record">4-0-0</td><td data-label="Justin Miller Record">0-0-4</td><td data-label="Ryan Donlan PF">261</td><td data-label="Justin Miller PF">142</td></tr>
-<tr><td data-label="Season">2026-27</td><td data-label="Ryan Donlan Record">1-0-0</td><td data-label="Justin Miller Record">0-0-1</td><td data-label="Ryan Donlan PF">42</td><td data-label="Justin Miller PF">40</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Big Moments</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Closest Match</td><td data-label="Value">2026-27 1: Ryan Donlan 42, Justin Miller 40 (2)</td></tr>
-<tr><td data-label="Metric">Biggest Win</td><td data-label="Value">2025-26 17: Ryan Donlan 90, Justin Miller 43 (47)</td></tr>
-<tr><td data-label="Metric">Highest Combined Score</td><td data-label="Value">2025-26 17: Ryan Donlan 90, Justin Miller 43 (47); 133 combined</td></tr>
-<tr><td data-label="Metric">Most Recent Match</td><td data-label="Value">2026-27 1: Ryan Donlan 42, Justin Miller 40 (2)</td></tr>
-</tbody></table></div>
-<div class="rivalry-card-subtitle">Extra Context</div>
-<div class="table-wrap rivalry-summary-table"><table>
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td data-label="Metric">Belt Fights</td><td data-label="Value">4 (Ryan Donlan 4-0-0, Justin Miller 0-0-4)</td></tr>
-<tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">2 (Ryan Donlan 0-0-2, Justin Miller 2-0-0)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">0</td></tr>
-</tbody></table></div>
-</article>
 </div>
 </section>
 
@@ -2264,42 +2264,42 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <details>
 <summary><h2>Ryan Donlan</h2></summary>
 
-Live career rank #1 with a 59-1-25 record through GW9 of 2026-27.
+Live career rank #1 with a 59-1-26 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 1 |
-| Record | 59-1-25 |
+| Record | 59-1-26 |
 | H2H Points | 178 |
-| H2H Points/GW | 2.09 |
-| Points For | 3957 |
-| Points Against | 3251 |
-| PF/GW | 46.55 |
-| PA/GW | 38.25 |
-| Avg Weekly Rank | 4.45 |
+| H2H Points/GW | 2.07 |
+| Points For | 3987 |
+| Points Against | 3293 |
+| PF/GW | 46.36 |
+| PA/GW | 38.29 |
+| Avg Weekly Rank | 4.50 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 1 | 27-1-10 | 82 | 1757 | 1452 | 46.2 | 5 | 2 |
 | 2025-26 | 1 | 27-0-11 | 81 | 1764 | 1444 | 46.4 | 4 | 2 |
-| 2026-27 | 3 | 5-0-4 | 15 | 436 | 355 | 48.4 | 3 | 1 |
+| 2026-27 | 6 | 5-0-5 | 15 | 466 | 397 | 46.6 | 3 | 1 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Ryan Donlan" data-formation="3-5-2" data-total="2036">
+<section class="manager-best-xi" data-manager-best-xi="Ryan Donlan" data-formation="3-5-2" data-total="2043">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 3-5-2</span>
-<strong>2,036 contributed points</strong>
+<strong>2,043 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Erling Haaland</strong>
-<span class="manager-best-xi-points">488 pts</span>
+<span class="manager-best-xi-points">490 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
@@ -2316,7 +2316,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Morgan Gibbs-White</strong>
-<span class="manager-best-xi-points">209 pts</span>
+<span class="manager-best-xi-points">214 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -2451,22 +2451,22 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 2 | 1587.8 | +87.8 | 1645.6 | 33 | 1512.0 | 1 | 1.45 | 26 | 37 | 0 |
 | 2025-26 | 1 | 1640.3 | +140.3 | 1640.3 | 38 | 1465.6 | 3 | 3.13 | 18 | 22 | 4 |
-| 2026-27 | 7 | 1501.6 | +1.6 | 1555.3 | 5 | 1501.6 | 9 | 2.89 | 3 | 6 | 0 |
+| 2026-27 | 7 | 1489.8 | -10.2 | 1555.3 | 5 | 1489.8 | 10 | 3.30 | 3 | 6 | 0 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 46.55 | 4.45 | 15.06 | 14.1% | 44.7% | 69.4% | 30.6% | 18.8% | 5.9% | 2025-26 33 (103) | 2024-25 8 (19) |
+| 46.36 | 4.50 | 15.08 | 14.0% | 44.2% | 68.6% | 31.4% | 19.8% | 5.8% | 2025-26 33 (103) | 2024-25 8 (19) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 16 | 2025-26 28 to 2026-27 5 | 4 | 2024-25 34-37, 2026-27 6-9 | 7 | 27-7 | 79.4% | 8 | 27 |
+| 16 | 2025-26 28 to 2026-27 5 | 5 | 2026-27 6-10 | 7 | 27-7 | 79.4% | 8 | 27 |
 
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
 |---|---:|---:|---:|---:|---:|---:|
-| Justin Miller | 9-0-0 | 27 | 9 | 57.89 | 40.67 | +17.22 |
+| Justin Miller | 9-0-1 | 27 | 10 | 55.10 | 40.80 | +14.30 |
 | Julius Long | 8-0-1 | 24 | 9 | 44.00 | 37.44 | +6.56 |
 | Dylan Reid | 7-1-2 | 22 | 10 | 43.60 | 36.30 | +7.30 |
 | Ethan Ellsworth | 7-0-3 | 21 | 10 | 39.50 | 36.30 | +3.20 |
@@ -2493,27 +2493,27 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 <details>
 <summary><h2>Justin Miller</h2></summary>
 
-Live career rank #2 with a 55-1-29 record through GW9 of 2026-27.
+Live career rank #2 with a 56-1-29 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 2 |
-| Record | 55-1-29 |
-| H2H Points | 166 |
-| H2H Points/GW | 1.95 |
-| Points For | 3888 |
-| Points Against | 3612 |
-| PF/GW | 45.74 |
-| PA/GW | 42.49 |
-| Avg Weekly Rank | 4.26 |
+| Record | 56-1-29 |
+| H2H Points | 169 |
+| H2H Points/GW | 1.97 |
+| Points For | 3930 |
+| Points Against | 3642 |
+| PF/GW | 45.70 |
+| PA/GW | 42.35 |
+| Avg Weekly Rank | 4.27 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 2 | 26-1-11 | 79 | 1800 | 1557 | 47.4 | 11 | 2 |
 | 2025-26 | 2 | 24-0-14 | 72 | 1681 | 1642 | 44.2 | 8 | 3 |
-| 2026-27 | 5 | 5-0-4 | 15 | 407 | 413 | 45.2 | 1 | 0 |
+| 2026-27 | 4 | 6-0-4 | 18 | 449 | 443 | 44.9 | 1 | 0 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
@@ -2680,12 +2680,12 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 1 | 1620.8 | +120.8 | 1637.4 | 37 | 1476.8 | 7 | 2.82 | 4 | 28 | 0 |
 | 2025-26 | 2 | 1597.0 | +97.0 | 1597.0 | 38 | 1455.2 | 8 | 4.53 | 0 | 19 | 6 |
-| 2026-27 | 6 | 1509.7 | +9.7 | 1524.7 | 6 | 1476.8 | 2 | 5.33 | 0 | 3 | 2 |
+| 2026-27 | 5 | 1521.4 | +21.4 | 1524.7 | 6 | 1476.8 | 2 | 5.30 | 0 | 3 | 2 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 45.74 | 4.26 | 11.67 | 23.5% | 44.7% | 72.9% | 27.1% | 17.6% | 5.9% | 2024-25 24 (80) | 2025-26 14 (22) |
+| 45.70 | 4.27 | 11.61 | 23.3% | 44.2% | 73.3% | 26.7% | 17.4% | 5.8% | 2024-25 24 (80) | 2025-26 14 (22) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
@@ -2703,7 +2703,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 | Ethan Ellsworth | 6-0-3 | 18 | 9 | 45.00 | 40.56 | +4.44 |
 | Levi Morant | 6-0-4 | 18 | 10 | 40.90 | 40.00 | +0.90 |
 | Drake Byrd | 4-1-4 | 13 | 9 | 40.44 | 47.33 | -6.89 |
-| Ryan Donlan | 0-0-9 | 0 | 9 | 40.67 | 57.89 | -17.22 |
+| Ryan Donlan | 1-0-9 | 3 | 10 | 40.80 | 55.10 | -14.30 |
 
 ### Signature Games
 | Moment | Week | Opponent | Score | Opp Score | Margin |
@@ -2722,35 +2722,35 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 <details>
 <summary><h2>Ryan Houseman</h2></summary>
 
-Live career rank #3 with a 46-0-39 record through GW9 of 2026-27.
+Live career rank #3 with a 47-0-39 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 3 |
-| Record | 46-0-39 |
-| H2H Points | 138 |
-| H2H Points/GW | 1.62 |
-| Points For | 3502 |
-| Points Against | 3330 |
-| PF/GW | 41.20 |
-| PA/GW | 39.18 |
-| Avg Weekly Rank | 5.54 |
+| Record | 47-0-39 |
+| H2H Points | 141 |
+| H2H Points/GW | 1.64 |
+| Points For | 3539 |
+| Points Against | 3362 |
+| PF/GW | 41.15 |
+| PA/GW | 39.09 |
+| Avg Weekly Rank | 5.56 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 3 | 21-0-17 | 63 | 1478 | 1445 | 38.9 | 2 | 5 |
 | 2025-26 | 5 | 20-0-18 | 60 | 1659 | 1566 | 43.7 | 6 | 4 |
-| 2026-27 | 7 | 5-0-4 | 15 | 365 | 319 | 40.6 | 1 | 2 |
+| 2026-27 | 5 | 6-0-4 | 18 | 402 | 351 | 40.2 | 1 | 2 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Ryan Houseman" data-formation="3-4-3" data-total="1906">
+<section class="manager-best-xi" data-manager-best-xi="Ryan Houseman" data-formation="3-4-3" data-total="1921">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 3-4-3</span>
-<strong>1,906 contributed points</strong>
+<strong>1,921 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
@@ -2779,7 +2779,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Dominik Szoboszlai</strong>
-<span class="manager-best-xi-points">180 pts</span>
+<span class="manager-best-xi-points">187 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -2796,7 +2796,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Gabriel dos Santos Magalhães</strong>
-<span class="manager-best-xi-points">267 pts</span>
+<span class="manager-best-xi-points">275 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -2909,17 +2909,17 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 3 | 1527.1 | +27.1 | 1551.4 | 36 | 1476.8 | 2 | 4.42 | 0 | 15 | 3 |
 | 2025-26 | 3 | 1526.8 | +26.8 | 1528.3 | 10 | 1468.5 | 23 | 5.82 | 0 | 5 | 5 |
-| 2026-27 | 5 | 1509.8 | +9.8 | 1524.0 | 2 | 1497.6 | 6 | 3.89 | 1 | 3 | 0 |
+| 2026-27 | 4 | 1522.0 | +22.0 | 1524.0 | 2 | 1497.6 | 6 | 3.90 | 1 | 3 | 0 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 41.20 | 5.54 | 13.37 | 10.6% | 30.6% | 52.9% | 47.1% | 30.6% | 12.9% | 2024-25 22 (81) | 2024-25 6 (22) |
+| 41.15 | 5.56 | 13.30 | 10.5% | 30.2% | 52.3% | 47.7% | 30.2% | 12.8% | 2024-25 22 (81) | 2024-25 6 (22) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 6 | 2025-26 35 to 2026-27 2 | 4 | 2024-25 37 to 2025-26 2, 2025-26 13-16, 2025-26 31-34 | 3 | 8-6 | 57.1% | 3 | 8 |
+| 6 | 2025-26 35 to 2026-27 2 | 4 | 2024-25 37 to 2025-26 2, 2025-26 13-16, 2025-26 31-34 | 4 | 9-6 | 60.0% | 3 | 9 |
 
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
@@ -2928,7 +2928,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 | Drake Byrd | 7-0-3 | 21 | 10 | 45.40 | 39.40 | +6.00 |
 | Ethan Ellsworth | 7-0-2 | 21 | 9 | 43.22 | 39.78 | +3.44 |
 | Levi Morant | 6-0-3 | 18 | 9 | 42.00 | 36.00 | +6.00 |
-| Dylan Reid | 5-0-4 | 15 | 9 | 44.22 | 40.67 | +3.56 |
+| Dylan Reid | 6-0-4 | 18 | 10 | 43.50 | 39.80 | +3.70 |
 | Luke Lockwood | 5-0-4 | 15 | 9 | 38.33 | 36.33 | +2.00 |
 | Ryan Donlan | 5-0-4 | 15 | 9 | 34.67 | 37.78 | -3.11 |
 | Julius Long | 4-0-7 | 12 | 11 | 37.36 | 36.73 | +0.64 |
@@ -2951,35 +2951,35 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 <details>
 <summary><h2>Luke Lockwood</h2></summary>
 
-Live career rank #4 with a 44-4-37 record through GW9 of 2026-27.
+Live career rank #4 with a 45-4-37 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 4 |
-| Record | 44-4-37 |
-| H2H Points | 136 |
-| H2H Points/GW | 1.60 |
-| Points For | 3452 |
-| Points Against | 3335 |
-| PF/GW | 40.61 |
-| PA/GW | 39.24 |
-| Avg Weekly Rank | 5.69 |
+| Record | 45-4-37 |
+| H2H Points | 139 |
+| H2H Points/GW | 1.62 |
+| Points For | 3511 |
+| Points Against | 3359 |
+| PF/GW | 40.83 |
+| PA/GW | 39.06 |
+| Avg Weekly Rank | 5.65 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 5 | 18-2-18 | 56 | 1534 | 1518 | 40.4 | 2 | 5 |
 | 2025-26 | 3 | 21-2-15 | 65 | 1527 | 1468 | 40.2 | 3 | 2 |
-| 2026-27 | 6 | 5-0-4 | 15 | 391 | 349 | 43.4 | 1 | 1 |
+| 2026-27 | 3 | 6-0-4 | 18 | 450 | 373 | 45.0 | 2 | 1 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Luke Lockwood" data-formation="4-5-1" data-total="1418">
+<section class="manager-best-xi" data-manager-best-xi="Luke Lockwood" data-formation="4-5-1" data-total="1427">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-5-1</span>
-<strong>1,418 contributed points</strong>
+<strong>1,427 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 1" aria-label="FWD">
@@ -3002,13 +3002,13 @@ The highest-scoring legal lineup built from points these players contributed whi
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Pedro Lomba Neto</strong>
-<span class="manager-best-xi-points">112 pts</span>
+<strong>Kiernan Dewsbury-Hall</strong>
+<span class="manager-best-xi-points">119 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Kiernan Dewsbury-Hall</strong>
-<span class="manager-best-xi-points">110 pts</span>
+<strong>Pedro Lomba Neto</strong>
+<span class="manager-best-xi-points">112 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -3138,12 +3138,12 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 4 | 1525.9 | +25.9 | 1544.3 | 33 | 1431.7 | 21 | 7.08 | 0 | 6 | 20 |
 | 2025-26 | 4 | 1517.2 | +17.2 | 1583.9 | 18 | 1499.2 | 2 | 2.66 | 10 | 29 | 0 |
-| 2026-27 | 4 | 1514.1 | +14.1 | 1514.1 | 9 | 1475.3 | 4 | 6.78 | 0 | 1 | 4 |
+| 2026-27 | 3 | 1524.7 | +24.7 | 1524.7 | 10 | 1475.3 | 4 | 6.40 | 0 | 2 | 4 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 40.61 | 5.69 | 12.03 | 7.1% | 32.9% | 48.2% | 51.8% | 35.3% | 9.4% | 2024-25 33 (76) | 2025-26 5 (21) |
+| 40.83 | 5.65 | 12.12 | 8.1% | 33.7% | 48.8% | 51.2% | 34.9% | 9.3% | 2024-25 33 (76) | 2025-26 5 (21) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
@@ -3153,7 +3153,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
 |---|---:|---:|---:|---:|---:|---:|
-| Julius Long | 6-1-2 | 19 | 9 | 42.00 | 32.11 | +9.89 |
+| Julius Long | 7-1-2 | 22 | 10 | 43.70 | 31.30 | +12.40 |
 | Alexander Chaban | 6-0-3 | 18 | 9 | 43.56 | 38.22 | +5.33 |
 | Levi Morant | 6-0-4 | 18 | 10 | 43.60 | 41.70 | +1.90 |
 | Drake Byrd | 5-1-3 | 16 | 9 | 45.44 | 37.78 | +7.67 |
@@ -3180,35 +3180,35 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 <details>
 <summary><h2>Drake Byrd</h2></summary>
 
-Live career rank #5 with a 42-2-41 record through GW9 of 2026-27.
+Live career rank #5 with a 43-2-41 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 5 |
-| Record | 42-2-41 |
-| H2H Points | 128 |
-| H2H Points/GW | 1.51 |
-| Points For | 3504 |
-| Points Against | 3577 |
-| PF/GW | 41.22 |
-| PA/GW | 42.08 |
-| Avg Weekly Rank | 5.32 |
+| Record | 43-2-41 |
+| H2H Points | 131 |
+| H2H Points/GW | 1.52 |
+| Points For | 3563 |
+| Points Against | 3620 |
+| PF/GW | 41.43 |
+| PA/GW | 42.09 |
+| Avg Weekly Rank | 5.28 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 7 | 16-1-21 | 49 | 1467 | 1525 | 38.6 | 3 | 1 |
 | 2025-26 | 4 | 20-1-17 | 61 | 1656 | 1672 | 43.6 | 6 | 3 |
-| 2026-27 | 2 | 6-0-3 | 18 | 381 | 380 | 42.3 | 0 | 0 |
+| 2026-27 | 2 | 7-0-3 | 21 | 440 | 423 | 44.0 | 1 | 0 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Drake Byrd" data-formation="4-4-2" data-total="1911">
+<section class="manager-best-xi" data-manager-best-xi="Drake Byrd" data-formation="4-4-2" data-total="1932">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-4-2</span>
-<strong>1,911 contributed points</strong>
+<strong>1,932 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
@@ -3220,14 +3220,14 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Francisco Evanilson de Lima Barbosa</strong>
-<span class="manager-best-xi-points">166 pts</span>
+<span class="manager-best-xi-points">175 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Bruno Borges Fernandes</strong>
-<span class="manager-best-xi-points">432 pts</span>
+<span class="manager-best-xi-points">442 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -3249,7 +3249,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Daniel Muñoz Mejía</strong>
-<span class="manager-best-xi-points">279 pts</span>
+<span class="manager-best-xi-points">281 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -3367,12 +3367,12 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 7 | 1470.1 | -29.9 | 1507.3 | 22 | 1446.9 | 14 | 6.29 | 0 | 0 | 7 |
 | 2025-26 | 5 | 1516.9 | +16.9 | 1558.1 | 16 | 1470.5 | 27 | 3.82 | 6 | 17 | 1 |
-| 2026-27 | 2 | 1528.6 | +28.6 | 1535.2 | 3 | 1512.0 | 1 | 2.11 | 3 | 8 | 0 |
+| 2026-27 | 2 | 1537.8 | +37.8 | 1537.8 | 10 | 1512.0 | 1 | 2.10 | 3 | 9 | 0 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 41.22 | 5.32 | 11.90 | 10.6% | 29.4% | 54.1% | 45.9% | 25.9% | 4.7% | 2026-27 2 (82) | 2025-26 18 (16) |
+| 41.43 | 5.28 | 11.99 | 11.6% | 30.2% | 54.7% | 45.3% | 25.6% | 4.7% | 2026-27 2 (82) | 2025-26 18 (16) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
@@ -3382,8 +3382,8 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
 |---|---:|---:|---:|---:|---:|---:|
+| Ethan Ellsworth | 8-0-3 | 24 | 11 | 44.18 | 35.18 | +9.00 |
 | Dylan Reid | 8-0-1 | 24 | 9 | 43.11 | 36.11 | +7.00 |
-| Ethan Ellsworth | 7-0-3 | 21 | 10 | 42.70 | 34.40 | +8.30 |
 | Julius Long | 5-0-4 | 15 | 9 | 46.44 | 46.33 | +0.11 |
 | Justin Miller | 4-1-4 | 13 | 9 | 47.33 | 40.44 | +6.89 |
 | Alexander Chaban | 4-0-6 | 12 | 10 | 36.80 | 39.80 | -3.00 |
@@ -3409,35 +3409,35 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 <details>
 <summary><h2>Levi Morant</h2></summary>
 
-Live career rank #6 with a 38-0-47 record through GW9 of 2026-27.
+Live career rank #6 with a 38-0-48 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 6 |
-| Record | 38-0-47 |
+| Record | 38-0-48 |
 | H2H Points | 114 |
-| H2H Points/GW | 1.34 |
-| Points For | 3398 |
-| Points Against | 3556 |
+| H2H Points/GW | 1.33 |
+| Points For | 3438 |
+| Points Against | 3615 |
 | PF/GW | 39.98 |
-| PA/GW | 41.84 |
-| Avg Weekly Rank | 5.72 |
+| PA/GW | 42.03 |
+| Avg Weekly Rank | 5.73 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 4 | 19-0-19 | 57 | 1557 | 1586 | 41.0 | 6 | 4 |
 | 2025-26 | 7 | 16-0-22 | 48 | 1495 | 1572 | 39.3 | 4 | 8 |
-| 2026-27 | 9 | 3-0-6 | 9 | 346 | 398 | 38.4 | 0 | 0 |
+| 2026-27 | 9 | 3-0-7 | 9 | 386 | 457 | 38.6 | 0 | 0 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Levi Morant" data-formation="3-4-3" data-total="1309">
+<section class="manager-best-xi" data-manager-best-xi="Levi Morant" data-formation="3-4-3" data-total="1313">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 3-4-3</span>
-<strong>1,309 contributed points</strong>
+<strong>1,313 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
@@ -3454,7 +3454,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Kai Havertz</strong>
-<span class="manager-best-xi-points">67 pts</span>
+<span class="manager-best-xi-points">69 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
@@ -3466,7 +3466,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Cole Palmer</strong>
-<span class="manager-best-xi-points">287 pts</span>
+<span class="manager-best-xi-points">289 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -3596,12 +3596,12 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 5 | 1513.1 | +13.1 | 1576.5 | 7 | 1435.6 | 27 | 5.79 | 4 | 9 | 13 |
 | 2025-26 | 7 | 1471.8 | -28.2 | 1494.6 | 9 | 1443.3 | 36 | 7.79 | 0 | 0 | 22 |
-| 2026-27 | 9 | 1465.5 | -34.5 | 1512.0 | 1 | 1465.5 | 9 | 6.44 | 0 | 2 | 3 |
+| 2026-27 | 9 | 1456.0 | -44.0 | 1512.0 | 1 | 1456.0 | 10 | 6.70 | 0 | 2 | 4 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 39.98 | 5.72 | 11.60 | 11.8% | 23.5% | 47.1% | 52.9% | 28.2% | 14.1% | 2024-25 32 (75) | 2025-26 5 (20) |
+| 39.98 | 5.73 | 11.53 | 11.6% | 23.3% | 46.5% | 53.5% | 27.9% | 14.0% | 2024-25 32 (75) | 2025-26 5 (20) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
@@ -3611,7 +3611,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
 |---|---:|---:|---:|---:|---:|---:|
-| Alexander Chaban | 7-0-3 | 21 | 10 | 41.10 | 37.90 | +3.20 |
+| Alexander Chaban | 7-0-4 | 21 | 11 | 41.00 | 39.82 | +1.18 |
 | Julius Long | 5-0-4 | 15 | 9 | 40.11 | 33.44 | +6.67 |
 | Drake Byrd | 5-0-4 | 15 | 9 | 41.78 | 38.33 | +3.44 |
 | Justin Miller | 4-0-6 | 12 | 10 | 40.00 | 40.90 | -0.90 |
@@ -3638,35 +3638,35 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 <details>
 <summary><h2>Dylan Reid</h2></summary>
 
-Live career rank #7 with a 36-2-47 record through GW9 of 2026-27.
+Live career rank #7 with a 36-2-48 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 7 |
-| Record | 36-2-47 |
+| Record | 36-2-48 |
 | H2H Points | 110 |
-| H2H Points/GW | 1.29 |
-| Points For | 3293 |
-| Points Against | 3526 |
-| PF/GW | 38.74 |
-| PA/GW | 41.48 |
-| Avg Weekly Rank | 6.15 |
+| H2H Points/GW | 1.28 |
+| Points For | 3325 |
+| Points Against | 3563 |
+| PF/GW | 38.66 |
+| PA/GW | 41.43 |
+| Avg Weekly Rank | 6.17 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 10 | 12-2-24 | 38 | 1303 | 1613 | 34.3 | 1 | 5 |
 | 2025-26 | 6 | 19-0-19 | 57 | 1577 | 1536 | 41.5 | 3 | 3 |
-| 2026-27 | 4 | 5-0-4 | 15 | 413 | 377 | 45.9 | 2 | 1 |
+| 2026-27 | 7 | 5-0-5 | 15 | 445 | 414 | 44.5 | 2 | 1 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Dylan Reid" data-formation="3-4-3" data-total="1498">
+<section class="manager-best-xi" data-manager-best-xi="Dylan Reid" data-formation="3-4-3" data-total="1496">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 3-4-3</span>
-<strong>1,498 contributed points</strong>
+<strong>1,496 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
@@ -3678,7 +3678,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Igor Thiago Nascimento Rodrigues</strong>
-<span class="manager-best-xi-points">207 pts</span>
+<span class="manager-best-xi-points">205 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
@@ -3825,17 +3825,17 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 10 | 1393.1 | -106.9 | 1518.6 | 16 | 1393.1 | 38 | 7.00 | 1 | 2 | 17 |
 | 2025-26 | 6 | 1478.8 | -21.2 | 1538.9 | 33 | 1478.8 | 38 | 4.08 | 1 | 12 | 0 |
-| 2026-27 | 3 | 1516.2 | +16.2 | 1516.2 | 9 | 1464.0 | 5 | 6.89 | 0 | 1 | 4 |
+| 2026-27 | 6 | 1504.0 | +4.0 | 1516.2 | 9 | 1464.0 | 5 | 6.80 | 0 | 1 | 4 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 38.74 | 6.15 | 10.72 | 7.1% | 29.4% | 37.6% | 62.4% | 44.7% | 10.6% | 2026-27 9 (71) | 2024-25 3 (20) |
+| 38.66 | 6.17 | 10.68 | 7.0% | 29.1% | 37.2% | 62.8% | 45.3% | 10.5% | 2026-27 9 (71) | 2024-25 3 (20) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 4 | 2026-27 6-9 | 8 | 2024-25 24-31 | 3 | 7-7 | 50.0% | 3 | 7 |
+| 4 | 2026-27 6-9 | 8 | 2024-25 24-31 | 3 | 7-8 | 46.7% | 3 | 7 |
 
 ### Head-To-Head By Opponent
 | Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
@@ -3844,7 +3844,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 | Levi Morant | 6-0-4 | 18 | 10 | 40.80 | 37.50 | +3.30 |
 | Julius Long | 6-0-3 | 18 | 9 | 43.00 | 40.00 | +3.00 |
 | Luke Lockwood | 4-1-5 | 13 | 10 | 34.70 | 35.20 | -0.50 |
-| Ryan Houseman | 4-0-5 | 12 | 9 | 40.67 | 44.22 | -3.56 |
+| Ryan Houseman | 4-0-6 | 12 | 10 | 39.80 | 43.50 | -3.70 |
 | Ryan Donlan | 2-1-7 | 7 | 10 | 36.30 | 43.60 | -7.30 |
 | Justin Miller | 2-0-7 | 6 | 9 | 39.44 | 47.44 | -8.00 |
 | Alexander Chaban | 2-0-8 | 6 | 10 | 33.40 | 47.50 | -14.10 |
@@ -3865,37 +3865,266 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 </details>
 
 <details>
-<summary><h2>Julius Long</h2></summary>
+<summary><h2>Alexander Chaban</h2></summary>
 
-Live career rank #8 with a 34-2-49 record through GW9 of 2026-27.
+Live career rank #8 with a 35-0-51 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 8 |
-| Record | 34-2-49 |
-| H2H Points | 104 |
+| Record | 35-0-51 |
+| H2H Points | 105 |
 | H2H Points/GW | 1.22 |
-| Points For | 3352 |
-| Points Against | 3617 |
-| PF/GW | 39.44 |
-| PA/GW | 42.55 |
-| Avg Weekly Rank | 6.14 |
+| Points For | 3433 |
+| Points Against | 3674 |
+| PF/GW | 39.92 |
+| PA/GW | 42.72 |
+| Avg Weekly Rank | 5.76 |
+
+### Season Splits
+| Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 9 | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 |
+| 2025-26 | 8 | 14-0-24 | 42 | 1485 | 1692 | 39.1 | 3 | 5 |
+| 2026-27 | 1 | 7-0-3 | 21 | 454 | 397 | 45.4 | 1 | 2 |
+
+### All-Time Best XI
+The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
+
+<section class="manager-best-xi" data-manager-best-xi="Alexander Chaban" data-formation="3-4-3" data-total="1432">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 3-4-3</span>
+<strong>1,432 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Dominic Solanke-Mitchell</strong>
+<span class="manager-best-xi-points">140 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Hugo Ekitiké</strong>
+<span class="manager-best-xi-points">125 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Cody Gakpo</strong>
+<span class="manager-best-xi-points">120 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Morgan Rogers</strong>
+<span class="manager-best-xi-points">221 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Antoine Semenyo</strong>
+<span class="manager-best-xi-points">165 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Phil Foden</strong>
+<span class="manager-best-xi-points">106 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Harvey Barnes</strong>
+<span class="manager-best-xi-points">104 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Micky van de Ven</strong>
+<span class="manager-best-xi-points">136 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Trevoh Chalobah</strong>
+<span class="manager-best-xi-points">114 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Pedro Porro Sauceda</strong>
+<span class="manager-best-xi-points">95 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Dean Henderson</strong>
+<span class="manager-best-xi-points">106 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+### Drafted Team
+Choose a season to see this manager's complete draft-day roster, grouped by position.
+
+<div class="manager-draft-view" data-manager-draft-view>
+<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
+<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
+<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
+<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
+</div>
+<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Stefan Ortega Moreno</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Benjamin White</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Daniel Muñoz</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Oleksandr Zinchenko</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>João Cavaco Cancelo</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Harry Maguire</strong></td><td data-label="Club">MUN</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kevin De Bruyne</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bernardo Veiga de Carvalho e Silva</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Pedro Lomba Neto</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Raheem Sterling</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alexis Mac Allister</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Cody Gakpo</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Julián Álvarez</strong></td><td data-label="Club">MCI</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>ChabosSpurs@Law</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Dean Henderson</strong></td><td data-label="Club">CRY</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ola Aina</strong></td><td data-label="Club">NFO</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Tino Livramento</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Micky van de Ven</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro Sauceda</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Trevoh Chalobah</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Phil Foden</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Enzo Fernández</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alexis Mac Allister</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Harvey Barnes</strong></td><td data-label="Club">NEW</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Hugo Ekitiké</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Marc Guiu Paz</strong></td><td data-label="Club">CHE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
+<article class="current-roster-card manager-draft-card">
+<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>ChabosSpurs@Law</span></header>
+<div class="table-wrap"><table>
+<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
+<tbody>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>David Raya Martín</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Marco Bizot</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Virgil van Dijk</strong></td><td data-label="Club">LIV</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro Sauceda</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ezri Konsa Ngoyo</strong></td><td data-label="Club">ARS</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Antonee Robinson</strong></td><td data-label="Club">FUL</td></tr>
+<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Luka Vušković</strong></td><td data-label="Club">BHA</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">CHE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jérémy Doku</strong></td><td data-label="Club">MCI</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohammed Kudus</strong></td><td data-label="Club">TOT</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mikkel Damsgaard</strong></td><td data-label="Club">BRE</td></tr>
+<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Rayan Vitor Simplício Rocha</strong></td><td data-label="Club">BOU</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Brian Brobbey</strong></td><td data-label="Club">SUN</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Brian Madjo</strong></td><td data-label="Club">AVL</td></tr>
+<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Liam Delap</strong></td><td data-label="Club">CHE</td></tr>
+</tbody></table></div>
+</article>
+</section>
+</div>
+
+### Power Rankings History
+Power ratings reset to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
+
+| Season | Final Rank | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Power Rank | Weeks #1 | Top 3 | Bottom 3 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2024-25 | 8 | 1448.4 | -51.6 | 1500.8 | 2 | 1420.0 | 33 | 8.87 | 0 | 0 | 34 |
+| 2025-26 | 10 | 1395.0 | -105.0 | 1537.5 | 25 | 1395.0 | 38 | 6.37 | 3 | 6 | 13 |
+| 2026-27 | 1 | 1546.1 | +46.1 | 1546.1 | 10 | 1476.8 | 2 | 3.90 | 3 | 4 | 1 |
+
+### Scoring Personality
+| PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 39.92 | 5.76 | 12.10 | 9.3% | 29.1% | 48.8% | 51.2% | 33.7% | 17.4% | 2024-25 2 (69) | 2024-25 15 (17) |
+
+### Streaks And Belt
+| Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 6 | 2025-26 20-25 | 15 | 2025-26 26 to 2026-27 2 | 2 | 4-7 | 36.4% | 2 | 4 |
+
+### Head-To-Head By Opponent
+| Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
+|---|---:|---:|---:|---:|---:|---:|
+| Dylan Reid | 8-0-2 | 24 | 10 | 47.50 | 33.40 | +14.10 |
+| Drake Byrd | 6-0-4 | 18 | 10 | 39.80 | 36.80 | +3.00 |
+| Levi Morant | 4-0-7 | 12 | 11 | 39.82 | 41.00 | -1.18 |
+| Ethan Ellsworth | 4-0-5 | 12 | 9 | 39.56 | 43.56 | -4.00 |
+| Julius Long | 3-0-6 | 9 | 9 | 40.44 | 40.44 | +0.00 |
+| Luke Lockwood | 3-0-6 | 9 | 9 | 38.22 | 43.56 | -5.33 |
+| Ryan Donlan | 3-0-6 | 9 | 9 | 36.67 | 51.44 | -14.78 |
+| Justin Miller | 2-0-8 | 6 | 10 | 39.70 | 46.40 | -6.70 |
+| Ryan Houseman | 2-0-7 | 6 | 9 | 36.78 | 49.56 | -12.78 |
+
+### Signature Games
+| Moment | Week | Opponent | Score | Opp Score | Margin |
+|---|---:|---:|---:|---:|---:|
+| Highest score | 2024-25 2 | Dylan Reid | 69 | 53 | +16 |
+| Lowest score | 2024-25 15 | Drake Byrd | 17 | 41 | -24 |
+| Biggest win | 2024-25 38 | Dylan Reid | 62 | 21 | +41 |
+| Worst loss | 2026-27 2 | Ryan Donlan | 23 | 83 | -60 |
+| Closest win | 2025-26 25 | Ethan Ellsworth | 41 | 40 | +1 |
+| Closest loss | 2025-26 17 | Ryan Houseman | 46 | 47 | -1 |
+| Best score in a loss | 2025-26 4 | Levi Morant | 59 | 62 | -3 |
+| Lowest score in a win | 2025-26 22 | Levi Morant | 34 | 29 | +5 |
+
+</details>
+
+<details>
+<summary><h2>Julius Long</h2></summary>
+
+Live career rank #9 with a 34-2-50 record through GW10 of 2026-27.
+
+### Snapshot
+| Metric | Value |
+|---|---:|
+| Cumulative Rank | 9 |
+| Record | 34-2-50 |
+| H2H Points | 104 |
+| H2H Points/GW | 1.21 |
+| Points For | 3376 |
+| Points Against | 3676 |
+| PF/GW | 39.26 |
+| PA/GW | 42.74 |
+| Avg Weekly Rank | 6.18 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 6 | 18-1-19 | 55 | 1533 | 1522 | 40.3 | 5 | 1 |
 | 2025-26 | 10 | 13-1-24 | 40 | 1453 | 1645 | 38.2 | 3 | 9 |
-| 2026-27 | 8 | 3-0-6 | 9 | 366 | 450 | 40.7 | 1 | 1 |
+| 2026-27 | 8 | 3-0-7 | 9 | 390 | 509 | 39.0 | 1 | 2 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Julius Long" data-formation="4-3-3" data-total="1673">
+<section class="manager-best-xi" data-manager-best-xi="Julius Long" data-formation="4-3-3" data-total="1674">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-3-3</span>
-<strong>1,673 contributed points</strong>
+<strong>1,674 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
@@ -3907,7 +4136,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Viktor Gyökeres</strong>
-<span class="manager-best-xi-points">135 pts</span>
+<span class="manager-best-xi-points">136 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
@@ -4054,12 +4283,12 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 6 | 1472.3 | -27.7 | 1554.6 | 7 | 1445.7 | 36 | 3.89 | 3 | 17 | 1 |
 | 2025-26 | 9 | 1419.0 | -81.0 | 1500.0 | 2 | 1412.8 | 34 | 8.63 | 0 | 0 | 34 |
-| 2026-27 | 8 | 1472.3 | -27.7 | 1488.0 | 1 | 1459.7 | 8 | 8.67 | 0 | 0 | 7 |
+| 2026-27 | 8 | 1461.7 | -38.3 | 1488.0 | 1 | 1459.7 | 8 | 8.60 | 0 | 0 | 8 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 39.44 | 6.14 | 12.07 | 10.6% | 21.2% | 40.0% | 60.0% | 40.0% | 12.9% | 2025-26 19 (75) | 2025-26 34 (18) |
+| 39.26 | 6.18 | 12.11 | 10.5% | 20.9% | 39.5% | 60.5% | 40.7% | 14.0% | 2025-26 19 (75) | 2025-26 34 (18) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
@@ -4075,7 +4304,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 | Drake Byrd | 4-0-5 | 12 | 9 | 46.33 | 46.44 | -0.11 |
 | Levi Morant | 4-0-5 | 12 | 9 | 33.44 | 40.11 | -6.67 |
 | Dylan Reid | 3-0-6 | 9 | 9 | 40.00 | 43.00 | -3.00 |
-| Luke Lockwood | 2-1-6 | 7 | 9 | 32.11 | 42.00 | -9.89 |
+| Luke Lockwood | 2-1-7 | 7 | 10 | 31.30 | 43.70 | -12.40 |
 | Justin Miller | 2-0-7 | 6 | 9 | 41.22 | 53.56 | -12.33 |
 | Ryan Donlan | 1-0-8 | 3 | 9 | 37.44 | 44.00 | -6.56 |
 
@@ -4094,266 +4323,37 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 </details>
 
 <details>
-<summary><h2>Alexander Chaban</h2></summary>
-
-Live career rank #9 with a 34-0-51 record through GW9 of 2026-27.
-
-### Snapshot
-| Metric | Value |
-|---|---:|
-| Cumulative Rank | 9 |
-| Record | 34-0-51 |
-| H2H Points | 102 |
-| H2H Points/GW | 1.20 |
-| Points For | 3374 |
-| Points Against | 3634 |
-| PF/GW | 39.69 |
-| PA/GW | 42.75 |
-| Avg Weekly Rank | 5.81 |
-
-### Season Splits
-| Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2024-25 | 9 | 14-0-24 | 42 | 1494 | 1585 | 39.3 | 4 | 8 |
-| 2025-26 | 8 | 14-0-24 | 42 | 1485 | 1692 | 39.1 | 3 | 5 |
-| 2026-27 | 1 | 6-0-3 | 18 | 395 | 357 | 43.9 | 0 | 2 |
-
-### All-Time Best XI
-The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
-
-<section class="manager-best-xi" data-manager-best-xi="Alexander Chaban" data-formation="3-4-3" data-total="1425">
-<header class="manager-best-xi-head">
-<span><strong>Best legal XI</strong> · 3-4-3</span>
-<strong>1,425 contributed points</strong>
-</header>
-<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
-<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
-<article class="manager-best-xi-player manager-best-xi-pos-fwd">
-<span>FWD</span>
-<strong>Dominic Solanke-Mitchell</strong>
-<span class="manager-best-xi-points">140 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-fwd">
-<span>FWD</span>
-<strong>Hugo Ekitiké</strong>
-<span class="manager-best-xi-points">125 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-fwd">
-<span>FWD</span>
-<strong>Cody Gakpo</strong>
-<span class="manager-best-xi-points">120 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Morgan Rogers</strong>
-<span class="manager-best-xi-points">219 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Antoine Semenyo</strong>
-<span class="manager-best-xi-points">165 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Phil Foden</strong>
-<span class="manager-best-xi-points">106 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Harvey Barnes</strong>
-<span class="manager-best-xi-points">104 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Micky van de Ven</strong>
-<span class="manager-best-xi-points">136 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Trevoh Chalobah</strong>
-<span class="manager-best-xi-points">114 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Pedro Porro Sauceda</strong>
-<span class="manager-best-xi-points">90 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
-<article class="manager-best-xi-player manager-best-xi-pos-gkp">
-<span>GKP</span>
-<strong>Dean Henderson</strong>
-<span class="manager-best-xi-points">106 pts</span>
-</article>
-</div>
-</div>
-</section>
-
-### Drafted Team
-Choose a season to see this manager's complete draft-day roster, grouped by position.
-
-<div class="manager-draft-view" data-manager-draft-view>
-<div class="manager-draft-tabs" role="tablist" aria-label="Draft season">
-<button type="button" class="manager-draft-button" data-manager-draft-year="2024-2025" aria-selected="false">24/25</button>
-<button type="button" class="manager-draft-button" data-manager-draft-year="2025-2026" aria-selected="false">25/26</button>
-<button type="button" class="manager-draft-button is-active" data-manager-draft-year="2026-2027" aria-selected="true">26/27</button>
-</div>
-<section class="manager-draft-panel" data-manager-draft-panel="2024-2025" hidden>
-<article class="current-roster-card manager-draft-card">
-<header class="current-roster-card-head"><strong>24/25 Draft</strong><span>2024–25 Draft Roster</span></header>
-<div class="table-wrap"><table>
-<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
-<tbody>
-<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Stefan Ortega Moreno</strong></td><td data-label="Club">MCI</td></tr>
-<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">CHE</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Benjamin White</strong></td><td data-label="Club">ARS</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Daniel Muñoz</strong></td><td data-label="Club">CRY</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Oleksandr Zinchenko</strong></td><td data-label="Club">ARS</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>João Cavaco Cancelo</strong></td><td data-label="Club">MCI</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Harry Maguire</strong></td><td data-label="Club">MUN</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Kevin De Bruyne</strong></td><td data-label="Club">MCI</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Bernardo Veiga de Carvalho e Silva</strong></td><td data-label="Club">MCI</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Pedro Lomba Neto</strong></td><td data-label="Club">CHE</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Raheem Sterling</strong></td><td data-label="Club">CHE</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alexis Mac Allister</strong></td><td data-label="Club">LIV</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Cody Gakpo</strong></td><td data-label="Club">LIV</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Julián Álvarez</strong></td><td data-label="Club">MCI</td></tr>
-</tbody></table></div>
-</article>
-</section>
-<section class="manager-draft-panel" data-manager-draft-panel="2025-2026" hidden>
-<article class="current-roster-card manager-draft-card">
-<header class="current-roster-card-head"><strong>25/26 Draft</strong><span>ChabosSpurs@Law</span></header>
-<div class="table-wrap"><table>
-<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
-<tbody>
-<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Dean Henderson</strong></td><td data-label="Club">CRY</td></tr>
-<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Đorđe Petrović</strong></td><td data-label="Club">BOU</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ola Aina</strong></td><td data-label="Club">NFO</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Tino Livramento</strong></td><td data-label="Club">NEW</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Micky van de Ven</strong></td><td data-label="Club">TOT</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro Sauceda</strong></td><td data-label="Club">TOT</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Trevoh Chalobah</strong></td><td data-label="Club">CHE</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Phil Foden</strong></td><td data-label="Club">MCI</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">AVL</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Enzo Fernández</strong></td><td data-label="Club">CHE</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Alexis Mac Allister</strong></td><td data-label="Club">LIV</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Harvey Barnes</strong></td><td data-label="Club">NEW</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Hugo Ekitiké</strong></td><td data-label="Club">LIV</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Dominic Solanke-Mitchell</strong></td><td data-label="Club">TOT</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Marc Guiu Paz</strong></td><td data-label="Club">CHE</td></tr>
-</tbody></table></div>
-</article>
-</section>
-<section class="manager-draft-panel is-active" data-manager-draft-panel="2026-2027">
-<article class="current-roster-card manager-draft-card">
-<header class="current-roster-card-head"><strong>26/27 Draft</strong><span>ChabosSpurs@Law</span></header>
-<div class="table-wrap"><table>
-<thead><tr><th>Pos</th><th>Player</th><th>Club</th></tr></thead>
-<tbody>
-<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>David Raya Martín</strong></td><td data-label="Club">ARS</td></tr>
-<tr class="current-roster-pos-gkp"><td data-label="Pos">GKP</td><td data-label="Player"><strong>Marco Bizot</strong></td><td data-label="Club">AVL</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Virgil van Dijk</strong></td><td data-label="Club">LIV</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Pedro Porro Sauceda</strong></td><td data-label="Club">TOT</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Ezri Konsa Ngoyo</strong></td><td data-label="Club">ARS</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Antonee Robinson</strong></td><td data-label="Club">FUL</td></tr>
-<tr class="current-roster-pos-def"><td data-label="Pos">DEF</td><td data-label="Player"><strong>Luka Vušković</strong></td><td data-label="Club">BHA</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Morgan Rogers</strong></td><td data-label="Club">CHE</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Jérémy Doku</strong></td><td data-label="Club">MCI</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mohammed Kudus</strong></td><td data-label="Club">TOT</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Mikkel Damsgaard</strong></td><td data-label="Club">BRE</td></tr>
-<tr class="current-roster-pos-mid"><td data-label="Pos">MID</td><td data-label="Player"><strong>Rayan Vitor Simplício Rocha</strong></td><td data-label="Club">BOU</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Brian Brobbey</strong></td><td data-label="Club">SUN</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Brian Madjo</strong></td><td data-label="Club">AVL</td></tr>
-<tr class="current-roster-pos-fwd"><td data-label="Pos">FWD</td><td data-label="Player"><strong>Liam Delap</strong></td><td data-label="Club">CHE</td></tr>
-</tbody></table></div>
-</article>
-</section>
-</div>
-
-### Power Rankings History
-Power ratings reset to 1500 at the start of each season, so these rows compare the manager's power-ranking path within each year.
-
-| Season | Final Rank | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Power Rank | Weeks #1 | Top 3 | Bottom 3 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2024-25 | 8 | 1448.4 | -51.6 | 1500.8 | 2 | 1420.0 | 33 | 8.87 | 0 | 0 | 34 |
-| 2025-26 | 10 | 1395.0 | -105.0 | 1537.5 | 25 | 1395.0 | 38 | 6.37 | 3 | 6 | 13 |
-| 2026-27 | 1 | 1536.5 | +36.5 | 1536.5 | 9 | 1476.8 | 2 | 4.22 | 2 | 3 | 1 |
-
-### Scoring Personality
-| PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 39.69 | 5.81 | 11.99 | 8.2% | 28.2% | 48.2% | 51.8% | 34.1% | 17.6% | 2024-25 2 (69) | 2024-25 15 (17) |
-
-### Streaks And Belt
-| Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 6 | 2025-26 20-25 | 15 | 2025-26 26 to 2026-27 2 | 2 | 4-7 | 36.4% | 2 | 4 |
-
-### Head-To-Head By Opponent
-| Opponent | Record | H2H Pts | Games | PF/GW | PA/GW | Margin/GW |
-|---|---:|---:|---:|---:|---:|---:|
-| Dylan Reid | 8-0-2 | 24 | 10 | 47.50 | 33.40 | +14.10 |
-| Drake Byrd | 6-0-4 | 18 | 10 | 39.80 | 36.80 | +3.00 |
-| Ethan Ellsworth | 4-0-5 | 12 | 9 | 39.56 | 43.56 | -4.00 |
-| Julius Long | 3-0-6 | 9 | 9 | 40.44 | 40.44 | +0.00 |
-| Levi Morant | 3-0-7 | 9 | 10 | 37.90 | 41.10 | -3.20 |
-| Luke Lockwood | 3-0-6 | 9 | 9 | 38.22 | 43.56 | -5.33 |
-| Ryan Donlan | 3-0-6 | 9 | 9 | 36.67 | 51.44 | -14.78 |
-| Justin Miller | 2-0-8 | 6 | 10 | 39.70 | 46.40 | -6.70 |
-| Ryan Houseman | 2-0-7 | 6 | 9 | 36.78 | 49.56 | -12.78 |
-
-### Signature Games
-| Moment | Week | Opponent | Score | Opp Score | Margin |
-|---|---:|---:|---:|---:|---:|
-| Highest score | 2024-25 2 | Dylan Reid | 69 | 53 | +16 |
-| Lowest score | 2024-25 15 | Drake Byrd | 17 | 41 | -24 |
-| Biggest win | 2024-25 38 | Dylan Reid | 62 | 21 | +41 |
-| Worst loss | 2026-27 2 | Ryan Donlan | 23 | 83 | -60 |
-| Closest win | 2025-26 25 | Ethan Ellsworth | 41 | 40 | +1 |
-| Closest loss | 2025-26 17 | Ryan Houseman | 46 | 47 | -1 |
-| Best score in a loss | 2025-26 4 | Levi Morant | 59 | 62 | -3 |
-| Lowest score in a win | 2025-26 22 | Levi Morant | 34 | 29 | +5 |
-
-</details>
-
-<details>
 <summary><h2>Ethan Ellsworth</h2></summary>
 
-Live career rank #10 with a 30-2-53 record through GW9 of 2026-27.
+Live career rank #10 with a 30-2-54 record through GW10 of 2026-27.
 
 ### Snapshot
 | Metric | Value |
 |---|---:|
 | Cumulative Rank | 10 |
-| Record | 30-2-53 |
+| Record | 30-2-54 |
 | H2H Points | 92 |
-| H2H Points/GW | 1.08 |
-| Points For | 3309 |
-| Points Against | 3591 |
-| PF/GW | 38.93 |
-| PA/GW | 42.25 |
-| Avg Weekly Rank | 5.92 |
+| H2H Points/GW | 1.07 |
+| Points For | 3352 |
+| Points Against | 3650 |
+| PF/GW | 38.98 |
+| PA/GW | 42.44 |
+| Avg Weekly Rank | 5.90 |
 
 ### Season Splits
 | Season | Rank | Record | H2H Pts | PF | PA | PF/GW | Top Scores | Bottom Scores |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 8 | 15-0-23 | 45 | 1450 | 1570 | 38.2 | 3 | 7 |
 | 2025-26 | 9 | 13-2-23 | 41 | 1506 | 1566 | 39.6 | 3 | 3 |
-| 2026-27 | 10 | 2-0-7 | 6 | 353 | 455 | 39.2 | 1 | 1 |
+| 2026-27 | 10 | 2-0-8 | 6 | 396 | 514 | 39.6 | 1 | 1 |
 
 ### All-Time Best XI
 The highest-scoring legal lineup built from points these players contributed while starting for this manager across all recorded seasons.
 
-<section class="manager-best-xi" data-manager-best-xi="Ethan Ellsworth" data-formation="4-5-1" data-total="1461">
+<section class="manager-best-xi" data-manager-best-xi="Ethan Ellsworth" data-formation="4-5-1" data-total="1472">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-5-1</span>
-<strong>1,461 contributed points</strong>
+<strong>1,472 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 1" aria-label="FWD">
@@ -4372,7 +4372,7 @@ The highest-scoring legal lineup built from points these players contributed whi
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Rayan Cherki</strong>
-<span class="manager-best-xi-points">161 pts</span>
+<span class="manager-best-xi-points">170 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -4403,13 +4403,13 @@ The highest-scoring legal lineup built from points these players contributed whi
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Marc Cucurella Saseta</strong>
-<span class="manager-best-xi-points">99 pts</span>
+<strong>Andrew Robertson</strong>
+<span class="manager-best-xi-points">100 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Andrew Robertson</strong>
-<span class="manager-best-xi-points">98 pts</span>
+<strong>Marc Cucurella Saseta</strong>
+<span class="manager-best-xi-points">99 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
@@ -4512,12 +4512,12 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2024-25 | 9 | 1441.3 | -58.6 | 1505.3 | 19 | 1421.2 | 35 | 7.39 | 0 | 0 | 19 |
 | 2025-26 | 8 | 1437.2 | -62.8 | 1534.4 | 3 | 1396.4 | 32 | 8.18 | 0 | 4 | 29 |
-| 2026-27 | 10 | 1445.7 | -54.3 | 1500.8 | 2 | 1445.7 | 9 | 7.78 | 0 | 0 | 6 |
+| 2026-27 | 10 | 1436.5 | -63.5 | 1500.8 | 2 | 1436.5 | 10 | 8.00 | 0 | 0 | 7 |
 
 ### Scoring Personality
 | PF/GW | Avg Weekly Rank | Score Stdev | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 | Best Week | Worst Week |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 38.93 | 5.92 | 10.42 | 8.2% | 24.7% | 47.1% | 52.9% | 35.3% | 12.9% | 2024-25 26 (76) | 2024-25 29 (13) |
+| 38.98 | 5.90 | 10.37 | 8.1% | 24.4% | 47.7% | 52.3% | 34.9% | 12.8% | 2024-25 26 (76) | 2024-25 29 (13) |
 
 ### Streaks And Belt
 | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) | Reigns | Belt Record | Belt Win % | Longest Defense Run | Weeks Holding |
@@ -4533,7 +4533,7 @@ Power ratings reset to 1500 at the start of each season, so these rows compare t
 | Luke Lockwood | 3-1-5 | 10 | 9 | 37.44 | 41.89 | -4.44 |
 | Ryan Donlan | 3-0-7 | 9 | 10 | 36.30 | 39.50 | -3.20 |
 | Justin Miller | 3-0-6 | 9 | 9 | 40.56 | 45.00 | -4.44 |
-| Drake Byrd | 3-0-7 | 9 | 10 | 34.40 | 42.70 | -8.30 |
+| Drake Byrd | 3-0-8 | 9 | 11 | 35.18 | 44.18 | -9.00 |
 | Ryan Houseman | 2-0-7 | 6 | 9 | 39.78 | 43.22 | -3.44 |
 | Dylan Reid | 0-0-9 | 0 | 9 | 35.00 | 45.33 | -10.33 |
 

@@ -2,7 +2,7 @@
 
 Live career totals covering every recorded season through the latest completed gameweek.
 
-<div class="live-career-warning" role="alert"><strong>LIVE CAREER TOTALS — THROUGH GW9 OF 2026/27</strong><span>The active season is incomplete. Career totals, ranks, averages, streaks, head-to-head records, belt records, and power ratings will change after each refresh.</span></div>
+<div class="live-career-warning" role="alert"><strong>LIVE CAREER TOTALS — THROUGH GW10 OF 2026/27</strong><span>The active season is incomplete. Career totals, ranks, averages, streaks, head-to-head records, belt records, and power ratings will change after each refresh.</span></div>
 
 Use the dropdown sections below to open or hide each metric.
 
@@ -10,8 +10,8 @@ Use the dropdown sections below to open or hide each metric.
 
 - **Cumulative Table Leader**: Ryan Donlan (178).
 - **Most Wins**: Ryan Donlan (59).
-- **Total PF King**: Ryan Donlan (3957).
-- **Best PF/GW**: Ryan Donlan (46.55).
+- **Total PF King**: Ryan Donlan (3987).
+- **Best PF/GW**: Ryan Donlan (46.36).
 - **Most Weekly Top Scores**: Justin Miller (20).
 
 <details open>
@@ -32,16 +32,16 @@ Use this as the live career table: total record, table points, points for, point
 
 | Rank | Manager | Seasons | Record | H2H Pts | Pts/GW | PF | PA | PF/GW | PA/GW | Avg Weekly Rank |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | Ryan Donlan | 3 | 59-1-25 | 178 | 2.09 | 3957 | 3251 | 46.55 | 38.25 | 4.45 |
-| 2 | Justin Miller | 3 | 55-1-29 | 166 | 1.95 | 3888 | 3612 | 45.74 | 42.49 | 4.26 |
-| 3 | Ryan Houseman | 3 | 46-0-39 | 138 | 1.62 | 3502 | 3330 | 41.20 | 39.18 | 5.54 |
-| 4 | Luke Lockwood | 3 | 44-4-37 | 136 | 1.60 | 3452 | 3335 | 40.61 | 39.24 | 5.69 |
-| 5 | Drake Byrd | 3 | 42-2-41 | 128 | 1.51 | 3504 | 3577 | 41.22 | 42.08 | 5.32 |
-| 6 | Levi Morant | 3 | 38-0-47 | 114 | 1.34 | 3398 | 3556 | 39.98 | 41.84 | 5.72 |
-| 7 | Dylan Reid | 3 | 36-2-47 | 110 | 1.29 | 3293 | 3526 | 38.74 | 41.48 | 6.15 |
-| 8 | Julius Long | 3 | 34-2-49 | 104 | 1.22 | 3352 | 3617 | 39.44 | 42.55 | 6.14 |
-| 9 | Alexander Chaban | 3 | 34-0-51 | 102 | 1.20 | 3374 | 3634 | 39.69 | 42.75 | 5.81 |
-| 10 | Ethan Ellsworth | 3 | 30-2-53 | 92 | 1.08 | 3309 | 3591 | 38.93 | 42.25 | 5.92 |
+| 1 | Ryan Donlan | 3 | 59-1-26 | 178 | 2.07 | 3987 | 3293 | 46.36 | 38.29 | 4.50 |
+| 2 | Justin Miller | 3 | 56-1-29 | 169 | 1.97 | 3930 | 3642 | 45.70 | 42.35 | 4.27 |
+| 3 | Ryan Houseman | 3 | 47-0-39 | 141 | 1.64 | 3539 | 3362 | 41.15 | 39.09 | 5.56 |
+| 4 | Luke Lockwood | 3 | 45-4-37 | 139 | 1.62 | 3511 | 3359 | 40.83 | 39.06 | 5.65 |
+| 5 | Drake Byrd | 3 | 43-2-41 | 131 | 1.52 | 3563 | 3620 | 41.43 | 42.09 | 5.28 |
+| 6 | Levi Morant | 3 | 38-0-48 | 114 | 1.33 | 3438 | 3615 | 39.98 | 42.03 | 5.73 |
+| 7 | Dylan Reid | 3 | 36-2-48 | 110 | 1.28 | 3325 | 3563 | 38.66 | 41.43 | 6.17 |
+| 8 | Alexander Chaban | 3 | 35-0-51 | 105 | 1.22 | 3433 | 3674 | 39.92 | 42.72 | 5.76 |
+| 9 | Julius Long | 3 | 34-2-50 | 104 | 1.21 | 3376 | 3676 | 39.26 | 42.74 | 6.18 |
+| 10 | Ethan Ellsworth | 3 | 30-2-54 | 92 | 1.07 | 3352 | 3650 | 38.98 | 42.44 | 5.90 |
 
 </details>
 
@@ -57,7 +57,7 @@ Use this as the live combined belt record book: total reigns, fight records, def
 - **Reigns** sums each manager's distinct career belt reigns.
 - **Belt Fight Record** is wins-losses across every matchup where that manager appeared in a belt fight.
 - **Weeks Holding** counts gameweeks where the manager finished the week holding the belt.
-- **Current Holder** refers to the latest holder through GW9 of 2026-27.
+- **Current Holder** refers to the latest holder through GW10 of 2026-27.
 - In the Week-By-Week Belt Path table, each row is tinted by the manager holding the belt after that gameweek.
 
 </details>
@@ -67,10 +67,10 @@ Use this as the live combined belt record book: total reigns, fight records, def
 | Ryan Donlan | 7 | 27-7 | 79.4% | 8 | 27 | 48.53 |  |
 | Drake Byrd | 6 | 10-12 | 45.5% | 3 | 10 | 39.77 |  |
 | Justin Miller | 4 | 14-9 | 60.9% | 6 | 14 | 48.52 |  |
+| Ryan Houseman | 4 | 9-6 | 60.0% | 3 | 9 | 46.27 | Yes |
 | Ethan Ellsworth | 4 | 6-16 | 27.3% | 2 | 6 | 37.91 |  |
 | Levi Morant | 4 | 4-8 | 33.3% | 1 | 4 | 38.08 |  |
-| Ryan Houseman | 3 | 8-6 | 57.1% | 3 | 8 | 46.93 |  |
-| Dylan Reid | 3 | 7-7 | 50.0% | 3 | 7 | 41.71 | Yes |
+| Dylan Reid | 3 | 7-8 | 46.7% | 3 | 7 | 41.07 |  |
 | Alexander Chaban | 2 | 4-7 | 36.4% | 2 | 4 | 35.45 |  |
 | Luke Lockwood | 2 | 3-6 | 33.3% | 1 | 3 | 37.67 |  |
 | Julius Long | 2 | 2-7 | 22.2% | 0 | 2 | 44.11 |  |
@@ -164,6 +164,7 @@ Use this as the live combined belt record book: total reigns, fight records, def
 | 7 | 2026-27 | Dylan Reid | Justin Miller | 54-53 | Dylan Reid |
 | 8 | 2026-27 | Dylan Reid | Drake Byrd | 64-39 | Dylan Reid |
 | 9 | 2026-27 | Dylan Reid | Ethan Ellsworth | 71-46 | Dylan Reid |
+| 10 | 2026-27 | Dylan Reid | Ryan Houseman | 32-37 | Ryan Houseman |
 
 </details>
 
@@ -186,16 +187,16 @@ Use this table as the career power-rankings view: it aggregates the season-reset
 
 | Power Rank | Manager | Avg Final Rating | Latest Rating | Latest Rank | Best Peak | Best Peak Week | Avg Power Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks | Total Net |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | Ryan Donlan | 1576.6 | 1501.6 | 7 | 1645.6 | 2024-25 33 | 2.35 | 47 | 65 | 4 | +229.7 |
-| 2 | Justin Miller | 1575.8 | 1509.7 | 6 | 1637.4 | 2024-25 37 | 3.85 | 4 | 50 | 8 | +227.5 |
-| 3 | Ryan Houseman | 1521.2 | 1509.8 | 5 | 1551.4 | 2024-25 36 | 4.99 | 1 | 23 | 8 | +63.7 |
-| 4 | Luke Lockwood | 1519.1 | 1514.1 | 4 | 1583.9 | 2025-26 18 | 5.07 | 10 | 36 | 24 | +57.3 |
-| 5 | Drake Byrd | 1505.2 | 1528.6 | 2 | 1558.1 | 2025-26 16 | 4.74 | 9 | 25 | 8 | +15.6 |
-| 6 | Levi Morant | 1483.5 | 1465.5 | 9 | 1576.5 | 2024-25 7 | 6.75 | 4 | 11 | 38 | -49.6 |
-| 7 | Dylan Reid | 1462.7 | 1516.2 | 3 | 1538.9 | 2025-26 33 | 5.68 | 2 | 15 | 21 | -111.9 |
-| 8 | Alexander Chaban | 1459.9 | 1536.5 | 1 | 1537.5 | 2025-26 25 | 7.26 | 5 | 9 | 48 | -120.2 |
-| 9 | Julius Long | 1454.5 | 1472.3 | 8 | 1554.6 | 2024-25 7 | 6.52 | 3 | 17 | 42 | -136.4 |
-| 10 | Ethan Ellsworth | 1441.4 | 1445.7 | 10 | 1534.4 | 2025-26 3 | 7.78 | 0 | 4 | 54 | -175.8 |
+| 1 | Justin Miller | 1579.8 | 1521.4 | 5 | 1637.4 | 2024-25 37 | 3.86 | 4 | 50 | 8 | +239.2 |
+| 2 | Ryan Donlan | 1572.7 | 1489.8 | 7 | 1645.6 | 2024-25 33 | 2.41 | 47 | 65 | 4 | +218.0 |
+| 3 | Ryan Houseman | 1525.3 | 1522.0 | 4 | 1551.4 | 2024-25 36 | 4.98 | 1 | 23 | 8 | +76.0 |
+| 4 | Luke Lockwood | 1522.6 | 1524.7 | 3 | 1583.9 | 2025-26 18 | 5.05 | 10 | 37 | 24 | +67.8 |
+| 5 | Drake Byrd | 1508.2 | 1537.8 | 2 | 1558.1 | 2025-26 16 | 4.71 | 9 | 26 | 8 | +24.8 |
+| 6 | Levi Morant | 1480.3 | 1456.0 | 9 | 1576.5 | 2024-25 7 | 6.78 | 4 | 11 | 39 | -59.2 |
+| 7 | Alexander Chaban | 1463.1 | 1546.1 | 1 | 1546.1 | 2026-27 10 | 7.19 | 6 | 10 | 48 | -110.6 |
+| 8 | Dylan Reid | 1458.6 | 1504.0 | 6 | 1538.9 | 2025-26 33 | 5.69 | 2 | 15 | 21 | -124.1 |
+| 9 | Julius Long | 1451.0 | 1461.7 | 8 | 1554.6 | 2024-25 7 | 6.53 | 3 | 17 | 43 | -146.9 |
+| 10 | Ethan Ellsworth | 1438.3 | 1436.5 | 10 | 1534.4 | 2025-26 3 | 7.81 | 0 | 4 | 55 | -185.0 |
 
 </details>
 
@@ -209,22 +210,22 @@ Use this as the live career matchup grid: each cell shows the row manager's reco
 
 - Records are shown as `wins-draws-losses` from the row manager's perspective.
 - The diagonal is shown as `-` because a manager cannot play themselves.
-- This combines the complete 2024-25 and 2025-26 schedules with 2026-27 through GW9.
+- This combines the complete 2024-25 and 2025-26 schedules with 2026-27 through GW10.
 
 </details>
 
-| Manager | Ryan Donlan | Justin Miller | Ryan Houseman | Luke Lockwood | Drake Byrd | Levi Morant | Dylan Reid | Julius Long | Alexander Chaban | Ethan Ellsworth |
+| Manager | Ryan Donlan | Justin Miller | Ryan Houseman | Luke Lockwood | Drake Byrd | Levi Morant | Dylan Reid | Alexander Chaban | Julius Long | Ethan Ellsworth |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Donlan | - | 9-0-0 | 4-0-5 | 6-0-4 | 6-0-4 | 6-0-3 | 7-1-2 | 8-0-1 | 6-0-3 | 7-0-3 |
-| Justin Miller | 0-0-9 | - | 10-0-0 | 7-0-3 | 4-1-4 | 6-0-4 | 7-0-2 | 7-0-2 | 8-0-2 | 6-0-3 |
-| Ryan Houseman | 5-0-4 | 0-0-10 | - | 5-0-4 | 7-0-3 | 6-0-3 | 5-0-4 | 4-0-7 | 7-0-2 | 7-0-2 |
-| Luke Lockwood | 4-0-6 | 3-0-7 | 4-0-5 | - | 5-1-3 | 6-0-4 | 5-1-4 | 6-1-2 | 6-0-3 | 5-1-3 |
-| Drake Byrd | 4-0-6 | 4-1-4 | 3-0-7 | 3-1-5 | - | 4-0-5 | 8-0-1 | 5-0-4 | 4-0-6 | 7-0-3 |
-| Levi Morant | 3-0-6 | 4-0-6 | 3-0-6 | 4-0-6 | 5-0-4 | - | 4-0-6 | 5-0-4 | 7-0-3 | 3-0-6 |
-| Dylan Reid | 2-1-7 | 2-0-7 | 4-0-5 | 4-1-5 | 1-0-8 | 6-0-4 | - | 6-0-3 | 2-0-8 | 9-0-0 |
-| Julius Long | 1-0-8 | 2-0-7 | 7-0-4 | 2-1-6 | 4-0-5 | 4-0-5 | 3-0-6 | - | 6-0-3 | 5-1-5 |
-| Alexander Chaban | 3-0-6 | 2-0-8 | 2-0-7 | 3-0-6 | 6-0-4 | 3-0-7 | 8-0-2 | 3-0-6 | - | 4-0-5 |
-| Ethan Ellsworth | 3-0-7 | 3-0-6 | 2-0-7 | 3-1-5 | 3-0-7 | 6-0-3 | 0-0-9 | 5-1-5 | 5-0-4 | - |
+| Ryan Donlan | - | 9-0-1 | 4-0-5 | 6-0-4 | 6-0-4 | 6-0-3 | 7-1-2 | 6-0-3 | 8-0-1 | 7-0-3 |
+| Justin Miller | 1-0-9 | - | 10-0-0 | 7-0-3 | 4-1-4 | 6-0-4 | 7-0-2 | 8-0-2 | 7-0-2 | 6-0-3 |
+| Ryan Houseman | 5-0-4 | 0-0-10 | - | 5-0-4 | 7-0-3 | 6-0-3 | 6-0-4 | 7-0-2 | 4-0-7 | 7-0-2 |
+| Luke Lockwood | 4-0-6 | 3-0-7 | 4-0-5 | - | 5-1-3 | 6-0-4 | 5-1-4 | 6-0-3 | 7-1-2 | 5-1-3 |
+| Drake Byrd | 4-0-6 | 4-1-4 | 3-0-7 | 3-1-5 | - | 4-0-5 | 8-0-1 | 4-0-6 | 5-0-4 | 8-0-3 |
+| Levi Morant | 3-0-6 | 4-0-6 | 3-0-6 | 4-0-6 | 5-0-4 | - | 4-0-6 | 7-0-4 | 5-0-4 | 3-0-6 |
+| Dylan Reid | 2-1-7 | 2-0-7 | 4-0-6 | 4-1-5 | 1-0-8 | 6-0-4 | - | 2-0-8 | 6-0-3 | 9-0-0 |
+| Alexander Chaban | 3-0-6 | 2-0-8 | 2-0-7 | 3-0-6 | 6-0-4 | 4-0-7 | 8-0-2 | - | 3-0-6 | 4-0-5 |
+| Julius Long | 1-0-8 | 2-0-7 | 7-0-4 | 2-1-7 | 4-0-5 | 4-0-5 | 3-0-6 | 6-0-3 | - | 5-1-5 |
+| Ethan Ellsworth | 3-0-7 | 3-0-6 | 2-0-7 | 3-1-5 | 3-0-8 | 6-0-3 | 0-0-9 | 5-0-4 | 5-1-5 | - |
 
 </details>
 
@@ -245,16 +246,16 @@ Use this table to separate raw scoring strength from the H2H table: who scored t
 
 | Manager | PF | PF/GW | Avg Weekly Rank | Top Scores | Bottom Scores | Best Week | Worst Week | Score Stdev |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Donlan | 3957 | 46.55 | 4.45 | 12 | 5 | 2025-26 33 (103) | 2024-25 8 (19) | 15.06 |
-| Justin Miller | 3888 | 45.74 | 4.26 | 20 | 5 | 2024-25 24 (80) | 2025-26 14 (22) | 11.67 |
-| Drake Byrd | 3504 | 41.22 | 5.32 | 9 | 4 | 2026-27 2 (82) | 2025-26 18 (16) | 11.90 |
-| Ryan Houseman | 3502 | 41.20 | 5.54 | 9 | 11 | 2024-25 22 (81) | 2024-25 6 (22) | 13.37 |
-| Luke Lockwood | 3452 | 40.61 | 5.69 | 6 | 8 | 2024-25 33 (76) | 2025-26 5 (21) | 12.03 |
-| Levi Morant | 3398 | 39.98 | 5.72 | 10 | 12 | 2024-25 32 (75) | 2025-26 5 (20) | 11.60 |
-| Alexander Chaban | 3374 | 39.69 | 5.81 | 7 | 15 | 2024-25 2 (69) | 2024-25 15 (17) | 11.99 |
-| Julius Long | 3352 | 39.44 | 6.14 | 9 | 11 | 2025-26 19 (75) | 2025-26 34 (18) | 12.07 |
-| Ethan Ellsworth | 3309 | 38.93 | 5.92 | 7 | 11 | 2024-25 26 (76) | 2024-25 29 (13) | 10.42 |
-| Dylan Reid | 3293 | 38.74 | 6.15 | 6 | 9 | 2026-27 9 (71) | 2024-25 3 (20) | 10.72 |
+| Ryan Donlan | 3987 | 46.36 | 4.50 | 12 | 5 | 2025-26 33 (103) | 2024-25 8 (19) | 15.08 |
+| Justin Miller | 3930 | 45.70 | 4.27 | 20 | 5 | 2024-25 24 (80) | 2025-26 14 (22) | 11.61 |
+| Drake Byrd | 3563 | 41.43 | 5.28 | 10 | 4 | 2026-27 2 (82) | 2025-26 18 (16) | 11.99 |
+| Ryan Houseman | 3539 | 41.15 | 5.56 | 9 | 11 | 2024-25 22 (81) | 2024-25 6 (22) | 13.30 |
+| Luke Lockwood | 3511 | 40.83 | 5.65 | 7 | 8 | 2024-25 33 (76) | 2025-26 5 (21) | 12.12 |
+| Levi Morant | 3438 | 39.98 | 5.73 | 10 | 12 | 2024-25 32 (75) | 2025-26 5 (20) | 11.53 |
+| Alexander Chaban | 3433 | 39.92 | 5.76 | 8 | 15 | 2024-25 2 (69) | 2024-25 15 (17) | 12.10 |
+| Julius Long | 3376 | 39.26 | 6.18 | 9 | 12 | 2025-26 19 (75) | 2025-26 34 (18) | 12.11 |
+| Ethan Ellsworth | 3352 | 38.98 | 5.90 | 7 | 11 | 2024-25 26 (76) | 2024-25 29 (13) | 10.37 |
+| Dylan Reid | 3325 | 38.66 | 6.17 | 6 | 9 | 2026-27 9 (71) | 2024-25 3 (20) | 10.68 |
 
 </details>
 
@@ -276,16 +277,16 @@ Use this table to see how often each manager landed in the top or bottom scoring
 
 | Manager | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
 |---|---:|---:|---:|---:|---:|---:|
-| Justin Miller | 23.5% | 44.7% | 72.9% | 27.1% | 17.6% | 5.9% |
-| Ryan Donlan | 14.1% | 44.7% | 69.4% | 30.6% | 18.8% | 5.9% |
-| Levi Morant | 11.8% | 23.5% | 47.1% | 52.9% | 28.2% | 14.1% |
-| Ryan Houseman | 10.6% | 30.6% | 52.9% | 47.1% | 30.6% | 12.9% |
-| Drake Byrd | 10.6% | 29.4% | 54.1% | 45.9% | 25.9% | 4.7% |
-| Julius Long | 10.6% | 21.2% | 40.0% | 60.0% | 40.0% | 12.9% |
-| Alexander Chaban | 8.2% | 28.2% | 48.2% | 51.8% | 34.1% | 17.6% |
-| Ethan Ellsworth | 8.2% | 24.7% | 47.1% | 52.9% | 35.3% | 12.9% |
-| Luke Lockwood | 7.1% | 32.9% | 48.2% | 51.8% | 35.3% | 9.4% |
-| Dylan Reid | 7.1% | 29.4% | 37.6% | 62.4% | 44.7% | 10.6% |
+| Justin Miller | 23.3% | 44.2% | 73.3% | 26.7% | 17.4% | 5.8% |
+| Ryan Donlan | 14.0% | 44.2% | 68.6% | 31.4% | 19.8% | 5.8% |
+| Drake Byrd | 11.6% | 30.2% | 54.7% | 45.3% | 25.6% | 4.7% |
+| Levi Morant | 11.6% | 23.3% | 46.5% | 53.5% | 27.9% | 14.0% |
+| Ryan Houseman | 10.5% | 30.2% | 52.3% | 47.7% | 30.2% | 12.8% |
+| Julius Long | 10.5% | 20.9% | 39.5% | 60.5% | 40.7% | 14.0% |
+| Alexander Chaban | 9.3% | 29.1% | 48.8% | 51.2% | 33.7% | 17.4% |
+| Luke Lockwood | 8.1% | 33.7% | 48.8% | 51.2% | 34.9% | 9.3% |
+| Ethan Ellsworth | 8.1% | 24.4% | 47.7% | 52.3% | 34.9% | 12.8% |
+| Dylan Reid | 7.0% | 29.1% | 37.2% | 62.8% | 45.3% | 10.5% |
 
 </details>
 
@@ -305,7 +306,7 @@ Use this table to see the longest H2H winning and losing runs across the full li
 
 | Manager | Longest Win Streak | Win Week(s) | Longest Loss Streak | Loss Week(s) |
 |---|---:|---:|---:|---:|
-| Ryan Donlan | 16 | 2025-26 28 to 2026-27 5 | 4 | 2024-25 34-37, 2026-27 6-9 |
+| Ryan Donlan | 16 | 2025-26 28 to 2026-27 5 | 5 | 2026-27 6-10 |
 | Justin Miller | 8 | 2024-25 24-31 | 4 | 2025-26 5-8 |
 | Levi Morant | 7 | 2024-25 1-7 | 5 | 2024-25 8-12 |
 | Luke Lockwood | 7 | 2024-25 27-33 | 5 | 2024-25 1-5 |
@@ -355,7 +356,7 @@ Use this table as the live career superlatives board through the active-season c
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
 
-- Awards include 2026-27 results through GW9 and will change as the season progresses.
+- Awards include 2026-27 results through GW10 and will change as the season progresses.
 - Ties are shown as multiple managers in the same row.
 - Raw totals and rate statistics include every completed career gameweek currently available.
 
@@ -365,13 +366,13 @@ Use this table as the live career superlatives board through the active-season c
 |---|---:|---:|---:|
 | Cumulative Table Leader | Ryan Donlan | 178 | Most combined H2H table points. |
 | Most Wins | Ryan Donlan | 59 | Most combined H2H wins. |
-| Total PF King | Ryan Donlan | 3957 | Most total starter points scored. |
-| Best PF/GW | Ryan Donlan | 46.55 | Best live career scoring average. |
+| Total PF King | Ryan Donlan | 3987 | Most total starter points scored. |
+| Best PF/GW | Ryan Donlan | 46.36 | Best live career scoring average. |
 | Most Weekly Top Scores | Justin Miller | 20 | Most weeks finishing as the league's top scorer. |
-| Most Top-5 Weeks | Justin Miller | 72.9% (62/85) | Best broad week-to-week scoring band. |
+| Most Top-5 Weeks | Justin Miller | 73.3% (63/86) | Best broad week-to-week scoring band. |
 | Longest Win Streak | Ryan Donlan | 16 | Longest run of consecutive H2H wins, allowing streaks to span seasons. |
 | Lineal Belt Reigns | Ryan Donlan | 7 | Most distinct career lineal belt reigns. |
-| Boom/Bust Scorer | Ryan Donlan | 15.06 | Highest weekly scoring standard deviation. |
+| Boom/Bust Scorer | Ryan Donlan | 15.08 | Highest weekly scoring standard deviation. |
 | Most Improved PF/GW | Dylan Reid | +7.2 | Largest scoring-average gain from 2024-25 to 2025-26. |
 | Biggest Rank Jump | Dylan Reid | +4 | Positive means the 2025-26 rank is better than the 2024-25 rank. |
 

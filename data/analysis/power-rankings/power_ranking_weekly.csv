@@ -849,3 +849,13 @@ season,week,week_label,manager,rank,rating,rating_before,rating_change,opponent,
 2026-27,9,2026-27 9,Julius Long,8,1472.3,1459.66,12.64,Levi Morant,W,40,37
 2026-27,9,2026-27 9,Levi Morant,9,1465.53,1478.17,-12.64,Julius Long,L,37,40
 2026-27,9,2026-27 9,Ethan Ellsworth,10,1445.69,1455.97,-10.29,Dylan Reid,L,46,71
+2026-27,10,2026-27 10,Alexander Chaban,1,1546.08,1536.5,9.58,Levi Morant,W,59,40
+2026-27,10,2026-27 10,Drake Byrd,2,1537.76,1528.57,9.19,Ethan Ellsworth,W,59,43
+2026-27,10,2026-27 10,Luke Lockwood,3,1524.67,1514.11,10.56,Julius Long,W,59,24
+2026-27,10,2026-27 10,Ryan Houseman,4,1522.02,1509.8,12.22,Dylan Reid,W,37,32
+2026-27,10,2026-27 10,Justin Miller,5,1521.41,1509.69,11.72,Ryan Donlan,W,42,30
+2026-27,10,2026-27 10,Dylan Reid,6,1504.02,1516.25,-12.22,Ryan Houseman,L,32,37
+2026-27,10,2026-27 10,Ryan Donlan,7,1489.85,1501.57,-11.72,Justin Miller,L,30,42
+2026-27,10,2026-27 10,Julius Long,8,1461.74,1472.3,-10.56,Luke Lockwood,L,24,59
+2026-27,10,2026-27 10,Levi Morant,9,1455.95,1465.53,-9.58,Alexander Chaban,L,40,59
+2026-27,10,2026-27 10,Ethan Ellsworth,10,1436.5,1445.69,-9.19,Drake Byrd,L,43,59
