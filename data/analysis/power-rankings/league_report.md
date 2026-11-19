@@ -118,6 +118,18 @@ Use the tabs to switch between seasons. Each season has its own rating chart, fi
 <rect class="rating-hover-zone" x="761.0" y="28" width="82.0" height="370" data-tooltip="Week 9&#10;1. Alexander Chaban: 1536.5&#10;2. Drake Byrd: 1528.6&#10;3. Dylan Reid: 1516.2&#10;4. Luke Lockwood: 1514.1&#10;5. Ryan Houseman: 1509.8&#10;6. Justin Miller: 1509.7&#10;7. Ryan Donlan: 1501.6&#10;8. Julius Long: 1472.3&#10;9. Levi Morant: 1465.5&#10;10. Ethan Ellsworth: 1445.7" data-week="9" />
 <rect class="rating-hover-zone" x="843.0" y="28" width="41.0" height="370" data-tooltip="Week 10&#10;1. Alexander Chaban: 1546.1&#10;2. Drake Byrd: 1537.8&#10;3. Luke Lockwood: 1524.7&#10;4. Ryan Houseman: 1522.0&#10;5. Justin Miller: 1521.4&#10;6. Dylan Reid: 1504.0&#10;7. Ryan Donlan: 1489.8&#10;8. Julius Long: 1461.7&#10;9. Levi Morant: 1456.0&#10;10. Ethan Ellsworth: 1436.5" data-week="10" />
 </svg>
+<div class="power-chart-legend" aria-label="Power ranking chart managers">
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(44 76% 38%)"></span>Ryan Donlan</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(352 76% 38%)"></span>Justin Miller</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(12 76% 38%)"></span>Ryan Houseman</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(266 76% 38%)"></span>Luke Lockwood</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(154 76% 38%)"></span>Drake Byrd</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(118 76% 38%)"></span>Levi Morant</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(292 76% 38%)"></span>Dylan Reid</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(28 76% 38%)"></span>Alexander Chaban</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(224 76% 38%)"></span>Julius Long</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(78 76% 38%)"></span>Ethan Ellsworth</span>
+</div>
 </div>
 ### 2026-27 Power Rankings
 | Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
@@ -163,16 +175,6 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 | 8 | Dylan Reid | Drake Byrd | 37.3 | 1492.7 | 1530.0 | 64-39 |
 | 2 | Ethan Ellsworth | Luke Lockwood | 24.0 | 1488.0 | 1512.0 | 47-44 |
 | 6 | Julius Long | Ethan Ellsworth | 22.4 | 1468.7 | 1491.1 | 65-34 |
-| 3 | Alexander Chaban | Luke Lockwood | 22.3 | 1476.8 | 1499.2 | 52-31 |
-| 9 | Luke Lockwood | Justin Miller | 21.0 | 1501.4 | 1522.4 | 48-34 |
-| 9 | Julius Long | Levi Morant | 18.5 | 1459.7 | 1478.2 | 40-37 |
-| 10 | Ryan Houseman | Dylan Reid | 6.4 | 1509.8 | 1516.2 | 37-32 |
-| 6 | Luke Lockwood | Levi Morant | 2.1 | 1487.3 | 1489.5 | 60-34 |
-| 7 | Levi Morant | Ethan Ellsworth | 1.0 | 1477.4 | 1478.4 | 37-31 |
-| 3 | Drake Byrd | Ryan Houseman | 0.8 | 1523.2 | 1524.0 | 39-34 |
-| 4 | Justin Miller | Ethan Ellsworth | 0.8 | 1488.8 | 1489.6 | 55-47 |
-| 5 | Luke Lockwood | Dylan Reid | 0.8 | 1475.3 | 1476.1 | 40-34 |
-| 5 | Justin Miller | Alexander Chaban | 0.7 | 1500.8 | 1501.5 | 48-44 |
 
 </section>
 <section class="power-tab-panel" id="power-panel-2025-26" role="tabpanel" aria-labelledby="power-season-2025-26-label">
@@ -309,6 +311,18 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 <rect class="rating-hover-zone" x="851.6" y="28" width="21.6" height="370" data-tooltip="Week 37&#10;1. Ryan Donlan: 1634.3&#10;2. Justin Miller: 1587.1&#10;3. Luke Lockwood: 1527.2&#10;4. Ryan Houseman: 1517.8&#10;5. Drake Byrd: 1508.4&#10;6. Dylan Reid: 1492.0&#10;7. Levi Morant: 1458.7&#10;8. Ethan Ellsworth: 1443.2&#10;9. Julius Long: 1428.0&#10;10. Alexander Chaban: 1403.5" data-week="37" />
 <rect class="rating-hover-zone" x="873.2" y="28" width="10.8" height="370" data-tooltip="Week 38&#10;1. Ryan Donlan: 1640.3&#10;2. Justin Miller: 1597.0&#10;3. Ryan Houseman: 1526.8&#10;4. Luke Lockwood: 1517.2&#10;5. Drake Byrd: 1516.9&#10;6. Dylan Reid: 1478.8&#10;7. Levi Morant: 1471.8&#10;8. Ethan Ellsworth: 1437.2&#10;9. Julius Long: 1419.0&#10;10. Alexander Chaban: 1395.0" data-week="38" />
 </svg>
+<div class="power-chart-legend" aria-label="Power ranking chart managers">
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(44 76% 38%)"></span>Ryan Donlan</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(352 76% 38%)"></span>Justin Miller</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(12 76% 38%)"></span>Ryan Houseman</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(266 76% 38%)"></span>Luke Lockwood</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(154 76% 38%)"></span>Drake Byrd</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(118 76% 38%)"></span>Levi Morant</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(292 76% 38%)"></span>Dylan Reid</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(28 76% 38%)"></span>Alexander Chaban</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(224 76% 38%)"></span>Julius Long</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(78 76% 38%)"></span>Ethan Ellsworth</span>
+</div>
 </div>
 ### 2025-26 Power Rankings
 | Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
@@ -354,16 +368,6 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 | 33 | Ethan Ellsworth | Levi Morant | 87.2 | 1396.4 | 1483.6 | 60-34 |
 | 27 | Levi Morant | Ryan Donlan | 83.2 | 1477.5 | 1560.8 | 66-48 |
 | 21 | Ethan Ellsworth | Justin Miller | 83.1 | 1450.5 | 1533.6 | 51-35 |
-| 25 | Ryan Houseman | Ryan Donlan | 81.6 | 1482.5 | 1564.0 | 39-30 |
-| 25 | Julius Long | Luke Lockwood | 75.0 | 1451.2 | 1526.2 | 49-34 |
-| 11 | Alexander Chaban | Drake Byrd | 71.6 | 1472.0 | 1543.5 | 42-39 |
-| 4 | Levi Morant | Alexander Chaban | 71.2 | 1464.8 | 1536.0 | 62-59 |
-| 27 | Julius Long | Alexander Chaban | 69.3 | 1454.9 | 1524.1 | 44-37 |
-| 13 | Dylan Reid | Luke Lockwood | 68.3 | 1494.4 | 1562.7 | 45-38 |
-| 23 | Alexander Chaban | Ryan Donlan | 67.7 | 1500.8 | 1568.5 | 36-34 |
-| 9 | Justin Miller | Dylan Reid | 67.1 | 1455.2 | 1522.4 | 31-23 |
-| 18 | Julius Long | Alexander Chaban | 58.0 | 1429.3 | 1487.4 | 43-32 |
-| 24 | Ryan Houseman | Dylan Reid | 56.4 | 1468.5 | 1524.9 | 59-54 |
 
 </section>
 <section class="power-tab-panel" id="power-panel-2024-25" role="tabpanel" aria-labelledby="power-season-2024-25-label">
@@ -500,6 +504,18 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 <rect class="rating-hover-zone" x="851.6" y="28" width="21.6" height="370" data-tooltip="Week 37&#10;1. Justin Miller: 1637.4&#10;2. Ryan Donlan: 1577.2&#10;3. Ryan Houseman: 1542.0&#10;4. Luke Lockwood: 1536.5&#10;5. Levi Morant: 1496.5&#10;6. Drake Byrd: 1484.0&#10;7. Julius Long: 1457.5&#10;8. Alexander Chaban: 1437.5&#10;9. Ethan Ellsworth: 1427.4&#10;10. Dylan Reid: 1403.9" data-week="37" />
 <rect class="rating-hover-zone" x="873.2" y="28" width="10.8" height="370" data-tooltip="Week 38&#10;1. Justin Miller: 1620.8&#10;2. Ryan Donlan: 1587.8&#10;3. Ryan Houseman: 1527.1&#10;4. Luke Lockwood: 1525.9&#10;5. Levi Morant: 1513.1&#10;6. Julius Long: 1472.3&#10;7. Drake Byrd: 1470.1&#10;8. Alexander Chaban: 1448.4&#10;9. Ethan Ellsworth: 1441.3&#10;10. Dylan Reid: 1393.1" data-week="38" />
 </svg>
+<div class="power-chart-legend" aria-label="Power ranking chart managers">
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(44 76% 38%)"></span>Ryan Donlan</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(352 76% 38%)"></span>Justin Miller</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(12 76% 38%)"></span>Ryan Houseman</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(266 76% 38%)"></span>Luke Lockwood</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(154 76% 38%)"></span>Drake Byrd</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(118 76% 38%)"></span>Levi Morant</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(292 76% 38%)"></span>Dylan Reid</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(28 76% 38%)"></span>Alexander Chaban</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(224 76% 38%)"></span>Julius Long</span>
+<span class="power-chart-legend-item"><span class="power-chart-legend-swatch" style="background:hsl(78 76% 38%)"></span>Ethan Ellsworth</span>
+</div>
 </div>
 ### 2024-25 Power Rankings
 | Rank | Manager | Final Rating | Net | Peak | Peak Week | Low | Low Week | Avg Rank | Weeks #1 | Top 3 Weeks | Bottom 3 Weeks |
@@ -545,16 +561,6 @@ These are the largest pre-game rating gaps where the lower-rated manager beat th
 | 21 | Julius Long | Ryan Donlan | 119.2 | 1497.6 | 1616.7 | 46-32 |
 | 36 | Alexander Chaban | Luke Lockwood | 111.7 | 1432.5 | 1544.2 | 41-33 |
 | 17 | Alexander Chaban | Justin Miller | 109.0 | 1425.2 | 1534.3 | 53-48 |
-| 23 | Levi Morant | Ryan Houseman | 108.8 | 1436.0 | 1544.9 | 53-33 |
-| 10 | Ethan Ellsworth | Julius Long | 103.8 | 1448.7 | 1552.5 | 42-28 |
-| 10 | Alexander Chaban | Levi Morant | 101.2 | 1446.2 | 1547.4 | 66-40 |
-| 35 | Ryan Houseman | Ryan Donlan | 100.6 | 1526.2 | 1626.8 | 38-28 |
-| 38 | Julius Long | Ryan Houseman | 84.5 | 1457.5 | 1542.0 | 34-24 |
-| 8 | Luke Lockwood | Julius Long | 84.4 | 1470.2 | 1554.6 | 38-29 |
-| 32 | Levi Morant | Ryan Houseman | 80.5 | 1441.9 | 1522.3 | 75-39 |
-| 21 | Drake Byrd | Justin Miller | 71.4 | 1480.2 | 1551.6 | 60-38 |
-| 10 | Drake Byrd | Ryan Donlan | 71.3 | 1477.8 | 1549.1 | 32-30 |
-| 18 | Levi Morant | Julius Long | 67.7 | 1469.1 | 1536.7 | 56-40 |
 
 </section>
 </div>
