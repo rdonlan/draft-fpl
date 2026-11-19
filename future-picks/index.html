@@ -2158,7 +2158,7 @@
     .rating-chart {
       display: block;
       width: 100%;
-      min-width: 980px;
+      min-width: 920px;
       height: auto;
       background: var(--paper);
     }
@@ -2166,8 +2166,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px 18px;
-      padding: 12px 16px;
-      border-top: 1px solid var(--line);
+      margin: -18px 0 24px;
       font-size: 0.82rem;
     }
     .power-chart-legend-item {
@@ -6024,6 +6023,15 @@
 (() => {
   const tooltip = document.querySelector(".rating-tooltip");
   if (!tooltip) return;
+  let pinnedZone = null;
+  let dismissTimer = null;
+
+  const hideTooltip = () => {
+    tooltip.classList.remove("is-visible");
+    pinnedZone = null;
+    if (dismissTimer) clearTimeout(dismissTimer);
+    dismissTimer = null;
+  };
 
   const moveTooltip = (event) => {
     const offset = 14;
@@ -6042,13 +6050,28 @@
 
   document.querySelectorAll(".rating-hover-zone").forEach((zone) => {
     zone.addEventListener("mouseenter", (event) => {
+      if (pinnedZone) return;
       tooltip.textContent = zone.dataset.tooltip || "";
       tooltip.classList.add("is-visible");
       moveTooltip(event);
     });
-    zone.addEventListener("mousemove", moveTooltip);
+    zone.addEventListener("mousemove", (event) => {
+      if (!pinnedZone) moveTooltip(event);
+    });
     zone.addEventListener("mouseleave", () => {
-      tooltip.classList.remove("is-visible");
+      if (!pinnedZone) hideTooltip();
+    });
+    zone.addEventListener("click", (event) => {
+      if (pinnedZone === zone) {
+        hideTooltip();
+        return;
+      }
+      if (dismissTimer) clearTimeout(dismissTimer);
+      pinnedZone = zone;
+      tooltip.textContent = zone.dataset.tooltip || "";
+      tooltip.classList.add("is-visible");
+      moveTooltip(event);
+      dismissTimer = setTimeout(hideTooltip, 5000);
     });
   });
 })();
