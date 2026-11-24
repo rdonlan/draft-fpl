@@ -2162,6 +2162,96 @@
       height: auto;
       background: var(--paper);
     }
+    .global-history {
+      margin: 18px 18px 26px;
+    }
+    .global-history-controls {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .global-history-view {
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .global-history-view.is-active {
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .global-manager-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .global-manager-label select {
+      max-width: 100%;
+      padding: 7px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .global-history [hidden] { display: none !important; }
+    .global-history-delta {
+      color: var(--ink);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .global-history .table-wrap table {
+      min-width: 0;
+      font-size: 0.85rem;
+    }
+    .global-history [data-global-panel="week"] table { min-width: 610px; }
+    .global-history [data-global-panel="manager"] table { min-width: 610px; }
+    .global-history [data-global-panel="league"] table { min-width: 610px; }
+    .global-history .table-wrap th,
+    .global-history .table-wrap td {
+      padding: 8px;
+      white-space: nowrap;
+    }
+    .global-percentile-chart {
+      margin-top: 14px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .global-percentile-chart svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .global-chart-grid { stroke: var(--line); stroke-width: 1; }
+    .global-chart-label { fill: var(--muted); font-size: 12px; }
+    .global-chart-line {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .global-chart-point {
+      fill: var(--accent);
+      stroke: var(--paper);
+      stroke-width: 1.5;
+    }
+    .global-chart-estimated-line { stroke-dasharray: 6 5; }
+    .global-chart-estimated-point {
+      fill: var(--paper);
+      stroke: var(--accent);
+      stroke-width: 3;
+    }
+    .global-chart-note {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
     .power-chart-legend {
       display: flex;
       flex-wrap: wrap;
@@ -3267,6 +3357,10 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+      .global-history {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
       .power-tab-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3979,6 +4073,681 @@
 <tr><td data-label="Global Rank">24,853</td><td data-label="Team"><code>Amorim de mi vida</code></td><td data-label="Manager">Julius Long</td><td data-label="PF">430</td><td data-label="Percentile">37.9%</td></tr>
 <tr><td data-label="Global Rank">25,403</td><td data-label="Team"><code>*Saka It To Me Baby</code></td><td data-label="Manager">Levi Morant</td><td data-label="PF">428</td><td data-label="Percentile">36.5%</td></tr>
 </tbody></table></div>
+<h3>Global ranking history</h3>
+<p>Ranks and percentiles are cumulative through each gameweek; changes compare with the previous GW. Percentile changes are percentage points (pp). GW6 manager ranks are estimates from GW5/GW7 ranks and relative GW6/GW7 scores, marked ~ and shown as hollow points with dashed lines. Changes involving an estimate are left blank. GW3 and GW4 manager ranks were not saved. Future snapshots will be retained automatically.</p>
+<div class="global-history" data-global-history>
+<div class="global-history-controls" role="group" aria-label="Explore ranking history">
+<button type="button" class="global-history-view is-active" data-global-view="week" aria-pressed="true">By week</button>
+<button type="button" class="global-history-view" data-global-view="manager" aria-pressed="false">By manager</button>
+<button type="button" class="global-history-view" data-global-view="league" aria-pressed="false">League</button>
+</div>
+<div data-global-panel="week">
+<label class="global-manager-label" for="global-week-select">Gameweek <select id="global-week-select" data-global-week-select>
+<option value="11">GW11</option>
+<option value="10">GW10</option>
+<option value="9">GW9</option>
+<option value="8">GW8</option>
+<option value="7">GW7</option>
+<option value="6">GW6</option>
+<option value="5">GW5</option>
+<option value="4">GW4</option>
+<option value="3">GW3</option>
+</select></label>
+<div data-global-week-panel="11">
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Global rank">6,325 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,177</span></td><td data-label="Percentile">84.2%</td><td data-label="% change"><span class="global-history-delta">↓ 2.9 pp</span></td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Global rank">8,200 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 797</span></td><td data-label="Percentile">79.5%</td><td data-label="% change"><span class="global-history-delta">↓ 2.0 pp</span></td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Global rank">8,392 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,121</span></td><td data-label="Percentile">79.0%</td><td data-label="% change"><span class="global-history-delta">↑ 2.8 pp</span></td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Global rank">8,802 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 220</span></td><td data-label="Percentile">78.0%</td><td data-label="% change"><span class="global-history-delta">↓ 0.5 pp</span></td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Global rank">9,295 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 966</span></td><td data-label="Percentile">76.8%</td><td data-label="% change"><span class="global-history-delta">↓ 2.4 pp</span></td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Global rank">9,524 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,231</span></td><td data-label="Percentile">76.2%</td><td data-label="% change"><span class="global-history-delta">↑ 3.1 pp</span></td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Global rank">18,644 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,224</span></td><td data-label="Percentile">53.4%</td><td data-label="% change"><span class="global-history-delta">↑ 8.1 pp</span></td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Global rank">20,105 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,508</span></td><td data-label="Percentile">49.8%</td><td data-label="% change"><span class="global-history-delta">↑ 8.8 pp</span></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Global rank">24,853 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 535</span></td><td data-label="Percentile">37.9%</td><td data-label="% change"><span class="global-history-delta">↑ 1.3 pp</span></td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Global rank">25,403 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,146</span></td><td data-label="Percentile">36.5%</td><td data-label="% change"><span class="global-history-delta">↑ 2.9 pp</span></td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="10" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Global rank">5,148 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 2,720</span></td><td data-label="Percentile">87.1%</td><td data-label="% change"><span class="global-history-delta">↓ 6.8 pp</span></td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Global rank">7,403 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,246</span></td><td data-label="Percentile">81.5%</td><td data-label="% change"><span class="global-history-delta">↑ 8.1 pp</span></td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Global rank">8,329 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,546</span></td><td data-label="Percentile">79.2%</td><td data-label="% change"><span class="global-history-delta">↑ 8.9 pp</span></td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Global rank">8,582 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,129</span></td><td data-label="Percentile">78.6%</td><td data-label="% change"><span class="global-history-delta">↓ 2.8 pp</span></td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Global rank">9,513 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 3,416</span></td><td data-label="Percentile">76.2%</td><td data-label="% change"><span class="global-history-delta">↓ 8.5 pp</span></td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Global rank">10,755 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 4,231</span></td><td data-label="Percentile">73.1%</td><td data-label="% change"><span class="global-history-delta">↑ 10.6 pp</span></td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Global rank">21,868 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,486</span></td><td data-label="Percentile">45.4%</td><td data-label="% change"><span class="global-history-delta">↓ 3.7 pp</span></td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Global rank">23,613 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 743</span></td><td data-label="Percentile">41.0%</td><td data-label="% change"><span class="global-history-delta">↑ 1.9 pp</span></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Global rank">25,388 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 5,384</span></td><td data-label="Percentile">36.6%</td><td data-label="% change"><span class="global-history-delta">↓ 13.4 pp</span></td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Global rank">26,549 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 16</span></td><td data-label="Percentile">33.7%</td><td data-label="% change"><span class="global-history-delta">↑ 0.0 pp</span></td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="9" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Global rank">2,428 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,078</span></td><td data-label="Percentile">93.9%</td><td data-label="% change"><span class="global-history-delta">↓ 2.7 pp</span></td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Global rank">6,097 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 8,113</span></td><td data-label="Percentile">84.8%</td><td data-label="% change"><span class="global-history-delta">↑ 20.3 pp</span></td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Global rank">7,453 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 2,155</span></td><td data-label="Percentile">81.4%</td><td data-label="% change"><span class="global-history-delta">↓ 5.4 pp</span></td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Global rank">10,649 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 341</span></td><td data-label="Percentile">73.4%</td><td data-label="% change"><span class="global-history-delta">↓ 0.9 pp</span></td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Global rank">11,875 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,985</span></td><td data-label="Percentile">70.3%</td><td data-label="% change"><span class="global-history-delta">↑ 5.0 pp</span></td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Global rank">14,986 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,044</span></td><td data-label="Percentile">62.6%</td><td data-label="% change"><span class="global-history-delta">↑ 2.6 pp</span></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Global rank">20,004 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 89</span></td><td data-label="Percentile">50.0%</td><td data-label="% change"><span class="global-history-delta">↑ 0.2 pp</span></td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Global rank">20,382 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 4,727</span></td><td data-label="Percentile">49.1%</td><td data-label="% change"><span class="global-history-delta">↓ 11.8 pp</span></td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Global rank">24,356 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 2,563</span></td><td data-label="Percentile">39.2%</td><td data-label="% change"><span class="global-history-delta">↑ 6.4 pp</span></td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Global rank">26,565 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 322</span></td><td data-label="Percentile">33.6%</td><td data-label="% change"><span class="global-history-delta">↓ 0.8 pp</span></td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="8" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Global rank">1,350 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 924</span></td><td data-label="Percentile">96.6%</td><td data-label="% change"><span class="global-history-delta">↓ 2.3 pp</span></td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Global rank">5,298 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,538</span></td><td data-label="Percentile">86.8%</td><td data-label="% change"><span class="global-history-delta">↑ 8.8 pp</span></td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Global rank">10,308 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,623</span></td><td data-label="Percentile">74.3%</td><td data-label="% change"><span class="global-history-delta">↑ 9.1 pp</span></td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Global rank">13,860 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 3,789</span></td><td data-label="Percentile">65.4%</td><td data-label="% change"><span class="global-history-delta">↓ 9.5 pp</span></td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Global rank">14,210 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 8,759</span></td><td data-label="Percentile">64.5%</td><td data-label="% change"><span class="global-history-delta">↑ 21.9 pp</span></td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Global rank">15,655 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 10,415</span></td><td data-label="Percentile">60.9%</td><td data-label="% change"><span class="global-history-delta">↑ 26.0 pp</span></td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Global rank">16,030 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 968</span></td><td data-label="Percentile">60.0%</td><td data-label="% change"><span class="global-history-delta">↓ 2.4 pp</span></td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Global rank">20,093 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 3,517</span></td><td data-label="Percentile">49.8%</td><td data-label="% change"><span class="global-history-delta">↓ 8.8 pp</span></td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Global rank">26,243 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,314</span></td><td data-label="Percentile">34.4%</td><td data-label="% change"><span class="global-history-delta">↓ 3.3 pp</span></td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Global rank">26,919 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 2,389</span></td><td data-label="Percentile">32.8%</td><td data-label="% change"><span class="global-history-delta">↓ 6.0 pp</span></td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="7" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Global rank">426 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">98.9%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Global rank">8,836 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">77.9%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Global rank">10,071 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">74.8%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Global rank">13,931 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">65.2%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Global rank">15,062 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">62.4%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Global rank">16,576 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">58.6%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Global rank">22,969 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">42.6%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Global rank">24,530 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">38.7%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Global rank">24,929 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">37.7%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Global rank">26,070 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">34.9%</td><td data-label="% change">—</td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="6" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan (est.)</td><td data-label="Global rank">~1,100 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~97.2%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Luke Lockwood (est.)</td><td data-label="Global rank">~9,600 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~75.9%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Justin Miller (est.)</td><td data-label="Global rank">~11,800 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~70.4%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Julius Long (est.)</td><td data-label="Global rank">~14,300 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~64.4%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Drake Byrd (est.)</td><td data-label="Global rank">~14,600 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~63.5%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Alexander Chaban (est.)</td><td data-label="Global rank">~17,100 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~57.3%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth (est.)</td><td data-label="Global rank">~21,400 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~46.6%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Levi Morant (est.)</td><td data-label="Global rank">~24,400 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~39.1%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Dylan Reid (est.)</td><td data-label="Global rank">~28,500 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~28.7%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Ryan Houseman (est.)</td><td data-label="Global rank">~28,800 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~28.0%</td><td data-label="% change">—</td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="5" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>Manager</th><th>Global rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="Manager">Ryan Donlan</td><td data-label="Global rank">30 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">99.9%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Justin Miller</td><td data-label="Global rank">6,572 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">83.6%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Drake Byrd</td><td data-label="Global rank">8,476 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">78.8%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Luke Lockwood</td><td data-label="Global rank">14,742 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">63.2%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Ethan Ellsworth</td><td data-label="Global rank">18,509 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">53.8%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Alexander Chaban</td><td data-label="Global rank">19,002 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">52.5%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Julius Long</td><td data-label="Global rank">21,508 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">46.3%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Levi Morant</td><td data-label="Global rank">22,004 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">45.0%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Ryan Houseman</td><td data-label="Global rank">22,986 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">42.6%</td><td data-label="% change">—</td></tr>
+<tr><td data-label="Manager">Dylan Reid</td><td data-label="Global rank">33,215 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">17.0%</td><td data-label="% change">—</td></tr>
+</tbody></table></div>
+</div>
+<div data-global-week-panel="4" hidden>
+<p>Individual manager ranks were not saved for this gameweek.</p>
+</div>
+<div data-global-week-panel="3" hidden>
+<p>Individual manager ranks were not saved for this gameweek.</p>
+</div>
+</div>
+<div data-global-panel="manager" hidden>
+<label class="global-manager-label" for="global-manager-select">Manager <select id="global-manager-select" data-global-manager-select>
+<option value="Alexander Chaban">Alexander Chaban</option>
+<option value="Drake Byrd">Drake Byrd</option>
+<option value="Dylan Reid">Dylan Reid</option>
+<option value="Ethan Ellsworth">Ethan Ellsworth</option>
+<option value="Julius Long">Julius Long</option>
+<option value="Justin Miller">Justin Miller</option>
+<option value="Levi Morant">Levi Morant</option>
+<option value="Luke Lockwood">Luke Lockwood</option>
+<option value="Ryan Donlan">Ryan Donlan</option>
+<option value="Ryan Houseman">Ryan Houseman</option>
+</select></label>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>GW</th><th>Manager rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">11</td><td data-label="Manager rank">8,200 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 797</span></td><td data-label="Percentile">79.5%</td><td data-label="% change"><span class="global-history-delta">↓ 2.0 pp</span></td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">10</td><td data-label="Manager rank">7,403 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,246</span></td><td data-label="Percentile">81.5%</td><td data-label="% change"><span class="global-history-delta">↑ 8.1 pp</span></td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">9</td><td data-label="Manager rank">10,649 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 341</span></td><td data-label="Percentile">73.4%</td><td data-label="% change"><span class="global-history-delta">↓ 0.9 pp</span></td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">8</td><td data-label="Manager rank">10,308 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,623</span></td><td data-label="Percentile">74.3%</td><td data-label="% change"><span class="global-history-delta">↑ 9.1 pp</span></td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">7</td><td data-label="Manager rank">13,931 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">65.2%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~17,100 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~57.3%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">5</td><td data-label="Manager rank">19,002 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">52.5%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Alexander Chaban"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">11</td><td data-label="Manager rank">9,524 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,231</span></td><td data-label="Percentile">76.2%</td><td data-label="% change"><span class="global-history-delta">↑ 3.1 pp</span></td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">10</td><td data-label="Manager rank">10,755 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 4,231</span></td><td data-label="Percentile">73.1%</td><td data-label="% change"><span class="global-history-delta">↑ 10.6 pp</span></td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">9</td><td data-label="Manager rank">14,986 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,044</span></td><td data-label="Percentile">62.6%</td><td data-label="% change"><span class="global-history-delta">↑ 2.6 pp</span></td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">8</td><td data-label="Manager rank">16,030 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 968</span></td><td data-label="Percentile">60.0%</td><td data-label="% change"><span class="global-history-delta">↓ 2.4 pp</span></td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">7</td><td data-label="Manager rank">15,062 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">62.4%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~14,600 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~63.5%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">5</td><td data-label="Manager rank">8,476 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">78.8%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Drake Byrd"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">11</td><td data-label="Manager rank">8,392 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,121</span></td><td data-label="Percentile">79.0%</td><td data-label="% change"><span class="global-history-delta">↑ 2.8 pp</span></td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">10</td><td data-label="Manager rank">9,513 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 3,416</span></td><td data-label="Percentile">76.2%</td><td data-label="% change"><span class="global-history-delta">↓ 8.5 pp</span></td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">9</td><td data-label="Manager rank">6,097 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 8,113</span></td><td data-label="Percentile">84.8%</td><td data-label="% change"><span class="global-history-delta">↑ 20.3 pp</span></td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">8</td><td data-label="Manager rank">14,210 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 8,759</span></td><td data-label="Percentile">64.5%</td><td data-label="% change"><span class="global-history-delta">↑ 21.9 pp</span></td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">7</td><td data-label="Manager rank">22,969 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">42.6%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~28,500 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~28.7%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">5</td><td data-label="Manager rank">33,215 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">17.0%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Dylan Reid"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">11</td><td data-label="Manager rank">20,105 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,508</span></td><td data-label="Percentile">49.8%</td><td data-label="% change"><span class="global-history-delta">↑ 8.8 pp</span></td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">10</td><td data-label="Manager rank">23,613 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 743</span></td><td data-label="Percentile">41.0%</td><td data-label="% change"><span class="global-history-delta">↑ 1.9 pp</span></td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">9</td><td data-label="Manager rank">24,356 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 2,563</span></td><td data-label="Percentile">39.2%</td><td data-label="% change"><span class="global-history-delta">↑ 6.4 pp</span></td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">8</td><td data-label="Manager rank">26,919 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 2,389</span></td><td data-label="Percentile">32.8%</td><td data-label="% change"><span class="global-history-delta">↓ 6.0 pp</span></td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">7</td><td data-label="Manager rank">24,530 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">38.7%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~21,400 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~46.6%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">5</td><td data-label="Manager rank">18,509 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">53.8%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ethan Ellsworth"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">11</td><td data-label="Manager rank">24,853 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 535</span></td><td data-label="Percentile">37.9%</td><td data-label="% change"><span class="global-history-delta">↑ 1.3 pp</span></td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">10</td><td data-label="Manager rank">25,388 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 5,384</span></td><td data-label="Percentile">36.6%</td><td data-label="% change"><span class="global-history-delta">↓ 13.4 pp</span></td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">9</td><td data-label="Manager rank">20,004 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 89</span></td><td data-label="Percentile">50.0%</td><td data-label="% change"><span class="global-history-delta">↑ 0.2 pp</span></td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">8</td><td data-label="Manager rank">20,093 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 3,517</span></td><td data-label="Percentile">49.8%</td><td data-label="% change"><span class="global-history-delta">↓ 8.8 pp</span></td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">7</td><td data-label="Manager rank">16,576 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">58.6%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~14,300 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~64.4%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">5</td><td data-label="Manager rank">21,508 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">46.3%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Julius Long"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">11</td><td data-label="Manager rank">8,802 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 220</span></td><td data-label="Percentile">78.0%</td><td data-label="% change"><span class="global-history-delta">↓ 0.5 pp</span></td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">10</td><td data-label="Manager rank">8,582 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,129</span></td><td data-label="Percentile">78.6%</td><td data-label="% change"><span class="global-history-delta">↓ 2.8 pp</span></td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">9</td><td data-label="Manager rank">7,453 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 2,155</span></td><td data-label="Percentile">81.4%</td><td data-label="% change"><span class="global-history-delta">↓ 5.4 pp</span></td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">8</td><td data-label="Manager rank">5,298 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,538</span></td><td data-label="Percentile">86.8%</td><td data-label="% change"><span class="global-history-delta">↑ 8.8 pp</span></td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">7</td><td data-label="Manager rank">8,836 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">77.9%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~11,800 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~70.4%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">5</td><td data-label="Manager rank">6,572 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">83.6%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Justin Miller"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">11</td><td data-label="Manager rank">25,403 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,146</span></td><td data-label="Percentile">36.5%</td><td data-label="% change"><span class="global-history-delta">↑ 2.9 pp</span></td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">10</td><td data-label="Manager rank">26,549 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 16</span></td><td data-label="Percentile">33.7%</td><td data-label="% change"><span class="global-history-delta">↑ 0.0 pp</span></td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">9</td><td data-label="Manager rank">26,565 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 322</span></td><td data-label="Percentile">33.6%</td><td data-label="% change"><span class="global-history-delta">↓ 0.8 pp</span></td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">8</td><td data-label="Manager rank">26,243 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,314</span></td><td data-label="Percentile">34.4%</td><td data-label="% change"><span class="global-history-delta">↓ 3.3 pp</span></td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">7</td><td data-label="Manager rank">24,929 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">37.7%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~24,400 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~39.1%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">5</td><td data-label="Manager rank">22,004 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">45.0%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Levi Morant"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">11</td><td data-label="Manager rank">9,295 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 966</span></td><td data-label="Percentile">76.8%</td><td data-label="% change"><span class="global-history-delta">↓ 2.4 pp</span></td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">10</td><td data-label="Manager rank">8,329 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,546</span></td><td data-label="Percentile">79.2%</td><td data-label="% change"><span class="global-history-delta">↑ 8.9 pp</span></td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">9</td><td data-label="Manager rank">11,875 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 1,985</span></td><td data-label="Percentile">70.3%</td><td data-label="% change"><span class="global-history-delta">↑ 5.0 pp</span></td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">8</td><td data-label="Manager rank">13,860 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 3,789</span></td><td data-label="Percentile">65.4%</td><td data-label="% change"><span class="global-history-delta">↓ 9.5 pp</span></td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">7</td><td data-label="Manager rank">10,071 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">74.8%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~9,600 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~75.9%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">5</td><td data-label="Manager rank">14,742 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">63.2%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Luke Lockwood"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">11</td><td data-label="Manager rank">6,325 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,177</span></td><td data-label="Percentile">84.2%</td><td data-label="% change"><span class="global-history-delta">↓ 2.9 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">10</td><td data-label="Manager rank">5,148 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 2,720</span></td><td data-label="Percentile">87.1%</td><td data-label="% change"><span class="global-history-delta">↓ 6.8 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">9</td><td data-label="Manager rank">2,428 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,078</span></td><td data-label="Percentile">93.9%</td><td data-label="% change"><span class="global-history-delta">↓ 2.7 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">8</td><td data-label="Manager rank">1,350 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 924</span></td><td data-label="Percentile">96.6%</td><td data-label="% change"><span class="global-history-delta">↓ 2.3 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">7</td><td data-label="Manager rank">426 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">98.9%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~1,100 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~97.2%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">5</td><td data-label="Manager rank">30 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">99.9%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Donlan"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">11</td><td data-label="Manager rank">18,644 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 3,224</span></td><td data-label="Percentile">53.4%</td><td data-label="% change"><span class="global-history-delta">↑ 8.1 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">10</td><td data-label="Manager rank">21,868 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 1,486</span></td><td data-label="Percentile">45.4%</td><td data-label="% change"><span class="global-history-delta">↓ 3.7 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">9</td><td data-label="Manager rank">20,382 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↓ 4,727</span></td><td data-label="Percentile">49.1%</td><td data-label="% change"><span class="global-history-delta">↓ 11.8 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">8</td><td data-label="Manager rank">15,655 / 40,030</td><td data-label="Rank change"><span class="global-history-delta">↑ 10,415</span></td><td data-label="Percentile">60.9%</td><td data-label="% change"><span class="global-history-delta">↑ 26.0 pp</span></td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">7</td><td data-label="Manager rank">26,070 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">34.9%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">6 (est.)</td><td data-label="Manager rank">~28,800 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">~28.0%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">5</td><td data-label="Manager rank">22,986 / 40,030</td><td data-label="Rank change">—</td><td data-label="Percentile">42.6%</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">4</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+<tr data-global-manager-row="Ryan Houseman"><td data-label="GW">3</td><td data-label="Manager rank">Not saved</td><td data-label="Rank change">—</td><td data-label="Percentile">—</td><td data-label="% change">—</td></tr>
+</tbody></table></div>
+<div data-global-manager-chart="Alexander Chaban">
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Alexander Chaban percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="126.4" x2="278.5" y2="116.0" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="116.0" x2="356.0" y2="98.6" />
+<line class="global-chart-line" x1="356.0" y1="98.6" x2="433.5" y2="78.6" />
+<line class="global-chart-line" x1="433.5" y1="78.6" x2="511.0" y2="80.5" />
+<line class="global-chart-line" x1="511.0" y1="80.5" x2="588.5" y2="62.7" />
+<line class="global-chart-line" x1="588.5" y1="62.7" x2="666.0" y2="67.1" />
+<circle class="global-chart-point" cx="201.0" cy="126.4" r="4"><title>GW5: 52.5%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="116.0" r="4"><title>GW6: 57.3% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="98.6" r="4"><title>GW7: 65.2%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="78.6" r="4"><title>GW8: 74.3%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="80.5" r="4"><title>GW9: 73.4%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="62.7" r="4"><title>GW10: 81.5%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="67.1" r="4"><title>GW11: 79.5%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Drake Byrd" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Drake Byrd percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="68.6" x2="278.5" y2="102.2" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="102.2" x2="356.0" y2="104.8" />
+<line class="global-chart-line" x1="356.0" y1="104.8" x2="433.5" y2="110.1" />
+<line class="global-chart-line" x1="433.5" y1="110.1" x2="511.0" y2="104.4" />
+<line class="global-chart-line" x1="511.0" y1="104.4" x2="588.5" y2="81.1" />
+<line class="global-chart-line" x1="588.5" y1="81.1" x2="666.0" y2="74.3" />
+<circle class="global-chart-point" cx="201.0" cy="68.6" r="4"><title>GW5: 78.8%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="102.2" r="4"><title>GW6: 63.5% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="104.8" r="4"><title>GW7: 62.4%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="110.1" r="4"><title>GW8: 60.0%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="104.4" r="4"><title>GW9: 62.6%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="81.1" r="4"><title>GW10: 73.1%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="74.3" r="4"><title>GW11: 76.2%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Dylan Reid" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Dylan Reid percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="204.5" x2="278.5" y2="178.8" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="178.8" x2="356.0" y2="148.2" />
+<line class="global-chart-line" x1="356.0" y1="148.2" x2="433.5" y2="100.1" />
+<line class="global-chart-line" x1="433.5" y1="100.1" x2="511.0" y2="55.5" />
+<line class="global-chart-line" x1="511.0" y1="55.5" x2="588.5" y2="74.3" />
+<line class="global-chart-line" x1="588.5" y1="74.3" x2="666.0" y2="68.1" />
+<circle class="global-chart-point" cx="201.0" cy="204.5" r="4"><title>GW5: 17.0%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="178.8" r="4"><title>GW6: 28.7% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="148.2" r="4"><title>GW7: 42.6%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="100.1" r="4"><title>GW8: 64.5%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="55.5" r="4"><title>GW9: 84.8%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="74.3" r="4"><title>GW10: 76.2%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="68.1" r="4"><title>GW11: 79.0%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Ethan Ellsworth" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Ethan Ellsworth percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="123.7" x2="278.5" y2="139.5" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="139.5" x2="356.0" y2="156.8" />
+<line class="global-chart-line" x1="356.0" y1="156.8" x2="433.5" y2="169.9" />
+<line class="global-chart-line" x1="433.5" y1="169.9" x2="511.0" y2="155.9" />
+<line class="global-chart-line" x1="511.0" y1="155.9" x2="588.5" y2="151.8" />
+<line class="global-chart-line" x1="588.5" y1="151.8" x2="666.0" y2="132.5" />
+<circle class="global-chart-point" cx="201.0" cy="123.7" r="4"><title>GW5: 53.8%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="139.5" r="4"><title>GW6: 46.6% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="156.8" r="4"><title>GW7: 38.7%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="169.9" r="4"><title>GW8: 32.8%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="155.9" r="4"><title>GW9: 39.2%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="151.8" r="4"><title>GW10: 41.0%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="132.5" r="4"><title>GW11: 49.8%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Julius Long" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Julius Long percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="140.2" x2="278.5" y2="100.3" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="100.3" x2="356.0" y2="113.1" />
+<line class="global-chart-line" x1="356.0" y1="113.1" x2="433.5" y2="132.4" />
+<line class="global-chart-line" x1="433.5" y1="132.4" x2="511.0" y2="131.9" />
+<line class="global-chart-line" x1="511.0" y1="131.9" x2="588.5" y2="161.5" />
+<line class="global-chart-line" x1="588.5" y1="161.5" x2="666.0" y2="158.6" />
+<circle class="global-chart-point" cx="201.0" cy="140.2" r="4"><title>GW5: 46.3%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="100.3" r="4"><title>GW6: 64.4% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="113.1" r="4"><title>GW7: 58.6%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="132.4" r="4"><title>GW8: 49.8%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="131.9" r="4"><title>GW9: 50.0%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="161.5" r="4"><title>GW10: 36.6%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="158.6" r="4"><title>GW11: 37.9%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Justin Miller" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Justin Miller percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="58.1" x2="278.5" y2="87.1" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="87.1" x2="356.0" y2="70.6" />
+<line class="global-chart-line" x1="356.0" y1="70.6" x2="433.5" y2="51.1" />
+<line class="global-chart-line" x1="433.5" y1="51.1" x2="511.0" y2="63.0" />
+<line class="global-chart-line" x1="511.0" y1="63.0" x2="588.5" y2="69.2" />
+<line class="global-chart-line" x1="588.5" y1="69.2" x2="666.0" y2="70.4" />
+<circle class="global-chart-point" cx="201.0" cy="58.1" r="4"><title>GW5: 83.6%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="87.1" r="4"><title>GW6: 70.4% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="70.6" r="4"><title>GW7: 77.9%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="51.1" r="4"><title>GW8: 86.8%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="63.0" r="4"><title>GW9: 81.4%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="69.2" r="4"><title>GW10: 78.6%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="70.4" r="4"><title>GW11: 78.0%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Levi Morant" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Levi Morant percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="142.9" x2="278.5" y2="155.9" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="155.9" x2="356.0" y2="159.0" />
+<line class="global-chart-line" x1="356.0" y1="159.0" x2="433.5" y2="166.2" />
+<line class="global-chart-line" x1="433.5" y1="166.2" x2="511.0" y2="168.0" />
+<line class="global-chart-line" x1="511.0" y1="168.0" x2="588.5" y2="167.9" />
+<line class="global-chart-line" x1="588.5" y1="167.9" x2="666.0" y2="161.6" />
+<circle class="global-chart-point" cx="201.0" cy="142.9" r="4"><title>GW5: 45.0%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="155.9" r="4"><title>GW6: 39.1% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="159.0" r="4"><title>GW7: 37.7%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="166.2" r="4"><title>GW8: 34.4%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="168.0" r="4"><title>GW9: 33.6%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="167.9" r="4"><title>GW10: 33.7%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="161.6" r="4"><title>GW11: 36.5%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Luke Lockwood" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Luke Lockwood percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="103.0" x2="278.5" y2="74.9" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="74.9" x2="356.0" y2="77.3" />
+<line class="global-chart-line" x1="356.0" y1="77.3" x2="433.5" y2="98.2" />
+<line class="global-chart-line" x1="433.5" y1="98.2" x2="511.0" y2="87.3" />
+<line class="global-chart-line" x1="511.0" y1="87.3" x2="588.5" y2="67.8" />
+<line class="global-chart-line" x1="588.5" y1="67.8" x2="666.0" y2="73.1" />
+<circle class="global-chart-point" cx="201.0" cy="103.0" r="4"><title>GW5: 63.2%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="74.9" r="4"><title>GW6: 75.9% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="77.3" r="4"><title>GW7: 74.8%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="98.2" r="4"><title>GW8: 65.4%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="87.3" r="4"><title>GW9: 70.3%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="67.8" r="4"><title>GW10: 79.2%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="73.1" r="4"><title>GW11: 76.8%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Ryan Donlan" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Ryan Donlan percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="22.2" x2="278.5" y2="28.2" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="28.2" x2="356.0" y2="24.3" />
+<line class="global-chart-line" x1="356.0" y1="24.3" x2="433.5" y2="29.4" />
+<line class="global-chart-line" x1="433.5" y1="29.4" x2="511.0" y2="35.3" />
+<line class="global-chart-line" x1="511.0" y1="35.3" x2="588.5" y2="50.3" />
+<line class="global-chart-line" x1="588.5" y1="50.3" x2="666.0" y2="56.8" />
+<circle class="global-chart-point" cx="201.0" cy="22.2" r="4"><title>GW5: 99.9%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="28.2" r="4"><title>GW6: 97.2% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="24.3" r="4"><title>GW7: 98.9%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="29.4" r="4"><title>GW8: 96.6%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="35.3" r="4"><title>GW9: 93.9%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="50.3" r="4"><title>GW10: 87.1%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="56.8" r="4"><title>GW11: 84.2%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+<div data-global-manager-chart="Ryan Houseman" hidden>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="Ryan Houseman percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line global-chart-estimated-line" x1="201.0" y1="148.3" x2="278.5" y2="180.3" />
+<line class="global-chart-line global-chart-estimated-line" x1="278.5" y1="180.3" x2="356.0" y2="165.3" />
+<line class="global-chart-line" x1="356.0" y1="165.3" x2="433.5" y2="108.0" />
+<line class="global-chart-line" x1="433.5" y1="108.0" x2="511.0" y2="134.0" />
+<line class="global-chart-line" x1="511.0" y1="134.0" x2="588.5" y2="142.2" />
+<line class="global-chart-line" x1="588.5" y1="142.2" x2="666.0" y2="124.5" />
+<circle class="global-chart-point" cx="201.0" cy="148.3" r="4"><title>GW5: 42.6%</title></circle>
+<circle class="global-chart-point global-chart-estimated-point" cx="278.5" cy="180.3" r="4"><title>GW6: 28.0% (estimated)</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="165.3" r="4"><title>GW7: 34.9%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="108.0" r="4"><title>GW8: 60.9%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="134.0" r="4"><title>GW9: 49.1%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="142.2" r="4"><title>GW10: 45.4%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="124.5" r="4"><title>GW11: 53.4%</title></circle>
+</svg>
+</div>
+<p class="global-chart-note">Hollow GW6 point and dashed lines: estimate. Line breaks: no saved rank.</p>
+</div>
+</div>
+<div data-global-panel="league" hidden>
+<div class="table-wrap"><table class="global-history-table"><thead><tr><th>GW</th><th>League rank</th><th>Rank change</th><th>Percentile</th><th>% change</th></tr></thead><tbody>
+<tr><td data-label="GW">11</td><td data-label="League rank">116 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↑ 92</span></td><td data-label="Percentile">97.1%</td><td data-label="% change"><span class="global-history-delta">↑ 2.3 pp</span></td></tr>
+<tr><td data-label="GW">10</td><td data-label="League rank">208 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↓ 28</span></td><td data-label="Percentile">94.8%</td><td data-label="% change"><span class="global-history-delta">↓ 0.7 pp</span></td></tr>
+<tr><td data-label="GW">9</td><td data-label="League rank">180 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↑ 42</span></td><td data-label="Percentile">95.5%</td><td data-label="% change"><span class="global-history-delta">↑ 1.0 pp</span></td></tr>
+<tr><td data-label="GW">8</td><td data-label="League rank">222 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↑ 111</span></td><td data-label="Percentile">94.5%</td><td data-label="% change"><span class="global-history-delta">↑ 2.8 pp</span></td></tr>
+<tr><td data-label="GW">7</td><td data-label="League rank">333 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↓ 190</span></td><td data-label="Percentile">91.7%</td><td data-label="% change"><span class="global-history-delta">↓ 4.7 pp</span></td></tr>
+<tr><td data-label="GW">6</td><td data-label="League rank">143 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↑ 7</span></td><td data-label="Percentile">96.5%</td><td data-label="% change"><span class="global-history-delta">↑ 0.2 pp</span></td></tr>
+<tr><td data-label="GW">5</td><td data-label="League rank">150 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↑ 144</span></td><td data-label="Percentile">96.3%</td><td data-label="% change"><span class="global-history-delta">↑ 3.6 pp</span></td></tr>
+<tr><td data-label="GW">4</td><td data-label="League rank">294 / 4,003</td><td data-label="Rank change"><span class="global-history-delta">↑ 555</span></td><td data-label="Percentile">92.7%</td><td data-label="% change"><span class="global-history-delta">↑ 14.1 pp</span></td></tr>
+<tr><td data-label="GW">3</td><td data-label="League rank">849 / 3,957</td><td data-label="Rank change">—</td><td data-label="Percentile">78.6%</td><td data-label="% change">—</td></tr>
+</tbody></table></div>
+<div class="global-percentile-chart">
+<svg viewBox="0 0 700 280" role="img" aria-label="League percentile by gameweek">
+<line class="global-chart-grid" x1="46" y1="242.0" x2="666" y2="242.0" />
+<text class="global-chart-label" x="38" y="246.0" text-anchor="end">0%</text>
+<line class="global-chart-grid" x1="46" y1="187.0" x2="666" y2="187.0" />
+<text class="global-chart-label" x="38" y="191.0" text-anchor="end">25%</text>
+<line class="global-chart-grid" x1="46" y1="132.0" x2="666" y2="132.0" />
+<text class="global-chart-label" x="38" y="136.0" text-anchor="end">50%</text>
+<line class="global-chart-grid" x1="46" y1="77.0" x2="666" y2="77.0" />
+<text class="global-chart-label" x="38" y="81.0" text-anchor="end">75%</text>
+<line class="global-chart-grid" x1="46" y1="22.0" x2="666" y2="22.0" />
+<text class="global-chart-label" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="global-chart-label" x="46.0" y="263" text-anchor="middle">3</text>
+<text class="global-chart-label" x="123.5" y="263" text-anchor="middle">4</text>
+<text class="global-chart-label" x="201.0" y="263" text-anchor="middle">5</text>
+<text class="global-chart-label" x="278.5" y="263" text-anchor="middle">6</text>
+<text class="global-chart-label" x="356.0" y="263" text-anchor="middle">7</text>
+<text class="global-chart-label" x="433.5" y="263" text-anchor="middle">8</text>
+<text class="global-chart-label" x="511.0" y="263" text-anchor="middle">9</text>
+<text class="global-chart-label" x="588.5" y="263" text-anchor="middle">10</text>
+<text class="global-chart-label" x="666.0" y="263" text-anchor="middle">11</text>
+<line class="global-chart-line" x1="46.0" y1="69.1" x2="123.5" y2="38.1" />
+<line class="global-chart-line" x1="123.5" y1="38.1" x2="201.0" y2="30.2" />
+<line class="global-chart-line" x1="201.0" y1="30.2" x2="278.5" y2="29.8" />
+<line class="global-chart-line" x1="278.5" y1="29.8" x2="356.0" y2="40.2" />
+<line class="global-chart-line" x1="356.0" y1="40.2" x2="433.5" y2="34.1" />
+<line class="global-chart-line" x1="433.5" y1="34.1" x2="511.0" y2="31.8" />
+<line class="global-chart-line" x1="511.0" y1="31.8" x2="588.5" y2="33.4" />
+<line class="global-chart-line" x1="588.5" y1="33.4" x2="666.0" y2="28.3" />
+<circle class="global-chart-point" cx="46.0" cy="69.1" r="4"><title>GW3: 78.6%</title></circle>
+<circle class="global-chart-point" cx="123.5" cy="38.1" r="4"><title>GW4: 92.7%</title></circle>
+<circle class="global-chart-point" cx="201.0" cy="30.2" r="4"><title>GW5: 96.3%</title></circle>
+<circle class="global-chart-point" cx="278.5" cy="29.8" r="4"><title>GW6: 96.5%</title></circle>
+<circle class="global-chart-point" cx="356.0" cy="40.2" r="4"><title>GW7: 91.7%</title></circle>
+<circle class="global-chart-point" cx="433.5" cy="34.1" r="4"><title>GW8: 94.5%</title></circle>
+<circle class="global-chart-point" cx="511.0" cy="31.8" r="4"><title>GW9: 95.5%</title></circle>
+<circle class="global-chart-point" cx="588.5" cy="33.4" r="4"><title>GW10: 94.8%</title></circle>
+<circle class="global-chart-point" cx="666.0" cy="28.3" r="4"><title>GW11: 97.1%</title></circle>
+</svg>
+</div>
+</div>
+</div>
 <p>Percentile is the share of the comparison population at or below that global standing, rounded to one decimal place.</p>
 <p><a href="https://api.draftfpl.live/fpl/global-rank?season=2026-27&amp;amp;shard=529">Source: DraftFPL.live global index</a>. Official FPL is used to verify every displayed points total; DraftFPL.live supplies the cross-league comparison population and rank.</p>
 </details>
@@ -10067,6 +10836,37 @@
       moveTooltip(event);
       dismissTimer = setTimeout(hideTooltip, 5000);
     });
+  });
+})();
+</script>
+  <script>
+(() => {
+  document.querySelectorAll('[data-global-history]').forEach((history) => {
+    const buttons = history.querySelectorAll('[data-global-view]');
+    const panels = history.querySelectorAll('[data-global-panel]');
+    const weekSelect = history.querySelector('[data-global-week-select]');
+    const weekPanels = history.querySelectorAll('[data-global-week-panel]');
+    const select = history.querySelector('[data-global-manager-select]');
+    const rows = history.querySelectorAll('[data-global-manager-row]');
+    const charts = history.querySelectorAll('[data-global-manager-chart]');
+    const showManager = () => {
+      rows.forEach((row) => { row.hidden = row.dataset.globalManagerRow !== select.value; });
+      charts.forEach((chart) => { chart.hidden = chart.dataset.globalManagerChart !== select.value; });
+    };
+    buttons.forEach((button) => button.addEventListener('click', () => {
+      const view = button.dataset.globalView;
+      buttons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      panels.forEach((panel) => { panel.hidden = panel.dataset.globalPanel !== view; });
+    }));
+    select.addEventListener('change', showManager);
+    weekSelect.addEventListener('change', () => weekPanels.forEach((panel) => {
+      panel.hidden = panel.dataset.globalWeekPanel !== weekSelect.value;
+    }));
+    showManager();
   });
 })();
 </script>

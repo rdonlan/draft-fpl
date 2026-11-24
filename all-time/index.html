@@ -2162,6 +2162,96 @@
       height: auto;
       background: var(--paper);
     }
+    .global-history {
+      margin: 18px 18px 26px;
+    }
+    .global-history-controls {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .global-history-view {
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .global-history-view.is-active {
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .global-manager-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .global-manager-label select {
+      max-width: 100%;
+      padding: 7px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .global-history [hidden] { display: none !important; }
+    .global-history-delta {
+      color: var(--ink);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .global-history .table-wrap table {
+      min-width: 0;
+      font-size: 0.85rem;
+    }
+    .global-history [data-global-panel="week"] table { min-width: 610px; }
+    .global-history [data-global-panel="manager"] table { min-width: 610px; }
+    .global-history [data-global-panel="league"] table { min-width: 610px; }
+    .global-history .table-wrap th,
+    .global-history .table-wrap td {
+      padding: 8px;
+      white-space: nowrap;
+    }
+    .global-percentile-chart {
+      margin-top: 14px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .global-percentile-chart svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .global-chart-grid { stroke: var(--line); stroke-width: 1; }
+    .global-chart-label { fill: var(--muted); font-size: 12px; }
+    .global-chart-line {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .global-chart-point {
+      fill: var(--accent);
+      stroke: var(--paper);
+      stroke-width: 1.5;
+    }
+    .global-chart-estimated-line { stroke-dasharray: 6 5; }
+    .global-chart-estimated-point {
+      fill: var(--paper);
+      stroke: var(--accent);
+      stroke-width: 3;
+    }
+    .global-chart-note {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
     .power-chart-legend {
       display: flex;
       flex-wrap: wrap;
@@ -3267,6 +3357,10 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+      .global-history {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
       .power-tab-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4257,6 +4351,37 @@
       moveTooltip(event);
       dismissTimer = setTimeout(hideTooltip, 5000);
     });
+  });
+})();
+</script>
+  <script>
+(() => {
+  document.querySelectorAll('[data-global-history]').forEach((history) => {
+    const buttons = history.querySelectorAll('[data-global-view]');
+    const panels = history.querySelectorAll('[data-global-panel]');
+    const weekSelect = history.querySelector('[data-global-week-select]');
+    const weekPanels = history.querySelectorAll('[data-global-week-panel]');
+    const select = history.querySelector('[data-global-manager-select]');
+    const rows = history.querySelectorAll('[data-global-manager-row]');
+    const charts = history.querySelectorAll('[data-global-manager-chart]');
+    const showManager = () => {
+      rows.forEach((row) => { row.hidden = row.dataset.globalManagerRow !== select.value; });
+      charts.forEach((chart) => { chart.hidden = chart.dataset.globalManagerChart !== select.value; });
+    };
+    buttons.forEach((button) => button.addEventListener('click', () => {
+      const view = button.dataset.globalView;
+      buttons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      panels.forEach((panel) => { panel.hidden = panel.dataset.globalPanel !== view; });
+    }));
+    select.addEventListener('change', showManager);
+    weekSelect.addEventListener('change', () => weekPanels.forEach((panel) => {
+      panel.hidden = panel.dataset.globalWeekPanel !== weekSelect.value;
+    }));
+    showManager();
   });
 })();
 </script>
