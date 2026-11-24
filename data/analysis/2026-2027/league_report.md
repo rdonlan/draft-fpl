@@ -1,13 +1,13 @@
 # BMS FPL Draft 26/27 League
 
-Official FPL Draft data last refreshed November 09, 2026 at 09:57 AM Eastern Standard Time.
+Official FPL Draft data last refreshed November 24, 2026 at 09:41 AM Eastern Standard Time.
 
 This page uses the same season-analysis layout as 2025–26 and 2024–25. Statistics update from completed official gameweeks.
 
 ## Best Quick Hits
 
-- 10 gameweeks are complete.
-- Top GW10 score: Alexander Chaban, Drake Byrd, and Luke Lockwood with 59 points.
+- 11 gameweeks are complete.
+- Top GW11 score: Ethan Ellsworth with 51 points.
 - The current lineal belt holder is Ryan Houseman.
 
 <details open>
@@ -24,16 +24,16 @@ Record, H2H points, points for/against, weekly average, and top/bottom score cou
 
 | Rank | Team | Record | H2H Pts | PF | PA | Avg | Top Scores | Bottom Scores |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `ChabosSpurs@Law` | 7-0-3 | 21 | 454 | 397 | 45.4 | 1 | 2 |
-| 2 | `Bruno’s Balebas` | 7-0-3 | 21 | 440 | 423 | 44.0 | 1 | 0 |
-| 3 | `Into the WOODwork*` | 6-0-4 | 18 | 450 | 373 | 45.0 | 2 | 1 |
-| 4 | `Sue-nited FC**` | 6-0-4 | 18 | 449 | 443 | 44.9 | 1 | 0 |
-| 5 | `Szoboszlickin good` | 6-0-4 | 18 | 402 | 351 | 40.2 | 1 | 2 |
-| 6 | `***NoHaalandNoParty` | 5-0-5 | 15 | 466 | 397 | 46.6 | 3 | 1 |
-| 7 | `Joao Bonito` | 5-0-5 | 15 | 445 | 414 | 44.5 | 2 | 1 |
-| 8 | `Amorim de mi vida` | 3-0-7 | 9 | 390 | 509 | 39.0 | 1 | 2 |
-| 9 | `*Saka It To Me Baby` | 3-0-7 | 9 | 386 | 457 | 38.6 | 0 | 0 |
-| 10 | `Thanksgiving Cherki` | 2-0-8 | 6 | 396 | 514 | 39.6 | 1 | 1 |
+| 1 | `ChabosSpurs@Law` | 8-0-3 | 24 | 491 | 431 | 44.6 | 1 | 2 |
+| 2 | `Bruno’s Balebas` | 8-0-3 | 24 | 485 | 462 | 44.1 | 1 | 0 |
+| 3 | `Szoboszlickin good` | 7-0-4 | 21 | 452 | 393 | 41.1 | 1 | 2 |
+| 4 | `Joao Bonito` | 6-0-5 | 18 | 490 | 454 | 44.5 | 2 | 1 |
+| 5 | `Sue-nited FC**` | 6-0-5 | 18 | 488 | 488 | 44.4 | 1 | 0 |
+| 6 | `Into the WOODwork*` | 6-0-5 | 18 | 486 | 424 | 44.2 | 2 | 1 |
+| 7 | `***NoHaalandNoParty` | 5-0-6 | 15 | 500 | 434 | 45.5 | 3 | 2 |
+| 8 | `Thanksgiving Cherki` | 3-0-8 | 9 | 447 | 550 | 40.6 | 2 | 1 |
+| 9 | `Amorim de mi vida` | 3-0-8 | 9 | 430 | 554 | 39.1 | 1 | 2 |
+| 10 | `*Saka It To Me Baby` | 3-0-8 | 9 | 428 | 507 | 38.9 | 0 | 0 |
 
 </details>
 
@@ -42,24 +42,24 @@ Record, H2H points, points for/against, weekly average, and top/bottom score cou
 
 **Verified against official FPL:** All ten team totals and the league total match official FPL.
 
-Ranking snapshot through GW10. League rank compares total points-for with other 10-team official FPL Draft leagues. Individual rank compares each manager with all teams in those leagues, using points-for only.
+Ranking snapshot through GW11. League rank compares total points-for with other 10-team official FPL Draft leagues. Individual rank compares each manager with all teams in those leagues, using points-for only.
 
 | League PF | Global League Rank | Percentile | Top League PF | Gap To Top |
 |---|---|---|---|---|
-| 4,278 | 208 of 4,003 | 94.8% | 4,442 | 164 |
+| 4,697 | 116 of 4,003 | 97.1% | 4,859 | 162 |
 
 | Global Rank (40,030 teams) | Team | Manager | PF | Percentile |
 |---|---|---|---|---|
-| 5,148 | `***NoHaalandNoParty` | Ryan Donlan | 466 | 87.1% |
-| 7,403 | `ChabosSpurs@Law` | Alexander Chaban | 454 | 81.5% |
-| 8,329 | `Into the WOODwork*` | Luke Lockwood | 450 | 79.2% |
-| 8,582 | `Sue-nited FC**` | Justin Miller | 449 | 78.6% |
-| 9,513 | `Joao Bonito` | Dylan Reid | 445 | 76.2% |
-| 10,755 | `Bruno’s Balebas` | Drake Byrd | 440 | 73.1% |
-| 21,868 | `Szoboszlickin good` | Ryan Houseman | 402 | 45.4% |
-| 23,613 | `Thanksgiving Cherki` | Ethan Ellsworth | 396 | 41.0% |
-| 25,388 | `Amorim de mi vida` | Julius Long | 390 | 36.6% |
-| 26,549 | `*Saka It To Me Baby` | Levi Morant | 386 | 33.7% |
+| 6,325 | `***NoHaalandNoParty` | Ryan Donlan | 500 | 84.2% |
+| 8,200 | `ChabosSpurs@Law` | Alexander Chaban | 491 | 79.5% |
+| 8,392 | `Joao Bonito` | Dylan Reid | 490 | 79.0% |
+| 8,802 | `Sue-nited FC**` | Justin Miller | 488 | 78.0% |
+| 9,295 | `Into the WOODwork*` | Luke Lockwood | 486 | 76.8% |
+| 9,524 | `Bruno’s Balebas` | Drake Byrd | 485 | 76.2% |
+| 18,644 | `Szoboszlickin good` | Ryan Houseman | 452 | 53.4% |
+| 20,105 | `Thanksgiving Cherki` | Ethan Ellsworth | 447 | 49.8% |
+| 24,853 | `Amorim de mi vida` | Julius Long | 430 | 37.9% |
+| 25,403 | `*Saka It To Me Baby` | Levi Morant | 428 | 36.5% |
 
 Percentile is the share of the comparison population at or below that global standing, rounded to one decimal place.
 
@@ -87,7 +87,7 @@ Current holder: Ryan Houseman.
 
 | Team | Manager | Number of Reigns | Longest Defense Run | Current Holder |
 |---|---|---|---|---|
-| `Szoboszlickin good` | Ryan Houseman | 1 | 0 | Yes |
+| `Szoboszlickin good` | Ryan Houseman | 1 | 1 | Yes |
 | `***NoHaalandNoParty` | Ryan Donlan | 1 | 5 |  |
 | `Joao Bonito` | Dylan Reid | 1 | 3 |  |
 | `*Saka It To Me Baby` | Levi Morant | 0 | 0 |  |
@@ -102,15 +102,15 @@ Current holder: Ryan Houseman.
 
 | Team | Manager | Belt Fight Record | Avg Score in Belt Fights | Diff vs Non-Belt Avg |
 |---|---|---|---|---|
-| `***NoHaalandNoParty` | Ryan Donlan | 5-1 | 57.0 | +26.0 |
-| `Amorim de mi vida` | Julius Long | 0-1 | 55.0 | +17.8 |
-| `Joao Bonito` | Dylan Reid | 4-1 | 54.0 | +19.0 |
-| `Sue-nited FC**` | Justin Miller | 0-2 | 46.5 | +2.0 |
-| `*Saka It To Me Baby` | Levi Morant | 0-1 | 43.0 | +4.9 |
+| `***NoHaalandNoParty` | Ryan Donlan | 5-1 | 57.0 | +25.4 |
+| `Amorim de mi vida` | Julius Long | 0-1 | 55.0 | +17.5 |
+| `Joao Bonito` | Dylan Reid | 4-1 | 54.0 | +17.3 |
+| `Sue-nited FC**` | Justin Miller | 0-2 | 46.5 | +2.6 |
+| `Szoboszlickin good` | Ryan Houseman | 2-0 | 43.5 | +2.9 |
+| `*Saka It To Me Baby` | Levi Morant | 0-2 | 42.5 | +4.4 |
 | `Bruno’s Balebas` | Drake Byrd | 0-1 | 39.0 | -5.6 |
-| `Szoboszlickin good` | Ryan Houseman | 1-0 | 37.0 | -3.6 |
-| `Thanksgiving Cherki` | Ethan Ellsworth | 0-2 | 35.0 | -5.8 |
-| `ChabosSpurs@Law` | Alexander Chaban | 0-1 | 23.0 | -24.9 |
+| `Thanksgiving Cherki` | Ethan Ellsworth | 0-2 | 35.0 | -6.9 |
+| `ChabosSpurs@Law` | Alexander Chaban | 0-1 | 23.0 | -23.8 |
 | `Into the WOODwork*` | Luke Lockwood | 0-0 | — | — |
 
 ### Week-By-Week Belt Path
@@ -127,7 +127,8 @@ Current holder: Ryan Houseman.
 | 8 | Dylan Reid | Drake Byrd | 64-39 | Dylan Reid |
 | 9 | Dylan Reid | Ethan Ellsworth | 71-46 | Dylan Reid |
 | 10 | Dylan Reid | Ryan Houseman | 32-37 | Ryan Houseman |
-| 11 | Ryan Houseman | Levi Morant | — | Pending |
+| 11 | Ryan Houseman | Levi Morant | 50-42 | Ryan Houseman |
+| 12 | Ryan Houseman | Drake Byrd | — | Pending |
 
 </details>
 
@@ -364,7 +365,7 @@ Each manager's complete 15-player roster, grouped by position.
 <details>
 <summary><h2>Winning And Losing Streaks</h2></summary>
 
-Calculated through GW10.
+Calculated through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -375,23 +376,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Longest Win Streak | Win GW(s) | Longest Loss Streak | Loss GW(s) |
 |---|---|---|---|---|
-| `ChabosSpurs@Law` | 5 | 6-10 | 2 | 1-2 |
-| `***NoHaalandNoParty` | 5 | 1-5 | 5 | 6-10 |
+| `ChabosSpurs@Law` | 6 | 6-11 | 2 | 1-2 |
+| `***NoHaalandNoParty` | 5 | 1-5 | 6 | 6-11 |
 | `Sue-nited FC**` | 4 | 3-6 | 2 | 1-2 |
 | `Joao Bonito` | 4 | 6-9 | 3 | 3-5 |
-| `Bruno’s Balebas` | 3 | 1-3 | 1 | 4, 6, 8 |
+| `Bruno’s Balebas` | 3 | 1-3, 9-11 | 1 | 4, 6, 8 |
 | `Into the WOODwork*` | 3 | 8-10 | 3 | 2-4 |
-| `Szoboszlickin good` | 2 | 1-2, 7-8 | 2 | 5-6 |
-| `*Saka It To Me Baby` | 1 | 1, 3, 7 | 3 | 4-6, 8-10 |
+| `Szoboszlickin good` | 2 | 1-2, 7-8, 10-11 | 2 | 5-6 |
 | `Amorim de mi vida` | 1 | 4, 6, 9 | 3 | 1-3 |
-| `Thanksgiving Cherki` | 1 | 2, 5 | 5 | 6-10 |
+| `*Saka It To Me Baby` | 1 | 1, 3, 7 | 4 | 8-11 |
+| `Thanksgiving Cherki` | 1 | 2, 5, 11 | 5 | 6-10 |
 
 </details>
 
 <details>
 <summary><h2>Score Bands</h2></summary>
 
-Calculated through GW10.
+Calculated through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -402,23 +403,23 @@ Cutoff ties are included in the higher band. A score can never count in both Top
 
 | Team | Top 1 | Top 3 | Top 5 | Bottom 5 | Bottom 3 | Bottom 1 |
 |---|---|---|---|---|---|---|
-| `***NoHaalandNoParty` | 30% | 40% | 60% | 40% | 30% | 10% |
-| `Joao Bonito` | 20% | 50% | 50% | 50% | 50% | 10% |
-| `Into the WOODwork*` | 20% | 40% | 50% | 50% | 40% | 10% |
-| `ChabosSpurs@Law` | 10% | 40% | 80% | 20% | 20% | 20% |
-| `Bruno’s Balebas` | 10% | 30% | 70% | 30% | 30% | 0% |
-| `Sue-nited FC**` | 10% | 30% | 70% | 30% | 20% | 0% |
-| `Thanksgiving Cherki` | 10% | 30% | 50% | 50% | 20% | 10% |
-| `Amorim de mi vida` | 10% | 30% | 30% | 70% | 50% | 20% |
-| `Szoboszlickin good` | 10% | 10% | 30% | 70% | 20% | 20% |
-| `*Saka It To Me Baby` | 0% | 10% | 30% | 70% | 20% | 0% |
+| `***NoHaalandNoParty` | 27% | 36% | 55% | 45% | 36% | 18% |
+| `Joao Bonito` | 18% | 55% | 55% | 45% | 45% | 9% |
+| `Thanksgiving Cherki` | 18% | 36% | 55% | 45% | 18% | 9% |
+| `Into the WOODwork*` | 18% | 36% | 45% | 55% | 45% | 9% |
+| `Bruno’s Balebas` | 9% | 36% | 73% | 27% | 27% | 0% |
+| `ChabosSpurs@Law` | 9% | 36% | 73% | 27% | 27% | 18% |
+| `Sue-nited FC**` | 9% | 27% | 64% | 36% | 18% | 0% |
+| `Amorim de mi vida` | 9% | 27% | 27% | 73% | 45% | 18% |
+| `Szoboszlickin good` | 9% | 18% | 36% | 64% | 18% | 18% |
+| `*Saka It To Me Baby` | 0% | 9% | 36% | 64% | 18% | 0% |
 
 </details>
 
 <details>
 <summary><h2>True Table / All-Play xPts</h2></summary>
 
-Calculated through GW10.
+Calculated through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -429,23 +430,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | True Rank | Team | xPts | Real H2H Pts | PF | Avg Weekly Rank |
 |---|---|---|---|---|---|
-| 1 | `ChabosSpurs@Law` | 17.6 | 21 | 454 | 4.60 |
-| 2 | `Sue-nited FC**` | 17.4 | 18 | 449 | 4.70 |
-| 3 | `Bruno’s Balebas` | 16.2 | 21 | 440 | 5.00 |
-| 4 | `***NoHaalandNoParty` | 16.0 | 15 | 466 | 5.00 |
-| 5 | `Joao Bonito` | 15.4 | 15 | 445 | 5.30 |
-| 6 | `Into the WOODwork*` | 15.3 | 18 | 450 | 5.20 |
-| 7 | `Thanksgiving Cherki` | 14.1 | 6 | 396 | 5.50 |
-| 8 | `*Saka It To Me Baby` | 12.9 | 9 | 386 | 6.00 |
-| 9 | `Szoboszlickin good` | 12.2 | 18 | 402 | 6.20 |
-| 10 | `Amorim de mi vida` | 11.7 | 9 | 390 | 6.50 |
+| 1 | `Sue-nited FC**` | 18.4 | 18 | 488 | 4.91 |
+| 2 | `Bruno’s Balebas` | 18.3 | 24 | 485 | 4.82 |
+| 3 | `ChabosSpurs@Law` | 18.2 | 24 | 491 | 4.91 |
+| 4 | `Joao Bonito` | 17.6 | 18 | 490 | 5.09 |
+| 5 | `Thanksgiving Cherki` | 17.1 | 9 | 447 | 5.09 |
+| 6 | `***NoHaalandNoParty` | 16.0 | 15 | 500 | 5.45 |
+| 7 | `Into the WOODwork*` | 15.7 | 18 | 486 | 5.55 |
+| 8 | `Szoboszlickin good` | 14.9 | 21 | 452 | 5.82 |
+| 9 | `*Saka It To Me Baby` | 14.6 | 9 | 428 | 5.91 |
+| 10 | `Amorim de mi vida` | 13.0 | 9 | 430 | 6.45 |
 
 </details>
 
 <details>
 <summary><h2>Schedule Luck</h2></summary>
 
-Calculated through GW10.
+Calculated through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -456,23 +457,23 @@ This section uses the same definitions and calculations as the prior season page
 
 | Team | Actual H2H Pts | xPts | Luck | PA |
 |---|---|---|---|---|
-| `Szoboszlickin good` | 18 | 12.2 | +5.8 | 351 |
-| `Bruno’s Balebas` | 21 | 16.2 | +4.8 | 423 |
-| `ChabosSpurs@Law` | 21 | 17.6 | +3.4 | 397 |
-| `Into the WOODwork*` | 18 | 15.3 | +2.7 | 373 |
-| `Sue-nited FC**` | 18 | 17.4 | +0.6 | 443 |
-| `Joao Bonito` | 15 | 15.4 | -0.4 | 414 |
-| `***NoHaalandNoParty` | 15 | 16.0 | -1.0 | 397 |
-| `Amorim de mi vida` | 9 | 11.7 | -2.7 | 509 |
-| `*Saka It To Me Baby` | 9 | 12.9 | -3.9 | 457 |
-| `Thanksgiving Cherki` | 6 | 14.1 | -8.1 | 514 |
+| `Szoboszlickin good` | 21 | 14.9 | +6.1 | 393 |
+| `ChabosSpurs@Law` | 24 | 18.2 | +5.8 | 431 |
+| `Bruno’s Balebas` | 24 | 18.3 | +5.7 | 462 |
+| `Into the WOODwork*` | 18 | 15.7 | +2.3 | 424 |
+| `Joao Bonito` | 18 | 17.6 | +0.4 | 454 |
+| `Sue-nited FC**` | 18 | 18.4 | -0.4 | 488 |
+| `***NoHaalandNoParty` | 15 | 16.0 | -1.0 | 434 |
+| `Amorim de mi vida` | 9 | 13.0 | -4.0 | 554 |
+| `*Saka It To Me Baby` | 9 | 14.6 | -5.6 | 507 |
+| `Thanksgiving Cherki` | 9 | 17.1 | -8.1 | 550 |
 
 </details>
 
 <details>
 <summary><h2>Bad Beats And Soft Wins</h2></summary>
 
-Calculated through GW10.
+Calculated through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -484,12 +485,12 @@ Bad beats are losses from the tie-aware top half; soft wins are wins from the bo
 | Team | Bad Beats | Soft Wins | Timing Balance |
 |---|---|---|---|
 | `Thanksgiving Cherki` | 3 | 0 | -3 |
+| `*Saka It To Me Baby` | 2 | 1 | -1 |
 | `Sue-nited FC**` | 2 | 1 | -1 |
 | `***NoHaalandNoParty` | 1 | 0 | -1 |
-| `ChabosSpurs@Law` | 1 | 0 | -1 |
-| `*Saka It To Me Baby` | 1 | 1 | 0 |
 | `Amorim de mi vida` | 1 | 1 | 0 |
 | `Bruno’s Balebas` | 1 | 1 | 0 |
+| `ChabosSpurs@Law` | 1 | 1 | 0 |
 | `Into the WOODwork*` | 1 | 2 | 1 |
 | `Joao Bonito` | 0 | 0 | 0 |
 | `Szoboszlickin good` | 0 | 3 | 3 |
@@ -518,13 +519,15 @@ Bad beats are losses from the tie-aware top half; soft wins are wins from the bo
 | 9 | Julius Long | 40 | Levi Morant | 37 | 40.5 | Soft Win |
 | 10 | Drake Byrd | 59 | Ethan Ellsworth | 43 | 41.0 | Bad Beat |
 | 10 | Ryan Houseman | 37 | Dylan Reid | 32 | 41.0 | Soft Win |
+| 11 | Alexander Chaban | 37 | Ryan Donlan | 34 | 41.0 | Soft Win |
+| 11 | Ryan Houseman | 50 | Levi Morant | 42 | 41.0 | Bad Beat |
 
 </details>
 
 <details>
 <summary><h2>Weekly Scoring And Boom/Bust</h2></summary>
 
-Calculated through GW10.
+Calculated through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -535,16 +538,16 @@ Average, median, standard deviation, best/worst scores, and weekly extremes matc
 
 | Team | Avg | Median | Stdev | Best | Worst | Top Scores | Bottom Scores |
 |---|---|---|---|---|---|---|---|
-| `***NoHaalandNoParty` | 46.6 | 39.0 | 19.6 | 83 | 25 | 3 | 1 |
-| `Bruno’s Balebas` | 44.0 | 39.5 | 15.3 | 82 | 26 | 1 | 0 |
-| `Into the WOODwork*` | 45.0 | 42.0 | 14.7 | 75 | 27 | 2 | 1 |
-| `Amorim de mi vida` | 39.0 | 34.0 | 14.5 | 65 | 24 | 1 | 2 |
-| `Joao Bonito` | 44.5 | 41.0 | 14.2 | 71 | 28 | 2 | 1 |
-| `Szoboszlickin good` | 40.2 | 36.5 | 12.5 | 68 | 24 | 1 | 2 |
-| `ChabosSpurs@Law` | 45.4 | 46.5 | 12.0 | 62 | 23 | 1 | 2 |
-| `Sue-nited FC**` | 44.9 | 45.0 | 10.0 | 57 | 25 | 1 | 0 |
-| `Thanksgiving Cherki` | 39.6 | 38.5 | 9.4 | 57 | 24 | 1 | 1 |
-| `*Saka It To Me Baby` | 38.6 | 37.0 | 4.7 | 48 | 31 | 0 | 0 |
+| `***NoHaalandNoParty` | 45.5 | 36.0 | 19.0 | 83 | 25 | 3 | 2 |
+| `Bruno’s Balebas` | 44.1 | 40.0 | 14.6 | 82 | 26 | 1 | 0 |
+| `Into the WOODwork*` | 44.2 | 40.0 | 14.3 | 75 | 27 | 2 | 1 |
+| `Amorim de mi vida` | 39.1 | 36.0 | 13.8 | 65 | 24 | 1 | 2 |
+| `Joao Bonito` | 44.5 | 45.0 | 13.5 | 71 | 28 | 2 | 1 |
+| `Szoboszlickin good` | 41.1 | 37.0 | 12.2 | 68 | 24 | 1 | 2 |
+| `ChabosSpurs@Law` | 44.6 | 44.0 | 11.7 | 62 | 23 | 1 | 2 |
+| `Sue-nited FC**` | 44.4 | 42.0 | 9.7 | 57 | 25 | 1 | 0 |
+| `Thanksgiving Cherki` | 40.6 | 43.0 | 9.6 | 57 | 24 | 2 | 1 |
+| `*Saka It To Me Baby` | 38.9 | 37.0 | 4.6 | 48 | 31 | 0 | 0 |
 
 ### Biggest Single-Week Scores
 
@@ -576,7 +579,7 @@ Average, median, standard deviation, best/worst scores, and weekly extremes matc
 <details>
 <summary><h2>Lineup Efficiency</h2></summary>
 
-Official lineup decisions through GW10, compared with each squad's highest-scoring legal XI.
+Official lineup decisions through GW11, compared with each squad's highest-scoring legal XI.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -594,16 +597,16 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 
 | Rank | Team | Actual | Optimal | Missed | Efficiency | Perfect GWs | Recoverable Results | Worst Miss |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `***NoHaalandNoParty` | 466 | 482 | 16 | 96.7% | 5/10 | 0 | GW4 (+6) |
-| 2 | `Amorim de mi vida` | 390 | 410 | 20 | 95.1% | 6/10 | 0 | GW10 (+7) |
-| 3 | `ChabosSpurs@Law` | 454 | 478 | 24 | 95.0% | 4/10 | 0 | GW9 (+9) |
-| 4 | `Szoboszlickin good` | 402 | 428 | 26 | 93.9% | 3/10 | 1 | GW10 (+13) |
-| 5 | `*Saka It To Me Baby` | 386 | 417 | 31 | 92.6% | 1/10 | 3 | GW2 (+7) |
-| 6 | `Sue-nited FC**` | 449 | 487 | 38 | 92.2% | 1/10 | 1 | GW7 (+9) |
-| 7 | `Thanksgiving Cherki` | 396 | 430 | 34 | 92.1% | 0/10 | 1 | GW8 (+10) |
-| 8 | `Joao Bonito` | 445 | 490 | 45 | 90.8% | 3/10 | 2 | GW10 (+12) |
-| 9 | `Bruno’s Balebas` | 440 | 491 | 51 | 89.6% | 3/10 | 0 | GW3 (+15) |
-| 10 | `Into the WOODwork*` | 450 | 528 | 78 | 85.2% | 0/10 | 1 | GW6 (+15) |
+| 1 | `***NoHaalandNoParty` | 500 | 520 | 20 | 96.2% | 5/11 | 1 | GW4 (+6) |
+| 2 | `Szoboszlickin good` | 452 | 479 | 27 | 94.4% | 3/11 | 1 | GW10 (+13) |
+| 3 | `ChabosSpurs@Law` | 491 | 521 | 30 | 94.2% | 4/11 | 0 | GW9 (+9) |
+| 4 | `Amorim de mi vida` | 430 | 459 | 29 | 93.7% | 6/11 | 1 | GW11 (+9) |
+| 5 | `Thanksgiving Cherki` | 447 | 481 | 34 | 92.9% | 1/11 | 1 | GW8 (+10) |
+| 6 | `Sue-nited FC**` | 488 | 528 | 40 | 92.4% | 1/11 | 1 | GW7 (+9) |
+| 7 | `Joao Bonito` | 490 | 535 | 45 | 91.6% | 4/11 | 2 | GW10 (+12) |
+| 8 | `*Saka It To Me Baby` | 428 | 469 | 41 | 91.3% | 1/11 | 4 | GW11 (+10) |
+| 9 | `Bruno’s Balebas` | 485 | 537 | 52 | 90.3% | 3/11 | 0 | GW3 (+15) |
+| 10 | `Into the WOODwork*` | 486 | 573 | 87 | 84.8% | 0/11 | 1 | GW6 (+15) |
 
 ### Result-Changing Decisions
 
@@ -618,11 +621,14 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 | 7 | `Sue-nited FC**` | 53 | 62 | Dylan Reid | 54 | L→W vs Dylan Reid | In: Isak (9), Botman (3); Out: Anderson (1), Xhaka (2) |
 | 9 | `*Saka It To Me Baby` | 37 | 41 | Julius Long | 40 | L→W vs Julius Long | In: J.Timber (5); Out: Thomas-Asante (1) |
 | 10 | `Joao Bonito` | 32 | 44 | Ryan Houseman | 37 | L→W vs Ryan Houseman | In: Mukiele (9), Leno (3); Out: Thiago (-2), Penders (2) |
+| 11 | `***NoHaalandNoParty` | 34 | 38 | Alexander Chaban | 37 | L→W vs Alexander Chaban | In: Lindelöf (0); Out: Tarkowski (-4) |
+| 11 | `*Saka It To Me Baby` | 42 | 52 | Ryan Houseman | 50 | L→W vs Ryan Houseman | In: A.Becker (7), Havertz (5); Out: Horníček (1), Marmoush (1) |
+| 11 | `Amorim de mi vida` | 40 | 49 | Dylan Reid | 45 | L→W vs Dylan Reid | In: Emegha (8), Walton (3); Out: Gyökeres (0), Donnarumma (2) |
 
 ### Weekly Detail By Manager
 
 <details class="position-group">
-<summary>Ryan Donlan — ***NoHaalandNoParty — 16 recoverable points missed</summary>
+<summary>Ryan Donlan — ***NoHaalandNoParty — 20 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
 |---|---|---|---|---|---|---|---|
@@ -631,37 +637,12 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 | 6 | 34 | 40 | 6 | 85.0% | Rúben (6) | In: Rúben (6), Benitez (3); Out: Welbeck (1), Kelleher (2) | No change |
 | 8 | 25 | 27 | 2 | 92.6% | Calvert-Lewin (2) | In: Calvert-Lewin (2); Out: Groß (0) | No change |
 | 10 | 30 | 31 | 1 | 96.8% | Kelleher (2) | In: Fernandez-Pardo (1); Out: Gvardiol (0) | No change |
+| 11 | 34 | 38 | 4 | 89.5% | Martinez (1) | In: Lindelöf (0); Out: Tarkowski (-4) | L→W vs Alexander Chaban |
 
 </details>
 
 <details class="position-group">
-<summary>Julius Long — Amorim de mi vida — 20 recoverable points missed</summary>
-
-| GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
-|---|---|---|---|---|---|---|---|
-| 6 | 65 | 69 | 4 | 94.2% | Maitland-Niles (4) | In: Maitland-Niles (4), Baleba (3); Out: Gyökeres (1), Emersonn (2) | No change |
-| 7 | 26 | 32 | 6 | 81.2% | Maguire (4) | In: Maguire (4), Walton (2), Baleba (2); Out: Dasilva (0), Donnarumma (1), Cunha (1) | No change |
-| 9 | 40 | 43 | 3 | 93.0% | Mendy (3) | In: Mendy (3), Donnarumma (2); Out: Walton (1), Welbeck (1) | No change |
-| 10 | 24 | 31 | 7 | 77.4% | Castagne (7) | In: Castagne (7), Walton (2); Out: Donnarumma (1), Emersonn (1) | No change |
-
-</details>
-
-<details class="position-group">
-<summary>Alexander Chaban — ChabosSpurs@Law — 24 recoverable points missed</summary>
-
-| GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
-|---|---|---|---|---|---|---|---|
-| 2 | 23 | 25 | 2 | 92.0% | Suzuki (2) | In: Nketiah (2); Out: Vuskovic (0) | No change |
-| 3 | 52 | 58 | 6 | 89.7% | Konsa (4) | In: Konsa (4), Nketiah (4); Out: Robinson (1), Kudus (1) | No change |
-| 5 | 44 | 46 | 2 | 95.7% | Suzuki (2) | In: Suzuki (2), Robinson (2); Out: Raya (1), Delap (1) | No change |
-| 8 | 53 | 54 | 1 | 98.1% | Suzuki (4) | In: George (2); Out: Rogers (1) | No change |
-| 9 | 41 | 50 | 9 | 82.0% | Vuskovic (6) | In: Vuskovic (6), Raya (5); Out: Suzuki (1), Pedro Porro (1) | No change |
-| 10 | 59 | 63 | 4 | 93.7% | Nketiah (5) | In: Nketiah (5); Out: Kayode (1) | No change |
-
-</details>
-
-<details class="position-group">
-<summary>Ryan Houseman — Szoboszlickin good — 26 recoverable points missed</summary>
+<summary>Ryan Houseman — Szoboszlickin good — 27 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
 |---|---|---|---|---|---|---|---|
@@ -672,40 +653,35 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 | 7 | 46 | 48 | 2 | 95.8% | Trafford (2) | In: Szoboszlai (1); Out: Janelt (-1) | No change |
 | 9 | 27 | 30 | 3 | 90.0% | Trafford (2) | In: Isidor (1); Out: Mateta (-2) | No change |
 | 10 | 37 | 50 | 13 | 74.0% | Trafford (10) | In: Trafford (10), Ajayi (6); Out: Igor Jesus (0), Pickford (3) | No change |
+| 11 | 50 | 51 | 1 | 98.0% | Trafford (2) | In: Trafford (2); Out: Pickford (1) | No change |
 
 </details>
 
 <details class="position-group">
-<summary>Levi Morant — *Saka It To Me Baby — 31 recoverable points missed</summary>
+<summary>Alexander Chaban — ChabosSpurs@Law — 30 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
 |---|---|---|---|---|---|---|---|
-| 2 | 31 | 38 | 7 | 81.6% | Horníček (7) | In: Horníček (7); Out: A.Becker (0) | L→W vs Ryan Houseman |
-| 3 | 43 | 49 | 6 | 87.8% | A.Becker (8) | In: A.Becker (8); Out: Horníček (2) | No change |
-| 4 | 43 | 44 | 1 | 97.7% | Horníček (1) | In: J.Timber (1); Out: Thomas (0) | No change |
-| 5 | 37 | 43 | 6 | 86.0% | A.Becker (8) | In: A.Becker (8), Tzolis (2); Out: Georginio (1), Horníček (3) | L→W vs Drake Byrd |
-| 6 | 34 | 35 | 1 | 97.1% | A.Becker (1) | In: A.Becker (1); Out: Horníček (0) | No change |
-| 7 | 37 | 39 | 2 | 94.9% | A.Becker (2) | In: Diomande (2); Out: Mitchell (0) | No change |
-| 8 | 36 | 39 | 3 | 92.3% | Horníček (8) | In: Horníček (8), Diomande (0); Out: Palmer (-1), A.Becker (6) | No change |
-| 9 | 37 | 41 | 4 | 90.2% | J.Timber (5) | In: J.Timber (5); Out: Thomas-Asante (1) | L→W vs Julius Long |
-| 10 | 40 | 41 | 1 | 97.6% | Horníček (3) | In: Kamada (2); Out: Thomas-Asante (1) | No change |
+| 2 | 23 | 25 | 2 | 92.0% | Suzuki (2) | In: Nketiah (2); Out: Vuskovic (0) | No change |
+| 3 | 52 | 58 | 6 | 89.7% | Konsa (4) | In: Konsa (4), Nketiah (4); Out: Robinson (1), Kudus (1) | No change |
+| 5 | 44 | 46 | 2 | 95.7% | Suzuki (2) | In: Suzuki (2), Robinson (2); Out: Raya (1), Delap (1) | No change |
+| 8 | 53 | 54 | 1 | 98.1% | Suzuki (4) | In: George (2); Out: Rogers (1) | No change |
+| 9 | 41 | 50 | 9 | 82.0% | Vuskovic (6) | In: Vuskovic (6), Raya (5); Out: Suzuki (1), Pedro Porro (1) | No change |
+| 10 | 59 | 63 | 4 | 93.7% | Nketiah (5) | In: Nketiah (5); Out: Kayode (1) | No change |
+| 11 | 37 | 43 | 6 | 86.0% | Suzuki (6) | In: Suzuki (6), Sávio (1); Out: Vuskovic (0), Raya (1) | No change |
 
 </details>
 
 <details class="position-group">
-<summary>Justin Miller — Sue-nited FC** — 38 recoverable points missed</summary>
+<summary>Julius Long — Amorim de mi vida — 29 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
 |---|---|---|---|---|---|---|---|
-| 2 | 40 | 46 | 6 | 87.0% | Xhaka (6) | In: Xhaka (6); Out: Aina (0) | No change |
-| 3 | 55 | 58 | 3 | 94.8% | Xhaka (3) | In: Xhaka (3), Kostoulas (2); Out: Silva (1), Barcola (1) | No change |
-| 4 | 55 | 56 | 1 | 98.2% | Botman (2) | In: Botman (2); Out: Lewis-Potter (1) | No change |
-| 5 | 48 | 53 | 5 | 90.6% | Khalaili (6) | In: Khalaili (6); Out: Egan (1) | No change |
-| 6 | 25 | 27 | 2 | 92.6% | Jacquet (3) | In: Jacquet (3); Out: Tavernier (1) | No change |
-| 7 | 53 | 62 | 9 | 85.5% | Isak (9) | In: Isak (9), Botman (3); Out: Anderson (1), Xhaka (2) | L→W vs Dylan Reid |
-| 8 | 57 | 64 | 7 | 89.1% | Jacquet (8) | In: Jacquet (8); Out: Murillo (1) | No change |
-| 9 | 34 | 38 | 4 | 89.5% | Henderson (3) | In: Henderson (3), Dedić (2), Jacquet (2); Out: Sels (1), Egan (1), Barcola (1) | No change |
-| 10 | 42 | 43 | 1 | 97.7% | Henderson (2) | In: Egan (2); Out: Tonali (1) | No change |
+| 6 | 65 | 69 | 4 | 94.2% | Maitland-Niles (4) | In: Maitland-Niles (4), Baleba (3); Out: Gyökeres (1), Emersonn (2) | No change |
+| 7 | 26 | 32 | 6 | 81.2% | Maguire (4) | In: Maguire (4), Walton (2), Baleba (2); Out: Dasilva (0), Donnarumma (1), Cunha (1) | No change |
+| 9 | 40 | 43 | 3 | 93.0% | Mendy (3) | In: Mendy (3), Donnarumma (2); Out: Walton (1), Welbeck (1) | No change |
+| 10 | 24 | 31 | 7 | 77.4% | Castagne (7) | In: Castagne (7), Walton (2); Out: Donnarumma (1), Emersonn (1) | No change |
+| 11 | 40 | 49 | 9 | 81.6% | Emegha (8) | In: Emegha (8), Walton (3); Out: Gyökeres (0), Donnarumma (2) | L→W vs Dylan Reid |
 
 </details>
 
@@ -728,6 +704,24 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 </details>
 
 <details class="position-group">
+<summary>Justin Miller — Sue-nited FC** — 40 recoverable points missed</summary>
+
+| GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
+|---|---|---|---|---|---|---|---|
+| 2 | 40 | 46 | 6 | 87.0% | Xhaka (6) | In: Xhaka (6); Out: Aina (0) | No change |
+| 3 | 55 | 58 | 3 | 94.8% | Xhaka (3) | In: Xhaka (3), Kostoulas (2); Out: Silva (1), Barcola (1) | No change |
+| 4 | 55 | 56 | 1 | 98.2% | Botman (2) | In: Botman (2); Out: Lewis-Potter (1) | No change |
+| 5 | 48 | 53 | 5 | 90.6% | Khalaili (6) | In: Khalaili (6); Out: Egan (1) | No change |
+| 6 | 25 | 27 | 2 | 92.6% | Jacquet (3) | In: Jacquet (3); Out: Tavernier (1) | No change |
+| 7 | 53 | 62 | 9 | 85.5% | Isak (9) | In: Isak (9), Botman (3); Out: Anderson (1), Xhaka (2) | L→W vs Dylan Reid |
+| 8 | 57 | 64 | 7 | 89.1% | Jacquet (8) | In: Jacquet (8); Out: Murillo (1) | No change |
+| 9 | 34 | 38 | 4 | 89.5% | Henderson (3) | In: Henderson (3), Dedić (2), Jacquet (2); Out: Sels (1), Egan (1), Barcola (1) | No change |
+| 10 | 42 | 43 | 1 | 97.7% | Henderson (2) | In: Egan (2); Out: Tonali (1) | No change |
+| 11 | 39 | 41 | 2 | 95.1% | Sels (2) | In: Tonali (0); Out: Costinha (-2) | No change |
+
+</details>
+
+<details class="position-group">
 <summary>Dylan Reid — Joao Bonito — 45 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
@@ -743,7 +737,25 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 </details>
 
 <details class="position-group">
-<summary>Drake Byrd — Bruno’s Balebas — 51 recoverable points missed</summary>
+<summary>Levi Morant — *Saka It To Me Baby — 41 recoverable points missed</summary>
+
+| GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
+|---|---|---|---|---|---|---|---|
+| 2 | 31 | 38 | 7 | 81.6% | Horníček (7) | In: Horníček (7); Out: A.Becker (0) | L→W vs Ryan Houseman |
+| 3 | 43 | 49 | 6 | 87.8% | A.Becker (8) | In: A.Becker (8); Out: Horníček (2) | No change |
+| 4 | 43 | 44 | 1 | 97.7% | Horníček (1) | In: J.Timber (1); Out: Thomas (0) | No change |
+| 5 | 37 | 43 | 6 | 86.0% | A.Becker (8) | In: A.Becker (8), Tzolis (2); Out: Georginio (1), Horníček (3) | L→W vs Drake Byrd |
+| 6 | 34 | 35 | 1 | 97.1% | A.Becker (1) | In: A.Becker (1); Out: Horníček (0) | No change |
+| 7 | 37 | 39 | 2 | 94.9% | A.Becker (2) | In: Diomande (2); Out: Mitchell (0) | No change |
+| 8 | 36 | 39 | 3 | 92.3% | Horníček (8) | In: Horníček (8), Diomande (0); Out: Palmer (-1), A.Becker (6) | No change |
+| 9 | 37 | 41 | 4 | 90.2% | J.Timber (5) | In: J.Timber (5); Out: Thomas-Asante (1) | L→W vs Julius Long |
+| 10 | 40 | 41 | 1 | 97.6% | Horníček (3) | In: Kamada (2); Out: Thomas-Asante (1) | No change |
+| 11 | 42 | 52 | 10 | 80.8% | A.Becker (7) | In: A.Becker (7), Havertz (5); Out: Horníček (1), Marmoush (1) | L→W vs Ryan Houseman |
+
+</details>
+
+<details class="position-group">
+<summary>Drake Byrd — Bruno’s Balebas — 52 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
 |---|---|---|---|---|---|---|---|
@@ -754,11 +766,12 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 | 8 | 39 | 46 | 7 | 84.8% | Roefs (9) | In: Roefs (9), Elanga (1); Out: Tielemans (0), Tzolakis (3) | No change |
 | 9 | 44 | 46 | 2 | 95.7% | Elanga (2) | In: Elanga (2); Out: Muñoz (0) | No change |
 | 10 | 59 | 68 | 9 | 86.8% | Roefs (9) | In: Roefs (9), Dunk (5); Out: Davis (-1), Tzolakis (6) | No change |
+| 11 | 45 | 46 | 1 | 97.8% | Tzolakis (10) | In: Elanga (1); Out: Muñoz (0) | No change |
 
 </details>
 
 <details class="position-group">
-<summary>Luke Lockwood — Into the WOODwork* — 78 recoverable points missed</summary>
+<summary>Luke Lockwood — Into the WOODwork* — 87 recoverable points missed</summary>
 
 | GW | Actual | Optimal | Missed | Efficiency | Best Unused | Optimal Changes | Result Impact |
 |---|---|---|---|---|---|---|---|
@@ -772,6 +785,7 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 | 8 | 31 | 41 | 10 | 75.6% | Osula (9) | In: Osula (9), Giles (2); Out: Guéhi (0), Thiaw (1) | No change |
 | 9 | 48 | 50 | 2 | 96.0% | Solanke (2) | In: Solanke (2); Out: McGinn (0) | No change |
 | 10 | 59 | 70 | 11 | 84.3% | E.Le Fée (11) | In: E.Le Fée (11), Giles (1); Out: Guéhi (0), Solanke (1) | No change |
+| 11 | 36 | 45 | 9 | 80.0% | Petrović (6) | In: Petrović (6), Osula (5), Fofana (2); Out: Mbeumo (1), McGinn (1), Verbruggen (2) | No change |
 
 </details>
 
@@ -780,7 +794,7 @@ Official lineup decisions through GW10, compared with each squad's highest-scori
 <details>
 <summary><h2>Positional Scoring</h2></summary>
 
-Official starting-lineup and roster scoring through GW10. The 4+ week pool metric is provisional this early in the season.
+Official starting-lineup and roster scoring through GW11. The 4+ week pool metric is provisional this early in the season.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -793,19 +807,19 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Position | Starter Weekly Avg | Rostered Weekly Avg | 4+ Week Pool Weekly Avg |
 |---|---|---|---|
-| GKP | 3.76 | 3.23 | 3.35 |
-| DEF | 3.92 | 3.37 | 3.54 |
-| MID | 3.97 | 3.45 | 3.52 |
-| FWD | 3.72 | 2.85 | 2.78 |
+| GKP | 3.74 | 3.27 | 3.26 |
+| DEF | 3.88 | 3.33 | 3.45 |
+| MID | 3.97 | 3.45 | 3.48 |
+| FWD | 3.77 | 2.88 | 2.77 |
 
 ### Position Points/Start Leaders
 
 | Position | Points/Start Leader | Starter Points | Starts | Points/Start |
 |---|---|---|---|---|
-| GKP | `ChabosSpurs@Law` | 63 | 10 | 6.30 |
-| DEF | `ChabosSpurs@Law` | 197 | 42 | 4.69 |
-| MID | `Bruno’s Balebas` | 171 | 37 | 4.62 |
-| FWD | `Sue-nited FC**` | 95 | 17 | 5.59 |
+| GKP | `ChabosSpurs@Law` | 64 | 11 | 5.82 |
+| DEF | `ChabosSpurs@Law` | 221 | 47 | 4.70 |
+| MID | `Bruno’s Balebas` | 182 | 40 | 4.55 |
+| FWD | `Sue-nited FC**` | 101 | 19 | 5.32 |
 
 ### Team-By-Position Starter Scoring
 
@@ -814,16 +828,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `ChabosSpurs@Law` | 63 | 10 | 6.30 |
-| `Szoboszlickin good` | 48 | 10 | 4.80 |
-| `Into the WOODwork*` | 47 | 10 | 4.70 |
-| `***NoHaalandNoParty` | 35 | 10 | 3.50 |
-| `Amorim de mi vida` | 34 | 10 | 3.40 |
-| `Joao Bonito` | 34 | 10 | 3.40 |
-| `Bruno’s Balebas` | 32 | 10 | 3.20 |
-| `*Saka It To Me Baby` | 31 | 10 | 3.10 |
-| `Thanksgiving Cherki` | 29 | 10 | 2.90 |
-| `Sue-nited FC**` | 23 | 10 | 2.30 |
+| `ChabosSpurs@Law` | 64 | 11 | 5.82 |
+| `Into the WOODwork*` | 49 | 11 | 4.45 |
+| `Szoboszlickin good` | 49 | 11 | 4.45 |
+| `Bruno’s Balebas` | 43 | 11 | 3.91 |
+| `***NoHaalandNoParty` | 41 | 11 | 3.73 |
+| `Amorim de mi vida` | 36 | 11 | 3.27 |
+| `Joao Bonito` | 36 | 11 | 3.27 |
+| `Thanksgiving Cherki` | 36 | 11 | 3.27 |
+| `*Saka It To Me Baby` | 32 | 11 | 2.91 |
+| `Sue-nited FC**` | 25 | 11 | 2.27 |
 
 </details>
 
@@ -832,16 +846,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `ChabosSpurs@Law` | 197 | 42 | 4.69 |
-| `Szoboszlickin good` | 183 | 41 | 4.46 |
-| `Sue-nited FC**` | 171 | 41 | 4.17 |
-| `Amorim de mi vida` | 150 | 36 | 4.17 |
-| `***NoHaalandNoParty` | 162 | 40 | 4.05 |
-| `Joao Bonito` | 145 | 38 | 3.82 |
-| `Thanksgiving Cherki` | 133 | 38 | 3.50 |
-| `Bruno’s Balebas` | 136 | 39 | 3.49 |
-| `Into the WOODwork*` | 142 | 41 | 3.46 |
-| `*Saka It To Me Baby` | 99 | 31 | 3.19 |
+| `ChabosSpurs@Law` | 221 | 47 | 4.70 |
+| `Szoboszlickin good` | 192 | 45 | 4.27 |
+| `Sue-nited FC**` | 185 | 45 | 4.11 |
+| `Amorim de mi vida` | 157 | 39 | 4.03 |
+| `Joao Bonito` | 171 | 43 | 3.98 |
+| `***NoHaalandNoParty` | 161 | 43 | 3.74 |
+| `Thanksgiving Cherki` | 156 | 42 | 3.71 |
+| `Into the WOODwork*` | 158 | 44 | 3.59 |
+| `*Saka It To Me Baby` | 116 | 35 | 3.31 |
+| `Bruno’s Balebas` | 140 | 44 | 3.18 |
 
 </details>
 
@@ -850,16 +864,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `Bruno’s Balebas` | 171 | 37 | 4.62 |
-| `Thanksgiving Cherki` | 189 | 42 | 4.50 |
-| `Into the WOODwork*` | 192 | 44 | 4.36 |
-| `***NoHaalandNoParty` | 158 | 38 | 4.16 |
-| `*Saka It To Me Baby` | 177 | 43 | 4.12 |
-| `Sue-nited FC**` | 160 | 42 | 3.81 |
-| `Amorim de mi vida` | 148 | 41 | 3.61 |
-| `Joao Bonito` | 137 | 38 | 3.61 |
-| `Szoboszlickin good` | 159 | 45 | 3.53 |
-| `ChabosSpurs@Law` | 130 | 38 | 3.42 |
+| `Bruno’s Balebas` | 182 | 40 | 4.55 |
+| `Thanksgiving Cherki` | 208 | 47 | 4.43 |
+| `*Saka It To Me Baby` | 196 | 47 | 4.17 |
+| `Into the WOODwork*` | 201 | 49 | 4.10 |
+| `***NoHaalandNoParty` | 168 | 42 | 4.00 |
+| `Amorim de mi vida` | 178 | 46 | 3.87 |
+| `Sue-nited FC**` | 177 | 46 | 3.85 |
+| `Szoboszlickin good` | 189 | 50 | 3.78 |
+| `Joao Bonito` | 152 | 42 | 3.62 |
+| `ChabosSpurs@Law` | 141 | 42 | 3.36 |
 
 </details>
 
@@ -868,16 +882,16 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 
 | Team | Starter Points | Starts | Points/Start |
 |---|---|---|---|
-| `Sue-nited FC**` | 95 | 17 | 5.59 |
-| `Joao Bonito` | 129 | 24 | 5.38 |
-| `***NoHaalandNoParty` | 111 | 22 | 5.05 |
-| `Into the WOODwork*` | 69 | 15 | 4.60 |
-| `Bruno’s Balebas` | 101 | 24 | 4.21 |
-| `ChabosSpurs@Law` | 64 | 20 | 3.20 |
-| `*Saka It To Me Baby` | 79 | 26 | 3.04 |
-| `Amorim de mi vida` | 58 | 23 | 2.52 |
-| `Thanksgiving Cherki` | 45 | 20 | 2.25 |
-| `Szoboszlickin good` | 12 | 14 | 0.86 |
+| `Sue-nited FC**` | 101 | 19 | 5.32 |
+| `Joao Bonito` | 131 | 25 | 5.24 |
+| `***NoHaalandNoParty` | 130 | 25 | 5.20 |
+| `Bruno’s Balebas` | 120 | 26 | 4.62 |
+| `Into the WOODwork*` | 78 | 17 | 4.59 |
+| `ChabosSpurs@Law` | 65 | 21 | 3.10 |
+| `*Saka It To Me Baby` | 84 | 28 | 3.00 |
+| `Amorim de mi vida` | 59 | 25 | 2.36 |
+| `Thanksgiving Cherki` | 47 | 21 | 2.24 |
+| `Szoboszlickin good` | 22 | 15 | 1.47 |
 
 </details>
 
@@ -886,7 +900,7 @@ Starter, rostered, and long-term free-agent pool scoring use the same definition
 <details>
 <summary><h2>Manager Best XIs</h2></summary>
 
-Each manager's highest-scoring legal XI using contributed starting-lineup points through GW10.
+Each manager's highest-scoring legal XI using contributed starting-lineup points through GW11.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -898,12 +912,12 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Alexander Chaban — 4-4-2 · 407 contributed points</summary>
+<summary>Alexander Chaban — 5-3-2 · 443 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Alexander Chaban" data-formation="4-4-2" data-total="407">
+<section class="manager-best-xi" data-manager-best-xi="Alexander Chaban" data-formation="5-3-2" data-total="443">
 <header class="manager-best-xi-head">
-<span><strong>Best legal XI</strong> · 4-4-2</span>
-<strong>407 contributed points</strong>
+<span><strong>Best legal XI</strong> · 5-3-2</span>
+<strong>443 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
@@ -915,32 +929,27 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Liam Delap</strong>
-<span class="manager-best-xi-points">30 pts</span>
+<span class="manager-best-xi-points">31 pts</span>
 </article>
 </div>
-<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 3" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Morgan Rogers</strong>
-<span class="manager-best-xi-points">52 pts</span>
+<span class="manager-best-xi-points">57 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Rayan Vitor Simplício Rocha</strong>
-<span class="manager-best-xi-points">30 pts</span>
+<span class="manager-best-xi-points">33 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Jérémy Doku</strong>
-<span class="manager-best-xi-points">24 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Tyrique George</strong>
-<span class="manager-best-xi-points">11 pts</span>
+<span class="manager-best-xi-points">26 pts</span>
 </article>
 </div>
-<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 5" aria-label="DEF">
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Luka Vušković</strong>
@@ -949,24 +958,29 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Ezri Konsa Ngoyo</strong>
-<span class="manager-best-xi-points">53 pts</span>
+<span class="manager-best-xi-points">54 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Virgil van Dijk</strong>
-<span class="manager-best-xi-points">43 pts</span>
+<span class="manager-best-xi-points">49 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Pedro Porro Sauceda</strong>
-<span class="manager-best-xi-points">16 pts</span>
+<span class="manager-best-xi-points">27 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Michael Kayode</strong>
+<span class="manager-best-xi-points">17 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
 <article class="manager-best-xi-player manager-best-xi-pos-gkp">
 <span>GKP</span>
 <strong>David Raya Martín</strong>
-<span class="manager-best-xi-points">52 pts</span>
+<span class="manager-best-xi-points">53 pts</span>
 </article>
 </div>
 </div>
@@ -975,36 +989,36 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Drake Byrd — 3-5-2 · 410 contributed points</summary>
+<summary>Drake Byrd — 3-5-2 · 442 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Drake Byrd" data-formation="3-5-2" data-total="410">
+<section class="manager-best-xi" data-manager-best-xi="Drake Byrd" data-formation="3-5-2" data-total="442">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 3-5-2</span>
-<strong>410 contributed points</strong>
+<strong>442 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Francisco Evanilson de Lima Barbosa</strong>
-<span class="manager-best-xi-points">61 pts</span>
+<span class="manager-best-xi-points">67 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Oli McBurnie</strong>
-<span class="manager-best-xi-points">38 pts</span>
+<span class="manager-best-xi-points">51 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Martin Ødegaard</strong>
-<span class="manager-best-xi-points">50 pts</span>
+<span class="manager-best-xi-points">55 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Bruno Borges Fernandes</strong>
-<span class="manager-best-xi-points">45 pts</span>
+<span class="manager-best-xi-points">47 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1014,7 +1028,7 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Youri Tielemans</strong>
-<span class="manager-best-xi-points">27 pts</span>
+<span class="manager-best-xi-points">31 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1026,12 +1040,12 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Riccardo Calafiori</strong>
-<span class="manager-best-xi-points">57 pts</span>
+<span class="manager-best-xi-points">58 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Lewis Hall</strong>
-<span class="manager-best-xi-points">43 pts</span>
+<span class="manager-best-xi-points">44 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -1052,75 +1066,75 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Luke Lockwood — 4-5-1 · 388 contributed points</summary>
+<summary>Ryan Houseman — 4-5-1 · 367 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Luke Lockwood" data-formation="4-5-1" data-total="388">
+<section class="manager-best-xi" data-manager-best-xi="Ryan Houseman" data-formation="4-5-1" data-total="367">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-5-1</span>
-<strong>388 contributed points</strong>
+<strong>367 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 1" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
-<strong>Thierno Barry</strong>
-<span class="manager-best-xi-points">55 pts</span>
+<strong>Jørgen Strand Larsen</strong>
+<span class="manager-best-xi-points">13 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Kiernan Dewsbury-Hall</strong>
-<span class="manager-best-xi-points">50 pts</span>
+<strong>Diego Gómez Amarilla</strong>
+<span class="manager-best-xi-points">54 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Bryan Mbeumo</strong>
-<span class="manager-best-xi-points">46 pts</span>
+<strong>Pedro Lomba Neto</strong>
+<span class="manager-best-xi-points">42 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Iliman Ndiaye</strong>
-<span class="manager-best-xi-points">29 pts</span>
+<strong>Dominik Szoboszlai</strong>
+<span class="manager-best-xi-points">36 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Enzo Le Fée</strong>
-<span class="manager-best-xi-points">22 pts</span>
+<strong>Enzo Fernández</strong>
+<span class="manager-best-xi-points">24 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Mamadou Sangaré</strong>
-<span class="manager-best-xi-points">22 pts</span>
+<strong>Keane Lewis-Potter</strong>
+<span class="manager-best-xi-points">20 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Kristoffer Ajer</strong>
-<span class="manager-best-xi-points">42 pts</span>
+<strong>Gabriel dos Santos Magalhães</strong>
+<span class="manager-best-xi-points">67 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>James Justin</strong>
-<span class="manager-best-xi-points">31 pts</span>
+<strong>Neco Williams</strong>
+<span class="manager-best-xi-points">35 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Marc Guéhi</strong>
-<span class="manager-best-xi-points">27 pts</span>
+<strong>Vitalii Mykolenko</strong>
+<span class="manager-best-xi-points">19 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Benjamin White</strong>
-<span class="manager-best-xi-points">21 pts</span>
+<strong>Lewis Dunk</strong>
+<span class="manager-best-xi-points">18 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
 <article class="manager-best-xi-player manager-best-xi-pos-gkp">
 <span>GKP</span>
-<strong>Bart Verbruggen</strong>
-<span class="manager-best-xi-points">43 pts</span>
+<strong>Jordan Pickford</strong>
+<span class="manager-best-xi-points">39 pts</span>
 </article>
 </div>
 </div>
@@ -1129,31 +1143,108 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Justin Miller — 4-4-2 · 381 contributed points</summary>
+<summary>Dylan Reid — 4-3-3 · 403 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Justin Miller" data-formation="4-4-2" data-total="381">
+<section class="manager-best-xi" data-manager-best-xi="Dylan Reid" data-formation="4-3-3" data-total="403">
+<header class="manager-best-xi-head">
+<span><strong>Best legal XI</strong> · 4-3-3</span>
+<strong>403 contributed points</strong>
+</header>
+<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Nicolas Jackson</strong>
+<span class="manager-best-xi-points">54 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>João Pedro Junqueira de Jesus</strong>
+<span class="manager-best-xi-points">47 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-fwd">
+<span>FWD</span>
+<strong>Igor Thiago Nascimento Rodrigues</strong>
+<span class="manager-best-xi-points">30 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 3" aria-label="MID">
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Declan Rice</strong>
+<span class="manager-best-xi-points">53 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Julio Enciso</strong>
+<span class="manager-best-xi-points">28 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Phil Foden</strong>
+<span class="manager-best-xi-points">23 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Jan Paul van Hecke</strong>
+<span class="manager-best-xi-points">62 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Adrien Truffert</strong>
+<span class="manager-best-xi-points">31 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Nordi Mukiele</strong>
+<span class="manager-best-xi-points">28 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Jayden Bogle</strong>
+<span class="manager-best-xi-points">25 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
+<article class="manager-best-xi-player manager-best-xi-pos-gkp">
+<span>GKP</span>
+<strong>Bernd Leno</strong>
+<span class="manager-best-xi-points">22 pts</span>
+</article>
+</div>
+</div>
+</section>
+
+</details>
+
+<details class="position-group season-best-xi-manager">
+<summary>Justin Miller — 4-4-2 · 416 contributed points</summary>
+
+<section class="manager-best-xi" data-manager-best-xi="Justin Miller" data-formation="4-4-2" data-total="416">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-4-2</span>
-<strong>381 contributed points</strong>
+<strong>416 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Alexander Isak</strong>
-<span class="manager-best-xi-points">52 pts</span>
+<span class="manager-best-xi-points">57 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Charalampos Kostoulas</strong>
-<span class="manager-best-xi-points">39 pts</span>
+<span class="manager-best-xi-points">40 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Marcus Tavernier</strong>
-<span class="manager-best-xi-points">58 pts</span>
+<span class="manager-best-xi-points">66 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1163,7 +1254,7 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Bradley Barcola</strong>
-<span class="manager-best-xi-points">25 pts</span>
+<span class="manager-best-xi-points">30 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1175,17 +1266,17 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Tarik Muharemović</strong>
-<span class="manager-best-xi-points">46 pts</span>
+<span class="manager-best-xi-points">48 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>António João Pereira de Albuquerque Tavares da Silva</strong>
-<span class="manager-best-xi-points">34 pts</span>
+<span class="manager-best-xi-points">42 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Jeremy Jacquet</strong>
-<span class="manager-best-xi-points">31 pts</span>
+<span class="manager-best-xi-points">37 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -1206,75 +1297,75 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Ryan Houseman — 5-4-1 · 335 contributed points</summary>
+<summary>Luke Lockwood — 4-5-1 · 410 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Ryan Houseman" data-formation="5-4-1" data-total="335">
+<section class="manager-best-xi" data-manager-best-xi="Luke Lockwood" data-formation="4-5-1" data-total="410">
 <header class="manager-best-xi-head">
-<span><strong>Best legal XI</strong> · 5-4-1</span>
-<strong>335 contributed points</strong>
+<span><strong>Best legal XI</strong> · 4-5-1</span>
+<strong>410 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 1" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
-<strong>Jørgen Strand Larsen</strong>
-<span class="manager-best-xi-points">3 pts</span>
+<strong>Thierno Barry</strong>
+<span class="manager-best-xi-points">57 pts</span>
 </article>
 </div>
-<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Diego Gómez Amarilla</strong>
-<span class="manager-best-xi-points">51 pts</span>
+<strong>Kiernan Dewsbury-Hall</strong>
+<span class="manager-best-xi-points">52 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Pedro Lomba Neto</strong>
-<span class="manager-best-xi-points">41 pts</span>
+<strong>Bryan Mbeumo</strong>
+<span class="manager-best-xi-points">47 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Dominik Szoboszlai</strong>
+<strong>Iliman Ndiaye</strong>
+<span class="manager-best-xi-points">31 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Enzo Le Fée</strong>
+<span class="manager-best-xi-points">25 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Mamadou Sangaré</strong>
+<span class="manager-best-xi-points">22 pts</span>
+</article>
+</div>
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Kristoffer Ajer</strong>
+<span class="manager-best-xi-points">48 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>James Justin</strong>
+<span class="manager-best-xi-points">35 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Marc Guéhi</strong>
 <span class="manager-best-xi-points">27 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Enzo Fernández</strong>
-<span class="manager-best-xi-points">23 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 5" aria-label="DEF">
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Gabriel dos Santos Magalhães</strong>
-<span class="manager-best-xi-points">66 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Neco Williams</strong>
-<span class="manager-best-xi-points">34 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Lewis Dunk</strong>
-<span class="manager-best-xi-points">18 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Vitalii Mykolenko</strong>
-<span class="manager-best-xi-points">18 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Benjamin White</strong>
-<span class="manager-best-xi-points">16 pts</span>
+<span class="manager-best-xi-points">21 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
 <article class="manager-best-xi-player manager-best-xi-pos-gkp">
 <span>GKP</span>
-<strong>Jordan Pickford</strong>
-<span class="manager-best-xi-points">38 pts</span>
+<strong>Bart Verbruggen</strong>
+<span class="manager-best-xi-points">45 pts</span>
 </article>
 </div>
 </div>
@@ -1283,36 +1374,36 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Ryan Donlan — 4-4-2 · 414 contributed points</summary>
+<summary>Ryan Donlan — 4-4-2 · 436 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Ryan Donlan" data-formation="4-4-2" data-total="414">
+<section class="manager-best-xi" data-manager-best-xi="Ryan Donlan" data-formation="4-4-2" data-total="436">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 4-4-2</span>
-<strong>414 contributed points</strong>
+<strong>436 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Erling Haaland</strong>
-<span class="manager-best-xi-points">70 pts</span>
+<span class="manager-best-xi-points">72 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Dominic Calvert-Lewin</strong>
-<span class="manager-best-xi-points">37 pts</span>
+<span class="manager-best-xi-points">46 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Pascal Groß</strong>
-<span class="manager-best-xi-points">70 pts</span>
+<span class="manager-best-xi-points">74 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Morgan Gibbs-White</strong>
-<span class="manager-best-xi-points">39 pts</span>
+<span class="manager-best-xi-points">41 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1329,12 +1420,12 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>James Tarkowski</strong>
-<span class="manager-best-xi-points">56 pts</span>
+<span class="manager-best-xi-points">52 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Joško Gvardiol</strong>
-<span class="manager-best-xi-points">44 pts</span>
+<span class="manager-best-xi-points">45 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -1344,14 +1435,14 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Rúben dos Santos Gato Alves Dias</strong>
-<span class="manager-best-xi-points">16 pts</span>
+<span class="manager-best-xi-points">18 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
 <article class="manager-best-xi-player manager-best-xi-pos-gkp">
 <span>GKP</span>
 <strong>Caoimhín Kelleher</strong>
-<span class="manager-best-xi-points">33 pts</span>
+<span class="manager-best-xi-points">39 pts</span>
 </article>
 </div>
 </div>
@@ -1360,75 +1451,75 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Dylan Reid — 3-4-3 · 371 contributed points</summary>
+<summary>Ethan Ellsworth — 4-4-2 · 387 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Dylan Reid" data-formation="3-4-3" data-total="371">
+<section class="manager-best-xi" data-manager-best-xi="Ethan Ellsworth" data-formation="4-4-2" data-total="387">
 <header class="manager-best-xi-head">
-<span><strong>Best legal XI</strong> · 3-4-3</span>
-<strong>371 contributed points</strong>
+<span><strong>Best legal XI</strong> · 4-4-2</span>
+<strong>387 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
-<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
+<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
-<strong>Nicolas Jackson</strong>
-<span class="manager-best-xi-points">52 pts</span>
+<strong>Gonzalo García</strong>
+<span class="manager-best-xi-points">22 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
-<strong>João Pedro Junqueira de Jesus</strong>
-<span class="manager-best-xi-points">47 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-fwd">
-<span>FWD</span>
-<strong>Igor Thiago Nascimento Rodrigues</strong>
-<span class="manager-best-xi-points">30 pts</span>
+<strong>Yoane Wissa</strong>
+<span class="manager-best-xi-points">19 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Declan Rice</strong>
-<span class="manager-best-xi-points">50 pts</span>
+<strong>Florian Wirtz</strong>
+<span class="manager-best-xi-points">60 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Julio Enciso</strong>
-<span class="manager-best-xi-points">26 pts</span>
+<strong>Rayan Cherki</strong>
+<span class="manager-best-xi-points">55 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Phil Foden</strong>
-<span class="manager-best-xi-points">23 pts</span>
+<strong>Kevin Schade</strong>
+<span class="manager-best-xi-points">46 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Johan Manzambi</strong>
-<span class="manager-best-xi-points">21 pts</span>
+<strong>Emiliano Buendía Stati</strong>
+<span class="manager-best-xi-points">27 pts</span>
 </article>
 </div>
-<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Jan Paul van Hecke</strong>
-<span class="manager-best-xi-points">56 pts</span>
+<strong>James Hill</strong>
+<span class="manager-best-xi-points">42 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Adrien Truffert</strong>
-<span class="manager-best-xi-points">25 pts</span>
+<strong>Jarrad Branthwaite</strong>
+<span class="manager-best-xi-points">42 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
-<strong>Jayden Bogle</strong>
-<span class="manager-best-xi-points">21 pts</span>
+<strong>Milos Kerkez</strong>
+<span class="manager-best-xi-points">31 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-def">
+<span>DEF</span>
+<strong>Matheus Nunes</strong>
+<span class="manager-best-xi-points">19 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
 <article class="manager-best-xi-player manager-best-xi-pos-gkp">
 <span>GKP</span>
-<strong>Bernd Leno</strong>
-<span class="manager-best-xi-points">20 pts</span>
+<strong>Antonín Kinský</strong>
+<span class="manager-best-xi-points">24 pts</span>
 </article>
 </div>
 </div>
@@ -1437,19 +1528,19 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Julius Long — 4-4-2 · 307 contributed points</summary>
+<summary>Julius Long — 3-5-2 · 326 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Julius Long" data-formation="4-4-2" data-total="307">
+<section class="manager-best-xi" data-manager-best-xi="Julius Long" data-formation="3-5-2" data-total="326">
 <header class="manager-best-xi-head">
-<span><strong>Best legal XI</strong> · 4-4-2</span>
-<strong>307 contributed points</strong>
+<span><strong>Best legal XI</strong> · 3-5-2</span>
+<strong>326 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Emersonn Correia da Silva</strong>
-<span class="manager-best-xi-points">22 pts</span>
+<span class="manager-best-xi-points">23 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
@@ -1457,11 +1548,11 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <span class="manager-best-xi-points">18 pts</span>
 </article>
 </div>
-<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
+<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 5" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Matheus Santos Carneiro da Cunha</strong>
-<span class="manager-best-xi-points">45 pts</span>
+<span class="manager-best-xi-points">46 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1471,19 +1562,24 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Bruno Guimarães Rodriguez Moura</strong>
-<span class="manager-best-xi-points">28 pts</span>
+<span class="manager-best-xi-points">30 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
 <strong>Mohamed Belloumi</strong>
-<span class="manager-best-xi-points">21 pts</span>
+<span class="manager-best-xi-points">28 pts</span>
+</article>
+<article class="manager-best-xi-player manager-best-xi-pos-mid">
+<span>MID</span>
+<strong>Elliot Anderson</strong>
+<span class="manager-best-xi-points">16 pts</span>
 </article>
 </div>
-<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
+<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Maxim De Cuyper</strong>
-<span class="manager-best-xi-points">58 pts</span>
+<span class="manager-best-xi-points">59 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -1495,17 +1591,12 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <strong>Michael Kayode</strong>
 <span class="manager-best-xi-points">17 pts</span>
 </article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Harry Maguire</strong>
-<span class="manager-best-xi-points">11 pts</span>
-</article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
 <article class="manager-best-xi-player manager-best-xi-pos-gkp">
 <span>GKP</span>
 <strong>Gianluigi Donnarumma</strong>
-<span class="manager-best-xi-points">30 pts</span>
+<span class="manager-best-xi-points">32 pts</span>
 </article>
 </div>
 </div>
@@ -1514,12 +1605,12 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </details>
 
 <details class="position-group season-best-xi-manager">
-<summary>Levi Morant — 3-4-3 · 308 contributed points</summary>
+<summary>Levi Morant — 3-4-3 · 340 contributed points</summary>
 
-<section class="manager-best-xi" data-manager-best-xi="Levi Morant" data-formation="3-4-3" data-total="308">
+<section class="manager-best-xi" data-manager-best-xi="Levi Morant" data-formation="3-4-3" data-total="340">
 <header class="manager-best-xi-head">
 <span><strong>Best legal XI</strong> · 3-4-3</span>
-<strong>308 contributed points</strong>
+<strong>340 contributed points</strong>
 </header>
 <div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
 <div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 3" aria-label="FWD">
@@ -1531,24 +1622,24 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Omar Marmoush</strong>
-<span class="manager-best-xi-points">24 pts</span>
+<span class="manager-best-xi-points">25 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-fwd">
 <span>FWD</span>
 <strong>Brandon Thomas-Asante</strong>
-<span class="manager-best-xi-points">14 pts</span>
+<span class="manager-best-xi-points">18 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Cole Palmer</strong>
-<span class="manager-best-xi-points">47 pts</span>
+<strong>Harvey Barnes</strong>
+<span class="manager-best-xi-points">51 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Harvey Barnes</strong>
-<span class="manager-best-xi-points">44 pts</span>
+<strong>Cole Palmer</strong>
+<span class="manager-best-xi-points">49 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
@@ -1557,20 +1648,20 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-mid">
 <span>MID</span>
-<strong>Daichi Kamada</strong>
-<span class="manager-best-xi-points">16 pts</span>
+<strong>Noni Madueke</strong>
+<span class="manager-best-xi-points">21 pts</span>
 </article>
 </div>
 <div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 3" aria-label="DEF">
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Ronald Araujo</strong>
-<span class="manager-best-xi-points">35 pts</span>
+<span class="manager-best-xi-points">41 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
 <strong>Olivier Boscagli</strong>
-<span class="manager-best-xi-points">23 pts</span>
+<span class="manager-best-xi-points">30 pts</span>
 </article>
 <article class="manager-best-xi-player manager-best-xi-pos-def">
 <span>DEF</span>
@@ -1590,89 +1681,12 @@ Each manager's highest-scoring legal XI using contributed starting-lineup points
 
 </details>
 
-<details class="position-group season-best-xi-manager">
-<summary>Ethan Ellsworth — 4-4-2 · 342 contributed points</summary>
-
-<section class="manager-best-xi" data-manager-best-xi="Ethan Ellsworth" data-formation="4-4-2" data-total="342">
-<header class="manager-best-xi-head">
-<span><strong>Best legal XI</strong> · 4-4-2</span>
-<strong>342 contributed points</strong>
-</header>
-<div class="manager-best-xi-pitch" role="group" aria-label="Manager Best XI">
-<div class="manager-best-xi-line manager-best-xi-line-fwd" style="--xi-count: 2" aria-label="FWD">
-<article class="manager-best-xi-player manager-best-xi-pos-fwd">
-<span>FWD</span>
-<strong>Gonzalo García</strong>
-<span class="manager-best-xi-points">22 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-fwd">
-<span>FWD</span>
-<strong>Yoane Wissa</strong>
-<span class="manager-best-xi-points">19 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-mid" style="--xi-count: 4" aria-label="MID">
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Rayan Cherki</strong>
-<span class="manager-best-xi-points">54 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Florian Wirtz</strong>
-<span class="manager-best-xi-points">46 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Kevin Schade</strong>
-<span class="manager-best-xi-points">45 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-mid">
-<span>MID</span>
-<strong>Emiliano Buendía Stati</strong>
-<span class="manager-best-xi-points">27 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-def" style="--xi-count: 4" aria-label="DEF">
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Jarrad Branthwaite</strong>
-<span class="manager-best-xi-points">40 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>James Hill</strong>
-<span class="manager-best-xi-points">28 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Milos Kerkez</strong>
-<span class="manager-best-xi-points">25 pts</span>
-</article>
-<article class="manager-best-xi-player manager-best-xi-pos-def">
-<span>DEF</span>
-<strong>Matheus Nunes</strong>
-<span class="manager-best-xi-points">19 pts</span>
-</article>
-</div>
-<div class="manager-best-xi-line manager-best-xi-line-gkp" style="--xi-count: 1" aria-label="GKP">
-<article class="manager-best-xi-player manager-best-xi-pos-gkp">
-<span>GKP</span>
-<strong>Antonín Kinský</strong>
-<span class="manager-best-xi-points">17 pts</span>
-</article>
-</div>
-</div>
-</section>
-
-</details>
-
 </details>
 
 <details>
 <summary><h2>Waiver-Inspired Wins</h2></summary>
 
-Calculated through GW10 from accepted waiver/free-agent moves recorded for each gameweek, official lineups, and the dropped players' counterfactual scores.
+Calculated through GW11 from accepted waiver/free-agent moves recorded for each gameweek, official lineups, and the dropped players' counterfactual scores.
 
 <details class="notes">
 <summary>Definitions and calculation notes</summary>
@@ -1688,27 +1702,27 @@ Only players added and dropped immediately before that gameweek are attributed t
 | `Amorim de mi vida` | 1 | 3 | 33% | 3.0 |
 | `***NoHaalandNoParty` | 1 | 5 | 20% | 2.0 |
 | `Sue-nited FC**` | 1 | 6 | 17% | 1.0 |
-| `Bruno’s Balebas` | 1 | 7 | 14% | 1.0 |
+| `Bruno’s Balebas` | 1 | 8 | 12% | 1.0 |
 | `*Saka It To Me Baby` | 0 | 3 | 0% | — |
-| `ChabosSpurs@Law` | 0 | 7 | 0% | — |
+| `ChabosSpurs@Law` | 0 | 8 | 0% | — |
 | `Into the WOODwork*` | 0 | 6 | 0% | — |
-| `Joao Bonito` | 0 | 5 | 0% | — |
-| `Szoboszlickin good` | 0 | 6 | 0% | — |
-| `Thanksgiving Cherki` | 0 | 2 | 0% | — |
+| `Joao Bonito` | 0 | 6 | 0% | — |
+| `Szoboszlickin good` | 0 | 7 | 0% | — |
+| `Thanksgiving Cherki` | 0 | 3 | 0% | — |
 
 ### Waiver-Inspired Losses
 
 | Team | Waiver-Inspired Losses | Total Losses | Share of Losses | Avg Waiver-Inspired Loss Margin |
 |---|---|---|---|---|
-| `*Saka It To Me Baby` | 2 | 7 | 29% | 2.0 |
+| `*Saka It To Me Baby` | 2 | 8 | 25% | 2.0 |
 | `Szoboszlickin good` | 1 | 4 | 25% | 1.0 |
-| `Amorim de mi vida` | 1 | 7 | 14% | 2.0 |
-| `***NoHaalandNoParty` | 0 | 5 | 0% | — |
+| `Amorim de mi vida` | 1 | 8 | 12% | 2.0 |
+| `***NoHaalandNoParty` | 0 | 6 | 0% | — |
 | `Bruno’s Balebas` | 0 | 3 | 0% | — |
 | `ChabosSpurs@Law` | 0 | 3 | 0% | — |
-| `Into the WOODwork*` | 0 | 4 | 0% | — |
+| `Into the WOODwork*` | 0 | 5 | 0% | — |
 | `Joao Bonito` | 0 | 5 | 0% | — |
-| `Sue-nited FC**` | 0 | 4 | 0% | — |
+| `Sue-nited FC**` | 0 | 5 | 0% | — |
 | `Thanksgiving Cherki` | 0 | 8 | 0% | — |
 
 ### Qualifying Matchups
