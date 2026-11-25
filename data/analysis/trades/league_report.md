@@ -4,14 +4,14 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 <section class="trades-page" data-trades-page>
 <div class="trade-stat-grid">
-<div class="trade-stat"><span>Total trades</span><strong>51</strong></div>
-<div class="trade-stat"><span>Most active trader</span><strong>Levi</strong><em>35 trades</em></div>
-<div class="trade-stat"><span>Pick/condition trades</span><strong>43</strong></div>
+<div class="trade-stat"><span>Total trades</span><strong>52</strong></div>
+<div class="trade-stat"><span>Most active trader</span><strong>Levi</strong><em>36 trades</em></div>
+<div class="trade-stat"><span>Pick/condition trades</span><strong>44</strong></div>
 <div class="trade-stat"><span>Biggest trade</span><strong>13 assets</strong><em>Levi &lt;-&gt; Chabo</em></div>
 </div>
 <div class="trade-controls">
 <div class="trade-season-tabs" aria-label="Trade seasons">
-<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>3</span></button>
+<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>4</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2025-26" aria-pressed="false">2025-26 <span>14</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2024-25" aria-pressed="false">2024-25 <span>34</span></button>
 </div>
@@ -88,6 +88,25 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <div class="trade-side"><strong>Levi sent</strong><p>Araujo, Barnes, 2027 Levi 9th-round pick</p></div>
 </div>
 
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2026-27" data-managers="levi|justin" data-search="2026-27 in-season in-season levi, justin levi sent timber; justin sent costinha, 2027 justin 8th-round pick matching defender in the official draft fpl trade.">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2026-27 | In-Season</span>
+<span class="trade-title">Levi &lt;-&gt; Justin</span>
+<span class="trade-description">Levi sent Timber; Justin sent Costinha, 2027 Justin 8th-round pick</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">3 assets</span><span class="trade-badge trade-badge-pick">Picks/conditions</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Levi sent</strong><p>Timber</p></div>
+<div class="trade-side"><strong>Justin sent</strong><p>Costinha, 2027 Justin 8th-round pick</p></div>
+</div>
+<p class="trade-note"><strong>Note:</strong> Matching defender in the official Draft FPL trade.</p>
 </div>
 </details>
 </article>
@@ -1012,7 +1031,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Season | Trades | Managers | In-Season | Postseason | Preseason/Draft | Multi-Team | Pick/Condition Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-27 | 3 | 4 | 0 | 0 | 2 | 0 | 3 |
+| 2026-27 | 4 | 4 | 0 | 0 | 2 | 0 | 4 |
 | 2025-26 | 14 | 7 | 10 | 0 | 4 | 0 | 12 |
 | 2024-25 | 34 | 10 | 25 | 9 | 0 | 1 | 28 |
 
@@ -1023,9 +1042,9 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Manager | Trades | Assets Sent | Pick/Condition Trades | Most Common Partner |
 | --- | --- | --- | --- | --- |
-| Levi | 35 | 102 | 29 | Justin (7) |
+| Levi | 36 | 103 | 30 | Justin (8) |
 | Donny | 14 | 32 | 12 | Dylan (3) |
-| Justin | 11 | 26 | 10 | Levi (7) |
+| Justin | 12 | 28 | 11 | Levi (8) |
 | Ethan | 8 | 13 | 7 | Levi (5) |
 | Julius | 8 | 14 | 6 | Levi (4) |
 | Luke | 8 | 20 | 6 | Levi (7) |
@@ -1041,7 +1060,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Manager 1 | Manager 2 | Trades |
 | --- | --- | --- |
-| Justin | Levi | 7 |
+| Justin | Levi | 8 |
 | Levi | Luke | 7 |
 | Ethan | Levi | 5 |
 | Julius | Levi | 4 |
