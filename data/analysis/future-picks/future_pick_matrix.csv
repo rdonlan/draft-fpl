@@ -189,7 +189,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,4,4th,Chabo,Chabo,Own,Own
 2027,4,4th,Ethan,Ethan,Own,Own
 2027,4,4th,Dylan,Dylan,Own,Own
-2027,5,5th,Donny,Donny,Own,Own
+2027,5,5th,Donny,Levi,Traded,Owed to Levi
 2027,5,5th,Justin,Levi,Traded,Owed to Levi
 2027,5,5th,House,House,Own,Own
 2027,5,5th,Levi,Levi,Own,Own
@@ -232,7 +232,7 @@ year,round,round_label,original_owner,current_holder,status,source_status
 2027,9,9th,Donny,Donny,Own,Own
 2027,9,9th,Justin,Justin,Own,Own
 2027,9,9th,House,House,Own,Own
-2027,9,9th,Levi,Levi,Own,Own
+2027,9,9th,Levi,Donny,Traded,Owed to Donny
 2027,9,9th,Luke,Luke,Own,Own
 2027,9,9th,Julius,Julius,Own,Own
 2027,9,9th,Drake,Drake,Own,Own

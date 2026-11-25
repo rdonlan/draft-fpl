@@ -2057,7 +2057,7 @@ Pick two managers to see their rivalry scoreboard, season splits, recent form, b
 <tbody>
 <tr><td data-label="Metric">Belt Fights</td><td data-label="Value">5 (Ryan Donlan 4-0-1, Levi Morant 1-0-4)</td></tr>
 <tr><td data-label="Metric">Cup Meetings</td><td data-label="Value">1 (Ryan Donlan 0-0-1, Levi Morant 1-0-0)</td></tr>
-<tr><td data-label="Metric">Trades</td><td data-label="Value">1</td></tr>
+<tr><td data-label="Metric">Trades</td><td data-label="Value">2</td></tr>
 </tbody></table></div>
 </article>
 <article class="rivalry-card" data-rivalry-card data-manager-a="Levi Morant" data-manager-b="Ethan Ellsworth" hidden>
