@@ -1552,7 +1552,8 @@ A future-pick ownership board organized by original manager. Exact draft slots a
 <summary>Definitions and calculation notes</summary>
 
 - Columns identify the original manager attached to each tradable pick, not a projected draft slot.
-- Every box is colored by the manager who currently owns that pick.
+- Usable boxes are colored by the manager who currently owns each pick.
+- Each team has 13 draft selections after two keeper slots. Grey picks fall after their owner already has that many earlier picks; a same-round cutoff is marked order dependent until draft order is known.
 - The final 1–10 order will be applied only after the standings and lottery are known.
 - Rounds `1st` and `2nd` are omitted because those are keeper slots.
 
@@ -1696,7 +1697,7 @@ A future-pick ownership board organized by original manager. Exact draft slots a
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">House</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi already has 13 picks in earlier rounds; this pick will not be used after two keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">12th</span><span class="draft-pick-holder">Drake</span></td>
@@ -1709,7 +1710,7 @@ A future-pick ownership board organized by original manager. Exact draft slots a
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">House</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi already has 13 picks in earlier rounds; this pick will not be used after two keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">13th</span><span class="draft-pick-holder">Drake</span></td>
@@ -1722,7 +1723,7 @@ A future-pick ownership board organized by original manager. Exact draft slots a
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">House</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi already has 13 picks in earlier rounds; this pick will not be used after two keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">14th</span><span class="draft-pick-holder">Drake</span></td>
@@ -1735,7 +1736,7 @@ A future-pick ownership board organized by original manager. Exact draft slots a
 <td class="pick-owner-cell is-own" style="--pick-bg: #dbeafe; --pick-ink: #1e3a8a; --pick-border: #60a5fa" data-holder="Donny" data-original-owner="Donny"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Donny</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #dcfce7; --pick-ink: #14532d; --pick-border: #4ade80" data-holder="Justin" data-original-owner="Justin"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Justin</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fef3c7; --pick-ink: #78350f; --pick-border: #f59e0b" data-holder="House" data-original-owner="House"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">House</span></td>
-<td class="pick-owner-cell is-own" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Levi</span></td>
+<td class="pick-owner-cell is-own is-unused" style="--pick-bg: #ede9fe; --pick-ink: #4c1d95; --pick-border: #a78bfa" title="Levi already has 13 picks in earlier rounds; this pick will not be used after two keepers." data-holder="Levi" data-original-owner="Levi"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Levi</span><span class="draft-pick-unused">Unused: roster full</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #cffafe; --pick-ink: #164e63; --pick-border: #22d3ee" data-holder="Luke" data-original-owner="Luke"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Luke</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #fee2e2; --pick-ink: #7f1d1d; --pick-border: #f87171" data-holder="Julius" data-original-owner="Julius"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Julius</span></td>
 <td class="pick-owner-cell is-own" style="--pick-bg: #e0e7ff; --pick-ink: #312e81; --pick-border: #818cf8" data-holder="Drake" data-original-owner="Drake"><span class="draft-pick-slot">15th</span><span class="draft-pick-holder">Drake</span></td>
@@ -1757,7 +1758,8 @@ A future-pick ownership board organized by original manager. Exact draft slots a
 <summary>Definitions and calculation notes</summary>
 
 - Columns identify the original manager attached to each tradable pick, not a projected draft slot.
-- Every box is colored by the manager who currently owns that pick.
+- Usable boxes are colored by the manager who currently owns each pick.
+- Each team has 13 draft selections after two keeper slots. Grey picks fall after their owner already has that many earlier picks; a same-round cutoff is marked order dependent until draft order is known.
 - The final 1–10 order will be applied only after the standings and lottery are known.
 - Rounds `1st` and `2nd` are omitted because those are keeper slots.
 

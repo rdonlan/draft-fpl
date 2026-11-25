@@ -26,3 +26,10 @@
 - Player: Costinha — Justin → Levi
 - Draft Pick: 2027 Justin 8th-round pick — Justin → Levi
 
+## 2026-27-05
+
+- Player: Alisson Becker — Levi → Dylan
+- Draft Pick: 2027 Levi 10th-round pick — Levi → Dylan
+- Player: Mike Penders — Dylan → Levi
+- Draft Pick: 2027 Dylan 7th-round pick — Dylan → Levi
+
