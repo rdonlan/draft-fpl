@@ -20,3 +20,9 @@
 - Player: Barnes — Levi → Donny
 - Draft Pick: 2027 Levi 9th-round pick — Levi → Donny
 
+## 2026-27-04
+
+- Player: Timber — Levi → Justin
+- Player: Costinha — Justin → Levi
+- Draft Pick: 2027 Justin 8th-round pick — Justin → Levi
+
