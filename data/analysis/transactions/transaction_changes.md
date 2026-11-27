@@ -33,3 +33,10 @@
 - Player: Mike Penders — Dylan → Levi
 - Draft Pick: 2027 Dylan 7th-round pick — Dylan → Levi
 
+## 2026-27-06
+
+- Player: Rodrigo Muniz — Donny → Ryan Houseman
+- Player: Rúben Dias — Donny → Ryan Houseman
+- Player: Jean-Philippe Mateta — Ryan Houseman → Donny
+- Player: Neco Williams — Ryan Houseman → Donny
+

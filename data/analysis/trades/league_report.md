@@ -4,14 +4,14 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 <section class="trades-page" data-trades-page>
 <div class="trade-stat-grid">
-<div class="trade-stat"><span>Total trades</span><strong>53</strong></div>
+<div class="trade-stat"><span>Total trades</span><strong>54</strong></div>
 <div class="trade-stat"><span>Most active trader</span><strong>Levi</strong><em>37 trades</em></div>
 <div class="trade-stat"><span>Pick/condition trades</span><strong>45</strong></div>
 <div class="trade-stat"><span>Biggest trade</span><strong>13 assets</strong><em>Levi &lt;-&gt; Chabo</em></div>
 </div>
 <div class="trade-controls">
 <div class="trade-season-tabs" aria-label="Trade seasons">
-<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>5</span></button>
+<button type="button" class="trade-tab-button is-active" data-trade-season-button="2026-27" aria-pressed="true">2026-27 <span>6</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2025-26" aria-pressed="false">2025-26 <span>14</span></button>
 <button type="button" class="trade-tab-button" data-trade-season-button="2024-25" aria-pressed="false">2024-25 <span>34</span></button>
 </div>
@@ -126,6 +126,25 @@ A searchable ledger of player, pick, and conditional trades from the league work
 <div class="trade-side"><strong>Dylan sent</strong><p>Mike Penders, 2027 Dylan 7th-round pick</p></div>
 </div>
 <p class="trade-note"><strong>Note:</strong> Official Draft FPL goalkeeper swap with Mike Penders.</p>
+</div>
+</details>
+</article>
+<article class="trade-card" data-season="2026-27" data-managers="donny|ryan houseman" data-search="2026-27 in-season in-season donny, ryan houseman donny sent rodrigo muniz, rúben dias; ryan houseman sent jean-philippe mateta, neco williams">
+<details>
+<summary>
+<span class="trade-summary-main">
+<span class="trade-kicker">2026-27 | In-Season</span>
+<span class="trade-title">Donny &lt;-&gt; Ryan Houseman</span>
+<span class="trade-description">Donny sent Rodrigo Muniz, Rúben Dias; Ryan Houseman sent Jean-Philippe Mateta, Neco Williams</span>
+</span>
+<span class="trade-summary-meta"><span class="trade-badge">2 teams</span><span class="trade-badge">4 assets</span></span>
+</summary>
+<div class="trade-body">
+<div class="trade-side-list">
+<div class="trade-side"><strong>Donny sent</strong><p>Rodrigo Muniz, Rúben Dias</p></div>
+<div class="trade-side"><strong>Ryan Houseman sent</strong><p>Jean-Philippe Mateta, Neco Williams</p></div>
+</div>
+
 </div>
 </details>
 </article>
@@ -1050,7 +1069,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 
 | Season | Trades | Managers | In-Season | Postseason | Preseason/Draft | Multi-Team | Pick/Condition Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-27 | 5 | 5 | 0 | 0 | 2 | 0 | 5 |
+| 2026-27 | 6 | 6 | 0 | 0 | 2 | 0 | 5 |
 | 2025-26 | 14 | 7 | 10 | 0 | 4 | 0 | 12 |
 | 2024-25 | 34 | 10 | 25 | 9 | 0 | 1 | 28 |
 
@@ -1062,14 +1081,14 @@ A searchable ledger of player, pick, and conditional trades from the league work
 | Manager | Trades | Assets Sent | Pick/Condition Trades | Most Common Partner |
 | --- | --- | --- | --- | --- |
 | Levi | 37 | 105 | 31 | Justin (8) |
-| Donny | 14 | 32 | 12 | Dylan (3) |
+| Donny | 15 | 34 | 12 | Dylan (3) |
 | Justin | 12 | 28 | 11 | Levi (8) |
 | Dylan | 8 | 18 | 8 | Levi (4) |
 | Ethan | 8 | 13 | 7 | Levi (5) |
 | Julius | 8 | 14 | 6 | Levi (4) |
 | Luke | 8 | 20 | 6 | Levi (7) |
 | Chabo | 5 | 13 | 4 | Levi (2) |
-| Ryan Houseman | 4 | 11 | 3 | Levi (4) |
+| Ryan Houseman | 5 | 13 | 3 | Levi (4) |
 | Drake | 3 | 8 | 3 | Levi (2) |
 
 </details>
@@ -1096,6 +1115,7 @@ A searchable ledger of player, pick, and conditional trades from the league work
 | Chabo | Justin | 1 |
 | Donny | Drake | 1 |
 | Donny | Luke | 1 |
+| Donny | Ryan Houseman | 1 |
 | Dylan | Justin | 1 |
 | Luke | Ryan Houseman | 1 |
 
